@@ -1,0 +1,25 @@
+{
+  "name": "code-amienois",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/la-chatte-2.0/code-amienois.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/la-chatte-2.0/code-amienois/issues"
+  },
+  "homepage": "https://gitlab.com/la-chatte-2.0/code-amienois#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.45.0"
+  }
+}
