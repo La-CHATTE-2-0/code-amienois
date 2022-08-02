@@ -1,7 +1,2 @@
-$red: #e74c3c;
-
-h1 {
-  color: $red;
-}
-
-@import "./fonts/fonts"
+@import "./fonts/fonts";
+@import "./base/article";

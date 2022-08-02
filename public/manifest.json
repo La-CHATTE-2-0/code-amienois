@@ -6,6 +6,12 @@
     "display": "minimal-ui",
     "icons": [
         {
+            "src": "favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon",
+            "purpose": "any"
+        },
+        {
             "src": "./images/icons-128.png",
             "type": "image/png",
             "sizes": "128x128",
@@ -14,14 +20,12 @@
         {
             "src": "./images/icons-192.png",
             "type": "image/png",
-            "sizes": "192x192",
-            "purpose": "maskable"
+            "sizes": "192x192"
         },
         {
             "src": "./images/icons-512.png",
             "type": "image/png",
-            "sizes": "512x512",
-            "purpose": "maskable"
+            "sizes": "512x512"
         }
     ],
     "theme_color": "#317EFB",
