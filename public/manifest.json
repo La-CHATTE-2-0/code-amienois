@@ -1,23 +1,29 @@
 {
     "short_name": "Code Amienois",
     "name": "Code de la Faluche Amienois",
+    "description": "Code de la Faluche Amienois",
     "start_url": "/index.html",
     "display": "minimal-ui",
     "icons": [
         {
             "src": "./images/icons-128.png",
             "type": "image/png",
-            "sizes": "128x128"
+            "sizes": "128x128",
+            "purpose": "maskable"
         },
         {
             "src": "./images/icons-192.png",
             "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "192x192",
+            "purpose": "maskable"
         },
         {
             "src": "./images/icons-512.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "maskable"
         }
-    ]
+    ],
+    "theme_color": "#317EFB",
+    "background_color": "#ffffff"
 }
