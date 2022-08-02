@@ -19,7 +19,12 @@
   },
   "homepage": "https://gitlab.com/la-chatte-2.0/code-amienois#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
-    "sass": "^1.45.0"
+    "@parcel/packager-raw-url": "^2.6.2",
+    "@parcel/transformer-webmanifest": "^2.6.2",
+    "parcel": "^2.6.2",
+    "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.6.2"
   }
 }
