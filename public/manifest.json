@@ -2,7 +2,7 @@
     "short_name": "Code Amienois",
     "name": "Code de la Faluche Amienois",
     "description": "Code de la Faluche Amienois",
-    "start_url": "/index.html",
+    "start_url": "/code-amienois",
     "display": "minimal-ui",
     "icons": [
         {
