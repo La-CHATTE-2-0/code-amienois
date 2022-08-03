@@ -2,11 +2,11 @@
   "name": "code-amienois",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "compteur-lettre",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel --https src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://gitlab.com/la-chatte-2.0/code-amienois/issues"
   },
-  "homepage": "https://gitlab.com/la-chatte-2.0/code-amienois#readme",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.2",
     "@parcel/transformer-webmanifest": "^2.6.2",
