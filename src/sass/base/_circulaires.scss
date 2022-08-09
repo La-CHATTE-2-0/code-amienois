@@ -1,0 +1,31 @@
+[data-fal-circu-container] {
+    height: 40px;
+    width: 200px;
+
+    [data-fal-circu] {
+        width: 200px;
+        height: 40px;
+    
+        &[data-fal-circu="satin"] {
+            background-image: url(../../public/images/circu/satin.png);
+            background-attachment: fixed;
+        }
+        &[data-fal-circu="velours"] {
+            background-image: url(../../public/images/circu/velours.png);
+        }
+    }
+}
+
+[data-fal-circu-color] {
+    opacity: 0.85;
+}
+
+//// TODO: Externaliser ça avec des varaibles et faire un for à la place
+[data-fal-circu-color="bordeaux"] {
+    background: #a00909;
+}
+[data-fal-circu-color="violet"] {
+    background: #51009e;
+}
+////
+
