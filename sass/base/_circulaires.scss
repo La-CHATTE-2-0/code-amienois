@@ -7,11 +7,11 @@
         height: 40px;
     
         &[data-fal-circu="satin"] {
-            background-image: url(../../public/images/circu/satin.png);
+            background-image: url(../images/circu/satin.png);
             background-attachment: fixed;
         }
         &[data-fal-circu="velours"] {
-            background-image: url(../../public/images/circu/velours.png);
+            background-image: url(../images/circu/velours.png);
         }
     }
 }
