@@ -2,11 +2,10 @@
   "name": "code-amienois",
   "version": "1.0.0",
   "description": "",
-  "homepage": "compteur-lettre",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel --https src/index.html",
-    "build": "parcel build src/index.html --public-url ./"
+    "build": "rm -rf .dist && parcel build src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",

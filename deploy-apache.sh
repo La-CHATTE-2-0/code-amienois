@@ -4,3 +4,6 @@
 npm run build 
 rm -rf /var/www/html/code-amienois
 cp -r ./dist /var/www/html/code-amienois
+
+cd /var/www/html/code-amienois
+cp *.png ./up_/public

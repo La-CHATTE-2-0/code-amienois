@@ -1,9 +1,9 @@
 // Avant d'utiliser un Service Worker,
 // on vérifie que c'est possible.
-if ("serviceWorker" in navigator) {
+if (navigator && "serviceWorker" in navigator) {
     // Puis on déclare celui-ci
     // via la fonction `register`
-    navigator.serviceWorkerContainer
+    navigator.serviceWorker
         .register(new URL('./service-worker.js', import.meta.url))
         .then(registration => {
             // On a réussi ! Youpi !
@@ -19,6 +19,7 @@ if ("serviceWorker" in navigator) {
             );
         });
 } else {
+    console.log("No service worker: ", navigator)
     // Si le navigateur ne permet pas
     // d'utiliser un Service Worker
     // on ne fait rien de particulier.
