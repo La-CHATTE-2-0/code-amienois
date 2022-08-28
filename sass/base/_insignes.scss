@@ -1,0 +1,23 @@
+[data-fal-table="insigne"] {
+    margin-left: auto;
+    margin-right: auto;
+
+    [data-fal-insigne] {
+        img {
+            width: auto;
+            height: 50px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    [data-fal-table='insigne'] {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    [data-fal-table='insigne'] {
+        width: 100%;
+    }
+}
