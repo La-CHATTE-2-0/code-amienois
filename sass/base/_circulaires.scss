@@ -1,31 +1,106 @@
-[data-fal-circu-container] {
-    height: 40px;
-    width: 200px;
+$height-circu: 40px;
+$max-width-circu: 250px;
+$border-radius-circu: 5px;
 
-    [data-fal-circu] {
-        width: 200px;
-        height: 40px;
+$data-fal-circu-infos: (
+    "argente": #CCCCCC,
+    "blanc": #FFFFFF,
+    "bleu": #155CC8,
+    "bleuroy": #0914BC,
+    "bordeaux": #631212,
+    "fiolet": #2C1355,
+    "fuschia": #7F15AC,
+    "gris": #777777,
+    "jaune": #FFC107,
+    "marron": #522F18,
+    "noir": #000000,
+    "orange": #EF801E,
+    "rouge": #BC1212,
+    "rose": #F3A0EA,
+    "saumon": #E89292,
+    "vert": #349810,
+    "vertclair": #67E30E,
+    "vertfonce": #004203,
+    "violet": #51009e
+);
+
+[data-fal-table='circu'] {
+
+    th {
+        text-align: left;
+    }
+
+    tr > :nth-child(2) {
+        height: $height-circu;
+    }
+
+    [data-filliere] {
+        width: 25%;
+    }
+    [data-matiere] {
+        width: 25%;
+    }
+    [data-matiere-img] {
+        width: 100%;
+    }
+
+    [data-fal-circu-container] {
+        height: $height-circu;
+        max-width: $max-width-circu;
+
+        border-radius: $border-radius-circu;
     
-        &[data-fal-circu="satin"] {
-            background-image: url(../images/circu/satin.png);
-            background-attachment: fixed;
+        [data-fal-circu] {
+            height: $height-circu;
+            border-radius: $border-radius-circu;
+        
+            &[data-fal-circu="satin"] {
+                background-image: url(../images/circu/satin.png);
+            }
+            &[data-fal-circu="velours"] {
+                background-image: url(../images/circu/velours.png);
+            }
+        }        
+    }
+
+    [data-fal-circu-container='demi'] {
+        height: calc($height-circu / 2);
+        border-radius: 0;
+
+        &:nth-child(1) {
+            border-radius: 0;
+            border-top-left-radius: $border-radius-circu;
+            border-top-right-radius: $border-radius-circu;
+            [data-fal-circu] {
+                border-radius: 0;
+                border-top-left-radius: $border-radius-circu;
+                border-top-right-radius: $border-radius-circu;
+            }
         }
-        &[data-fal-circu="velours"] {
-            background-image: url(../images/circu/velours.png);
+        
+        &:nth-child(2) {
+            border-radius: 0;
+            border-bottom-left-radius: $border-radius-circu;
+            border-bottom-right-radius: $border-radius-circu;
+            [data-fal-circu] {
+                border-radius: 0;
+                border-bottom-left-radius: $border-radius-circu;
+                border-bottom-right-radius: $border-radius-circu;
+            }
+        }
+
+        [data-fal-circu] {
+            height: calc($height-circu / 2);
         }
     }
-}
 
-[data-fal-circu-color] {
-    opacity: 0.85;
+    @each $name, $color in $data-fal-circu-infos {
+        [data-fal-circu-color='#{$name}'] {
+            background: $color;
+        }
+    }
+    
+    [data-fal-circu-color] {
+        opacity: 0.85;
+    }
 }
-
-//// TODO: Externaliser ça avec des varaibles et faire un for à la place
-[data-fal-circu-color="bordeaux"] {
-    background: #a00909;
-}
-[data-fal-circu-color="violet"] {
-    background: #51009e;
-}
-////
-
