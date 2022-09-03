@@ -13,6 +13,9 @@
   <link rel="apple-touch-icon" href="./images/icons-192.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="./sass/styles.scss" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
@@ -76,14 +79,14 @@
         professorales des universités Françaises :
       </p>
 
-      <table data-fal-table="circu">
+      <table class="table table-striped align-middle" data-fal-table="circu">
         <thead>
           <tr>
             <th>Discipline</th>
-            <th colspan="1">Circulaire</th>
+            <th colspan="2">Circulaire</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
           <tr>
             <td data-filliere>Classes préparatoires (santé)</td>
             <td data-matiere>Velours marron</td>
@@ -154,17 +157,6 @@
               <div data-fal-circu-container data-fal-circu-color="bordeaux">
                 <div data-fal-circu="velours"></div>
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <br>
-            </td>
-            <td>
-              <br>
-            </td>
-            <td>
-              <br>
             </td>
           </tr>
           <tr>
@@ -435,7 +427,7 @@
           </tr>
           <tr>
             <td colspan="3">
-              <h3>⚠️ Spécifités Amiénoises</h3>
+              <h3 class="table-warning">⚠️ Spécifités Amiénoises</h3>
             </td>
           </tr>
           <tr>
@@ -528,7 +520,7 @@
         <li>Les initiales</li>
         <li>Le baccalauréat:</li>
       </ul>
-      <table data-fal-table="insigne">
+      <table class="table table-striped align-middle" data-fal-table="insigne">
         <thead>
           <tr>
             <th>Baccalauréat</th>
@@ -536,7 +528,7 @@
             <th></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
           <tr>
             <td colspan="3">Anciens baccalauréats</td>
           </tr>
@@ -592,7 +584,7 @@
           </tr>
           <tr>
             <td colspan="3">
-              <h3>⚠️ Spécifité Amiénoise</h3>
+              <h3 class="table-warning">⚠️ Spécifité Amiénoise</h3>
             </td>
           </tr>
           <tr>
@@ -607,7 +599,7 @@
       <ul>
         <li>L'emblème de la discipline</li>
       </ul>
-      <table data-fal-table="insigne">
+      <table class="table table-striped align-middle" data-fal-table="insigne">
         <thead>
           <tr>
             <th>Discipline</th>
@@ -615,7 +607,7 @@
             <th></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
           <td>Assistante Sociale</td>
           <td>Lettres AS</td>
           <td data-fal-insigne>
@@ -902,8 +894,6 @@
         </tbody>
       </table>
       </p>
-
-
     </div>
   </div>
 
