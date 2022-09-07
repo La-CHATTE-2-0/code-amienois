@@ -3,4 +3,12 @@
     [data-fal-insigne] {
         text-align: center;
     }
+
+    [data-fal-insigne="moivre"] img {
+        border-radius: 5px;
+    }
+    [data-fal-insigne="mini"] img {
+        height: 30px;
+    }
+    
 }
