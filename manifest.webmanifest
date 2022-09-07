@@ -3,7 +3,7 @@
   "name": "Code de la Faluche Amienois",
   "description": "Code de la Faluche Amienois",
   "start_url": "/index.html",
-  "display": "minimal-ui",
+  "display": "standalone",
   "icons": [
     {
       "src": "favicon.ico",
