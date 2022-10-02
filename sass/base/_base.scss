@@ -4,3 +4,15 @@
     margin-right: auto;
     margin-top: 60px;
 }
+
+body {
+    nav {
+        color: #fff;
+    }
+}
+body.dark {
+    --bs-body-color: #fff;
+    --bs-body-bg: #212529;
+    --bs-table-color: #fff;
+    --bs-table-bg: #212529
+}
