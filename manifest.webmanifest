@@ -1,7 +1,7 @@
 {
   "short_name": "Code Amienois",
-  "name": "Code de la Faluche Amienois",
-  "description": "Code de la Faluche Amienois",
+  "name": "Code de la Faluche Amienoise",
+  "description": "Code de la Faluche Amienoise",
   "start_url": "/index.html",
   "display": "standalone",
   "icons": [
@@ -28,6 +28,6 @@
       "sizes": "512x512"
     }
   ],
-  "theme_color": "#317EFB",
+  "theme_color": "#212529",
   "background_color": "#ffffff"
 }
