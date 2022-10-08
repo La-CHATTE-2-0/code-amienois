@@ -14,20 +14,24 @@
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="./sass/styles.scss" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Code de la Faluche</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <!--
+          <!--
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -39,16 +43,16 @@
           </li>
         -->
         </ul>
-        <div class="form-check form-switch">
+        <div class="form-check form-switch" style="margin-right: 10px">
           <input class="form-check-input" type="checkbox" role="switch" id="darkmode">
           <label class="form-check-label" for="darkmode">Darkmode</label>
         </div>
         <div class="d-flex">
-          <input  id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button id="search-submit" class="btn btn-outline-success disabled" type="submit">Search</button>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
   </nav>
   <div class="fal-container">
     <div data-fal-article="1">
@@ -278,8 +282,12 @@
             </td>
           </tr>
           <tr>
-            <td>INSPE (ex ESPE, ex IUFM)</td>
-            <td>Satin gris</td>
+            <td>MEEF</td>
+            <td>
+              <p>1er dégré: Satin gris</p>
+              <p>2nd dégré: Satin aux couleurs de la
+                discipline étudiée (ex: Physique-Chimie = Violet)</p>
+            </td>
             <td>
               <div data-fal-circu-container data-fal-circu-color="gris">
                 <div data-fal-circu="satin"></div>
@@ -571,21 +579,21 @@
             <td>Economique et Social</td>
             <td>Beta β</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/beta.png" alt="beta">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/beta.png" alt="Beta">
             </td>
           </tr>
           <tr>
             <td>Littéraire</td>
             <td>Phi φ</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/phi.png" alt="phi">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/phi.png" alt="Phi">
             </td>
           </tr>
           <tr>
             <td>Scientifique</td>
             <td>Epsilon ε</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/epsilon.png" alt="epsilon">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/epsilon.png" alt="Epsilon">
             </td>
           </tr>
           <tr>
@@ -595,7 +603,7 @@
             <td>General</td>
             <td>Gamma γ</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/gamma.png" alt="gamma">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/gamma.png" alt="Gamma">
             </td>
           </tr>
           <tr>
@@ -626,7 +634,7 @@
             <td>Scientifique spé SVT</td>
             <td>Phi Epsilon φε</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/phi_epsilon.png" alt="phi_epsilon">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/phi_epsilon.png" alt="Phi Epsilon">
             </td>
           </tr>
         </tbody>
@@ -649,14 +657,14 @@
             <td>Lettres AS</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" width="100" height="100" src="/images/insigne/lettres_as.png"
-                alt="lettres as">
+                alt="Lettres AS">
             </td>
           </tr>
           <tr>
             <td>Dentaire</td>
             <td>Molaire</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/molaire.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/molaire.png" alt="Molaire">
             </td>
           </tr>
           <tr>
@@ -664,7 +672,7 @@
             <td>Caducée infirmier</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/caducee_infirmier.png"
-                alt="caducee_infirmier">
+                alt="Caducée Infirmier">
             </td>
           </tr>
           <tr>
@@ -672,7 +680,7 @@
             <td>Caducée mercure</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/caducee_mercure.png"
-                alt="caducee_mercure">
+                alt="Caducée Mercure">
             </td>
           </tr>
           <tr>
@@ -680,14 +688,14 @@
             <td>Caducée Médecine</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/caducee_medecine.png"
-                alt="caducee_medecine">
+                alt="Caducée médecine">
             </td>
           </tr>
           <tr>
             <td>Ostéopathie</td>
             <td>Sphénoide</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/sphenoide.png" alt="sphenoide">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/sphenoide.png" alt="Sphénoide">
             </td>
           </tr>
           <tr>
@@ -695,14 +703,14 @@
             <td>Tête de mort sur fémurs croisés</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/tete_de_mort_sur_femurs_croises.png"
-                alt="tete_de_mort_sur_femurs_croises">
+                alt="Tête de mort du fémurs croisés">
             </td>
           </tr>
           <tr>
             <td>Paramédical (sauf Kiné et Inf)</td>
             <td>Ciseaux</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/ciseaux.png" alt="ciseaux">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/ciseaux.png" alt="Ciseaux">
             </td>
           </tr>
           <tr>
@@ -710,14 +718,14 @@
             <td>Caducée Pharmacie</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/caducee_pharma.png"
-                alt="caducee_pharma">
+                alt="Caducée Pharmacie">
             </td>
           </tr>
           <tr>
             <td>Sage-Femme</td>
             <td>Croix d'Ankh</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/croix_dankh.png" alt="croix_dankh">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/croix_dankh.png" alt="Croix d'Ankh">
             </td>
           </tr>
           <tr>
@@ -725,29 +733,29 @@
             <td>Tête de cheval</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/tete_de_cheval.png"
-                alt="tete_de_cheval">
+                alt="Tête de cheval">
             </td>
           </tr>
           <tr>
             <td>AES</td>
             <td>Lettres AES</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_aes.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_aes.png" alt="Lettre AES">
             </td>
           </tr>
           <tr>
             <td>Arts</td>
-            <td>Palette vernie</td>
+            <td>Palette & Pinceau</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/palette_vernie.png"
-                alt="tete_de_cheval">
+                alt="Palette et Pinceau">
             </td>
           </tr>
           <tr>
             <td>Arts numériques</td>
             <td>Symboles @</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/arobase.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/arobase.png" alt="@">
             </td>
           </tr>
           <tr>
@@ -755,15 +763,15 @@
             <td>Tête de sphinx</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/tete_de_sphinx.png"
-                alt="tete_de_cheval">
+                alt="Tête de sphinx">
             </td>
           </tr>
           <tr>
             <td>Architecture</td>
-            <td>Tête de sphinx</td>
+            <td>Equerre et compas</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/equerre_et_compas.png"
-                alt="tete_de_cheval">
+                alt="Equerre et compas">
             </td>
           </tr>
           <tr>
@@ -773,7 +781,6 @@
               <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_bts.png" alt="tete_de_cheval">
             </td>
           </tr>
-          <!--todo prépa satin-->
           <tr>
             <td>Cinéma</td>
             <td>Clap de cinéma</td>
@@ -783,11 +790,19 @@
             </td>
           </tr>
           <tr>
+            <td>Classes préparatoires (non santé)</td>
+            <td>Chouette bicéphale</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/chouette_bicephale.png"
+                alt="Chouette bicéphale">
+            </td>
+          </tr>
+          <tr>
             <td>Commerce</td>
-            <td>Caducée mercure</td>
+            <td>Caducée Mercure</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/caducee_mercure.png"
-                alt="tete_de_cheval">
+                alt="Caducée Mercure">
             </td>
           </tr>
           <tr>
@@ -795,7 +810,7 @@
             <td>Caducée mercure</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/caducee_mercure.png"
-                alt="tete_de_cheval">
+                alt="Caducée Mercure">
             </td>
           </tr>
           <tr>
@@ -803,14 +818,15 @@
             <td>Glaive et balance</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/glaive_et_balance.png"
-                alt="tete_de_cheval">
+                alt="Glaive et balance">
             </td>
           </tr>
           <tr>
-            <td>INSPE (ex ESPE, ex IUFM)</td>
-            <td>Lettres INSPE</td>
+            <td>MEEF (INSPE, ex ESPE, ex IUFM)</td>
+            <td>Lettres MEEF</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_inspe.png" alt="tete_de_cheval">
+              <!--todo remplacer l'image-->
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_inspe.png" alt="Lettres MEEF">
             </td>
           </tr>
           <tr>
@@ -818,7 +834,7 @@
             <td>Globe terrestre</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/globe_terrestre.png"
-                alt="tete_de_cheval">
+                alt="Globe terrestre">
             </td>
           </tr>
           <tr>
@@ -826,7 +842,7 @@
             <td>Casque de péricles</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/casque_pericles.png"
-                alt="tete_de_cheval">
+                alt="Casque de péricles">
             </td>
           </tr>
           <tr>
@@ -834,14 +850,14 @@
             <td>Etoile et foudre</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/etoile_et_foudre.png"
-                alt="tete_de_cheval">
+                alt="Etoile et foudre">
             </td>
           </tr>
           <tr>
             <td>IUT</td>
             <td>Lettres IUT</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_iut.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_iut.png" alt="Lettres IUT">
             </td>
           </tr>
           <tr>
@@ -849,7 +865,7 @@
             <td>Livre ouvert et plume + initiale de la discipline</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/livre_ouvert_et_plume.png"
-                alt="tete_de_cheval">
+                alt="Livre ouvert et plume">
             </td>
           </tr>
           <tr>
@@ -857,14 +873,14 @@
             <td>Livre ouvert et plume</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/livre_ouvert_et_plume.png"
-                alt="tete_de_cheval">
+                alt="Livre ouvert et plume">
             </td>
           </tr>
           <tr>
             <td>Musicologie</td>
             <td>Lyre</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/lyre.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lyre.png" alt="Lyre">
             </td>
           </tr>
           <tr>
@@ -872,7 +888,7 @@
             <td>Glaive et balance</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/glaive_et_balance.png"
-                alt="tete_de_cheval">
+                alt="Glaive et balance">
             </td>
           </tr>
           <tr>
@@ -880,21 +896,21 @@
             <td>Grappe de raisin</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/grappe_de_raisin.png"
-                alt="tete_de_cheval">
+                alt="Grappe de raisin">
             </td>
           </tr>
           <tr>
             <td>Philosophie</td>
             <td>Phi</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/phi.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/phi.png" alt="Lettre Phi">
             </td>
           </tr>
           <tr>
             <td>Psycholohgie</td>
             <td>Psi</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/psi.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/psi.png" alt="Lettre Psi">
             </td>
           </tr>
           <tr>
@@ -902,15 +918,15 @@
             <td>Palme croisée de chêne et laurier</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/palme_sciences.png"
-                alt="tete_de_cheval">
+                alt="Palme croisée de chêne et laurier">
             </td>
           </tr>
           <tr>
             <td>Science économiques, Gesiton, IAE</td>
-            <td>Caducée mercure</td>
+            <td>Caducée Mercure</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/caducee_mercure.png"
-                alt="tete_de_cheval">
+                alt="Caducée Mercure">
             </td>
           </tr>
           <tr>
@@ -918,7 +934,7 @@
             <td>Palme fermé horizontal</td>
             <td data-fal-insigne>
               <!-- todo changer image-->
-              <img loading='lazy' width="100" height="100" src="/images/insigne/parapluie.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/parapluie.png" alt="Parapluie">
             </td>
           </tr>
           <tr>
@@ -926,14 +942,14 @@
             <td>Grenouille</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/grenouille_doree.png"
-                alt="tete_de_cheval">
+                alt="Grenouille">
             </td>
           </tr>
           <tr>
             <td>STAPS</td>
             <td>Coq</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/coq.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/coq.png" alt="Coq">
             </td>
           </tr>
           <tr>
@@ -941,14 +957,14 @@
             <td>Masque de comédie</td>
             <td data-fal-insigne>
               <img loading='lazy' width="100" height="100" src="/images/insigne/masques_de_comedie.png"
-                alt="tete_de_cheval">
+                alt="Masque de comédie">
             </td>
           </tr>
           <tr>
             <td>Théologie</td>
             <td>Insigne de la religion étudiée</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/theology.png" alt="tete_de_cheval">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/theology.png" alt="Théologie">
             </td>
           </tr>
           <!--todo théologie-->
@@ -959,21 +975,22 @@
           </tr>
           <tr>
             <td>Kiné</td>
-            <td>Ciseaux + caducée mercure</td>
+            <td>Ciseaux + Caducée Mercure</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/ciseaux_et_caducee_mercure.png" alt="ciseaux_et_caducee_mercure">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/ciseaux_et_caducee_mercure.png"
+                alt="Ciseaux et Caducée Mercure">
             </td>
           </tr>
           <tr>
             <td>Science de l'éducation</td>
             <td>Lettres SDE</td>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_sde.png" alt="lettres_sde">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lettres_sde.png" alt="Lettres SDE">
             </td>
           </tr>
         </tbody>
       </table>
-      
+
       <ul>
         <li>Les étoiles et palmes</li>
       </ul>
@@ -987,14 +1004,14 @@
         <tbody class="table-group-divider">
           <tr>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/etoile_doree.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/etoile_doree.png" alt="Etoile dorée">
             </td>
             <td>Etoile dorée</td>
             <td>Année débutée</td>
           </tr>
           <tr>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/etoile_argentee.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/etoile_argentee.png" alt="Etoile argentée">
             </td>
             <td>Etoile argentée</td>
             <td>Année redoublée</td>
@@ -1006,23 +1023,25 @@
           </tr>
           <tr>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/drapeaux.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/drapeaux.png" alt="Drapeaux">
             </td>
             <td colspan="2">
-              Un <strong>drapeau du pays</strong> sera placé sous l'étoile de l'année d'étude si elle se déroule à l'étranger
+              Un <strong>drapeau du pays</strong> sera placé sous l'étoile de l'année d'étude si elle se déroule à
+              l'étranger
             </td>
           </tr>
           <tr>
             <td data-fal-insigne="mini">
-              <img loading='lazy' width="100" height="100" src="/images/insigne/lettre_e.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lettre_e.png" alt="Lettre E">
             </td>
             <td colspan="2">
-              Les années validées par équivalence seront marquées par une <strong>petite lettre "E"</strong> remplaçant l'étoile
+              Les années validées par équivalence seront marquées par une <strong>petite lettre "E"</strong> remplaçant
+              l'étoile
             </td>
           </tr>
           <tr>
             <td data-fal-insigne="mini">
-              <img loading='lazy' width="100" height="100" src="/images/insigne/lettre_a.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lettre_a.png" alt="Lettre A">
             </td>
             <td colspan="2">
               Les années passées en alternance seront marquées par une <strong>petite lettre "A"</strong> sous l'étoile
@@ -1030,11 +1049,11 @@
           </tr>
           <tr>
             <td data-fal-insigne="moivre">
-              <img loading='lazy' width="100" height="100" src="/images/insigne/moivre.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/moivre.png" alt="Moivre bleu">
             </td>
             <td colspan="2">
               La première étoile sera placée sur un <strong> petit ruban disposé
-              de biais</strong>, de couleur <strong>bleue</strong> pour les facultés ou
+                de biais</strong>, de couleur <strong>bleue</strong> pour les facultés ou
               établissements d'État, <strong>blanche</strong> pour les facultés catholiques,
               écoles ou instituts privés. En cas de changement
               d'établissement du public vers le privé ou inversement, on
@@ -1043,53 +1062,49 @@
           </tr>
           <tr>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/large_palme.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/large_palme.png" alt="Large palme">
             </td>
             <td>Large palme (à coté de l'étoile de l'année)</td>
             <td>Major de promotion</td>
           </tr>
           <tr>
             <td data-fal-insigne="mini">
-              <img loading='lazy' width="50" height="50" src="/images/insigne/simple_palme.png" alt="molaire">
+              <img loading='lazy' width="50" height="50" src="/images/insigne/simple_palme.png" alt="Simple palme">
             </td>
             <td>Simple palme (à coté de l'étoile de l'année)</td>
             <td>Fin de cycle (s'il n'y a pas de diplomes correspondant)</td>
           </tr>
           <tr>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/tete_de_vache.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/tete_de_vache.png" alt="Tête de vache">
             </td>
             <td>Tête de vache</td>
             <td>Année obtenue aux rattrapages</td>
           </tr>
           <tr>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/tete_de_mort.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/tete_de_mort.png" alt="Tête de mort">
             </td>
             <td>Tête de mort</td>
             <td>Abandon de fillière</td>
           </tr>
           <tr>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/double_palme.png" alt="molaire">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/double_palme.png" alt="Double palmes">
             </td>
             <td>Double palmes</td>
             <td>Dipolme obtenu</td>
           </tr>
           <tr>
             <td data-fal-insigne>
-              <img loading='lazy' width="100" height="100" src="/images/insigne/petit_zero.png" alt="0">
+              <img loading='lazy' width="100" height="100" src="/images/insigne/petit_zero.png" alt="Chiffre 0">
             </td>
             <td colspan="2">
               Une année sabbatique sera sanctionnée par un <strong>petit chiffre "0"</strong>.
             </td>
           </tr>
-          
         </tbody>
       </table>
-
-
-
     </div>
 
     <div data-fal-article="8">
@@ -1109,105 +1124,270 @@
         </li>
         <li>
           Votre devise:
-          <div>En grec, en latin, en français, en hébreu, en langue régionale, en patois, elle s'inscrit en toutes lettres
+          <div>En grec, en latin, en français, en hébreu, en langue régionale, en patois, elle s'inscrit en toutes
+            lettres
             dans la langue correspondante, sur le velours du frontal à l'occipital à la gauche du ruban de province
             natale.</div>
         </li>
         <li>Vos armes personnelles</li>
         <li>Les symboles:</li>
       </ul>
-        <table class="table table-striped align-middle" data-fal-table="insigne">
-          <thead>
-            <tr>
-              <th>Symbole</th>
-              <th>Description</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <td>Abeille</td>
-              <td>Cursus parfait (fin du circulaire)</td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/abeille.png" alt="abeille">
-              </td>
-            </tr>
-            <tr>
-              <td>Aigle</td>
-              <td>Amour de l'aviation</td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/aigle.png" alt="aigle">
-              </td>
-            </tr>
-            <tr>
-              <td>Ancre</td>
-              <td>Amour de la mer</td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/ancre.png" alt="abeille">
-              </td>
-            </tr>
-            <tr>
-              <td>Cornue et ballon</td>
-              <td>Travail en laboratoire</td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/ballon_et_cornu.png" alt="abeille">
-              </td>
-            </tr>
-            <tr>
-              <td>Chameau</td>
-              <td>
-                <div>A l'endroit: célibataire</div>
-                <div>A l'envers: en couple</div>
-              </td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/chameau.png" alt="chameau">
-              </td>
-            </tr>
-            <tr>
-              <td>Ciseaux</td>
-              <td>
-                <div>A cousu sa faluche</div>
-                <div>(année de couture en indice, nombre de faluches cousu en exposant)</div>
-              </td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/ciseaux.png" alt="ciseaux">
-              </td>
-            </tr>
-            <tr>
-              <td>Cochon</td>
-              <td>
-                <div>A l'endroit: n'a été intégré(e)</div>
-                <div>A l'envers: a été intégré(e)</div>
-              </td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/cochon.png" alt="cochon">
-              </td>
-            </tr>
-            <tr>
-              <td>Cocotte en papier</td>
-              <td>Sécheur de cours</td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/cocotte_en_papier.png" alt="cochon">
-              </td>
-            </tr>
-            <tr>
-              <td>Croissant de lune</td>
-              <td>Grand Chambellan à la retraite</td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/lune.png" alt="cochon">
-              </td>
-            </tr>
-            <tr>
-              <td>Cupidon</td>
-              <td>Fiancé</td>
-              <td data-fal-insigne>
-                <img loading='lazy' width="100" height="100" src="/images/insigne/cupidon.png" alt="cochon">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      
-
+      <table class="table table-striped align-middle" data-fal-table="insigne">
+        <thead>
+          <tr>
+            <th>Insigne</th>
+            <th>Description</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td colspan="3"><h5>Les symboles</h5></td>
+          </tr>
+          <tr>
+            <td>Abeille</td>
+            <td>Cursus parfait (fin du circulaire)</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/abeille.png" alt="Abeille">
+            </td>
+          </tr>
+          <tr>
+            <td>Aigle</td>
+            <td>Amour de l'aviation</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/aigle.png" alt="Aigle">
+            </td>
+          </tr>
+          <tr>
+            <td>Ancre</td>
+            <td>Amour de la mer</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/ancre.png" alt="Ancre">
+            </td>
+          </tr>
+          <tr>
+            <td>Cornue et ballon</td>
+            <td>Travail en laboratoire</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/ballon_et_cornu.png" alt="Cornue et ballon">
+            </td>
+          </tr>
+          <tr>
+            <td>Chameau</td>
+            <td>
+              <div>A l'endroit: célibataire</div>
+              <div>A l'envers: en couple</div>
+            </td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/chameau.png" alt="Chameau">
+            </td>
+          </tr>
+          <tr>
+            <td>Choppe de bière</td>
+            <td>
+              Amour de la bonne bière
+            </td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/chope_de_biere.png" alt="Choppe de bière">
+            </td>
+          </tr>
+          <tr>
+            <td>Ciseaux</td>
+            <td>
+              <div>A cousu sa faluche</div>
+              <div>(année de couture en indice, nombre de faluches cousu en exposant)</div>
+            </td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/ciseaux.png" alt="Ciseaux">
+            </td>
+          </tr>
+          <tr>
+            <td>Cochon</td>
+            <td>
+              <div>A l'endroit: n'a été intégré(e)</div>
+              <div>A l'envers: a été intégré(e)</div>
+            </td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/cochon.png" alt="Cochon">
+            </td>
+          </tr>
+          <tr>
+            <td>Cocotte en papier</td>
+            <td>Sécheur de cours</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/cocotte_en_papier.png" alt="Cocotte en papier">
+            </td>
+          </tr>
+          <tr>
+            <td>Croissant de lune</td>
+            <td>Grand Chambellan à la retraite</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lune.png" alt="Croissant de lune">
+            </td>
+          </tr>
+          <tr>
+            <td>Cupidon</td>
+            <td>Fiancé</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/cupidon.png" alt="Cupidon">
+            </td>
+          </tr>
+          <tr>
+            <td>Epi de blé</td>
+            <td>Radin</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/epi_de_ble.png" alt="Epi de blé">
+            </td>
+          </tr>
+          <tr>
+            <td>Epi de blé croisé faucille</td>
+            <td>Radin</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/epi_de_ble_croise_faucille.png" alt="Epi de blé et faucille">
+            </td>
+          </tr>
+          <tr>
+            <td>Fer à cheval</td>
+            <td>Chanceux</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/fer_a_cheval.png" alt="Fer à cheval">
+            </td>
+          </tr>
+          <tr>
+            <td>Feuille de vigne</td>
+            <td>Perte de virginté (masculine)</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/feuille_de_vigne.png" alt="Feuille de vigne">
+            </td>
+          </tr>
+          <tr>
+            <td>Fourchette</td>
+            <td>Amour des plaisirs de la table</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/fourchette.png" alt="Fourchette">
+            </td>
+          </tr>
+          <tr>
+            <td>Grappe de raisin</td>
+            <td>Amour du bon vin</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/grappe_de_raisin.png" alt="Grappe de raisin">
+            </td>
+          </tr>
+          <tr>
+            <td>Lyre</td>
+            <td>Amour des arts musicaux</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lyre.png" alt="Lyre">
+            </td>
+          </tr>
+          <tr>
+            <td>Masque de comédie</td>
+            <td>Amour des arts de la scène et du cinéma</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lyre.png" alt="Lyre">
+            </td>
+          </tr>
+          <tr>
+            <td>Palette vernie</td>
+            <td>Amour des arts plastiques</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/palette_vernie.png" alt="Palette vernie">
+            </td>
+          </tr>
+          <tr>
+            <td>Pendu</td>
+            <td>Marié(e) ou Pacsé(e)</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/pendu.png" alt="Pendu">
+            </td>
+          </tr>
+          <tr>
+            <td>Plume</td>
+            <td>Amour des arts littéraires</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/plume.png" alt="Plume">
+            </td>
+          </tr>
+          <tr>
+            <td>Rose</td>
+            <td>Perte de virginté (féminine)</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/rose.png" alt="Rose">
+            </td>
+          </tr>
+          <tr>
+            <td>Tête de sphinx</td>
+            <td>Polyglotte</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/tete_de_sphinx.png" alt="Tête de sphinx">
+            </td>
+          </tr>
+          <tr>
+            <td>Squelette</td>
+            <td>
+              <div>À l'envers : Amour de l’anatomie du sexe opposé</div>
+              <div>À l’envers + pointe de diamant : Amour de l'anatomie du même sexe</div>
+              <div>À l’endroit : Amour de l’anatomie</div>
+            </td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/squelette.png" alt="Squelette">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <h5>Les insignes décernés par le/la partenaire</h5>
+            </td>
+          </tr>
+          <tr>
+            <td>Epee</td>
+            <td>Fin Baiseur</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/epee.png" alt="Epée">
+            </td>
+          </tr>
+          <tr>
+            <td>Flèche</td>
+            <td>Ejaculateur précoce</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/fleche.png" alt="Flèche">
+            </td>
+          </tr>
+          <tr>
+            <td>Lime</td>
+            <td>Acte laborieux et difficile</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/lime.png" alt="Lime">
+            </td>
+          </tr>
+          <tr>
+            <td>Pensée</td>
+            <td>Fine baiseuse</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/pensee.png" alt="Pensée">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <h5>Les insignes décernés par un Grand-Maître</h5>
+            </td>
+          </tr>
+          <tr>
+            <td>Anneaux Olympiques</td>
+            <td>Excellence sportive universitaire</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/anneaux_olympiques.png" alt="Anneaux Olympiques">
+            </td>
+          </tr>
+          <tr>
+            <td>Bacchus</td>
+            <td>Dignité dans l'ivresse (retournable ou retirable si perte de dignité)</td>
+            <td data-fal-insigne>
+              <img loading='lazy' width="100" height="100" src="/images/insigne/bacchus.png" alt="Bacchus">
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -1216,7 +1396,7 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         // small trick to avoid parcel compiling the sw.js file
-        var tmp = './sw.js'
+        let tmp = './sw.js'
         navigator.serviceWorker.register(tmp);
       });
     }
