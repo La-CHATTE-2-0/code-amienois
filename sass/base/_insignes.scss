@@ -2,14 +2,6 @@
     margin-left: auto;
     margin-right: auto;
 
-    [data-fal-insigne] {
-        img {
-            width: auto;
-            height: 50px;
-            max-width: 75px;
-        }
-    }
-
     .table-warning {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -29,4 +21,21 @@
     [data-fal-table='insigne'] {
         width: 100%;
     }
+}
+
+
+[data-fal-insigne] {
+    img {
+        width: auto;
+        height: 50px;
+        max-width: 75px;
+        text-align: center;
+    }
+}
+
+[data-fal-insigne="moivre"] img {
+    border-radius: 5px;
+}
+[data-fal-insigne="mini"] img {
+    height: 30px;
 }

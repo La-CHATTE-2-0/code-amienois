@@ -1,18 +1,11 @@
 [data-fal-table] {
-
     td {
         text-align: left;
-    }
+    }    
+}
 
-    [data-fal-insigne] {
-        text-align: center;
-    }
-
-    [data-fal-insigne="moivre"] img {
-        border-radius: 5px;
-    }
-    [data-fal-insigne="mini"] img {
-        height: 30px;
-    }
-    
+.fal-2-col {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }

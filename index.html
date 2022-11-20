@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <meta name="theme-color" content="#212529" />
-    <meta name="description" content="Code de la Faluche Amienoise" />
-    <title>Code Amienois</title>
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="./images/icons-192.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="stylesheet" href="./sass/styles.scss" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <meta property="og:title" content="Code Amienois" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Code de la faluche Amienoise" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:url" content="https://code-amiens.alanlecart.info/" />
-    <meta property="og:image" content="/images/icons-512.png" />
+  <meta name="theme-color" content="#212529" />
+  <meta name="description" content="Code de la Faluche Amienoise" />
+  <title>Code Amienois</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="./images/icons-192.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="./sass/styles.scss" />
 
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:title" content="Code Amienois">
-    <meta name="twitter:image" content="/images/icons-512.png">
-    <meta property="twitter:description" content="Code de la faluche Amienoise">
+  <meta property="og:title" content="Code Amienois" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Code de la faluche Amienoise" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://code-amiens.alanlecart.info/" />
+  <meta property="og:image" content="/images/icons-512.png" />
+
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="Code Amienois">
+  <meta name="twitter:image" content="/images/icons-512.png">
+  <meta property="twitter:description" content="Code de la faluche Amienoise">
 
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Code de la Faluche</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/speamiens.html">Récapitulatif des spés</a>
-            </li>
-            <!--
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Code de la Faluche</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/speamiens.html">Récapitulatif des spés</a>
+          </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
           </li>
@@ -67,2453 +55,1814 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
           -->
-          </ul>
-          <div class="form-check form-switch" style="margin-right: 10px">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="darkmode"
-            />
-            <label class="form-check-label" for="darkmode">Darkmode</label>
-          </div>
-          <div class="d-flex">
-            <input
-              id="search-input"
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              id="search-submit"
-              class="btn btn-outline-success disabled"
-              type="submit"
-            >
-              Search
-            </button>
-          </div>
+        </ul>
+        <div class="form-check form-switch" style="margin-right: 10px">
+          <input class="form-check-input" type="checkbox" role="switch" id="darkmode" />
+          <label class="form-check-label" for="darkmode">Darkmode</label>
+        </div>
+        <div class="d-flex">
+          <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button id="search-submit" class="btn btn-outline-success disabled" type="submit">
+            Search
+          </button>
         </div>
       </div>
-    </nav>
-    <div class="fal-container">
-      <div data-fal-article="1">
-        <h2>Article 1 :</h2>
-        <p>
-          La Faluche est une tradition des étudiants de France, elle se veut
-          être le folklore le plus représentatif de ceux-ci. Son appartenance
-          est symbolisée par le port du béret homonyme créé par et pour eux.
-        </p>
-        <p>
-          L’idée d’instaurer une coiffe est née au retour d’un voyage effectué
-          par une délégation d’étudiants français aux Fêtes du Huitième
-          Centenaire de l’Université de Bologne au mois de juin 1888.
-        </p>
-        <p>
-          Le béret a été créé à l’initiative de l’Association Générale des
-          étudiants de Paris et officialisé par elle, le 20 décembre 1888 au
-          Théâtre Beaumarchais à Paris.
-        </p>
-      </div>
-      <div data-fal-article="2">
-        <h2>Article 2 :</h2>
-        <p>
-          La Faluche est portée de nos jours dans certaines facultés et écoles,
-          d’une manière habituelle ou à titre exceptionnel, lors de
-          manifestations estudiantines. On ne l’enlève pas, même devant un
-          professeur, sauf s’il a le rang de recteur. Elle ne se réclame
-          d’aucune appartenance politique, religieuse ou syndicale.
-        </p>
-      </div>
-      <div data-fal-article="3">
-        <h2>Article 3:</h2>
-        <p>
-          Escholier, il est interdit de faire de la Faluche une succursale de
-          Monoprix. Elle doit être le parchemin qui s’enorgueillit toujours de
-          nouvelles richesses de l’histoire de l’étudiant. A ce titre le Grand
-          Maître (peu importe lequel) peut décider de faire enlever un insigne
-          qu’il juge non représentatif de l’étudiant.
-        </p>
-      </div>
-      <div data-fal-article="4">
-        <h2>Article 4:</h2>
-        <p>
-          L’étudiant doit se conformer à ces dispositions assez larges pour
-          permettre toute fantaisie, assez strictes pour réaliser l’uniformité.
-        </p>
-      </div>
-      <div data-fal-article="5">
-        <h2>Article 5:</h2>
-        <p>La Faluche comporte deux parties :</p>
-        <ol>
-          <li>
-            Le <strong>ruban circulaire</strong> avec ses emblèmes (cursus
-            estudiantin).
-          </li>
-          <li>Le <strong>velours noir</strong> avec ses rubans et insignes.</li>
-        </ol>
-      </div>
-      <div data-fal-article="6">
-        <h2>Article 6:</h2>
-        <p>
-          Le ruban circulaire est à la couleur de la discipline principale. Pour
-          les disciplines secondaires (double cursus), on placera, sur le bord
-          supérieur du ruban de la discipline principale, un ruban plus mince
-          aux couleurs de cette (ou ces) discipline(s) annexe(s).
-        </p>
-        <p>
-          Voici les couleurs nationalement adoptées, basées à l’origine sur
-          celles des toges doctorales et professorales des universités
-          Françaises :
-        </p>
+    </div>
+  </nav>
+  <div class="fal-container">
+    <div data-fal-article="1">
+      <h2>Article 1 :</h2>
+      <p>
+        La Faluche est une tradition des étudiants de France, elle se veut
+        être le folklore le plus représentatif de ceux-ci. Son appartenance
+        est symbolisée par le port du béret homonyme créé par et pour eux.
+      </p>
+      <p>
+        L’idée d’instaurer une coiffe est née au retour d’un voyage effectué
+        par une délégation d’étudiants français aux Fêtes du Huitième
+        Centenaire de l’Université de Bologne au mois de juin 1888.
+      </p>
+      <p>
+        Le béret a été créé à l’initiative de l’Association Générale des
+        étudiants de Paris et officialisé par elle, le 20 décembre 1888 au
+        Théâtre Beaumarchais à Paris.
+      </p>
+    </div>
+    <div data-fal-article="2">
+      <h2>Article 2 :</h2>
+      <p>
+        La Faluche est portée de nos jours dans certaines facultés et écoles,
+        d’une manière habituelle ou à titre exceptionnel, lors de
+        manifestations estudiantines. On ne l’enlève pas, même devant un
+        professeur, sauf s’il a le rang de recteur. Elle ne se réclame
+        d’aucune appartenance politique, religieuse ou syndicale.
+      </p>
+    </div>
+    <div data-fal-article="3">
+      <h2>Article 3:</h2>
+      <p>
+        Escholier, il est interdit de faire de la Faluche une succursale de
+        Monoprix. Elle doit être le parchemin qui s’enorgueillit toujours de
+        nouvelles richesses de l’histoire de l’étudiant. A ce titre le Grand
+        Maître (peu importe lequel) peut décider de faire enlever un insigne
+        qu’il juge non représentatif de l’étudiant.
+      </p>
+    </div>
+    <div data-fal-article="4">
+      <h2>Article 4:</h2>
+      <p>
+        L’étudiant doit se conformer à ces dispositions assez larges pour
+        permettre toute fantaisie, assez strictes pour réaliser l’uniformité.
+      </p>
+    </div>
+    <div data-fal-article="5">
+      <h2>Article 5:</h2>
+      <p>La Faluche comporte deux parties :</p>
+      <ol>
+        <li>
+          Le <strong>ruban circulaire</strong> avec ses emblèmes (cursus
+          estudiantin).
+        </li>
+        <li>Le <strong>velours noir</strong> avec ses rubans et insignes.</li>
+      </ol>
+    </div>
+    <div data-fal-article="6">
+      <h2>Article 6:</h2>
+      <p>
+        Le ruban circulaire est à la couleur de la discipline principale. Pour
+        les disciplines secondaires (double cursus), on placera, sur le bord
+        supérieur du ruban de la discipline principale, un ruban plus mince
+        aux couleurs de cette (ou ces) discipline(s) annexe(s).
+      </p>
+      <p>
+        Voici les couleurs nationalement adoptées, basées à l’origine sur
+        celles des toges doctorales et professorales des universités
+        Françaises :
+      </p>
 
-        <table class="table table-striped align-middle" data-fal-table="circu">
-          <thead>
-            <tr>
-              <th>Discipline</th>
-              <th colspan="2">Circulaire</th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <td data-filliere>Classes préparatoires (santé)</td>
-              <td data-matiere>Velours marron</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="marron">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Dentaire</td>
-              <td data-matiere>Velours violet</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="violet">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Medecine</td>
-              <td data-matiere>Velours rouge</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="rouge">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Ostéopathie</td>
-              <td data-matiere>Velours bleu</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="bleuroy">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Paramedical</td>
-              <td data-matiere>Velours rose</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="rose">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Pharmacie</td>
-              <td data-matiere>Velours vert</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="vertfonce">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Safe-Femme</td>
-              <td data-matiere>Velours fushia</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="fuschia">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Vétérinaire</td>
-              <td data-matiere>Velours bordeaux</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="bordeaux">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>A.E.S</td>
-              <td>Satin vert clair</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="vertclair">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Arts</td>
-              <td>Satin bleu roy</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="bleuroy">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Archéologie</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Architecture</td>
-              <td>Satin bleu roy</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="bleuroy">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>BTS</td>
-              <td>Satin blanc</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="blanc">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Classes préparatoires</td>
-              <td data-matiere>Satin marron</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="marron">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cinéma</td>
-              <td>Satin bleu roy</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="bleuroy">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Commerce</td>
-              <td>Satin rouge et vert</td>
-              <td>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="rouge"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="vert"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Communication, Journalisme</td>
-              <td colspan="2">Satin aux couleurs de l'UFR de rattachement</td>
-            </tr>
-            <tr>
-              <td>Droit</td>
-              <td>Satin rouge</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="rouge">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>MEEF</td>
-              <td>
-                <p>1er dégré: Satin gris</p>
-                <p>
-                  2nd dégré: Satin aux couleurs de la discipline étudiée (ex:
-                  Physique-Chimie = Violet)
-                </p>
-              </td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="gris">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Geographie</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Histoire</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Ingénieur</td>
-              <td>Satin bleu roy et noir</td>
-              <td>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="bleuroy"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="noir"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>IUT</td>
-              <td>Satin blanc</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="blanc">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Langues</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Lettres</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Musicologie</td>
-              <td>Satin argenté</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="argente">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Notariat</td>
-              <td>Satin rouge et noir</td>
-              <td>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="rouge"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="noir"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Oenologie</td>
-              <td>Satin saumon</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="saumon">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Philosophie</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Psycholohgie</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Sciences</td>
-              <td>Satin violet</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="violet">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Sciences économique, Gestion, IAE</td>
-              <td>Satin orange</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="orange">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Sciences politiques</td>
-              <td>Satin rouge et bleu</td>
-              <td>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="rouge"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="bleu"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Sociologie</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>STAPS</td>
-              <td>Satin vert foncé</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="vert">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Thanatologie</td>
-              <td colspan="2">
-                Satin blanc (sauf si école avec concours: velours blanc
-              </td>
-            </tr>
-            <tr>
-              <td>Théologie</td>
-              <td>Satin blanc et rouge</td>
-              <td>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="blanc"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="rouge"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <h3 class="table-warning">⚠️ Spécifités Amiénoises</h3>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Assistante sociale</td>
-              <td data-matiere>Velours jaune</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Medecine</td>
-              <td data-matiere>Velours bordeaux</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="bordeaux">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-filliere>Sage-Femme</td>
-              <td data-matiere>Velours fiolet</td>
-              <td data-matiere-img>
-                <div data-fal-circu-container data-fal-circu-color="fiolet">
-                  <div data-fal-circu="velours"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Art</td>
-              <td>Satin jaune et bleu roy</td>
-              <td>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="jaune"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="bleuroy"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cinéma</td>
-              <td>Satin blanc et noir</td>
-              <td>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="blanc"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-                <div
-                  data-fal-circu-container="demi"
-                  data-fal-circu-color="noir"
-                >
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span>
-                  Communication, Journalisme <br />(rattaché à l'UFR des
-                  lettres)
-                </span>
-              </td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>IUT (sauf GMP)</td>
-              <td>Satin rose</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="rose">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Science de l'éducation</td>
-              <td>Satin jaune</td>
-              <td>
-                <div data-fal-circu-container data-fal-circu-color="jaune">
-                  <div data-fal-circu="satin"></div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <table class="table table-striped align-middle" data-fal-table="circu">
+        <thead>
+          <tr>
+            <th>Discipline</th>
+            <th colspan="2">Circulaire</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td data-filliere>Classes préparatoires (santé)</td>
+            <td data-matiere>Velours marron</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="marron">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Dentaire</td>
+            <td data-matiere>Velours violet</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="violet">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Medecine</td>
+            <td data-matiere>Velours rouge</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="rouge">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Ostéopathie</td>
+            <td data-matiere>Velours bleu</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="bleuroy">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Paramedical</td>
+            <td data-matiere>Velours rose</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="rose">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Pharmacie</td>
+            <td data-matiere>Velours vert</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="vertfonce">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Safe-Femme</td>
+            <td data-matiere>Velours fushia</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="fuschia">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Vétérinaire</td>
+            <td data-matiere>Velours bordeaux</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="bordeaux">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>A.E.S</td>
+            <td>Satin vert clair</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="vertclair">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Arts</td>
+            <td>Satin bleu roy</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="bleuroy">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Archéologie</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Architecture</td>
+            <td>Satin bleu roy</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="bleuroy">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>BTS</td>
+            <td>Satin blanc</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="blanc">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Classes préparatoires</td>
+            <td data-matiere>Satin marron</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="marron">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Cinéma</td>
+            <td>Satin bleu roy</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="bleuroy">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Commerce</td>
+            <td>Satin rouge et vert</td>
+            <td>
+              <div data-fal-circu-container="demi" data-fal-circu-color="rouge">
+                <div data-fal-circu="satin"></div>
+              </div>
+              <div data-fal-circu-container="demi" data-fal-circu-color="vert">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Communication, Journalisme</td>
+            <td colspan="2">Satin aux couleurs de l'UFR de rattachement</td>
+          </tr>
+          <tr>
+            <td>Droit</td>
+            <td>Satin rouge</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="rouge">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>MEEF</td>
+            <td>
+              <p>1er dégré: Satin gris</p>
+              <p>
+                2nd dégré: Satin aux couleurs de la discipline étudiée (ex:
+                Physique-Chimie = Violet)
+              </p>
+            </td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="gris">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Geographie</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Histoire</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Ingénieur</td>
+            <td>Satin bleu roy et noir</td>
+            <td>
+              <div data-fal-circu-container="demi" data-fal-circu-color="bleuroy">
+                <div data-fal-circu="satin"></div>
+              </div>
+              <div data-fal-circu-container="demi" data-fal-circu-color="noir">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>IUT</td>
+            <td>Satin blanc</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="blanc">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Langues</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Lettres</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Musicologie</td>
+            <td>Satin argenté</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="argente">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Notariat</td>
+            <td>Satin rouge et noir</td>
+            <td>
+              <div data-fal-circu-container="demi" data-fal-circu-color="rouge">
+                <div data-fal-circu="satin"></div>
+              </div>
+              <div data-fal-circu-container="demi" data-fal-circu-color="noir">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Oenologie</td>
+            <td>Satin saumon</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="saumon">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Philosophie</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Psycholohgie</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Sciences</td>
+            <td>Satin violet</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="violet">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Sciences économique, Gestion, IAE</td>
+            <td>Satin orange</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="orange">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Sciences politiques</td>
+            <td>Satin rouge et bleu</td>
+            <td>
+              <div data-fal-circu-container="demi" data-fal-circu-color="rouge">
+                <div data-fal-circu="satin"></div>
+              </div>
+              <div data-fal-circu-container="demi" data-fal-circu-color="bleu">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Sociologie</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>STAPS</td>
+            <td>Satin vert foncé</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="vert">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Thanatologie</td>
+            <td colspan="2">
+              Satin blanc (sauf si école avec concours: velours blanc
+            </td>
+          </tr>
+          <tr>
+            <td>Théologie</td>
+            <td>Satin blanc et rouge</td>
+            <td>
+              <div data-fal-circu-container="demi" data-fal-circu-color="blanc">
+                <div data-fal-circu="satin"></div>
+              </div>
+              <div data-fal-circu-container="demi" data-fal-circu-color="rouge">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <h3 class="table-warning">⚠️ Spécifités Amiénoises</h3>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Assistante sociale</td>
+            <td data-matiere>Velours jaune</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Medecine</td>
+            <td data-matiere>Velours bordeaux</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="bordeaux">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-filliere>Sage-Femme</td>
+            <td data-matiere>Velours fiolet</td>
+            <td data-matiere-img>
+              <div data-fal-circu-container data-fal-circu-color="fiolet">
+                <div data-fal-circu="velours"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Art</td>
+            <td>Satin jaune et bleu roy</td>
+            <td>
+              <div data-fal-circu-container="demi" data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+              <div data-fal-circu-container="demi" data-fal-circu-color="bleuroy">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Cinéma</td>
+            <td>Satin blanc et noir</td>
+            <td>
+              <div data-fal-circu-container="demi" data-fal-circu-color="blanc">
+                <div data-fal-circu="satin"></div>
+              </div>
+              <div data-fal-circu-container="demi" data-fal-circu-color="noir">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Communication, Journalisme <br />(rattaché à l'UFR des
+                lettres)
+              </span>
+            </td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>IUT (sauf GMP)</td>
+            <td>Satin rose</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="rose">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Science de l'éducation</td>
+            <td>Satin jaune</td>
+            <td>
+              <div data-fal-circu-container data-fal-circu-color="jaune">
+                <div data-fal-circu="satin"></div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div data-fal-article="7">
+      <h2>Article 7:</h2>
+      <p>Sur le ruban circulaire doivent figurer :</p>
+      <ul>
+        <li>Les initiales</li>
+        <li>Le baccalauréat:</li>
+      </ul>
+      <table class="table table-striped align-middle" data-fal-table="insigne">
+        <thead>
+          <tr>
+            <th>Baccalauréat</th>
+            <th>Insigne</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td colspan="3">Anciens baccalauréats</td>
+          </tr>
+          <tr>
+            <td>Economique et Social</td>
+            <td>Beta β</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/beta.png" alt="Beta" />
+            </td>
+          </tr>
+          <tr>
+            <td>Littéraire</td>
+            <td>Phi φ</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/phi.png" alt="Phi" />
+            </td>
+          </tr>
+          <tr>
+            <td>Scientifique</td>
+            <td>Epsilon ε</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/epsilon.png" alt="Epsilon" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">Nouveaux baccalauréats</td>
+          </tr>
+          <tr>
+            <td>General</td>
+            <td>Gamma γ</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/gamma.png" alt="Gamma" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">Autre</td>
+          </tr>
+          <tr>
+            <td>DAEU (Diplome accès aux études universitaires</td>
+            <td>Lettre DAEU</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_daeu.png" alt="Gamma" />
+            </td>
+          </tr>
+          <tr>
+            <td>Capacitaire</td>
+            <td>Lettre "C" après le bac</td>
+            <td data-fal-insigne="mini">
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettre_c.png" alt="Lettre C" />
+            </td>
+          </tr>
+          <tr>
+            <td>International</td>
+            <td>Lettre "I" après le bac</td>
+            <td data-fal-insigne="mini">
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettre_i.png" alt="Lettre I" />
+            </td>
+          </tr>
+          <tr>
+            <td>Autres bacs</td>
+            <td>Initiale du bac (ex: STMG, STI2D, ..;)</td>
+            <td data-fal-insigne="mini">
+              <img loading="lazy" width="100" height="100" src="/images/insigne/initiales_bacs.png" alt="Bacs" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <h3 class="table-warning">⚠️ Spécifité Amiénoise</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>Scientifique spé SVT</td>
+            <td>Phi Epsilon φε</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/phi_epsilon.png" alt="Phi Epsilon" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ul>
+        <li>L'emblème de la discipline</li>
+      </ul>
+      <table class="table table-striped align-middle" data-fal-table="insigne">
+        <thead>
+          <tr>
+            <th>Discipline</th>
+            <th>Insigne</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td>Assistante Sociale</td>
+            <td>Lettres AS</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_as.png" alt="Lettres AS" />
+            </td>
+          </tr>
+          <tr>
+            <td>Dentaire</td>
+            <td>Molaire</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/molaire.png" alt="Molaire" />
+            </td>
+          </tr>
+          <tr>
+            <td>Infirmier</td>
+            <td>Caducée infirmier</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/caducee_infirmier.png"
+                alt="Caducée Infirmier" />
+            </td>
+          </tr>
+          <tr>
+            <td>Kiné</td>
+            <td>Caducée Mercure</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/caducee_mercure.png"
+                alt="Caducée Mercure" />
+            </td>
+          </tr>
+          <tr>
+            <td>Médecine</td>
+            <td>Caducée Médecine</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/caducee_medecine.png"
+                alt="Caducée médecine" />
+            </td>
+          </tr>
+          <tr>
+            <td>Ostéopathie</td>
+            <td>Sphénoide</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/sphenoide.png" alt="Sphénoide" />
+            </td>
+          </tr>
+          <tr>
+            <td>Paces</td>
+            <td>Tête de mort sur fémurs croisés</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/tete_de_mort_sur_femurs_croises.png"
+                alt="Tête de mort du fémurs croisés" />
+            </td>
+          </tr>
+          <tr>
+            <td>Paramédical (sauf Kiné et Inf)</td>
+            <td>Ciseaux</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/ciseaux.png" alt="Ciseaux" />
+            </td>
+          </tr>
+          <tr>
+            <td>Pharmacie</td>
+            <td>Caducée Pharmacie</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/caducee_pharma.png"
+                alt="Caducée Pharmacie" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sage-Femme</td>
+            <td>Croix d'Ankh</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/croix_dankh.png" alt="Croix d'Ankh" />
+            </td>
+          </tr>
+          <tr>
+            <td>Vétérinaire</td>
+            <td>Tête de cheval</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/tete_de_cheval.png"
+                alt="Tête de cheval" />
+            </td>
+          </tr>
+          <tr>
+            <td>AES</td>
+            <td>Lettres AES</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_aes.png" alt="Lettre AES" />
+            </td>
+          </tr>
+          <tr>
+            <td>Arts</td>
+            <td>Palette & Pinceau</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/palette_vernie.png"
+                alt="Palette et Pinceau" />
+            </td>
+          </tr>
+          <tr>
+            <td>Arts numériques</td>
+            <td>Symboles @</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/arobase.png" alt="@" />
+            </td>
+          </tr>
+          <tr>
+            <td>Archéologie</td>
+            <td>Tête de sphinx</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/tete_de_sphinx.png"
+                alt="Tête de sphinx" />
+            </td>
+          </tr>
+          <tr>
+            <td>Architecture</td>
+            <td>Equerre et compas</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/equerre_et_compas.png"
+                alt="Equerre et compas" />
+            </td>
+          </tr>
+          <tr>
+            <td>BTS</td>
+            <td>Lettres BTS</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_bts.png" alt="tete_de_cheval" />
+            </td>
+          </tr>
+          <tr>
+            <td>Cinéma</td>
+            <td>Clap de cinéma</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/clap_de_cinema.png"
+                alt="tete_de_cheval" />
+            </td>
+          </tr>
+          <tr>
+            <td>Classes préparatoires (non santé)</td>
+            <td>Chouette bicéphale</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/chouette_bicephale.png"
+                alt="Chouette bicéphale" />
+            </td>
+          </tr>
+          <tr>
+            <td>Commerce</td>
+            <td>Caducée Mercure</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/caducee_mercure.png"
+                alt="Caducée Mercure" />
+            </td>
+          </tr>
+          <tr>
+            <td>Communication, Journalisme</td>
+            <td>Caducée mercure</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/caducee_mercure.png"
+                alt="Caducée Mercure" />
+            </td>
+          </tr>
+          <tr>
+            <td>Droit</td>
+            <td>Glaive et balance</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/glaive_et_balance.png"
+                alt="Glaive et balance" />
+            </td>
+          </tr>
+          <tr>
+            <td>MEEF (INSPE, ex ESPE, ex IUFM)</td>
+            <td>Lettres MEEF</td>
+            <td data-fal-insigne>
+              <!--todo remplacer l'image-->
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_inspe.png" alt="Lettres MEEF" />
+            </td>
+          </tr>
+          <tr>
+            <td>Geographie</td>
+            <td>Globe terrestre</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/globe_terrestre.png"
+                alt="Globe terrestre" />
+            </td>
+          </tr>
+          <tr>
+            <td>Histoire</td>
+            <td>Casque de péricles</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/casque_pericles.png"
+                alt="Casque de péricles" />
+            </td>
+          </tr>
+          <tr>
+            <td>Ingénieur</td>
+            <td>Etoile et foudre</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/etoile_et_foudre.png"
+                alt="Etoile et foudre" />
+            </td>
+          </tr>
+          <tr>
+            <td>IUT</td>
+            <td>Lettres IUT</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_iut.png" alt="Lettres IUT" />
+            </td>
+          </tr>
+          <tr>
+            <td>Langues</td>
+            <td>Livre ouvert et plume + initiale de la discipline</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/livre_ouvert_et_plume.png"
+                alt="Livre ouvert et plume" />
+            </td>
+          </tr>
+          <tr>
+            <td>Lettres</td>
+            <td>Livre ouvert et plume</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/livre_ouvert_et_plume.png"
+                alt="Livre ouvert et plume" />
+            </td>
+          </tr>
+          <tr>
+            <td>Musicologie</td>
+            <td>Lyre</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lyre.png" alt="Lyre" />
+            </td>
+          </tr>
+          <tr>
+            <td>Notariat</td>
+            <td>Glaive et balance</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/glaive_et_balance.png"
+                alt="Glaive et balance" />
+            </td>
+          </tr>
+          <tr>
+            <td>Oenologie</td>
+            <td>Grappe de raisin</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/grappe_de_raisin.png"
+                alt="Grappe de raisin" />
+            </td>
+          </tr>
+          <tr>
+            <td>Philosophie</td>
+            <td>Phi</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/phi.png" alt="Lettre Phi" />
+            </td>
+          </tr>
+          <tr>
+            <td>Psycholohgie</td>
+            <td>Psi</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/psi.png" alt="Lettre Psi" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sciences</td>
+            <td>Palme croisée de chêne et laurier</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/palme_sciences.png"
+                alt="Palme croisée de chêne et laurier" />
+            </td>
+          </tr>
+          <tr>
+            <td>Science économiques, Gesiton, IAE</td>
+            <td>Caducée Mercure</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/caducee_mercure.png"
+                alt="Caducée Mercure" />
+            </td>
+          </tr>
+          <tr>
+            <td>Science politique</td>
+            <td>Parapluie fermé horizontal</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/parapluie_ferme_a_l_horizontale.png"
+                alt="Parapluie" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sociologie</td>
+            <td>Grenouille</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/grenouille_doree.png"
+                alt="Grenouille" />
+            </td>
+          </tr>
+          <tr>
+            <td>STAPS</td>
+            <td>Coq</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/coq.png" alt="Coq" />
+            </td>
+          </tr>
+          <tr>
+            <td>Théatre</td>
+            <td>Masque de comédie</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/masques_de_comedie.png"
+                alt="Masque de comédie" />
+            </td>
+          </tr>
+          <tr>
+            <td>Théologie</td>
+            <td>Insigne de la religion étudiée</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/theology.png" alt="Théologie" />
+            </td>
+          </tr>
+          <!--todo théologie-->
+          <tr>
+            <td colspan="3">
+              <h3 class="table-warning">⚠️ Spécifités Amiénoises</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>Kiné</td>
+            <td>Ciseaux + Caducée Mercure</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/ciseaux_et_caducee_mercure.png"
+                alt="Ciseaux et Caducée Mercure" />
+            </td>
+          </tr>
+          <tr>
+            <td>Science de l'éducation</td>
+            <td>Lettres SDE</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_sde.png" alt="Lettres SDE" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ul>
+        <li>Les étoiles et palmes</li>
+      </ul>
+      <table class="table table-striped align-middle" data-fal-table="insigne">
+        <thead>
+          <tr>
+            <th>Insigne</th>
+            <th>Signication</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/etoile_doree.png" alt="Etoile dorée" />
+            </td>
+            <td>Etoile dorée</td>
+            <td>Année débutée</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/etoile_argentee.png"
+                alt="Etoile argentée" />
+            </td>
+            <td>Etoile argentée</td>
+            <td>Année redoublée</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <span>Les étoiles de cursus secondaires sont plus petites</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/drapeaux.png" alt="Drapeaux" />
+            </td>
+            <td colspan="2">
+              Un <strong>drapeau du pays</strong> sera placé sous l'étoile de
+              l'année d'étude si elle se déroule à l'étranger
+            </td>
+          </tr>
+          <tr>
+            <td data-fal-insigne="mini">
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettre_e.png" alt="Lettre E" />
+            </td>
+            <td colspan="2">
+              Les années validées par équivalence seront marquées par une
+              <strong>petite lettre "E"</strong> remplaçant l'étoile
+            </td>
+          </tr>
+          <tr>
+            <td data-fal-insigne="mini">
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lettre_a.png" alt="Lettre A" />
+            </td>
+            <td colspan="2">
+              Les années passées en alternance seront marquées par une
+              <strong>petite lettre "A"</strong> sous l'étoile
+            </td>
+          </tr>
+          <tr>
+            <td data-fal-insigne="moivre">
+              <img loading="lazy" width="100" height="100" src="/images/insigne/moivre.png" alt="Moivre bleu" />
+            </td>
+            <td colspan="2">
+              La première étoile sera placée sur un
+              <strong> petit ruban disposé de biais</strong>, de couleur
+              <strong>bleue</strong> pour les facultés ou établissements
+              d'État, <strong>blanche</strong> pour les facultés catholiques,
+              écoles ou instituts privés. En cas de changement d'établissement
+              du public vers le privé ou inversement, on placera un nouveau
+              ruban sous l'étoile de l'année de changement
+            </td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/large_palme.png" alt="Large palme" />
+            </td>
+            <td>Large palme (à coté de l'étoile de l'année)</td>
+            <td>Major de promotion</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne="mini">
+              <img loading="lazy" width="50" height="50" src="/images/insigne/simple_palme.png" alt="Simple palme" />
+            </td>
+            <td>Simple palme (à coté de l'étoile de l'année)</td>
+            <td>Fin de cycle (s'il n'y a pas de diplomes correspondant)</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/tete_de_vache.png"
+                alt="Tête de vache" />
+            </td>
+            <td>Tête de vache</td>
+            <td>Année obtenue aux rattrapages</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/tete_de_mort.png" alt="Tête de mort" />
+            </td>
+            <td>Tête de mort</td>
+            <td>Abandon de fillière</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/double_palme.png" alt="Double palmes" />
+            </td>
+            <td>Double palmes</td>
+            <td>Dipolme obtenu</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/petit_zero.png" alt="Chiffre 0" />
+            </td>
+            <td colspan="2">
+              Une année sabbatique sera sanctionnée par un
+              <strong>petit chiffre "0"</strong>.
+            </td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/etoile_noir.png"
+                alt="Etoile + ruban noir" />
+            </td>
+            <td colspan="2">
+              Un <strong>ruban noir</strong> sera place sous l'étoile de
+              l'année de perde ou vol de la faluche.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div data-fal-article="8">
+      <h2>Article 8:</h2>
+      <p>Le velours peut comporter:</p>
+      <ul>
+        <li>
+          Les insignes:
+          <ul>
+            <li>Des association étudiante</li>
+            <li>
+              Des congrès auxquels vous avez participé, à condition que
+              ceux-ci soient constitués de matériaux nobles
+            </li>
+            <li>Des villes où vous avez séjourné pour motifs étudiants</li>
+            <li>
+              Des établissements scolaires auxquelles vous avez appartenu
+            </li>
+            <li>Des clubs auxquels vous avez appartenu ou appartenez</li>
+          </ul>
+        </li>
+        <li>
+          Votre devise:
+          <div>
+            En grec, en latin, en français, en hébreu, en langue régionale, en
+            patois, elle s'inscrit en toutes lettres dans la langue
+            correspondante, sur le velours du frontal à l'occipital à la
+            gauche du ruban de province natale.
+          </div>
+        </li>
+        <li>Vos armes personnelles</li>
+        <li>Les symboles:</li>
+      </ul>
+      <table class="table table-striped align-middle" data-fal-table="insigne">
+        <thead>
+          <tr>
+            <th>Insigne</th>
+            <th>Description</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td colspan="3">
+              <h5>Les symboles</h5>
+            </td>
+          </tr>
+          <tr>
+            <td>Abeille</td>
+            <td>Cursus parfait (fin du circulaire)</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/abeille.png" alt="Abeille" />
+            </td>
+          </tr>
+          <tr>
+            <td>Aigle</td>
+            <td>Amour de l'aviation</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/aigle.png" alt="Aigle" />
+            </td>
+          </tr>
+          <tr>
+            <td>Ancre</td>
+            <td>Amour de la mer</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/ancre.png" alt="Ancre" />
+            </td>
+          </tr>
+          <tr>
+            <td>Cornue et ballon</td>
+            <td>Travail en laboratoire</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/ballon_et_cornu.png"
+                alt="Cornue et ballon" />
+            </td>
+          </tr>
+          <tr>
+            <td>Chameau</td>
+            <td>
+              <div>A l'endroit: célibataire</div>
+              <div>A l'envers: en couple</div>
+            </td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/chameau.png" alt="Chameau" />
+            </td>
+          </tr>
+          <tr>
+            <td>Choppe de bière</td>
+            <td>Amour de la bonne bière</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/chope_de_biere.png"
+                alt="Choppe de bière" />
+            </td>
+          </tr>
+          <tr>
+            <td>Ciseaux</td>
+            <td>
+              <div>A cousu sa faluche</div>
+              <div>
+                (année de couture en indice, nombre de faluches cousu en
+                exposant)
+              </div>
+            </td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/ciseaux.png" alt="Ciseaux" />
+            </td>
+          </tr>
+          <tr>
+            <td>Cochon</td>
+            <td>
+              <div>A l'endroit: n'a été intégré(e)</div>
+              <div>A l'envers: a été intégré(e)</div>
+            </td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/cochon.png" alt="Cochon" />
+            </td>
+          </tr>
+          <tr>
+            <td>Cocotte en papier</td>
+            <td>Sécheur de cours</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/cocotte_en_papier.png"
+                alt="Cocotte en papier" />
+            </td>
+          </tr>
+          <tr>
+            <td>Croissant de lune</td>
+            <td>Grand Chambellan à la retraite</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lune.png" alt="Croissant de lune" />
+            </td>
+          </tr>
+          <tr>
+            <td>Cupidon</td>
+            <td>Fiancé</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/cupidon.png" alt="Cupidon" />
+            </td>
+          </tr>
+          <tr>
+            <td>Epi de blé</td>
+            <td>Radin</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/epi_de_ble.png" alt="Epi de blé" />
+            </td>
+          </tr>
+          <tr>
+            <td>Epi de blé croisé faucille</td>
+            <td>Radin</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/epi_de_ble_croise_faucille.png"
+                alt="Epi de blé et faucille" />
+            </td>
+          </tr>
+          <tr>
+            <td>Fer à cheval</td>
+            <td>Chanceux</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/fer_a_cheval.png" alt="Fer à cheval" />
+            </td>
+          </tr>
+          <tr>
+            <td>Feuille de vigne</td>
+            <td>Perte de virginté (masculine)</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/feuille_de_vigne.png"
+                alt="Feuille de vigne" />
+            </td>
+          </tr>
+          <tr>
+            <td>Fleur de Lys</td>
+            <td>Scout</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/fleur_de_lys.png" alt="Fleur de Lys" />
+            </td>
+          </tr>
+          <tr>
+            <td>Fourchette</td>
+            <td>Amour des plaisirs de la table</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/fourchette.png" alt="Fourchette" />
+            </td>
+          </tr>
+          <tr>
+            <td>Grappe de raisin</td>
+            <td>Amour du bon vin</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/grappe_de_raisin.png"
+                alt="Grappe de raisin" />
+            </td>
+          </tr>
+          <tr>
+            <td>Lyre</td>
+            <td>Amour des arts musicaux</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lyre.png" alt="Lyre" />
+            </td>
+          </tr>
+          <tr>
+            <td>Marteau et maillet</td>
+            <td>Bricoleur</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/marteau_maillet.png"
+                alt="Marteau et maillet" />
+            </td>
+          </tr>
+          <tr>
+            <td>Masque de comédie</td>
+            <td>Amour des arts de la scène et du cinéma</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/masques_de_comedie.png"
+                alt="Masque de comédie" />
+            </td>
+          </tr>
+          <tr>
+            <td>Nounours</td>
+            <td>Gros dormeur</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/nounours.png" alt="Nounours" />
+            </td>
+          </tr>
+          <tr>
+            <td>Palette vernie</td>
+            <td>Amour des arts plastiques</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/palette_vernie.png"
+                alt="Palette vernie" />
+            </td>
+          </tr>
+          <tr>
+            <td>Pendu</td>
+            <td>Marié(e) ou Pacsé(e)</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/pendu.png" alt="Pendu" />
+            </td>
+          </tr>
+          <tr>
+            <td>Plume</td>
+            <td>Amour des arts littéraires</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/plume.png" alt="Plume" />
+            </td>
+          </tr>
+          <tr>
+            <td>Rose</td>
+            <td>Perte de virginté (féminine)</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/rose.png" alt="Rose" />
+            </td>
+          </tr>
+          <tr>
+            <td>Tête de sphinx</td>
+            <td>Polyglotte</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/tete_de_sphinx.png"
+                alt="Tête de sphinx" />
+            </td>
+          </tr>
+          <tr>
+            <td>Squelette</td>
+            <td>
+              <div>À l'envers : Amour de l’anatomie du sexe opposé</div>
+              <div>
+                À l’envers + pointe de diamant : Amour de l'anatomie du même
+                sexe
+              </div>
+              <div>À l’endroit : Amour de l’anatomie</div>
+            </td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/squelette.png" alt="Squelette" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <h5>Les insignes décernés par le/la partenaire</h5>
+            </td>
+          </tr>
+          <tr>
+            <td>Epee</td>
+            <td>Fin Baiseur</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/epee.png" alt="Epée" />
+            </td>
+          </tr>
+          <tr>
+            <td>Flèche</td>
+            <td>Ejaculateur précoce</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/fleche.png" alt="Flèche" />
+            </td>
+          </tr>
+          <tr>
+            <td>Lime</td>
+            <td>Acte laborieux et difficile</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lime.png" alt="Lime" />
+            </td>
+          </tr>
+          <tr>
+            <td>Pensée</td>
+            <td>Fine baiseuse</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/pensee.png" alt="Pensée" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <h5>Les insignes décernés par un Grand-Maître</h5>
+            </td>
+          </tr>
+          <tr>
+            <td>Anneaux Olympiques</td>
+            <td>Excellence sportive universitaire</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/anneaux_olympiques.png"
+                alt="Anneaux Olympiques" />
+            </td>
+          </tr>
+          <tr>
+            <td>Bacchus</td>
+            <td>
+              Dignité dans l'ivresse (retournable ou retirable si perte de
+              dignité)
+            </td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/bacchus.png" alt="Bacchus" />
+            </td>
+          </tr>
+          <tr>
+            <td>Bouteille de Bordeaux</td>
+            <td>Cuite certifiée</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/bouteille_de_bordeaux.png"
+                alt="Bouteille de Bordeaux" />
+            </td>
+          </tr>
+          <tr>
+            <td>Bouteille de Champagne</td>
+            <td>Coma éthylique certifié</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/bouteille_de_champagne.png"
+                alt="Bouteille de Bordeaux" />
+            </td>
+          </tr>
+          <tr>
+            <td>Chauve-souris</td>
+            <td>Nuit blanche pour motif associatif</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/chauve_souris.png"
+                alt="Chauve-souris" />
+            </td>
+          </tr>
+          <tr>
+            <td>Chouette</td>
+            <td>Oiseau de nuit</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/chouette.png" alt="Chouette" />
+            </td>
+          </tr>
+          <tr>
+            <td>Clé de sol</td>
+            <td>Digne chanteur de paillardes</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/cle_de_sol.png" alt="Chouette" />
+            </td>
+          </tr>
+          <tr>
+            <td>Coq</td>
+            <td>Grande gueule sachant l'ouvrir</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/coq.png" alt="Coq" />
+            </td>
+          </tr>
+          <tr>
+            <td>Cor de chasse</td>
+            <td>Chasseur devant l'éternel</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/cor_de_chasse.png"
+                alt="Cor de chasse" />
+            </td>
+          </tr>
+          <tr>
+            <td>Fourchette + ruban bleu</td>
+            <td>Cordon bleu</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/fourchette_ruban_bleu.png"
+                alt="Fourchette" />
+            </td>
+          </tr>
+          <tr>
+            <td>Hache</td>
+            <td>Prise de guerre (à ne pas confondre avec vandalisme)</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/hache.png" alt="Hache" />
+            </td>
+          </tr>
+          <tr>
+            <td>Lime + ruban noir</td>
+            <td>Non respect à Grand-Maître</td>
+            <td data-fal-insigne>
+              <!-- TODO Ajouter ruban noir -->
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lime.png" alt="Lime sur ruban noir" />
+            </td>
+          </tr>
+          <tr>
+            <td>Mammouth</td>
+            <td>Gardien des traditions</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/mammouth.png" alt="Mammouth" />
+            </td>
+          </tr>
+          <tr>
+            <td>Pachyderme</td>
+            <td>Personne lourde</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/pachyderme.png" alt="Pachyderme" />
+            </td>
+          </tr>
+          <tr>
+            <td>Parapluie</td>
+            <td>
+              <div>A vomi sur sa faluche : à l'endroit</div>
+              <div>A vomi dans sa faluche : à l'envers</div>
+              <div>S'il remet sur la tête : fermé et à l'envers</div>
+            </td>
+            <!-- TODO Parapluie ouvert -->
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/parapluie.png" alt="Parapluie" />
+              <img loading="lazy" width="100" height="100" src="/images/insigne/parapluie_ferme_a_l_envers.png"
+                alt="Parapluie" />
+            </td>
+          </tr>
+          <tr>
+            <td>Poule</td>
+            <td>Personne chaude</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/poule.png" alt="Poule" />
+            </td>
+          </tr>
+          <tr>
+            <td>Epingle à nourrice</td>
+            <td>Blâme</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/epingle.png" alt="Epingle" />
+            </td>
+          </tr>
+          <!--TODO Etoile noir-->
+          <tr>
+            <td>Singe</td>
+            <td>Quemendeur d'insignes</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/singe.png" alt="Singe" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sou troué</td>
+            <td>Nuit passée au poste pour motif estudiantin</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/sou_troue.png" alt="Sou troué" />
+            </td>
+          </tr>
+          <tr>
+            <td>Volant</td>
+            <td>Conducteur de fin de soirée (SAM)</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/volant.png" alt="Volant" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <h5>Les insignes régionaux</h5>
+            </td>
+          </tr>
+          <tr>
+            <td>Abeille</td>
+            <td>Ville impériale</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/abeille.png" alt="Abeille" />
+            </td>
+          </tr>
+          <tr>
+            <td>Chardon</td>
+            <td>Lorrain</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/chardon.png" alt="Chardon" />
+            </td>
+          </tr>
+          <tr>
+            <td>Cigogne</td>
+            <td>Alsacien</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/cigogne.png" alt="Cigogne" />
+            </td>
+          </tr>
+          <tr>
+            <td>Fleur de Lys</td>
+            <td>Ville royale</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/fleur_de_lys.png" alt="Fleur de Lys" />
+            </td>
+          </tr>
+          <tr>
+            <td>Hermine</td>
+            <td>Breton</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/hermine.png" alt="Hermine" />
+            </td>
+          </tr>
+          <tr>
+            <td>Houe</td>
+            <td>Limousin</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/houe.png" alt="Houe" />
+            </td>
+          </tr>
+          <tr>
+            <td>Lion dressé</td>
+            <td>Lyonnais</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lion_dresse.png" alt="Lion dressé" />
+            </td>
+          </tr>
+          <tr>
+            <td>Lion héraldique</td>
+            <td>Normand</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/lion_heraldique.png"
+                alt="Lion héraldique" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sabot</td>
+            <td>Breton monté à Paris</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/sabot.png" alt="Sabot" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sanglier</td>
+            <td>Ardennais</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/sanglier.png" alt="Sanglier" />
+            </td>
+          </tr>
+          <tr>
+            <td>Taste-vin</td>
+            <td>Bourguignon</td>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" src="/images/insigne/taste_de_vin.png" alt="Sanglier" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <h3 class="table-warning">⚠️ Spécifités Amiénoises</h3>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <p>Faut que je me motive à finir ça</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div data-fal-article="9">
+      <h2>Article 9:</h2>
+      <div class="fal-2-col">
+        <p>Lors d’une garde assurée par un étudiant en santé, tout passage de vie à trépas
+          sera sanctionné par une unique faux placée sur le velours noir.</p>
+        <div data-fal-insigne>
+          <img loading="lazy" width="100" height="100" alt="Faux" src="images/insigne/faux.png">
+        </div>
+      </div>
+    </div>
+
+    <div data-fal-article="10">
+      <h2>Article 10:</h2>
+      <p>Faut que je me motive aussi</p>
+    </div>
+
+    <div data-fal-article="11">
+      <h2>Article 11:</h2>
+      <p>Tout étudiant ayant, au cours de sortie, repas, ou soirée, tiré un coup en bonne
+        et due forme, devra mettre à l’intérieur de sa Faluche :</p>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" alt="Carotte" src="images/insigne/carotte.png">
+            </td>
+            <td>Carotte</td>
+            <td>Pénétration vaginale</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" alt="Navet" src="images/insigne/navet.png">
+            </td>
+            <td>Navet</td>
+            <td>Pénétration anale</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" alt="Poireau" src="images/insigne/poireau.png">
+            </td>
+            <td>Poireau</td>
+            <td>Fellation</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" alt="Betterave" src="images/insigne/betterave.png">
+            </td>
+            <td>Betterave</td>
+            <td>Cunnilingus</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" alt="Choux-fleur" src="images/insigne/choux_fleur.png">
+            </td>
+            <td>Choux-fleur</td>
+            <td>Partouze</td>
+          </tr>
+          <tr>
+            <td data-fal-insigne>
+              <img loading="lazy" width="100" height="100" alt="Tomate" src="images/insigne/tomate.png">
+            </td>
+            <td>Tomate</td>
+            <td>Acte pendant les règles</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Pour tout dépucelage, il aura droit, suivant l’endroit, à deux légumes placés en X.</p>
+      <p>Ceci sous l’œil attentif d'au moins une croix ou de 3 anciens, dignes contrôleurs des actes accomplis. Ils
+        contrôleront en particulier que l’étudiant était sorti couvert et avec consentement. En espérant voir les
+        Faluches se transformer durant les années estudiantines, en de véritables potagers.</p>
+    </div>
+
+    <div data-fal-article="12">
+      <h2>Article 12:</h2>
+      <p>Dans chaque faculté, école ou ville, il sera procédé à l’élection d’un Grand Maître
+        (GM), choisi par les faluchards au vu de ses mérites, et dont la tâche principale sera de
+        veiller à l’application des principes de base qui régissent le port de la Faluche. Le Grand
+        Maître est le garant des traditions, il veille aux baptêmes des étudiants de sa filière et
+        fait procéder l’élection de son successeur.</p>
+
+      <div class="fal-2-col" style="justify-content: center;">
+        <img loading="lazy" width="100" height="200" alt="GM" src="./images/insigne/croix_emaillee.png">
+        <img loading="lazy" width="100" height="200" alt="GC" src="./images/insigne/croix.png">
       </div>
 
-      <div data-fal-article="7">
-        <h2>Article 7:</h2>
-        <p>Sur le ruban circulaire doivent figurer :</p>
-        <ul>
-          <li>Les initiales</li>
-          <li>Le baccalauréat:</li>
-        </ul>
-        <table
-          class="table table-striped align-middle"
-          data-fal-table="insigne"
-        >
-          <thead>
-            <tr>
-              <th>Baccalauréat</th>
-              <th>Insigne</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <td colspan="3">Anciens baccalauréats</td>
-            </tr>
-            <tr>
-              <td>Economique et Social</td>
-              <td>Beta β</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/beta.png"
-                  alt="Beta"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Littéraire</td>
-              <td>Phi φ</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/phi.png"
-                  alt="Phi"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Scientifique</td>
-              <td>Epsilon ε</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/epsilon.png"
-                  alt="Epsilon"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">Nouveaux baccalauréats</td>
-            </tr>
-            <tr>
-              <td>General</td>
-              <td>Gamma γ</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/gamma.png"
-                  alt="Gamma"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">Autre</td>
-            </tr>
-            <tr>
-              <td>DAEU (Diplome accès aux études universitaires</td>
-              <td>Lettre DAEU</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettres_daeu.png"
-                  alt="Gamma"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Capacitaire</td>
-              <td>Lettre "C" après le bac</td>
-              <td data-fal-insigne="mini">
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettre_c.png"
-                  alt="Lettre C"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>International</td>
-              <td>Lettre "I" après le bac</td>
-              <td data-fal-insigne="mini">
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettre_i.png"
-                  alt="Lettre I"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Autres bacs</td>
-              <td>Initiale du bac (ex: STMG, STI2D, ..;)</td>
-              <td data-fal-insigne="mini">
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/initiales_bacs.png"
-                  alt="Bacs"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <h3 class="table-warning">⚠️ Spécifité Amiénoise</h3>
-              </td>
-            </tr>
-            <tr>
-              <td>Scientifique spé SVT</td>
-              <td>Phi Epsilon φε</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/phi_epsilon.png"
-                  alt="Phi Epsilon"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <p>Sa distinction est une croix du mérite émaillée de blanc soutenue par un ruban
+        aux couleurs de la matière de la discipline ou de la ville du mandat. Lui seul est en
+        mesure de décerner le Bacchus, l’abeille, la chouette, le coq... (voir article VIII). Il doit
+        en outre certifier, avec le concours de trois autres porteurs de Faluche, l’acquisition de
+        bouteilles.</p>
 
-        <ul>
-          <li>L'emblème de la discipline</li>
-        </ul>
-        <table
-          class="table table-striped align-middle"
-          data-fal-table="insigne"
-        >
-          <thead>
-            <tr>
-              <th>Discipline</th>
-              <th>Insigne</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <td>Assistante Sociale</td>
-              <td>Lettres AS</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettres_as.png"
-                  alt="Lettres AS"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Dentaire</td>
-              <td>Molaire</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/molaire.png"
-                  alt="Molaire"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Infirmier</td>
-              <td>Caducée infirmier</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/caducee_infirmier.png"
-                  alt="Caducée Infirmier"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Kiné</td>
-              <td>Caducée Mercure</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/caducee_mercure.png"
-                  alt="Caducée Mercure"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Médecine</td>
-              <td>Caducée Médecine</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/caducee_medecine.png"
-                  alt="Caducée médecine"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Ostéopathie</td>
-              <td>Sphénoide</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/sphenoide.png"
-                  alt="Sphénoide"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Paces</td>
-              <td>Tête de mort sur fémurs croisés</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/tete_de_mort_sur_femurs_croises.png"
-                  alt="Tête de mort du fémurs croisés"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Paramédical (sauf Kiné et Inf)</td>
-              <td>Ciseaux</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/ciseaux.png"
-                  alt="Ciseaux"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Pharmacie</td>
-              <td>Caducée Pharmacie</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/caducee_pharma.png"
-                  alt="Caducée Pharmacie"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Sage-Femme</td>
-              <td>Croix d'Ankh</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/croix_dankh.png"
-                  alt="Croix d'Ankh"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Vétérinaire</td>
-              <td>Tête de cheval</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/tete_de_cheval.png"
-                  alt="Tête de cheval"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>AES</td>
-              <td>Lettres AES</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettres_aes.png"
-                  alt="Lettre AES"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Arts</td>
-              <td>Palette & Pinceau</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/palette_vernie.png"
-                  alt="Palette et Pinceau"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Arts numériques</td>
-              <td>Symboles @</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/arobase.png"
-                  alt="@"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Archéologie</td>
-              <td>Tête de sphinx</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/tete_de_sphinx.png"
-                  alt="Tête de sphinx"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Architecture</td>
-              <td>Equerre et compas</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/equerre_et_compas.png"
-                  alt="Equerre et compas"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>BTS</td>
-              <td>Lettres BTS</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettres_bts.png"
-                  alt="tete_de_cheval"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Cinéma</td>
-              <td>Clap de cinéma</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/clap_de_cinema.png"
-                  alt="tete_de_cheval"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Classes préparatoires (non santé)</td>
-              <td>Chouette bicéphale</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/chouette_bicephale.png"
-                  alt="Chouette bicéphale"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Commerce</td>
-              <td>Caducée Mercure</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/caducee_mercure.png"
-                  alt="Caducée Mercure"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Communication, Journalisme</td>
-              <td>Caducée mercure</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/caducee_mercure.png"
-                  alt="Caducée Mercure"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Droit</td>
-              <td>Glaive et balance</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/glaive_et_balance.png"
-                  alt="Glaive et balance"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>MEEF (INSPE, ex ESPE, ex IUFM)</td>
-              <td>Lettres MEEF</td>
-              <td data-fal-insigne>
-                <!--todo remplacer l'image-->
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettres_inspe.png"
-                  alt="Lettres MEEF"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Geographie</td>
-              <td>Globe terrestre</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/globe_terrestre.png"
-                  alt="Globe terrestre"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Histoire</td>
-              <td>Casque de péricles</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/casque_pericles.png"
-                  alt="Casque de péricles"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Ingénieur</td>
-              <td>Etoile et foudre</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/etoile_et_foudre.png"
-                  alt="Etoile et foudre"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>IUT</td>
-              <td>Lettres IUT</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettres_iut.png"
-                  alt="Lettres IUT"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Langues</td>
-              <td>Livre ouvert et plume + initiale de la discipline</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/livre_ouvert_et_plume.png"
-                  alt="Livre ouvert et plume"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Lettres</td>
-              <td>Livre ouvert et plume</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/livre_ouvert_et_plume.png"
-                  alt="Livre ouvert et plume"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Musicologie</td>
-              <td>Lyre</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lyre.png"
-                  alt="Lyre"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Notariat</td>
-              <td>Glaive et balance</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/glaive_et_balance.png"
-                  alt="Glaive et balance"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Oenologie</td>
-              <td>Grappe de raisin</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/grappe_de_raisin.png"
-                  alt="Grappe de raisin"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Philosophie</td>
-              <td>Phi</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/phi.png"
-                  alt="Lettre Phi"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Psycholohgie</td>
-              <td>Psi</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/psi.png"
-                  alt="Lettre Psi"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Sciences</td>
-              <td>Palme croisée de chêne et laurier</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/palme_sciences.png"
-                  alt="Palme croisée de chêne et laurier"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Science économiques, Gesiton, IAE</td>
-              <td>Caducée Mercure</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/caducee_mercure.png"
-                  alt="Caducée Mercure"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Science politique</td>
-              <td>Parapluie fermé horizontal</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/parapluie_ferme_a_l_horizontale.png"
-                  alt="Parapluie"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Sociologie</td>
-              <td>Grenouille</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/grenouille_doree.png"
-                  alt="Grenouille"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>STAPS</td>
-              <td>Coq</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/coq.png"
-                  alt="Coq"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Théatre</td>
-              <td>Masque de comédie</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/masques_de_comedie.png"
-                  alt="Masque de comédie"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Théologie</td>
-              <td>Insigne de la religion étudiée</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/theology.png"
-                  alt="Théologie"
-                />
-              </td>
-            </tr>
-            <!--todo théologie-->
-            <tr>
-              <td colspan="3">
-                <h3 class="table-warning">⚠️ Spécifités Amiénoises</h3>
-              </td>
-            </tr>
-            <tr>
-              <td>Kiné</td>
-              <td>Ciseaux + Caducée Mercure</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/ciseaux_et_caducee_mercure.png"
-                  alt="Ciseaux et Caducée Mercure"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Science de l'éducation</td>
-              <td>Lettres SDE</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettres_sde.png"
-                  alt="Lettres SDE"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <p>Il existe aussi des Grands Chambellans (GC) qui assistent le Grand Maître dans
+        sa tâche. Leur distinction est une croix au mérite non émaillée soutenue par un ruban à
+        la couleur de la matière de la discipline ou de la ville du mandat.</p>
 
-        <ul>
-          <li>Les étoiles et palmes</li>
-        </ul>
-        <table
-          class="table table-striped align-middle"
-          data-fal-table="insigne"
-        >
-          <thead>
-            <tr>
-              <th>Insigne</th>
-              <th>Signication</th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/etoile_doree.png"
-                  alt="Etoile dorée"
-                />
-              </td>
-              <td>Etoile dorée</td>
-              <td>Année débutée</td>
-            </tr>
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/etoile_argentee.png"
-                  alt="Etoile argentée"
-                />
-              </td>
-              <td>Etoile argentée</td>
-              <td>Année redoublée</td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <span>Les étoiles de cursus secondaires sont plus petites</span>
-              </td>
-            </tr>
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/drapeaux.png"
-                  alt="Drapeaux"
-                />
-              </td>
-              <td colspan="2">
-                Un <strong>drapeau du pays</strong> sera placé sous l'étoile de
-                l'année d'étude si elle se déroule à l'étranger
-              </td>
-            </tr>
-            <tr>
-              <td data-fal-insigne="mini">
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettre_e.png"
-                  alt="Lettre E"
-                />
-              </td>
-              <td colspan="2">
-                Les années validées par équivalence seront marquées par une
-                <strong>petite lettre "E"</strong> remplaçant l'étoile
-              </td>
-            </tr>
-            <tr>
-              <td data-fal-insigne="mini">
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lettre_a.png"
-                  alt="Lettre A"
-                />
-              </td>
-              <td colspan="2">
-                Les années passées en alternance seront marquées par une
-                <strong>petite lettre "A"</strong> sous l'étoile
-              </td>
-            </tr>
-            <tr>
-              <td data-fal-insigne="moivre">
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/moivre.png"
-                  alt="Moivre bleu"
-                />
-              </td>
-              <td colspan="2">
-                La première étoile sera placée sur un
-                <strong> petit ruban disposé de biais</strong>, de couleur
-                <strong>bleue</strong> pour les facultés ou établissements
-                d'État, <strong>blanche</strong> pour les facultés catholiques,
-                écoles ou instituts privés. En cas de changement d'établissement
-                du public vers le privé ou inversement, on placera un nouveau
-                ruban sous l'étoile de l'année de changement
-              </td>
-            </tr>
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/large_palme.png"
-                  alt="Large palme"
-                />
-              </td>
-              <td>Large palme (à coté de l'étoile de l'année)</td>
-              <td>Major de promotion</td>
-            </tr>
-            <tr>
-              <td data-fal-insigne="mini">
-                <img
-                  loading="lazy"
-                  width="50"
-                  height="50"
-                  src="/images/insigne/simple_palme.png"
-                  alt="Simple palme"
-                />
-              </td>
-              <td>Simple palme (à coté de l'étoile de l'année)</td>
-              <td>Fin de cycle (s'il n'y a pas de diplomes correspondant)</td>
-            </tr>
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/tete_de_vache.png"
-                  alt="Tête de vache"
-                />
-              </td>
-              <td>Tête de vache</td>
-              <td>Année obtenue aux rattrapages</td>
-            </tr>
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/tete_de_mort.png"
-                  alt="Tête de mort"
-                />
-              </td>
-              <td>Tête de mort</td>
-              <td>Abandon de fillière</td>
-            </tr>
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/double_palme.png"
-                  alt="Double palmes"
-                />
-              </td>
-              <td>Double palmes</td>
-              <td>Dipolme obtenu</td>
-            </tr>
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/petit_zero.png"
-                  alt="Chiffre 0"
-                />
-              </td>
-              <td colspan="2">
-                Une année sabbatique sera sanctionnée par un
-                <strong>petit chiffre "0"</strong>.
-              </td>
-            </tr>
-            <tr>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/etoile_noir.png"
-                  alt="Etoile + ruban noir"
-                />
-              </td>
-              <td colspan="2">
-                Un <strong>ruban noir</strong> sera place sous l'étoile de
-                l'année de perde ou vol de la faluche.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <p>A Amiens les futures croix sont choisies par les croix partant à la retraite</p>
 
-      <div data-fal-article="8">
-        <h2>Article 8:</h2>
-        <p>Le velours peut comporter:</p>
-        <ul>
-          <li>
-            Les insignes:
-            <ul>
-              <li>Des association étudiante</li>
-              <li>
-                Des congrès auxquels vous avez participé, à condition que
-                ceux-ci soient constitués de matériaux nobles
-              </li>
-              <li>Des villes où vous avez séjourné pour motifs étudiants</li>
-              <li>
-                Des établissements scolaires auxquelles vous avez appartenu
-              </li>
-              <li>Des clubs auxquels vous avez appartenu ou appartenez</li>
-            </ul>
-          </li>
-          <li>
-            Votre devise:
-            <div>
-              En grec, en latin, en français, en hébreu, en langue régionale, en
-              patois, elle s'inscrit en toutes lettres dans la langue
-              correspondante, sur le velours du frontal à l'occipital à la
-              gauche du ruban de province natale.
-            </div>
-          </li>
-          <li>Vos armes personnelles</li>
-          <li>Les symboles:</li>
-        </ul>
-        <table
-          class="table table-striped align-middle"
-          data-fal-table="insigne"
-        >
-          <thead>
-            <tr>
-              <th>Insigne</th>
-              <th>Description</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <td colspan="3">
-                <h5>Les symboles</h5>
-              </td>
-            </tr>
-            <tr>
-              <td>Abeille</td>
-              <td>Cursus parfait (fin du circulaire)</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/abeille.png"
-                  alt="Abeille"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Aigle</td>
-              <td>Amour de l'aviation</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/aigle.png"
-                  alt="Aigle"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Ancre</td>
-              <td>Amour de la mer</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/ancre.png"
-                  alt="Ancre"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Cornue et ballon</td>
-              <td>Travail en laboratoire</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/ballon_et_cornu.png"
-                  alt="Cornue et ballon"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Chameau</td>
-              <td>
-                <div>A l'endroit: célibataire</div>
-                <div>A l'envers: en couple</div>
-              </td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/chameau.png"
-                  alt="Chameau"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Choppe de bière</td>
-              <td>Amour de la bonne bière</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/chope_de_biere.png"
-                  alt="Choppe de bière"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Ciseaux</td>
-              <td>
-                <div>A cousu sa faluche</div>
-                <div>
-                  (année de couture en indice, nombre de faluches cousu en
-                  exposant)
-                </div>
-              </td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/ciseaux.png"
-                  alt="Ciseaux"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Cochon</td>
-              <td>
-                <div>A l'endroit: n'a été intégré(e)</div>
-                <div>A l'envers: a été intégré(e)</div>
-              </td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/cochon.png"
-                  alt="Cochon"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Cocotte en papier</td>
-              <td>Sécheur de cours</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/cocotte_en_papier.png"
-                  alt="Cocotte en papier"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Croissant de lune</td>
-              <td>Grand Chambellan à la retraite</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lune.png"
-                  alt="Croissant de lune"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Cupidon</td>
-              <td>Fiancé</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/cupidon.png"
-                  alt="Cupidon"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Epi de blé</td>
-              <td>Radin</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/epi_de_ble.png"
-                  alt="Epi de blé"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Epi de blé croisé faucille</td>
-              <td>Radin</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/epi_de_ble_croise_faucille.png"
-                  alt="Epi de blé et faucille"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Fer à cheval</td>
-              <td>Chanceux</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/fer_a_cheval.png"
-                  alt="Fer à cheval"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Feuille de vigne</td>
-              <td>Perte de virginté (masculine)</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/feuille_de_vigne.png"
-                  alt="Feuille de vigne"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Fleur de Lys</td>
-              <td>Scout</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/fleur_de_lys.png"
-                  alt="Fleur de Lys"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Fourchette</td>
-              <td>Amour des plaisirs de la table</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/fourchette.png"
-                  alt="Fourchette"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Grappe de raisin</td>
-              <td>Amour du bon vin</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/grappe_de_raisin.png"
-                  alt="Grappe de raisin"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Lyre</td>
-              <td>Amour des arts musicaux</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lyre.png"
-                  alt="Lyre"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Marteau et maillet</td>
-              <td>Bricoleur</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/marteau_maillet.png"
-                  alt="Marteau et maillet"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Masque de comédie</td>
-              <td>Amour des arts de la scène et du cinéma</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/masques_de_comedie.png"
-                  alt="Masque de comédie"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Palette vernie</td>
-              <td>Amour des arts plastiques</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/palette_vernie.png"
-                  alt="Palette vernie"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Pendu</td>
-              <td>Marié(e) ou Pacsé(e)</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/pendu.png"
-                  alt="Pendu"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Plume</td>
-              <td>Amour des arts littéraires</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/plume.png"
-                  alt="Plume"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Rose</td>
-              <td>Perte de virginté (féminine)</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/rose.png"
-                  alt="Rose"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Tête de sphinx</td>
-              <td>Polyglotte</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/tete_de_sphinx.png"
-                  alt="Tête de sphinx"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Squelette</td>
-              <td>
-                <div>À l'envers : Amour de l’anatomie du sexe opposé</div>
-                <div>
-                  À l’envers + pointe de diamant : Amour de l'anatomie du même
-                  sexe
-                </div>
-                <div>À l’endroit : Amour de l’anatomie</div>
-              </td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/squelette.png"
-                  alt="Squelette"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <h5>Les insignes décernés par le/la partenaire</h5>
-              </td>
-            </tr>
-            <tr>
-              <td>Epee</td>
-              <td>Fin Baiseur</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/epee.png"
-                  alt="Epée"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Flèche</td>
-              <td>Ejaculateur précoce</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/fleche.png"
-                  alt="Flèche"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Lime</td>
-              <td>Acte laborieux et difficile</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lime.png"
-                  alt="Lime"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Pensée</td>
-              <td>Fine baiseuse</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/pensee.png"
-                  alt="Pensée"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <h5>Les insignes décernés par un Grand-Maître</h5>
-              </td>
-            </tr>
-            <tr>
-              <td>Anneaux Olympiques</td>
-              <td>Excellence sportive universitaire</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/anneaux_olympiques.png"
-                  alt="Anneaux Olympiques"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Bacchus</td>
-              <td>
-                Dignité dans l'ivresse (retournable ou retirable si perte de
-                dignité)
-              </td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/bacchus.png"
-                  alt="Bacchus"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Bouteille de Bordeaux</td>
-              <td>Cuite certifiée</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/bouteille_de_bordeaux.png"
-                  alt="Bouteille de Bordeaux"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Bouteille de Champagne</td>
-              <td>Coma éthylique certifié</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/bouteille_de_champagne.png"
-                  alt="Bouteille de Bordeaux"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Chauve-souris</td>
-              <td>Nuit blanche pour motif associatif</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/chauve_souris.png"
-                  alt="Chauve-souris"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Chouette</td>
-              <td>Oiseau de nuit</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/chouette.png"
-                  alt="Chouette"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Clé de sol</td>
-              <td>Digne chanteur de paillardes</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/cle_de_sol.png"
-                  alt="Chouette"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Coq</td>
-              <td>Grande gueule sachant l'ouvrir</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/coq.png"
-                  alt="Coq"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Cor de chasse</td>
-              <td>Chasseur devant l'éternel</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/cor_de_chasse.png"
-                  alt="Cor de chasse"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Fourchette + ruban bleu</td>
-              <td>Cordon bleu</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/fourchette_ruban_bleu.png"
-                  alt="Fourchette"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Hache</td>
-              <td>Prise de guerre (à ne pas confondre avec vandalisme)</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/hache.png"
-                  alt="Hache"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Lime + ruban noir</td>
-              <td>Non respect à Grand-Maître</td>
-              <td data-fal-insigne>
-                <!-- TODO Ajouter ruban noir -->
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lime.png"
-                  alt="Lime sur ruban noir"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Mammouth</td>
-              <td>Gardien des traditions</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/mammouth.png"
-                  alt="Mammouth"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Pachyderme</td>
-              <td>Personne lourde</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/pachyderme.png"
-                  alt="Pachyderme"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Parapluie</td>
-              <td>
-                <div>A vomi sur sa faluche : à l'endroit</div>
-                <div>A vomi dans sa faluche : à l'envers</div>
-                <div>S'il remet sur la tête : fermé et à l'envers</div>
-              </td>
-              <!-- TODO Parapluie ouvert -->
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/parapluie.png"
-                  alt="Parapluie"
-                />
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/parapluie_ferme_a_l_envers.png"
-                  alt="Parapluie"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Poule</td>
-              <td>Personne chaude</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/poule.png"
-                  alt="Poule"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Epingle à nourrice</td>
-              <td>Blâme</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/epingle.png"
-                  alt="Epingle"
-                />
-              </td>
-            </tr>
-            <!--TODO Etoile noir-->
-            <tr>
-              <td>Singe</td>
-              <td>Quemendeur d'insignes</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/singe.png"
-                  alt="Singe"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Sou troué</td>
-              <td>Conducteur de fin de soirée (SAM)</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/sou_troue.png"
-                  alt="Sou troué"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Volant</td>
-              <td>Conducteur de fin de soirée (SAM)</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/volant.png"
-                  alt="Volant"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <h5>Les insignes régionaux</h5>
-              </td>
-            </tr>
-            <tr>
-              <td>Abeille</td>
-              <td>Ville impériale</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/abeille.png"
-                  alt="Abeille"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Chardon</td>
-              <td>Lorrain</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/chardon.png"
-                  alt="Chardon"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Cigogne</td>
-              <td>Alsacien</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/cigogne.png"
-                  alt="Cigogne"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Fleur de Lys</td>
-              <td>Ville royale</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/fleur_de_lys.png"
-                  alt="Fleur de Lys"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Hermine</td>
-              <td>Breton</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/hermine.png"
-                  alt="Hermine"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Houe</td>
-              <td>Limousin</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/houe.png"
-                  alt="Houe"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Lion dressé</td>
-              <td>Lyonnais</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lion_dresse.png"
-                  alt="Lion dressé"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Lion héraldique</td>
-              <td>Normand</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/lion_heraldique.png"
-                  alt="Lion héraldique"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Sabot</td>
-              <td>Breton monté à Paris</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/sabot.png"
-                  alt="Sabot"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Sanglier</td>
-              <td>Ardennais</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/sanglier.png"
-                  alt="Sanglier"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Taste-vin</td>
-              <td>Bourguignon</td>
-              <td data-fal-insigne>
-                <img
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                  src="/images/insigne/taste_de_vin.png"
-                  alt="Sanglier"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <h3 class="table-warning">⚠️ Spécifités Amiénoises</h3>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <p>TODO parler des bourreaux et des évêques</p>
+    </div>
+
+    <div data-fal-article="14">
+      <h2>Article 14:</h2>
+      <p>Toute Faluche devra être baptisée par un Grand Maître (ou un des représentants
+        légitimes) de la filière ou de la ville (de ladite Faluche) sous l’œil attentif des anciens.</p>
+    </div>
+
+    <div data-fal-article="15">
+      <h2>Article 15:</h2>
+      <p>La Faluche doit être portée dans toutes cérémonies : repas, soirées, sorties
+        estudiantines...</p>
+    </div>
+
+    <div data-fal-article="16">
+      <h2>Article 16:</h2>
+      <p>Toute personne demandant à voir le potager particulier (intérieur de la Faluche)
+        d’un(e) faluchard(e), devra comme il se doit, en passer par les armes suivant les goûts
+        dudit étudiant, choisissant le lieu, le jour et l’heure. La Faluche représentant la vie d’un
+        étudiant, toute personne mettant une Faluche ne lui appartenant pas devra subir une
+        épreuve qu’aura choisie le propriétaire de la Faluche en question.</p>
+    </div>
+
+    <div data-fal-article="17">
+      <h2>Article 17:</h2>
+      <p>La Faluche est le parchemin qui s’enorgueillit des expériences de son
+        récipiendaire, qui n’est que l’humble ambassadeur de notre communauté, de ses
+        traditions et de son histoire. Toutes les personnes qui, par leur comportement collectif
+        ou individuel, jetteraient l’opprobre sur notre communauté, seront sanctionnées
+        comme il se doit. De la même manière, toute personne qui, par son comportement
+        individuel, porterait atteinte à ses semblables sera tout autant sanctionnée par les
+        personnes devant qui elle devra en répondre : qu’il s’agisse des parrains-marraines,
+        des croix, ou des anciens. D’autre part, tout étudiant surpris en train de baptiser sans
+        être porteur d’une Faluche sera lui-même considéré comme impétrant. A ce titre, il
+        encourt les pires sévices...</p>
+    </div>
+
+    <div class="container">
+      <h3 style="text-align: right;">Les Croix</h3>
     </div>
 
     <script src="./index.js"></script>
@@ -2526,5 +1875,6 @@
         });
       }
     </script>
-  </body>
+</body>
+
 </html>
