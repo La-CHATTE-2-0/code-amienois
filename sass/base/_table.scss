@@ -1,7 +1,10 @@
 [data-fal-table] {
     td {
         text-align: left;
-    }    
+    }
+    td[data-fal-insigne] {
+        text-align: center;
+    }
 }
 
 .fal-2-col {
