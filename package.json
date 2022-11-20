@@ -28,5 +28,8 @@
     "inDev": true,
     "strategy": "default",
     "importWorkboxFrom": "local"
+  },
+  "dependencies": {
+    "parcel-plugin-ogimage": "^1.2.0"
   }
 }
