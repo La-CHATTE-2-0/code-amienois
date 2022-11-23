@@ -1,16 +1,15 @@
 [data-fal-table="insigne"] {
     margin-left: auto;
     margin-right: auto;
-
-    .table-warning {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 5px;
-        padding: 5px;
-        background-color: #ffe188;
-    }
 }
 
+.table-warning {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffe188;
+}
 
 @media only screen and (min-width: 768px) {
     [data-fal-table='insigne'] {
@@ -39,4 +38,20 @@
 }
 [data-fal-insigne="mini"] img {
     height: 30px;
+}
+
+[data-billot] {
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+    div {
+        span {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        img.billot {
+            width: 100%;
+        }
+    }
 }
