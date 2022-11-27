@@ -3,6 +3,7 @@ console.log("Script loaded")
 //#region Init search
 const searchInput = document.getElementById("search-input");
 const searchSubmit = document.getElementById("search-submit");
+const searchForm = document.getElementById("search-submit");
 
 searchInput.addEventListener("input", (e) => {
     if (e.target.value.length > 2) {
@@ -13,6 +14,12 @@ searchInput.addEventListener("input", (e) => {
 })
 
 searchSubmit.addEventListener("click", (e) => {
+    e.preventDefault()
+    window.find(searchInput.value)
+})
+
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault()
     window.find(searchInput.value)
 })
 //#endregion Init search
