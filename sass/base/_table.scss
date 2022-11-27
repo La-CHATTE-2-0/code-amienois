@@ -32,3 +32,12 @@
         }
     }
 }
+.dark .table-warning-fal {
+    table {
+        tr {
+            &>td {
+                border-color: #946f00;
+            }
+        }
+    }
+}
