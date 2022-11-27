@@ -3,12 +3,12 @@
     margin-right: auto;
 }
 
-.table-warning {
+.table-warning-fal {
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
     padding: 10px;
-    background-color: #ffe188;
+    background-color: #fff2ca;
 }
 
 @media only screen and (min-width: 768px) {
@@ -41,14 +41,18 @@
 }
 
 [data-billot] {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
     gap: 10px;
     text-align: center;
     div {
         span {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 10px;
+            //display: block;
+            //font-weight: 500;
+            //margin-bottom: 10px;
+            //Todo trouver un moyen qui nique pas l'affichage
+            display: none;
         }
         img.billot {
             width: 100%;

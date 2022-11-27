@@ -12,3 +12,23 @@
     gap: 20px;
     align-items: center;
 }
+
+.no-border {
+    border: none;
+}
+
+.table-warning-fal {
+    table {
+        margin-bottom: 0;
+        tr {
+            &>td {
+                border-color: #ffe596;
+            }
+            &:last-child {
+                td {
+                    border: none;
+                }
+            }
+        }
+    }
+}
