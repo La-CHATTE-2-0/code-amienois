@@ -62,6 +62,44 @@ $data-fal-circu-infos: (
         }        
     }
 
+    [data-fal-circu-container='tiers'] {
+        height: calc($height-circu / 3);
+        border-radius: 0;
+
+        &:nth-child(1) {
+            border-radius: 0;
+            border-top-left-radius: $border-radius-circu;
+            border-top-right-radius: $border-radius-circu;
+            [data-fal-circu] {
+                border-radius: 0;
+                border-top-left-radius: $border-radius-circu;
+                border-top-right-radius: $border-radius-circu;
+            }
+        }
+
+        &:nth-child(2) {
+            border-radius: 0;
+            [data-fal-circu] {
+                border-radius: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            border-radius: 0;
+            border-bottom-left-radius: $border-radius-circu;
+            border-bottom-right-radius: $border-radius-circu;
+            [data-fal-circu] {
+                border-radius: 0;
+                border-bottom-left-radius: $border-radius-circu;
+                border-bottom-right-radius: $border-radius-circu;
+            }
+        }
+
+        [data-fal-circu] {
+            height: calc($height-circu / 3);
+        }
+    }
+
     [data-fal-circu-container='demi'] {
         height: calc($height-circu / 2);
         border-radius: 0;
