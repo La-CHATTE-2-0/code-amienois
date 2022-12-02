@@ -1,5 +1,5 @@
 Choses à faire
-- Circu Millitaire
+- Insigne Millitaire
 - Images GM GC
 - Spé Amiens en insignes
 - Annexe Spé
