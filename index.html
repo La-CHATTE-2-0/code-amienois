@@ -1674,9 +1674,9 @@
               <div>A vomi dans sa faluche : à l'envers</div>
               <div>S'il remet sur la tête : fermé et à l'envers</div>
             </td>
-            <!-- TODO Parapluie ouvert -->
             <td data-fal-insigne>
-              <img loading="lazy" width="100" height="100" src="/images/insigne/parapluie.png" alt="Parapluie" />
+              <img loading="lazy" width="100" height="100" src="/images/insigne/parapluie_ouvert.png" alt="Parapluie" />
+              <img style="rotate: 180deg;" loading="lazy" width="100" height="100" src="/images/insigne/parapluie_ouvert.png" alt="Parapluie" />
               <img loading="lazy" width="100" height="100" src="/images/insigne/parapluie_ferme_a_l_envers.png"
                 alt="Parapluie" />
             </td>
@@ -1900,9 +1900,11 @@
           </li>
         </ol>
         <div style="text-align: center;">
-          <img style="width: 100%;" loading="lazy" alt="Placement" src="images/other/placement.png">
+          <img style="width: 100%; max-width: 500px;" loading="lazy" alt="Placement" src="images/other/placement.png">
         </div>
-        <div>Vous voyez ici comme exemple la faluche d'un étudiant ayant étudié à Amiens et né à Amiens en Picardie. Il porte un ruban d'association (le BED en rouge), de fédération (la FAEP en vert et blanc) et d'une association nationale. Il porte également un ruban d'élu.</div>
+        <!-- 
+          <div>Vous voyez ici comme exemple la faluche d'un étudiant ayant étudié à Amiens et né à Amiens en Picardie. Il porte un ruban d'association (le BED en rouge), de fédération (la FAEP en vert et blanc) et d'une association nationale. Il porte également un ruban d'élu.</div>
+        -->
         <div class="table-warning-fal">
           <h3>⚠️ Spécifité Amiénoise</h3>
           <div>En hommage à son passé de ville tisserande, plus précisément coloriste, les rubans supérieurs sont tous en velours à Amiens. 
@@ -1975,11 +1977,16 @@
         (GM), choisi par les faluchards au vu de ses mérites, et dont la tâche principale sera de
         veiller à l’application des principes de base qui régissent le port de la Faluche. Le Grand
         Maître est le garant des traditions, il veille aux baptêmes des étudiants de sa filière et
-        fait procéder l’élection de son successeur.</p>
+        fait procéder l’élection de son successeur. À Amiens les futures croix sont choisies par les 
+        croix partant à la retraite.</p>
 
-      <div class="fal-2-col" style="justify-content: center;">
-        <img loading="lazy" width="100" height="200" alt="GM" src="./images/insigne/croix_emaillee.png">
-        <img loading="lazy" width="100" height="200" alt="GC" src="./images/insigne/croix.png">
+      <div data-croix style="justify-content: center;">
+        <div>
+          <img loading="lazy" alt="GM" src="./images/insigne/gm.png">
+        </div>
+        <div>
+          <img loading="lazy" alt="GC" src="./images/insigne/gc.png">
+        </div>
       </div>
 
       <p>Sa distinction est une croix du mérite émaillée de blanc soutenue par un ruban
@@ -1994,13 +2001,17 @@
 
       <div class="table-warning-fal">
         <h3>⚠️ Spécifités Amiénoises</h3>
-        <p>Le <strong>bourreau</strong> est là pour faire respecter l’ordre et la discipline lors des
-          réjouissances estudiantines. Il pourra à sa guise infliger des <strong>sanctions</strong>
-          envers les récalcitrants sur le non respect de la faluche. La sanction pourra
-          venir d’un GM ou bien de son propre chef, à l’aide de ses instruments, il
-          applique les sanctions alcoolisées. L’insigne du bourreau se compose d’une
-          hache et d’une bouteille, ainsi que de l’année de son obtention, sur un
-          ruban aux couleurs de la discipline du GM.</p>
+        <ul>
+          <li>
+            <p>Le <strong>bourreau</strong> est là pour faire respecter l’ordre et la discipline lors des
+              réjouissances estudiantines. Il pourra à sa guise infliger des <strong>sanctions</strong>
+              envers les récalcitrants sur le non respect de la faluche. La sanction pourra
+              venir d’un GM ou bien de son propre chef, à l’aide de ses instruments, il
+              applique les sanctions alcoolisées. L’insigne du bourreau se compose d’une
+              hache et d’une bouteille, ainsi que de l’année de son obtention, sur un
+              ruban aux couleurs de la discipline du GM.</p>
+          </li>
+        </ul>
         <div data-billot>
           <div>
             <span>Médecine</span>
@@ -2032,13 +2043,8 @@
           <br>
           <ul>
             <li>
-              <p>À Amiens les futures croix sont choisies par les croix partant à la retraite</p>
-            </li>
-            <li>
-              <p>Les croix sont transmises de générations en génération, c'est à dire qu'une croix partant à la retraite donne sa croix historique au nouvel intronisé</p>
-            </li>
-            <li>
-              <p>Les croix amiénoies mettent une croix neuve du côté personnel (à droite) lorsqu’elles partent à la
+              <p>Les croix sont transmises de générations en génération, c'est à dire qu'une croix partant à la retraite donne sa croix historique au nouvel intronisé. 
+                Les croix amiénoies mettent une croix neuve du côté personnel (à droite) lorsqu’elles partent à la
                 retraite, et non plus à gauche comme lorsqu’elles sont en activité.</p>
             </li>
           </ul>
@@ -2081,8 +2087,9 @@
         encourt les pires sévices...</p>
     </div>
 
-    <div>
-      <h3 style="text-align: right; padding-right: 15px;">Les Croix</h3>
+    <div style="text-align: right; padding-right: 15px;">
+      <img width="25" height="25" src="images/other/faluche.png">
+      <h3>Les Croix</h3>
     </div>
 
     <script src="./index.js"></script>
