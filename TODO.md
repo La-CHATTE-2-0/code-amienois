@@ -1,9 +1,8 @@
 Choses à faire
 - Insigne Millitaire
-- Images GM GC
 - Spé Amiens en insignes
 - Annexe Spé
 - Annexe Rabelais
 - Annexe Monome
-- Squelette Ruby
+- Squelette Ruby + Diamant
 - Relire article 10 et mettre en bold l'important
