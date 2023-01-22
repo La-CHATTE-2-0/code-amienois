@@ -5,14 +5,18 @@
     margin-top: 60px;
 }
 
-body {
+#body {
     nav {
         color: #fff;
     }
 }
-body.dark {
+#body.dark {
     --bs-body-color: #fff;
     --bs-body-bg: #212529;
     --bs-table-color: #fff;
-    --bs-table-bg: #212529
+    --bs-table-bg: #212529;
+    .card {
+        --bs-card-bg: #212529 !important;
+        --bs-card-border-color: rgba(255, 255, 255, 0.5);
+    }
 }
