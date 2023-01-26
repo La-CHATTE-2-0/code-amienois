@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel index.html",
-    "build": "rm -rf .dist && parcel build index.html --public-url https://code-amienois.alanlecart.info/"
+    "build": "parcel build index.html --public-url https://code-amienois.alanlecart.info/",
+    "clean-build": "rm -rf .dist && parcel build index.html --public-url https://code-amienois.alanlecart.info/"
   },
   "repository": {
     "type": "git",
