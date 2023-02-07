@@ -7,9 +7,9 @@ $data-fal-circu-infos: (
     "blanc": #FFFFFF,
     "bleu": #155CC8,
     "bleuroy": #0914BC,
-    "bordeaux": #631212,
+    "bordeaux": #740000,
     "fiolet": #2C1355,
-    "fuschia": #7F15AC,
+    "fuschia": #9c0952,
     "gris": #777777,
     "jaune": #FFC107,
     "marron": #522F18,
@@ -135,10 +135,6 @@ $data-fal-circu-infos: (
         [data-fal-circu-color='#{$name}'] {
             background: $color;
         }
-    }
-    
-    [data-fal-circu-color] {
-        opacity: 0.85;
     }
 }
 
