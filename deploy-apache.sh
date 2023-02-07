@@ -2,7 +2,7 @@
 # Auto Copy script for the apache server
 
 echo "Start building"
-npm run clear-build 
+npm run clean-build 
 rm -rf /var/www/html/code-amienois
 cp -r ./dist /var/www/html/code-amienois
 
