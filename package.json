@@ -2,12 +2,21 @@
   "name": "code-amienois",
   "version": "1.0.0",
   "description": "Code de la faluche PWA",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url https://code-amienois.alanlecart.info/",
-    "clean-build": "rm -rf .dist && parcel build index.html --public-url https://code-amienois.alanlecart.info/"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean-build": "rm -rf .dist && vite build"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.57.1",
+    "vite-plugin-pwa": "^0.14.4"
   },
   "repository": {
     "type": "git",
@@ -18,19 +27,5 @@
   "bugs": {
     "url": "https://github.com/La-CHATTE-2-0/code-amienois/issues"
   },
-  "homepage": "https://github.com/La-CHATTE-2-0/code-amienois#readme",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5",
-    "parcel-plugin-sw-cache": "^0.3.1",
-    "sass": "^1.54.5"
-  },
-  "cache": {
-    "disablePlugin": false,
-    "inDev": true,
-    "strategy": "default",
-    "importWorkboxFrom": "local"
-  },
-  "dependencies": {
-    "parcel-plugin-ogimage": "^1.2.0"
-  }
+  "homepage": "https://github.com/La-CHATTE-2-0/code-amienois#readme"
 }
