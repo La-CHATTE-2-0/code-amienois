@@ -1,4 +1,8 @@
-console.log("Script loaded")
+console.log("Bootstrap loading")
+//Keep bootstrap import, it is needed for header in mobile mode
+import * as bootstrap from 'bootstrap'
+
+console.log("Script loading")
 
 //#region Init search
 const searchInput = document.getElementById("search-input");
