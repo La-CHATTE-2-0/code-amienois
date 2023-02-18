@@ -1,5 +1,17 @@
 # Code de la Faluche Amienoise
 
-Une PWA faites avec Parcel 1 (faudrait que je mette à jour vers le 2, ou refaire ça en Vue). 
+## Node version
 
-Basé sur le dépot [Parcel PWA](https://nicolas-van.github.io/parcel-pwa/). 
+    $ node --version
+    v16.10.0
+
+## Install
+
+    $ git clone https://github.com/La-CHATTE-2-0/code-amienois
+    $ cd code_amienois
+    $ npm ci 
+
+## Running the project
+
+    $ npm run dev
+
