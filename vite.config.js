@@ -11,10 +11,10 @@ export default {
         globPatterns: ['**/*.{js,css,sass,html,ico,png,svg}']
       },
       manifest: {
-        "short_name": "Code Amienois",
-        "name": "Code de la Faluche Amienoise",
-        "description": "Code de la Faluche Amienoise",
-        "start_url": "/index.html",
+        "short_name": "Code Amiénois",
+        "name": "Code de la Faluche Amiénoise",
+        "description": "Code de la Faluche Amiénoise",
+        "start_url": "/",
         "display": "standalone",
         "icons": [
           {
@@ -24,18 +24,18 @@ export default {
             "purpose": "any"
           },
           {
-            "src": "./images/icons-128.png",
+            "src": "/icons-128.png",
             "type": "image/png",
             "sizes": "128x128",
             "purpose": "maskable"
           },
           {
-            "src": "./images/icons-192.png",
+            "src": "/icons-192.png",
             "type": "image/png",
             "sizes": "192x192"
           },
           {
-            "src": "./images/icons-512.png",
+            "src": "/icons-512.png",
             "type": "image/png",
             "sizes": "512x512"
           }
