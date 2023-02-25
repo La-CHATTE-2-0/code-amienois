@@ -17,6 +17,12 @@
     border: none;
 }
 
+.no-border-bottom {
+    td {
+        border: none;
+    }
+}
+
 .table-warning-fal {
     table {
         margin-bottom: 0;

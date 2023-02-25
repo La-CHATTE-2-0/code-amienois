@@ -1,6 +1,7 @@
 console.log("Bootstrap loading")
 //Keep bootstrap import, it is needed for header in mobile mode
 import * as bootstrap from 'bootstrap'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 console.log("Script loading")
 
@@ -9,7 +10,7 @@ const searchInput = document.getElementById("search-input");
 const searchSubmit = document.getElementById("search-submit");
 const searchForm = document.getElementById("search-submit");
 
-searchInput.addEventListener("input", (e) => {
+searchInput && searchInput.addEventListener("input", (e) => {
     if (e.target.value.length > 2) {
         searchSubmit.classList.remove("disabled")
     } else {
@@ -17,12 +18,12 @@ searchInput.addEventListener("input", (e) => {
     }
 })
 
-searchSubmit.addEventListener("click", (e) => {
+searchSubmit && searchSubmit.addEventListener("click", (e) => {
     e.preventDefault()
     window.find(searchInput.value)
 })
 
-searchForm.addEventListener("submit", (e) => {
+searchForm && searchForm.addEventListener("submit", (e) => {
     e.preventDefault()
     window.find(searchInput.value)
 })
