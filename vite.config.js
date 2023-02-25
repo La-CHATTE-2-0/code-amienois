@@ -54,4 +54,14 @@ export default {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
     }
   },
+  build: {
+    rollupOptions: {
+      input: {
+        speamiens: path.resolve(__dirname, './pages/speamiens.html'),
+        main: path.resolve(__dirname, 'index.html'),
+
+        // aboutjs: resolve(__dirname, 'about.js')
+      },
+    },
+  }
 }
