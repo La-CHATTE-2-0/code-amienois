@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/La-CHATTE-2-0/code-amienois/issues"
   },
-  "homepage": "https://github.com/La-CHATTE-2-0/code-amienois#readme"
+  "homepage": "https://github.com/La-CHATTE-2-0/code-amienois#readme",
+  "engines" : {
+    "node" : ">=16.0.0"
+  }
 }
