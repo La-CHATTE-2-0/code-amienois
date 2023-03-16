@@ -59,7 +59,7 @@ export default {
       input: {
         main: path.resolve(__dirname, 'index.html'),
         speamiens: path.resolve(__dirname, './pages/speamiens.html'),
-        notespm: path.resolve(__dirname, './pages/speamiens.html'),
+        notespm: path.resolve(__dirname, './pages/notespm.html'),
       },
     },
   }
