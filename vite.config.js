@@ -60,7 +60,7 @@ export default {
         main: path.resolve(__dirname, 'index.html'),
         speamiens: path.resolve(__dirname, './pages/speamiens.html'),
         notespm: path.resolve(__dirname, './pages/notespm.html'),
-        checklistcongres: path.resolve(__dirname, './pages/checklistcongres.html'),
+        checklistcongres: path.resolve(__dirname, './pages/checklistcongres.html')
       },
     },
   }
