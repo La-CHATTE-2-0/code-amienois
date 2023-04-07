@@ -8,10 +8,11 @@ if (localStorage.length > 0) {
     const keys = Object.keys(localStorage);
 
     keys.forEach(key => {
-        const value = localStorage.getItem(key);
         const dom = document.getElementById(key)
-        if (dom != null)
+        if (dom != null) {
+            const value = localStorage.getItem(key);
             dom.checked = value;
+        }
     });
 }
 
