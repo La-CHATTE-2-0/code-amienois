@@ -17,6 +17,15 @@
     --bs-table-color: #fff;
     --bs-table-bg: #212529;
 
+    .modal {
+        .btn-close {
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+        --bs-modal-color: #fff !important;
+        --bs-modal-bg: #212529 !important;
+        --bs-modal-border-color: rgba(255, 255, 255, 0.5) !important;
+    }
+
     .list-group {
         --bs-list-group-color: #fff !important;
         --bs-list-group-bg: #212529 !important;
