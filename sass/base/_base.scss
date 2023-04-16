@@ -17,6 +17,14 @@
     --bs-table-color: #fff;
     --bs-table-bg: #212529;
 
+    .dropdown-menu {
+        --bs-dropdown-color: #fff !important;
+        --bs-dropdown-bg: #212529 !important;
+        --bs-dropdown-border-color: rgba(255, 255, 255, 0.5) !important;
+        --bs-dropdown-link-color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+
     .modal {
         .btn-close {
             filter: invert(1) grayscale(100%) brightness(200%);
