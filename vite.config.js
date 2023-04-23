@@ -59,6 +59,7 @@ export default {
       input: {
         main: path.resolve(__dirname, 'index.html'),
         speamiens: path.resolve(__dirname, './pages/speamiens.html'),
+        monome: path.resolve(__dirname, './pages/monome.html'),
         notespm: path.resolve(__dirname, './pages/notespm.html'),
         checklistcongres: path.resolve(__dirname, './pages/checklistcongres.html'),
         couleursrubans: path.resolve(__dirname, './pages/couleursrubans.html')
