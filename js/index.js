@@ -35,7 +35,6 @@ const darkmodeSwitch = document.getElementById("darkmode")
 const body = document.querySelector("body")
 
 if (darkmode == "true") {
-    console.log("oui")
     darkmodeSwitch.checked = true
     body.classList.add("dark")
 }
