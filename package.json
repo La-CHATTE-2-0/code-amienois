@@ -11,12 +11,12 @@
     "clean-build": "rm -rf .dist && vite build"
   },
   "devDependencies": {
-    "vite": "^4.2.1"
+    "vite": "^4.3.1"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.4",
-    "sass": "^1.61.0",
+    "sass": "^1.62.0",
     "vite-plugin-pwa": "^0.14.7"
   },
   "repository": {
