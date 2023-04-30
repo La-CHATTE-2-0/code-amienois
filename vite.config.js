@@ -62,7 +62,8 @@ export default {
         monome: path.resolve(__dirname, './pages/monome.html'),
         notespm: path.resolve(__dirname, './pages/notespm.html'),
         checklistcongres: path.resolve(__dirname, './pages/checklistcongres.html'),
-        couleursrubans: path.resolve(__dirname, './pages/couleursrubans.html')
+        couleursrubans: path.resolve(__dirname, './pages/couleursrubans.html'),
+        ordres: path.resolve(__dirname, './pages/ordres.html')
       },
     },
   }
