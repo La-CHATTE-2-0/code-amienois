@@ -1,410 +1,711 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#212529" />
+        <meta name="description" content="Code de la Faluche Amiénoise" />
+        <title>Couleurs des rubans - Code Amiénois</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/icons-192.png" />
+        <link rel="stylesheet" href="../sass/styles.scss" />
 
-    <meta name="theme-color" content="#212529" />
-    <meta name="description" content="Code de la Faluche Amiénoise" />
-    <title>Couleurs des rubans - Code Amiénois</title>
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/icons-192.png" />
-    <link rel="stylesheet" href="../sass/styles.scss" />
+        <meta property="og:title" content="Code Amienois" />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:description"
+            content="Code de la faluche Amiénoise"
+        />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:url" content="https://www.code-amienois.app/" />
+        <meta property="og:image" content="/icons-512.png" />
+        <meta property="og:image:alt" content="Photo de faluche" />
 
-    <meta property="og:title" content="Code Amienois" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Code de la faluche Amiénoise" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:url" content="https://www.code-amienois.app/" />
-    <meta property="og:image" content="/icons-512.png" />
-    <meta property="og:image:alt" content="Photo de faluche" />
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content="Code Amiénois" />
+        <meta name="twitter:image" content="/icons-512.png" />
+        <meta name="twitter:image:alt" content="Photo de faluche" />
+        <meta
+            property="twitter:description"
+            content="Code de la faluche Amiénoise"
+        />
+    </head>
 
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:title" content="Code Amiénois">
-    <meta name="twitter:image" content="/icons-512.png">
-    <meta name="twitter:image:alt" content="Photo de faluche">
-    <meta property="twitter:description" content="Code de la faluche Amiénoise">
-</head>
-
-<body id="body">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Code de la Faluche</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Code</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Annexes
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/pages/monome.html">Le Mônome</a></li>
-                            <li><a class="dropdown-item" href="/pages/speamiens.html">Récapitulatif des spés</a></li>
-                            <li><a class="dropdown-item" href="/pages/notespm.html">Notes aux PM</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Ressources
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item active" aria-current="page"
-                                    href="/pages/couleursrubans.html">Couleurs rubans</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" target="_blank"
-                                    href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/edit?usp=share_link">Guide
-                                    sécu</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/pages/checklistcongres.html">Checklist de congrès</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="form-check form-switch" style="margin-right: 10px">
-                    <input class="form-check-input" type="checkbox" role="switch" id="darkmode" />
-                    <label class="form-check-label" for="darkmode">Darkmode</label>
+    <body id="body">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Code de la Faluche</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Code</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Annexes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/pages/monome.html"
+                                        >Le Mônome</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/pages/speamiens.html"
+                                        >Récapitulatif des spés</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/pages/notespm.html"
+                                        >Notes aux PM</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Ressources
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        target="_blank"
+                                        href="https://www.youtube.com/@nouveaubreviaireamienois111"
+                                    >
+                                        <i class="bi bi-youtube"></i> Bréviaire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item active"
+                                        aria-current="page"
+                                        href="/pages/couleursrubans.html"
+                                        >Couleurs rubans</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        target="_blank"
+                                        href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/edit?usp=share_link"
+                                        >Guide sécu</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/pages/checklistcongres.html"
+                                        >Checklist de congrès</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div
+                        class="form-check form-switch"
+                        style="margin-right: 10px"
+                    >
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="darkmode"
+                        />
+                        <label class="form-check-label" for="darkmode"
+                            >Darkmode</label
+                        >
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div id="debut" class="fal-container">
+        <div id="debut" class="fal-container">
+            <div data-fal-article>
+                <p>
+                    Si ta ville n'apparait pas dans cette liste et/ou que tu as
+                    un doute, tu peux te rapprocher de tes croix pour avoir
+                    confirmation des couleurs.
+                </p>
 
-        <div data-fal-article>
+                <h2>Les villes proches</h2>
 
-            <p>Si ta ville n'apparait pas dans cette liste et/ou que tu as un doute, tu peux te rapprocher de tes croix
-                pour avoir confirmation des couleurs.</p>
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <td>Blason</td>
+                            <td>Ville</td>
+                            <td>Couleurs</td>
+                            <td>Province</td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Abbeville"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/abbeville.png"
+                                />
+                            </td>
+                            <td>Abbeville</td>
+                            <td>Bleu roi et rouge</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Amiens"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/amiens.png"
+                                />
+                            </td>
+                            <td>Amiens</td>
+                            <td>Bleu roi et rouge</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Arras"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/arras.png"
+                                />
+                            </td>
+                            <td>Arras</td>
+                            <td>Rouge et bleu</td>
+                            <td data-fal-insigne>
+                                <a href="#artois">
+                                    <img
+                                        alt="Artois"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/artois.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Beauvais"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/beauvais.png"
+                                />
+                            </td>
+                            <td>Beauvais</td>
+                            <td>Rouge et blanc</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Compiègne"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/compiègne.png"
+                                />
+                            </td>
+                            <td>Compiègne</td>
+                            <td>Bleu roi et or</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Creil"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/creil.png"
+                                />
+                            </td>
+                            <td>Creil</td>
+                            <td>Bleu roi et or</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Doullens"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/doullens.png"
+                                />
+                            </td>
+                            <td>Doullens</td>
+                            <td>Bleu roi et or</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Hirson"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/hirson.png"
+                                />
+                            </td>
+                            <td>Hirson</td>
+                            <td>Bleu et blanc</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Laon"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/laon.png"
+                                />
+                            </td>
+                            <td>Laon</td>
+                            <td>Bleu et blanc</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Lille"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/lille.png"
+                                />
+                            </td>
+                            <td>Lille</td>
+                            <td>Rouge et blanc</td>
+                            <td data-fal-insigne>
+                                <a href="#flandes">
+                                    <img
+                                        alt="Flandres"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/flandres.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Noyon"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/noyon.png"
+                                />
+                            </td>
+                            <td>Noyon</td>
+                            <td>Rouge et blanc</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Paris"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/paris.png"
+                                />
+                            </td>
+                            <td>Paris</td>
+                            <td>Bleu roi et rouge</td>
+                            <td data-fal-insigne>
+                                <a href="#iledefrance">
+                                    <img
+                                        alt="Ile de France"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/ile de france.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Reims"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/reims.png"
+                                />
+                            </td>
+                            <td>Reims</td>
+                            <td>Bleu et blanc</td>
+                            <td data-fal-insigne>
+                                <a href="#champagne">
+                                    <img
+                                        alt="Champagne"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/champagne.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Rouen"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/rouen.png"
+                                />
+                            </td>
+                            <td>Rouen</td>
+                            <td>Bleu roi et rouge</td>
+                            <td data-fal-insigne>
+                                <a href="#normandie">
+                                    <img
+                                        alt="Normandie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/normandie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Saint-Quentin"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/saint-quentin.png"
+                                />
+                            </td>
+                            <td>Saint-Quentin</td>
+                            <td>Bleu et blanc</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Senlis"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/senlis.png"
+                                />
+                            </td>
+                            <td>Senlis</td>
+                            <td>Rouge et or</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Soissons"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/soissons.png"
+                                />
+                            </td>
+                            <td>Soissons</td>
+                            <td>Bleu et blanc</td>
+                            <td data-fal-insigne>
+                                <a href="#picardie">
+                                    <img
+                                        alt="Picardie"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/picardie.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Valenciennes"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/valenciennes.png"
+                                />
+                            </td>
+                            <td>Valenciennes</td>
+                            <td>Rouge et or</td>
+                            <td data-fal-insigne>
+                                <a href="#flandres">
+                                    <img
+                                        alt="Flandres"
+                                        loading="lazy"
+                                        height="50"
+                                        width="75"
+                                        src="../images/ecussons/flandres.png"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <h2>Les villes proches</h2>
+                <h2>Les provinces</h2>
 
-            <table class="table align-middle">
-                <thead>
-                    <tr>
-                        <td>Blason</td>
-                        <td>Ville</td>
-                        <td>Couleurs</td>
-                        <td>Province</td>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Abbeville" loading="lazy" height="50" width=75
-                                src="../images/ecussons/abbeville.png">
-                        </td>
-                        <td>Abbeville</td>
-                        <td>Bleu roi et rouge</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Amiens" loading="lazy" height="50" width=75 src="../images/ecussons/amiens.png">
-                        </td>
-                        <td>Amiens</td>
-                        <td>Bleu roi et rouge</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Arras" loading="lazy" height="50" width=75 src="../images/ecussons/arras.png">
-                        </td>
-                        <td>Arras</td>
-                        <td>Rouge et bleu</td>
-                        <td data-fal-insigne>
-                            <a href="#artois">
-                                <img alt="Artois" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/artois.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Beauvais" loading="lazy" height="50" width=75
-                                src="../images/ecussons/beauvais.png">
-                        </td>
-                        <td>Beauvais</td>
-                        <td>Rouge et blanc</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Compiègne" loading="lazy" height="50" width=75
-                                src="../images/ecussons/compiègne.png">
-                        </td>
-                        <td>Compiègne</td>
-                        <td>Bleu roi et or</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Creil" loading="lazy" height="50" width=75 src="../images/ecussons/creil.png">
-                        </td>
-                        <td>Creil</td>
-                        <td>Bleu roi et or</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Doullens" loading="lazy" height="50" width=75
-                                src="../images/ecussons/doullens.png">
-                        </td>
-                        <td>Doullens</td>
-                        <td>Bleu roi et or</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Hirson" loading="lazy" height="50" width=75 src="../images/ecussons/hirson.png">
-                        </td>
-                        <td>Hirson</td>
-                        <td>Bleu et blanc</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Laon" loading="lazy" height="50" width=75 src="../images/ecussons/laon.png">
-                        </td>
-                        <td>Laon</td>
-                        <td>Bleu et blanc</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Lille" loading="lazy" height="50" width=75 src="../images/ecussons/lille.png">
-                        </td>
-                        <td>Lille</td>
-                        <td>Rouge et blanc</td>
-                        <td data-fal-insigne>
-                            <a href="#flandes">
-                                <img alt="Flandres" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/flandres.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Noyon" loading="lazy" height="50" width=75 src="../images/ecussons/noyon.png">
-                        </td>
-                        <td>Noyon</td>
-                        <td>Rouge et blanc</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Paris" loading="lazy" height="50" width=75 src="../images/ecussons/paris.png">
-                        </td>
-                        <td>Paris</td>
-                        <td>Bleu roi et rouge</td>
-                        <td data-fal-insigne>
-                            <a href="#iledefrance">
-                                <img alt="Ile de France" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/ile de france.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Reims" loading="lazy" height="50" width=75 src="../images/ecussons/reims.png">
-                        </td>
-                        <td>Reims</td>
-                        <td>Bleu et blanc</td>
-                        <td data-fal-insigne>
-                            <a href="#champagne">
-                                <img alt="Champagne" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/champagne.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Rouen" loading="lazy" height="50" width=75 src="../images/ecussons/rouen.png">
-                        </td>
-                        <td>Rouen</td>
-                        <td>Bleu roi et rouge</td>
-                        <td data-fal-insigne>
-                            <a href="#normandie">
-                                <img alt="Normandie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/normandie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Saint-Quentin" loading="lazy" height="50" width=75
-                                src="../images/ecussons/saint-quentin.png">
-                        </td>
-                        <td>Saint-Quentin</td>
-                        <td>Bleu et blanc</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Senlis" loading="lazy" height="50" width=75 src="../images/ecussons/senlis.png">
-                        </td>
-                        <td>Senlis</td>
-                        <td>Rouge et or</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Soissons" loading="lazy" height="50" width=75
-                                src="../images/ecussons/soissons.png">
-                        </td>
-                        <td>Soissons</td>
-                        <td>Bleu et blanc</td>
-                        <td data-fal-insigne>
-                            <a href="#picardie">
-                                <img alt="Picardie" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/picardie.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-fal-insigne>
-                            <img alt="Valenciennes" loading="lazy" height="50" width=75
-                                src="../images/ecussons/valenciennes.png">
-                        </td>
-                        <td>Valenciennes</td>
-                        <td>Rouge et or</td>
-                        <td data-fal-insigne>
-                            <a href="#flandres">
-                                <img alt="Flandres" loading="lazy" height="50" width=75
-                                    src="../images/ecussons/flandres.png">
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <td>Blason</td>
+                            <td>Province</td>
+                            <td>Couleurs</td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr id="artois">
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Artois"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/artois.png"
+                                />
+                            </td>
+                            <td>Artois</td>
+                            <td>Bleu roi et or</td>
+                        </tr>
+                        <tr id="champagne">
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Champagne"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/champagne.png"
+                                />
+                            </td>
+                            <td>Champagne</td>
+                            <td>Bleu et blanc</td>
+                        </tr>
+                        <tr id="flandres">
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Flandres"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/flandres.png"
+                                />
+                            </td>
+                            <td>Flandres</td>
+                            <td>Jaune et noir</td>
+                        </tr>
+                        <tr id="iledefrance">
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Ile de France"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/ile de france.png"
+                                />
+                            </td>
+                            <td>Ile de France</td>
+                            <td>Bleu roi et rouge</td>
+                        </tr>
+                        <tr id="normandie">
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Normandie"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/normandie.png"
+                                />
+                            </td>
+                            <td>Normandie</td>
+                            <td>Rouge et or</td>
+                        </tr>
+                        <tr id="picardie">
+                            <td data-fal-insigne>
+                                <img
+                                    alt="Picardie"
+                                    loading="lazy"
+                                    height="50"
+                                    width="75"
+                                    src="../images/ecussons/picardie.png"
+                                />
+                            </td>
+                            <td>Picardie</td>
+                            <td>Bleu et blanc</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <h2>Les provinces</h2>
-
-            <table class="table align-middle">
-                <thead>
-                    <tr>
-                        <td>Blason</td>
-                        <td>Province</td>
-                        <td>Couleurs</td>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr id="artois">
-                        <td data-fal-insigne><img alt="Artois" loading="lazy" height="50" width=75
-                                src="../images/ecussons/artois.png"></td>
-                        <td>Artois</td>
-                        <td>Bleu roi et or</td>
-                    </tr>
-                    <tr id="champagne">
-                        <td data-fal-insigne><img alt="Champagne" loading="lazy" height="50" width=75
-                                src="../images/ecussons/champagne.png">
-                        </td>
-                        <td>Champagne</td>
-                        <td>Bleu et blanc</td>
-                    </tr>
-                    <tr id="flandres">
-                        <td data-fal-insigne><img alt="Flandres" loading="lazy" height="50" width=75
-                                src="../images/ecussons/flandres.png"></td>
-                        <td>Flandres</td>
-                        <td>Jaune et noir</td>
-                    </tr>
-                    <tr id="iledefrance">
-                        <td data-fal-insigne><img alt="Ile de France" loading="lazy" height="50" width=75
-                                src="../images/ecussons/ile de france.png">
-                        </td>
-                        <td>Ile de France</td>
-                        <td>Bleu roi et rouge</td>
-                    </tr>
-                    <tr id="normandie">
-                        <td data-fal-insigne><img alt="Normandie" loading="lazy" height="50" width=75
-                                src="../images/ecussons/normandie.png">
-                        </td>
-                        <td>Normandie</td>
-                        <td>Rouge et or</td>
-                    </tr>
-                    <tr id="picardie">
-                        <td data-fal-insigne><img alt="Picardie" loading="lazy" height="50" width=75
-                                src="../images/ecussons/picardie.png"></td>
-                        <td>Picardie</td>
-                        <td>Bleu et blanc</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div>
-            <a class="nav-link" href="/" style="padding-left: 15px;">
-                <p>← <i class="bi bi-book"></i> Retour au code</p>
-            </a>
+            <div>
+                <a class="nav-link" href="/" style="padding-left: 15px">
+                    <p>← <i class="bi bi-book"></i> Retour au code</p>
+                </a>
+            </div>
         </div>
 
         <script type="module" src="/js/index.js"></script>
-</body>
-
+    </body>
 </html>
