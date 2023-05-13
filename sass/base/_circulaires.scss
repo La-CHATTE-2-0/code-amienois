@@ -54,10 +54,10 @@ $data-fal-circu-infos: (
             border-radius: $border-radius-circu;
         
             &[data-fal-circu="satin"] {
-                background-image: url(../images/circu/satin.png);
+                background-image: url(../images/circu/satin.webp);
             }
             &[data-fal-circu="velours"] {
-                background-image: url(../images/circu/velours.png);
+                background-image: url(../images/circu/velours.webp);
             }
         }        
     }

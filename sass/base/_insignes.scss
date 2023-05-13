@@ -79,6 +79,13 @@
 }
 
 .bg-ruban-bleu {
-    background: url(../images/insigne/satin_bleu.png);
+    padding: 5px;
+    background: url(../images/insigne/satin_bleu.webp);
+    border-radius: $border-radius-circu;
+}
+
+.bg-ruban-noir {
+    padding: 5px;
+    background: black;
     border-radius: $border-radius-circu;
 }
