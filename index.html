@@ -2330,10 +2330,6 @@
                             <td>Ciseaux</td>
                             <td>
                                 <div>A cousu sa faluche</div>
-                                <div>
-                                    (année de couture en indice, nombre de
-                                    faluches cousu en exposant)
-                                </div>
                             </td>
                             <td data-fal-insigne>
                                 <img
@@ -2943,10 +2939,11 @@
                             <td>Cordon bleu</td>
                             <td data-fal-insigne>
                                 <img
+                                    class="bg-ruban-bleu"
                                     loading="lazy"
                                     width="100"
                                     height="100"
-                                    src="/images/insigne/fourchette_ruban_bleu.png"
+                                    src="/images/insigne/fourchette.png"
                                     alt="Fourchette"
                                 />
                             </td>
@@ -2984,9 +2981,8 @@
                             <td>Lime + ruban noir</td>
                             <td>Non respect à Grand-Maître</td>
                             <td data-fal-insigne>
-                                <!-- TODO Ajouter ruban noir -->
                                 <img
-                                    style="background-color: black"
+                                    class="bg-ruban-noir"
                                     loading="lazy"
                                     width="100"
                                     height="100"
@@ -3077,7 +3073,7 @@
                             <td>Blâme</td>
                             <td data-fal-insigne>
                                 <img
-                                    style="background-color: black"
+                                    class="bg-ruban-noir"
                                     loading="lazy"
                                     width="100"
                                     height="100"
@@ -3428,13 +3424,30 @@
                                     </ul>
                                 </td>
                                 <td data-fal-insigne>
-                                    <img
-                                        loading="lazy"
-                                        width="100"
-                                        height="100"
-                                        src="/images/insigne/ciseaux.png"
-                                        alt="Ciseaux"
-                                    />
+                                    <div>
+                                        <img
+                                            class="bg-ruban-bleu"
+                                            loading="lazy"
+                                            width="100"
+                                            height="100"
+                                            src="/images/insigne/ciseaux.png"
+                                            alt="Ciseaux"
+                                        />
+                                        <img
+                                            loading="lazy"
+                                            width="20"
+                                            height="20"
+                                            src="/images/insigne/petit_zero.png"
+                                            alt="Chiffre"
+                                        />
+                                        <img
+                                            loading="lazy"
+                                            width="20"
+                                            height="20"
+                                            src="/images/insigne/petit_zero.png"
+                                            alt="Chiffre"
+                                        />
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -4444,6 +4457,7 @@
         </div>
 
         <script type="module" src="./js/index.js"></script>
+        <script type="module" src="./js/searchbar.js"></script>
         <script type="module" src="./js/easteregg.js" defer></script>
     </body>
 </html>
