@@ -8,7 +8,7 @@ export default {
       registerType: 'autoUpdate',
       injectRegister: 'auto',
       workbox: {
-        globPatterns: ['**/*.{js,css,sass,html,ico,png,svg}']
+        globPatterns: ['**/*.{js,css,sass,html,ico,png,svg,webp,jpeg,JPG,jpg}']
       },
       manifest: {
         "short_name": "Code Amiénois",

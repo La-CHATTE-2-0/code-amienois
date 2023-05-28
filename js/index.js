@@ -1,3 +1,5 @@
+//Keep bootstrap import, it is needed for header in mobile mode
+import * as bootstrap from 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
 //#region Darkmode
