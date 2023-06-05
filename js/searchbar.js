@@ -7,21 +7,21 @@ const searchInput = document.getElementById("search-input");
 const searchSubmit = document.getElementById("search-submit");
 const searchForm = document.getElementById("search-submit");
 
-searchInput && searchInput.addEventListener("input", (e) => {
+searchInput?.addEventListener("input", (e) => {
     if (e.target.value.length > 2) {
-        searchSubmit.classList.remove("disabled")
+        searchSubmit?.classList.remove("disabled")
     } else {
         searchSubmit.classList.add("disabled")
     }
 })
 
-searchSubmit && searchSubmit.addEventListener("click", (e) => {
+searchSubmit?.addEventListener("click", (e) => {
     e.preventDefault()
-    window.find(searchInput.value)
+    window.find(searchInput?.value)
 })
 
-searchForm && searchForm.addEventListener("submit", (e) => {
+searchForm?.addEventListener("submit", (e) => {
     e.preventDefault()
-    window.find(searchInput.value)
+    window.find(searchInput?.value)
 })
 //#endregion Init search

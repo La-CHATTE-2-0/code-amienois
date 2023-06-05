@@ -7,7 +7,7 @@ let darkmode = localStorage.getItem("darkmode");
 const darkmodeSwitch = document.getElementById("darkmode")
 const body = document.querySelector("body")
 
-if (darkmode == "true") {
+if (darkmode === "true") {
     darkmodeSwitch.checked = true
     body.classList.add("dark")
 }
@@ -16,7 +16,7 @@ else {
 }
 
 darkmodeSwitch.addEventListener("change", (e) => {
-    if (e.target.checked == true) {
+    if (e.target.checked === true) {
         localStorage.setItem("darkmode", "true")
         body.classList.add("dark")
 
