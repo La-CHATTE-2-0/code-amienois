@@ -23,12 +23,17 @@
     }
 }
 
+.table caption {
+    display: none;
+}
+
 .table-warning-fal {
-    table {
+    .table tbody {
         margin-bottom: 0;
         tr {
             &>td {
-                border-color: #ffe596;
+                background-color: rgb(255, 242, 202) !important;
+                border-color: #ffe596 !important;
             }
             &:last-child {
                 td {
@@ -39,10 +44,11 @@
     }
 }
 .dark .table-warning-fal {
-    table {
+    .table {
         tr {
             &>td {
-                border-color: #946f00;
+                background-color: rgb(94, 70, 1) !important;
+                border-color: #946f00 !important;
             }
         }
     }
