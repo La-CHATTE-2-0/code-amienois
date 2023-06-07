@@ -32,6 +32,7 @@
         margin-bottom: 0;
         tr {
             &>td {
+                background-color: rgb(255, 242, 202) !important;
                 border-color: #ffe596 !important;
             }
             &:last-child {
@@ -46,6 +47,7 @@
     .table {
         tr {
             &>td {
+                background-color: rgb(94, 70, 1) !important;
                 border-color: #946f00 !important;
             }
         }
