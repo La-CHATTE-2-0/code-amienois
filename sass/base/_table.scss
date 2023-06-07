@@ -28,10 +28,10 @@
 }
 
 .table-warning-fal {
-    .table tbody {
+    .table {
         margin-bottom: 0;
         tr {
-            &>td {
+            &>td, &>th {
                 background-color: rgb(255, 242, 202) !important;
                 border-color: #ffe596 !important;
             }
@@ -46,7 +46,7 @@
 .dark .table-warning-fal {
     .table {
         tr {
-            &>td {
+            &>td, &>th  {
                 background-color: rgb(94, 70, 1) !important;
                 border-color: #946f00 !important;
             }
