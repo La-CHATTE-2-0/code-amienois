@@ -1,8 +1,10 @@
 // vite.config.js / vite.config.ts
 import { VitePWA } from 'vite-plugin-pwa'
+import { VitePluginRadar } from 'vite-plugin-radar'
 import path from 'path'
+import { defineConfig } from 'vite'
 
-export default {
+export default defineConfig({
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
@@ -46,6 +48,12 @@ export default {
       devOptions: {
         enabled: true
       }
+    }),
+    VitePluginRadar({
+      // Google Analytics tag injection
+      analytics: {
+        id: 'G-XPELB5DRNK',
+      },
     })
   ],
   root: path.resolve(__dirname, '.'),
@@ -55,6 +63,7 @@ export default {
     }
   },
   build: {
+    minify: true,
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
@@ -67,4 +76,4 @@ export default {
       },
     },
   }
-}
+})
