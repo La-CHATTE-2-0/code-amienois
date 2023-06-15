@@ -1,981 +1,736 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <meta name="theme-color" content="#212529" />
-        <meta name="description" content="Code de la Faluche Amiénoise" />
-        <title>Spés d'Amiens - Code Amiénois</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/icons-192.png" />
-        <link rel="stylesheet" href="../sass/styles.scss" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <meta property="og:title" content="Spés - Code Amienois" />
-        <meta property="og:type" content="article" />
-        <meta
-            property="og:description"
-            content="Code de la faluche Amiénoise"
-        />
-        <meta property="og:locale" content="fr_FR" />
-        <meta property="og:url" content="https://www.code-amienois.app/" />
-        <meta property="og:image" content="/icons-512.png" />
-        <meta property="og:image:alt" content="Photo de faluche" />
+    <meta name="theme-color" content="#212529" />
+    <meta name="description" content="Code de la Faluche Amiénoise" />
+    <title>Spés d'Amiens - Code Amiénois</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icons-192.png" />
+    <link rel="stylesheet" href="../sass/styles.scss" />
 
-        <meta name="twitter:card" content="summary" />
-        <meta property="twitter:title" content="Code Amiénois" />
-        <meta name="twitter:image" content="/icons-512.png" />
-        <meta name="twitter:image:alt" content="Photo de faluche" />
-        <meta
-            property="twitter:description"
-            content="Code de la faluche Amiénoise"
-        />
-    </head>
+    <meta property="og:title" content="Spés - Code Amienois" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Code de la faluche Amiénoise" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://www.code-amienois.app/" />
+    <meta property="og:image" content="/icons-512.png" />
+    <meta property="og:image:alt" content="Photo de faluche" />
 
-    <body id="body">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">Code de la Faluche</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Code Amiénois" />
+    <meta name="twitter:image" content="/icons-512.png" />
+    <meta name="twitter:image:alt" content="Photo de faluche" />
+    <meta property="twitter:description" content="Code de la faluche Amiénoise" />
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Code de la Faluche</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Code</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    Annexes
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            href="/pages/monome.html"
-                                            >Le Monôme</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="dropdown-item active"
-                                            href="/pages/speamiens.html"
-                                            >Récapitulatif des spés</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            href="/pages/notespm.html"
-                                            >Notes aux PM</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    Ressources
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            target="_blank" rel="noopener"
-                                            href="https://www.youtube.com/@nouveaubreviaireamienois111"
-                                        >
-                                            <i class="bi bi-youtube"></i>
-                                            Bréviaire
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            href="/pages/couleursrubans.html"
-                                        >
-                                            <i class="bi bi-brush"></i> Couleurs
-                                            rubans
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            target="_blank" rel="noopener"
-                                            href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/edit?usp=share_link"
-                                            ><i class="bi bi-link-45deg"></i>
-                                            Guide sécu</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            href="/pages/checklistcongres.html"
-                                            ><i class="bi bi-bag-check"></i>
-                                            Checklist de congrès</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Code</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Annexes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="/pages/monome.html">Le Monôme</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item active" href="/pages/speamiens.html">Récapitulatif des
+                                        spés</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/pages/ordres.html">Les ordres</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/pages/notespm.html">Notes aux PM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ressources
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" target="_blank" rel="noopener"
+                                        href="https://www.youtube.com/@nouveaubreviaireamienois111">
+                                        <i class="bi bi-youtube"></i>
+                                        Bréviaire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/pages/couleursrubans.html">
+                                        <i class="bi bi-brush"></i> Couleurs
+                                        rubans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" target="_blank" rel="noopener"
+                                        href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/edit?usp=share_link"><i
+                                            class="bi bi-link-45deg"></i>
+                                        Guide sécu</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/pages/checklistcongres.html"><i
+                                            class="bi bi-bag-check"></i>
+                                        Checklist de congrès</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                    <div
-                        class="form-check form-switch"
-                        style="margin-right: 10px"
-                    >
-                        <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="darkmode"
-                        />
-                        <label class="form-check-label" for="darkmode"
-                            >Darkmode</label
-                        >
-                    </div>
+                </ul>
+                <div class="form-check form-switch" style="margin-right: 10px">
+                    <input class="form-check-input" type="checkbox" role="switch" id="darkmode" />
+                    <label class="form-check-label" for="darkmode">Darkmode</label>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div id="debut" class="fal-container">
-            <div data-fal-article>
-                <h2>Circulaires</h2>
-                <table class="table align-middle" data-fal-table="circu">
-                    <caption>Spe Circu</caption>
-                    <tbody>
-                        <tr class="no-border-bottom">
-                            <td data-filliere>Assistante sociale</td>
-                            <td data-matiere>Velours jaune</td>
-                            <td data-matiere-img>
-                                <div
-                                    data-fal-circu-container
-                                    data-fal-circu-color="jaune"
-                                >
-                                    <div data-fal-circu="velours"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'existe pas au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td data-filliere>Medecine</td>
-                            <td data-matiere>Velours bordeaux</td>
-                            <td data-matiere-img>
-                                <div
-                                    data-fal-circu-container
-                                    data-fal-circu-color="bordeaux"
-                                >
-                                    <div data-fal-circu="velours"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Velours rouge au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td data-filliere>Sage-Femme</td>
-                            <td data-matiere>Velours fiolet</td>
-                            <td data-matiere-img>
-                                <div
-                                    data-fal-circu-container
-                                    data-fal-circu-color="fiolet"
-                                >
-                                    <div data-fal-circu="velours"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Velours fushia pas au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Arts / Architecture / Théatre</td>
-                            <td>Satin jaune et bleu roy</td>
-                            <td>
-                                <div
-                                    data-fal-circu-container="demi"
-                                    data-fal-circu-color="jaune"
-                                >
-                                    <div data-fal-circu="satin"></div>
-                                </div>
-                                <div
-                                    data-fal-circu-container="demi"
-                                    data-fal-circu-color="bleuroy"
-                                >
-                                    <div data-fal-circu="satin"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Bleu roy au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Cinéma</td>
-                            <td>Satin blanc et noir</td>
-                            <td>
-                                <div
-                                    data-fal-circu-container="demi"
-                                    data-fal-circu-color="blanc"
-                                >
-                                    <div data-fal-circu="satin"></div>
-                                </div>
-                                <div
-                                    data-fal-circu-container="demi"
-                                    data-fal-circu-color="noir"
-                                >
-                                    <div data-fal-circu="satin"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Bleu roy au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>
-                                <span>
-                                    Communication, Journalisme <br />(rattaché à
-                                    l'UFR des lettres)
-                                </span>
-                            </td>
-                            <td>Satin jaune</td>
-                            <td>
-                                <div
-                                    data-fal-circu-container
-                                    data-fal-circu-color="jaune"
-                                >
-                                    <div data-fal-circu="satin"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Aux couleurs de l'UFR de ratachement (peut
-                                changer du jaune dans d'autres villes)
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>IUT (sauf GMP)</td>
-                            <td>Satin rose</td>
-                            <td>
-                                <div
-                                    data-fal-circu-container
-                                    data-fal-circu-color="rose"
-                                >
-                                    <div data-fal-circu="satin"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Satin blanc au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Science de l'éducation</td>
-                            <td>Satin jaune</td>
-                            <td>
-                                <div
-                                    data-fal-circu-container
-                                    data-fal-circu-color="jaune"
-                                >
-                                    <div data-fal-circu="satin"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'existe pas au code national
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <div id="debut" class="fal-container">
+        <div data-fal-article>
+            <h2>Circulaires</h2>
+            <table class="table align-middle" data-fal-table="circu">
+                <caption>Spe Circu</caption>
+                <tbody>
+                    <tr class="no-border-bottom">
+                        <td data-filliere>Assistante sociale</td>
+                        <td data-matiere>Velours jaune</td>
+                        <td data-matiere-img>
+                            <div data-fal-circu-container data-fal-circu-color="jaune">
+                                <div data-fal-circu="velours"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'existe pas au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td data-filliere>Medecine</td>
+                        <td data-matiere>Velours bordeaux</td>
+                        <td data-matiere-img>
+                            <div data-fal-circu-container data-fal-circu-color="bordeaux">
+                                <div data-fal-circu="velours"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Velours rouge au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td data-filliere>Sage-Femme</td>
+                        <td data-matiere>Velours fiolet</td>
+                        <td data-matiere-img>
+                            <div data-fal-circu-container data-fal-circu-color="fiolet">
+                                <div data-fal-circu="velours"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Velours fushia pas au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Arts / Architecture / Théatre</td>
+                        <td>Satin jaune et bleu roy</td>
+                        <td>
+                            <div data-fal-circu-container="demi" data-fal-circu-color="jaune">
+                                <div data-fal-circu="satin"></div>
+                            </div>
+                            <div data-fal-circu-container="demi" data-fal-circu-color="bleuroy">
+                                <div data-fal-circu="satin"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Bleu roy au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Cinéma</td>
+                        <td>Satin blanc et noir</td>
+                        <td>
+                            <div data-fal-circu-container="demi" data-fal-circu-color="blanc">
+                                <div data-fal-circu="satin"></div>
+                            </div>
+                            <div data-fal-circu-container="demi" data-fal-circu-color="noir">
+                                <div data-fal-circu="satin"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Bleu roy au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>
+                            <span>
+                                Communication, Journalisme <br />(rattaché à
+                                l'UFR des lettres)
+                            </span>
+                        </td>
+                        <td>Satin jaune</td>
+                        <td>
+                            <div data-fal-circu-container data-fal-circu-color="jaune">
+                                <div data-fal-circu="satin"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Aux couleurs de l'UFR de ratachement (peut
+                            changer du jaune dans d'autres villes)
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>IUT (sauf GMP)</td>
+                        <td>Satin rose</td>
+                        <td>
+                            <div data-fal-circu-container data-fal-circu-color="rose">
+                                <div data-fal-circu="satin"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Satin blanc au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Science de l'éducation</td>
+                        <td>Satin jaune</td>
+                        <td>
+                            <div data-fal-circu-container data-fal-circu-color="jaune">
+                                <div data-fal-circu="satin"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'existe pas au code national
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <h2>Baccalauréats</h2>
-                <table class="table align-middle" data-fal-table="insigne">
-                    <caption>Spe bac</caption>
-                    <tbody>
-                        <tr class="no-border-bottom">
-                            <td class="no-border">Scientifique spé SVT</td>
-                            <td class="no-border">Phi + Epsilon φε</td>
-                            <td class="no-border" data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/phi_epsilon.png"
-                                    alt="Phi Epsilon"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Epsilon au code national
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h2>Baccalauréats</h2>
+            <table class="table align-middle" data-fal-table="insigne">
+                <caption>Spe bac</caption>
+                <tbody>
+                    <tr class="no-border-bottom">
+                        <td class="no-border">Scientifique spé SVT</td>
+                        <td class="no-border">Phi + Epsilon φε</td>
+                        <td class="no-border" data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/phi_epsilon.png"
+                                alt="Phi Epsilon" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Epsilon au code national
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <h2>Insignes de fillières</h2>
-                <table class="table align-middle" data-fal-table="insigne">
-                    <caption>Spe Fillieres</caption>
-                    <tbody>
-                        <tr class="no-border-bottom">
-                            <td>Assistante Sociale</td>
-                            <td>Lettres AS</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/lettres_as.png"
-                                    alt="Lettres AS"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'existe pas au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Kiné</td>
-                            <td>Ciseaux + Caducée de Mercure</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/ciseaux_et_caducee_mercure.png"
-                                    alt="Ciseaux et Caducée de Mercure"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Caducée de Mercure au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Science de l'éducation</td>
-                            <td>Lettres SDE</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/lettres_sde.png"
-                                    alt="Lettres SDE"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'existe pas au code national
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h2>Insignes de fillières</h2>
+            <table class="table align-middle" data-fal-table="insigne">
+                <caption>Spe Fillieres</caption>
+                <tbody>
+                    <tr class="no-border-bottom">
+                        <td>Assistante Sociale</td>
+                        <td>Lettres AS</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_as.png"
+                                alt="Lettres AS" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'existe pas au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Kiné</td>
+                        <td>Ciseaux + Caducée de Mercure</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100"
+                                src="/images/insigne/ciseaux_et_caducee_mercure.png"
+                                alt="Ciseaux et Caducée de Mercure" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Caducée de Mercure au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Science de l'éducation</td>
+                        <td>Lettres SDE</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/lettres_sde.png"
+                                alt="Lettres SDE" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'existe pas au code national
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <h2>Autres insignes</h2>
-                <table class="table align-middle" data-fal-table="insigne">
-                    <caption>Spe Insignes</caption>
-                    <tbody>
-                        <tr>
-                            <td colspan="3">
-                                <h5>Les symboles</h5>
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Ciseaux</td>
-                            <td>
-                                <ul>
-                                    <li>
-                                        A cousu sa faluche en tant de bizut (sur
-                                        ruban bleu)
-                                    </li>
-                                    <li>
-                                        À Amiens, on ajoute l'année en indice,
-                                        et le nombre de faluches cousues en
-                                        exposant
-                                    </li>
-                                </ul>
-                            </td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/ciseaux.png"
-                                    alt="Ciseaux"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Le ruban bleu et les années avec les ciseaux
-                                n'existent au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Cochon</td>
-                            <td>
-                                Les étudiants en santé (sauf Pharmacie) placent
-                                le cochon en début de circulaire
-                            </td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/cochon.png"
-                                    alt="Cochon"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Le cochon est sur le velours de la faluche au
-                                code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Cochon + ruban bleu</td>
-                            <td>
-                                Mange comme un porc (remplace les fourchettes
-                                croisées)
-                            </td>
-                            <td data-fal-insigne>
-                                <img
-                                    class="bg-ruban-bleu"
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/cochon.png"
-                                    alt="Cochon"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Remplace les fourchettes croisées du code
-                                national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Feuille de vigne</td>
-                            <td>
-                                Perte de viriginité masculine (<strong
-                                    >mais pendant la vie falucharde</strong
-                                >)
-                            </td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/feuille_de_vigne.png"
-                                    alt="Feuille de vigne"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Pas de notion de vie falucharde au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Grappe de raisin (retournée)</td>
-                            <td>Amour de tous les alcools</td>
-                            <td data-fal-insigne>
-                                <img
-                                    style="rotate: 180deg"
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/grappe_de_raisin.png"
-                                    alt="Grappe de raisin"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'existe pas au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Rose</td>
-                            <td>
-                                Perte de viriginité féminine (<strong
-                                    >mais pendant la vie falucharde</strong
-                                >)
-                            </td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/rose.png"
-                                    alt="Rose"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td colspan="3" class="no-border">
-                                En raison des débats aux 131ème, 132ème, 133ème
-                                et 134ème anniversaire, il a été décidé de
-                                retirer le squelette du code national et de
-                                laisser le choix à chaque ville (À Amiens on
-                                reste aux versions initales).
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Squelette (partie officielle)</td>
-                            <td>
-                                <ul>
-                                    <li>À l’endroit : Amour de l’anatomie</li>
-                                    <li>
-                                        À l'envers : Amour de l’anatomie du sexe
-                                        opposé
-                                    </li>
-                                    <li>
-                                        À l’envers + pointe de diamant : Amour
-                                        de l'anatomie du même sexe
-                                    </li>
-                                    <li>
-                                        À l’envers + pointe de ruby : Amour de
-                                        l'anatomie des deux sexes
-                                    </li>
-                                </ul>
-                            </td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/squelette.png"
-                                    alt="Squelette"
-                                />
-                                <img
-                                    style="rotate: 180deg"
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/squelette.png"
-                                    alt="Squelette"
-                                />
-                                <img
-                                    style="rotate: 180deg"
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/squelette_diamant.png"
-                                    alt="Squelette"
-                                />
-                                <img
-                                    style="rotate: 180deg"
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/squelette_ruby.png"
-                                    alt="Squelette"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'éxiste plus au code national (mais visible
-                                encore dans beaucoup de villes)
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Squelette (sur circulaire)</td>
-                            <td>
-                                <ul>
-                                    <li>Anatomiste (à l'endroit)</li>
-                                    <li>
-                                        A participé à une dissection humaine (à
-                                        l'envers)
-                                    </li>
-                                </ul>
-                            </td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/squelette.png"
-                                    alt="Squelette"
-                                />
-                                <img
-                                    style="rotate: 180deg"
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/squelette.png"
-                                    alt="Squelette"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'existe pas au code national
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td colspan="3" class="no-border">
-                                À Amiens certains insignes peuvent changer de
-                                signification quand ils sont placés avant les
-                                initiales sur le circulaire, de la
-                                représentation d'un amour d'une chose, à la
-                                pratique de celle-ci. Ces insignes sont appelés
-                                les <strong>capacitaires</strong>.
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Aigle</td>
-                            <td>Brevet de pilote</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/aigle.png"
-                                    alt="Aigle"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Lyre</td>
-                            <td>Musicien</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/lyre.png"
-                                    alt="Lyre"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Palette vernie</td>
-                            <td>Artiste</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/palette_vernie.png"
-                                    alt="Palette"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Plume</td>
-                            <td>Écrivain</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/plume.png"
-                                    alt="Plume"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Voilier</td>
-                            <td>Permis bateau</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/voilier.png"
-                                    alt="Voilier"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'existe pas au code national
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <h5>
-                                    Les insignes décernés par le/la partenaire
-                                </h5>
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Orchidée</td>
-                            <td>Fine baiseuse</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/orchidee.png"
-                                    alt="Orchidée"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                Remplace la pensée du code national
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <h5>
-                                    Les insignes décernés par un Grand-Maître
-                                </h5>
-                            </td>
-                        </tr>
-                        <tr class="no-border-bottom">
-                            <td>Lyre + tête de mort sur fémurs croisés</td>
-                            <td>Chanteur minable</td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/lyre_et_tete_de_mort_sur_femurs_croises.png"
-                                    alt=""
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <i class="bi bi-repeat"></i>
-                                N'existe pas au code national
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h2>Autres insignes</h2>
+            <table class="table align-middle" data-fal-table="insigne">
+                <caption>Spe Insignes</caption>
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h5>Les symboles</h5>
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Ciseaux</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    A cousu sa faluche en tant de bizut (sur
+                                    ruban bleu)
+                                </li>
+                                <li>
+                                    À Amiens, on ajoute l'année en indice,
+                                    et le nombre de faluches cousues en
+                                    exposant
+                                </li>
+                            </ul>
+                        </td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/ciseaux.png"
+                                alt="Ciseaux" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Le ruban bleu et les années avec les ciseaux
+                            n'existent au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Cochon</td>
+                        <td>
+                            Les étudiants en santé (sauf Pharmacie) placent
+                            le cochon en début de circulaire
+                        </td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/cochon.png"
+                                alt="Cochon" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Le cochon est sur le velours de la faluche au
+                            code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Cochon + ruban bleu</td>
+                        <td>
+                            Mange comme un porc (remplace les fourchettes
+                            croisées)
+                        </td>
+                        <td data-fal-insigne>
+                            <img class="bg-ruban-bleu" loading="lazy" width="100" height="100"
+                                src="/images/insigne/cochon.png" alt="Cochon" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Remplace les fourchettes croisées du code
+                            national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Feuille de vigne</td>
+                        <td>
+                            Perte de viriginité masculine (<strong>mais pendant la vie falucharde</strong>)
+                        </td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/feuille_de_vigne.png"
+                                alt="Feuille de vigne" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Pas de notion de vie falucharde au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Grappe de raisin (retournée)</td>
+                        <td>Amour de tous les alcools</td>
+                        <td data-fal-insigne>
+                            <img style="rotate: 180deg" loading="lazy" width="100" height="100"
+                                src="/images/insigne/grappe_de_raisin.png" alt="Grappe de raisin" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'existe pas au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Rose</td>
+                        <td>
+                            Perte de viriginité féminine (<strong>mais pendant la vie falucharde</strong>)
+                        </td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/rose.png" alt="Rose" />
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td colspan="3" class="no-border">
+                            En raison des débats aux 131ème, 132ème, 133ème
+                            et 134ème anniversaire, il a été décidé de
+                            retirer le squelette du code national et de
+                            laisser le choix à chaque ville (À Amiens on
+                            reste aux versions initales).
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Squelette (partie officielle)</td>
+                        <td>
+                            <ul>
+                                <li>À l’endroit : Amour de l’anatomie</li>
+                                <li>
+                                    À l'envers : Amour de l’anatomie du sexe
+                                    opposé
+                                </li>
+                                <li>
+                                    À l’envers + pointe de diamant : Amour
+                                    de l'anatomie du même sexe
+                                </li>
+                                <li>
+                                    À l’envers + pointe de ruby : Amour de
+                                    l'anatomie des deux sexes
+                                </li>
+                            </ul>
+                        </td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/squelette.png"
+                                alt="Squelette" />
+                            <img style="rotate: 180deg" loading="lazy" width="100" height="100"
+                                src="/images/insigne/squelette.png" alt="Squelette" />
+                            <img style="rotate: 180deg" loading="lazy" width="100" height="100"
+                                src="/images/insigne/squelette_diamant.png" alt="Squelette" />
+                            <img style="rotate: 180deg" loading="lazy" width="100" height="100"
+                                src="/images/insigne/squelette_ruby.png" alt="Squelette" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'éxiste plus au code national (mais visible
+                            encore dans beaucoup de villes)
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Squelette (sur circulaire)</td>
+                        <td>
+                            <ul>
+                                <li>Anatomiste (à l'endroit)</li>
+                                <li>
+                                    A participé à une dissection humaine (à
+                                    l'envers)
+                                </li>
+                            </ul>
+                        </td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/squelette.png"
+                                alt="Squelette" />
+                            <img style="rotate: 180deg" loading="lazy" width="100" height="100"
+                                src="/images/insigne/squelette.png" alt="Squelette" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'existe pas au code national
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td colspan="3" class="no-border">
+                            À Amiens certains insignes peuvent changer de
+                            signification quand ils sont placés avant les
+                            initiales sur le circulaire, de la
+                            représentation d'un amour d'une chose, à la
+                            pratique de celle-ci. Ces insignes sont appelés
+                            les <strong>capacitaires</strong>.
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Aigle</td>
+                        <td>Brevet de pilote</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/aigle.png" alt="Aigle" />
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Lyre</td>
+                        <td>Musicien</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/lyre.png" alt="Lyre" />
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Palette vernie</td>
+                        <td>Artiste</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/palette_vernie.png"
+                                alt="Palette" />
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Plume</td>
+                        <td>Écrivain</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/plume.png" alt="Plume" />
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Voilier</td>
+                        <td>Permis bateau</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/voilier.png"
+                                alt="Voilier" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'existe pas au code national
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h5>
+                                Les insignes décernés par le/la partenaire
+                            </h5>
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Orchidée</td>
+                        <td>Fine baiseuse</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100" src="/images/insigne/orchidee.png"
+                                alt="Orchidée" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            Remplace la pensée du code national
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h5>
+                                Les insignes décernés par un Grand-Maître
+                            </h5>
+                        </td>
+                    </tr>
+                    <tr class="no-border-bottom">
+                        <td>Lyre + tête de mort sur fémurs croisés</td>
+                        <td>Chanteur minable</td>
+                        <td data-fal-insigne>
+                            <img loading="lazy" width="100" height="100"
+                                src="/images/insigne/lyre_et_tete_de_mort_sur_femurs_croises.png" alt="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <i class="bi bi-repeat"></i>
+                            N'existe pas au code national
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <h2>Couture</h2>
-                <p>
-                    <i class="bi bi-scissors"></i> En hommage à son passé de
-                    ville tisserande, plus précisément coloriste,
-                    <strong
-                        >les rubans supérieurs sont tous en velours à
-                        Amiens</strong
-                    >. Cette particularité à été exporté aux villes de Reims
-                    (pour l'organisation du Centenaire) et Dijon (pour
-                    l'organisation des États généraux). D'autres villes
-                    tisserandes comme Rouen ou Troyes arborent également des
-                    rubans supérieurs en velours.
-                </p>
+            <h2>Couture</h2>
+            <p>
+                <i class="bi bi-scissors"></i> En hommage à son passé de
+                ville tisserande, plus précisément coloriste,
+                <strong>les rubans supérieurs sont tous en velours à
+                    Amiens</strong>. Cette particularité à été exporté aux villes de Reims
+                (pour l'organisation du Centenaire) et Dijon (pour
+                l'organisation des États généraux). D'autres villes
+                tisserandes comme Rouen ou Troyes arborent également des
+                rubans supérieurs en velours.
+            </p>
 
-                <h2>Croix et rubans</h2>
+            <h2>Croix et rubans</h2>
+            <ul>
+                <li>
+                    <p>
+                        Le <strong>bourreau</strong> est là pour faire
+                        respecter l’ordre et la discipline lors des
+                        réjouissances estudiantines. Il pourra à sa guise
+                        infliger des <strong>sanctions</strong> envers les
+                        récalcitrants sur le non respect de la faluche. La
+                        sanction pourra venir d’un GM ou bien de son propre
+                        chef, à l’aide de ses instruments, il applique les
+                        sanctions alcoolisées. L’insigne du bourreau se
+                        compose d’une hache et d’une bouteille, ainsi que de
+                        l’année de son obtention, sur un ruban aux couleurs
+                        de la discipline du GM.
+                    </p>
+                </li>
+            </ul>
+            <div data-billot>
+                <div>
+                    <span>Médecine</span>
+                    <img class="billot" loading="lazy" src="../images/insigne/billot_medecine.png"
+                        alt="Billot Médecine" />
+                </div>
+                <div>
+                    <span>Pharmacie</span>
+                    <img class="billot" loading="lazy" src="../images/insigne/billot_pharma.png" alt="Billot Pharma" />
+                </div>
+                <div>
+                    <span>Sage-Femme</span>
+                    <img class="billot" loading="lazy" src="../images/insigne/billot_sage_femme.png"
+                        alt="Billot Sage-Femme" />
+                </div>
+                <div>
+                    <span>Inter-Fillières</span>
+                    <img class="billot" loading="lazy" src="../images/insigne/billot_satin.png"
+                        alt="Billot Inter-Fillières" />
+                </div>
+                <div>
+                    <span>Sciences</span>
+                    <img class="billot" loading="lazy" src="../images/insigne/billot_sciences.png"
+                        alt="Billot Sciences" />
+                </div>
+            </div>
+            <div>
+                <br />
                 <ul>
                     <li>
                         <p>
-                            Le <strong>bourreau</strong> est là pour faire
-                            respecter l’ordre et la discipline lors des
-                            réjouissances estudiantines. Il pourra à sa guise
-                            infliger des <strong>sanctions</strong> envers les
-                            récalcitrants sur le non respect de la faluche. La
-                            sanction pourra venir d’un GM ou bien de son propre
-                            chef, à l’aide de ses instruments, il applique les
-                            sanctions alcoolisées. L’insigne du bourreau se
-                            compose d’une hache et d’une bouteille, ainsi que de
-                            l’année de son obtention, sur un ruban aux couleurs
-                            de la discipline du GM.
+                            Les croix sont transmises de générations en
+                            génération, c'est à dire qu'une croix partant à
+                            la retraite donne sa croix historique au nouvel
+                            intronisé. Les croix amiénoies mettent une croix
+                            neuve du côté personnel (à droite) lorsqu’elles
+                            partent à la retraite, et non plus à gauche
+                            comme lorsqu’elles sont en activité.
                         </p>
                     </li>
+                    <li>
+                        <p>
+                            L’évêque a pour tache de marier les faluchards
+                            entre eux. Il aura soin de vérifier qu’une forte
+                            amitié lie les dits faluchards. Le mariage a
+                            pour but de fusionner cette amitié. Il a aussi
+                            le rôle de confident et il est tenu au secret.
+                            Du fait de sa neutralité, il peut lui être
+                            demandé d’intervenir en cas de conflit.
+                        </p>
+                        <p>
+                            À la différence des GM présents dans presque
+                            toutes les villes, il n’existe que 4 évêchés :
+                            le Sud à Poitiers, le Nord à Amiens, l’Est
+                            Septentrional à Strasbourg, et l’Est Méridional
+                            à Grenoble. L’évêque du Nord n’a pas besoin de
+                            la présence d’un GM pour officier.
+                        </p>
+                        <p>
+                            À Amiens, l’évêché se distingue par un
+                            <strong>E dans une palme de Sciences montée sur un
+                                ruban violet</strong>
+                            et sa
+                            <strong>cape de cérémonie aux couleurs de la
+                                discipline</strong>
+                            suivi par l’Évêque.
+                        </p>
+                        <div style="text-align: center">
+                            <img style="max-width: 300px; width: 100%" src="../images/insigne/eveque.png"
+                                alt="Ruban d'êveque" loading="lazy" width="300" />
+                        </div>
+                    </li>
                 </ul>
-                <div data-billot>
-                    <div>
-                        <span>Médecine</span>
-                        <img
-                            class="billot"
-                            loading="lazy"
-                            src="../images/insigne/billot_medecine.png"
-                            alt="Billot Médecine"
-                        />
-                    </div>
-                    <div>
-                        <span>Pharmacie</span>
-                        <img
-                            class="billot"
-                            loading="lazy"
-                            src="../images/insigne/billot_pharma.png"
-                            alt="Billot Pharma"
-                        />
-                    </div>
-                    <div>
-                        <span>Sage-Femme</span>
-                        <img
-                            class="billot"
-                            loading="lazy"
-                            src="../images/insigne/billot_sage_femme.png"
-                            alt="Billot Sage-Femme"
-                        />
-                    </div>
-                    <div>
-                        <span>Inter-Fillières</span>
-                        <img
-                            class="billot"
-                            loading="lazy"
-                            src="../images/insigne/billot_satin.png"
-                            alt="Billot Inter-Fillières"
-                        />
-                    </div>
-                    <div>
-                        <span>Sciences</span>
-                        <img
-                            class="billot"
-                            loading="lazy"
-                            src="../images/insigne/billot_sciences.png"
-                            alt="Billot Sciences"
-                        />
-                    </div>
-                </div>
-                <div>
-                    <br />
-                    <ul>
-                        <li>
-                            <p>
-                                Les croix sont transmises de générations en
-                                génération, c'est à dire qu'une croix partant à
-                                la retraite donne sa croix historique au nouvel
-                                intronisé. Les croix amiénoies mettent une croix
-                                neuve du côté personnel (à droite) lorsqu’elles
-                                partent à la retraite, et non plus à gauche
-                                comme lorsqu’elles sont en activité.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                L’évêque a pour tache de marier les faluchards
-                                entre eux. Il aura soin de vérifier qu’une forte
-                                amitié lie les dits faluchards. Le mariage a
-                                pour but de fusionner cette amitié. Il a aussi
-                                le rôle de confident et il est tenu au secret.
-                                Du fait de sa neutralité, il peut lui être
-                                demandé d’intervenir en cas de conflit.
-                            </p>
-                            <p>
-                                À la différence des GM présents dans presque
-                                toutes les villes, il n’existe que 4 évêchés :
-                                le Sud à Poitiers, le Nord à Amiens, l’Est
-                                Septentrional à Strasbourg, et l’Est Méridional
-                                à Grenoble. L’évêque du Nord n’a pas besoin de
-                                la présence d’un GM pour officier.
-                            </p>
-                            <p>
-                                À Amiens, l’évêché se distingue par un
-                                <strong
-                                    >E dans une palme de Sciences montée sur un
-                                    ruban violet</strong
-                                >
-                                et sa
-                                <strong
-                                    >cape de cérémonie aux couleurs de la
-                                    discipline</strong
-                                >
-                                suivi par l’Évêque.
-                            </p>
-                            <div style="text-align: center">
-                                <img
-                                    style="max-width: 300px; width: 100%"
-                                    src="../images/insigne/eveque.png"
-                                    alt="Ruban d'êveque"
-                                    loading="lazy"
-                                    width="300"
-                                />
-                            </div>
-                        </li>
-                    </ul>
 
-                    <h2>Monôme</h2>
-                    <p>
-                        Il est devenu une tradition, pouvant être considéré
-                        comme une véritable particularité de la faluche
-                        Amiénoise, de célébrer cet évènement. Par leur discours,
-                        les Grand-Maîtres transmettent aux néo-faluchards, la
-                        tradition et l'histoire de ce monument connu de tous les
-                        Amiénois
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <a class="nav-link" href="#debut" style="padding-left: 15px">
-                    <p>↑ Début</p>
-                </a>
-            </div>
-
-            <div>
-                <a class="nav-link" href="/" style="padding-left: 15px">
-                    <p>← <i class="bi bi-book"></i> Retour au code</p>
-                </a>
-            </div>
-
-            <div>
-                <a
-                    class="nav-link"
-                    href="./notespm.html"
-                    style="padding-left: 15px"
-                >
-                    <p>→ <i class="bi bi-info"></i> Note aux PMs</p>
-                </a>
+                <h2>Monôme</h2>
+                <p>
+                    Il est devenu une tradition, pouvant être considéré
+                    comme une véritable particularité de la faluche
+                    Amiénoise, de célébrer cet évènement. Par leur discours,
+                    les Grand-Maîtres transmettent aux néo-faluchards, la
+                    tradition et l'histoire de ce monument connu de tous les
+                    Amiénois
+                </p>
             </div>
         </div>
-        <script type="module" src="/js/index.js"></script>
-    </body>
+
+        <div>
+            <a class="nav-link" href="#debut" style="padding-left: 15px">
+                <p>↑ Début</p>
+            </a>
+        </div>
+
+        <div>
+            <a class="nav-link" href="/" style="padding-left: 15px">
+                <p>← <i class="bi bi-book"></i> Retour au code</p>
+            </a>
+        </div>
+
+        <div>
+            <a class="nav-link" href="./notespm.html" style="padding-left: 15px">
+                <p>→ <i class="bi bi-info"></i> Note aux PMs</p>
+            </a>
+        </div>
+    </div>
+    <script type="module" src="/js/index.js"></script>
+</body>
+
 </html>

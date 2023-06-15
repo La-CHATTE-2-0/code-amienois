@@ -1,1126 +1,813 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <meta name="theme-color" content="#212529" />
-        <meta name="description" content="Code de la Faluche Amiénoise" />
-        <title>Checklist de congrès Faluchard - Code Amiénois</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/icons-192.png" />
-        <link rel="stylesheet" href="../sass/styles.scss" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <meta property="og:title" content="Code Amienois" />
-        <meta property="og:type" content="article" />
-        <meta
-            property="og:description"
-            content="Code de la faluche Amiénoise"
-        />
-        <meta property="og:locale" content="fr_FR" />
-        <meta property="og:url" content="https://www.code-amienois.app/" />
-        <meta property="og:image" content="/icons-512.png" />
-        <meta property="og:image:alt" content="Photo de faluche" />
+    <meta name="theme-color" content="#212529" />
+    <meta name="description" content="Code de la Faluche Amiénoise" />
+    <title>Checklist de congrès Faluchard - Code Amiénois</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icons-192.png" />
+    <link rel="stylesheet" href="../sass/styles.scss" />
 
-        <meta name="twitter:card" content="summary" />
-        <meta property="twitter:title" content="Code Amiénois" />
-        <meta name="twitter:image" content="/icons-512.png" />
-        <meta name="twitter:image:alt" content="Photo de faluche" />
-        <meta
-            property="twitter:description"
-            content="Code de la faluche Amiénoise"
-        />
-    </head>
+    <meta property="og:title" content="Code Amienois" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Code de la faluche Amiénoise" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://www.code-amienois.app/" />
+    <meta property="og:image" content="/icons-512.png" />
+    <meta property="og:image:alt" content="Photo de faluche" />
 
-    <body id="body">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">Code de la Faluche</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Code Amiénois" />
+    <meta name="twitter:image" content="/icons-512.png" />
+    <meta name="twitter:image:alt" content="Photo de faluche" />
+    <meta property="twitter:description" content="Code de la faluche Amiénoise" />
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Code de la Faluche</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Code</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Annexes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="/pages/monome.html">Le Monôme</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/pages/speamiens.html">Récapitulatif des spés</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/pages/ordres.html">Les ordres</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/pages/notespm.html">Notes aux PM</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Ressources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" target="_blank" rel="noopener"
+                                    href="https://www.youtube.com/@nouveaubreviaireamienois111">
+                                    <i class="bi bi-youtube"></i> Bréviaire
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/pages/couleursrubans.html">
+                                    <i class="bi bi-brush"></i> Couleurs
+                                    rubans
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" target="_blank" rel="noopener"
+                                    href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/edit?usp=share_link"><i
+                                        class="bi bi-link-45deg"></i> Guide
+                                    sécu</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item active" aria-current="page"
+                                    href="/pages/checklistcongres.html"><i class="bi bi-bag-check"></i>
+                                    Checklist de congrès</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="form-check form-switch" style="margin-right: 10px">
+                    <input class="form-check-input" type="checkbox" role="switch" id="darkmode" />
+                    <label class="form-check-label" for="darkmode">Darkmode</label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="debut" class="fal-container">
+        <div data-fal-article>
+            <h1 class="text-start">Checklist de congrès</h1>
+            <p>
+                Si tu es ici, c'est que tu est sur le point de préparer ton
+                sac pour partir en congrès 🥳 Cette page t'aidera à ne rien
+                oublier afin de passer le meilleur congrès possible dans les
+                meilleurs conditions.
+            </p>
+            <div class="table-warning-fal">
+                <h3>⚠️ Avant de partir en congrès</h3>
+                <ol>
+                    <li>
+                        Assure-toi en premier lieu que ton dossier pour le
+                        congrès soit complet sur la liste de l’événement
+                        (fiche, paiement, chèques de caution, attestation
+                        sur l’honneur…).
+                    </li>
+                    <li>
+                        Ensuite, trouve-toi une place dans un covoit qui
+                        part pour le congrès. Tu peux toi-même proposer d’en
+                        organiser un.
+                    </li>
+                    <li>
+                        Il faut impérativement se renseigner sur les
+                        conditions météo prévues lors du weekend (de journée
+                        comme de nuit !). Cela permettra d’adapter au mieux
+                        les recommandations suivantes aux besoins réels sur
+                        place.
+                    </li>
+                    <li>
+                        Sécurise tes insignes et tes pin’s. Ta fal risque
+                        d’être pas mal ballotée durant le weekend
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div data-fal-article>
+            <h2 class="text-start">Les incontournables à emmener :</h2>
+            <table class="table align-middle" data-fal-table="insigne">
+                <caption>Les incontournables à emmener</caption>
+                <thead>
+                    <tr>
+                        <th>Check</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="tente" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="tente">
+                                ⛺ Une tente
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Bien que certains congrès proposent des places en dur (Bungalows, dortoirs couverts, etc.), la plupart des congressistes campent sur les lieux du congrès. Une tente est alors nécessaire, ou du moins il faut s’assurer d’avoir une place dans la tente de quelqu’un d’autre."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="couverture" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="couverture">
+                                🛏️ Couverture/duvet
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Les nuits de congrès sont parfois froides (Cf. la dernière pommo où il a fait -2°C la deuxième nuit). Toujours se renseigner sur la météo du weekend afin de prendre l’équipement le plus adéquat et ne pas se retrouver à se cailler le cul à 3 grammes… N’hésitez pas à prendre plusieurs épaisseurs pour les congrès les plus froids !"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="matelas" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="matelas">
+                                🛏️ Un tapis ou couverture de sol ou matelas
+                                gonflable
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Il est indispensable d’avoir une couche de protection en le sol et ton petit corps meurtri par l’alcool. Les plus casaniers choisiront un matelas gonflable (penser à prendre un gonfleur sinon il faudra voir avec les congressistes qui en auront sur place). Mais la simple couverture de sol peut vous faire gagner quelques degrés."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="oreiller" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="oreiller">
+                                🛏️ Un oreiller
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="En vrai c’est con, mais c’est vachement plus confortable !"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="faluche" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="faluche">
+                                🎓 Ta faluche
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="pas besoin d’expliquer pourquoi…"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="lampe" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="lampe">
+                                🔦 Une lampe de poche/frontale
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Le camping n’est pas éclairé et c’est très pratique pour retrouver sa tente, ne pas se bouffer celles des autres dans la tronche ou pratiquer toute autre activité nécessitant de la lumière. (Commentaire de Nico : La lampe frontale est vraiment incroyable en congrès, tu la cale sur ton circulaire et tu as deux mains libres !). Le flash du téléphone peut certes faire l’affaire mais il n’est pas recommandé de se balader avec son téléphone en congrès."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="plat_couverts" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="plat_couverts">
+                                🍴 Un plat en plastique et des couverts
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Depuis quelques années, les orgas de congrès se veulent de plus en plus responsable vis-à-vis de l’environnement en bannissant les plastiques à usage unique. A prendre donc impérativement si tu veux manger (et tu vas en avoir besoin…)."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="paiement" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="paiement">
+                                💳 Moyen de paiement
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Le dimanche midi, un fast-food est généralement prévu avec les congressistes qui le souhaitent (la plupart). Prévois donc de quoi payer à ce moment-là."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="hygiene" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="hygiene">
+                                🪥 Nécessaire de toilette et serviette
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Car certains congrès mettent des douches à disposition. <br> NB : Optionnel pour les sciences et autres gros satins."></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div data-fal-article>
+            <h2 class="text-start">
+                Vêtements à prendre (en fonction de la météo) :
+            </h2>
+            <table class="table align-middle" data-fal-table="insigne">
+                <caption>Vêtements</caption>
+                <thead>
+                    <tr>
+                        <th>Check</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="pantalon" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="pantalon">
+                                👖 Pantalon/short
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Certains préfèrent le style taillis Décathlon, d’autre pour la combar (Salopette colorée chérie de nombreux velours). Toujours est-il que le fait d’avoir un bon nombre de poches (dont certaines refermables) reste très pratique pour ne pas perdre tout son bordel (et ne pas avoir à le racheter par la suite…) "></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="pulls" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="pulls">
+                                👕 Au moins 2 pulls
+                                <em>(congrès froids)</em>
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Il est très pratique de toujours garder un pull sec dans ta tente (en plus de celui que tu as sur le dos) pour la nuit ou pour remplacer un autre éventuellement trempé par la pluie. - Chaussures résistantes et auxquelles tu ne tiens pas trop : Les congrès sont de rudes épreuves pour nos chaussures entre le terrain de camping boueux en cas de pluie, le bar dont le sol est parfois couvert de substances douteuses ou encore les VT (Vomis Tactiques) par très bien visés. Il faut donc s’assurer d’être adéquatement chaussé avant de partir."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="bottes" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="bottes">
+                                🥾 Bottes ou chaussures étanches
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Indispensables pour garder les pieds au sec."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="manteau" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="manteau">
+                                🧥 Manteau étanche, K-way, pantalon étanche
+                                <em>(en cas de pluie)</em>
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon" description="Tout pareil…"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="vetements-rechange" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="vetements-rechange">
+                                🔄 Vêtements de rechanges
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Sauf si l’hygiène n’est qu’un concept pour toi, c’est parfois aussi pratique pour changer un vêtement mouillé par la pluie ou… Toute autre chose"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="kigurumi" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="kigurumi">
+                                👘 Kigurumi
+                                <em>(très optionnel)</em>
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Si tu as une âme d’enfant (comme Nico)"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div data-fal-article>
+            <h2 class="text-start">Bien pratique en congrès :</h2>
+            <table class="table align-middle" data-fal-table="insigne">
+                <caption>Pratique</caption>
+                <thead>
+                    <tr>
+                        <th>Check</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="chaise-camping" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="chaise-camping">
+                                🪑 Chaise de camping
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="La journée du samedi est souvent composée de petits moments chill avec les autres congressistes sur le camping, histoire de reposer un peu ton pauvre organisme et de le chauffer doucement pour la dernière soirée. La chaise permet alors d’éviter d’avoir à poser son cul par terre"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="batterie-chargeur" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="batterie-chargeur">
+                                🔋 Batterie portable et chargeur de
+                                téléphone
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Est-ce qu'on a vraiment besoin d'expliquer pourquoi ?"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="monnaie" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="monnaie">
+                                💰 De la monnaie
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Des pin’s sont parfois vendus par l’asso organisatrice juste avant le départ du dimanche."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="ecocup" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="ecocup">
+                                🥤 Un écocup en rab
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Un écocup du congrès est donné dans le welcome pack mais si tu le perds, tu seras content de pouvoir continuer à boire avec celui qui est resté dans ta tente."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="maillot-serviette" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="maillot-serviette">
+                                🩳 Maillot de bain et serviette
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Parce que certains congrès donnent l’accès à une piscine !!!!"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox"
+                                    id="lunettes-creme-solaire" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="lunettes-creme-solaire">
+                                🕶️ Lunettes de Soleil/crème solaire
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Si ta peau et tes yeux de picard crament au moindre petit rayon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="preservatifs" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="preservatifs">
+                                🧦 Des préservatifs
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Là encore, pas besoin d’expliquer pourquoi… <br> NB : Peut parfois servir en cas de Stanification."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="sac-poubelle" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="sac-poubelle">
+                                🗑️ Sac poubelle
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Parce que l’orga a autre chose à foutre que de nettoyer le terrain de camping"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="bouteilles-eau" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="bouteilles-eau">
+                                🚰 Quelques bouteilles d'eau
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Promis, on ne dira rien au Grand Grelot mais sans déconner, ça peut te sauver."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="mouchoirs-pq" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="mouchoirs-pq">
+                                🧻 Mouchoirs et/ou PQ
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Pour les demoiselles souhaitant faire un petit pipi-nature ou en cas de caca post-cuite intempestif."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="alcool-soft" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="alcool-soft">
+                                🍺 De l'alcool/du soft
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description=" Le bar n’est pas toujours ouvert et nombreux sont les apéros entre congressistes où on partage la dive bouteille."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="bouffe" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="bouffe">
+                                🥫 De la bouffe
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Bien pratique si tu te retrouves avec une foncedalle de l’espace à 2 h du matin."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="pins" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="pins">
+                                💎 Des pin's
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Pour en échanger ou en faire racheter aux autres villes (et obtenir des pin’s un peu plus exotiques)."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="cartes-des" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="cartes-des">
+                                🎲 Cartes/dés
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Pour occuper le temps en dehors des soirées. - Une couverture de survie : Lorsque des secouristes sont présents sur le congrès, ils en proposent souvent. Sinon ça peut aider pour ne pas crever de froid."></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="gaviscon" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="gaviscon">
+                                💊 Gaviscon ou équivalent
+                            </label>
+                        </td>
+                        <td>
+                            <i class="bi bi-question-circle-fill help-icon"
+                                description="Si t’as un estomac de fragile (je compatis…)"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div data-fal-article>
+            <h2 class="text-start">Si c'est ton délire :</h2>
+            <table class="table align-middle" data-fal-table="insigne">
+                <caption>Si c'est ton délire</caption>
+                <thead>
+                    <tr>
+                        <th>Check</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="cigarettes" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="cigarettes">
+                                🚬 Cigarettes
+                            </label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="briquets" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="briquets">
+                                🔥 Briquets
+                            </label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="proto" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="proto">
+                                🎈 Cracker, protos et ballons
+                            </label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input checkcongres" type="checkbox" id="poppers" />
+                            </div>
+                        </td>
+                        <td>
+                            <label class="form-check-label" for="poppers">
+                                🧪 Poppers
+                            </label>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div data-fal-article>
+            <div class="table-warning-fal">
+                <h3>⚠️ Lors du congrès</h3>
+                <ol>
+                    <li>
+                        A l’arrivée, va voir l’orga (généralement situé à
+                        l’entrée du site) pour pointer et récupérer ton
+                        Welcome pack (Tu y trouveras un pin’s, un écocup, le
+                        CD du congrès et d’autres goodies).
+                    </li>
+                    <li>
+                        Il n’est pas conseillé de garder son téléphone
+                        portable sur soit pendant l’événement pour ne pas le
+                        perdre lors de quelques péripéties.
+                    </li>
+                    <li>
+                        Interdiction formelle de prendre des photos lorsque
+                        des gens sont nus ! (Ça arrivera plus d’une fois
+                        xD).
+                    </li>
+                    <li>
+                        Si vous avez le moindre problème pendant le weekend,
+                        n’hésitez pas à aller voir vos anciens ou l’orga qui
+                        essayeront de vous aider autant qu’ils le peuvent.
+                        De plus, des secouristes sont généralement présents
+                        pendant les soirées pour prendre en charge ceux qui
+                        en ont besoin.
+                    </li>
+                </ol>
+            </div>
+            <div style="text-align: right">
+                <span><em>D'après Nicolas “FéeS’EL Picarde” T., GC Sciences
+                        Amiens
+                    </em></span>
+            </div>
+        </div>
+
+        <div data-fal-article class="mt-3">
+            <img src="/images/other/pommo_2023.jpg" class="mt-3 mb-3 rounded" alt="Photo des ômienois à la Pommo 2023"
+                loading="lazy" width="100%" />
+            <div class="d-grid gap-2">
+                <button class="btn btn-secondary" type="button" id="clear-checkboxes">
+                    Réinitialiser la liste
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Code</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                Annexes
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="/pages/monome.html"
-                                        >Le Monôme</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="/pages/speamiens.html"
-                                        >Récapitulatif des spés</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="/pages/notespm.html"
-                                        >Notes aux PM</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                Ressources
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        target="_blank" rel="noopener"
-                                        href="https://www.youtube.com/@nouveaubreviaireamienois111"
-                                    >
-                                        <i class="bi bi-youtube"></i> Bréviaire
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="/pages/couleursrubans.html"
-                                    >
-                                        <i class="bi bi-brush"></i> Couleurs
-                                        rubans
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        target="_blank" rel="noopener"
-                                        href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/edit?usp=share_link"
-                                        ><i class="bi bi-link-45deg"></i> Guide
-                                        sécu</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="dropdown-item active"
-                                        aria-current="page"
-                                        href="/pages/checklistcongres.html"
-                                        ><i class="bi bi-bag-check"></i>
-                                        Checklist de congrès</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+            </div>
+        </div>
 
-                    <div
-                        class="form-check form-switch"
-                        style="margin-right: 10px"
-                    >
-                        <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="darkmode"
-                        />
-                        <label class="form-check-label" for="darkmode"
-                            >Darkmode</label
-                        >
+        <div>
+            <a class="nav-link mt-3" href="/" style="padding-left: 15px">
+                <p>← <i class="bi bi-book"></i> Retour au code</p>
+            </a>
+        </div>
+
+        <div class="modal fade" id="modal-info" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-            </div>
-        </nav>
-
-        <div id="debut" class="fal-container">
-            <div data-fal-article>
-                <h1 class="text-start">Checklist de congrès</h1>
-                <p>
-                    Si tu es ici, c'est que tu est sur le point de préparer ton
-                    sac pour partir en congrès 🥳 Cette page t'aidera à ne rien
-                    oublier afin de passer le meilleur congrès possible dans les
-                    meilleurs conditions.
-                </p>
-                <div class="table-warning-fal">
-                    <h3>⚠️ Avant de partir en congrès</h3>
-                    <ol>
-                        <li>
-                            Assure-toi en premier lieu que ton dossier pour le
-                            congrès soit complet sur la liste de l’événement
-                            (fiche, paiement, chèques de caution, attestation
-                            sur l’honneur…).
-                        </li>
-                        <li>
-                            Ensuite, trouve-toi une place dans un covoit qui
-                            part pour le congrès. Tu peux toi-même proposer d’en
-                            organiser un.
-                        </li>
-                        <li>
-                            Il faut impérativement se renseigner sur les
-                            conditions météo prévues lors du weekend (de journée
-                            comme de nuit !). Cela permettra d’adapter au mieux
-                            les recommandations suivantes aux besoins réels sur
-                            place.
-                        </li>
-                        <li>
-                            Sécurise tes insignes et tes pin’s. Ta fal risque
-                            d’être pas mal ballotée durant le weekend
-                        </li>
-                    </ol>
-                </div>
-            </div>
-
-            <div data-fal-article>
-                <h2 class="text-start">Les incontournables à emmener :</h2>
-                <table class="table align-middle" data-fal-table="insigne">
-                    <caption>Les incontournables à emmener</caption>
-                    <thead>
-                        <tr>
-                            <th>Check</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="tente"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="tente">
-                                    ⛺ Une tente
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Bien que certains congrès proposent des places en dur (Bungalows, dortoirs couverts, etc.), la plupart des congressistes campent sur les lieux du congrès. Une tente est alors nécessaire, ou du moins il faut s’assurer d’avoir une place dans la tente de quelqu’un d’autre."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="couverture"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="couverture"
-                                >
-                                    🛏️ Couverture/duvet
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Les nuits de congrès sont parfois froides (Cf. la dernière pommo où il a fait -2°C la deuxième nuit). Toujours se renseigner sur la météo du weekend afin de prendre l’équipement le plus adéquat et ne pas se retrouver à se cailler le cul à 3 grammes… N’hésitez pas à prendre plusieurs épaisseurs pour les congrès les plus froids !"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="matelas"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="matelas">
-                                    🛏️ Un tapis ou couverture de sol ou matelas
-                                    gonflable
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Il est indispensable d’avoir une couche de protection en le sol et ton petit corps meurtri par l’alcool. Les plus casaniers choisiront un matelas gonflable (penser à prendre un gonfleur sinon il faudra voir avec les congressistes qui en auront sur place). Mais la simple couverture de sol peut vous faire gagner quelques degrés."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="oreiller"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="oreiller">
-                                    🛏️ Un oreiller
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="En vrai c’est con, mais c’est vachement plus confortable !"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="faluche"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="faluche">
-                                    🎓 Ta faluche
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="pas besoin d’expliquer pourquoi…"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="lampe"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="lampe">
-                                    🔦 Une lampe de poche/frontale
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Le camping n’est pas éclairé et c’est très pratique pour retrouver sa tente, ne pas se bouffer celles des autres dans la tronche ou pratiquer toute autre activité nécessitant de la lumière. (Commentaire de Nico : La lampe frontale est vraiment incroyable en congrès, tu la cale sur ton circulaire et tu as deux mains libres !). Le flash du téléphone peut certes faire l’affaire mais il n’est pas recommandé de se balader avec son téléphone en congrès."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="plat_couverts"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="plat_couverts"
-                                >
-                                    🍴 Un plat en plastique et des couverts
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Depuis quelques années, les orgas de congrès se veulent de plus en plus responsable vis-à-vis de l’environnement en bannissant les plastiques à usage unique. A prendre donc impérativement si tu veux manger (et tu vas en avoir besoin…)."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="paiement"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="paiement">
-                                    💳 Moyen de paiement
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Le dimanche midi, un fast-food est généralement prévu avec les congressistes qui le souhaitent (la plupart). Prévois donc de quoi payer à ce moment-là."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="hygiene"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="hygiene">
-                                    🪥 Nécessaire de toilette et serviette
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Car certains congrès mettent des douches à disposition. <br> NB : Optionnel pour les sciences et autres gros satins."
-                                ></i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div data-fal-article>
-                <h2 class="text-start">
-                    Vêtements à prendre (en fonction de la météo) :
-                </h2>
-                <table class="table align-middle" data-fal-table="insigne">
-                    <caption>Vêtements</caption>
-                    <thead>
-                        <tr>
-                            <th>Check</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="pantalon"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="pantalon">
-                                    👖 Pantalon/short
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Certains préfèrent le style taillis Décathlon, d’autre pour la combar (Salopette colorée chérie de nombreux velours). Toujours est-il que le fait d’avoir un bon nombre de poches (dont certaines refermables) reste très pratique pour ne pas perdre tout son bordel (et ne pas avoir à le racheter par la suite…) "
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="pulls"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="pulls">
-                                    👕 Au moins 2 pulls
-                                    <em>(congrès froids)</em>
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Il est très pratique de toujours garder un pull sec dans ta tente (en plus de celui que tu as sur le dos) pour la nuit ou pour remplacer un autre éventuellement trempé par la pluie. - Chaussures résistantes et auxquelles tu ne tiens pas trop : Les congrès sont de rudes épreuves pour nos chaussures entre le terrain de camping boueux en cas de pluie, le bar dont le sol est parfois couvert de substances douteuses ou encore les VT (Vomis Tactiques) par très bien visés. Il faut donc s’assurer d’être adéquatement chaussé avant de partir."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="bottes"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="bottes">
-                                    🥾 Bottes ou chaussures étanches
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Indispensables pour garder les pieds au sec."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="manteau"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="manteau">
-                                    🧥 Manteau étanche, K-way, pantalon étanche
-                                    <em>(en cas de pluie)</em>
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Tout pareil…"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="vetements-rechange"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="vetements-rechange"
-                                >
-                                    🔄 Vêtements de rechanges
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Sauf si l’hygiène n’est qu’un concept pour toi, c’est parfois aussi pratique pour changer un vêtement mouillé par la pluie ou… Toute autre chose"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="kigurumi"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="kigurumi">
-                                    👘 Kigurumi
-                                    <em>(très optionnel)</em>
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Si tu as une âme d’enfant (comme Nico)"
-                                ></i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div data-fal-article>
-                <h2 class="text-start">Bien pratique en congrès :</h2>
-                <table class="table align-middle" data-fal-table="insigne">
-                    <caption>Pratique</caption>
-                    <thead>
-                        <tr>
-                            <th>Check</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="chaise-camping"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="chaise-camping"
-                                >
-                                    🪑 Chaise de camping
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="La journée du samedi est souvent composée de petits moments chill avec les autres congressistes sur le camping, histoire de reposer un peu ton pauvre organisme et de le chauffer doucement pour la dernière soirée. La chaise permet alors d’éviter d’avoir à poser son cul par terre"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="batterie-chargeur"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="batterie-chargeur"
-                                >
-                                    🔋 Batterie portable et chargeur de
-                                    téléphone
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Est-ce qu'on a vraiment besoin d'expliquer pourquoi ?"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="monnaie"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="monnaie">
-                                    💰 De la monnaie
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Des pin’s sont parfois vendus par l’asso organisatrice juste avant le départ du dimanche."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="ecocup"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="ecocup">
-                                    🥤 Un écocup en rab
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Un écocup du congrès est donné dans le welcome pack mais si tu le perds, tu seras content de pouvoir continuer à boire avec celui qui est resté dans ta tente."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="maillot-serviette"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="maillot-serviette"
-                                >
-                                    🩳 Maillot de bain et serviette
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Parce que certains congrès donnent l’accès à une piscine !!!!"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="lunettes-creme-solaire"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="lunettes-creme-solaire"
-                                >
-                                    🕶️ Lunettes de Soleil/crème solaire
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Si ta peau et tes yeux de picard crament au moindre petit rayon"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="preservatifs"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="preservatifs"
-                                >
-                                    🧦 Des préservatifs
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Là encore, pas besoin d’expliquer pourquoi… <br> NB : Peut parfois servir en cas de Stanification."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="sac-poubelle"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="sac-poubelle"
-                                >
-                                    🗑️ Sac poubelle
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Parce que l’orga a autre chose à foutre que de nettoyer le terrain de camping"
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="bouteilles-eau"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="bouteilles-eau"
-                                >
-                                    🚰 Quelques bouteilles d'eau
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Promis, on ne dira rien au Grand Grelot mais sans déconner, ça peut te sauver."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="mouchoirs-pq"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="mouchoirs-pq"
-                                >
-                                    🧻 Mouchoirs et/ou PQ
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Pour les demoiselles souhaitant faire un petit pipi-nature ou en cas de caca post-cuite intempestif."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="alcool-soft"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="alcool-soft"
-                                >
-                                    🍺 De l'alcool/du soft
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description=" Le bar n’est pas toujours ouvert et nombreux sont les apéros entre congressistes où on partage la dive bouteille."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="bouffe"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="bouffe">
-                                    🥫 De la bouffe
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Bien pratique si tu te retrouves avec une foncedalle de l’espace à 2 h du matin."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="pins"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="pins">
-                                    💎 Des pin's
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Pour en échanger ou en faire racheter aux autres villes (et obtenir des pin’s un peu plus exotiques)."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="cartes-des"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="cartes-des"
-                                >
-                                    🎲 Cartes/dés
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Pour occuper le temps en dehors des soirées. - Une couverture de survie : Lorsque des secouristes sont présents sur le congrès, ils en proposent souvent. Sinon ça peut aider pour ne pas crever de froid."
-                                ></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="gaviscon"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="gaviscon">
-                                    💊 Gaviscon ou équivalent
-                                </label>
-                            </td>
-                            <td>
-                                <i
-                                    class="bi bi-question-circle-fill help-icon"
-                                    description="Si t’as un estomac de fragile (je compatis…)"
-                                ></i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div data-fal-article>
-                <h2 class="text-start">Si c'est ton délire :</h2>
-                <table class="table align-middle" data-fal-table="insigne">
-                    <caption>Si c'est ton délire</caption>
-                    <thead>
-                        <tr>
-                            <th>Check</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="cigarettes"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label
-                                    class="form-check-label"
-                                    for="cigarettes"
-                                >
-                                    🚬 Cigarettes
-                                </label>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="briquets"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="briquets">
-                                    🔥 Briquets
-                                </label>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="proto"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="proto">
-                                    🎈 Cracker, protos et ballons
-                                </label>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input checkcongres"
-                                        type="checkbox"
-                                        id="poppers"
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <label class="form-check-label" for="poppers">
-                                    🧪 Poppers
-                                </label>
-                            </td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div data-fal-article>
-                <div class="table-warning-fal">
-                    <h3>⚠️ Lors du congrès</h3>
-                    <ol>
-                        <li>
-                            A l’arrivée, va voir l’orga (généralement situé à
-                            l’entrée du site) pour pointer et récupérer ton
-                            Welcome pack (Tu y trouveras un pin’s, un écocup, le
-                            CD du congrès et d’autres goodies).
-                        </li>
-                        <li>
-                            Il n’est pas conseillé de garder son téléphone
-                            portable sur soit pendant l’événement pour ne pas le
-                            perdre lors de quelques péripéties.
-                        </li>
-                        <li>
-                            Interdiction formelle de prendre des photos lorsque
-                            des gens sont nus ! (Ça arrivera plus d’une fois
-                            xD).
-                        </li>
-                        <li>
-                            Si vous avez le moindre problème pendant le weekend,
-                            n’hésitez pas à aller voir vos anciens ou l’orga qui
-                            essayeront de vous aider autant qu’ils le peuvent.
-                            De plus, des secouristes sont généralement présents
-                            pendant les soirées pour prendre en charge ceux qui
-                            en ont besoin.
-                        </li>
-                    </ol>
-                </div>
-                <div style="text-align: right">
-                    <span
-                        ><em
-                            >D'après Nicolas “FéeS’EL Picarde” T., GC Sciences
-                            Amiens
-                        </em></span
-                    >
-                </div>
-            </div>
-
-            <div data-fal-article class="mt-3">
-                <img
-                    src="/images/other/pommo_2023.jpg"
-                    class="mt-3 mb-3 rounded"
-                    alt="Photo des ômienois à la Pommo 2023"
-                    loading="lazy"
-                    width="100%"
-                />
-                <div class="d-grid gap-2">
-                    <button
-                        class="btn btn-secondary"
-                        type="button"
-                        id="clear-checkboxes"
-                    >
-                        Réinitialiser la liste
-                    </button>
-                </div>
-            </div>
-
-            <div>
-                <a class="nav-link mt-3" href="/" style="padding-left: 15px">
-                    <p>← <i class="bi bi-book"></i> Retour au code</p>
-                </a>
-            </div>
-
-            <div
-                class="modal fade"
-                id="modal-info"
-                tabindex="-1"
-                aria-hidden="true"
-            >
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="text-justify" id="modal-content"></p>
-                        </div>
+                    <div class="modal-body">
+                        <p class="text-justify" id="modal-content"></p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script type="module" src="/js/index.js"></script>
-        <script type="module" src="/js/checklistcongres.js"></script>
-    </body>
+    <script type="module" src="/js/index.js"></script>
+    <script type="module" src="/js/checklistcongres.js"></script>
+</body>
+
 </html>
