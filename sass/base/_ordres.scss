@@ -1,8 +1,21 @@
 [data-ordre] {
     [data-ordre-img-container] {
         text-align: center;
+        overflow: hidden;
+
         img {
-            max-height: 100px;
+            max-height: 100%;
+            border-radius: 5%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    [data-ordre="grelot"] {
+        [data-ordre-img-container] {
+            img {
+                rotate: -90deg;
+            }
         }
     }
 }
