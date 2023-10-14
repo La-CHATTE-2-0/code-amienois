@@ -3,7 +3,7 @@
 ## Node version
 
     $ node --version
-    v16.10.0
+    v18.18.2
 
 ## Install
 
@@ -15,3 +15,10 @@
 
     $ npm run dev
 
+## Building the project
+
+    $ npm run build
+
+## Testing the project
+
+No tests.
