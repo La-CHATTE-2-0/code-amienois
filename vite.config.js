@@ -20,16 +20,10 @@ export default defineConfig({
         "display": "standalone",
         "icons": [
           {
-            "src": "favicon.ico",
-            "sizes": "64x64 32x32 24x24 16x16",
-            "type": "image/x-icon",
-            "purpose": "any"
-          },
-          {
-            "src": "/icons-128.png",
+            "src": "/icons-512.png",
             "type": "image/png",
-            "sizes": "128x128",
-            "purpose": "maskable"
+            "sizes": "512x512",
+            "purpose": "any maskable",
           },
           {
             "src": "/icons-192.png",
@@ -37,10 +31,16 @@ export default defineConfig({
             "sizes": "192x192"
           },
           {
-            "src": "/icons-512.png",
+            "src": "/icons-128.png",
             "type": "image/png",
-            "sizes": "512x512"
-          }
+            "sizes": "128x128"
+          },
+          {
+            "src": "favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon",
+            "purpose": "any"
+          },
         ],
         "theme_color": "#212529",
         "background_color": "#ffffff"

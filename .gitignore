@@ -127,3 +127,4 @@ dev-dist
 .yarn/install-state.gz
 .pnp.*
 .DS_Store
+desktop.ini
