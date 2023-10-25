@@ -21,8 +21,11 @@
 #body.dark {
     --bs-body-color: #fff;
     --bs-body-bg: #212529;
-    --bs-table-color: #fff;
-    --bs-table-bg: #212529;
+
+    .table {
+        --bs-table-color: #fff;
+        --bs-table-bg: #212529;
+    }
 
     .dropdown-menu {
         --bs-dropdown-color: #fff !important;
