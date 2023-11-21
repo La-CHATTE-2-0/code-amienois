@@ -34,7 +34,7 @@ helpicons.forEach(function (helpicon) {
 });
 
 document.getElementById('clear-checkboxes').addEventListener('click', function () {
-    const excludedKeys = ['darkmode'];
+    const excludedKeys = ['darkmode', 'debug'];
     const keys = Object.keys(localStorage);
 
     keys.forEach(key => {
