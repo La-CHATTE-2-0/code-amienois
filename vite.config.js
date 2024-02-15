@@ -72,7 +72,8 @@ export default defineConfig({
         notespm: path.resolve(__dirname, './pages/notespm.html'),
         checklistcongres: path.resolve(__dirname, './pages/checklistcongres.html'),
         couleursrubans: path.resolve(__dirname, './pages/couleursrubans.html'),
-        ordres: path.resolve(__dirname, './pages/ordres.html')
+        ordres: path.resolve(__dirname, './pages/ordres.html'),
+        historique_croix: path.resolve(__dirname, './pages/historique_croix.html'),
       },
     },
   }
