@@ -3,7 +3,7 @@
 ## Node version
 
     $ node --version
-    v18.18.2
+    v20.10.0
 
 ## Install
 
