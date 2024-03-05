@@ -2,10 +2,12 @@ console.log("Eastereggs loading");
 const imageSciences = document.getElementById("ea-palmeSciences");
 const imageSf = document.getElementById("ea-sf");
 const imageDroit = document.getElementById("ea-droits");
+const imagePharma = document.getElementById("ea-cad-pharma");
 
 let clicsSciences = 0;
 let clicsSf = 0;
 let clicsDroit = 0;
+let clicsPharma = 0;
 
 imageSciences.addEventListener("click", async () => {
     clicsSciences++;
@@ -34,5 +36,16 @@ imageDroit.addEventListener("click", async () => {
         const audio = new Audio("/sound/interfi.mp3");
         await audio.play();
         clicsDroit = 0;
+    }
+});
+
+imagePharma.addEventListener("click", async () => {
+    clicsPharma++;
+
+    if (clicsPharma === 5) {
+        const audio = new Audio("/sound/jean-loup.mp3");
+        await audio.play();
+        imagePharma.src = "/jean-loup.png"
+        clicsPharma = 0;
     }
 });
