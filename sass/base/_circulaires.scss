@@ -18,9 +18,9 @@ $data-fal-circu-infos: (
     "rouge": #BC1212,
     "rose": #F3A0EA,
     "saumon": #E89292,
-    "vert": #349810,
-    "vertclair": #67E30E,
-    "vertfonce": #004203,
+    "vert": #1c6800,
+    "vertclair": #67df12,
+    "vertfonce": #007e06,
     "violet": #51009e
 );
 
@@ -135,17 +135,5 @@ $data-fal-circu-infos: (
         [data-fal-circu-color='#{$name}'] {
             background: $color;
         }
-    }
-}
-
-
-@media only screen and (min-width: 768px) {
-    [data-fal-table='circu'] {
-        width: 75%;
-    }
-}
-@media only screen and (max-width: 767px) {
-    [data-fal-table='circu'] {
-        width: 100%;
     }
 }
