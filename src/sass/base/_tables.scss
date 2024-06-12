@@ -1,0 +1,35 @@
+$fal-warning-color-dark: 94 70 1;
+$fal-warning-color-light: 255 242 202;
+
+.v-table, 
+.table-warning-fal {
+    border-radius: 4px;
+}
+
+.table-warning-fal {
+    background-color: rgba($fal-warning-color-dark);
+}
+
+.table-warning-fal .v-table {
+    --v-theme-surface: $fal-warning-color-dark;
+}
+
+.v-theme--light {
+    .table-warning-fal {
+        background-color: rgba($fal-warning-color-light);
+    }
+
+    .table-warning-fal .v-table {
+        --v-theme-surface: $fal-warning-color-light;
+    }
+}
+
+.no-border {
+    border: none !important;
+}
+
+.no-border-bottom {
+    td {
+        border: none !important;
+    }
+}
