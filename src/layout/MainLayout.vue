@@ -4,7 +4,9 @@ import AppHeader from "../components/shared/AppHeader.vue";
 
 <template>
     <AppHeader></AppHeader>
-    <v-main>
+    <v-main style="max-width: 900px; margin: auto">
         <slot></slot>
     </v-main>
 </template>
+
+<style scoped></style>
