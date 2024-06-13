@@ -1064,7 +1064,7 @@ import Article8Spé from "./Article8Spé.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Lion dressé</td>
+                    <td>Lion rampant (dressé)</td>
                     <td>Lyonnais</td>
                     <td data-fal-insigne>
                         <img
@@ -1077,7 +1077,7 @@ import Article8Spé from "./Article8Spé.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Lion héraldique</td>
+                    <td>Léopard ou lion passant (lion héraldique)</td>
                     <td>Normand</td>
                     <td data-fal-insigne>
                         <img

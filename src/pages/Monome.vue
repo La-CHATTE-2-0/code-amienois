@@ -33,10 +33,11 @@
                 étudiants faluchards de la ville.
             </p>
 
-            <div class="mb-4 fal-img">
+            <div class="mb-4 fal-img text-center">
                 <img
                     alt="Faluche Marie-Sans-Chemise"
                     loading="lazy"
+                    style="max-width: 500px"
                     src="/images/other/faluchemarie.webp"
                 />
             </div>
@@ -47,7 +48,7 @@
                 de tous les Amiénois.
             </p>
 
-            <div class="mb-4 fal-img">
+            <div class="mb-4 fal-img text-center">
                 <img
                     alt="Monôme groupe"
                     loading="lazy"

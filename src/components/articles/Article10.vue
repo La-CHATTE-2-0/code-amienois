@@ -219,7 +219,7 @@ import pages from "../../core/enums/page";
                 />
             </div>
             <p class="text-center">
-                <a :to="pages.couleurs_rubans.url">
+                <a :href="pages.couleurs_rubans.url">
                     <v-icon icon="mdi-information-variant"></v-icon>
                     Couleurs des villes et provinces communes
                 </a>

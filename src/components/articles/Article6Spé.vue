@@ -14,8 +14,7 @@ import "../../sass/base/_tables.scss";
                         <div class="pt-2">Assistante sociale</div>
                         <div class="py-2">
                             <v-icon icon="mdi-repeat"></v-icon>
-                            N'existe pas au code national (ou en satin dans
-                            d'autres villes)
+                            Filières sociales en satin jaune au code national
                         </div>
                     </td>
                     <td data-matiere>Velours jaune</td>

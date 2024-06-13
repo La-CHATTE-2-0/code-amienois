@@ -165,7 +165,6 @@
                 <td>Squelette (partie officielle)</td>
                 <td>
                     <ul>
-                        <li>À l’endroit : Amour de l’anatomie</li>
                         <li>À l'envers : Amour de l’anatomie du sexe opposé</li>
                         <li>
                             À l’envers + pointe de diamant : Amour de l'anatomie
@@ -178,13 +177,6 @@
                     </ul>
                 </td>
                 <td data-fal-insigne>
-                    <img
-                        loading="lazy"
-                        width="100"
-                        height="100"
-                        src="/images/insigne/squelette.png"
-                        alt="Squelette"
-                    />
                     <img
                         style="rotate: 180deg"
                         loading="lazy"
