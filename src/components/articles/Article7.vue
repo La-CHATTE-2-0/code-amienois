@@ -19,9 +19,9 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
             </caption>
             <thead>
                 <tr>
-                    <th>Baccalauréat</th>
-                    <th>Insigne</th>
-                    <th></th>
+                    <th scope="col">Baccalauréat</th>
+                    <th scope="col">Insigne</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -164,9 +164,9 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
             </caption>
             <thead>
                 <tr>
-                    <th>Discipline</th>
-                    <th>Insigne</th>
-                    <th></th>
+                    <th scope="col">Discipline</th>
+                    <th scope="col">Insigne</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -838,8 +838,8 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
             </caption>
             <thead>
                 <tr>
-                    <th>Insigne</th>
-                    <th colspan="2">Signication</th>
+                    <th scope="col">Insigne</th>
+                    <th scope="col" colspan="2">Signication</th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">

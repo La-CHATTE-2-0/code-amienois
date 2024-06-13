@@ -8,9 +8,9 @@ import "../../sass/base/_tables.scss";
         </caption>
         <thead>
             <tr>
-                <th>Baccalauréat</th>
-                <th>Insigne</th>
-                <th></th>
+                <th scope="col">Baccalauréat</th>
+                <th scope="col">Insigne</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>

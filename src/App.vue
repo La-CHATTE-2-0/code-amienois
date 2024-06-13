@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useTheme } from "vuetify";
 import { RouterView, useRoute } from "vue-router";
-import { computed } from "vue";
-import { onMounted } from "vue";
+import { computed, onMounted } from "vue";
 
 const theme = useTheme();
 const route = useRoute();

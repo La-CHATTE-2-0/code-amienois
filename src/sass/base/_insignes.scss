@@ -1,21 +1,3 @@
-// [data-fal-table="insigne"] {
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
-// .table-warning-fal {
-//     margin-top: 5px;
-//     margin-bottom: 5px;
-//     border-radius: 5px;
-//     padding: 10px;
-//     background-color: #fff2ca;
-// }
-
-// .dark .table-warning-fal {
-//     background-color: #5e4601;
-// }
-
-
 [data-fal-insigne] {
     text-align: center;
        
@@ -26,8 +8,6 @@
         max-width: 75px;
         text-align: center;
         border-radius: 5px;
-        // margin-top: 5px;
-        // margin-bottom: 5px;
     }
 }
 
@@ -48,10 +28,6 @@
 
     div {
         span {
-            //display: block;
-            //font-weight: 500;
-            //margin-bottom: 10px;
-            //Todo trouver un moyen qui nique pas l'affichage
             display: none;
         }
 

@@ -24,10 +24,10 @@ import Article6Spé from "./Article6Spé.vue";
             </caption>
             <thead>
                 <tr>
-                    <th>
+                    <th scope="col">
                         <strong>Discipline</strong>
                     </th>
-                    <th colspan="2">
+                    <th scope="col" colspan="2">
                         <strong>Circulaire</strong>
                     </th>
                 </tr>

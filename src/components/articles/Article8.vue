@@ -47,9 +47,9 @@ import Article8Spé from "./Article8Spé.vue";
             </caption>
             <thead>
                 <tr>
-                    <th>Insigne</th>
-                    <th>Description</th>
-                    <th></th>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Description</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -165,21 +165,6 @@ import Article8Spé from "./Article8Spé.vue";
                         />
                     </td>
                 </tr>
-                <!-- <tr>
-                            <td>Ciseaux</td>
-                            <td>
-                                <div>A cousu sa faluche</div>
-                            </td>
-                            <td data-fal-insigne>
-                                <img
-                                    loading="lazy"
-                                    width="100"
-                                    height="100"
-                                    src="/images/insigne/ciseaux.png"
-                                    alt="Ciseaux"
-                                />
-                            </td>
-                        </tr> -->
                 <tr>
                     <td>Cochon</td>
                     <td>
@@ -1013,13 +998,19 @@ import Article8Spé from "./Article8Spé.vue";
                         />
                     </td>
                 </tr>
-                <!-- <tr>
-            <td>Cigale</td>
-            <td>Provencal</td>
-            <td data-fal-insigne>
-              <img loading="lazy" width="100" height="100" src="/images/insigne/cigale.png" alt="Cigale" />
-            </td>
-          </tr> -->
+                <tr>
+                    <td>Cigale</td>
+                    <td>Provencal</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/cigale.png"
+                            alt="Cigale"
+                        />
+                    </td>
+                </tr>
                 <tr>
                     <td>Cigogne</td>
                     <td>Alsacien</td>

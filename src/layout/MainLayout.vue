@@ -8,5 +8,3 @@ import AppHeader from "../components/shared/AppHeader.vue";
         <slot></slot>
     </v-main>
 </template>
-
-<style scoped></style>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Article10Spé from "../../components/articles/Article10Spé.vue";
+import pages from "../../core/enums/page";
 </script>
 
 <template>
@@ -218,8 +219,7 @@ import Article10Spé from "../../components/articles/Article10Spé.vue";
                 />
             </div>
             <p class="text-center">
-                <!--TODO : Page des couleurs -->
-                <a href="./pages/couleursrubans.html">
+                <a :to="pages.couleurs_rubans.url">
                     <v-icon icon="mdi-information-variant"></v-icon>
                     Couleurs des villes et provinces communes
                 </a>

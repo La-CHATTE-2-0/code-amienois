@@ -3,8 +3,10 @@
         <article data-fal-article>
             <div class="my-4">
                 <img
+                    loading="lazy"
                     class="w-100"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Armoiries_Amiens%2C_France_%2880%29.svg/756px-Armoiries_Amiens%2C_France_%2880%29.svg.png"
+                    alt="blason d'Amiens"
                 />
 
                 <p class="text-center font-italic">
@@ -22,10 +24,10 @@
             <v-table class="table align-middle">
                 <thead>
                     <tr>
-                        <td>Blason</td>
-                        <td>Ville</td>
-                        <td>Couleurs</td>
-                        <td>Province</td>
+                        <th scope="col">Blason</th>
+                        <th scope="col">Ville</th>
+                        <th scope="col">Couleurs</th>
+                        <th scope="col">Province</th>
                     </tr>
                 </thead>
                 <tbody class="table-group-divider">
