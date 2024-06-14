@@ -46,7 +46,7 @@ export default defineConfig({
             "purpose": "any"
           },
         ],
-        "theme_color": "#212529",
+        "theme_color": "#121212",
         "background_color": "#ffffff"
       },
       devOptions: {
