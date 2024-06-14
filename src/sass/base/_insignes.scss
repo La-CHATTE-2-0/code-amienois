@@ -1,0 +1,64 @@
+[data-fal-insigne] {
+    text-align: center;
+       
+    img {
+        vertical-align: middle;
+        width: auto;
+        height: 50px;
+        max-width: 75px;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+[data-fal-insigne="moivre"] img {
+    border-radius: 5px;
+}
+
+[data-fal-insigne="mini"] img {
+    height: 30px;
+}
+
+[data-billot] {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+
+    div {
+        span {
+            display: none;
+        }
+
+        img.billot {
+            width: 100%;
+        }
+    }
+}
+
+[data-croix] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+
+    div {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.bg-ruban-bleu {
+    padding: 5px;
+    background: url(/images/insigne/velours_bleu.webp);
+    border-radius: 4px;
+}
+
+.bg-ruban-noir {
+    padding: 5px;
+    background: black;
+    border-radius: 4px;
+}
