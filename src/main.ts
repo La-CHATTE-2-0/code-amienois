@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-import { createPinia } from 'pinia'
 import '@mdi/font/css/materialdesignicons.css'
 
 // Vuetify
@@ -25,12 +24,9 @@ const vuetify = createVuetify({
   }
 })
 
-const pinia = createPinia()
-
 const app = createApp(App)
 app.use(vuetify)
 app.use(router)
-app.use(pinia)
 
 app.component('MainLayout', MainLayout)
 app.component('Code', Code)

@@ -50,7 +50,7 @@ import "../../sass/base/_tables.scss";
                         <div class="pt-2">Sage-Femme</div>
                         <div class="py-2">
                             <v-icon icon="mdi-repeat"></v-icon>
-                            Velours fushia pas au code national
+                            Velours fushia au code national
                         </div>
                     </td>
                     <td data-matiere>Velours fiolet</td>

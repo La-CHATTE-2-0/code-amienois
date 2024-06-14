@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
+import { VitePluginRadar } from 'vite-plugin-radar'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -52,5 +53,11 @@ export default defineConfig({
         enabled: true
       }
     }),
+    VitePluginRadar({
+      // Google Analytics tag injection
+      analytics: {
+        id: 'G-XPELB5DRNK',
+      },
+    })
   ],
 })

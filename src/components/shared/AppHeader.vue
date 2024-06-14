@@ -30,6 +30,7 @@ function toggleTheme() {
 
         <template v-slot:image>
             <v-img
+                alt=""
                 gradient="to top right, rgba(0,0,0,.9), rgba(0,0,0,.7)"
             ></v-img>
         </template>
