@@ -33,4 +33,8 @@ import AppHeader from "../components/shared/AppHeader.vue";
     </v-footer>
 </template>
 
-<style scoped></style>
+<style>
+main {
+    width: 100vw;
+}
+</style>
