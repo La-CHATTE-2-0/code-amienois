@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Article13Spé from "./Article13Spé.vue";
+import pages from "../../core/enums/page";
 </script>
 
 <template>
@@ -18,7 +19,7 @@ import Article13Spé from "./Article13Spé.vue";
 
         <div data-croix style="justify-content: center">
             <div>
-                <a href="./pages/historique_croix.html">
+                <a :href="pages.historique_croix.url">
                     <img loading="lazy" alt="GM" src="/images/insigne/gm.png" />
                 </a>
             </div>

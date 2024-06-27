@@ -1,14 +1,18 @@
-export type CheckListItem = {
+type CheckListItem = {
     id: string
     label: string,
-    description: string
+    description: string,
+    checked?: boolean
 }
 
-export const incontournable: Array<CheckListItem> = [
+export type { CheckListItem }
+
+export let incontournable: Array<CheckListItem> = [
     {
         id: "tente",
         label: "⛺ Une tente",
         description: "Bien que certains congrès proposent des places en dur (Bungalows, dortoirs couverts, etc.), la plupart des congressistes campent sur les lieux du congrès. Une tente est alors nécessaire, ou du moins il faut s’assurer d’avoir une place dans la tente de quelqu’un d’autre.",
+        checked: false
     },
     {
         id: "couverture",

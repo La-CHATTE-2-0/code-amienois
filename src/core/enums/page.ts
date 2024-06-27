@@ -17,7 +17,7 @@ const pages = {
     },
     checklist: {
         name: 'Checklist Congrès',
-        url: '/checklist-congrès'
+        url: '/checklist-congres'
     },
     couleurs_rubans: {
         name: 'Couleurs des rubans',
@@ -26,6 +26,10 @@ const pages = {
     rabelais: {
         name: 'François Rabelais',
         url: '/rabelais'
+    },
+    historique_croix: {
+        name: 'Histoirque des GM',
+        url: '/historique-croix'
     },
 }
 
