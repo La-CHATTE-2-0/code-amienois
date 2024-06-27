@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { sciences, droits, pharmaciens, medecines, sagefemmes } from "../core/historique_croix";
 </script>
 
