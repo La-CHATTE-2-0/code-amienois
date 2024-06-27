@@ -27,6 +27,10 @@ const pages = {
         name: 'François Rabelais',
         url: '/rabelais'
     },
+    historique_croix: {
+        name: 'Histoirque des GM',
+        url: '/historique-croix'
+    },
 }
 
 export default pages;

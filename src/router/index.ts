@@ -7,6 +7,7 @@ import Monome from "../pages/Monome.vue";
 import NotesAuxPMs from "../pages/NotesAuxPMs.vue";
 import CouleursRubans from "../pages/CouleursRubans.vue";
 import CheckList from "../pages/CheckList.vue";
+import HistoriqueCroix from "../pages/HistoriqueCroix.vue";
 
 const routes = [
     {
@@ -44,6 +45,12 @@ const routes = [
         path: pages.checklist.url,
         name: pages.checklist.name,
         component: CheckList,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.historique_croix.url,
+        name: pages.historique_croix.name,
+        component: HistoriqueCroix,
         meta: { layout: "Main" },
     },
 ];
