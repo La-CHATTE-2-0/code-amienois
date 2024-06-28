@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
-import pages from "../core/enums/page"
+import pages from "../core/page"
 
 import Code from "../pages/Code.vue";
 import RecapSpé from "../pages/RecapSpé.vue";
@@ -8,6 +8,9 @@ import NotesAuxPMs from "../pages/NotesAuxPMs.vue";
 import CouleursRubans from "../pages/CouleursRubans.vue";
 import CheckList from "../pages/CheckList.vue";
 import HistoriqueCroix from "../pages/HistoriqueCroix.vue";
+import Bacchus from "../pages/Bacchus.vue";
+import Rabelais from "../pages/Rabelais.vue";
+import Gambrinus from "../pages/Gambrinus.vue";
 
 const routes = [
     {
@@ -51,6 +54,24 @@ const routes = [
         path: pages.historique_croix.url,
         name: pages.historique_croix.name,
         component: HistoriqueCroix,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.gambrinus.url,
+        name: pages.gambrinus.name,
+        component: Gambrinus,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.bacchus.url,
+        name: pages.bacchus.name,
+        component: Bacchus,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.rabelais.url,
+        name: pages.rabelais.name,
+        component: Rabelais,
         meta: { layout: "Main" },
     },
 ];

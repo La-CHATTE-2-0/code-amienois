@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Article13Spé from "./Article13Spé.vue";
-import pages from "../../core/enums/page";
+import pages from "../../core/page";
 </script>
 
 <template>
