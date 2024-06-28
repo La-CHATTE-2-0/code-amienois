@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Article10Spé from "../../components/articles/Article10Spé.vue";
-import pages from "../../core/enums/page";
+import pages from "../../core/page";
 </script>
 
 <template>

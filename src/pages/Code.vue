@@ -19,7 +19,7 @@ import {
     Article17,
 } from "../components/articles/index";
 import Birthday from "../components/Birthdays.vue";
-import pages from "../core/enums/page";
+import pages from "../core/page";
 </script>
 
 <template>

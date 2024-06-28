@@ -23,13 +23,21 @@ const pages = {
         name: 'Couleurs des rubans',
         url: '/couleurs-des-rubans'
     },
+    historique_croix: {
+        name: 'Histoirque des GM',
+        url: '/historique-croix'
+    },
     rabelais: {
         name: 'François Rabelais',
         url: '/rabelais'
     },
-    historique_croix: {
-        name: 'Histoirque des GM',
-        url: '/historique-croix'
+    gambrinus: {
+        name: 'Gambrinus',
+        url: '/gambrinus'
+    },
+    bacchus: {
+        name: 'Bacchus',
+        url: '/bacchus'
     },
 }
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useTheme } from "vuetify";
 import { ref } from "vue";
-import pages from "../../core/enums/page";
+import pages from "../../core/page";
 
 const drawerState = ref(false);
 
@@ -62,22 +62,33 @@ function toggleTheme() {
                 :value="pages.monome.url"
                 :to="pages.monome.url"
             ></v-list-item>
-            <!--TODO: page dédiée-->
             <v-list-item
                 prepend-icon="mdi-book-open-page-variant-outline"
                 :title="pages.rabelais.name"
                 :value="pages.rabelais.url"
-                href="https://ordrerabelaisien.be/rabelais/"
+                :to="pages.rabelais.url"
             ></v-list-item>
+            <v-list-item
+                prepend-icon="mdi-glass-wine"
+                :title="pages.bacchus.name"
+                :value="pages.bacchus.url"
+                :to="pages.bacchus.url"
+            ></v-list-item>
+            <v-list-item
+                prepend-icon="mdi-glass-mug"
+                :title="pages.gambrinus.name"
+                :value="pages.gambrinus.url"
+                :to="pages.gambrinus.url"
+            ></v-list-item>
+        </v-list>
+        <v-list>
+            <v-list-subheader>Ressources</v-list-subheader>
             <v-list-item
                 prepend-icon="mdi-account-group"
                 :title="pages.notes_aux_pm.name"
                 :value="pages.notes_aux_pm.url"
                 :to="pages.notes_aux_pm.url"
             ></v-list-item>
-        </v-list>
-        <v-list>
-            <v-list-subheader>Ressources</v-list-subheader>
             <v-list-item
                 prepend-icon="mdi-music-clef-treble"
                 href="https://www.youtube.com/@nouveaubreviaireamienois111"
@@ -111,6 +122,7 @@ function toggleTheme() {
         </v-list>
 
         <template v-slot:append>
+            <v-divider></v-divider>
             <v-switch
                 v-on:click="toggleTheme"
                 class="ml-4"
