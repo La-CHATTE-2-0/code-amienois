@@ -127,8 +127,9 @@ function toggleTheme() {
                 v-on:click="toggleTheme"
                 class="ml-4"
                 color="primary"
-                label="Switch thème"
+                label="Mode Sombre"
                 inset
+                :model-value="theme.global.current.value.dark"
             ></v-switch>
         </template>
     </v-navigation-drawer>
