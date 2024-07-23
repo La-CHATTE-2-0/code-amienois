@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watch, onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import { type CheckListItem } from "../../core/checklist";
 
 const dialog = ref(false);
@@ -15,8 +15,6 @@ function handleClick() {
 }
 
 onMounted(() => {
-    console.log(props.item.id);
-    console.log(localStorage.getItem(props.item.id));
     checked.value = JSON.parse(localStorage.getItem(props.item.id) ?? "false");
 });
 </script>
