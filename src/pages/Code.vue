@@ -56,7 +56,7 @@ import pages from "../core/page";
             <span class="text-h6">Les Croix</span>
         </div>
 
-        <v-card class="mx-auto mt-5">
+        <v-card class="mx-auto mt-5" variant="tonal">
             <v-img
                 height="auto"
                 src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Francois_Rabelais_-_Portrait.jpg"
@@ -97,7 +97,7 @@ import pages from "../core/page";
             </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto mt-5">
+        <v-card class="mx-auto mt-5" variant="tonal">
             <v-img
                 height="auto"
                 src="/images/carousel/honoris.jpg"
@@ -121,7 +121,7 @@ import pages from "../core/page";
             </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto mt-5">
+        <v-card class="mx-auto mt-5" variant="tonal">
             <v-img
                 height="auto"
                 src="/images/carousel/marie_sans_chemise.jpg"
@@ -153,7 +153,7 @@ import pages from "../core/page";
             </template>
         </v-card>
 
-        <v-card class="mx-auto my-5">
+        <v-card class="mx-auto my-5" variant="tonal">
             <v-img
                 height="auto"
                 src="/images/carousel/chatte.jpg"

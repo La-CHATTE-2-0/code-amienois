@@ -66,7 +66,7 @@ function toggleTheme() {
                 prepend-icon="mdi-book-open-page-variant-outline"
                 :title="pages.rabelais.name"
                 :value="pages.rabelais.url"
-                :to="pages.rabelais.url"
+                :href="/*pages.rabelais.url*/ 'https://ordrerabelaisien.be/rabelais'"
             ></v-list-item>
             <v-list-item
                 prepend-icon="mdi-glass-wine"

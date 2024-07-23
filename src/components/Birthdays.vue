@@ -1,6 +1,6 @@
 <template>
     <v-expansion-panels>
-        <v-expansion-panel elevation="0">
+        <v-expansion-panel elevation="0" variant="tonal">
             <v-expansion-panel-title>
                 D'après les décisions des croix
             </v-expansion-panel-title>
