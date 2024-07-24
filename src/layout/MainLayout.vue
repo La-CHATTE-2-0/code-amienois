@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AppHeader from "../components/shared/AppHeader.vue";
+import { version } from "../version";
 </script>
 
 <template>
@@ -9,8 +10,11 @@ import AppHeader from "../components/shared/AppHeader.vue";
     </v-main>
     <v-footer>
         <v-row justify="center" no-gutters>
-            <v-col class="text-center my-2" cols="12">
-                <a href="https://github.com/La-CHATTE-2-0/code-amienois">
+            <v-col class="text-center my-2" cols="12" style="height: 20px">
+                <a
+                    href="https://github.com/La-CHATTE-2-0/code-amienois"
+                    class="mr-2"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -28,6 +32,9 @@ import AppHeader from "../components/shared/AppHeader.vue";
                         />
                     </svg>
                 </a>
+                <span class="ml-2" style="vertical-align: text-bottom">
+                    {{ version }}
+                </span>
             </v-col>
         </v-row>
     </v-footer>
