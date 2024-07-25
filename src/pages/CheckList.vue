@@ -102,7 +102,7 @@ function handleReset() {
             <img
                 src="/images/other/pommo_2023.jpg"
                 class="mt-3 mb-3 rounded"
-                alt="Photo des ômienois à la Pommo 2023"
+                alt="ômienois à la Pommo 2023"
                 loading="lazy"
                 width="100%"
             />

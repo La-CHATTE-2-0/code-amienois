@@ -1,6 +1,6 @@
 {
   "name": "code-amienois",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Code de la faluche PWA",
   "private": false,
   "type": "module",
@@ -12,17 +12,17 @@
   "dependencies": {
     "vite-plugin-pwa": "^0.20.0",
     "vite-plugin-radar": "^0.9.6",
-    "vue": "^3.4.30",
+    "vue": "^3.4.34",
     "vue-router": "^4.4.0",
-    "vuetify": "^3.6.10"
+    "vuetify": "^3.6.13"
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "sass": "^1.77.6",
-    "typescript": "^5.5.2",
-    "vite": "^5.3.2",
-    "vue-tsc": "^2.0.22"
+    "@vitejs/plugin-vue": "^5.1.0",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.4",
+    "vue-tsc": "^2.0.28"
   },
   "repository": {
     "type": "git",
