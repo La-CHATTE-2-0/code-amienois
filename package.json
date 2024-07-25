@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vite-plugin-pwa": "^0.20.0",
+    "vite-plugin-pwa": "^0.20.1",
     "vite-plugin-radar": "^0.9.6",
     "vue": "^3.4.34",
     "vue-router": "^4.4.0",
