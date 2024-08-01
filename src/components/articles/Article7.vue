@@ -381,6 +381,19 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     </td>
                 </tr>
                 <tr>
+                    <td>Bachelors</td>
+                    <td>Beta β</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/beta.png"
+                            alt="tete_de_cheval"
+                        />
+                    </td>
+                </tr>
+                <tr>
                     <td>BTS</td>
                     <td>Lettres BTS</td>
                     <td data-fal-insigne>
