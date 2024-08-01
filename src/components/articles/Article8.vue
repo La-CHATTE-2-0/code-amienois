@@ -948,6 +948,19 @@ import Article8Spé from "./Article8Spé.vue";
                     </td>
                 </tr>
                 <tr>
+                    <td>Tortue</td>
+                    <td>Grand Hébergeur</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/tortue_doree.png"
+                            alt="Tortue"
+                        />
+                    </td>
+                </tr>
+                <tr>
                     <td>Volant</td>
                     <td>Conducteur de fin de soirée (SAM)</td>
                     <td data-fal-insigne>
