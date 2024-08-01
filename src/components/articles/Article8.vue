@@ -770,7 +770,7 @@ import Article8Spé from "./Article8Spé.vue";
                 </tr>
                 <tr>
                     <td>Cor de chasse</td>
-                    <td>Chasseur devant l'éternel</td>
+                    <td>Chasseur devant l'éternel (grand charmeur)</td>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
