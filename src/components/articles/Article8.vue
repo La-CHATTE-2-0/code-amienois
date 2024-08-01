@@ -661,7 +661,8 @@ import Article8Spé from "./Article8Spé.vue";
                     <td>Abeille</td>
                     <td>
                         Minutie dans le travail associatif (sur le ruban
-                        d'association)
+                        d'association) (décerné à la demande du président ou du
+                        bureau)
                     </td>
                     <td data-fal-insigne>
                         <img
