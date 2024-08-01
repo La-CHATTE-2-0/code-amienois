@@ -588,8 +588,8 @@ import Article8Spé from "./Article8Spé.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Épee</td>
-                    <td>Fin Baiseur</td>
+                    <td>Épee ou Pensée</td>
+                    <td>Fin(e) baiseur(se)</td>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
@@ -597,6 +597,13 @@ import Article8Spé from "./Article8Spé.vue";
                             height="100"
                             src="/images/insigne/epee.png"
                             alt="Epée"
+                        />
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/pensee.png"
+                            alt="Pensée"
                         />
                     </td>
                 </tr>
@@ -623,19 +630,6 @@ import Article8Spé from "./Article8Spé.vue";
                             height="100"
                             src="/images/insigne/lime.png"
                             alt="Lime"
-                        />
-                    </td>
-                </tr>
-                <tr>
-                    <td>Pensée</td>
-                    <td>Fine baiseuse</td>
-                    <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/pensee.png"
-                            alt="Pensée"
                         />
                     </td>
                 </tr>
