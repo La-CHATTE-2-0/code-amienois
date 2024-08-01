@@ -776,6 +776,19 @@ import Article8Spé from "./Article8Spé.vue";
                     </td>
                 </tr>
                 <tr>
+                    <td>Entonnoir</td>
+                    <td>Bacchus troué <b>forcé</b></td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/entonnoir.png"
+                            alt="Entonnoir"
+                        />
+                    </td>
+                </tr>
+                <tr>
                     <td>Fourchette + ruban bleu</td>
                     <td>Cordon bleu</td>
                     <td data-fal-insigne>
