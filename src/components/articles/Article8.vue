@@ -999,13 +999,19 @@ import Article8Spé from "./Article8Spé.vue";
                         />
                     </td>
                 </tr>
-                <!-- <tr>
-            <td>Âne</td>
-            <td>Berrichon</td>
-            <td data-fal-insigne>
-              <img loading="lazy" width="100" height="100" src="/images/insigne/ane.png" alt="Âne" />
-            </td>
-          </tr> -->
+                <tr>
+                    <td>Âne</td>
+                    <td>Berrichon</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/ane.png"
+                            alt="Âne"
+                        />
+                    </td>
+                </tr>
                 <tr>
                     <td>Chardon</td>
                     <td>Lorrain</td>
@@ -1042,6 +1048,32 @@ import Article8Spé from "./Article8Spé.vue";
                             height="100"
                             src="/images/insigne/cigogne.png"
                             alt="Cigogne"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Croix Camarguaise</td>
+                    <td>Camargue</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/camargue.png"
+                            alt="Camargue"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Croix Occitane</td>
+                    <td>Occitan</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/occitan.png"
+                            alt="Occitan"
                         />
                     </td>
                 </tr>
@@ -1085,6 +1117,19 @@ import Article8Spé from "./Article8Spé.vue";
                     </td>
                 </tr>
                 <tr>
+                    <td>Lauburu</td>
+                    <td>Pays basque</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/lauburu.png"
+                            alt="Lauburu"
+                        />
+                    </td>
+                </tr>
+                <tr>
                     <td>Lion rampant (dressé)</td>
                     <td>Lyonnais</td>
                     <td data-fal-insigne>
@@ -1124,6 +1169,19 @@ import Article8Spé from "./Article8Spé.vue";
                     </td>
                 </tr>
                 <tr>
+                    <td>Sacré Coeur</td>
+                    <td>Vendéens</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/sacre_coeur.png"
+                            alt="Sacré Coeur"
+                        />
+                    </td>
+                </tr>
+                <tr>
                     <td>Sanglier</td>
                     <td>Ardennais</td>
                     <td data-fal-insigne>
@@ -1145,7 +1203,20 @@ import Article8Spé from "./Article8Spé.vue";
                             width="100"
                             height="100"
                             src="/images/insigne/taste_de_vin.png"
-                            alt="Sanglier"
+                            alt="Taste vin"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tête de Maure</td>
+                    <td>Corse</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/tete_de_maure.png"
+                            alt="Corse"
                         />
                     </td>
                 </tr>
