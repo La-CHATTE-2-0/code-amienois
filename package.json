@@ -12,7 +12,7 @@
   "dependencies": {
     "vite-plugin-pwa": "^0.20.1",
     "vite-plugin-radar": "^0.9.6",
-    "vite-plugin-vuetify": "^2.0.3",
+    "vite-plugin-vuetify": "^2.0.4",
     "vue": "^3.4.34",
     "vue-router": "^4.4.0",
     "vuetify": "^3.6.13"
