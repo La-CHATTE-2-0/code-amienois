@@ -14,7 +14,7 @@
     "vite-plugin-radar": "^0.9.6",
     "vite-plugin-vuetify": "^2.0.3",
     "vue": "^3.4.34",
-    "vue-router": "^4.4.0",
+    "vue-router": "^4.4.2",
     "vuetify": "^3.6.13"
   },
   "devDependencies": {
