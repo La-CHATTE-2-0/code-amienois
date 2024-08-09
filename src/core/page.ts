@@ -39,6 +39,14 @@ const pages = {
         name: 'Bacchus',
         url: '/bacchus'
     },
+    folklore_francais: {
+        name: 'Folklores Français',
+        url: '/folklore_francais'
+    },
+    folklore_etranger: {
+        name: 'Folklores Étrangers',
+        url: '/folklore_etranger'
+    },
 }
 
 export default pages;

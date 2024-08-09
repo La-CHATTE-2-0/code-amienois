@@ -37,3 +37,9 @@ const layout = computed(() => {
         </v-theme-provider>
     </v-app>
 </template>
+
+<style lang="scss">
+.v-main {
+    min-height: 90%;
+}
+</style>

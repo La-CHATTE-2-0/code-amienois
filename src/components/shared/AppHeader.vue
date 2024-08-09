@@ -113,11 +113,17 @@ function toggleTheme() {
             ></v-list-item>
         </v-list>
         <v-list>
-            <v-list-subheader>Vie falucharde</v-list-subheader>
+            <v-list-subheader>Vie étudiante</v-list-subheader>
             <v-list-item
                 prepend-icon="mdi-cat"
                 href="https://linktr.ee/lachatte2.0"
                 title="La CHATTE 2.0"
+            ></v-list-item>
+            <v-list-item
+                prepend-icon="mdi-eiffel-tower"
+                :title="pages.folklore_francais.name"
+                :value="pages.folklore_francais.url"
+                :to="pages.folklore_francais.url"
             ></v-list-item>
         </v-list>
 
