@@ -11,6 +11,7 @@ import HistoriqueCroix from "../pages/HistoriqueCroix.vue";
 import Bacchus from "../pages/Bacchus.vue";
 import Rabelais from "../pages/Rabelais.vue";
 import Gambrinus from "../pages/Gambrinus.vue";
+import FolkloresFrancais from "../pages/Folklores/FolkloresFrancais.vue";
 
 const routes = [
     {
@@ -72,6 +73,12 @@ const routes = [
         path: pages.rabelais.url,
         name: pages.rabelais.name,
         component: Rabelais,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.folklore_francais.url,
+        name: pages.folklore_francais.name,
+        component: FolkloresFrancais,
         meta: { layout: "Main" },
     },
 ];
