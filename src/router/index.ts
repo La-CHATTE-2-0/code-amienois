@@ -12,6 +12,7 @@ import Bacchus from "../pages/Bacchus.vue";
 import Rabelais from "../pages/Rabelais.vue";
 import Gambrinus from "../pages/Gambrinus.vue";
 import FolkloresFrancais from "../pages/Folklores/FolkloresFrancais.vue";
+import FolkloresEtrangers from "../pages/Folklores/FolkloresEtrangers.vue";
 
 const routes = [
     {
@@ -79,6 +80,12 @@ const routes = [
         path: pages.folklore_francais.url,
         name: pages.folklore_francais.name,
         component: FolkloresFrancais,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.folklore_etranger.url,
+        name: pages.folklore_etranger.name,
+        component: FolkloresEtrangers,
         meta: { layout: "Main" },
     },
 ];
