@@ -125,6 +125,12 @@ function toggleTheme() {
                 :value="pages.folklore_francais.url"
                 :to="pages.folklore_francais.url"
             ></v-list-item>
+            <v-list-item
+                prepend-icon="mdi-earth"
+                :title="pages.folklore_etranger.name"
+                :value="pages.folklore_etranger.url"
+                :to="pages.folklore_etranger.url"
+            ></v-list-item>
         </v-list>
 
         <template v-slot:append>

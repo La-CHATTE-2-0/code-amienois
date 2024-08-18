@@ -4,8 +4,9 @@
             <v-expansion-panel-title> Les Gadzarts </v-expansion-panel-title>
             <v-expansion-panel-text>
                 <v-img
-                    src="https://mostafafourar.wordpress.com/wp-content/uploads/2016/05/blouse-gadzart.jpg"
+                    src="/images/folklores/blouse-gadzart.jpg"
                     class="my-5"
+                    alt="blouse gadzart"
                 >
                 </v-img>
                 <p>
@@ -17,8 +18,9 @@
                 </p>
 
                 <v-img
-                    src="https://cdn-s-www.republicain-lorrain.fr/images/E185D448-F311-46A9-8DC1-869927F0979D/NW_raw/arthur-mathis-valentine-et-mathilde-viennent-de-faire-leur-entree-aux-arts-et-metiers-quot-ce-defile-c-est-important-c-est-la-tradition-on-represente-notre-ecole-pour-la-premiere-fois-et-on-decouvre-la-ville-quot-photo-rl-gilles-wirtz-1634566678.jpg"
+                    src="/images/folklores/defile_gadzart.jpg"
                     class="my-5"
+                    alt="defile gardzart"
                 >
                 </v-img>
 
@@ -50,7 +52,7 @@
 
                 <v-img
                     class="my-5"
-                    src="https://www.prepa-laramee.fr/wp-content/uploads/2022/08/image-3-1024x682.png"
+                    src="/images/folklores/image-3-1024x682.png"
                 >
                 </v-img>
 

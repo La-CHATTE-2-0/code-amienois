@@ -13,13 +13,16 @@
                 ></v-alert>
 
                 <v-img
-                    src="https://ordredubitard.fr/images/venere.jpg"
+                    src="/images/folklores/venere.jpg"
                     class="my-5"
+                    alt="Veneré Bitard"
                 >
                 </v-img>
 
-                Genèse :
-                <p>
+                <strong class="mt-4">
+                    Genèse :
+                </strong> 
+                <p class="mb-4">
                     Le dieu des étudiants de Poitiers trouve ses origines dans
                     les temps anciens, quand les dieux habitaient l’Olympe.
                     Junon, épouse de Jupiter, fauta un jour avec un berger. Le
@@ -49,7 +52,7 @@
                     Poitiers le nouveau Grand Bitardier à travers la ville.
                 </p>
 
-                <div>
+                <div class="my-4">
                     <iframe
                         style="width: 100%; aspect-ratio: 16/9"
                         src="https://www.youtube.com/embed/K4mCWBDUC_M?si=OTCj3eIg3G-AgzIJ"
@@ -61,8 +64,10 @@
                     ></iframe>
                 </div>
 
-                Hiérarchie :
-                <p>
+                <strong class="mt-4">
+                    Hiérarchie :
+                </strong> 
+                <p class="mb-4">
                     L’Ordre du vénéré Bitard (L.S.T.) est constitué par les
                     dignitaires (chevaliers et commandeurs), les novices et les
                     chabousses. Il est dirigé par le Grand Maître. L’étudiant
@@ -83,8 +88,10 @@
                     côtoient les bitards, sans espoir de promotion.
                 </p>
 
-                Costume :
-                <p>
+                <strong>
+                    Costume :
+                </strong> 
+                <p class="mb-4">
                     Les bitards portent tous une faluche, coiffure
                     traditionnelle des étudiants de France. C’est un béret de
                     feutre. Des insignes et rubans de couleur y résument la vie
@@ -98,7 +105,10 @@
                     bleue à bordure de fourrure blanche, le Grand Bitardier à sa
                     cape camaïeu. Sans indiquer certaines autres particularités.
                 </p>
-                Coutumes :
+
+                <strong>
+                    Coutumes :
+                </strong> 
                 <p>
                     Les bitards visitent les lieux poitevins devenus mythiques
                     grâce à Rabelais (la Pierre Levée et Passelourdain). Le
@@ -110,7 +120,7 @@
                 </p>
 
                 <v-img
-                    src="https://www.centre-presse.fr/images/articles/800x600_217321.jpg"
+                    src="/images/folklores/800x600_217321.jpg"
                     class="my-5"
                 >
                 </v-img>

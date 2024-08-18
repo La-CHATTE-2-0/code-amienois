@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import FolkloresFrancaisKhalots from "./FolkloresFrancais.Khalots.vue";
-import FolkloresFrancaisGadzart from "./FolkloresFrancais.Gadzarts.vue";
-import FolkloresFrancaisBitards from "./FolkloresFrancais.Bitards.vue";
+import FolkloresFrancaisKhalots from "../../components/folklores/FolkloresFrancais.Khalots.vue";
+import FolkloresFrancaisGadzart from "../../components/folklores/FolkloresFrancais.Gadzarts.vue";
+import FolkloresFrancaisBitards from "../../components/folklores/FolkloresFrancais.Bitards.vue";
 </script>
 
 <template>
