@@ -5,7 +5,8 @@
             <v-expansion-panel-text>
                 <v-img
                     class="my-5"
-                    src="https://www.famillechretienne.fr/sites/default/files/dpistyles/ena_16_9_extra_big/node_35633/45052/public/thumbnails/image/une_prepa_litteraire_a_stanislas.jpg?itok=yW6SnYmy1606741841"
+                    src="/images/folklores/une_prepa_litteraire_a_stanislas.jpg"
+                    alt="Khalot stan"
                 ></v-img>
 
                 <p>
@@ -29,7 +30,7 @@
 
                 <v-img
                     class="my5"
-                    src="https://storage.canalblog.com/14/26/620450/57419533.jpg"
+                    src="/images/folklores/57419533.jpg"
                 ></v-img>
             </v-expansion-panel-text>
         </v-expansion-panel>
