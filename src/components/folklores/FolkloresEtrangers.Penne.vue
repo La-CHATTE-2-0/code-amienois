@@ -38,7 +38,7 @@
 
                 <p class="mt-4">
                     La pennes, que seuls les étudiants baptisés portent
-                    actuellement, tire son nom son nom d'un mit wallon
+                    actuellement, tire son nom d'un mit wallon
                     signifiant visière. Elle apparut vers 1850 à l'ULB
                     (Université Libre de Bruxelles) et 1861 à Liège. À Liège
                     elle aurait été d'abord connue sous le nom de crapuleuse

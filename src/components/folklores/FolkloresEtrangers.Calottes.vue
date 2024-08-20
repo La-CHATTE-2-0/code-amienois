@@ -11,7 +11,7 @@
 
                 <p>
                     La calotte est le couvre-chef caractéristique des étudiants
-                    universitaires franophones de confession catholique en
+                    universitaires franophones (et à Gand) de confession catholique en
                     Belgique. Il est établi que la toque d'étudiant à été
                     choisie en 1895 au sein de la SGBEC (Société Générale
                     Bruxelloise des Étudiants Catholiques) comme couvre-chef des
