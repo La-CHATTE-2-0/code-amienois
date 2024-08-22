@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import FolkloresEtrangersCalottes from "../../components/folklores/FolkloresEtrangers.Calottes.vue";
-import FolkloresEtrangersPenne from "../../components/folklores/FolkloresEtrangers.Penne.vue";
+import FolkloresEtrangersCalottes from "../components/folklores/FolkloresEtrangers.Calottes.vue";
+import FolkloresEtrangersPenne from "../components/folklores/FolkloresEtrangers.Penne.vue";
+import FolkloresEtrangersPenneConsulaire from "../components/folklores/FolkloresEtrangers.PenneConsulaire.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import FolkloresEtrangersPenne from "../../components/folklores/FolkloresEtrange
 
         <FolkloresEtrangersCalottes></FolkloresEtrangersCalottes>
         <FolkloresEtrangersPenne></FolkloresEtrangersPenne>
+        <FolkloresEtrangersPenneConsulaire></FolkloresEtrangersPenneConsulaire>
 
         <span class="text-caption">Crédits: Code Valenciennois</span>
     </v-container>
