@@ -1,14 +1,14 @@
 <template>
     <v-expansion-panels class="mb-5">
         <v-expansion-panel elevation="0" variant="tonal">
-            <v-expansion-panel-title
-                >🇧🇪 La Penne Consulaire</v-expansion-panel-title
-            >
+            <v-expansion-panel-title>
+                🇧🇪 La Penne Consulaire
+            </v-expansion-panel-title>
             <v-expansion-panel-text>
                 <v-img
                     class="my-5"
-                    src="/images/folklores/Penne_Consulaire.jpg"
-                    alt="Penne roi"
+                    src="/images/folklores/Penne_Consulaire.png"
+                    alt="Penne fucam"
                 ></v-img>
 
                 <p class="mt-5">
@@ -18,7 +18,7 @@
                     les étudiants des Facultés Universitaire catholique de Mons
                     (FUCaM). Les couleurs rouges et blanches de la bande
                     rappellent celles de la ville de Mons. Elle est d'origine
-                    allemande..
+                    allemande.
                 </p>
             </v-expansion-panel-text>
         </v-expansion-panel>
