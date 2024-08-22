@@ -11,8 +11,8 @@ import HistoriqueCroix from "../pages/HistoriqueCroix.vue";
 import Bacchus from "../pages/Bacchus.vue";
 import Rabelais from "../pages/Rabelais.vue";
 import Gambrinus from "../pages/Gambrinus.vue";
-import FolkloresFrancais from "../pages/Folklores/FolkloresFrancais.vue";
-import FolkloresEtrangers from "../pages/Folklores/FolkloresEtrangers.vue";
+import FolkloresFrancais from "../pages/FolkloresFrancais.vue";
+import FolkloresEtrangers from "../pages/FolkloresEtrangers.vue";
 
 const routes = [
     {
