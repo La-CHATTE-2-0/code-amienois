@@ -4,11 +4,21 @@ import vuetify from 'vite-plugin-vuetify'
 import { VitePWA } from 'vite-plugin-pwa'
 import { VitePluginRadar } from 'vite-plugin-radar'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
+import pluginPurgeCss from "vite-plugin-purgecss-updated-v5";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
     port: 8080
+  },
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      }
+    }
   },
   plugins: [
     vue(),
@@ -61,6 +71,9 @@ export default defineConfig({
       analytics: {
         id: 'G-XPELB5DRNK',
       },
+    }),
+    pluginPurgeCss({
+      variables: true,
     }),
     ViteImageOptimizer(),
   ],

@@ -1,6 +1,6 @@
 {
   "name": "code-amienois",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Code de la faluche PWA",
   "private": false,
   "type": "module",
@@ -26,6 +26,7 @@
     "typescript": "^5.5.4",
     "vite": "^5.4.2",
     "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-purgecss-updated-v5": "^1.2.1",
     "vue-tsc": "^2.0.29"
   },
   "repository": {
