@@ -10,6 +10,15 @@ export default defineConfig({
   server: {
     port: 8080
   },
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      }
+    }
+  },
   plugins: [
     vue(),
     vuetify({ autoImport: true }),
