@@ -379,7 +379,7 @@
                             />
                         </td>
                         <td>Saint-Quentin</td>
-                        <td>Bleu et blanc</td>
+                        <td>Blanc et bleu</td>
                         <td data-fal-insigne>
                             <a href="#picardie">
                                 <img
