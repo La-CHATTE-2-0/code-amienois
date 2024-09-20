@@ -3,11 +3,13 @@ const imageSciences = document.getElementById("ea-palmeSciences");
 const imageSf = document.getElementById("ea-sf");
 const imageDroit = document.getElementById("ea-droits");
 const imagePharma = document.getElementById("ea-cad-pharma");
+const billotInge = document.getElementById("ea-billot-inge");
 
 let clicsSciences = 0;
 let clicsSf = 0;
 let clicsDroit = 0;
 let clicsPharma = 0;
+let clicsInge = 0;
 
 imageSciences.addEventListener("click", async () => {
     clicsSciences++;
@@ -47,5 +49,15 @@ imagePharma.addEventListener("click", async () => {
         await audio.play();
         imagePharma.src = "/jean-loup.png"
         clicsPharma = 0;
+    }
+});
+
+billotInge.addEventListener("click", async () => {
+    clicsInge++;
+    console.log("clic")
+
+    if (clicsInge === 5) {
+        billotInge.src = "/images/insigne/troll_ingé.png"
+        clicsInge = 0;
     }
 });

@@ -44,6 +44,7 @@
         <div>
             <span>Inter-Fillières</span>
             <img
+                id="ea-billot-inge"
                 class="billot"
                 loading="lazy"
                 src="/images/insigne/billot_satin.png"
