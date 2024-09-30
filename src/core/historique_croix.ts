@@ -74,11 +74,11 @@ const droits = [
     },
     {
         surname: 'Jean-Baptiste "Ch\'Bof" A.',
-        year: 2018,
+        year: 2016,
     },
     {
         surname: 'Claire "La Galoche" F.',
-        year: 2003,
+        year: 2018,
     },
     {
         surname: 'Sébastien "Casseur-Flotteur" F.',
@@ -159,12 +159,11 @@ const pharmaciens = [
 
 const sagefemmes = [
     {
-        surname: 'MacBright',
-        year: 2003,
+        surname: 'MacBright'
     },
     {
         surname: 'Manu "Manus" T.',
-        year: 2003,
+        year: 2010,
     },
     {
         surname: 'Solène "CaCa" M.',
@@ -172,14 +171,14 @@ const sagefemmes = [
     },
     {
         surname: 'Julia C.',
-        year: 2018,
+        year: 2015,
     },
     {
         surname: 'Jennifer "Falquaad" C.',
         year: 2018,
     },
     {
-        surname: 'Coralie "Jafar" M.',
+        surname: 'Coralie "Jafaaaaar" M.',
         year: 2023,
     },
 ]

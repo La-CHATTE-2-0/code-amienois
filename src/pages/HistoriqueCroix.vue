@@ -88,5 +88,7 @@ import { sciences, droits, pharmaciens, medecines, sagefemmes } from "../core/hi
                 </v-timeline-item>
             </v-timeline>
         </v-card>
+
+        <p class="mt-8">Il a existé d'autres Grands-Maitres dans la ville (chez les jaunes et les IUTs). Je les ajouterai si je trouve assez d'information dessus.</p>
     </v-container>
 </template>
