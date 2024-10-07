@@ -2,6 +2,8 @@
 import FolkloresEtrangersCalottes from "../components/folklores/FolkloresEtrangers.Calottes.vue";
 import FolkloresEtrangersPenne from "../components/folklores/FolkloresEtrangers.Penne.vue";
 import FolkloresEtrangersPenneConsulaire from "../components/folklores/FolkloresEtrangers.PenneConsulaire.vue";
+import FolkloresEtrangersCzapka from "../components/folklores/FolkloresEtrangers.Czapka.vue";
+import FolkloresEtrangersFeluca from "../components/folklores/FolkloresEtrangers.Feluca.vue";
 </script>
 
 <template>
@@ -14,6 +16,8 @@ import FolkloresEtrangersPenneConsulaire from "../components/folklores/Folklores
         <FolkloresEtrangersCalottes></FolkloresEtrangersCalottes>
         <FolkloresEtrangersPenne></FolkloresEtrangersPenne>
         <FolkloresEtrangersPenneConsulaire></FolkloresEtrangersPenneConsulaire>
+        <FolkloresEtrangersCzapka></FolkloresEtrangersCzapka>
+        <FolkloresEtrangersFeluca></FolkloresEtrangersFeluca>
 
         <span class="text-caption">Crédits: Code Valenciennois</span>
     </v-container>
