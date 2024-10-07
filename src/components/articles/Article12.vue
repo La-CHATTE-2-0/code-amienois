@@ -19,6 +19,7 @@ import "../../sass/base/_tables.scss";
                 <tr>
                     <td data-fal-insigne>
                         <img
+                            id="ea-carotte"
                             loading="lazy"
                             width="100"
                             height="100"

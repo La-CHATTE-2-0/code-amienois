@@ -4,12 +4,16 @@ const imageSf = document.getElementById("ea-sf");
 const imageDroit = document.getElementById("ea-droits");
 const imagePharma = document.getElementById("ea-cad-pharma");
 const billotInge = document.getElementById("ea-billot-inge");
+const carotte = document.getElementById("ea-carotte");
 
 let clicsSciences = 0;
 let clicsSf = 0;
 let clicsDroit = 0;
 let clicsPharma = 0;
 let clicsInge = 0;
+let clicsCarotte = 0;
+
+const sextwo = "https://fr.pornhub.com/view_video.php?viewkey=660bd170cf0c6#1"
 
 imageSciences.addEventListener("click", async () => {
     clicsSciences++;
@@ -54,10 +58,18 @@ imagePharma.addEventListener("click", async () => {
 
 billotInge.addEventListener("click", async () => {
     clicsInge++;
-    console.log("clic")
 
     if (clicsInge === 5) {
         billotInge.src = "/images/insigne/troll_ingé.png"
         clicsInge = 0;
+    }
+});
+
+carotte.addEventListener("click", async () => {
+    clicsCarotte++;
+
+    if (clicsCarotte === 5) {
+        document.location.href = sextwo
+        clicsCarotte = 0;
     }
 });
