@@ -131,6 +131,11 @@ function toggleTheme() {
                 :value="pages.folklore_etranger.url"
                 :to="pages.folklore_etranger.url"
             ></v-list-item>
+            <v-list-item
+                prepend-icon="mdi-map"
+                href="https://docs.google.com/spreadsheets/d/11oPpJuXnl4LMNv5XBbDwdE47q_IjiV-bt9nMuB9aYaI/edit?usp=drivesdk"
+                title="Annuaire des apérals"
+            ></v-list-item>
         </v-list>
 
         <template v-slot:append>
