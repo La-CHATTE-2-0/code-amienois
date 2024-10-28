@@ -100,6 +100,12 @@ function toggleTheme() {
                 title="Guide sécu'"
             ></v-list-item>
             <v-list-item
+                prepend-icon="mdi-scissors-cutting"
+                :title="pages.guide_couture.name"
+                :value="pages.guide_couture.url"
+                :to="pages.guide_couture.url"
+            ></v-list-item>
+            <v-list-item
                 prepend-icon="mdi-format-list-bulleted"
                 :title="pages.checklist.name"
                 :value="pages.checklist.url"

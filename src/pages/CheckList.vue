@@ -89,10 +89,10 @@ function handleReset() {
                     </li>
                 </ol>
             </div>
-            <div style="text-align: right">
+            <div class="text-caption" style="text-align: right">
                 <span>
                     <em>
-                        D'après Nicolas “FéeS’EL Picarde” T., GC Sciences Amiens
+                        D'après Nicolas “FéeS’EL Picarde” T., Ex GC Sciences Amiens
                     </em>
                 </span>
             </div>

@@ -11,6 +11,7 @@ import HistoriqueCroix from "../pages/HistoriqueCroix.vue";
 import Bacchus from "../pages/Bacchus.vue";
 import Rabelais from "../pages/Rabelais.vue";
 import Gambrinus from "../pages/Gambrinus.vue";
+import GuideCouture from "../pages/GuideCouture.vue";
 import FolkloresFrancais from "../pages/FolkloresFrancais.vue";
 import FolkloresEtrangers from "../pages/FolkloresEtrangers.vue";
 
@@ -86,6 +87,12 @@ const routes = [
         path: pages.folklore_etranger.url,
         name: pages.folklore_etranger.name,
         component: FolkloresEtrangers,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.guide_couture.url,
+        name: pages.guide_couture.name,
+        component: GuideCouture,
         meta: { layout: "Main" },
     },
 ];
