@@ -47,6 +47,10 @@ const pages = {
         name: 'Folklores Étrangers',
         url: '/folklore_etranger'
     },
+    guide_couture: {
+        name: 'Guide Couture',
+        url: '/guide-couture'
+    },
 }
 
 export default pages;
