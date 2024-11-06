@@ -1,14 +1,11 @@
 <script setup lang="ts">
-
 import { useTheme } from "vuetify";
-
 
 const theme = useTheme();
 
-var getImageUrl = function ( aImageName: string ) {
+const getImageUrl = function ( aImageName: string ) {
     return `images/couture/${aImageName}-${theme.global.current.value.dark ? "dark" : "light"}.jpeg`;
 };
-
 </script>
 
 <style lang="css">
@@ -20,11 +17,11 @@ var getImageUrl = function ( aImageName: string ) {
 
 <template>
     <v-container>
-        <h2 class="mt-4 text-center">GUIDE COUTURE FALUCHE</h2>
+        <h2 class="my-4 text-center">GUIDE COUTURE FALUCHE</h2>
 
         <v-expansion-panels class="mb-5">
             <v-expansion-panel elevation="0" variant="tonal">
-                <v-expansion-panel-title><h3>Les bases</h3></v-expansion-panel-title>
+                <v-expansion-panel-title>Les bases</v-expansion-panel-title>
                 <v-expansion-panel-text>
                     <p class="mt-4 text-justify">
                     On désigne par le terme “point” une piqûre du tissu à l’aide d’une aiguille enchâssée d’un fil. Le premier point de couture doit être fait avec un nœud au bout du fil piqué de sorte que le nœud ne soit pas visible. Avant de démarrer la couture d’une faluche, il est utile de connaître au moins deux méthodes de couture à la main. 
@@ -84,10 +81,11 @@ var getImageUrl = function ( aImageName: string ) {
 
         <v-expansion-panels class="mb-5">
             <v-expansion-panel elevation="0" variant="tonal">
-                <v-expansion-panel-title><h3>Coudre deux rubans ensemble</h3></v-expansion-panel-title>
+                <v-expansion-panel-title>Coudre deux rubans ensemble</v-expansion-panel-title>
                 <v-expansion-panel-text>
+                    <p class="table-warning-fal pa-3 mt-5 text-center">Attention, les rubans ne sont pas cousus ensembles en pharmacie.</p>
                     <p class="mt-4 text-justify">
-                        Sur Amiens, les rubans bicolores de ville, province et naissance sont cousus ensemble avant d’être cousus sur la faluche. Les étudiants en pharmacie font cependant office d’exception puisqu’ils cousent les deux rubans directement sur la faluche.
+                        Sur Amiens, les rubans bicolores de ville, province et naissance sont cousus ensemble avant d’être cousus sur la faluche.
                     </p>
                     <p class="mt-4 text-justify">
                         Pour coudre deux rubans ensemble, il faut tout d’abord poser un ruban aligné sur l’autre, face extérieure contre face extérieure. Dans le cas d’un ruban de velours pour une faluche, la face extérieure correspond à la partie veloutée. Une fois les rubans alignés l’un à l’autre, ils sont cousus ensemble en traçant une ligne parallèle à la bordure du ruban, placée à 1 ou 2mm du bord, dépendant du ruban. Si la bordure d’un ruban est boursouflée, comme c’est le cas pour le velours, il ne faut pas coudre directement sur la boursouflure mais directement en dessous.
@@ -103,7 +101,7 @@ var getImageUrl = function ( aImageName: string ) {
 
         <v-expansion-panels class="mb-5">
             <v-expansion-panel elevation="0" variant="tonal">
-                <v-expansion-panel-title><h3>Le placement</h3></v-expansion-panel-title>
+                <v-expansion-panel-title>Le placement</v-expansion-panel-title>
                 <v-expansion-panel-text>
                     <p class="mt-4 text-justify">
                         Les rubans sont traditionnellement placés sur la faluche par les parrains et marraines. Pour ce faire, la faluche doit être mise à plat de sorte qu’elle soit le plus ronde possible vue du dessus. Après cela, l’axe de symétrie central de la faluche doit être marqué, du frontal à l’occipital, à l’aide d’un ruban ou d’épingles. Les rubans de ville d’étude et de province doivent être placés de manière symétrique, la distance avec l’axe central pouvant varier d’un faluchard à l’autre dépendant de l’espace souhaité pour les différentes parties de la faluche.
@@ -124,14 +122,14 @@ var getImageUrl = function ( aImageName: string ) {
                     </p>
                     <div><v-img class="img" :src="getImageUrl('angle-blason')"> </v-img></div>
 
-                    <h4 class="table-warning-fal pa-3 mt-5 text-center">À VENIR - PLACEMENT PHARMA</h4>
+                    <p class="table-warning-fal pa-3 mt-5 text-center">Attention, les angles en pharmacie sont visibles</p>
                 </v-expansion-panel-text>
             </v-expansion-panel>
         </v-expansion-panels>
 
         <v-expansion-panels class="mb-5">
             <v-expansion-panel elevation="0" variant="tonal">
-                <v-expansion-panel-title><h3>Coudre un ruban sur le velours</h3></v-expansion-panel-title>
+                <v-expansion-panel-title>Coudre un ruban sur le velours</v-expansion-panel-title>
                 <v-expansion-panel-text>
                     <p class="mt-4 text-justify">
                         Pour coudre droit et sans pli, il faut que le ruban épouse la forme de la faluche. Cela peut se faire en mettant une main à l’intérieur de la faluche pour lui donner une forme “normale”, c'est-à-dire légèrement bombée, et non à plat. Il est plus simple de commencer à coudre un ruban à la fois et de commencer par la plus longue ligne droite à coudre sur le ruban. Dans le cadre des rubans de ville et de province, on commence la couture juste au-dessus du pli qui accueillera le blason puis on trace une ligne droite reliant ce pli à l’avant puis on fait la même chose pour l’autre côté du ruban. Le ruban doit toujours être bien aplati sur la faluche durant la couture. Dans le cas d’un double ruban, chaque côté du ruban doit être espacé de sorte que le ruban soit bien à plat, comme si les deux parties du ruban étaient placées l’un à côté de l’autre sur la faluche.
@@ -154,7 +152,7 @@ var getImageUrl = function ( aImageName: string ) {
 
         <v-expansion-panels class="mb-5">
             <v-expansion-panel elevation="0" variant="tonal">
-                <v-expansion-panel-title><h3>Coudre un blason</h3></v-expansion-panel-title>
+                <v-expansion-panel-title>Coudre un blason</v-expansion-panel-title>
                 <v-expansion-panel-text>
                     <p class="mt-4 text-justify">
                         La couture d’un blason ne doit se faire que lorsque le ruban en dessous de lui est complètement cousu. Le blason doit être placé de sorte que la pointe inférieure soit alignée avec le centre de la partie du ruban faisant l’angle tandis. La pointe la plus en avant du blason doit quant à elle être alignée avec le centre de la partie du ruban allant de l’avant jusqu’au pli. Une fois en position, il est préférable de le stabiliser avec beaucoup d’aiguilles.
@@ -170,7 +168,7 @@ var getImageUrl = function ( aImageName: string ) {
             
         <v-expansion-panels class="mb-5">
             <v-expansion-panel elevation="0" variant="tonal">
-                <v-expansion-panel-title><h3>Coudre le circulaire</h3></v-expansion-panel-title>
+                <v-expansion-panel-title>Coudre le circulaire</v-expansion-panel-title>
                 <v-expansion-panel-text>
                     <p class="mt-4 text-justify">
                         On considère que la longueur de ruban à utiliser pour coudre un circulaire est correcte lorsque le ruban est capable de tenir seul (sans aiguille) autour de la partie inférieure, renforcée, de la faluche.
