@@ -14,6 +14,7 @@ import Gambrinus from "../pages/Gambrinus.vue";
 import GuideCouture from "../pages/GuideCouture.vue";
 import FolkloresFrancais from "../pages/FolkloresFrancais.vue";
 import FolkloresEtrangers from "../pages/FolkloresEtrangers.vue";
+import Codex from "../pages/Codex.vue";
 
 const routes = [
     {
@@ -93,6 +94,12 @@ const routes = [
         path: pages.guide_couture.url,
         name: pages.guide_couture.name,
         component: GuideCouture,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.codex.url,
+        name: pages.codex.name,
+        component: Codex,
         meta: { layout: "Main" },
     },
 ];

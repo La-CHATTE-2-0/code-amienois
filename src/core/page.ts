@@ -51,6 +51,10 @@ const pages = {
         name: 'Guide Couture',
         url: '/guide-couture'
     },
+    codex: {
+        name: 'Codex',
+        url: '/codex'
+    },
 }
 
 export default pages;
