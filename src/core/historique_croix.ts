@@ -1,4 +1,4 @@
-export { sciences, droits, pharmaciens, medecines, sagefemmes };
+export { sciences, droits, pharmaciens, medecines, sagefemmes, intervelours };
 
 const sciences = [
     {
@@ -6,40 +6,40 @@ const sciences = [
         year: 1992,
     },
     {
-        surname: 'La Plaie',
-        year: 1995
+        surname: "La Plaie",
+        year: 1995,
     },
     {
         surname: 'Gaëtan "KL" D.',
-        year: 1996
+        year: 1996,
     },
     {
         surname: 'Julien "Manny" G.',
-        year: 2015
+        year: 2015,
     },
     {
         surname: 'Pierre "Zizou" C.',
-        year: 2015
+        year: 2015,
     },
     {
         surname: 'Sunny "Banana" O.',
-        year: 2016
+        year: 2016,
     },
     {
-        surname: 'Thomas L.',
-        year: 2017
+        surname: "Thomas L.",
+        year: 2017,
     },
     {
         surname: 'Louis "MRGL-MRGL" B.',
-        year: 2018
+        year: 2018,
     },
     {
         surname: 'Alan "Le MaraiCHEH" L.',
-        year: 2021
+        year: 2021,
     },
     {
-        surname: 'Nathan L.',
-        year: 2024
+        surname: "Nathan L.",
+        year: 2024,
     },
 ];
 
@@ -49,15 +49,15 @@ const droits = [
         year: 2003,
     },
     {
-        surname: 'Cléa D.',
+        surname: "Cléa D.",
         year: 2006,
     },
     {
-        surname: 'Jean-Marc D.',
+        surname: "Jean-Marc D.",
         year: 2008,
     },
     {
-        surname: 'Kenny',
+        surname: "Kenny",
         year: 2009,
     },
     {
@@ -88,35 +88,35 @@ const droits = [
         surname: 'Robin "TemaLeRa" A.',
         year: 2022,
     },
-]
+];
 
 const pharmaciens = [
     {
-        surname: 'Dolorech',
+        surname: "Dolorech",
         year: null,
     },
     {
-        surname: 'Jacky',
+        surname: "Jacky",
         year: 2000,
     },
     {
-        surname: 'Pimousse',
+        surname: "Pimousse",
         year: 2002,
     },
     {
-        surname: 'John',
+        surname: "John",
         year: 2003,
     },
     {
-        surname: 'Alban',
+        surname: "Alban",
         year: 2004,
     },
     {
-        surname: 'Mentchionne',
+        surname: "Mentchionne",
         year: 2005,
     },
     {
-        surname: 'Rems',
+        surname: "Rems",
         year: 2007,
     },
     {
@@ -128,15 +128,15 @@ const pharmaciens = [
         year: 2010,
     },
     {
-        surname: 'Coach',
+        surname: "Coach",
         year: 2011,
     },
     {
-        surname: 'Scato',
+        surname: "Scato",
         year: 2012,
     },
     {
-        surname: 'Lucile B.',
+        surname: "Lucile B.",
         year: 2013,
     },
     {
@@ -152,14 +152,14 @@ const pharmaciens = [
         year: 2019,
     },
     {
-        surname: 'Clément T.',
+        surname: "Clément T.",
         year: 2023,
     },
-]
+];
 
 const sagefemmes = [
     {
-        surname: 'MacBright'
+        surname: "MacBright",
     },
     {
         surname: 'Manu "Manus" T.',
@@ -170,7 +170,7 @@ const sagefemmes = [
         year: 2013,
     },
     {
-        surname: 'Julia C.',
+        surname: "Julia C.",
         year: 2015,
     },
     {
@@ -178,14 +178,27 @@ const sagefemmes = [
         year: 2018,
     },
     {
-        surname: 'Coralie "Jafaaaaar" M.',
+        surname: "FUSION DES SAGES-FEMMES AVEC LES PARAMEDICAUX",
         year: 2023,
     },
-]
+];
+
+const intervelours = [
+    {
+        surname: 'Coralie "Jafaaaaar" M.',
+        year: 2023,
+        color: "pink-darken-4",
+    },
+    {
+        surname: 'Jérémie "An.   retard" A.',
+        year: 2025,
+        color: "pink-lighten-3",
+    },
+];
 
 const medecines = [
     {
-        surname: '...',
+        surname: "...",
         year: null,
     },
     {
@@ -220,7 +233,7 @@ const medecines = [
     {
         surname: 'Clément "Corky" G.',
         year: null,
-    },    
+    },
     {
         surname: 'Anthony "Ptimez" G.',
         year: null,
@@ -230,27 +243,27 @@ const medecines = [
         year: 2010,
     },
     {
-        surname: 'Amédée D.',
+        surname: "Amédée D.",
         year: 2011,
     },
     {
-        surname: 'Thomas K.',
+        surname: "Thomas K.",
         year: 2013,
     },
     {
-        surname: 'Maxime L.',
+        surname: "Maxime L.",
         year: 2016,
     },
     {
-        surname: 'Paul-Louis C.',
+        surname: "Paul-Louis C.",
         year: 2017,
     },
     {
-        surname: 'Nicolas H.',
+        surname: "Nicolas H.",
         year: 2018,
     },
     {
-        surname: 'Camille F.',
+        surname: "Camille F.",
         year: 2023,
     },
-]
+];

@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { sciences, droits, pharmaciens, medecines, sagefemmes } from "../core/historique_croix";
+import {
+    sciences,
+    droits,
+    pharmaciens,
+    medecines,
+    sagefemmes,
+    intervelours,
+} from "../core/historique_croix";
 </script>
 
 <template>
@@ -55,6 +62,24 @@ import { sciences, droits, pharmaciens, medecines, sagefemmes } from "../core/hi
             </v-timeline>
         </v-card>
 
+        <h2>Inter-Velours</h2>
+        <v-card class="pl-4">
+            <v-timeline density="compact" side="end" align="start">
+                <template v-for="iv in intervelours">
+                    <v-timeline-item
+                        class="mb-4"
+                        :dot-color="iv.color"
+                        size="small"
+                    >
+                        <div class="text-h6">{{ iv.surname }}</div>
+                        <p v-if="iv.year">
+                            {{ iv.year }}
+                        </p>
+                    </v-timeline-item>
+                </template>
+            </v-timeline>
+        </v-card>
+
         <h2>Pharmaciens</h2>
         <v-card class="pl-4">
             <v-timeline density="compact" side="end" align="start">
@@ -89,6 +114,10 @@ import { sciences, droits, pharmaciens, medecines, sagefemmes } from "../core/hi
             </v-timeline>
         </v-card>
 
-        <p class="mt-8">Il a existé d'autres Grands-Maitres dans la ville (chez les jaunes et les IUTs). Je les ajouterai si je trouve assez d'information dessus.</p>
+        <p class="mt-8">
+            Il a existé d'autres Grands-Maitres dans la ville (chez les jaunes
+            et les IUTs). Je les ajouterai si je trouve assez d'information
+            dessus.
+        </p>
     </v-container>
 </template>
