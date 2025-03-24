@@ -1,4 +1,4 @@
-export { sciences, droits, pharmaciens, medecines, sagefemmes };
+export { sciences, droits, pharmaciens, medecines, sagefemmes, intervelours };
 
 const sciences = [
     {
@@ -178,8 +178,21 @@ const sagefemmes = [
         year: 2018,
     },
     {
+        surname: 'FUSION DES SAGES-FEMMES AVEC LES PARAMEDICAUX',
+        year: 2023,
+    },
+]
+
+const intervelours = [
+    {
         surname: 'Coralie "Jafaaaaar" M.',
         year: 2023,
+        color: "pink-darken-4"
+    },
+    {
+        surname: 'Jérémie "An.   retard" A.',
+        year: 2025,
+        color: "pink-lighten-3"
     },
 ]
 
