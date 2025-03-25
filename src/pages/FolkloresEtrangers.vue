@@ -4,6 +4,8 @@ import FolkloresEtrangersPenne from "../components/folklores/FolkloresEtrangers.
 import FolkloresEtrangersPenneConsulaire from "../components/folklores/FolkloresEtrangers.PenneConsulaire.vue";
 import FolkloresEtrangersCzapka from "../components/folklores/FolkloresEtrangers.Czapka.vue";
 import FolkloresEtrangersFeluca from "../components/folklores/FolkloresEtrangers.Feluca.vue";
+import FolkloresEtrangersYlioppilaslakki from "../components/folklores/FolkloresEtrangers.Ylioppilaslakki.vue";
+import FolkloresEtrangersOpiskelijahaalari from "../components/folklores/FolkloresEtrangers.Opiskelijahaalari.vue";
 </script>
 
 <template>
@@ -18,6 +20,8 @@ import FolkloresEtrangersFeluca from "../components/folklores/FolkloresEtrangers
         <FolkloresEtrangersPenneConsulaire></FolkloresEtrangersPenneConsulaire>
         <FolkloresEtrangersCzapka></FolkloresEtrangersCzapka>
         <FolkloresEtrangersFeluca></FolkloresEtrangersFeluca>
+        <FolkloresEtrangersYlioppilaslakki></FolkloresEtrangersYlioppilaslakki>
+        <FolkloresEtrangersOpiskelijahaalari></FolkloresEtrangersOpiskelijahaalari>
 
         <span class="text-caption">Crédits: Code Valenciennois</span>
     </v-container>
