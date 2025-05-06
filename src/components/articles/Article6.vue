@@ -184,6 +184,18 @@ import Article6Spé from "./Article6Spé.vue";
                     </td>
                 </tr>
                 <tr>
+                    <td>Bachelors (RNCP)</td>
+                    <td>Satin blanc</td>
+                    <td>
+                        <div
+                            data-fal-circu-container
+                            data-fal-circu-color="blanc"
+                        >
+                            <div data-fal-circu="satin"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>BTS</td>
                     <td>Satin blanc</td>
                     <td>
