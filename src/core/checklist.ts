@@ -102,11 +102,6 @@ export const fringues: Array<CheckListItem> = [
         label: "🤵 Tenue de Gala (anniversaire)",
         description: "Oui il faut être classe au repas lors des anniversaire de la Faluche",
     },
-    {
-        id: "cape",
-        label: "🦸 Cape",
-        description: "Selon ton folklore, ton ordre, ou juste parce que ça tient chaud",
-    },
 ];
 
 export const pratique: Array<CheckListItem> = [
@@ -197,8 +192,8 @@ export const pratique: Array<CheckListItem> = [
     },
     {
         id: "gaviscon",
-        label: "💊 Gaviscon ou équivalent",
-        description: "Si t’as un estomac de fragile (je compatis…)",
+        label: "💊 Gaviscon ou équivalent, Guronsan, Citrate de Bétaine",
+        description: "Si t’as un estomac de fragile (je compatis…), pour te réveiller le matin, et gagner quelques PV",
     },
     {
         id: "couteau-suisse",
@@ -231,11 +226,6 @@ export const pratique: Array<CheckListItem> = [
     {
         id: "anti-moustique",
         label: "🦟 Anti-moustique",
-    },
-    {
-        id: "medicament",
-        label: "💊 Guronsan / Citrate de Bétaine",
-        description: "Pour te réveiller le matin, et gagner quelques PV",
     },
 ];
 
