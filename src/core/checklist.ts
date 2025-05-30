@@ -25,13 +25,18 @@ export const incontournable: Array<CheckListItem> = [
         description: "Il est indispensable d’avoir une couche de protection en le sol et ton petit corps meurtri par l’alcool. Les plus casaniers choisiront un matelas gonflable (penser à prendre un gonfleur sinon il faudra voir avec les congressistes qui en auront sur place). Mais la simple couverture de sol peut vous faire gagner quelques degrés.",
     },
     {
+        id: "gonfleur",
+        label: "🛏️ Un gonfleur",
+        description: "S'il est électrique, pense à le charger avant...",
+    },
+    {
         id: "oreiller",
         label: "🛏️ Un oreiller",
         description: "En vrai c’est con, mais c’est vachement plus confortable !",
     },
     {
         id: "faluche",
-        label: "🎓 Ta faluche",
+        label: "🎓 Ta faluche (et sa sécu')",
         description: "Pas besoin d’expliquer pourquoi…",
     },
     {
@@ -42,12 +47,17 @@ export const incontournable: Array<CheckListItem> = [
     {
         id: "couverts",
         label: "🍴 Un plat en plastique et des couverts",
-        description: "",
+        description: "Depuis quelques années, les orgas de congrès se veulent de plus en plus responsable vis-à-vis de l’environnement en bannissant les plastiques à usage unique. A prendre donc impérativement si tu veux manger (et tu vas en avoir besoin…).",
     },
     {
         id: "paiement",
-        label: "💳 Moyen de paiement",
-        description: "Depuis quelques années, les orgas de congrès se veulent de plus en plus responsable vis-à-vis de l’environnement en bannissant les plastiques à usage unique. A prendre donc impérativement si tu veux manger (et tu vas en avoir besoin…).",
+        label: "💳 Moyen de paiement (CB + Liquide)",
+        description: "Souvent, l'orga vends des pin's en fin de congrès. Et il faut aussi payer le McDo, l'autoroute, l'essence, ...",
+    },
+    {
+        id: "portefeuille",
+        label: "💳 Portefeuille",
+        description: "Carte d'identité, permis de conduire même si tu n'es pas désigné conducteur, carte vitale",
     },
     {
         id: "serviette",
@@ -59,7 +69,7 @@ export const incontournable: Array<CheckListItem> = [
 export const fringues: Array<CheckListItem> = [
     {
         id: "pantalon",
-        label: "👖 Pantalon/short",
+        label: "👖 Pantalon/short/combar/salopette",
         description: "Certains préfèrent le style taillis Décathlon, d’autre pour la combar (Salopette colorée chérie de nombreux velours). Toujours est-il que le fait d’avoir un bon nombre de poches (dont certaines refermables) reste très pratique pour ne pas perdre tout son bordel (et ne pas avoir à le racheter par la suite…) ",
     },
     {
@@ -91,7 +101,12 @@ export const fringues: Array<CheckListItem> = [
         id: "gala",
         label: "🤵 Tenue de Gala (anniversaire)",
         description: "Oui il faut être classe au repas lors des anniversaire de la Faluche",
-    }
+    },
+    {
+        id: "cape",
+        label: "🦸 Cape",
+        description: "Selon ton folklore, ton ordre, ou juste parce que ça tient chaud",
+    },
 ];
 
 export const pratique: Array<CheckListItem> = [
@@ -131,6 +146,11 @@ export const pratique: Array<CheckListItem> = [
         description: "Là encore, pas besoin d’expliquer pourquoi… NB : Optionnel pour les sciences et les ingés",
     },
     {
+        id: "lubrifiant",
+        label: "💦 Lubrifiant",
+        description: "Avec l'alcool, c'est pas du luxe",
+    },
+    {
         id: "sac-poubelle",
         label: "🗑️ Sac poubelle",
         description: "Parce que l’orga a autre chose à foutre que de nettoyer le terrain de camping",
@@ -161,6 +181,11 @@ export const pratique: Array<CheckListItem> = [
         description: "Pour en échanger ou en faire racheter aux autres villes (et obtenir des pin’s un peu plus exotiques).",
     },
     {
+        id: "secu",
+        label: "📦 Des sécus de pin's",
+        description: "Ce serait dommage de perdre ce que tu viens de racheter.",
+    },
+    {
         id: "cartes-des",
         label: "🎲 Cartes/dés",
         description: "Pour occuper le temps en dehors des soirées.",
@@ -174,6 +199,43 @@ export const pratique: Array<CheckListItem> = [
         id: "gaviscon",
         label: "💊 Gaviscon ou équivalent",
         description: "Si t’as un estomac de fragile (je compatis…)",
+    },
+    {
+        id: "couteau-suisse",
+        label: "🔪 Couteau suisse avec tire-bouchon",
+        description: "A utiliser en cas d'urgence apéro",
+    },
+    {
+        id: "marqueur",
+        label: "✏️ Marqueur",
+        description: "Pour signer les impétrants",
+    },
+    {
+        id: "ethylotest",
+        label: "🧪 Éthylotest",
+        description: "Pour attendre qu'il soit négatif avant de reprendre la route",
+    },
+    {
+        id: "enceinte",
+        label: "🎶 Enceinte",
+        description: "Pour Pour s'ambiancer dès 8h le samedi matin",
+    },
+    {
+        id: "1er-secours",
+        label: "🚑 1er secours (désinfectant, pansements)",
+    },
+    {
+        id: "tampons",
+        label: "🩸 Tampons (si ta physiologie le demande)",
+    },
+    {
+        id: "anti-moustique",
+        label: "🦟 Anti-moustique",
+    },
+    {
+        id: "medicament",
+        label: "💊 Guronsan / Citrate de Bétaine",
+        description: "Pour te réveiller le matin, et gagner quelques PV",
     },
 ];
 
