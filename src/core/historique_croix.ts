@@ -155,6 +155,10 @@ const pharmaciens = [
         surname: "Clément T.",
         year: 2023,
     },
+        {
+        surname: 'Marie "Cartouche" L.',
+        year: 2025,
+    },
 ];
 
 const sagefemmes = [
