@@ -54,6 +54,8 @@
                     <li>Nancy les 11, 12 et 13 Septembre 2020</li>
                     <li>Troyes les 2, 3 et 4 Juillet 2021</li>
                     <li>Valence les 17, 18 et 19 Juin 2022</li>
+                    <li>Valence les 6, 7, 8 et 8 Juileet 2023</li>
+                    <li>Toulouse les 5, 6 et 7 Juillet 2024</li>
                 </ul>
             </v-expansion-panel-text>
         </v-expansion-panel>
