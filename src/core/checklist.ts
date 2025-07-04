@@ -83,6 +83,11 @@ export const fringues: Array<CheckListItem> = [
         description: "Indispensables pour garder les pieds au sec.",
     },
     {
+        id: "tongs",
+        label: "🥾 Tongs/Claquettes/Sandales",
+        description: "Indispensables pour garder les pieds à l'air. Et pour les concours de lancer de tongs (ne pas cibler les impet')",
+    },
+    {
         id: "manteau",
         label: "🧥 Manteau étanche, K-way, pantalon étanche (pluie)",
         description: "Tout pareil…",
