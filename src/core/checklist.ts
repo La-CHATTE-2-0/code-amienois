@@ -84,8 +84,8 @@ export const fringues: Array<CheckListItem> = [
     },
     {
         id: "tongs",
-        label: "🥾 Tongs/Claquettes/Sandales",
-        description: "Indispensables pour garder les pieds à l'air. Et pour les concours de lancer de tongs (ne pas cibler les impet')",
+        label: "🩴 Tongs/Claquettes/Sandales",
+        description: "Indispensables pour garder les pieds à l'air ou pour les piscines et douches (qui se lave ?). Et pour les concours de lancer de tongs (ne pas cibler les impet')",
     },
     {
         id: "manteau",
