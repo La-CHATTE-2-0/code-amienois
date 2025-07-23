@@ -19,6 +19,7 @@ import {
     Article17,
 } from "../components/articles/index";
 import Birthday from "../components/Birthdays.vue";
+import PartiesFal from "../components/schemas/PartiesFal.vue";
 import pages from "../core/page";
 </script>
 
@@ -120,6 +121,8 @@ import pages from "../core/page";
                 ou une faculté à une personnalité éminente.
             </v-card-text>
         </v-card>
+
+        <PartiesFal />
 
         <v-card class="mx-auto mt-5" variant="tonal">
             <v-img
