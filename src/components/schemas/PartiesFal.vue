@@ -3,24 +3,24 @@ import ImageFalSvg from './SchemaSvg.vue'
 </script>
 
 <template>
-    <v-container>
+    <div>
         <h2>Les parties de la faluches</h2>
 
         <ImageFalSvg></ImageFalSvg>
-        
+
         <p>
             Il existe plusieurs parties sur la faluches pour les insignes et les pin's. Selon l'endroit où le
             pin's/l'insigne est placé, il peut gagner en signification
         </p>
-            <ol class="ml-6">
-                <li>Officielle</li>
-                <li>Personnelle</li>
-                <li>Voyages estudiantins</li>
-                <li>Évènements estudiantins</li>
-                <li>Échanges</li>
-                <li>Associations</li>
-            </ol>
-    </v-container>
+        <ol class="ml-6">
+            <li>Officielle</li>
+            <li>Personnelle</li>
+            <li>Voyages estudiantins</li>
+            <li>Évènements estudiantins</li>
+            <li>Échanges</li>
+            <li>Associations</li>
+        </ol>
+    </div>
 </template>
 
 <style lang="css" scoped>

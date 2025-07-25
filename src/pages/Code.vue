@@ -57,6 +57,8 @@ import pages from "../core/page";
             <span class="text-h6">Les Croix</span>
         </div>
 
+        <PartiesFal class="my-8" />
+
         <v-card class="mx-auto mt-5" variant="tonal">
             <v-img
                 height="auto"
@@ -121,8 +123,6 @@ import pages from "../core/page";
                 ou une faculté à une personnalité éminente.
             </v-card-text>
         </v-card>
-
-        <PartiesFal />
 
         <v-card class="mx-auto mt-5" variant="tonal">
             <v-img
