@@ -10,12 +10,20 @@ import pages from "../../core/page";
             Sur le velours figurent les rubans supérieurs. De gauche à droite :
             <ol type="1" class="ml-4">
                 <li>
-                    <b>Le ruban de ville d'étude :</b> Ruban aux couleurs de la
+                    <p><b>Le ruban de ville d'étude :</b> Ruban aux couleurs de la
                     ville d'étude, surmonté d'un écusson brodé en toile.
                     L'étudiant changeant de ville de faculté (France ou
                     étranger) placera parallèlement et en arrière du précédent,
                     un ruban surmonté d'un écusson, aux couleurs de sa nouvelle
-                    ville universitaire, et l'année de changement en chiffres.
+                    ville universitaire, et l'année de changement en chiffres.</p>
+                    <ul>
+                        <li>
+                            <p><i>Si tu as une ville d'études avant Amiens, elle sera au dessus de ton écusson d'Amiens</i></p>
+                        </li>
+                        <li>
+                            <p><i>Si tu as une ville d'études après Amiens, il faudra remonter l'écusson d'Amiens et y faire apparaitre la nouvelle ville en dessous</i></p>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <b>Le ruban d'association :</b> Ruban aux couleurs de
@@ -23,7 +31,7 @@ import pages from "../../core/page";
                     les années passées au sein de celle-ci. Selon le poste,
                     l'étudiant placer devant l'année une broche correspondant à
                     son poste (président, vice-président général, secrétaire ou
-                    trésorier), une étoile dorée pour un rôle au sein du bureau,
+                    trésorier), une étoile dorée pour un rôle au sein du bureau (VP),
                     et argentée pour un membre actif ou chargé de mission.
                     <div>
                         <img

@@ -742,19 +742,6 @@ import Article8Spé from "./Article8Spé.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Clé de sol</td>
-                    <td>Digne chanteur de paillardes</td>
-                    <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/cle_de_sol.png"
-                            alt="Chouette"
-                        />
-                    </td>
-                </tr>
-                <tr>
                     <td>Coq</td>
                     <td>Grande gueule sachant l'ouvrir</td>
                     <td data-fal-insigne>
@@ -833,19 +820,6 @@ import Article8Spé from "./Article8Spé.vue";
                             height="100"
                             src="/images/insigne/lime.png"
                             alt="Lime sur ruban noir"
-                        />
-                    </td>
-                </tr>
-                <tr>
-                    <td>Mammouth</td>
-                    <td>Gardien des traditions</td>
-                    <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/mammouth.png"
-                            alt="Mammouth"
                         />
                     </td>
                 </tr>
@@ -957,6 +931,38 @@ import Article8Spé from "./Article8Spé.vue";
                             height="100"
                             src="/images/insigne/volant.png"
                             alt="Volant"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3>Les insignes à décernements particulier</h3>
+                        <span>(Décerné par GM avec accord des porteurs de l'insigne)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Clé de sol</td>
+                    <td>Digne chanteur de paillardes</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/cle_de_sol.png"
+                            alt="Chouette"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mammouth</td>
+                    <td>Gardien des traditions</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/mammouth.png"
+                            alt="Mammouth"
                         />
                     </td>
                 </tr>
