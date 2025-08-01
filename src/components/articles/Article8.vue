@@ -936,7 +936,7 @@ import Article8Spé from "./Article8Spé.vue";
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <h3>Les insignes à décernements particulier</h3>
+                        <h3>Les insignes à décernements particuliers</h3>
                         <span>(Décerné par GM avec accord des porteurs de l'insigne)</span>
                     </td>
                 </tr>
