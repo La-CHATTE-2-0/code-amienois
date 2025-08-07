@@ -90,7 +90,7 @@ function handleReset() {
                 </ol>
             </div>
             <div class="text-caption" style="text-align: right">
-                <span>
+                <span class="font-italic">
                     <em>
                         D'après Nicolas “FéeS’EL Picarde” T., Ex GC Sciences Amiens
                     </em>

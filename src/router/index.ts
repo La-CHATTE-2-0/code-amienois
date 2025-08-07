@@ -15,6 +15,7 @@ import GuideCouture from "../pages/GuideCouture.vue";
 import FolkloresFrancais from "../pages/FolkloresFrancais.vue";
 import FolkloresEtrangers from "../pages/FolkloresEtrangers.vue";
 import Codex from "../pages/Codex.vue";
+import HommeBouee from "../pages/HommeBouee.vue";
 
 const routes = [
     {
@@ -100,6 +101,12 @@ const routes = [
         path: pages.codex.url,
         name: pages.codex.name,
         component: Codex,
+        meta: { layout: "Main" },
+    },
+    {
+        path: pages.homme_bouee.url,
+        name: pages.homme_bouee.name,
+        component: HommeBouee,
         meta: { layout: "Main" },
     },
 ];

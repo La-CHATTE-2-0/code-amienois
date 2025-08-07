@@ -23,6 +23,6 @@ import FolkloresEtrangersOpiskelijahaalari from "../components/folklores/Folklor
         <FolkloresEtrangersYlioppilaslakki></FolkloresEtrangersYlioppilaslakki>
         <FolkloresEtrangersOpiskelijahaalari></FolkloresEtrangersOpiskelijahaalari>
 
-        <span class="text-caption">Crédits: Code Valenciennois</span>
+        <span class="text-caption font-italic">Crédits: Code Valenciennois</span>
     </v-container>
 </template>

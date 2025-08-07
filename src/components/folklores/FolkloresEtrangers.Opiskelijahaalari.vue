@@ -11,7 +11,7 @@
                     alt="Opiskelijahaalari"
                 ></v-img>
 
-                <span>
+                <p>
                     Opiskelijahaalari est une salopettes / combinaisons
                     d’étudiants propres à chaque école et programme d’études que
                     les étudiants personnalisent à leur guise (signature de
@@ -19,7 +19,7 @@
                     dessins, ...). Cela nous fait penser aux combars agrémentées
                     des patchs et bracelets en évènements qu'on peut retrouver
                     chez nous.
-                </span>
+                </p>
             </v-expansion-panel-text>
         </v-expansion-panel>
     </v-expansion-panels>

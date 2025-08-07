@@ -11,7 +11,7 @@
                     alt="Czapka studencka"
                 ></v-img>
 
-                <span>Délégation d'étudiants polonais dans Brussel.</span>
+                <span class="text-caption font-italic">Délégation d'étudiants polonais dans Bruxelles</span>
             </v-expansion-panel-text>
         </v-expansion-panel>
     </v-expansion-panels>

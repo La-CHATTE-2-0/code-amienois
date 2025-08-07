@@ -4,7 +4,7 @@ const pages = {
         url: '/'
     },
     recap_spe: {
-        name: 'Recap Spé',
+        name: 'Récap Spés',
         url: '/recap-spe'
     },
     monome: {
@@ -41,11 +41,11 @@ const pages = {
     },
     folklore_francais: {
         name: 'Folklores Français',
-        url: '/folklore_francais'
+        url: '/folklore-francais'
     },
     folklore_etranger: {
         name: 'Folklores Étrangers',
-        url: '/folklore_etranger'
+        url: '/folklore-etranger'
     },
     guide_couture: {
         name: 'Guide Couture',
@@ -54,6 +54,10 @@ const pages = {
     codex: {
         name: 'Codex',
         url: '/codex'
+    },
+    homme_bouee: {
+        name: 'L\'Homme à la Bouée',
+        url: '/homme-bouee'
     },
 }
 
