@@ -54,7 +54,7 @@ import pages from "../core/page";
         <Article17 class="mt-3"></Article17>
 
         <div style="text-align: right; padding-right: 15px">
-            <span class="text-h6">Les Croix</span>
+            <span class="text-h6 font-italic">Les Croix</span>
         </div>
 
         <PartiesFal class="my-8" />

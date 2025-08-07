@@ -121,6 +121,12 @@ function toggleTheme() {
         <v-list>
             <v-list-subheader>Vie étudiante</v-list-subheader>
             <v-list-item
+                prepend-icon="mdi-lifebuoy"
+                :title="pages.homme_bouee.name"
+                :value="pages.homme_bouee.url"
+                :to="pages.homme_bouee.url"
+            ></v-list-item>
+            <v-list-item
                 prepend-icon="mdi-cat"
                 href="https://linktr.ee/lachatte2.0"
                 title="La CHATTE 2.0"

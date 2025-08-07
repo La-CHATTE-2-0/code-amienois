@@ -9,7 +9,7 @@
                     alt="Penne roi"
                 ></v-img>
 
-                <span>Roi des Belges portant une penne à Liège</span>
+                <span class="text-caption font-italic">Roi des Belges portant une penne à Liège</span>
 
                 <p class="mt-5">
                     La penne est la coiffe traditionnelle et folklorique des

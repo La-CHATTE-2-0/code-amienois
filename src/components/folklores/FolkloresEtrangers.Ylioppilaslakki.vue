@@ -11,7 +11,7 @@
                     alt="Opiskelijahaalari"
                 ></v-img>
 
-                <span>
+                <p>
                     L’Ylioppilaslakki est portée par les diplômé du second cycle
                     arrivant à l’université ou accédant à d’autres types
                     d’études supérieur. Cette coiffe permet de distinger les
@@ -21,7 +21,7 @@
                     tradition qui n’est pas sans rappeler le terme « béjaunes »,
                     ancien terme de fauconnerie utilisé par certains étudiants
                     français pour désigner les « bizuth ».
-                </span>
+                </p>
 
                 <v-img
                     class="my-5"
