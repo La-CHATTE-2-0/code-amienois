@@ -13,7 +13,7 @@ import {
     <v-container>
         <h2>Sciences</h2>
         <v-card class="pl-4">
-            <v-timeline density="compact" side="end" align="start">
+            <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="science in sciences"
                     class="mb-4"
@@ -30,7 +30,7 @@ import {
 
         <h2>Droits</h2>
         <v-card class="pl-4">
-            <v-timeline density="compact" side="end" align="start">
+            <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="droit in droits"
                     class="mb-4"
@@ -47,7 +47,7 @@ import {
 
         <h2>Sage-Femmes</h2>
         <v-card class="pl-4">
-            <v-timeline density="compact" side="end" align="start">
+            <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="sagefemme in sagefemmes"
                     class="mb-4"
@@ -64,7 +64,7 @@ import {
 
         <h2>Inter-Velours</h2>
         <v-card class="pl-4">
-            <v-timeline density="compact" side="end" align="start">
+            <v-timeline density="compact" side="end">
                 <template v-for="iv in intervelours">
                     <v-timeline-item
                         class="mb-4"
@@ -82,7 +82,7 @@ import {
 
         <h2>Pharmaciens</h2>
         <v-card class="pl-4">
-            <v-timeline density="compact" side="end" align="start">
+            <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="pharmacien in pharmaciens"
                     class="mb-4"
@@ -99,7 +99,7 @@ import {
 
         <h2>Medecines</h2>
         <v-card class="pl-4">
-            <v-timeline density="compact" side="end" align="start">
+            <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="medecine in medecines"
                     class="mb-4"

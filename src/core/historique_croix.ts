@@ -38,7 +38,7 @@ const sciences = [
         year: 2021,
     },
     {
-        surname: "Nathan L.",
+        surname: 'Nathan "Hnadicapix 1er" L.',
         year: 2024,
     },
 ];
@@ -194,7 +194,7 @@ const intervelours = [
         color: "pink-darken-4",
     },
     {
-        surname: 'Jérémie "An.   retard" A.',
+        surname: 'Jérémie "An retard" A.',
         year: 2025,
         color: "pink-lighten-3",
     },

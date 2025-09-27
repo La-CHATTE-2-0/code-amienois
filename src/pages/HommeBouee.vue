@@ -68,5 +68,18 @@
             et a également restauré les deux statues murales. Les trois œuvres
             ont été réinstallées à leurs places les 23 et 24 mai 2019.
         </p>
+
+        <v-img
+            class="my-5"
+            src="/images/hommebouee/faluche_hb.jpg"
+            alt="Homme à la Bouée"
+            loading="lazy"
+        ></v-img>
+
+        <span class="text-caption font-italic">
+            Faluche Sciences mise par TouxDouX (IPP) et |🦊TrhOtteur| (Med IF
+            Rouen), à l'occasion des 10 ans de la croix Sciences (6 septembre
+            2025)
+        </span>
     </v-container>
 </template>
