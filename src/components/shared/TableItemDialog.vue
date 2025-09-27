@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <v-card class="my-3 py-2" variant="tonal">
+    <v-card class="my-3 py-2" variant="flat">
         <v-row class="align-center">
             <v-col cols="2">
                 <v-checkbox-btn
