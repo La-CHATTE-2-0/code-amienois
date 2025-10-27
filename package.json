@@ -16,7 +16,7 @@
     "vite-plugin-vuetify": "^2.1.2",
     "vue": "^3.5.22",
     "vue-router": "^4.5.1",
-    "vuetify": "^3.10.5"
+    "vuetify": "^3.10.7"
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
