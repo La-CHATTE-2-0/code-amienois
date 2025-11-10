@@ -83,6 +83,12 @@ function toggleTheme() {
         </v-list>
         <v-list>
             <v-list-subheader>Ressources</v-list-subheader>
+            <!-- <v-list-item
+                prepend-icon="mdi-currency-eur"
+                :title="pages.achats.name"
+                :value="pages.achats.url"
+                :to="pages.achats.url"
+            ></v-list-item> -->
             <v-list-item
                 prepend-icon="mdi-account-group"
                 :title="pages.notes_aux_pm.name"
@@ -90,14 +96,15 @@ function toggleTheme() {
                 :to="pages.notes_aux_pm.url"
             ></v-list-item>
             <v-list-item
+                prepend-icon="mdi-ribbon"
+                :title="pages.couleurs_rubans.name"
+                :value="pages.couleurs_rubans.url"
+                :to="pages.couleurs_rubans.url"
+            ></v-list-item>
+            <v-list-item
                 prepend-icon="mdi-music-clef-treble"
                 href="https://www.youtube.com/@nouveaubreviaireamienois111"
                 title="Bréviaire Youtube"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-link-variant"
-                href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/"
-                title="Guide sécu'"
             ></v-list-item>
             <v-list-item
                 prepend-icon="mdi-scissors-cutting"
@@ -106,16 +113,15 @@ function toggleTheme() {
                 :to="pages.guide_couture.url"
             ></v-list-item>
             <v-list-item
+                prepend-icon="mdi-link-variant"
+                href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/"
+                title="Guide sécu'"
+            ></v-list-item>
+            <v-list-item
                 prepend-icon="mdi-format-list-bulleted"
                 :title="pages.checklist.name"
                 :value="pages.checklist.url"
                 :to="pages.checklist.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-ribbon"
-                :title="pages.couleurs_rubans.name"
-                :value="pages.couleurs_rubans.url"
-                :to="pages.couleurs_rubans.url"
             ></v-list-item>
         </v-list>
         <v-list>
