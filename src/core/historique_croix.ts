@@ -38,7 +38,7 @@ const sciences = [
         year: 2021,
     },
     {
-        surname: 'Nathan "Hnadicapix 1er" L.',
+        surname: 'Nathan "Handicapix 1er" L.',
         year: 2024,
     },
 ];

@@ -27,7 +27,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
             <tbody class="table-group-divider">
                 <tr>
                     <td colspan="3">
-                        <h3>Anciens baccalauréats</h3>
+                        <h3>Anciens baccalauréats (avant 2021)</h3>
                     </td>
                 </tr>
                 <tr>
@@ -935,8 +935,8 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     </td>
                     <td colspan="2">
                         La première étoile sera placée sur un
-                        <strong> petit ruban disposé de biais (moivre)</strong>, de
-                        couleur <strong>bleue</strong> pour les facultés ou
+                        <strong> petit ruban disposé de biais (moivre)</strong>,
+                        de couleur <strong>bleue</strong> pour les facultés ou
                         établissements d'État, <strong>blanche</strong> pour les
                         facultés catholiques, écoles ou instituts privés. En cas
                         de changement d'établissement du public vers le privé ou

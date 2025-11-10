@@ -59,6 +59,10 @@ const pages = {
         name: 'L\'Homme à la Bouée',
         url: '/homme-bouee'
     },
+    achats: {
+        name: 'Acheter sa fal\'',
+        url: '/achats'
+    },
 }
 
 export default pages;
