@@ -21,7 +21,7 @@
   "devDependencies": {
     "@mdi/font": "^7.4.47",
     "@vitejs/plugin-vue": "^6.0.1",
-    "sass": "^1.93.3",
+    "sass": "^1.94.0",
     "sharp": "^0.34.5",
     "svgo": "^4.0.0",
     "typescript": "^5.9.3",
