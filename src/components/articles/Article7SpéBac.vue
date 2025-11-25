@@ -16,7 +16,7 @@ import "../../sass/base/_tables.scss";
         <tbody>
             <tr>
                 <td>
-                    <div class="pt-2">Scientifique spécialité SVT</div>
+                    <div class="pt-2">Bac Scientifique spécialité SVT (bac avant 2021)</div>
                     <div class="py-2">
                         <v-icon icon="mdi-repeat"></v-icon>
                         Epsilon au code national
