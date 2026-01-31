@@ -13,7 +13,7 @@ onMounted(() => {
         localStorage.setItem("theme", "dark");
     }
 
-    theme.global.name.value = darkmode ?? "dark";
+    theme.change(darkmode ?? "dark");
 });
 
 /*

@@ -1,7 +1,7 @@
 type CheckListItem = {
     id: string
-    label: string,
-    description?: string,
+    label: string
+    description?: string
     checked?: boolean
 }
 

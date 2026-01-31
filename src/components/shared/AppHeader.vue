@@ -11,7 +11,7 @@ function toggleTheme() {
     const newTheme = theme.global.current.value.dark ? "light" : "dark";
 
     localStorage.setItem("theme", newTheme);
-    theme.global.name.value = newTheme;
+    theme.change(newTheme);
 }
 </script>
 
@@ -66,6 +66,7 @@ function toggleTheme() {
                 prepend-icon="mdi-book-open-page-variant-outline"
                 :title="pages.rabelais.name"
                 :value="pages.rabelais.url"
+                target="_blank"
                 :href="/*pages.rabelais.url*/ 'https://ordrerabelaisien.be/rabelais'"
             ></v-list-item>
             <v-list-item
@@ -103,6 +104,7 @@ function toggleTheme() {
             ></v-list-item>
             <v-list-item
                 prepend-icon="mdi-music-clef-treble"
+                target="_blank"
                 href="https://www.youtube.com/@nouveaubreviaireamienois111"
                 title="Bréviaire Youtube"
             ></v-list-item>
@@ -114,6 +116,7 @@ function toggleTheme() {
             ></v-list-item>
             <v-list-item
                 prepend-icon="mdi-link-variant"
+                target="_blank"
                 href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/"
                 title="Guide sécu'"
             ></v-list-item>
@@ -134,6 +137,7 @@ function toggleTheme() {
             ></v-list-item>
             <v-list-item
                 prepend-icon="mdi-cat"
+                target="_blank"
                 href="https://linktr.ee/lachatte2.0"
                 title="La CHATTE 2.0"
             ></v-list-item>
@@ -148,6 +152,12 @@ function toggleTheme() {
                 :title="pages.folklore_etranger.name"
                 :value="pages.folklore_etranger.url"
                 :to="pages.folklore_etranger.url"
+            ></v-list-item>
+            <v-list-item
+                prepend-icon="mdi-map"
+                :title="pages.aperals.name"
+                :value="pages.aperals.url"
+                :to="pages.aperals.url"
             ></v-list-item>
             <v-list-item
                 prepend-icon="mdi-map"

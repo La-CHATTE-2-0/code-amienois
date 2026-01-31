@@ -63,6 +63,10 @@ const pages = {
         name: 'Acheter sa fal\'',
         url: '/achats'
     },
+    aperals: {
+        name: 'Apérals de France',
+        url: '/aperals'
+    },
 }
 
 export default pages;

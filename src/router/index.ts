@@ -16,6 +16,7 @@ import FolkloresFrancais from "../pages/FolkloresFrancais.vue";
 import FolkloresEtrangers from "../pages/FolkloresEtrangers.vue";
 import Codex from "../pages/Codex.vue";
 import HommeBouee from "../pages/HommeBouee.vue";
+import Aperal from "../pages/Aperals.vue";
 
 const routes = [
     {
@@ -107,6 +108,12 @@ const routes = [
         path: pages.homme_bouee.url,
         name: pages.homme_bouee.name,
         component: HommeBouee,
+        meta: { layout: "Main" },
+    },
+        {
+        path: pages.aperals.url,
+        name: pages.aperals.name,
+        component: Aperal,
         meta: { layout: "Main" },
     },
 ];

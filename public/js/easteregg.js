@@ -15,7 +15,7 @@ let clicsCarotte = 0;
 
 const sextwo = "https://fr.pornhub.com/view_video.php?viewkey=660bd170cf0c6#1"
 
-imageSciences.addEventListener("click", async () => {
+imageSciences?.addEventListener("click", async () => {
     clicsSciences++;
 
     if (clicsSciences === 5) {
@@ -25,7 +25,7 @@ imageSciences.addEventListener("click", async () => {
     }
 });
 
-imageSf.addEventListener("click", async () => {
+imageSf?.addEventListener("click", async () => {
     clicsSf++;
 
     if (clicsSf === 5) {
@@ -35,7 +35,7 @@ imageSf.addEventListener("click", async () => {
     }
 });
 
-imageDroit.addEventListener("click", async () => {
+imageDroit?.addEventListener("click", async () => {
     clicsDroit++;
 
     if (clicsDroit === 5) {
@@ -45,7 +45,7 @@ imageDroit.addEventListener("click", async () => {
     }
 });
 
-imagePharma.addEventListener("click", async () => {
+imagePharma?.addEventListener("click", async () => {
     clicsPharma++;
 
     if (clicsPharma === 5) {
@@ -56,7 +56,7 @@ imagePharma.addEventListener("click", async () => {
     }
 });
 
-billotInge.addEventListener("click", async () => {
+billotInge?.addEventListener("click", async () => {
     clicsInge++;
 
     if (clicsInge === 5) {
@@ -65,7 +65,7 @@ billotInge.addEventListener("click", async () => {
     }
 });
 
-carotte.addEventListener("click", async () => {
+carotte?.addEventListener("click", async () => {
     clicsCarotte++;
 
     if (clicsCarotte === 5) {
