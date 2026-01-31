@@ -11,6 +11,8 @@
     "check-prod": "vite build && vite preview"
   },
   "dependencies": {
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
+    "leaflet": "^1.9.4",
     "vite-plugin-pwa": "^1.1.0",
     "vite-plugin-radar": "^0.10.1",
     "vite-plugin-vuetify": "^2.1.2",
