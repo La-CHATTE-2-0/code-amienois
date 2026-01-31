@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { aperals_list } from '../core/aperals.ts'
 import "leaflet/dist/leaflet.css"
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet"
+import AperalModalContent from '../components/AperalModalContent.vue'
 
 
 let zoom = ref(6)
@@ -17,12 +18,13 @@ let center = ref([49.895102, 2.307152])
             layer-type="base"
             name="Carte de France des apérals">
         </l-tile-layer>
-        <l-marker v-for="aperal in aperals_list" :lat-lng="aperal.latlong">
-            <l-popup>
-                {{ aperal.address }}<br>
-                <a :href="aperal.contactUrl">Contact</a>
-            </l-popup>
-        </l-marker>
+        <template v-for="aperal in aperals_list">
+            <l-marker v-for="place in aperal.places" :lat-lng="place.latlong">
+                <l-popup>
+                    <AperalModalContent :aperal="aperal" :place="place" />
+                </l-popup>
+            </l-marker>
+        </template>
     </l-map>
 </div>
 </template>
