@@ -1,32 +1,34 @@
-<script setup>
-const props = defineProps({
-    aperal: Object,
-    place: Object,
-});
+<script setup lang="ts">
+import type { Aperal, Place } from "../core/aperals.ts";
+
+defineProps<{
+  aperal: Aperal
+  place: Place
+}>()
 </script>
 
 <template>
     <div class="aperal-popup">
-        <h3>{{ props.aperal.city }}
-            <template v-if="props.place.name"> - {{ props.place.name }}</template>
+        <h3>{{ aperal.city }}
+            <template v-if="place.name"> - {{ place.name }}</template>
         </h3>
-        <p v-if="props.aperal.frequency">
-            {{ props.aperal.frequency }}
+        <p v-if="aperal.frequency">
+            {{ aperal.frequency }}
         </p>
-        <p v-if="props.aperal.description">
-            {{ props.aperal.description }}
+        <p v-if="aperal.description">
+            {{ aperal.description }}
         </p>
-        <p v-if="props.place.address">
-            {{ props.place.address }}
+        <p v-if="place.address">
+            {{ place.address }}
         </p>
-        <p v-if="props.aperal.contactUrl" class="mt-4">
+        <p v-if="aperal.contactUrl" class="mt-4">
             <v-btn
                 color="blue-lighten-2"
                 text="En savoir plus"
                 variant="tonal"
                 block
                 target="_blank"
-                :href="props.aperal.contactUrl"
+                :href="aperal.contactUrl"
             />
         </p>
     </div>

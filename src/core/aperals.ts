@@ -1,6 +1,6 @@
-export { aperals_list };
+export { aperals_list,  };
 
-type Aperal = {
+export type Aperal = {
     city: string;
     description?: string;
     frequency?: string;
@@ -8,7 +8,7 @@ type Aperal = {
     contactUrl?: string;
 };
 
-type Place = {
+export type Place = {
     name?: string;
     address?: string;
     latlong?: Array<number>;
