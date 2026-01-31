@@ -64,7 +64,7 @@ const pages = {
         url: '/achats'
     },
     aperals: {
-        name: 'Apéral',
+        name: 'Apérals de France',
         url: '/aperals'
     },
 }

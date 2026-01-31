@@ -19,11 +19,13 @@ let center = ref([49.895102, 2.307152])
             name="Carte de France des apérals">
         </l-tile-layer>
         <template v-for="aperal in aperals_list">
-            <l-marker v-for="place in aperal.places" :lat-lng="place.latlong">
-                <l-popup>
-                    <AperalModalContent :aperal="aperal" :place="place" />
-                </l-popup>
-            </l-marker>
+            <template v-for="place in aperal.places">
+                <l-marker  v-if="place.latlong" :lat-lng="place.latlong">
+                    <l-popup>
+                        <AperalModalContent :aperal="aperal" :place="place" />
+                    </l-popup>
+                </l-marker>
+            </template>
         </template>
     </l-map>
 </div>
@@ -31,7 +33,7 @@ let center = ref([49.895102, 2.307152])
 
 <style>
 #map { 
-    height: 600px; 
+    height: 100vh; 
     width: auto;
 }
 </style>
