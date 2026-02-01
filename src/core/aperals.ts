@@ -1,4 +1,4 @@
-export { aperals_list,  };
+export { aperals_list, };
 
 export type Aperal = {
     city: string;
@@ -11,10 +11,10 @@ export type Aperal = {
 export type Place = {
     name?: string;
     address?: string;
-    latlong?: Array<number>;
+    latlong?: Array<number> | string;
 };
 
-//Todo: Annecy, Chambery, La Rochelle
+//Todo: Annecy, Chambery, La Rochelle, Montpellier
 const aperals_list: Array<Aperal> = [
     {
         city: "Aix-en-Provence",
@@ -156,7 +156,7 @@ const aperals_list: Array<Aperal> = [
         ],
         contactUrl: "https://www.facebook.com/groups/126245945472",
     },
-        {
+    {
         city: "Berck",
         frequency: "Non régulier, se renseigner sur le Instagram",
         places: [
@@ -216,7 +216,7 @@ const aperals_list: Array<Aperal> = [
         ],
         contactUrl: "https://www.facebook.com/groups/106759612790305",
     },
-        {
+    {
         city: "Grenoble",
         frequency: "Hebdomadaire - tous les mercredis",
         description: "Apéro en plein air, chacun ramène à boire et à manger pour soi-même ou pour plusieurs si il veut partager. En cas de pluie : sous le préau de l'autre côté du palais des sports (à 300m). Remarque : L'aperal se fait au bar \"Le Subway\" pendant la trêve hivernal (jusque fin Mars). Si nécessaire vous pouvez demander sur \"Faluche Grenoble\".",
@@ -257,7 +257,7 @@ const aperals_list: Array<Aperal> = [
         ],
         contactUrl: "https://www.facebook.com/groups/39472352014",
     },
-        {
+    {
         city: "Limoges",
         frequency: "Hebdomadaire - tous les mercredis",
         places: [
@@ -281,5 +281,318 @@ const aperals_list: Array<Aperal> = [
         ],
         contactUrl: "https://www.facebook.com/groups/198119940375417",
     },
-
+    {
+        city: "Marseille",
+        frequency: "Hebdomadaire - tous les vendredis",
+        description: "Voir sur le groupe marseillais pour les détails, le lieu peuvent changer régulièrement",
+        places: [
+            {
+                name: "Joke'R",
+                latlong: [43.29191940, 5.38451620],
+                address: "16 Pl. Notre Dame du Mont, 13006 Marseille",
+            },
+        ],
+        contactUrl: "https://www.facebook.com/groups/38965434117",
+    },
+    {
+        city: "Metz",
+        frequency: "Hebdomadaire - tous les jeudis",
+        description: "On effectue des changements de temps en temps, envoyez un message sur le groupe de la FLEM pour confirmation =) ",
+        places: [
+            {
+                name: "Vivian's",
+                latlong: [49.11702190, 6.17868050],
+                address: "15 Place St Louis, 57000 Metz",
+            },
+        ],
+        contactUrl: "https://www.facebook.com/groups/1757349307863601",
+    },
+    {
+        city: "Metz",
+        frequency: "Hebdomadaire - tous les jeudis",
+        description: "On effectue des changements de temps en temps, envoyez un message sur le groupe de la FLEM pour confirmation =) ",
+        places: [
+            {
+                name: "Vivian's",
+                latlong: [49.11702190, 6.17868050],
+                address: "15 Place St Louis, 57000 Metz",
+            },
+        ],
+        contactUrl: "https://www.facebook.com/groups/1757349307863601",
+    },
+    {
+        city: "Montpellier",
+        frequency: "Hebdomadaire - tous les mardis",
+        description: "Roulement entre différents bars (2 pour l'instant), voir la bannière du groupe AURJIE sur Facebook",
+        places: [
+            {
+                name: "La Louve",
+                latlong: [43.62318120, 3.86327180],
+                address: "40 Av. Charles Flahault, 34090 Montpellier",
+            },
+            {
+                name: "Les Six roses",
+                latlong: [43.61836850, 3.87361310],
+                address: "29 Rue du Faubourg Boutonnet, 34090 Montpellier",
+            },
+        ],
+        contactUrl: "https://www.facebook.com/groups/18764516150",
+    },
+    {
+        city: "Nancy",
+        frequency: "Hebdomadaire - tous les mardis",
+        places: [
+            {
+                name: "Pub Mac Carthy",
+                latlong: [48.69222100, 6.17753110],
+                address: "6 Rue Guerrier de Dumast, 54000 Nancy",
+            },
+        ],
+        contactUrl: "https://www.facebook.com/groups/1757349307863601",
+    },
+    {
+        city: "Nantes",
+        frequency: "Hebdo",
+        description: "Apéral le mercredi à 20h. Prévenir à l'avance sur les groupes Facebook Forum des Faluchards Nantais ou AreNa. Possibilité d'apporter à manger.",
+        places: [
+            {
+                name: "Le Cascabel",
+                latlong: "todo",
+                address: "1 Rue Kervegan, 44000 Nantes"
+            }
+        ],
+        contactUrl: "todo"
+    },
+    {
+        city: "Nice",
+        frequency: "Suspendu",
+        description: "Il n'y a plus d'apéral jusqu'à nouvel ordre. Se renseigner sur Faluche Niçoise ou auprès de Lancelot Chevalier.",
+        places: [],
+        contactUrl: "todo"
+    },
+    {
+        city: "Nîmes",
+        frequency: "Hebdo",
+        description: "Apéral le jeudi entre 20h et 21h (rarement l'été). Se renseigner sur le groupe Facebook de la FAUNE.",
+        places: [
+            {
+                name: "La Réserve",
+                latlong: "todo",
+                address: "17 boulevard Amiral Courbet, 30000 Nîmes"
+            }
+        ],
+        contactUrl: "todo"
+    },
+    {
+        city: "Orléans",
+        frequency: "Hebdo",
+        description: "Apéral le mardi à 21h. Contact via le groupe Facebook privé Faluche Orléans ou Instagram @falucheorleans.",
+        places: [
+            {
+                name: "Le 222 St",
+                latlong: "todo",
+                address: "222 rue de Bourgogne, 45000 Orléans"
+            }
+        ],
+        contactUrl: "https://www.instagram.com/falucheorleans"
+    },
+    {
+        city: "Paris",
+        frequency: "Hebdo",
+        description: "Apéral le mardi à 20h30 (sauf entre les fêtes). Généralement before dans un restaurant pas cher. Contact ALF.",
+        places: [
+            {
+                name: "Baker Street Pub",
+                latlong: "todo",
+                address: "9 rue des Boulangers, 75005 Paris"
+            }
+        ],
+        contactUrl: "mailto:alf.pclf@gmail.com"
+    },
+    {
+        city: "Pau",
+        frequency: "Occasionnel",
+        description: "Apéral mercredi ou jeudi à partir de 19h. Prévenir avant arrivée car peu nombreux. Activité surtout déplacée vers Bayonne.",
+        places: [
+            {
+                name: "Europub",
+                latlong: "todo",
+                address: "66 route de Bayonne, Billière"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/pau.amicale.falucharde/"
+    },
+    {
+        city: "Perpignan",
+        frequency: "todo",
+        description: "Voir sur le groupe perpignanais pour les détails.",
+        places: [],
+        contactUrl: "todo"
+    },
+    {
+        city: "Poitiers",
+        frequency: "Hebdo",
+        description: "Apéral le mardi à 21h30. Pré-apéro à 18h30 sur le campus devant le RU Rabelais.",
+        places: [
+            {
+                name: "Le Palais de la Bière",
+                latlong: "todo",
+                address: "250 rue du Faubourg du Pont Neuf, 86000 Poitiers"
+            }
+        ],
+        contactUrl: "todo"
+    },
+    {
+        city: "Reims",
+        frequency: "Hebdo",
+        description: "Apéral le mardi à 20h30.",
+        places: [
+            {
+                name: "Le Dropkick",
+                latlong: "todo",
+                address: "15 rue du Colonel Fabien, 51100 Reims"
+            }
+        ],
+        contactUrl: "todo"
+    },
+    {
+        city: "Rennes",
+        frequency: "Hebdo",
+        description: "Apéral le mardi à 21h30. Changement possible de bar pendant les vacances.",
+        places: [
+            {
+                name: "Aux Plaisirs Démodés",
+                latlong: "todo",
+                address: "37 rue Saint-Georges, Rennes"
+            }
+        ],
+        contactUrl: "mailto:asso.afre@gmail.com"
+    },
+    {
+        city: "Rouen",
+        frequency: "Hebdo",
+        description: "Apéral le mercredi à 20h30. Contact via la FOIR sur Facebook.",
+        places: [
+            {
+                name: "L'Alchimie",
+                latlong: "todo",
+                address: "1 bis Rue de l'Hôpital, 76000 Rouen"
+            }
+        ],
+        contactUrl: "todo"
+    },
+    {
+        city: "Saint-Étienne",
+        frequency: "Hebdo",
+        description: "Apéral le mercredi à 19h. En été et hors pluie, au parc Joseph Sanguedolce (Puy Couriot).",
+        places: [
+            {
+                name: "Le Soggy Bottom / La Guinguette",
+                latlong: "todo",
+                address: "9 rue de la Résistance, 42000 Saint-Étienne"
+            }
+        ],
+        contactUrl: "todo"
+    },
+    {
+        city: "Strasbourg",
+        frequency: "Hebdo",
+        description: "Apérals alternés une semaine sur deux entre O'Brother et Algorythme.",
+        places: [
+            {
+                name: "O'Brother",
+                latlong: "todo",
+                address: "6 Rue des Glacières, Strasbourg"
+            },
+            {
+                name: "Algorythme",
+                latlong: "todo",
+                address: "64 Rue de Zurich, Strasbourg"
+            }
+        ],
+        contactUrl: "todo"
+    },
+    {
+        city: "Toulon",
+        frequency: "Hebdo",
+        description: "Apéral le jeudi à 21h. Alternance entre deux bars, se renseigner impérativement sur Facebook.",
+        places: [
+            {
+                name: "B des cochons",
+                latlong: "todo",
+                address: "503 Av. de la République, 83000 Toulon"
+            },
+            {
+                name: "Road's Rider",
+                latlong: "todo",
+                address: "15 Av. Baptistin Autran, 83130 La Garde"
+            }
+        ],
+        contactUrl: "todo"
+    },
+    {
+        city: "Toulouse",
+        
+        frequency: "Hebdomadaire - tous les mardis",
+        description: "Pré-apéral satin de 18h30 à 20h au Satch Club puis apéral au bar. Before médecine variable.",
+        places: [
+            {
+                name: "O'Briens",
+                latlong: [43.60379580, 1.44247720],
+                address: "39 rue Léon Gambetta, 31000 Toulouse"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/111189992371"
+    },
+    {
+        city: "Tours",
+        frequency: "Hebdomadaire - tous les mercredis",
+        description: "Se renseigner auprès des Turons au cas où.",
+        places: [
+            {
+                name: "Caméléon",
+                latlong:  [47.39498830, 0.68402380],
+                address: "53 rue du Commerce, Tours"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/133398363414546"
+    },
+    {
+        city: "Troyes",
+        frequency: "Hebdomadaire - tous les mercredis (thème le 3e mercredi du mois)",
+        places: [
+            {
+                name: "Chez Fernande",
+                latlong: [48.29976350, 4.07929280],
+                address: "39 rue de la Cité, 10000 Troyes"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/flute.troyes"
+    },
+    {
+        city: "Valence",
+        frequency: "Hebdomadaire - tous les jeudis",
+        description: "En période de vacances universitaires, l'aperal est déplacé (souvent au Cham's, informations sur fb : Fada Valence)",
+        places: [
+            {
+                name: "Le Partiel",
+                latlong: [44.93339660, 4.90392450],
+                address: "5 place Latour Maubourg, Valence"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/fada.valence"
+    },
+    {
+        city: "Valenciennes",
+        frequency: "Faluche en déclin, prévenir pour qu'il y des gens (anciennement Hebdomadaire - tous les mardis)",
+        description: "Contactez L'Avache sur Facebook.",
+        places: [
+            {
+                name: "Le Repère",
+                latlong: [50.35759120, 3.52367200],
+                address: "2 Rue de la Halle, 59000 Valenciennes"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/1089647231056849"
+    }
 ];
