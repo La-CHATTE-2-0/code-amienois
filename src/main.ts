@@ -19,10 +19,7 @@ const vuetify = createVuetify({
   blueprint: md3,
   theme: {
     defaultTheme: 'dark'
-  },
-  typography: {
-    fontSize: '16px', // taille globale
-  },
+  }
 })
 
 const app = createApp(App)
