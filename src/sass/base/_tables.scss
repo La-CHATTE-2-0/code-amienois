@@ -33,3 +33,7 @@ $fal-warning-color-light: 255 242 202;
         border: none !important;
     }
 }
+
+.v-table > .v-table__wrapper > table > tbody > tr > td {
+   font-size: 0.8rem;
+}
