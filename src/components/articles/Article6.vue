@@ -352,7 +352,7 @@ import Article6Spé from "./Article6Spé.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Millitaire</td>
+                    <td>Militaire</td>
                     <td>Satin tricolore</td>
                     <td>
                         <div
@@ -454,7 +454,7 @@ import Article6Spé from "./Article6Spé.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Sciences économique, Gestion</td>
+                    <td>Sciences économiques, Gestion</td>
                     <td>Satin orange</td>
                     <td>
                         <div
