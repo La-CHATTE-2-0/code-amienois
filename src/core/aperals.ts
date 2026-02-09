@@ -350,19 +350,18 @@ const aperals_list: Array<Aperal> = [
         ],
         contactUrl: "https://www.facebook.com/groups/1757349307863601",
     },
-    // {
-    //     city: "Nantes",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le mercredi à 20h. Prévenir à l'avance sur les groupes Facebook Forum des Faluchards Nantais ou AreNa. Possibilité d'apporter à manger.",
-    //     places: [
-    //         {
-    //             name: "Le Cascabel",
-    //             latlong: "todo",
-    //             address: "1 Rue Kervegan, 44000 Nantes"
-    //         }
-    //     ],
-    //     contactUrl: "todo"
-    // },
+    {
+        city: "Nantes",
+        frequency: "Hebdomadaire - tous les mercredis",
+        places: [
+            {
+                name: "Le Cascabel",
+                latlong: [47.21371000, -1.55333020],
+                address: "1 Rue Kervegan, 44000 Nantes"
+            }
+        ],
+        contactUrl: "https://www.instagram.com/laf.i.n/"
+    },
     // {
     //     city: "Nice",
     //     frequency: "Suspendu",
@@ -370,45 +369,44 @@ const aperals_list: Array<Aperal> = [
     //     places: [],
     //     contactUrl: "todo"
     // },
-    // {
-    //     city: "Nîmes",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le jeudi entre 20h et 21h (rarement l'été). Se renseigner sur le groupe Facebook de la FAUNE.",
-    //     places: [
-    //         {
-    //             name: "La Réserve",
-    //             latlong: "todo",
-    //             address: "17 boulevard Amiral Courbet, 30000 Nîmes"
-    //         }
-    //     ],
-    //     contactUrl: "todo"
-    // },
-    // {
-    //     city: "Orléans",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le mardi à 21h. Contact via le groupe Facebook privé Faluche Orléans ou Instagram @falucheorleans.",
-    //     places: [
-    //         {
-    //             name: "Le 222 St",
-    //             latlong: "todo",
-    //             address: "222 rue de Bourgogne, 45000 Orléans"
-    //         }
-    //     ],
-    //     contactUrl: "https://www.instagram.com/falucheorleans"
-    // },
-    // {
-    //     city: "Paris",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le mardi à 20h30 (sauf entre les fêtes). Généralement before dans un restaurant pas cher. Contact ALF.",
-    //     places: [
-    //         {
-    //             name: "Baker Street Pub",
-    //             latlong: "todo",
-    //             address: "9 rue des Boulangers, 75005 Paris"
-    //         }
-    //     ],
-    //     contactUrl: "mailto:alf.pclf@gmail.com"
-    // },
+    {
+        city: "Nîmes",
+        frequency: "Hebdomadaire - tous les jeudis",
+        description: "Se renseigner sur le groupe Facebook de la FAUNE.",
+        places: [
+            {
+                name: "La Réserve",
+                latlong: [43.83823480, 4.36292820],
+                address: "17 boulevard Amiral Courbet, 30000 Nîmes"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/453006268108813"
+    },
+    {
+        city: "Orléans",
+        frequency: "Hebdomadaire - tous les mardis",
+        places: [
+            {
+                name: "Le 222 St",
+                latlong: [47.90028050, 1.90950130],
+                address: "222 rue de Bourgogne, 45000 Orléans"
+            }
+        ],
+        contactUrl: "https://www.instagram.com/falucheorleans"
+    },
+    {
+        city: "Paris",
+        frequency: "Hebdomadaire - tous les mardis",
+        description: "Généralement before dans un restaurant. Contact ALF.",
+        places: [
+            {
+                name: "Baker Street Pub",
+                latlong: [48.84583020, 2.35393370],
+                address: "9 rue des Boulangers, 75005 Paris"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/470992433002833"
+    },
     // {
     //     city: "Pau",
     //     frequency: "Occasionnel",
@@ -429,32 +427,32 @@ const aperals_list: Array<Aperal> = [
     //     places: [],
     //     contactUrl: "todo"
     // },
-    // {
-    //     city: "Poitiers",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le mardi à 21h30. Pré-apéro à 18h30 sur le campus devant le RU Rabelais.",
-    //     places: [
-    //         {
-    //             name: "Le Palais de la Bière",
-    //             latlong: "todo",
-    //             address: "250 rue du Faubourg du Pont Neuf, 86000 Poitiers"
-    //         }
-    //     ],
-    //     contactUrl: "todo"
-    // },
-    // {
-    //     city: "Reims",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le mardi à 20h30.",
-    //     places: [
-    //         {
-    //             name: "Le Dropkick",
-    //             latlong: "todo",
-    //             address: "15 rue du Colonel Fabien, 51100 Reims"
-    //         }
-    //     ],
-    //     contactUrl: "todo"
-    // },
+    {
+        city: "Poitiers",
+        frequency: "Hebdomadaire - tous les mardis",
+        description: "Apéral le mardi à 21h30. Pré-apéro à 18h30 sur le campus devant le RU Rabelais.",
+        places: [
+            {
+                name: "Le Palais de la Bière",
+                latlong: [46.57267100, 0.36637490],
+                address: "250 rue du Faubourg du Pont Neuf, 86000 Poitiers"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/profile.php?id=100003488736453"
+    },
+    {
+        city: "Reims",
+        frequency: "Hebdomadaire - tous les mardis",
+        description: "Apéral le mardi à 20h30.",
+        places: [
+            {
+                name: "Le Dropkick",
+                latlong: [49.24962520, 4.01841010],
+                address: "15 rue du Colonel Fabien, 51100 Reims"
+            }
+        ],
+        contactUrl: "todo"
+    },
     // {
     //     city: "Rennes",
     //     frequency: "Hebdo",
@@ -468,19 +466,31 @@ const aperals_list: Array<Aperal> = [
     //     ],
     //     contactUrl: "mailto:asso.afre@gmail.com"
     // },
-    // {
-    //     city: "Rouen",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le mercredi à 20h30. Contact via la FOIR sur Facebook.",
-    //     places: [
-    //         {
-    //             name: "L'Alchimie",
-    //             latlong: "todo",
-    //             address: "1 bis Rue de l'Hôpital, 76000 Rouen"
-    //         }
-    //     ],
-    //     contactUrl: "todo"
-    // },
+    {
+        city: "Rouen",
+        frequency: "Hebdomadaire - tous les mercredis",
+        places: [
+            {
+                name: "L'Alchimie",
+                latlong: [49.44249110, 1.09769600],
+                address: "1 bis Rue de l'Hôpital, 76000 Rouen"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/334261026623117"
+    },
+    {
+        city: "Saint-Quentin",
+        frequency: "Pas d'apéral régulier",
+        description: "Prévenir si tu passes, sinon on ne sort pas",
+        places: [
+            {
+                name: "Reload Gaming Bar",
+                latlong: [49.84478670, 3.29087820],
+                address: "33 bis Rue d'Isle, 02100 Saint-Quentin"
+            }
+        ],
+        contactUrl: "https://www.instagram.com/faluche.saintquentin/"
+    },
     // {
     //     city: "Saint-Étienne",
     //     frequency: "Hebdo",
@@ -494,45 +504,32 @@ const aperals_list: Array<Aperal> = [
     //     ],
     //     contactUrl: "todo"
     // },
-    // {
-    //     city: "Strasbourg",
-    //     frequency: "Hebdo",
-    //     description: "Apérals alternés une semaine sur deux entre O'Brother et Algorythme.",
-    //     places: [
-    //         {
-    //             name: "O'Brother",
-    //             latlong: "todo",
-    //             address: "6 Rue des Glacières, Strasbourg"
-    //         },
-    //         {
-    //             name: "Algorythme",
-    //             latlong: "todo",
-    //             address: "64 Rue de Zurich, Strasbourg"
-    //         }
-    //     ],
-    //     contactUrl: "todo"
-    // },
-    // {
-    //     city: "Toulon",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le jeudi à 21h. Alternance entre deux bars, se renseigner impérativement sur Facebook.",
-    //     places: [
-    //         {
-    //             name: "B des cochons",
-    //             latlong: "todo",
-    //             address: "503 Av. de la République, 83000 Toulon"
-    //         },
-    //         {
-    //             name: "Road's Rider",
-    //             latlong: "todo",
-    //             address: "15 Av. Baptistin Autran, 83130 La Garde"
-    //         }
-    //     ],
-    //     contactUrl: "todo"
-    // },
+    {
+        city: "Strasbourg",
+        frequency: "Hebdomadaire - tous les mardis",
+        places: [
+            {
+                name: "O'Brother",
+                latlong: [48.57891460, 7.73971380],
+                address: "6 Rue des Glacières, Strasbourg"
+            },
+        ],
+        contactUrl: "https://www.instagram.com/rafal_strasbourg/"
+    },
+    {
+        city: "Toulon",
+        frequency: "Hebdomadaire - tous les jeudis",
+        places: [
+            {
+                name: "B des cochons",
+                latlong: [43.12283060, 5.93029750],
+                address: "Pl. de l'Equerre, 83000 Toulon"
+            },
+        ],
+        contactUrl: "https://www.facebook.com/groups/182397841790991"
+    },
     {
         city: "Toulouse",
-        
         frequency: "Hebdomadaire - tous les mardis",
         description: "Pré-apéral satin de 18h30 à 20h au Satch Club puis apéral au bar. Before médecine variable.",
         places: [
