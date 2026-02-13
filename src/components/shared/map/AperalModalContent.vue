@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Aperal, Place } from "../core/aperals.ts";
+import type { Aperal, Place } from "../../../core/aperals.ts";
 
 defineProps<{
   aperal: Aperal

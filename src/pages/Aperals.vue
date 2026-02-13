@@ -2,11 +2,12 @@
 import { ref } from "vue";
 import { aperals_list } from "../core/aperals.ts";
 import "leaflet/dist/leaflet.css";
-import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
-import AperalModalContent from "../components/AperalModalContent.vue";
+import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
+import AperalMarker from "../components/shared/map/AperalMarker.vue";
 
 let zoom = ref(6);
 let center = ref([49.895102, 2.307152]);
+
 </script>
 
 <template>
@@ -25,14 +26,7 @@ let center = ref([49.895102, 2.307152]);
             </l-tile-layer>
             <template v-for="aperal in aperals_list">
                 <template v-for="place in aperal.places">
-                    <l-marker v-if="place.latlong" :lat-lng="place.latlong">
-                        <l-popup>
-                            <AperalModalContent
-                                :aperal="aperal"
-                                :place="place"
-                            />
-                        </l-popup>
-                    </l-marker>
+                    <AperalMarker :place="place" :aperal="aperal" />
                 </template>
             </template>
         </l-map>
