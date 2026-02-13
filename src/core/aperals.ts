@@ -6,6 +6,7 @@ export type Aperal = {
     frequency?: string;
     places: Array<Place>;
     contactUrl?: string;
+    color?: AperalColor;
 };
 
 export type Place = {
@@ -13,6 +14,12 @@ export type Place = {
     address?: string;
     latlong?: Array<number>;
 };
+
+export enum AperalColor {
+    Red = "red",
+    Green = "green",
+    Orange = "orange"
+}
 
 //Todo: Annecy, Chambery, La Rochelle
 const aperals_list: Array<Aperal> = [
@@ -38,6 +45,7 @@ const aperals_list: Array<Aperal> = [
             },
         ],
         contactUrl: "https://www.facebook.com/groups/1572688469722939/",
+        color: AperalColor.Red
     },
     {
         city: "Amiens",
@@ -74,16 +82,20 @@ const aperals_list: Array<Aperal> = [
                 latlong: [43.948244, 4.81011],
             },
         ],
+        color: AperalColor.Red
     },
     {
         city: "Bayonne",
-        frequency: "Faluche morte, faut aller à Pau",
+        frequency: "Faluche en voie d'extinction",
         places: [
             {
+                name: "La Petrolette",
                 latlong: [43.489218, -1.472879],
+                address: "31 Rue des Cordeliers, 64100 Bayonne"
             },
         ],
         contactUrl: "https://www.facebook.com/groups/pau.amicale.falucharde",
+        color: AperalColor.Orange
     },
     {
         city: "Belfort",
@@ -143,6 +155,7 @@ const aperals_list: Array<Aperal> = [
                 latlong: [47.081012, 2.398782],
             },
         ],
+        color: AperalColor.Red
     },
     {
         city: "Brest",
@@ -167,6 +180,7 @@ const aperals_list: Array<Aperal> = [
             },
         ],
         contactUrl: "https://www.instagram.com/fibula_1.0/",
+        color: AperalColor.Orange
     },
     {
         city: "Caen",
@@ -191,6 +205,18 @@ const aperals_list: Array<Aperal> = [
             },
         ],
         contactUrl: "https://www.facebook.com/groups/367694099988174",
+    },
+    {
+        city: "Compiègne",
+        frequency: "Vendredi soir, apéral organisé de temps en temps",
+        places: [
+            {
+                name: "GoodChill Bar",
+                latlong: [49.41505590, 2.82027170],
+                address: "29 Rue du Port À Bateaux, 60200 Compiègne",
+            },
+        ],
+        contactUrl: "https://www.facebook.com/profile.php?id=61571768097067",
     },
     {
         city: "Créteil",
@@ -308,19 +334,6 @@ const aperals_list: Array<Aperal> = [
         contactUrl: "https://www.facebook.com/groups/1757349307863601",
     },
     {
-        city: "Metz",
-        frequency: "Hebdomadaire - tous les jeudis",
-        description: "On effectue des changements de temps en temps, envoyez un message sur le groupe de la FLEM pour confirmation =) ",
-        places: [
-            {
-                name: "Vivian's",
-                latlong: [49.11702190, 6.17868050],
-                address: "15 Place St Louis, 57000 Metz",
-            },
-        ],
-        contactUrl: "https://www.facebook.com/groups/1757349307863601",
-    },
-    {
         city: "Montpellier",
         frequency: "Hebdomadaire - tous les mardis",
         description: "Roulement entre différents bars (2 pour l'instant), voir la bannière du groupe AURJIE sur Facebook",
@@ -362,13 +375,18 @@ const aperals_list: Array<Aperal> = [
         ],
         contactUrl: "https://www.instagram.com/laf.i.n/"
     },
-    // {
-    //     city: "Nice",
-    //     frequency: "Suspendu",
-    //     description: "Il n'y a plus d'apéral jusqu'à nouvel ordre. Se renseigner sur Faluche Niçoise ou auprès de Lancelot Chevalier.",
-    //     places: [],
-    //     contactUrl: "todo"
-    // },
+    {
+        city: "Nice",
+        frequency: "Suspendu",
+        description: "Il n'y a plus d'apéral jusqu'à nouvel ordre. Se renseigner sur Faluche Niçoise ou auprès de Lancelot Chevalier.",
+        places: [
+            {
+                latlong: [43.69594910, 7.27153500]
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/763870610314656",
+        color: AperalColor.Orange
+    },
     {
         city: "Nîmes",
         frequency: "Hebdomadaire - tous les jeudis",
@@ -407,26 +425,31 @@ const aperals_list: Array<Aperal> = [
         ],
         contactUrl: "https://www.facebook.com/groups/470992433002833"
     },
-    // {
-    //     city: "Pau",
-    //     frequency: "Occasionnel",
-    //     description: "Apéral mercredi ou jeudi à partir de 19h. Prévenir avant arrivée car peu nombreux. Activité surtout déplacée vers Bayonne.",
-    //     places: [
-    //         {
-    //             name: "Europub",
-    //             latlong: "todo",
-    //             address: "66 route de Bayonne, Billière"
-    //         }
-    //     ],
-    //     contactUrl: "https://www.facebook.com/groups/pau.amicale.falucharde/"
-    // },
-    // {
-    //     city: "Perpignan",
-    //     frequency: "todo",
-    //     description: "Voir sur le groupe perpignanais pour les détails.",
-    //     places: [],
-    //     contactUrl: "todo"
-    // },
+    {
+        city: "Pau",
+        frequency: "Occasionnel",
+        description: "Apéral mercredi ou jeudi à partir de 19h. Prévenir avant arrivée car peu nombreux. Activité surtout déplacée vers Bayonne.",
+        places: [
+            {
+                name: "Europub",
+                latlong: [43.30431610, -0.40340210],
+                address: "61 Rte de Bayonne, 64140 Billère"
+            }
+        ],
+        contactUrl: "https://www.facebook.com/groups/pau.amicale.falucharde/",
+        color: AperalColor.Red
+    },
+    {
+        city: "Perpignan",
+        frequency: "Faluche morte, plus d'apéral prévus, voir le sur groupe Facebook",
+        places: [
+            {
+                latlong: [42.69853040, 2.89531210],
+            },
+        ],
+        contactUrl: "https://www.facebook.com/groups/205224672849302",
+        color: AperalColor.Red
+    },
     {
         city: "Poitiers",
         frequency: "Hebdomadaire - tous les mardis",
@@ -451,21 +474,20 @@ const aperals_list: Array<Aperal> = [
                 address: "15 rue du Colonel Fabien, 51100 Reims"
             }
         ],
-        contactUrl: "todo"
+        contactUrl: "https://www.facebook.com/AFEReims"
     },
-    // {
-    //     city: "Rennes",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le mardi à 21h30. Changement possible de bar pendant les vacances.",
-    //     places: [
-    //         {
-    //             name: "Aux Plaisirs Démodés",
-    //             latlong: "todo",
-    //             address: "37 rue Saint-Georges, Rennes"
-    //         }
-    //     ],
-    //     contactUrl: "mailto:asso.afre@gmail.com"
-    // },
+    {
+        city: "Rennes",
+        frequency: "Hebdomadaire - tous les mardis",
+        places: [
+            {
+                name: "Aux Plaisirs Démodés",
+                latlong: [48.11192830, -1.67555520],
+                address: "37 rue Saint-Georges, Rennes"
+            }
+        ],
+        contactUrl: "mailto:asso.afre@gmail.com"
+    },
     {
         city: "Rouen",
         frequency: "Hebdomadaire - tous les mercredis",
@@ -489,21 +511,21 @@ const aperals_list: Array<Aperal> = [
                 address: "33 bis Rue d'Isle, 02100 Saint-Quentin"
             }
         ],
-        contactUrl: "https://www.instagram.com/faluche.saintquentin/"
+        contactUrl: "https://www.instagram.com/faluche.saintquentin/",
+        color: AperalColor.Orange
     },
-    // {
-    //     city: "Saint-Étienne",
-    //     frequency: "Hebdo",
-    //     description: "Apéral le mercredi à 19h. En été et hors pluie, au parc Joseph Sanguedolce (Puy Couriot).",
-    //     places: [
-    //         {
-    //             name: "Le Soggy Bottom / La Guinguette",
-    //             latlong: "todo",
-    //             address: "9 rue de la Résistance, 42000 Saint-Étienne"
-    //         }
-    //     ],
-    //     contactUrl: "todo"
-    // },
+    {
+        city: "Saint-Étienne",
+        frequency: "Hebdomadaire - tous les mercredis",
+        description: "En été et hors pluie, au parc Joseph Sanguedolce (Puy Couriot).",
+        places: [
+            {
+                name: "Le Soggy Bottom / La Guinguette",
+                latlong: [45.43968570, 4.38582090],
+                address: "9 rue de la Résistance, 42000 Saint-Étienne"
+            }
+        ],
+    },
     {
         city: "Strasbourg",
         frequency: "Hebdomadaire - tous les mardis",
@@ -590,6 +612,7 @@ const aperals_list: Array<Aperal> = [
                 address: "2 Rue de la Halle, 59000 Valenciennes"
             }
         ],
-        contactUrl: "https://www.facebook.com/groups/1089647231056849"
+        contactUrl: "https://www.facebook.com/groups/1089647231056849",
+        color: AperalColor.Orange
     }
 ];
