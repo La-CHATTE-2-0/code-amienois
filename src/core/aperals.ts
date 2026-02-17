@@ -175,7 +175,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Green Corner",
-                latlong: [50.40587390, 1.56552290],
+                latlong: [50.4058739, 1.5655229],
                 address: "35 Rue d'Estienne d'Orves, 62600 Berck",
             },
         ],
@@ -212,7 +212,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "GoodChill Bar",
-                latlong: [49.41505590, 2.82027170],
+                latlong: [49.4150559, 2.8202717],
                 address: "29 Rue du Port À Bateaux, 60200 Compiègne",
             },
         ],
@@ -249,11 +249,11 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Dans un parc",
-                latlong: [45.186200, 5.739074],
+                latlong: [45.1862, 5.739074],
             },
             {
                 name: "Le Subway",
-                latlong: [45.18690400, 5.72384980],
+                latlong: [45.186904, 5.7238498],
                 address: "2 Rue Lakanalle, 38000 Grenoble",
             },
         ],
@@ -265,7 +265,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Au guet à pintes",
-                latlong: [48.00489660, 0.19555880],
+                latlong: [48.0048966, 0.1955588],
                 address: "14 Rue du Cornet, 72100 Le Mans",
             },
         ],
@@ -277,7 +277,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Le PB",
-                latlong: [50.63123280, 3.04863110],
+                latlong: [50.6312328, 3.0486311],
                 address: "238 rue Nationale, 59000 Lille",
             },
         ],
@@ -289,7 +289,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Lord John",
-                latlong: [45.83413470, 1.26547620],
+                latlong: [45.8341347, 1.2654762],
                 address: "19 avenue du général de Gaulle, Limoges",
             },
         ]
@@ -301,7 +301,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Black Hole",
-                latlong: [45.76329800, 4.82890960],
+                latlong: [45.763298, 4.8289096],
                 address: "1 rue de la Baleine, 69000 Lyon",
             },
         ],
@@ -314,7 +314,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Joke'R",
-                latlong: [43.29191940, 5.38451620],
+                latlong: [43.2919194, 5.3845162],
                 address: "16 Pl. Notre Dame du Mont, 13006 Marseille",
             },
         ],
@@ -327,7 +327,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Vivian's",
-                latlong: [49.11702190, 6.17868050],
+                latlong: [49.1170219, 6.1786805],
                 address: "15 Place St Louis, 57000 Metz",
             },
         ],
@@ -340,12 +340,12 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "La Louve",
-                latlong: [43.62318120, 3.86327180],
+                latlong: [43.6231812, 3.8632718],
                 address: "40 Av. Charles Flahault, 34090 Montpellier",
             },
             {
                 name: "Les Six roses",
-                latlong: [43.61836850, 3.87361310],
+                latlong: [43.6183685, 3.8736131],
                 address: "29 Rue du Faubourg Boutonnet, 34090 Montpellier",
             },
         ],
@@ -357,7 +357,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Pub Mac Carthy",
-                latlong: [48.69222100, 6.17753110],
+                latlong: [48.692221, 6.1775311],
                 address: "6 Rue Guerrier de Dumast, 54000 Nancy",
             },
         ],
@@ -369,7 +369,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Le Cascabel",
-                latlong: [47.21371000, -1.55333020],
+                latlong: [47.21371, -1.5533302],
                 address: "1 Rue Kervegan, 44000 Nantes"
             }
         ],
@@ -381,7 +381,7 @@ const aperals_list: Array<Aperal> = [
         description: "Il n'y a plus d'apéral jusqu'à nouvel ordre. Se renseigner sur Faluche Niçoise ou auprès de Lancelot Chevalier.",
         places: [
             {
-                latlong: [43.69594910, 7.27153500]
+                latlong: [43.6959491, 7.271535]
             }
         ],
         contactUrl: "https://www.facebook.com/groups/763870610314656",
@@ -394,7 +394,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "La Réserve",
-                latlong: [43.83823480, 4.36292820],
+                latlong: [43.8382348, 4.3629282],
                 address: "17 boulevard Amiral Courbet, 30000 Nîmes"
             }
         ],
@@ -406,7 +406,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Le 222 St",
-                latlong: [47.90028050, 1.90950130],
+                latlong: [47.9002805, 1.9095013],
                 address: "222 rue de Bourgogne, 45000 Orléans"
             }
         ],
@@ -419,7 +419,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Baker Street Pub",
-                latlong: [48.84583020, 2.35393370],
+                latlong: [48.8458302, 2.3539337],
                 address: "9 rue des Boulangers, 75005 Paris"
             }
         ],
@@ -432,7 +432,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Europub",
-                latlong: [43.30431610, -0.40340210],
+                latlong: [43.3043161, -0.4034021],
                 address: "61 Rte de Bayonne, 64140 Billère"
             }
         ],
@@ -444,7 +444,7 @@ const aperals_list: Array<Aperal> = [
         frequency: "Faluche morte, plus d'apéral prévus, voir le sur groupe Facebook",
         places: [
             {
-                latlong: [42.69853040, 2.89531210],
+                latlong: [42.6985304, 2.8953121],
             },
         ],
         contactUrl: "https://www.facebook.com/groups/205224672849302",
@@ -457,7 +457,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Le Palais de la Bière",
-                latlong: [46.57267100, 0.36637490],
+                latlong: [46.572671, 0.3663749],
                 address: "250 rue du Faubourg du Pont Neuf, 86000 Poitiers"
             }
         ],
@@ -470,7 +470,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Le Dropkick",
-                latlong: [49.24962520, 4.01841010],
+                latlong: [49.2496252, 4.0184101],
                 address: "15 rue du Colonel Fabien, 51100 Reims"
             }
         ],
@@ -482,7 +482,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Aux Plaisirs Démodés",
-                latlong: [48.11192830, -1.67555520],
+                latlong: [48.1119283, -1.6755552],
                 address: "37 rue Saint-Georges, Rennes"
             }
         ],
@@ -494,7 +494,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "L'Alchimie",
-                latlong: [49.44249110, 1.09769600],
+                latlong: [49.4424911, 1.097696],
                 address: "1 bis Rue de l'Hôpital, 76000 Rouen"
             }
         ],
@@ -507,7 +507,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Reload Gaming Bar",
-                latlong: [49.84478670, 3.29087820],
+                latlong: [49.8447867, 3.2908782],
                 address: "33 bis Rue d'Isle, 02100 Saint-Quentin"
             }
         ],
@@ -521,7 +521,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Le Soggy Bottom / La Guinguette",
-                latlong: [45.43968570, 4.38582090],
+                latlong: [45.4396857, 4.3858209],
                 address: "9 rue de la Résistance, 42000 Saint-Étienne"
             }
         ],
@@ -532,7 +532,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "O'Brother",
-                latlong: [48.57891460, 7.73971380],
+                latlong: [48.5789146, 7.7397138],
                 address: "6 Rue des Glacières, Strasbourg"
             },
         ],
@@ -544,7 +544,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "B des cochons",
-                latlong: [43.12283060, 5.93029750],
+                latlong: [43.1228306, 5.9302975],
                 address: "Pl. de l'Equerre, 83000 Toulon"
             },
         ],
@@ -557,7 +557,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "O'Briens",
-                latlong: [43.60379580, 1.44247720],
+                latlong: [43.6037958, 1.4424772],
                 address: "39 rue Léon Gambetta, 31000 Toulouse"
             }
         ],
@@ -570,7 +570,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Caméléon",
-                latlong:  [47.39498830, 0.68402380],
+                latlong:  [47.3949883, 0.6840238],
                 address: "53 rue du Commerce, Tours"
             }
         ],
@@ -582,7 +582,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Chez Fernande",
-                latlong: [48.29976350, 4.07929280],
+                latlong: [48.2997635, 4.0792928],
                 address: "39 rue de la Cité, 10000 Troyes"
             }
         ],
@@ -595,7 +595,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Le Partiel",
-                latlong: [44.93339660, 4.90392450],
+                latlong: [44.9333966, 4.9039245],
                 address: "5 place Latour Maubourg, Valence"
             }
         ],
@@ -608,7 +608,7 @@ const aperals_list: Array<Aperal> = [
         places: [
             {
                 name: "Le Repère",
-                latlong: [50.35759120, 3.52367200],
+                latlong: [50.3575912, 3.523672],
                 address: "2 Rue de la Halle, 59000 Valenciennes"
             }
         ],

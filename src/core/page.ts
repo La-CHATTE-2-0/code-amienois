@@ -59,10 +59,6 @@ const pages = {
         name: 'L\'Homme à la Bouée',
         url: '/homme-bouee'
     },
-    achats: {
-        name: 'Acheter sa fal\'',
-        url: '/achats'
-    },
     aperals: {
         name: 'Apérals de France',
         url: '/aperals'
