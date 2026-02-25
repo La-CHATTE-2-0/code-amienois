@@ -14,7 +14,7 @@
                 <td>
                     <ul>
                         <li>
-                            A cousu sa faluche en tant de bizut (sur ruban bleu)
+                            A cousu sa faluche (sur ruban bleu si fait en tant que bizut)
                         </li>
                         <li>
                             À Amiens, on ajoute l'année en indice, et le nombre
