@@ -14,11 +14,13 @@
                 <td>
                     <ul>
                         <li>
-                            A cousu sa faluche en tant de bizut (sur ruban bleu)
+                            A cousu sa faluche (sur ruban bleu si fait en tant que bizut)
                         </li>
                         <li>
                             À Amiens, on ajoute l'année en indice, et le nombre
-                            de faluches cousues en exposant
+                            de faluches cousues en exposant. Par ailleurs, les 
+                            ciseaux représentent ici le fait d'avoir cousus les 
+                            rubans soi-même et non l'entièreté de la faluche.
                         </li>
                     </ul>
                 </td>
