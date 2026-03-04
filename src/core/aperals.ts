@@ -201,7 +201,7 @@ const aperals_list: Array<Aperal> = [
             {
                 name: "3 Monkeys Pub",
                 latlong: [45.774183, 3.093528],
-                address: "18 Rue Écuyère, 14000 Caen, France",
+                address: "25 Av. des Paulines, 63000 Clermont-Ferrand",
             },
         ],
         contactUrl: "https://www.facebook.com/groups/367694099988174",
