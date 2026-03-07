@@ -1,12 +1,18 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { aperals_list } from "../core/aperals.ts";
+import { ref, onMounted } from "vue";
+import { loadAperals } from "../services/aperalServices.ts";
+import { type Aperal } from "../types/aperalTypes.ts";
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
 import AperalMarker from "../components/shared/map/AperalMarker.vue";
 
 let zoom = ref(6);
 let center = ref([49.895102, 2.307152]);
+const aperals = ref<Aperal[]>([]);
+
+onMounted(async () => {
+    aperals.value = await loadAperals();
+});
 
 </script>
 
@@ -24,8 +30,8 @@ let center = ref([49.895102, 2.307152]);
                 name="Carte de France des apérals"
             >
             </l-tile-layer>
-            <template v-for="aperal in aperals_list">
-                <template v-for="place in aperal.places">
+            <template v-for="aperal in aperals" :key="aperal.city">
+                <template v-for="place in aperal.places" :key="place.latlong?.join(',')">
                     <AperalMarker :place="place" :aperal="aperal" />
                 </template>
             </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Aperal, Place } from "../../../core/aperals.ts";
+import type { Aperal, Place } from "../../../types/aperalTypes.ts";
 import { LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
 import AperalIcon from "./AperalIcon.vue";
 import AperalModalContent from "./AperalModalContent.vue";

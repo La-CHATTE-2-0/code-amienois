@@ -1,11 +1,4 @@
-type CheckListItem = {
-    id: string
-    label: string
-    description?: string
-    checked?: boolean
-}
-
-export type { CheckListItem }
+import { CheckListItem } from "../types/checklistTypes";
 
 export const incontournable: Array<CheckListItem> = [
     {
