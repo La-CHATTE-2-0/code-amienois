@@ -1,4 +1,4 @@
-import { type CheckListItem } from "../types/checklistTypes.ts";
+import { CheckListItem } from "../types/checklistTypes";
 
 export const incontournable: Array<CheckListItem> = [
     {
