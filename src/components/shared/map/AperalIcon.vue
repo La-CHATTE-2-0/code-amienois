@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AperalColor, type Aperal } from "../../../core/aperals.ts";
+import { AperalColor, type Aperal } from "../../../types/aperalTypes.ts";
 import { LIcon } from "@vue-leaflet/vue-leaflet";
 
 defineProps<{
