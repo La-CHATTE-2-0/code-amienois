@@ -472,9 +472,9 @@
                 doute, tu peux te rapprocher de tes croix pour avoir
                 confirmation des couleurs ou regarder sur
                 <a
-                    href="https://docs.google.com/spreadsheets/d/1Oz60XGBvhm0gqI7uOo2EhSypW6SWo52tup6Bw4wPb_E/edit?usp=sharing"
+                    href="https://faluche.app/couture/heraldique-blasonnement"
                 >
-                    cette liste faite par le collectif des archivistes.
+                    cette liste faite par faluche.app
                 </a>
             </p>
 
