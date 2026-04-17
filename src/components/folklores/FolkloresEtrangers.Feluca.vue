@@ -26,7 +26,7 @@
                     siècle, elle s'appellait l'orsina. Elle se déclinait au
                     choix en quatre couleurs possible :
                 </p>
-                <ul class="ml-8">
+                <ul>
                     <li>Bleu : Droit</li>
                     <li>Rouge : Médecine</li>
                     <li>Vert : Sciences</li>

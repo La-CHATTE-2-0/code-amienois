@@ -9,7 +9,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
     <article data-fal-article="7">
         <h2>Article 7:</h2>
         <p>Sur le ruban circulaire doivent figurer :</p>
-        <ul class="ml-4">
+        <ul >
             <li>Les initiales</li>
             <li>Le baccalauréat:</li>
         </ul>
@@ -155,7 +155,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
             <Article7SpéBac class="table-warning-fal"></Article7SpéBac>
         </div>
 
-        <ul class="mt-4 ml-4">
+        <ul class="mt-4">
             <li>L'emblème de la discipline</li>
         </ul>
         <v-table class="table align-middle" data-fal-table="insigne">
@@ -410,7 +410,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     <td>Classes préparatoires (non santé)</td>
                     <td class="pr-0">
                         Insigne de la discipline préparée
-                        <ul style="padding-left: 0">
+                        <ul class="pl-0">
                             <li>Chouette bicéphale : Khâgne (Littéraire)</li>
                             <li>
                                 Palme de chêne et laurier : Taupe (Scientifique)
@@ -769,7 +769,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     <td>Théologie</td>
                     <td>
                         Insigne de la religion étudiée
-                        <ul style="padding-left: 0">
+                        <ul class="pl-0">
                             <li>Croix latine: Catholique</li>
                             <li>Croix huguenote: Protestant</li>
                             <li>Étoile de David: Juive</li>

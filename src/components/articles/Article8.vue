@@ -8,10 +8,10 @@ import Article8Spé from "./Article8Spé.vue";
     <article data-fal-article="8">
         <h2>Article 8:</h2>
         <p>Le velours peut comporter:</p>
-        <ul class="ml-4">
+        <ul>
             <li>
                 Les insignes:
-                <ul class="ml-4">
+                <ul>
                     <li>Des associations étudiantes</li>
                     <li>
                         Des congrès auxquels vous avez participé, à condition

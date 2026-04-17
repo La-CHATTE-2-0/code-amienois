@@ -1,7 +1,7 @@
 <template>
-    <ul class="ml-4">
+    <ul>
         <li>
-            <p>
+            <p class="text-justify mr-4">
                 Le <strong>bourreau</strong> est là pour faire respecter l’ordre
                 et la discipline lors des réjouissances estudiantines. Il pourra
                 à sa guise infliger des <strong>sanctions</strong> envers les
@@ -62,9 +62,9 @@
         </div>
     </div>
     <div>
-        <ul class="mt-4 ml-4">
+        <ul class="mt-4">
             <li>
-                <p class="text-justify mt-2">
+                <p class="text-justify mt-2 mr-4">
                     Les croix sont transmises de génération en génération, c'est
                     à dire qu'une croix partant à la retraite donne sa croix
                     historique au nouvel intronisé. Les croix amiénoises mettent
@@ -74,7 +74,7 @@
                 </p>
             </li>
             <li>
-                <p class="text-justify mt-2">
+                <p class="text-justify mt-2 mr-4">
                     Quand un GM part à la retraite sur sa nouvelle croix, il
                     mettera un soleil uniquement s'il a été GC avant, sinon une
                     tête de mort (tête de mort sur fémurs croisés pour les
@@ -82,7 +82,7 @@
                 </p>
             </li>
             <li>
-                <p class="text-justify mt-2">
+                <p class="text-justify mt-2 mr-4">
                     L’évêque a pour tâche de marier les faluchards entre eux. Il
                     aura soin de vérifier qu’une forte amitié lie les dits
                     faluchards. Le mariage a pour but de fusionner cette amitié.
@@ -90,14 +90,14 @@
                     fait de sa neutralité, il peut lui être demandé d’intervenir
                     en cas de conflit.
                 </p>
-                <p class="text-justify mt-2">
+                <p class="text-justify mt-2 mr-4">
                     À la différence des GM présents dans presque toutes les
                     villes, il n’existe que 4 évêchés : le Sud à Poitiers, le
                     Nord à Amiens, l’Est Septentrional à Strasbourg, et l’Est
                     Méridional à Grenoble. L’évêque du Nord n’a pas besoin de la
                     présence d’un GM pour officier.
                 </p>
-                <p class="text-justify mt-2">
+                <p class="text-justify mt-2 mr-4">
                     À Amiens, l’évêché se distingue par un
                     <strong
                         >E dans une palme de Sciences montée sur un ruban
@@ -109,7 +109,7 @@
                     >
                     suivi par l’Évêque.
                 </p>
-                <div style="text-align: center">
+                <div style="text-align: center" class="mr-4">
                     <img
                         style="max-width: 300px; width: 100%"
                         src="/images/insigne/eveque.png"

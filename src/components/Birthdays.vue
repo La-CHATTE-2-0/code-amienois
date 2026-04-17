@@ -6,22 +6,22 @@
             </v-expansion-panel-title>
             <v-expansion-panel-text>
                 <strong>Centenaire de la Faluche</strong>
-                <ul class="ml-4 mb-4">
+                <ul class="mb-4">
                     <li>Reims, les 25 et 26 Juin 1988</li>
                 </ul>
 
                 <strong class="mt-6">États Généraux de la Faluche</strong>
-                <ul class="ml-4 mb-4">
+                <ul class="mb-4">
                     <li>Dijon, les 23, 24 et 25 Juin 1989</li>
                 </ul>
 
                 <strong>Convention Nationale de la Faluche</strong>
-                <ul class="ml-4 mb-4">
+                <ul class="mb-4">
                     <li>Lille, les 22, 23 et 24 juin 1990</li>
                 </ul>
 
                 <strong>Congrès Nationaux de la Faluche</strong>
-                <ul class="ml-4 mb-4">
+                <ul class="mb-4">
                     <li>Clermont-Ferrand, les 23, 24 et 25 Juin 1991</li>
                     <li>Poitiers les 24, 25 et 26 Juin 1992</li>
                     <li>Nancy, les 3, 4 et 5 Juillet 1993</li>
