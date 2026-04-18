@@ -26,3 +26,7 @@ dist-ssr
 .vs
 .cache
 desktop.ini
+
+# AI Tools
+.kilo/
+.continue/
