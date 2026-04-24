@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-img
-            src="https://media.cultureasy.com/wp-content/uploads/2020/12/cultureasy-bacchus-dieu-decadent-maitre-des-fetes.jpg"
+            src="/images/other/cultureasy-bacchus-dieu-decadent-maitre-des-fetes.jpg"
         ></v-img>
 
         <h2 class="mt-4">La vie de Bacchus</h2>
@@ -43,9 +43,8 @@
 
         <v-img
             class="mt-8"
-            src="https://media.licdn.com/dms/image/D4D12AQEPAGJAI9yhGA/article-cover_image-shrink_720_1280/0/1669758279222?e=2147483647&v=beta&t=FtHJ3e0UiKZppsz03UJkrF1qaRZ-OV-ZoJ_z3_RqBkw"
-        >
-        </v-img>
+            src="/images/other/bacchusorgies.webp"
+        />
 
         <h2 class="mt-4">Représentations et fêtes</h2>
         <p class="mt-4 text-justify">
@@ -75,5 +74,10 @@
             la tenue de ces cérémonies, en publiant un décret en l’an 558, mais
             cela n’a eu aucun effet.
         </p>
+
+        <v-img
+            class="mt-8"
+            src="/images/other/bacchus.jpg"
+        />
     </v-container>
 </template>

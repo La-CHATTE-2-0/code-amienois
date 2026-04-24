@@ -2,21 +2,21 @@ import { createWebHistory, createRouter } from "vue-router";
 import pages from "../core/page"
 
 import Code from "../pages/Code.vue";
-import RecapSpé from "../pages/RecapSpé.vue";
-import Monome from "../pages/Monome.vue";
-import NotesAuxPMs from "../pages/NotesAuxPMs.vue";
-import CouleursRubans from "../pages/CouleursRubans.vue";
-import CheckList from "../pages/CheckList.vue";
+import RecapSpe from "../pages/annexes/RecapSpe.vue";
+import Monome from "../pages/annexes/Monome.vue";
+import NotesAuxPMs from "../pages/ressources/NotesAuxPMs.vue";
+import CouleursRubans from "../pages/ressources/CouleursRubans.vue";
+import CheckList from "../pages/ressources/CheckList.vue";
 import HistoriqueCroix from "../pages/HistoriqueCroix.vue";
-import Bacchus from "../pages/Bacchus.vue";
-import Rabelais from "../pages/Rabelais.vue";
-import Gambrinus from "../pages/Gambrinus.vue";
-import GuideCouture from "../pages/GuideCouture.vue";
-import FolkloresFrancais from "../pages/FolkloresFrancais.vue";
-import FolkloresEtrangers from "../pages/FolkloresEtrangers.vue";
+import Bacchus from "../pages/annexes/Bacchus.vue";
+import Rabelais from "../pages/annexes/Rabelais.vue";
+import Gambrinus from "../pages/annexes/Gambrinus.vue";
+import GuideCouture from "../pages/ressources/GuideCouture.vue";
+import FolkloresFrancais from "../pages/vie/FolkloresFrancais.vue";
+import FolkloresEtrangers from "../pages/vie/FolkloresEtrangers.vue";
 import Codex from "../pages/Codex.vue";
-import HommeBouee from "../pages/HommeBouee.vue";
-import Aperal from "../pages/Aperals.vue";
+import HommeBouee from "../pages/vie/HommeBouee.vue";
+import Aperal from "../pages/vie/Aperals.vue";
 
 const routes = [
     {
@@ -29,7 +29,7 @@ const routes = [
     {
         path: pages.recap_spe.url,
         name: pages.recap_spe.name,
-        component: RecapSpé,
+        component: RecapSpe,
         meta: { layout: "Main" },
     },
     {

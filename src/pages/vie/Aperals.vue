@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { loadAperals } from "../services/aperalServices.ts";
-import { type Aperal } from "../types/aperalTypes.ts";
+import { loadAperals } from "../../services/aperalServices.ts";
+import { type Aperal } from "../../types/aperalTypes.ts";
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
-import AperalMarker from "../components/shared/map/AperalMarker.vue";
+import AperalMarker from "../../components/shared/map/AperalMarker.vue";
 
 let zoom = ref(6);
 let center = ref([49.895102, 2.307152]);

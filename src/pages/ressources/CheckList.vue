@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { incontournable, fringues, pratique, delires } from "../core/checklist";
-import TableItemDialog from "../components/shared/TableItemDialog.vue";
+import { incontournable, fringues, pratique, delires } from "../../core/checklist";
+import TableItemDialog from "../../components/shared/TableItemDialog.vue";
 
 function handleReset() {
     const keys = [...incontournable, ...fringues, ...pratique, ...delires].map(
