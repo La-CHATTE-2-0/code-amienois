@@ -270,4 +270,8 @@ const medecines = [
         surname: "Camille F.",
         year: 2023,
     },
+    {
+        surname: 'Louis "GCM" V.H.',
+        year: 2026,
+    },
 ];
