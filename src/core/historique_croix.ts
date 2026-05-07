@@ -267,8 +267,8 @@ const medecines = [
         year: 2018,
     },
     {
-        surname: "Camille F.",
-        year: 2023,
+        surname: 'Camille "Gros Menhir" F.',
+        year: 2022,
     },
     {
         surname: 'Louis "GCM" V.H.',
