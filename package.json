@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
-    "@vitejs/plugin-vue": "^6.0.6",
+    "@vitejs/plugin-vue": "^6.0.7",
     "sass": "^1.99.0",
     "sharp": "^0.34.5",
     "svgo": "^4.0.1",
