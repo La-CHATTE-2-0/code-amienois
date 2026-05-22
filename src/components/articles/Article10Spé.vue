@@ -9,7 +9,7 @@
             États généraux).
         </p>
         <p class="text-justify">
-            D'autres villes tisserandes comme Rouen, Paris ou Troyes arborent
+            D'autres villes tisserandes comme Rouen, Clermont-Ferrand ou Troyes arborent
             également des rubans supérieurs en velours (pour des raisons
             historiques ou l'uniformité des matières).
         </p>
