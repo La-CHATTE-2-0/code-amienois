@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import "../../sass/base/_circulaires.scss";
-import Article6Spé from "./Article6Spé.vue";
+import Article6Spe from "./Article6Spe.vue";
 </script>
 
 <template>
@@ -539,7 +539,7 @@ import Article6Spé from "./Article6Spé.vue";
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
                 Spécifités Amiénoises
             </h3>
-            <Article6Spé class="table-warning-fal"></Article6Spé>
+            <Article6Spe class="table-warning-fal"></Article6Spe>
         </div>
     </article>
 </template>

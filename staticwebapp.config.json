@@ -2,6 +2,7 @@
     "navigationFallback": {
         "rewrite": "/index.html",
         "exclude": [
+            "/data/*",
             "/images/*",
             "/css/*",
             "/js/*",
