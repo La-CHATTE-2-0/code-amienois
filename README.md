@@ -1,9 +1,65 @@
-# Vue 3 + TypeScript + Vite
+# Code Amienois (PWA)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Application web (PWA) affichant le Code de la Faluche Amienoise.
 
-## Recommended Setup
+## Stack
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+- Vue 3 + TypeScript
+- Vite
+- Vuetify
+- Vue Router
+- PWA: `vite-plugin-pwa`
+- Carte: Leaflet via `@vue-leaflet/vue-leaflet`
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+## Prerequis
+
+- Node.js >= 20.10 (voir `package.json` > `engines`)
+- npm
+
+## Scripts
+
+Installer les dependances:
+
+```bash
+npm ci
+```
+
+Lancer le serveur de dev:
+
+```bash
+npm run dev
+```
+
+Build de production:
+
+```bash
+npm run build
+```
+
+Previsualiser le build:
+
+```bash
+npm run preview
+```
+
+Build + preview (sanity check):
+
+```bash
+npm run check-prod
+```
+
+## Structure (raccourci)
+
+- `src/pages/`: pages (routes)
+- `src/components/`: composants reutilisables + articles
+- `src/router/index.ts`: definition des routes
+- `public/`: assets statiques (images, sons, `data/aperals.json`, ...)
+
+## Deploiement
+
+Le repo contient une configuration Azure Static Web Apps (`staticwebapp.config.json`) et des workflows GitHub Actions dans `.github/workflows/`.
+
+## Conventions
+
+- Noms de fichiers: ASCII uniquement (pas d'accents) pour eviter des soucis cross-platform.
+- Images: `alt` descriptifs et coherents.

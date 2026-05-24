@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Article10Spé from "../../components/articles/Article10Spé.vue";
+import Article10Spe from "../../components/articles/Article10Spe.vue";
 import pages from "../../core/page";
 </script>
 
@@ -66,14 +66,14 @@ import pages from "../../core/page";
                             loading="lazy"
                             width="40"
                             height="40"
-                            alt="Trésorier"
+                            alt="Etoile doree"
                             src="/images/insigne/etoile_doree.png"
                         />
                         <img
                             loading="lazy"
                             width="40"
                             height="40"
-                            alt="Trésorier"
+                            alt="Etoile argentee"
                             src="/images/insigne/etoile_argentee.png"
                         />
                     </div>
@@ -243,8 +243,7 @@ import pages from "../../core/page";
                     <v-icon icon="mdi-alert-box-outline"></v-icon>
                     Spécifité Amiénoise
                 </h3>
-                <Article10Spé class="table-warning-fal px-4 py-2">
-                </Article10Spé>
+                <Article10Spe class="table-warning-fal px-4 py-2" />
             </div>
         </div>
     </article>

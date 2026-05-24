@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import "../../sass/base/_tables.scss";
 import "../../sass/base/_insignes.scss";
-import Article8Spé from "./Article8Spé.vue";
+import Article8Spe from "./Article8Spe.vue";
 </script>
 
 <template>
@@ -719,13 +719,13 @@ import Article8Spé from "./Article8Spé.vue";
                     <td>Bouteille de Champagne</td>
                     <td>Coma éthylique certifié</td>
                     <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/bouteille_de_champagne.png"
-                            alt="Bouteille de Bordeaux"
-                        />
+                            <img
+                                loading="lazy"
+                                width="100"
+                                height="100"
+                                src="/images/insigne/bouteille_de_champagne.png"
+                                alt="Bouteille de Champagne"
+                            />
                     </td>
                 </tr>
                 <tr>
@@ -944,13 +944,13 @@ import Article8Spé from "./Article8Spé.vue";
                     <td>Clé de sol</td>
                     <td>Digne chanteur de paillardes</td>
                     <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/cle_de_sol.png"
-                            alt="Chouette"
-                        />
+                            <img
+                                loading="lazy"
+                                width="100"
+                                height="100"
+                                src="/images/insigne/cle_de_sol.png"
+                                alt="Cle de sol"
+                            />
                     </td>
                 </tr>
                 <tr>
@@ -1125,13 +1125,13 @@ import Article8Spé from "./Article8Spé.vue";
                     <td>Taste-vin</td>
                     <td>Bourguignon</td>
                     <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/taste_de_vin.png"
-                            alt="Sanglier"
-                        />
+                            <img
+                                loading="lazy"
+                                width="100"
+                                height="100"
+                                src="/images/insigne/taste_de_vin.png"
+                                alt="Taste-vin"
+                            />
                     </td>
                 </tr>
             </tbody>
@@ -1214,7 +1214,7 @@ import Article8Spé from "./Article8Spé.vue";
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
                 Spécifités Amiénoises
             </h3>
-            <Article8Spé class="table-warning-fal"></Article8Spé>
+            <Article8Spe class="table-warning-fal" />
         </div>
     </article>
 </template>

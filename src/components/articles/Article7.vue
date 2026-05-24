@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import "../../sass/base/_insignes.scss";
 import "../../sass/base/_tables.scss";
-import Article7SpéBac from "./Article7SpéBac.vue";
-import Article7SpéFilière from "./Article7SpéFilière.vue";
+import Article7SpeBac from "./Article7SpeBac.vue";
+import Article7SpeFiliere from "./Article7SpeFiliere.vue";
 </script>
 
 <template>
@@ -81,10 +81,10 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                         <img
                             loading="lazy"
                             width="100"
-                            height="100"
-                            src="/images/insigne/gamma.png"
-                            alt="Gamma"
-                        />
+                                height="100"
+                                src="/images/insigne/gamma.png"
+                                alt="Gamma (bac general)"
+                            />
                     </td>
                 </tr>
                 <tr>
@@ -96,13 +96,13 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     <td>DAEU (Diplôme accès aux études universitaires)</td>
                     <td>Lettre DAEU</td>
                     <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/lettres_daeu.png"
-                            alt="Gamma"
-                        />
+                            <img
+                                loading="lazy"
+                                width="100"
+                                height="100"
+                                src="/images/insigne/lettres_daeu.png"
+                                alt="Lettres DAEU"
+                            />
                     </td>
                 </tr>
                 <tr>
@@ -152,7 +152,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
                 Spécifité d'Amiens
             </h3>
-            <Article7SpéBac class="table-warning-fal"></Article7SpéBac>
+            <Article7SpeBac class="table-warning-fal" />
         </div>
 
         <ul class="mt-4">
@@ -329,7 +329,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Arts</td>
+                    <td>Art (beaux-arts, arts plastiques)</td>
                     <td>Palette & Pinceau</td>
                     <td data-fal-insigne>
                         <img
@@ -384,26 +384,26 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     <td>BTS</td>
                     <td>Lettres BTS</td>
                     <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/lettres_bts.png"
-                            alt="tete_de_cheval"
-                        />
+                            <img
+                                loading="lazy"
+                                width="100"
+                                height="100"
+                                src="/images/insigne/lettres_bts.png"
+                                alt="Lettres BTS"
+                            />
                     </td>
                 </tr>
                 <tr>
                     <td>Cinéma</td>
                     <td>Clap de cinéma</td>
                     <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/clap_de_cinema.png"
-                            alt="tete_de_cheval"
-                        />
+                            <img
+                                loading="lazy"
+                                width="100"
+                                height="100"
+                                src="/images/insigne/clap_de_cinema.png"
+                                alt="Clap de cinema"
+                            />
                     </td>
                 </tr>
                 <tr>
@@ -807,7 +807,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
                 Spécifités d'Amiens
             </h3>
-            <Article7SpéFilière></Article7SpéFilière>
+            <Article7SpeFiliere />
         </div>
 
         <!--Pass lass -->

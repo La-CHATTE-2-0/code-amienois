@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Article13Spé from "./Article13Spé.vue";
+import Article13Spe from "./Article13Spe.vue";
 import pages from "../../core/page";
 </script>
 
@@ -49,7 +49,7 @@ import pages from "../../core/page";
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
                 Spécifités Amiénoises
             </h3>
-            <Article13Spé class="table-warning-fal px-4 py-2"></Article13Spé>
+            <Article13Spe class="table-warning-fal px-4 py-2" />
         </div>
     </article>
 </template>

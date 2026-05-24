@@ -24,7 +24,6 @@ const routes = [
         name: pages.code.name,
         component: Code,
         meta: { layout: "Main" },
-        exact: true,
     },
     {
         path: pages.recap_spe.url,
