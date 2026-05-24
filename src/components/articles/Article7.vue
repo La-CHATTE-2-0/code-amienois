@@ -329,7 +329,7 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Arts</td>
+                    <td>Art (beaux-arts, arts plastiques)</td>
                     <td>Palette & Pinceau</td>
                     <td data-fal-insigne>
                         <img

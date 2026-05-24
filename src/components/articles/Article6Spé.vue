@@ -65,7 +65,7 @@ import "../../sass/base/_tables.scss";
                 </tr>
                 <tr>
                     <td data-filliere>
-                        <div class="pt-2">Arts / Architecture / Théatre</div>
+                        <div class="pt-2">Arts (tous) / Architecture / Théatre</div>
                         <div class="py-2">
                             <v-icon icon="mdi-repeat"></v-icon>
                             Bleu roy au code national
