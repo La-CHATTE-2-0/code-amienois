@@ -731,6 +731,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     <td>Grenouille</td>
                     <td data-fal-insigne>
                         <img
+                            style="rotate: 90deg"
                             loading="lazy"
                             width="100"
                             height="100"
@@ -1064,6 +1065,19 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                         <strong>service militaire</strong> ou le
                         <strong>service civique</strong>.
                     </td>
+                </tr>
+                <tr>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/abeille.png"
+                            alt="Abeille"
+                        />
+                    </td>
+                    <td>Abeille</td>
+                    <td>Cursus parfait (fin du circulaire)</td>  
                 </tr>
             </tbody>
         </v-table>
