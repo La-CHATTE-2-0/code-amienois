@@ -41,36 +41,19 @@ import Article8Spe from "./Article8Spe.vue";
             <li>Vos armes personnelles</li>
             <li>Les symboles:</li>
         </ul>
-        <v-table class="table align-middle mt-2" data-fal-table="insigne">
+
+        <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-none">
                 Insignes
             </caption>
             <thead>
                 <tr>
-                    <th scope="col">Insigne</th>
-                    <th scope="col">Description</th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody class="table-group-divider">
-                <tr>
                     <td colspan="3">
                         <h3>Les symboles</h3>
                     </td>
                 </tr>
-                <tr>
-                    <td>Abeille</td>
-                    <td>Cursus parfait (fin du circulaire)</td>
-                    <td data-fal-insigne>
-                        <img
-                            loading="lazy"
-                            width="100"
-                            height="100"
-                            src="/images/insigne/abeille.png"
-                            alt="Abeille"
-                        />
-                    </td>
-                </tr>
+            </thead>
+            <tbody class="table-group-divider">
                 <tr>
                     <td>Aigle</td>
                     <td>Amour de l'aviation</td>
@@ -582,11 +565,21 @@ import Article8Spe from "./Article8Spe.vue";
                         />
                     </td>
                 </tr>
+            </tbody>
+        </v-table>
+
+        <v-table class="table align-middle my-2" data-fal-table="insigne">
+            <caption class="d-none">
+                Insignes décernés par les partenaires, les Grand-Maîtres
+            </caption>
+            <thead>
                 <tr>
                     <td colspan="3">
                         <h3>Les insignes décernés par le/la partenaire</h3>
                     </td>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Épee</td>
                     <td>Fin Baiseur</td>
@@ -652,11 +645,21 @@ import Article8Spe from "./Article8Spe.vue";
                         />
                     </td>
                 </tr>
+            </tbody>
+        </v-table>
+
+        <v-table class="table align-middle my-2" data-fal-table="insigne">
+            <caption class="d-none">
+                Insignes décernés par les Grand-Maîtres
+            </caption>
+            <thead>
                 <tr>
                     <td colspan="3">
                         <h3>Les insignes décernés par un Grand-Maître</h3>
                     </td>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Abeille</td>
                     <td>
@@ -719,13 +722,13 @@ import Article8Spe from "./Article8Spe.vue";
                     <td>Bouteille de Champagne</td>
                     <td>Coma éthylique certifié</td>
                     <td data-fal-insigne>
-                            <img
-                                loading="lazy"
-                                width="100"
-                                height="100"
-                                src="/images/insigne/bouteille_de_champagne.png"
-                                alt="Bouteille de Champagne"
-                            />
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/bouteille_de_champagne.png"
+                            alt="Bouteille de Champagne"
+                        />
                     </td>
                 </tr>
                 <tr>
@@ -934,23 +937,38 @@ import Article8Spe from "./Article8Spe.vue";
                         />
                     </td>
                 </tr>
+            </tbody>
+        </v-table>
+
+        <v-table class="table align-middle my-2" data-fal-table="insigne">
+            <caption class="d-none">
+                Insignes à decernements particuliers
+            </caption>
+            <thead>
                 <tr>
-                    <td colspan="3">
-                        <h3>Les insignes à décernements particuliers</h3>
-                        <span>(Décerné par GM avec accord des porteurs de l'insigne)</span>
+                    <td colspan="3" class="pb-2">
+                        <h3 class="mb-2">
+                            Les insignes à décernements particuliers
+                        </h3>
+                        <span
+                            >(Décerné par GM avec accord des porteurs de
+                            l'insigne)</span
+                        >
                     </td>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Clé de sol</td>
                     <td>Digne chanteur de paillardes</td>
                     <td data-fal-insigne>
-                            <img
-                                loading="lazy"
-                                width="100"
-                                height="100"
-                                src="/images/insigne/cle_de_sol.png"
-                                alt="Cle de sol"
-                            />
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/cle_de_sol.png"
+                            alt="Cle de sol"
+                        />
                     </td>
                 </tr>
                 <tr>
@@ -966,11 +984,21 @@ import Article8Spe from "./Article8Spe.vue";
                         />
                     </td>
                 </tr>
+            </tbody>
+        </v-table>
+
+        <v-table class="table align-middle my-2" data-fal-table="insigne">
+            <caption class="d-none">
+                Insignes régionaux
+            </caption>
+            <thead>
                 <tr>
                     <td colspan="3">
                         <h3>Les insignes régionaux</h3>
                     </td>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Abeille</td>
                     <td>Ville impériale</td>
@@ -1125,13 +1153,13 @@ import Article8Spe from "./Article8Spe.vue";
                     <td>Taste-vin</td>
                     <td>Bourguignon</td>
                     <td data-fal-insigne>
-                            <img
-                                loading="lazy"
-                                width="100"
-                                height="100"
-                                src="/images/insigne/taste_de_vin.png"
-                                alt="Taste-vin"
-                            />
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/taste_de_vin.png"
+                            alt="Taste-vin"
+                        />
                     </td>
                 </tr>
             </tbody>
