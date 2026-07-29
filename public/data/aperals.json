@@ -391,9 +391,9 @@
     "description": "Généralement before dans un restaurant. Contact ALF.",
     "places": [
       {
-        "name": "Baker Street Pub",
-        "latlong": [48.8458302, 2.3539337],
-        "address": "9 rue des Boulangers, 75005 Paris"
+        "name": "IPN",
+        "latlong": [48.844165, 2.349378],
+        "address": "23 Rue Mouffetard, 75005 Paris"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/470992433002833"
@@ -542,9 +542,9 @@
     "description": "Se renseigner auprès des Turons au cas où.",
     "places": [
       {
-        "name": "Caméléon",
-        "latlong": [47.3949883, 0.6840238],
-        "address": "53 rue du Commerce, Tours"
+        "name": "Hot Rod Café",
+        "latlong": [47.395829, 0.681909],
+        "address": "18 Rue de la Paix, 37000 Tours"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/133398363414546"
