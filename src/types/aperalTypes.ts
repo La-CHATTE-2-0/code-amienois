@@ -2,6 +2,7 @@ export type Aperal = {
     city: string;
     description?: string;
     frequency?: string;
+    days?: Array<string>;
     places: Array<Place>;
     contactUrl?: string;
     color?: AperalColor;
