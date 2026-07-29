@@ -5,22 +5,32 @@
     "places": [
       {
         "name": "Pub The Kerry",
-        "latlong": [43.528445, 5.443824],
+        "latlong": [
+          43.528445,
+          5.443824
+        ],
         "address": "13 Cours Sextius, 13100 Aix-en-Provence"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/1410729269188166"
+    "contactUrl": "https://www.facebook.com/groups/1410729269188166",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Albi",
     "frequency": "Faluche morte, plus d'apéral prévus, voir le sur groupe Facebook",
     "places": [
       {
-        "latlong": [43.925083, 2.148641]
+        "latlong": [
+          43.925083,
+          2.148641
+        ]
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/1572688469722939/",
-    "color": "red"
+    "color": "red",
+    "days": []
   },
   {
     "city": "Amiens",
@@ -29,11 +39,17 @@
     "places": [
       {
         "name": "English Pub",
-        "latlong": [49.895102, 2.307152],
+        "latlong": [
+          49.895102,
+          2.307152
+        ],
         "address": "18 Port d'Amont, 80000 Amiens"
       }
     ],
-    "contactUrl": "https://linktr.ee/lachatte2.0"
+    "contactUrl": "https://linktr.ee/lachatte2.0",
+    "days": [
+      "mercredi"
+    ]
   },
   {
     "city": "Angers",
@@ -42,21 +58,31 @@
     "places": [
       {
         "name": "Le Gainzbar",
-        "latlong": [47.47302, -0.551182],
+        "latlong": [
+          47.47302,
+          -0.551182
+        ],
         "address": "19 Rue Poëliers, 49100 Angers"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/320393691386234"
+    "contactUrl": "https://www.facebook.com/groups/320393691386234",
+    "days": [
+      "lundi"
+    ]
   },
   {
     "city": "Avignon",
     "frequency": "Faluche morte, plus d'apéral prévus",
     "places": [
       {
-        "latlong": [43.948244, 4.81011]
+        "latlong": [
+          43.948244,
+          4.81011
+        ]
       }
     ],
-    "color": "red"
+    "color": "red",
+    "days": []
   },
   {
     "city": "Bayonne",
@@ -64,12 +90,16 @@
     "places": [
       {
         "name": "La Petrolette",
-        "latlong": [43.489218, -1.472879],
+        "latlong": [
+          43.489218,
+          -1.472879
+        ],
         "address": "31 Rue des Cordeliers, 64100 Bayonne"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/pau.amicale.falucharde",
-    "color": "orange"
+    "color": "orange",
+    "days": []
   },
   {
     "city": "Belfort",
@@ -78,11 +108,17 @@
     "places": [
       {
         "name": "L'ABC",
-        "latlong": [47.6350471, 6.8534488],
+        "latlong": [
+          47.6350471,
+          6.8534488
+        ],
         "address": "72 Faubourg de France, 90000 Belfort"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/396972517096424"
+    "contactUrl": "https://www.facebook.com/groups/396972517096424",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Besançon",
@@ -90,11 +126,17 @@
     "places": [
       {
         "name": "K'fé",
-        "latlong": [47.239714, 6.016955],
+        "latlong": [
+          47.239714,
+          6.016955
+        ],
         "address": "18 Pl. Marulaz, 25000 Besançon"
       }
     ],
-    "contactUrl": "https://www.facebook.com/vpcom.afib"
+    "contactUrl": "https://www.facebook.com/vpcom.afib",
+    "days": [
+      "jeudi"
+    ]
   },
   {
     "city": "Bordeaux",
@@ -102,11 +144,17 @@
     "places": [
       {
         "name": "Le Peaky Pub",
-        "latlong": [44.8404, -0.5805],
+        "latlong": [
+          44.8404,
+          -0.5805
+        ],
         "address": "160 Cr Victor Hugo, 33000 Bordeaux"
       }
     ],
-    "contactUrl": "https://linktr.ee/BAFBordeaux"
+    "contactUrl": "https://linktr.ee/BAFBordeaux",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Bourg-en-Bresse",
@@ -114,21 +162,31 @@
     "places": [
       {
         "name": "Hopper",
-        "latlong": [46.21186065673828, 5.227509021759033],
+        "latlong": [
+          46.21186065673828,
+          5.227509021759033
+        ],
         "address": "3 Avenue Maginot, 01000 Bourg-en-Bresse, France"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/392342348308997/"
+    "contactUrl": "https://www.facebook.com/groups/392342348308997/",
+    "days": [
+      "jeudi"
+    ]
   },
   {
     "city": "Bourges",
     "frequency": "Faluche morte, plus d'apéral prévus",
     "places": [
       {
-        "latlong": [47.081012, 2.398782]
+        "latlong": [
+          47.081012,
+          2.398782
+        ]
       }
     ],
-    "color": "red"
+    "color": "red",
+    "days": []
   },
   {
     "city": "Brest",
@@ -136,11 +194,17 @@
     "places": [
       {
         "name": "Le 54 Café",
-        "latlong": [48.3968114, -4.4837416],
+        "latlong": [
+          48.3968114,
+          -4.4837416
+        ],
         "address": "54 Rue de Glasgow, 29200 Brest"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/126245945472"
+    "contactUrl": "https://www.facebook.com/groups/126245945472",
+    "days": [
+      "mercredi"
+    ]
   },
   {
     "city": "Berck",
@@ -148,12 +212,16 @@
     "places": [
       {
         "name": "Green Corner",
-        "latlong": [50.4058739, 1.5655229],
+        "latlong": [
+          50.4058739,
+          1.5655229
+        ],
         "address": "35 Rue d'Estienne d'Orves, 62600 Berck"
       }
     ],
     "contactUrl": "https://www.instagram.com/fibula_1.0/",
-    "color": "orange"
+    "color": "orange",
+    "days": []
   },
   {
     "city": "Caen",
@@ -161,11 +229,17 @@
     "places": [
       {
         "name": "Le Broc",
-        "latlong": [49.1820563, -0.3675495],
+        "latlong": [
+          49.1820563,
+          -0.3675495
+        ],
         "address": "18 Rue Écuyère, 14000 Caen, France"
       }
     ],
-    "contactUrl": "https://www.facebook.com/profile.php?id=100018427925024"
+    "contactUrl": "https://www.facebook.com/profile.php?id=100018427925024",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Clermont-Ferrand",
@@ -173,11 +247,17 @@
     "places": [
       {
         "name": "3 Monkeys Pub",
-        "latlong": [45.774183, 3.093528],
+        "latlong": [
+          45.774183,
+          3.093528
+        ],
         "address": "25 Av. des Paulines, 63000 Clermont-Ferrand"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/367694099988174"
+    "contactUrl": "https://www.facebook.com/groups/367694099988174",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Compiègne",
@@ -185,11 +265,17 @@
     "places": [
       {
         "name": "GoodChill Bar",
-        "latlong": [49.4150559, 2.8202717],
+        "latlong": [
+          49.4150559,
+          2.8202717
+        ],
         "address": "29 Rue du Port À Bateaux, 60200 Compiègne"
       }
     ],
-    "contactUrl": "https://www.facebook.com/profile.php?id=61571768097067"
+    "contactUrl": "https://www.facebook.com/profile.php?id=61571768097067",
+    "days": [
+      "vendredi"
+    ]
   },
   {
     "city": "Créteil",
@@ -197,11 +283,17 @@
     "places": [
       {
         "name": "Soulcat",
-        "latlong": [48.8198909, 2.4753022],
+        "latlong": [
+          48.8198909,
+          2.4753022
+        ],
         "address": "2 allée Raymond Nègre, 94340 Joinville-le-Pont"
       }
     ],
-    "contactUrl": "https://www.facebook.com/profile.php?id=100017608033235"
+    "contactUrl": "https://www.facebook.com/profile.php?id=100017608033235",
+    "days": [
+      "lundi"
+    ]
   },
   {
     "city": "Dijon",
@@ -209,11 +301,17 @@
     "places": [
       {
         "name": "KONG",
-        "latlong": [47.3236375, 5.0442138],
+        "latlong": [
+          47.3236375,
+          5.0442138
+        ],
         "address": "8 rue Auguste Comte, 21000 Dijon"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/106759612790305"
+    "contactUrl": "https://www.facebook.com/groups/106759612790305",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Grenoble",
@@ -222,15 +320,24 @@
     "places": [
       {
         "name": "Dans un parc",
-        "latlong": [45.1862, 5.739074]
+        "latlong": [
+          45.1862,
+          5.739074
+        ]
       },
       {
         "name": "Le Subway",
-        "latlong": [45.186904, 5.7238498],
+        "latlong": [
+          45.186904,
+          5.7238498
+        ],
         "address": "2 Rue Lakanalle, 38000 Grenoble"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/351340885674609"
+    "contactUrl": "https://www.facebook.com/groups/351340885674609",
+    "days": [
+      "mercredi"
+    ]
   },
   {
     "city": "Le Mans",
@@ -238,11 +345,17 @@
     "places": [
       {
         "name": "Au guet à pintes",
-        "latlong": [48.0048966, 0.1955588],
+        "latlong": [
+          48.0048966,
+          0.1955588
+        ],
         "address": "14 Rue du Cornet, 72100 Le Mans"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/2314635055464793"
+    "contactUrl": "https://www.facebook.com/groups/2314635055464793",
+    "days": [
+      "mercredi"
+    ]
   },
   {
     "city": "Lille",
@@ -250,11 +363,17 @@
     "places": [
       {
         "name": "Le PB",
-        "latlong": [50.6312328, 3.0486311],
+        "latlong": [
+          50.6312328,
+          3.0486311
+        ],
         "address": "238 rue Nationale, 59000 Lille"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/39472352014"
+    "contactUrl": "https://www.facebook.com/groups/39472352014",
+    "days": [
+      "jeudi"
+    ]
   },
   {
     "city": "Limoges",
@@ -262,9 +381,15 @@
     "places": [
       {
         "name": "Lord John",
-        "latlong": [45.8341347, 1.2654762],
+        "latlong": [
+          45.8341347,
+          1.2654762
+        ],
         "address": "19 avenue du général de Gaulle, Limoges"
       }
+    ],
+    "days": [
+      "mercredi"
     ]
   },
   {
@@ -274,11 +399,17 @@
     "places": [
       {
         "name": "Black Hole",
-        "latlong": [45.763298, 4.8289096],
+        "latlong": [
+          45.763298,
+          4.8289096
+        ],
         "address": "1 rue de la Baleine, 69000 Lyon"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/198119940375417"
+    "contactUrl": "https://www.facebook.com/groups/198119940375417",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Marseille",
@@ -287,11 +418,17 @@
     "places": [
       {
         "name": "Joke'R",
-        "latlong": [43.2919194, 5.3845162],
+        "latlong": [
+          43.2919194,
+          5.3845162
+        ],
         "address": "16 Pl. Notre Dame du Mont, 13006 Marseille"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/38965434117"
+    "contactUrl": "https://www.facebook.com/groups/38965434117",
+    "days": [
+      "vendredi"
+    ]
   },
   {
     "city": "Metz",
@@ -300,11 +437,17 @@
     "places": [
       {
         "name": "Vivian's",
-        "latlong": [49.1170219, 6.1786805],
+        "latlong": [
+          49.1170219,
+          6.1786805
+        ],
         "address": "15 Place St Louis, 57000 Metz"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/1757349307863601"
+    "contactUrl": "https://www.facebook.com/groups/1757349307863601",
+    "days": [
+      "jeudi"
+    ]
   },
   {
     "city": "Montpellier",
@@ -313,16 +456,25 @@
     "places": [
       {
         "name": "La Louve",
-        "latlong": [43.6231812, 3.8632718],
+        "latlong": [
+          43.6231812,
+          3.8632718
+        ],
         "address": "40 Av. Charles Flahault, 34090 Montpellier"
       },
       {
         "name": "Les Six roses",
-        "latlong": [43.6183685, 3.8736131],
+        "latlong": [
+          43.6183685,
+          3.8736131
+        ],
         "address": "29 Rue du Faubourg Boutonnet, 34090 Montpellier"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/18764516150"
+    "contactUrl": "https://www.facebook.com/groups/18764516150",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Nancy",
@@ -330,11 +482,17 @@
     "places": [
       {
         "name": "Pub Mac Carthy",
-        "latlong": [48.692221, 6.1775311],
+        "latlong": [
+          48.692221,
+          6.1775311
+        ],
         "address": "6 Rue Guerrier de Dumast, 54000 Nancy"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/1757349307863601"
+    "contactUrl": "https://www.facebook.com/groups/1757349307863601",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Nantes",
@@ -342,11 +500,17 @@
     "places": [
       {
         "name": "Le Cascabel",
-        "latlong": [47.21371, -1.5533302],
+        "latlong": [
+          47.21371,
+          -1.5533302
+        ],
         "address": "1 Rue Kervegan, 44000 Nantes"
       }
     ],
-    "contactUrl": "https://www.instagram.com/laf.i.n/"
+    "contactUrl": "https://www.instagram.com/laf.i.n/",
+    "days": [
+      "mercredi"
+    ]
   },
   {
     "city": "Nice",
@@ -354,11 +518,15 @@
     "description": "Il n'y a plus d'apéral jusqu'à nouvel ordre. Se renseigner sur Faluche Niçoise ou auprès de Lancelot Chevalier.",
     "places": [
       {
-        "latlong": [43.6959491, 7.271535]
+        "latlong": [
+          43.6959491,
+          7.271535
+        ]
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/763870610314656",
-    "color": "orange"
+    "color": "orange",
+    "days": []
   },
   {
     "city": "Nîmes",
@@ -367,11 +535,17 @@
     "places": [
       {
         "name": "La Réserve",
-        "latlong": [43.8382348, 4.3629282],
+        "latlong": [
+          43.8382348,
+          4.3629282
+        ],
         "address": "17 boulevard Amiral Courbet, 30000 Nîmes"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/453006268108813"
+    "contactUrl": "https://www.facebook.com/groups/453006268108813",
+    "days": [
+      "jeudi"
+    ]
   },
   {
     "city": "Orléans",
@@ -379,11 +553,17 @@
     "places": [
       {
         "name": "Le 222 St",
-        "latlong": [47.9002805, 1.9095013],
+        "latlong": [
+          47.9002805,
+          1.9095013
+        ],
         "address": "222 rue de Bourgogne, 45000 Orléans"
       }
     ],
-    "contactUrl": "https://www.instagram.com/falucheorleans"
+    "contactUrl": "https://www.instagram.com/falucheorleans",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Paris",
@@ -391,12 +571,18 @@
     "description": "Généralement before dans un restaurant. Contact ALF.",
     "places": [
       {
-        "name": "Baker Street Pub",
-        "latlong": [48.8458302, 2.3539337],
-        "address": "9 rue des Boulangers, 75005 Paris"
+        "name": "IPN",
+        "latlong": [
+          48.844165,
+          2.349378
+        ],
+        "address": "23 Rue Mouffetard, 75005 Paris"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/470992433002833"
+    "contactUrl": "https://www.facebook.com/groups/470992433002833",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Pau",
@@ -405,23 +591,31 @@
     "places": [
       {
         "name": "Europub",
-        "latlong": [43.3043161, -0.4034021],
+        "latlong": [
+          43.3043161,
+          -0.4034021
+        ],
         "address": "61 Rte de Bayonne, 64140 Billère"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/pau.amicale.falucharde/",
-    "color": "red"
+    "color": "red",
+    "days": []
   },
   {
     "city": "Perpignan",
     "frequency": "Faluche morte, plus d'apéral prévus, voir le sur groupe Facebook",
     "places": [
       {
-        "latlong": [42.6985304, 2.8953121]
+        "latlong": [
+          42.6985304,
+          2.8953121
+        ]
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/205224672849302",
-    "color": "red"
+    "color": "red",
+    "days": []
   },
   {
     "city": "Poitiers",
@@ -430,11 +624,17 @@
     "places": [
       {
         "name": "Le Palais de la Bière",
-        "latlong": [46.572671, 0.3663749],
+        "latlong": [
+          46.572671,
+          0.3663749
+        ],
         "address": "250 rue du Faubourg du Pont Neuf, 86000 Poitiers"
       }
     ],
-    "contactUrl": "https://www.facebook.com/profile.php?id=100003488736453"
+    "contactUrl": "https://www.facebook.com/profile.php?id=100003488736453",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Reims",
@@ -443,11 +643,17 @@
     "places": [
       {
         "name": "Le Dropkick",
-        "latlong": [49.2496252, 4.0184101],
+        "latlong": [
+          49.2496252,
+          4.0184101
+        ],
         "address": "15 rue du Colonel Fabien, 51100 Reims"
       }
     ],
-    "contactUrl": "https://www.facebook.com/AFEReims"
+    "contactUrl": "https://www.facebook.com/AFEReims",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Rennes",
@@ -455,11 +661,17 @@
     "places": [
       {
         "name": "Aux Plaisirs Démodés",
-        "latlong": [48.1119283, -1.6755552],
+        "latlong": [
+          48.1119283,
+          -1.6755552
+        ],
         "address": "37 rue Saint-Georges, Rennes"
       }
     ],
-    "contactUrl": "mailto:asso.afre@gmail.com"
+    "contactUrl": "mailto:asso.afre@gmail.com",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Rouen",
@@ -467,11 +679,17 @@
     "places": [
       {
         "name": "L'Alchimie",
-        "latlong": [49.4424911, 1.097696],
+        "latlong": [
+          49.4424911,
+          1.097696
+        ],
         "address": "1 bis Rue de l'Hôpital, 76000 Rouen"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/334261026623117"
+    "contactUrl": "https://www.facebook.com/groups/334261026623117",
+    "days": [
+      "mercredi"
+    ]
   },
   {
     "city": "Saint-Quentin",
@@ -480,12 +698,16 @@
     "places": [
       {
         "name": "Reload Gaming Bar",
-        "latlong": [49.8447867, 3.2908782],
+        "latlong": [
+          49.8447867,
+          3.2908782
+        ],
         "address": "33 bis Rue d'Isle, 02100 Saint-Quentin"
       }
     ],
     "contactUrl": "https://www.instagram.com/faluche.saintquentin/",
-    "color": "orange"
+    "color": "orange",
+    "days": []
   },
   {
     "city": "Saint-Étienne",
@@ -494,9 +716,15 @@
     "places": [
       {
         "name": "Le Soggy Bottom / La Guinguette",
-        "latlong": [45.4396857, 4.3858209],
+        "latlong": [
+          45.4396857,
+          4.3858209
+        ],
         "address": "9 rue de la Résistance, 42000 Saint-Étienne"
       }
+    ],
+    "days": [
+      "mercredi"
     ]
   },
   {
@@ -505,11 +733,17 @@
     "places": [
       {
         "name": "O'Brother",
-        "latlong": [48.5789146, 7.7397138],
+        "latlong": [
+          48.5789146,
+          7.7397138
+        ],
         "address": "6 Rue des Glacières, Strasbourg"
       }
     ],
-    "contactUrl": "https://www.instagram.com/rafal_strasbourg/"
+    "contactUrl": "https://www.instagram.com/rafal_strasbourg/",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Toulon",
@@ -517,11 +751,17 @@
     "places": [
       {
         "name": "B des cochons",
-        "latlong": [43.1228306, 5.9302975],
+        "latlong": [
+          43.1228306,
+          5.9302975
+        ],
         "address": "Pl. de l'Equerre, 83000 Toulon"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/182397841790991"
+    "contactUrl": "https://www.facebook.com/groups/182397841790991",
+    "days": [
+      "jeudi"
+    ]
   },
   {
     "city": "Toulouse",
@@ -530,11 +770,17 @@
     "places": [
       {
         "name": "O'Briens",
-        "latlong": [43.6037958, 1.4424772],
+        "latlong": [
+          43.6037958,
+          1.4424772
+        ],
         "address": "39 rue Léon Gambetta, 31000 Toulouse"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/111189992371"
+    "contactUrl": "https://www.facebook.com/groups/111189992371",
+    "days": [
+      "mardi"
+    ]
   },
   {
     "city": "Tours",
@@ -542,12 +788,18 @@
     "description": "Se renseigner auprès des Turons au cas où.",
     "places": [
       {
-        "name": "Caméléon",
-        "latlong": [47.3949883, 0.6840238],
-        "address": "53 rue du Commerce, Tours"
+        "name": "Hot Rod Café",
+        "latlong": [
+          47.395829,
+          0.681909
+        ],
+        "address": "18 Rue de la Paix, 37000 Tours"
       }
     ],
-    "contactUrl": "https://www.facebook.com/groups/133398363414546"
+    "contactUrl": "https://www.facebook.com/groups/133398363414546",
+    "days": [
+      "mercredi"
+    ]
   },
   {
     "city": "Troyes",
@@ -555,11 +807,17 @@
     "places": [
       {
         "name": "Chez Fernande",
-        "latlong": [48.2997635, 4.0792928],
+        "latlong": [
+          48.2997635,
+          4.0792928
+        ],
         "address": "39 rue de la Cité, 10000 Troyes"
       }
     ],
-    "contactUrl": "https://www.facebook.com/flute.troyes"
+    "contactUrl": "https://www.facebook.com/flute.troyes",
+    "days": [
+      "mercredi"
+    ]
   },
   {
     "city": "Valence",
@@ -568,11 +826,17 @@
     "places": [
       {
         "name": "Le Partiel",
-        "latlong": [44.9333966, 4.9039245],
+        "latlong": [
+          44.9333966,
+          4.9039245
+        ],
         "address": "5 place Latour Maubourg, Valence"
       }
     ],
-    "contactUrl": "https://www.facebook.com/fada.valence"
+    "contactUrl": "https://www.facebook.com/fada.valence",
+    "days": [
+      "jeudi"
+    ]
   },
   {
     "city": "Valenciennes",
@@ -581,11 +845,17 @@
     "places": [
       {
         "name": "Le Repère",
-        "latlong": [50.3575912, 3.523672],
+        "latlong": [
+          50.3575912,
+          3.523672
+        ],
         "address": "2 Rue de la Halle, 59000 Valenciennes"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/1089647231056849",
-    "color": "orange"
+    "color": "orange",
+    "days": [
+      "mardi"
+    ]
   }
 ]
