@@ -4,11 +4,9 @@ Application web (PWA) affichant le Code de la Faluche Amienoise.
 
 ## Stack
 
-- Vue 3 + TypeScript
-- Vite
+- Nuxt 3 + Vue 3 + TypeScript
 - Vuetify
-- Vue Router
-- PWA: `vite-plugin-pwa`
+- PWA: `@vite-pwa/nuxt`
 - Carte: Leaflet via `@vue-leaflet/vue-leaflet`
 
 ## Prerequis
@@ -48,11 +46,14 @@ Build + preview (sanity check):
 npm run check-prod
 ```
 
+Pour produire des URLs Open Graph absolues, definir `NUXT_PUBLIC_SITE_URL` avec
+l'URL publique de l'application avant le build.
+
 ## Structure (raccourci)
 
 - `src/pages/`: pages (routes)
 - `src/components/`: composants reutilisables + articles
-- `src/router/index.ts`: definition des routes
+- `nuxt.config.ts`: configuration Nuxt et correspondance des routes historiques
 - `public/`: assets statiques (images, sons, `data/aperals.json`, ...)
 
 ## Deploiement

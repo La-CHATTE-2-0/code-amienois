@@ -58,27 +58,29 @@ const filteredAperals = computed(() => {
         </v-card>
 
         <div id="map">
-            <l-map
-                ref="map"
-                v-model:zoom="zoom"
-                v-model:center="center"
-                :useGlobalLeaflet="false"
-            >
-                <l-tile-layer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    layer-type="base"
-                    name="Carte de France des apérals"
-                />
+            <ClientOnly>
+                <l-map
+                    ref="map"
+                    v-model:zoom="zoom"
+                    v-model:center="center"
+                    :useGlobalLeaflet="false"
+                >
+                    <l-tile-layer
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        layer-type="base"
+                        name="Carte de France des apérals"
+                    />
 
-                <template v-for="aperal in filteredAperals" :key="aperal.city">
-                    <template
-                        v-for="place in aperal.places"
-                        :key="place.latlong?.join(',')"
-                    >
-                        <AperalMarker :place="place" :aperal="aperal" />
+                    <template v-for="aperal in filteredAperals" :key="aperal.city">
+                        <template
+                            v-for="place in aperal.places"
+                            :key="place.latlong?.join(',')"
+                        >
+                            <AperalMarker :place="place" :aperal="aperal" />
+                        </template>
                     </template>
-                </template>
-            </l-map>
+                </l-map>
+            </ClientOnly>
         </div>
     </div>
 </template>

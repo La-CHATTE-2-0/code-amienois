@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { CheckListItem } from "../../types/checklistTypes";
+import type { CheckListItem } from "../../types/checklistTypes";
 
 const dialog = ref(false);
 const checked = ref(false);

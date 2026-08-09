@@ -1,4 +1,4 @@
-import { Aperal } from "../types/aperalTypes";
+import type { Aperal } from "../types/aperalTypes";
 
 export async function loadAperals(): Promise<Aperal[]> {
     const res = await fetch("/data/aperals.json");

@@ -1,39 +1,52 @@
 <script setup lang="ts">
+import { onMounted } from "vue";
 import { useTheme } from "vuetify";
-import { RouterView, useRoute } from "vue-router";
-import { computed, onMounted } from "vue";
+import pages from "./core/page";
 
 const theme = useTheme();
 const route = useRoute();
+const runtimeConfig = useRuntimeConfig();
 
-onMounted(() => {
-    const darkmode = localStorage.getItem("theme");
+const page = computed(() =>
+    Object.values(pages).find((entry) => entry.url === route.path),
+);
 
-    if (darkmode == null) {
-        localStorage.setItem("theme", "dark");
-    }
+useHead(() => {
+    const title = page.value?.name ?? "Code Amiénois";
+    const description = page.value?.description ?? "Code de la Faluche Amiénoise";
+    const siteUrl = runtimeConfig.public.siteUrl.replace(/\/$/, "");
+    const url = siteUrl ? `${siteUrl}${route.path}` : undefined;
+    const image = siteUrl ? `${siteUrl}/images/cropped-montpellier-etudiant-medecine-faluche-6-790x400.jpg` : undefined;
 
-    theme.change(darkmode ?? "dark");
+    return {
+        title,
+        meta: [
+            { name: "description", content: description },
+            { property: "og:type", content: "website" },
+            { property: "og:title", content: title },
+            { property: "og:description", content: description },
+            ...(url ? [{ property: "og:url", content: url }] : []),
+            ...(image ? [{ property: "og:image", content: image }] : []),
+            ...(image ? [{ property: "og:image:alt", content: "Code Amiénois" }] : []),
+            { name: "twitter:card", content: "summary_large_image" },
+            ...(image ? [{ name: "twitter:image", content: image }] : []),
+        ],
+    };
 });
 
-/*
- * Get the route layout
- */
-const layout = computed(() => {
-    const layout: string = route?.meta?.layout as string;
-    if (layout) {
-        return `${layout}Layout`;
-    }
-    return "div";
+onMounted(() => {
+    const savedTheme = localStorage.getItem("theme") ?? "dark";
+    localStorage.setItem("theme", savedTheme);
+    theme.change(savedTheme);
 });
 </script>
 
 <template>
     <v-app>
         <v-theme-provider>
-            <component :is="layout">
-                <RouterView />
-            </component>
+            <NuxtLayout>
+                <NuxtPage />
+            </NuxtLayout>
         </v-theme-provider>
     </v-app>
 </template>
