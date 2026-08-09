@@ -9,8 +9,6 @@ lerna-debug.log*
 
 node_modules
 dist
-.nuxt
-.output
 dev-dist
 dist-ssr
 *.local

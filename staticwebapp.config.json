@@ -4,8 +4,6 @@
         "exclude": [
             "/data/*",
             "/images/*",
-            "/_nuxt/*",
-            "/_payload.json",
             "/css/*",
             "/js/*",
             "/favicon.ico"

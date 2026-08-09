@@ -1,83 +1,67 @@
 const pages = {
     code: {
         name: 'Code',
-        url: '/',
-        description: 'Consultez le Code de la Faluche Amiénoise et ses traditions.',
+        url: '/'
     },
     recap_spe: {
         name: 'Récap Spés',
-        url: '/recap-spe',
-        description: 'Retrouvez le récapitulatif des spécialités de la Faluche Amiénoise.',
+        url: '/recap-spe'
     },
     monome: {
         name: 'Monôme',
-        url: '/monome',
-        description: 'Découvrez l’histoire et les traditions du monôme étudiant à Amiens.',
+        url: '/monome'
     },
     notes_aux_pm: {
         name: 'Notes aux PMs',
-        url: '/notes-aux-pms',
-        description: 'Notes et repères pratiques à destination des parrains marraines.',
+        url: '/notes-aux-pms'
     },
     checklist: {
         name: 'Checklist Congrès',
-        url: '/checklist-congres',
-        description: 'Préparez votre congrès avec la checklist du congrès.',
+        url: '/checklist-congres'
     },
     couleurs_rubans: {
         name: 'Couleurs des rubans',
-        url: '/couleurs-des-rubans',
-        description: 'Identifiez les couleurs et les significations des rubans de la Faluche.',
+        url: '/couleurs-des-rubans'
     },
     historique_croix: {
         name: 'Histoirque des GM',
-        url: '/historique-croix',
-        description: 'Parcourez l’historique des grands maîtres et de leurs croix.',
+        url: '/historique-croix'
     },
     rabelais: {
         name: 'François Rabelais',
-        url: '/rabelais',
-        description: 'Découvrez François Rabelais et les références rabelaisiennes de la Faluche.',
+        url: '/rabelais'
     },
     gambrinus: {
         name: 'Gambrinus',
-        url: '/gambrinus',
-        description: 'Découvrez Gambrinus, héro du houblon.',
+        url: '/gambrinus'
     },
     bacchus: {
         name: 'Bacchus',
-        url: '/bacchus',
-        description: 'Découvrez Bacchus, dieu du vin.',
+        url: '/bacchus'
     },
     folklore_francais: {
         name: 'Folklores Français',
-        url: '/folklore-francais',
-        description: 'Explorez les folklores étudiants français.',
+        url: '/folklore-francais'
     },
     folklore_etranger: {
         name: 'Folklores Étrangers',
-        url: '/folklore-etranger',
-        description: 'Explorez les folklores étudiants étrangers.',
+        url: '/folklore-etranger'
     },
     guide_couture: {
         name: 'Guide Couture',
-        url: '/guide-couture',
-        description: 'Guide et conseils pour coudre ta faluche.',
+        url: '/guide-couture'
     },
     codex: {
         name: 'Codex',
-        url: '/codex',
-        description: 'Consultez le codex et les références essentielles de la Faluche Amiénoise.',
+        url: '/codex'
     },
     homme_bouee: {
         name: 'L\'Homme à la Bouée',
-        url: '/homme-bouee',
-        description: 'Découvrez l’histoire et les traditions de l’Homme à la Bouée.',
+        url: '/homme-bouee'
     },
     aperals: {
         name: 'Apérals de France',
-        url: '/aperals',
-        description: 'Trouvez les apérals faluchards partout en France grâce à la carte interactive.',
+        url: '/aperals'
     },
 }
 
