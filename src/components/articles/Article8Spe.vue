@@ -19,8 +19,9 @@
                         <li>
                             À Amiens, on ajoute l'année en indice, et le nombre
                             de faluches cousues en exposant. Par ailleurs, les 
-                            ciseaux représentent ici le fait d'avoir cousus les 
-                            rubans soi-même et non l'entièreté de la faluche.
+                            ciseaux représentent ici le fait d'avoir cousus soi-même 
+                            les rubans  et non l'entièreté de la faluche depuis un 
+                            carré de velours.
                         </li>
                     </ul>
                 </td>
@@ -37,8 +38,7 @@
             <tr>
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
-                    Le ruban bleu et les années avec les ciseaux n'existent au
-                    code national
+                    Le ruban bleu et les années en indice avec les ciseaux n'existent pas au code national.
                 </td>
             </tr>
             <tr class="no-border-bottom">
@@ -60,7 +60,7 @@
             <tr>
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
-                    Le cochon est sur le velours de la faluche au code national
+                    Le cochon est sur le velours de la faluche au code national.
                 </td>
             </tr>
             <tr class="no-border-bottom">
@@ -87,9 +87,8 @@
             <tr class="no-border-bottom">
                 <td>Feuille de vigne</td>
                 <td>
-                    Perte de viriginité masculine (<strong
-                        >mais pendant la vie falucharde</strong
-                    >)
+                    Perte de viriginité masculine 
+                    (<strong>mais pendant la vie falucharde</strong>)
                 </td>
                 <td data-fal-insigne>
                     <img
@@ -104,8 +103,8 @@
             <tr>
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
-                    Pas de notion de vie falucharde au code national, et sexe
-                    mixte
+                    Pas de notion de vie falucharde au code national auparavant (ajouté au 137), et sexe
+                    mixte au code national (disparission de la rose au 135).
                 </td>
             </tr>
             <tr class="no-border-bottom">
@@ -125,15 +124,14 @@
             <tr>
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
-                    N'existe pas au code national
+                    N'existe pas au code national.
                 </td>
             </tr>
             <tr class="no-border-bottom">
                 <td>Rose</td>
                 <td>
-                    Perte de viriginité féminine (<strong
-                        >mais pendant la vie falucharde</strong
-                    >)
+                    Perte de viriginité féminine 
+                    (<strong>mais pendant la vie falucharde</strong>)
                 </td>
                 <td data-fal-insigne>
                     <img
@@ -150,7 +148,7 @@
                     <v-icon icon="mdi-repeat"></v-icon>
                     Retiré de code national pour la fusion avec le feuille de
                     vigne (Anciennement: Pas de notion de vie falucharde au code
-                    national)
+                    national).
                 </td>
             </tr>
             <tr class="no-border-bottom">
@@ -160,6 +158,7 @@
                         134ème anniversaire, il a été décidé de retirer le
                         squelette du code national et de laisser le choix à
                         chaque ville (À Amiens on reste aux versions initales).
+                        Remis au code 138 en laissant le choix aux villes.
                     </p>
                 </td>
             </tr>
@@ -208,9 +207,8 @@
             <tr>
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
-
-                    N'éxiste plus au code national (mais visible encore dans
-                    beaucoup de villes)
+                    N'existait plus au code national (mais visible encore dans
+                    beaucoup de villes).
                 </td>
             </tr>
             <tr class="no-border-bottom">
@@ -244,8 +242,7 @@
             <tr>
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
-
-                    N'existe pas au code national
+                    N'existe pas au code national.
                 </td>
             </tr>
             <tr class="no-border-bottom">
@@ -328,8 +325,7 @@
             <tr>
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
-
-                    N'existe pas au code national
+                    N'existe pas au code national.
                 </td>
             </tr>
             <tr>
@@ -354,7 +350,7 @@
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
                     Remplace la pensée du code national (le code national
-                    comportait les deux il y a plusieurs années)
+                    comportait les deux il y a plusieurs années).
                 </td>
             </tr>
             <tr>
@@ -378,8 +374,7 @@
             <tr>
                 <td colspan="3">
                     <v-icon icon="mdi-repeat"></v-icon>
-
-                    N'existe pas au code national
+                    N'existe pas au code national.
                 </td>
             </tr>
         </tbody>
