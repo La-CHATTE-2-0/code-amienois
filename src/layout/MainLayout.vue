@@ -40,8 +40,3 @@ import { version } from "../version";
     </v-footer>
 </template>
 
-<style>
-main {
-    width: 100vw;
-}
-</style>

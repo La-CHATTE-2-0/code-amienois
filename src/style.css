@@ -6,11 +6,23 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     background: radial-gradient(circle at 12% 0%, var(--app-glow), transparent 32rem),
         rgb(var(--v-theme-background));
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#app,
+main {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .app-header {
@@ -24,7 +36,19 @@ body {
 
 .main-content {
     width: min(100% - 2rem, 900px);
+    max-width: 100%;
+    min-width: 0;
     margin: 0 auto;
+}
+
+.main-content .v-container {
+    max-width: 100%;
+    min-width: 0;
+}
+
+.main-content .v-table {
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .main-content > * {
@@ -127,6 +151,42 @@ body {
 @media (max-width: 600px) {
     .main-content {
         width: min(100% - 1rem, 900px);
+    }
+
+    .main-content .v-container {
+        padding-inline: 8px;
+    }
+
+    /* Keep the table layout on phones while preventing page overflow. */
+    .article-8-spe {
+        display: table;
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+        overflow: hidden;
+    }
+
+    .article-8-spe td {
+        min-width: 0;
+        padding: 6px 8px !important;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .article-8-spe td[data-fal-insigne] {
+        width: 22%;
+        padding-inline: 2px !important;
+    }
+
+    .article-8-spe td[data-fal-insigne] img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .article-8-spe ul {
+        padding-inline-start: 18px;
     }
 }
 
