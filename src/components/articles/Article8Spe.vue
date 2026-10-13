@@ -1,5 +1,5 @@
 <template>
-    <v-table class="table align-middle" data-fal-table="insigne">
+    <v-table class="table align-middle article-8-spe" data-fal-table="insigne">
         <caption class="d-none">
             Spe Insignes
         </caption>
