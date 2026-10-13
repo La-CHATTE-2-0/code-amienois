@@ -17,6 +17,7 @@ function toggleTheme() {
 
 <template>
     <v-app-bar
+        class="app-header"
         :elevation="2"
         color="teal-darken-4"
         prominent
@@ -35,10 +36,10 @@ function toggleTheme() {
             ></v-img>
         </template>
 
-        <v-app-bar-title>Code Amiénois</v-app-bar-title>
+        <v-app-bar-title v-motion :initial="{ opacity: 0, x: -16 }" :enter="{ opacity: 1, x: 0, transition: { duration: 450 } }">Code Amiénois</v-app-bar-title>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawerState" temporary>
+    <v-navigation-drawer v-model="drawerState" temporary class="app-drawer">
         <v-list density="compact" nav>
             <v-list-item
                 prepend-icon="mdi-book-outline"

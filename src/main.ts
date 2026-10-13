@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import '@mdi/font/css/materialdesignicons.css'
+import './style.css'
+import { MotionPlugin } from '@vueuse/motion'
 
 // Vuetify
 import 'vuetify/styles'
@@ -25,6 +27,7 @@ const vuetify = createVuetify({
 const app = createApp(App)
 app.use(vuetify)
 app.use(router)
+app.use(MotionPlugin)
 
 app.component('MainLayout', MainLayout)
 

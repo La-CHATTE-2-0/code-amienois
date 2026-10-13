@@ -32,7 +32,11 @@ const layout = computed(() => {
     <v-app>
         <v-theme-provider>
             <component :is="layout">
-                <RouterView />
+                <RouterView v-slot="{ Component }">
+                    <Transition name="page" mode="out-in" appear>
+                        <component :is="Component" />
+                    </Transition>
+                </RouterView>
             </component>
         </v-theme-provider>
     </v-app>

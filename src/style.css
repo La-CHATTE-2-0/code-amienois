@@ -1,3 +1,146 @@
+:root {
+    color-scheme: dark;
+    --app-radius: 18px;
+    --app-glow: rgba(128, 203, 196, 0.16);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(circle at 12% 0%, var(--app-glow), transparent 32rem),
+        rgb(var(--v-theme-background));
+}
+
+.app-header {
+    overflow: hidden;
+    transition: box-shadow 250ms ease, transform 250ms ease;
+}
+
+.app-header:hover {
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.28) !important;
+}
+
+.main-content {
+    width: min(100% - 2rem, 900px);
+    margin: 0 auto;
+}
+
+.main-content > * {
+    animation: content-rise 500ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Reveal page sections progressively instead of showing everything at once. */
+.main-content .v-container > *,
+.main-content .v-container > .v-row > .v-col,
+.main-content .v-container .v-card,
+.main-content .v-container .v-expansion-panels,
+.main-content .v-container .v-table {
+    animation: reveal-spring 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.main-content .v-container > :nth-child(1) { animation-delay: 60ms; }
+.main-content .v-container > :nth-child(2) { animation-delay: 130ms; }
+.main-content .v-container > :nth-child(3) { animation-delay: 200ms; }
+.main-content .v-container > :nth-child(4) { animation-delay: 270ms; }
+.main-content .v-container > :nth-child(5) { animation-delay: 340ms; }
+.main-content .v-container > :nth-child(6) { animation-delay: 410ms; }
+
+.main-content .v-card,
+.main-content .v-expansion-panels,
+.main-content .v-table {
+    transition: transform 260ms ease, box-shadow 260ms ease;
+}
+
+.main-content .v-card:hover,
+.main-content .v-expansion-panels:hover,
+.main-content .v-table:hover {
+    transform: translateY(-3px);
+}
+
+.main-content .v-img {
+    transition: transform 650ms cubic-bezier(0.16, 1, 0.3, 1), filter 650ms ease;
+}
+
+.main-content .v-card:hover .v-img {
+    transform: scale(1.025);
+    filter: saturate(1.08);
+}
+
+.app-footer {
+    background: transparent !important;
+    opacity: 0.78;
+    transition: opacity 200ms ease;
+}
+
+.app-footer:hover {
+    opacity: 1;
+}
+
+.app-drawer .v-list-item {
+    transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.app-drawer .v-list-item:hover {
+    transform: translateX(5px);
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 180ms ease, transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.page-enter-from {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+.page-leave-to {
+    opacity: 0;
+    transform: translateY(-8px);
+}
+
+@keyframes content-rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reveal-spring {
+    from {
+        opacity: 0;
+        transform: translateY(22px) scale(0.985);
+        filter: blur(4px);
+    }
+    65% {
+        opacity: 1;
+        transform: translateY(-2px) scale(1.002);
+        filter: blur(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        width: min(100% - 1rem, 900px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 /* ============================================
    STYLES D'IMPRESSION (Print Styles)
    ============================================ */
