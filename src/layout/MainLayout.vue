@@ -4,11 +4,11 @@ import { version } from "../version";
 </script>
 
 <template>
-    <AppHeader></AppHeader>
-    <v-main style="max-width: 900px; margin: auto">
+    <AppHeader />
+    <v-main class="main-content" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 500 } }">
         <slot></slot>
     </v-main>
-    <v-footer>
+    <v-footer class="app-footer">
         <v-row justify="center" no-gutters>
             <v-col class="text-center my-2" cols="12" style="height: 20px">
                 <a
