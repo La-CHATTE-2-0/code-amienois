@@ -110,7 +110,8 @@ const router = createRouter({
     routes,
     scrollBehavior(to, _from, savedPosition) {
         if (savedPosition) return savedPosition;
-        if (to.hash) return { el: to.hash, top: 72, behavior: "smooth" };
+        // Décalage : en-tête (64px) + sommaire des articles collant
+        if (to.hash) return { el: to.hash, top: 120, behavior: "smooth" };
         return { top: 0 };
     },
 });

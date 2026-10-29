@@ -20,20 +20,28 @@ import {
 } from "../components/articles/index";
 import Birthday from "../components/Birthdays.vue";
 import PartiesFal from "../components/schemas/PartiesFal.vue";
+import ArticleToc from "../components/ArticleToc.vue";
 import pages from "../core/page";
+
+// L'article 12 est affiché sous le numéro 69
+const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map((n) => ({
+    id: `article-${n}`,
+    label: `Art. ${n === 12 ? 69 : n}`,
+}));
 </script>
 
 <template>
     <v-container>
         <Birthday></Birthday>
-        <Article0 class="mt-3"></Article0>
-        <Article1 class="mt-3"></Article1>
-        <Article2 class="mt-3"></Article2>
-        <Article3 class="mt-3"></Article3>
-        <Article4 class="mt-3"></Article4>
-        <Article5 class="mt-3"></Article5>
-        <Article6 class="mt-3"></Article6>
-        <Article7 class="mt-3"></Article7>
+        <ArticleToc :articles="sommaire" class="mt-3" />
+        <Article0 id="article-0" class="mt-3"></Article0>
+        <Article1 id="article-1" class="mt-3"></Article1>
+        <Article2 id="article-2" class="mt-3"></Article2>
+        <Article3 id="article-3" class="mt-3"></Article3>
+        <Article4 id="article-4" class="mt-3"></Article4>
+        <Article5 id="article-5" class="mt-3"></Article5>
+        <Article6 id="article-6" class="mt-3"></Article6>
+        <Article7 id="article-7" class="mt-3"></Article7>
         <div class="my-2" style="text-align: center">
             <img
                 style="width: 100%; max-height: 350px; max-width: 650px"
@@ -43,15 +51,15 @@ import pages from "../core/page";
             />
             <p class="fw-light text-center">Exemple de circulaire</p>
         </div>
-        <Article8 class="mt-3"></Article8>
-        <Article9 class="mt-3"></Article9>
-        <Article10 class="mt-3"></Article10>
-        <Article12 class="mt-3"></Article12>
-        <Article13 class="mt-3"></Article13>
-        <Article14 class="mt-3"></Article14>
-        <Article15 class="mt-3"></Article15>
-        <Article16 class="mt-3"></Article16>
-        <Article17 class="mt-3"></Article17>
+        <Article8 id="article-8" class="mt-3"></Article8>
+        <Article9 id="article-9" class="mt-3"></Article9>
+        <Article10 id="article-10" class="mt-3"></Article10>
+        <Article12 id="article-12" class="mt-3"></Article12>
+        <Article13 id="article-13" class="mt-3"></Article13>
+        <Article14 id="article-14" class="mt-3"></Article14>
+        <Article15 id="article-15" class="mt-3"></Article15>
+        <Article16 id="article-16" class="mt-3"></Article16>
+        <Article17 id="article-17" class="mt-3"></Article17>
 
         <div style="text-align: right; padding-right: 15px">
             <span class="text-h6 font-italic">Les Croix</span>

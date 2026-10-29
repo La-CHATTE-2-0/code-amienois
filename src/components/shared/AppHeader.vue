@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import { useTheme } from "vuetify";
-import { computed, ref } from "vue";
+import { useDisplay, useTheme } from "vuetify";
+import { computed, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import pages from "../../core/page";
 
-const drawerState = ref(false);
+// Sur grand écran, le menu reste ouvert à côté du contenu
+const { lgAndUp } = useDisplay();
+const drawerState = ref(lgAndUp.value);
+watch(lgAndUp, (large) => (drawerState.value = large));
 
 const route = useRoute();
 const isHome = computed(() => route.path === pages.code.url);
@@ -24,7 +27,6 @@ function toggleTheme() {
         class="app-header"
         :elevation="2"
         color="header"
-        prominent
         image="/images/cropped-montpellier-etudiant-medecine-faluche-6-790x400.jpg"
     >
         <template v-slot:prepend>
@@ -36,7 +38,7 @@ function toggleTheme() {
         <template v-slot:image>
             <v-img
                 alt=""
-                gradient="to top right, rgba(0,0,0,.9), rgba(0,0,0,.7)"
+                gradient="to top right, rgba(0,0,0,.75), rgba(0,0,0,.45)"
             ></v-img>
         </template>
 
@@ -56,7 +58,11 @@ function toggleTheme() {
         </v-app-bar-title>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawerState" temporary class="app-drawer">
+    <v-navigation-drawer
+        v-model="drawerState"
+        :temporary="!lgAndUp"
+        class="app-drawer"
+    >
         <v-list density="compact" nav>
             <v-list-item
                 prepend-icon="mdi-book-outline"
