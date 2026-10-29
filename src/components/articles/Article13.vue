@@ -5,7 +5,7 @@ import pages from "../../core/page";
 
 <template>
     <article data-fal-article="13">
-        <h2>Article 13:</h2>
+        <h2>Article 13 :</h2>
         <p class="text-justify">
             Dans chaque faculté, école ou ville, il sera procédé à l’élection
             d’un Grand Maître (GM), choisi par les faluchards au vu de ses

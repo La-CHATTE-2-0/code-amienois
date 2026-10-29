@@ -7,6 +7,13 @@ import "../../sass/base/_tables.scss";
         <caption class="d-none">
             Insignes fillières spés Amiens
         </caption>
+        <thead>
+            <tr>
+                <th scope="col">Discipline</th>
+                <th scope="col">Insigne</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>

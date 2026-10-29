@@ -1,6 +1,6 @@
 <template>
     <article data-fal-article="3">
-        <h2>Article 3:</h2>
+        <h2>Article 3 :</h2>
         <p>
             Escholier, il est interdit de faire de la Faluche une
             succursale de Monoprix. Elle doit être le parchemin qui
@@ -11,4 +11,4 @@
             insigne qu’il juge non représentatif de l’étudiant.
         </p>
     </article>
-</template>
+</template>

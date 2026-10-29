@@ -7,7 +7,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
 
 <template>
     <article data-fal-article="7">
-        <h2>Article 7:</h2>
+        <h2>Article 7 :</h2>
         <p>Sur le ruban circulaire doivent figurer :</p>
         <ul >
             <li>Les initiales</li>

@@ -1,6 +1,6 @@
 $height-circu: 40px;
 $max-width-circu: 250px;
-$border-radius-circu: 5px;
+$border-radius-circu: 8px;
 
 $data-fal-circu-infos: (
     "argente": #CCCCCC,
@@ -46,8 +46,12 @@ $data-fal-circu-infos: (
     /// Circu ribbon
     [data-fal-circu-container] {
         height: $height-circu;
+        max-width: $max-width-circu;
 
         border-radius: $border-radius-circu;
+        // Liseré pour que le noir et le blanc restent visibles sur les deux thèmes
+        outline: 1px solid rgba(var(--v-theme-on-surface), 0.14);
+        outline-offset: -1px;
     
         [data-fal-circu] {
             height: $height-circu;

@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import '@mdi/font/css/materialdesignicons.css'
 import './style.css'
+import './sass/base/_tables.scss'
 import { MotionPlugin } from '@vueuse/motion'
 
 // Vuetify
@@ -20,7 +21,32 @@ import MainLayout from './layout/MainLayout.vue'
 const vuetify = createVuetify({
   blueprint: md3,
   theme: {
-    defaultTheme: 'dark'
+    defaultTheme: 'dark',
+    themes: {
+      // Palette inspirée de la faluche : velours noir, bordeaux et fil d'or
+      light: {
+        dark: false,
+        colors: {
+          background: '#F8F5F0',
+          surface: '#FFFFFF',
+          'surface-variant': '#EDE6DE',
+          primary: '#7A1F2B',
+          secondary: '#9A6B16',
+          header: '#3A0F17',
+        },
+      },
+      dark: {
+        dark: true,
+        colors: {
+          background: '#121011',
+          surface: '#1C1819',
+          'surface-variant': '#2B2426',
+          primary: '#E5A0A9',
+          secondary: '#E2B862',
+          header: '#3A0F17',
+        },
+      },
+    },
   }
 })
 

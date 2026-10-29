@@ -6,7 +6,7 @@ import Article8Spe from "./Article8Spe.vue";
 
 <template>
     <article data-fal-article="8">
-        <h2>Article 8:</h2>
+        <h2>Article 8 :</h2>
         <p>Le velours peut comporter:</p>
         <ul>
             <li>

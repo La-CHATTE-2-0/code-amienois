@@ -1,9 +1,50 @@
 $fal-warning-color-dark: 94 70 1;
 $fal-warning-color-light: 255 242 202;
 
-.v-table, 
+.v-table,
 .table-warning-fal {
-    border-radius: 4px;
+    border-radius: 12px;
+}
+
+.main-content .v-table {
+    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+    overflow: hidden;
+
+    th {
+        font-size: 0.75rem !important;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity)) !important;
+        background: rgba(var(--v-theme-on-surface), 0.04);
+    }
+
+    tbody > tr:nth-child(even) > td {
+        background: rgba(var(--v-theme-on-surface), 0.025);
+    }
+
+    tbody > tr:hover > td {
+        background: rgba(var(--v-theme-primary), 0.06);
+    }
+}
+
+// Carte « Spécificités » : la bordure entoure le titre et le tableau ensemble
+.main-content .table-warning-fal {
+    margin-top: 12px;
+    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+    overflow: hidden;
+
+    .table-warning-fal,
+    .v-table {
+        margin-top: 0;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+// Sur la page Code, la carte spé suit le tableau national : pas de second en-tête
+[data-fal-article] .table-warning-fal thead {
+    display: none;
 }
 
 .table-warning-fal {
@@ -35,5 +76,5 @@ $fal-warning-color-light: 255 242 202;
 }
 
 .v-table > .v-table__wrapper > table > tbody > tr > td {
-   font-size: 0.8rem;
+   font-size: 0.875rem;
 }

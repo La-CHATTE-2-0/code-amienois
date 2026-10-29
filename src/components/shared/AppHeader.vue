@@ -23,7 +23,7 @@ function toggleTheme() {
     <v-app-bar
         class="app-header"
         :elevation="2"
-        color="teal-darken-4"
+        color="header"
         prominent
         image="/images/cropped-montpellier-etudiant-medecine-faluche-6-790x400.jpg"
     >

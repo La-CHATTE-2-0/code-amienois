@@ -1,6 +1,6 @@
 <template>
     <article data-fal-article="17">
-        <h2>Article 17:</h2>
+        <h2>Article 17 :</h2>
         <p class="text-justify">
             La Faluche est le parchemin qui s’enorgueillit des expériences de
             son récipiendaire, qui n’est que l’humble ambassadeur de notre
