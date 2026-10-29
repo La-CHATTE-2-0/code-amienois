@@ -840,22 +840,21 @@
   },
   {
     "city": "Valenciennes",
-    "frequency": "Faluche en déclin, prévenir pour qu'il y des gens (anciennement Hebdomadaire - tous les mardis)",
+    "frequency": "Mensuel - troisième mercredi du mois",
     "description": "Contactez L'Avache sur Facebook.",
     "places": [
       {
-        "name": "Le Repère",
+        "name": "Bierspot",
         "latlong": [
-          50.3575912,
-          3.523672
+          50.3602493,
+          3.5225422
         ],
-        "address": "2 Rue de la Halle, 59000 Valenciennes"
+        "address": "25 Place du Hainaut, 59300 Valenciennes"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/1089647231056849",
-    "color": "orange",
     "days": [
-      "mardi"
+      "mercredi"
     ]
   }
 ]

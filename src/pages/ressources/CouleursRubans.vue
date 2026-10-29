@@ -6,7 +6,7 @@
                     loading="lazy"
                     class="w-100"
                     style="max-width: 500px"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Armoiries_Amiens%2C_France_%2880%29.svg/756px-Armoiries_Amiens%2C_France_%2880%29.svg.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Armoiries_Amiens%2C_France_%2880%29.svg/500px-Armoiries_Amiens%2C_France_%2880%29.svg.png"
                     alt="blason d'Amiens"
                 />
 

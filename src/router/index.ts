@@ -2,22 +2,10 @@ import { createWebHistory, createRouter } from "vue-router";
 import pages from "../core/page"
 
 import Code from "../pages/Code.vue";
-import RecapSpe from "../pages/annexes/RecapSpe.vue";
-import Monome from "../pages/annexes/Monome.vue";
-import NotesAuxPMs from "../pages/ressources/NotesAuxPMs.vue";
-import CouleursRubans from "../pages/ressources/CouleursRubans.vue";
-import CheckList from "../pages/ressources/CheckList.vue";
-import HistoriqueCroix from "../pages/HistoriqueCroix.vue";
-import Bacchus from "../pages/annexes/Bacchus.vue";
-import Rabelais from "../pages/annexes/Rabelais.vue";
-import Gambrinus from "../pages/annexes/Gambrinus.vue";
-import GuideCouture from "../pages/ressources/GuideCouture.vue";
-import FolkloresFrancais from "../pages/vie/FolkloresFrancais.vue";
-import FolkloresEtrangers from "../pages/vie/FolkloresEtrangers.vue";
-import Codex from "../pages/Codex.vue";
-import HommeBouee from "../pages/vie/HommeBouee.vue";
-import Aperal from "../pages/vie/Aperals.vue";
 
+const APP_NAME = "Code Amiénois";
+
+// Page d'accueil chargée d'office, les autres à la demande
 const routes = [
     {
         path: pages.code.url,
@@ -28,91 +16,91 @@ const routes = [
     {
         path: pages.recap_spe.url,
         name: pages.recap_spe.name,
-        component: RecapSpe,
+        component: () => import("../pages/annexes/RecapSpe.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.monome.url,
         name: pages.monome.name,
-        component: Monome,
+        component: () => import("../pages/annexes/Monome.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.couleurs_rubans.url,
         name: pages.couleurs_rubans.name,
-        component: CouleursRubans,
+        component: () => import("../pages/ressources/CouleursRubans.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.notes_aux_pm.url,
         name: pages.notes_aux_pm.name,
-        component: NotesAuxPMs,
+        component: () => import("../pages/ressources/NotesAuxPMs.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.checklist.url,
         name: pages.checklist.name,
-        component: CheckList,
+        component: () => import("../pages/ressources/CheckList.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.historique_croix.url,
         name: pages.historique_croix.name,
-        component: HistoriqueCroix,
+        component: () => import("../pages/HistoriqueCroix.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.gambrinus.url,
         name: pages.gambrinus.name,
-        component: Gambrinus,
+        component: () => import("../pages/annexes/Gambrinus.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.bacchus.url,
         name: pages.bacchus.name,
-        component: Bacchus,
-        meta: { layout: "Main" },
-    },
-    {
-        path: pages.rabelais.url,
-        name: pages.rabelais.name,
-        component: Rabelais,
+        component: () => import("../pages/annexes/Bacchus.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.folklore_francais.url,
         name: pages.folklore_francais.name,
-        component: FolkloresFrancais,
+        component: () => import("../pages/vie/FolkloresFrancais.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.folklore_etranger.url,
         name: pages.folklore_etranger.name,
-        component: FolkloresEtrangers,
+        component: () => import("../pages/vie/FolkloresEtrangers.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.guide_couture.url,
         name: pages.guide_couture.name,
-        component: GuideCouture,
+        component: () => import("../pages/ressources/GuideCouture.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.codex.url,
         name: pages.codex.name,
-        component: Codex,
+        component: () => import("../pages/Codex.vue"),
         meta: { layout: "Main" },
     },
     {
         path: pages.homme_bouee.url,
         name: pages.homme_bouee.name,
-        component: HommeBouee,
+        component: () => import("../pages/vie/HommeBouee.vue"),
         meta: { layout: "Main" },
     },
-        {
+    {
         path: pages.aperals.url,
         name: pages.aperals.name,
-        component: Aperal,
+        component: () => import("../pages/vie/Aperals.vue"),
+        meta: { layout: "Main" },
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "Page introuvable",
+        component: () => import("../pages/NotFound.vue"),
         meta: { layout: "Main" },
     },
 ];
@@ -120,11 +108,16 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    scrollBehavior(to, _from, savedPosition) {
+        if (savedPosition) return savedPosition;
+        if (to.hash) return { el: to.hash, top: 72, behavior: "smooth" };
+        return { top: 0 };
+    },
 });
 
-router.beforeEach((to, _from, next) => {
-    document.title = (to.name as string);
-    next();
+router.afterEach((to) => {
+    const name = to.name as string;
+    document.title = to.path === pages.code.url ? APP_NAME : `${name} · ${APP_NAME}`;
 });
 
 export default router;
