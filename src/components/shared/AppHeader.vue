@@ -14,12 +14,18 @@ const isHome = computed(() => route.path === pages.code.url);
 
 const theme = useTheme();
 
-function toggleTheme() {
-    const newTheme = theme.global.current.value.dark ? "light" : "dark";
+// "system" suit le réglage clair/sombre de l'appareil (géré par Vuetify)
+const themeModes = [
+    { value: "system", label: "Auto", icon: "mdi-theme-light-dark" },
+    { value: "light", label: "Clair", icon: "mdi-white-balance-sunny" },
+    { value: "dark", label: "Sombre", icon: "mdi-weather-night" },
+];
+const themeMode = ref(localStorage.getItem("theme") ?? "system");
 
-    localStorage.setItem("theme", newTheme);
-    theme.change(newTheme);
-}
+watch(themeMode, (mode) => {
+    localStorage.setItem("theme", mode);
+    theme.change(mode);
+});
 </script>
 
 <template>
@@ -187,14 +193,27 @@ function toggleTheme() {
 
         <template v-slot:append>
             <v-divider></v-divider>
-            <v-switch
-                v-on:click="toggleTheme"
-                class="ml-4"
-                color="primary"
-                label="Mode sombre"
-                inset
-                :model-value="theme.global.current.value.dark"
-            ></v-switch>
+            <div class="app-drawer__theme">
+                <span class="text-caption text-medium-emphasis">Thème</span>
+                <v-btn-toggle
+                    v-model="themeMode"
+                    mandatory
+                    divided
+                    density="compact"
+                    variant="outlined"
+                    class="app-drawer__theme-toggle"
+                >
+                    <v-btn
+                        v-for="mode in themeModes"
+                        :key="mode.value"
+                        :value="mode.value"
+                        :prepend-icon="mode.icon"
+                        size="small"
+                    >
+                        {{ mode.label }}
+                    </v-btn>
+                </v-btn-toggle>
+            </div>
         </template>
     </v-navigation-drawer>
 </template>
@@ -212,6 +231,24 @@ function toggleTheme() {
 
 .app-header__page {
     font-weight: 600;
+}
+
+.app-drawer__theme {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 16px 16px;
+}
+
+.app-drawer__theme-toggle {
+    width: 100%;
+}
+
+.app-drawer__theme-toggle .v-btn {
+    flex: 1 1 0;
+    padding-inline: 4px;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 @media (min-width: 600px) {

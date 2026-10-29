@@ -30,6 +30,17 @@
     border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
 }
 
+/* Cartes sans ombre : même contour que les tableaux pour les détacher du fond */
+.main-content .v-card--variant-flat {
+    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+    border-radius: 12px;
+}
+
+/* Le sommaire a déjà sa bordure basse : pas de second séparateur */
+.article-toc + [data-fal-article] {
+    border-top: none;
+}
+
 [data-fal-article] > h2 {
     margin-bottom: 0.75rem;
 }

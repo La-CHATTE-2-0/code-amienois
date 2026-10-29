@@ -17,10 +17,10 @@ onMounted(() => {
     const darkmode = localStorage.getItem("theme");
 
     if (darkmode == null) {
-        localStorage.setItem("theme", "dark");
+        localStorage.setItem("theme", "system");
     }
 
-    theme.change(darkmode ?? "dark");
+    theme.change(darkmode ?? "system");
 });
 
 /*

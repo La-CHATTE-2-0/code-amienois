@@ -9,16 +9,21 @@ const active = ref<string>();
 const track = ref<HTMLElement>();
 let observer: IntersectionObserver | undefined;
 
+// Article actif = le dernier dont le haut est passé sous l'en-tête et le sommaire.
+// Calculé sur les positions réelles pour rester juste après un grand saut de défilement.
+function updateActive() {
+    let current = props.articles[0]?.id;
+    for (const article of props.articles) {
+        const el = document.getElementById(article.id);
+        if (el && el.getBoundingClientRect().top <= 140) current = article.id;
+    }
+    active.value = current;
+}
+
 onMounted(() => {
-    // Article actif = celui qui occupe le haut de l'écran, sous l'en-tête et le sommaire
-    observer = new IntersectionObserver(
-        (entries) => {
-            for (const entry of entries) {
-                if (entry.isIntersecting) active.value = entry.target.id;
-            }
-        },
-        { rootMargin: "-130px 0px -60% 0px" }
-    );
+    observer = new IntersectionObserver(updateActive, {
+        rootMargin: "-130px 0px -60% 0px",
+    });
 
     for (const article of props.articles) {
         const el = document.getElementById(article.id);

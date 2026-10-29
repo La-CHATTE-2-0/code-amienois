@@ -21,7 +21,7 @@ import MainLayout from './layout/MainLayout.vue'
 const vuetify = createVuetify({
   blueprint: md3,
   theme: {
-    defaultTheme: 'dark',
+    defaultTheme: 'system',
     themes: {
       // Palette inspirée de la faluche : velours noir, bordeaux et fil d'or
       light: {
