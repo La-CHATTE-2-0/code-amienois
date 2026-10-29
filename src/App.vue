@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import { useTheme } from "vuetify";
 import { RouterView, useRoute } from "vue-router";
-import { computed, onMounted } from "vue";
+import { computed, onMounted, watchEffect } from "vue";
 
 const theme = useTheme();
 const route = useRoute();
+
+// Barres de défilement et contrôles natifs alignés sur le thème courant
+watchEffect(() => {
+    document.documentElement.style.colorScheme = theme.global.current.value.dark
+        ? "dark"
+        : "light";
+});
 
 onMounted(() => {
     const darkmode = localStorage.getItem("theme");

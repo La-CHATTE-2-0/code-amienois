@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import { useTheme } from "vuetify";
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import { useRoute } from "vue-router";
 import pages from "../../core/page";
 
 const drawerState = ref(false);
+
+const route = useRoute();
+const isHome = computed(() => route.path === pages.code.url);
 
 const theme = useTheme();
 
@@ -36,7 +40,20 @@ function toggleTheme() {
             ></v-img>
         </template>
 
-        <v-app-bar-title v-motion :initial="{ opacity: 0, x: -16 }" :enter="{ opacity: 1, x: 0, transition: { duration: 450 } }">Code Amiénois</v-app-bar-title>
+        <v-app-bar-title v-motion :initial="{ opacity: 0, x: -16 }" :enter="{ opacity: 1, x: 0, transition: { duration: 450 } }">
+            <!-- Sur mobile, seul le nom de la page courante est affiché -->
+            <router-link
+                :to="pages.code.url"
+                class="app-header__brand"
+                :class="{ 'd-none d-sm-inline': !isHome }"
+            >
+                Code Amiénois
+            </router-link>
+            <template v-if="!isHome">
+                <span class="app-header__separator d-none d-sm-inline">/</span>
+                <span class="app-header__page">{{ route.name }}</span>
+            </template>
+        </v-app-bar-title>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawerState" temporary class="app-drawer">
@@ -168,10 +185,33 @@ function toggleTheme() {
                 v-on:click="toggleTheme"
                 class="ml-4"
                 color="primary"
-                label="Mode Sombre"
+                label="Mode sombre"
                 inset
                 :model-value="theme.global.current.value.dark"
             ></v-switch>
         </template>
     </v-navigation-drawer>
 </template>
+
+<style scoped>
+.app-header__brand {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app-header__separator {
+    margin: 0 8px;
+    opacity: 0.5;
+}
+
+.app-header__page {
+    font-weight: 600;
+}
+
+@media (min-width: 600px) {
+    .app-header__page {
+        font-weight: 400;
+        opacity: 0.85;
+    }
+}
+</style>

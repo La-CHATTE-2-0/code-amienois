@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <article data-fal-article>
-            <h1>A propos du parrain et de la marraine</h1>
+            <h1>À propos du parrain et de la marraine</h1>
             <p class="text-justify">
                 Le parrain ou la marraine est responsable de l’état de son
                 filleul avant, pendant et après le baptême (état de santé et

@@ -24,7 +24,7 @@ const pages = {
         url: '/couleurs-des-rubans'
     },
     historique_croix: {
-        name: 'Histoirque des GM',
+        name: 'Historique des GM',
         url: '/historique-croix'
     },
     rabelais: {
