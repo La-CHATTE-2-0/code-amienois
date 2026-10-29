@@ -94,6 +94,16 @@ main {
     margin: 0 auto;
 }
 
+/*
+ * Sur grand écran, le contenu peut s'élargir un peu.
+ * --v-layout-left : place réservée au menu fixe, à ne pas prendre sur le contenu.
+ */
+@media (min-width: 1280px) {
+    .main-content {
+        width: min(100% - 4rem, 1100px + var(--v-layout-left, 0px));
+    }
+}
+
 .main-content .v-container {
     max-width: 100%;
     min-width: 0;

@@ -154,7 +154,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
             <template v-slot:actions>
                 <v-btn
                     append-icon="mdi-chevron-right"
-                    color="red-lighten-2"
+                    color="primary"
                     text="En savoir plus"
                     variant="outlined"
                     block
@@ -183,7 +183,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
             <template v-slot:actions>
                 <v-btn
                     append-icon="mdi-chevron-right"
-                    color="red-lighten-2"
+                    color="primary"
                     text="Linktree"
                     variant="outlined"
                     href="https://linktr.ee/lachatte2.0"
