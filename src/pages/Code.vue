@@ -42,15 +42,16 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
         <Article5 id="article-5" class="mt-3"></Article5>
         <Article6 id="article-6" class="mt-3"></Article6>
         <Article7 id="article-7" class="mt-3"></Article7>
-        <div class="my-2" style="text-align: center">
+        <figure class="code-figure my-2">
             <img
-                style="width: 100%; max-height: 350px; max-width: 650px"
                 loading="lazy"
                 alt="Exemple circulaire"
                 src="/images/circu/circu.png"
             />
-            <p class="fw-light text-center">Exemple de circulaire</p>
-        </div>
+            <figcaption class="text-medium-emphasis">
+                Exemple de circulaire
+            </figcaption>
+        </figure>
         <Article8 id="article-8" class="mt-3"></Article8>
         <Article9 id="article-9" class="mt-3"></Article9>
         <Article10 id="article-10" class="mt-3"></Article10>
@@ -61,9 +62,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
         <Article16 id="article-16" class="mt-3"></Article16>
         <Article17 id="article-17" class="mt-3"></Article17>
 
-        <div style="text-align: right; padding-right: 15px">
-            <span class="text-h6 font-italic">Les Croix</span>
-        </div>
+        <p class="code-signature text-h6 font-italic">Les Croix</p>
 
         <PartiesFal class="my-8" />
 
@@ -194,3 +193,20 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
         </v-card>
     </v-container>
 </template>
+
+<style scoped>
+.code-figure {
+    text-align: center;
+}
+
+.code-figure img {
+    width: 100%;
+    max-width: 650px;
+    max-height: 350px;
+}
+
+.code-signature {
+    text-align: right;
+    padding-right: 15px;
+}
+</style>

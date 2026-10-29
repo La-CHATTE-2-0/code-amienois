@@ -36,9 +36,17 @@
     border-radius: 12px;
 }
 
-/* Le sommaire a déjà sa bordure basse : pas de second séparateur */
+/*
+ * Pas de séparateur en tête de page, ni sous le sommaire
+ * (il a déjà sa bordure basse)
+ */
+.v-container > [data-fal-article]:first-child,
 .article-toc + [data-fal-article] {
     border-top: none;
+}
+
+.v-container > [data-fal-article]:first-child {
+    padding-top: 0;
 }
 
 [data-fal-article] > h2 {
@@ -96,45 +104,27 @@ main {
     overflow-x: auto;
 }
 
-.main-content > * {
-    animation: content-rise 500ms cubic-bezier(0.22, 1, 0.36, 1) both;
+/*
+ * Apparition des blocs au moment où ils entrent à l'écran (animation liée au défilement).
+ * Sans support navigateur, le contenu s'affiche directement.
+ */
+@media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+        .main-content .v-container > :not(.article-toc) {
+            animation: reveal linear both;
+            animation-timeline: view();
+            animation-range: entry 0% entry 25%;
+        }
+    }
 }
 
-/* Reveal page sections progressively instead of showing everything at once. */
-.main-content .v-container > *,
-.main-content .v-container > .v-row > .v-col,
-.main-content .v-container .v-card,
-.main-content .v-container .v-expansion-panels,
-.main-content .v-container .v-table {
-    animation: reveal-spring 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+/* Seules les cartes se soulèvent au survol, les tableaux et panneaux restent fixes */
+.main-content .v-card {
+    transition: transform 260ms ease;
 }
 
-.main-content .v-container > :nth-child(1) { animation-delay: 60ms; }
-.main-content .v-container > :nth-child(2) { animation-delay: 130ms; }
-.main-content .v-container > :nth-child(3) { animation-delay: 200ms; }
-.main-content .v-container > :nth-child(4) { animation-delay: 270ms; }
-.main-content .v-container > :nth-child(5) { animation-delay: 340ms; }
-.main-content .v-container > :nth-child(6) { animation-delay: 410ms; }
-
-.main-content .v-card,
-.main-content .v-expansion-panels,
-.main-content .v-table {
-    transition: transform 260ms ease, box-shadow 260ms ease;
-}
-
-.main-content .v-card:hover,
-.main-content .v-expansion-panels:hover,
-.main-content .v-table:hover {
-    transform: translateY(-3px);
-}
-
-.main-content .v-img {
-    transition: transform 650ms cubic-bezier(0.16, 1, 0.3, 1), filter 650ms ease;
-}
-
-.main-content .v-card:hover .v-img {
-    transform: scale(1.025);
-    filter: saturate(1.08);
+.main-content .v-card:hover {
+    transform: translateY(-2px);
 }
 
 .app-footer {
@@ -178,27 +168,9 @@ main {
     transform: translateY(-8px);
 }
 
-@keyframes content-rise {
-    from { opacity: 0; transform: translateY(10px); }
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes reveal-spring {
-    from {
-        opacity: 0;
-        transform: translateY(22px) scale(0.985);
-        filter: blur(4px);
-    }
-    65% {
-        opacity: 1;
-        transform: translateY(-2px) scale(1.002);
-        filter: blur(0);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-        filter: blur(0);
-    }
 }
 
 @media (max-width: 600px) {
