@@ -5,7 +5,7 @@ import pages from "../../core/page";
 
 <template>
     <article data-fal-article="10">
-        <h2>Article 10:</h2>
+        <h2>Article 10 :</h2>
         <div>
             Sur le velours figurent les rubans supérieurs. De gauche à droite :
             <ol type="1" class="ml-4">

@@ -5,7 +5,7 @@ import "../../sass/base/_tables.scss";
 
 <template>
     <div data-fal-article="12">
-        <h2>Article 69 (12):</h2>
+        <h2>Article 69 (12) :</h2>
         <p class="text-justify">
             Tout étudiant ayant, au cours de sortie, repas, ou soirée, tiré un
             coup en bonne et due forme, devra mettre à l’intérieur de sa Faluche

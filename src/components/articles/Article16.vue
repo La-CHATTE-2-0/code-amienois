@@ -1,6 +1,6 @@
 <template>
     <article data-fal-article="16">
-        <h2>Article 16:</h2>
+        <h2>Article 16 :</h2>
         <p class="text-justify">
             Toute personne demandant à voir le potager particulier (intérieur de
             la Faluche) d’un(e) faluchard(e), devra comme il se doit, en passer

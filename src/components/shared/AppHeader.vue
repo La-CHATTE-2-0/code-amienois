@@ -1,30 +1,38 @@
 <script setup lang="ts">
-import { useTheme } from "vuetify";
-import { computed, ref } from "vue";
+import { useDisplay, useTheme } from "vuetify";
+import { computed, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import pages from "../../core/page";
 
-const drawerState = ref(false);
+// Sur grand écran, le menu reste ouvert à côté du contenu
+const { lgAndUp } = useDisplay();
+const drawerState = ref(lgAndUp.value);
+watch(lgAndUp, (large) => (drawerState.value = large));
 
 const route = useRoute();
 const isHome = computed(() => route.path === pages.code.url);
 
 const theme = useTheme();
 
-function toggleTheme() {
-    const newTheme = theme.global.current.value.dark ? "light" : "dark";
+// "system" suit le réglage clair/sombre de l'appareil (géré par Vuetify)
+const themeModes = [
+    { value: "system", label: "Auto", icon: "mdi-theme-light-dark" },
+    { value: "light", label: "Clair", icon: "mdi-white-balance-sunny" },
+    { value: "dark", label: "Sombre", icon: "mdi-weather-night" },
+];
+const themeMode = ref(localStorage.getItem("theme") ?? "system");
 
-    localStorage.setItem("theme", newTheme);
-    theme.change(newTheme);
-}
+watch(themeMode, (mode) => {
+    localStorage.setItem("theme", mode);
+    theme.change(mode);
+});
 </script>
 
 <template>
     <v-app-bar
         class="app-header"
         :elevation="2"
-        color="teal-darken-4"
-        prominent
+        color="header"
         image="/images/cropped-montpellier-etudiant-medecine-faluche-6-790x400.jpg"
     >
         <template v-slot:prepend>
@@ -36,7 +44,7 @@ function toggleTheme() {
         <template v-slot:image>
             <v-img
                 alt=""
-                gradient="to top right, rgba(0,0,0,.9), rgba(0,0,0,.7)"
+                gradient="to top right, rgba(0,0,0,.75), rgba(0,0,0,.45)"
             ></v-img>
         </template>
 
@@ -56,7 +64,11 @@ function toggleTheme() {
         </v-app-bar-title>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawerState" temporary class="app-drawer">
+    <v-navigation-drawer
+        v-model="drawerState"
+        :temporary="!lgAndUp"
+        class="app-drawer"
+    >
         <v-list density="compact" nav>
             <v-list-item
                 prepend-icon="mdi-book-outline"
@@ -181,14 +193,27 @@ function toggleTheme() {
 
         <template v-slot:append>
             <v-divider></v-divider>
-            <v-switch
-                v-on:click="toggleTheme"
-                class="ml-4"
-                color="primary"
-                label="Mode sombre"
-                inset
-                :model-value="theme.global.current.value.dark"
-            ></v-switch>
+            <div class="app-drawer__theme">
+                <span class="text-caption text-medium-emphasis">Thème</span>
+                <v-btn-toggle
+                    v-model="themeMode"
+                    mandatory
+                    divided
+                    density="compact"
+                    variant="outlined"
+                    class="app-drawer__theme-toggle"
+                >
+                    <v-btn
+                        v-for="mode in themeModes"
+                        :key="mode.value"
+                        :value="mode.value"
+                        :prepend-icon="mode.icon"
+                        size="small"
+                    >
+                        {{ mode.label }}
+                    </v-btn>
+                </v-btn-toggle>
+            </div>
         </template>
     </v-navigation-drawer>
 </template>
@@ -206,6 +231,24 @@ function toggleTheme() {
 
 .app-header__page {
     font-weight: 600;
+}
+
+.app-drawer__theme {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 16px 16px;
+}
+
+.app-drawer__theme-toggle {
+    width: 100%;
+}
+
+.app-drawer__theme-toggle .v-btn {
+    flex: 1 1 0;
+    padding-inline: 4px;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 @media (min-width: 600px) {

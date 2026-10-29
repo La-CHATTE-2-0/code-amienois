@@ -5,7 +5,7 @@ import Article6Spe from "./Article6Spe.vue";
 
 <template>
     <article data-fal-article="6">
-        <h2>Article 6:</h2>
+        <h2>Article 6 :</h2>
         <p class="text-justify">
             Le ruban circulaire est à la couleur de la discipline principale.
             Pour les disciplines secondaires (double cursus), on placera, sur le

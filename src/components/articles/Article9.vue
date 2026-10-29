@@ -4,7 +4,7 @@ import "../../sass/base/_insignes.scss";
 
 <template>
     <article data-fal-article="9">
-        <h2>Article 9:</h2>
+        <h2>Article 9 :</h2>
         <div class="fal-2-col">
             <p class="text-justify">
                 Lors d’une garde assurée par un étudiant en santé, tout passage

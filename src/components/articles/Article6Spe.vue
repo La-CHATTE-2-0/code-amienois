@@ -8,6 +8,16 @@ import "../../sass/base/_tables.scss";
             <caption class="d-none">
                 Couleurs circulaires spé Amiens
             </caption>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <strong>Discipline</strong>
+                    </th>
+                    <th scope="col" colspan="2">
+                        <strong>Circulaire</strong>
+                    </th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
                     <td data-filliere>
