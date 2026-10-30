@@ -75,7 +75,8 @@ withDefaults(
     font-size: 1.5rem;
 }
 
-:slotted(h3) {
+/* Le contenu passé en slot est stylé via :deep (:slotted n'est pas reconnu par Sonar) */
+.folklore-fiche > :deep(h3:not(.folklore-titre)) {
     margin-top: 1.5rem;
     font-size: 1.0625rem;
     font-weight: 600;
@@ -83,7 +84,7 @@ withDefaults(
 
 /* Images : même arrondi que les cadres, liseré pour le mode sombre */
 .folklore-image,
-:slotted(.folklore-figure) img {
+.folklore-fiche :deep(.folklore-figure img) {
     display: block;
     width: 100%;
     height: auto;
@@ -92,8 +93,7 @@ withDefaults(
     outline-offset: -1px;
 }
 
-figcaption,
-:slotted(.folklore-figure) figcaption {
+.folklore-fiche :deep(figcaption) {
     margin-top: 6px;
     font-size: 0.8125rem;
     font-style: italic;
@@ -118,8 +118,7 @@ figcaption,
 }
 
 /* Même cadre que l'encadré « En bref » de Gambrinus */
-.folklore-cadre,
-:slotted(.folklore-cadre) {
+.folklore-fiche :deep(.folklore-cadre) {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -127,33 +126,30 @@ figcaption,
     border-radius: 12px;
 }
 
-.folklore-cadre > * + *,
-:slotted(.folklore-cadre) > * + * {
+.folklore-fiche :deep(.folklore-cadre > * + *) {
     border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
 }
 
-.folklore-list > div,
-:slotted(.folklore-list) > div {
+.folklore-fiche :deep(.folklore-list > div) {
     padding: 12px 16px;
 }
 
-.folklore-list dt,
-:slotted(.folklore-list) dt {
+.folklore-fiche :deep(.folklore-list dt) {
     font-size: 0.8125rem;
     font-weight: 600;
     color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
 }
 
-.folklore-list dd,
-:slotted(.folklore-list) dd {
+.folklore-fiche :deep(.folklore-list dd) {
     margin: 0;
 }
 
-:slotted(.folklore-list) {
+/* Cadres du récit, hors encadré « En bref » */
+.folklore-fiche > :deep(.folklore-cadre) {
     margin-top: 1rem;
 }
 
-:slotted(.folklore-video) {
+.folklore-fiche > :deep(.folklore-video) {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -163,16 +159,16 @@ figcaption,
 }
 
 /* Récit */
-:slotted(p) {
+.folklore-fiche > :deep(p) {
     margin-top: 0.75rem;
 }
 
-:slotted(.folklore-figure) {
+.folklore-fiche > :deep(.folklore-figure) {
     max-width: 480px;
     margin: 1.25rem auto 0;
 }
 
-:slotted(.v-alert) {
+.folklore-fiche > :deep(.v-alert) {
     margin-top: 1rem;
 }
 </style>
