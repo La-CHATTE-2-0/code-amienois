@@ -308,6 +308,7 @@ function backToThemes() {
     float: right;
     margin-left: 12px;
     object-fit: contain;
+    border-radius: 5px;
 }
 
 .quiz-missed__question {

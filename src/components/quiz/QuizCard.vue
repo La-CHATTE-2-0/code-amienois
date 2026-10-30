@@ -72,6 +72,7 @@ function stateOf(choice: string) {
     display: block;
     margin: 0 auto 12px;
     object-fit: contain;
+    border-radius: 5px;
 }
 
 .quiz-card__question {
