@@ -47,78 +47,46 @@ const enBref = [
             </div>
 
             <h2 class="mt-8">La légende</h2>
-            <ol class="gambrinus-cadre gambrinus-etapes">
-                <li>
-                    <span class="gambrinus-num" aria-hidden="true">1</span>
-                    <div>
-                        <h3>Le carillonneur éconduit</h3>
-                        <p>
-                            Gambrinus est amoureux de Flandrine, la fille de son
-                            maître verrier, mais elle ne l’aime pas. Il se met à
-                            trembler au point de ne plus pouvoir jouer, et les
-                            habitants de Fresnes, après l’avoir insulté et roué
-                            de coups, le jettent en prison pour tapage nocturne.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="gambrinus-num" aria-hidden="true">2</span>
-                    <div>
-                        <h3>Le pacte avec le diable</h3>
-                        <p>
-                            Libéré un mois plus tard, il veut en finir. Le diable
-                            lui propose alors d’oublier Flandrine en échange de
-                            son âme, qu’il viendra chercher trente ans plus tard.
-                            Gambrinus accepte et s’enrichit aux jeux d’argent…
-                            sans parvenir à oublier la fille du verrier.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="gambrinus-num" aria-hidden="true">3</span>
-                    <div>
-                        <h3>Le houblon et le carillon</h3>
-                        <p>
-                            Le diable revient avec des graines de houblon et lui
-                            apprend à fabriquer un carillon auquel nul ne résiste.
-                            Gambrinus convie tout Fresnes à une fête : la bière
-                            paraît bien amère, mais au son du carillon chacun
-                            danse jusqu’à l’épuisement. Assoiffés, les habitants
-                            se jettent sur la bière et découvrent que plus on en
-                            boit, plus elle est douce.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="gambrinus-num" aria-hidden="true">4</span>
-                    <div>
-                        <h3>Le roi de la bière</h3>
-                        <p>
-                            La boisson se fait connaître au-delà des frontières.
-                            Le roi des Flandres le nomme duc, comte et seigneur,
-                            mais Gambrinus préfère le titre que lui ont donné les
-                            habitants : « Roi de la bière ». Quand Flandrine se
-                            décide enfin à lui parler, il ne la reconnaît pas et
-                            lui offre à boire… il l’a oubliée.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="gambrinus-num" aria-hidden="true">5</span>
-                    <div>
-                        <h3>Le diable berné</h3>
-                        <p>
-                            Trente ans plus tard, le diable revient chercher son
-                            dû. Gambrinus joue du carillon jusqu’à ce que le
-                            diable, n’y tenant plus, disparaisse sans demander
-                            son reste. Il vit encore cent ans heureux, entre
-                            bière et carillon. À sa mort, on ne retrouve à sa
-                            place qu’un tonneau de bière : c’est pourquoi il n’a
-                            pas de tombe.
-                        </p>
-                    </div>
-                </li>
-            </ol>
+            <p>
+                Gambrinus habitait à Fresnes-sur-Escaut, une petite ville des
+                Flandres françaises, où il exerçait le métier de carillonneur. Il
+                était amoureux de Flandrine, la fille de son maître, qui était
+                verrier ; mais Flandrine n’était pas amoureuse de lui. Il se mit à
+                trembler, au point de ne plus pouvoir jouer, et les habitants de
+                Fresnes le mirent en prison pour tapage nocturne après l’avoir
+                insulté et roué de coups. Quand il fut libéré un mois plus tard, il
+                voulut se suicider, mais le diable lui proposa d’oublier Flandrine
+                en échange de son âme, qu’il viendrait chercher trente ans plus
+                tard. Gambrinus accepta le pacte. Il s’enrichit par des jeux
+                d’argent, mais il n’avait toujours pas oublié la fille du verrier.
+            </p>
+            <p>
+                Il rencontra de nouveau le diable, qui lui donna des graines pour
+                planter du houblon et lui montra comment fabriquer un carillon
+                auquel nul ne pourrait résister. Gambrinus organisa alors une fête
+                où tous étaient conviés. Les habitants de Fresnes trouvèrent la
+                bière fort amère. Gambrinus commença alors à jouer du carillon et
+                tout le monde dansa jusqu’à épuisement. La vengeance de Gambrinus
+                était accomplie. Mais les habitants se précipitèrent sur la bière
+                pour se rafraîchir et se rendirent compte que plus on en buvait,
+                plus elle était douce.
+            </p>
+            <p>
+                La boisson se fit connaître au-delà des frontières du pays et le roi
+                des Flandres, pour récompenser Gambrinus de ce succès, le nomma duc,
+                comte et seigneur. Mais il préféra le titre de « Roi de la bière »
+                que lui avaient donné les habitants de Fresnes. Peu de temps après,
+                Flandrine se décida à lui parler, mais il ne l’avait pas reconnue et
+                lui offrit à boire… il l’avait oubliée.
+            </p>
+            <p>
+                Lorsque les trente années furent passées et que le diable revint,
+                Gambrinus joua du carillon jusqu’à ce que le diable trouve cela
+                insupportable et disparaisse sans demander son reste. Gambrinus
+                vécut heureux cent ans encore, tout en continuant à boire de la
+                bière et à jouer du carillon. Lorsqu’il mourut, on retrouva à sa
+                place un tonneau de bière : c’est pourquoi il n’a pas de tombe.
+            </p>
 
             <v-alert
                 class="gambrinus-alert"
@@ -216,38 +184,9 @@ const enBref = [
     margin: 0;
 }
 
-.gambrinus-etapes {
+/* Récit de la légende */
+h2 ~ p {
     margin-top: 0.75rem;
-    list-style: none;
-}
-
-.gambrinus-etapes li {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    padding: 12px 16px;
-}
-
-.gambrinus-etapes h3 {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.gambrinus-etapes p {
-    margin-top: 0.25rem;
-}
-
-/* Numéro dans un cercle, comme les commandements des Notes aux PMs */
-.gambrinus-num {
-    flex: none;
-    display: inline-grid;
-    place-items: center;
-    width: 28px;
-    height: 28px;
-    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
-    border-radius: 50%;
-    font-size: 0.875rem;
-    font-weight: 600;
 }
 
 .gambrinus-alert {
