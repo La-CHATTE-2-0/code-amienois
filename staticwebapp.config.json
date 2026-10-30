@@ -13,6 +13,10 @@
             "rewrite": "/notes-aux-pms/index.html"
         },
         {
+            "route": "/revisions",
+            "rewrite": "/revisions/index.html"
+        },
+        {
             "route": "/checklist-congres",
             "rewrite": "/checklist-congres/index.html"
         },
