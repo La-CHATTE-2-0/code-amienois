@@ -195,7 +195,21 @@ main {
     /* Le texte justifié crée des trous sur les colonnes étroites */
     .main-content .text-justify {
         text-align: left !important;
-        hyphens: auto;
+    }
+
+    /*
+     * Tableaux sur téléphone : marges de cellule réduites pour que les trois
+     * colonnes tiennent sans défilement horizontal ni mots coupés.
+     */
+    .main-content .v-table > .v-table__wrapper > table > tbody > tr > td,
+    .main-content .v-table > .v-table__wrapper > table > thead > tr > th {
+        padding-inline: 8px;
+    }
+
+    /* Les insignes rétrécissent avec leur colonne mais restent entiers */
+    .main-content [data-fal-insigne] img {
+        max-width: 100%;
+        object-fit: contain;
     }
 
     /* Keep the table layout on phones while preventing page overflow. */
