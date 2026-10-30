@@ -5,6 +5,8 @@ export interface FolkloreImage {
     width?: number;
     height?: number;
     legende?: string;
+    // Image sur fond transparent : ni arrondi ni liseré
+    detouree?: boolean;
 }
 
 withDefaults(
@@ -28,6 +30,7 @@ withDefaults(
             <figure class="folklore-figure-principale">
                 <img
                     class="folklore-image"
+                    :class="{ 'folklore-image--detouree': image.detouree }"
                     :src="image.src"
                     :alt="image.alt"
                     :width="image.width"
@@ -91,6 +94,12 @@ withDefaults(
     border-radius: 12px;
     outline: 1px solid rgba(var(--v-theme-on-surface), 0.14);
     outline-offset: -1px;
+}
+
+/* Image détourée sur fond transparent : ni arrondi ni liseré */
+.folklore-fiche :deep(img.folklore-image--detouree) {
+    border-radius: 0;
+    outline: none;
 }
 
 .folklore-fiche :deep(figcaption) {

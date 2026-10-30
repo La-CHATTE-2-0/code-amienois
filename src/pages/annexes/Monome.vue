@@ -35,6 +35,7 @@
 
             <div class="mb-4 fal-img text-center">
                 <img
+                    class="fal-img--detouree"
                     alt="Faluche Marie-Sans-Chemise"
                     loading="lazy"
                     style="max-width: 500px"
@@ -74,20 +75,34 @@
 </template>
 
 <style>
+/* Photos : même arrondi que les autres pages, liseré pour le mode sombre */
+.fal-img,
+.fal-img-flyer {
+    img {
+        border-radius: 12px;
+        outline: 1px solid rgba(var(--v-theme-on-surface), 0.14);
+        outline-offset: -1px;
+    }
+}
+
 .fal-img {
     img {
         width: 100%;
         max-width: 100%;
-        border-radius: 5px;
     }
 }
 
 .fal-img-flyer {
     text-align: center;
     img {
-        border-radius: 5px;
         width: 100%;
         max-width: 500px;
     }
+}
+
+/* Image détourée sur fond transparent : ni arrondi ni liseré */
+.fal-img img.fal-img--detouree {
+    border-radius: 0;
+    outline: none;
 }
 </style>

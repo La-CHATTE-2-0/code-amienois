@@ -40,6 +40,7 @@ const enBref = [
 
         <figure class="folklore-figure">
             <img
+                class="folklore-image--detouree"
                 src="/images/folklores/calotte.png"
                 alt="Calotte vue de face, avec son ruban et ses insignes"
                 width="500"

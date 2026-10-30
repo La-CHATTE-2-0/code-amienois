@@ -111,7 +111,7 @@
                 </p>
                 <div style="text-align: center" class="mr-4">
                     <img
-                        style="max-width: 300px; width: 100%"
+                        style="max-width: 300px; width: 100%; border-radius: 5px"
                         src="/images/insigne/eveque.png"
                         alt="Ruban d'êveque"
                         loading="lazy"

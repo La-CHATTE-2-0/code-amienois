@@ -37,6 +37,7 @@ const enBref = [
 
         <figure class="folklore-figure">
             <img
+                class="folklore-image--detouree"
                 src="/images/folklores/Penne_CM.png"
                 alt="Penne vue de profil, avec sa longue visière"
                 width="728"
