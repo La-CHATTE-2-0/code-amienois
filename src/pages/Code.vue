@@ -196,13 +196,15 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
 
 <style scoped>
 .code-figure {
+    margin-inline: 0;
     text-align: center;
 }
 
 .code-figure img {
+    display: block;
     width: 100%;
-    max-width: 650px;
-    max-height: 350px;
+    height: auto;
+    border-radius: 12px;
 }
 
 .code-signature {
