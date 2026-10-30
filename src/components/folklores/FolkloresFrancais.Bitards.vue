@@ -119,7 +119,7 @@
                     célébré lors de réunions secrètes et nocturnes.
                 </p>
 
-                <v-img
+                <v-img alt="Membres de l'ordre du bitard"
                     src="/images/folklores/800x600_217321.jpg"
                     class="my-5"
                 >

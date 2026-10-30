@@ -100,6 +100,11 @@ watch(active, (id) => {
     background: rgba(var(--v-theme-on-background), 0.06);
 }
 
+.article-toc__item:focus-visible {
+    outline: 2px solid rgb(var(--v-theme-primary));
+    outline-offset: 2px;
+}
+
 .article-toc__item.is-active {
     background: rgb(var(--v-theme-on-background));
     border-color: rgb(var(--v-theme-on-background));

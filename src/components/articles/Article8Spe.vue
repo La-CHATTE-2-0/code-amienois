@@ -4,7 +4,7 @@
             <h3>Les symboles</h3>
         </div>
         <v-table class="table align-middle" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Spé Insignes : Les symboles
             </caption>
             <thead>
@@ -344,7 +344,7 @@
             <h3>Les insignes décernés par le/la partenaire</h3>
         </div>
         <v-table class="table align-middle" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Spé Insignes : Les insignes décernés par le/la partenaire
             </caption>
             <thead>
@@ -381,7 +381,7 @@
             <h3>Les insignes décernés par un Grand-Maître</h3>
         </div>
         <v-table class="table align-middle" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Spé Insignes : Les insignes décernés par un Grand-Maître
             </caption>
             <thead>

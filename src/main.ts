@@ -30,7 +30,9 @@ const vuetify = createVuetify({
           background: '#FFFFFF',
           surface: '#FFFFFF',
           'surface-variant': '#EEEEEE',
-          primary: '#E57373',
+          // Rouge un ton plus soutenu que le thème sombre : #E57373 sur blanc
+          // n'atteint que 3:1, sous le seuil de lisibilité (4.5:1)
+          primary: '#D32F2F',
           secondary: '#9A6B16',
           header: '#3A0F17',
         },

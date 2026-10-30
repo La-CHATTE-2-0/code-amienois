@@ -12,7 +12,7 @@ import "../../sass/base/_tables.scss";
             :
         </p>
         <v-table class="table my-2">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes potager
             </caption>
             <thead>

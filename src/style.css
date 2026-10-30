@@ -139,12 +139,6 @@ main {
 
 .app-footer {
     background: transparent !important;
-    opacity: 0.78;
-    transition: opacity 200ms ease;
-}
-
-.app-footer:hover {
-    opacity: 1;
 }
 
 .app-drawer .v-list-item {

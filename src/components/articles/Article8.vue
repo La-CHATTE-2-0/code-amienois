@@ -46,7 +46,7 @@ import Article8Spe from "./Article8Spe.vue";
             <h3>Les symboles</h3>
         </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes
             </caption>
             <thead>
@@ -576,7 +576,7 @@ import Article8Spe from "./Article8Spe.vue";
             <p>(Il est préférable d'avoir eu plusieurs partenaires pour les valider)</p>
         </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes décernés par les partenaires, les Grand-Maîtres
             </caption>
             <thead>
@@ -659,7 +659,7 @@ import Article8Spe from "./Article8Spe.vue";
             <h3>Les insignes décernés par un Grand-Maître</h3>
         </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes décernés par les Grand-Maîtres
             </caption>
             <thead>
@@ -955,7 +955,7 @@ import Article8Spe from "./Article8Spe.vue";
             <p>(Décerné par GM avec accord des porteurs de l'insigne)</p>
         </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes à decernements particuliers
             </caption>
             <thead>
@@ -999,7 +999,7 @@ import Article8Spe from "./Article8Spe.vue";
             <h3>Les insignes régionaux</h3>
         </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes régionaux
             </caption>
             <thead>

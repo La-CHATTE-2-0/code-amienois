@@ -19,11 +19,19 @@ const footerLinks = [
         href: "https://www.youtube.com/@nouveaubreviaireamienois111",
     },
 ];
+
+function skipToContent() {
+    document.getElementById("contenu")?.focus();
+}
 </script>
 
 <template>
+    <!-- Lien d'évitement : visible seulement au clavier -->
+    <a href="#contenu" class="skip-link" @click.prevent="skipToContent">
+        Aller au contenu
+    </a>
     <AppHeader />
-    <v-main class="main-content">
+    <v-main id="contenu" class="main-content" tabindex="-1">
         <slot></slot>
     </v-main>
     <v-footer class="app-footer no-print">
@@ -66,6 +74,26 @@ const footerLinks = [
 
 .app-footer__version {
     font-size: 0.75rem;
-    opacity: 0.6;
+    color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
+}
+
+.skip-link {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 2000;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgb(var(--v-theme-surface));
+    color: rgb(var(--v-theme-on-surface));
+    transform: translateY(-200%);
+}
+
+.skip-link:focus {
+    transform: none;
+}
+
+.main-content:focus {
+    outline: none;
 }
 </style>

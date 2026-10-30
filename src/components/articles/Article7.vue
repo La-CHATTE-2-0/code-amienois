@@ -14,7 +14,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
             <li>Le baccalauréat:</li>
         </ul>
         <v-table class="table align-middle" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes Baccalauréat
             </caption>
             <thead>
@@ -159,7 +159,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
             <li>L'emblème de la discipline</li>
         </ul>
         <v-table class="table align-middle" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes fillières
             </caption>
             <thead>
@@ -834,7 +834,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
             <li>Les étoiles et palmes</li>
         </ul>
         <v-table class="table align-middle" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes circu
             </caption>
             <thead>

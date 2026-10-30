@@ -482,9 +482,9 @@
             <v-table class="table align-middle">
                 <thead>
                     <tr>
-                        <td>Blason</td>
-                        <td>Province</td>
-                        <td>Couleurs</td>
+                        <th scope="col">Blason</th>
+                        <th scope="col">Province</th>
+                        <th scope="col">Couleurs</th>
                     </tr>
                 </thead>
                 <tbody class="table-group-divider">

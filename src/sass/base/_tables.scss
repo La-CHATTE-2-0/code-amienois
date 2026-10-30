@@ -51,7 +51,7 @@ $fal-warning-color-light: 255 242 202;
 
     p {
         font-size: 0.875rem;
-        opacity: var(--v-medium-emphasis-opacity);
+        color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
     }
 }
 

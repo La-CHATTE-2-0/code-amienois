@@ -3,7 +3,7 @@ import "../../sass/base/_tables.scss";
 </script>
 <template>
     <v-table class="table align-middle" data-fal-table="insigne">
-        <caption class="d-none">
+        <caption class="d-sr-only">
             Insignes bac spés Amiens
         </caption>
         <thead>

@@ -50,7 +50,7 @@
                     de la scolarité. Elle est appelée « famill ».
                 </p>
 
-                <v-img
+                <v-img alt="Gadzarts en tenue traditionnelle"
                     class="my-5"
                     src="/images/folklores/image-3-1024x682.png"
                 >

@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-img
+        <v-img alt="Représentation de Bacchus, dieu du vin"
             src="/images/other/cultureasy-bacchus-dieu-decadent-maitre-des-fetes.jpg"
         ></v-img>
 
@@ -41,7 +41,7 @@
             végétation, des plaisirs et des débordements !
         </p>
 
-        <v-img
+        <v-img alt="Scène de bacchanale"
             class="mt-8"
             src="/images/other/bacchusorgies.webp"
         />
@@ -75,7 +75,7 @@
             cela n’a eu aucun effet.
         </p>
 
-        <v-img
+        <v-img alt="Représentation de Bacchus"
             class="mt-8"
             src="/images/other/bacchus.jpg"
         />
