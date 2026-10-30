@@ -212,32 +212,9 @@ main {
         object-fit: contain;
     }
 
-    /* Keep the table layout on phones while preventing page overflow. */
-    .article-8-spe {
-        display: table;
-        width: 100%;
-        min-width: 0;
-        table-layout: fixed;
-        overflow: hidden;
-    }
-
-    .article-8-spe td {
-        min-width: 0;
-        padding: 6px 8px !important;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        white-space: normal;
-    }
-
+    /* Article 8 spé : colonne d'insigne plus étroite et listes moins indentées */
     .article-8-spe td[data-fal-insigne] {
         width: 22%;
-        padding-inline: 2px !important;
-    }
-
-    .article-8-spe td[data-fal-insigne] img {
-        width: auto;
-        height: auto;
-        max-width: 100%;
     }
 
     .article-8-spe ul {
