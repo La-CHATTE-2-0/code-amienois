@@ -1,4 +1,62 @@
 {
+    "routes": [
+        {
+            "route": "/recap-spe",
+            "rewrite": "/recap-spe/index.html"
+        },
+        {
+            "route": "/monome",
+            "rewrite": "/monome/index.html"
+        },
+        {
+            "route": "/notes-aux-pms",
+            "rewrite": "/notes-aux-pms/index.html"
+        },
+        {
+            "route": "/checklist-congres",
+            "rewrite": "/checklist-congres/index.html"
+        },
+        {
+            "route": "/couleurs-des-rubans",
+            "rewrite": "/couleurs-des-rubans/index.html"
+        },
+        {
+            "route": "/historique-croix",
+            "rewrite": "/historique-croix/index.html"
+        },
+        {
+            "route": "/gambrinus",
+            "rewrite": "/gambrinus/index.html"
+        },
+        {
+            "route": "/bacchus",
+            "rewrite": "/bacchus/index.html"
+        },
+        {
+            "route": "/folklore-francais",
+            "rewrite": "/folklore-francais/index.html"
+        },
+        {
+            "route": "/folklore-etranger",
+            "rewrite": "/folklore-etranger/index.html"
+        },
+        {
+            "route": "/guide-couture",
+            "rewrite": "/guide-couture/index.html"
+        },
+        {
+            "route": "/codex",
+            "rewrite": "/codex/index.html"
+        },
+        {
+            "route": "/homme-bouee",
+            "rewrite": "/homme-bouee/index.html"
+        },
+        {
+            "route": "/aperals",
+            "rewrite": "/aperals/index.html"
+        }
+    ],
     "navigationFallback": {
         "rewrite": "/index.html",
         "exclude": [
