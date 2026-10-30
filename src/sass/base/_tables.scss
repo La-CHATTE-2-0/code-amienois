@@ -55,8 +55,10 @@ $fal-warning-color-light: 255 242 202;
     }
 }
 
-// Panneaux dépliants des articles (À propos du Singe…) : même cadre que les tableaux
-.main-content [data-fal-article] .v-expansion-panels {
+// Panneaux dépliants des articles (À propos du Singe…) et étapes du guide couture :
+// même cadre que les tableaux
+.main-content [data-fal-article] .v-expansion-panels,
+.main-content .guide__steps {
     border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
     border-radius: 12px;
     overflow: hidden;
