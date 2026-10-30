@@ -1,83 +1,221 @@
+<script setup lang="ts">
+import pages from "../../core/page";
+
+const attributions = [
+    "Vin",
+    "Vigne",
+    "Festivités",
+    "Danse",
+    "Théâtre",
+    "Végétation",
+    "Plaisirs",
+    "Ivresse et débordements",
+];
+
+const representations = [
+    { label: "Sur la tête", text: "Une couronne de vigne ou de lierre, parfois des cornes" },
+    { label: "Son char", text: "Souvent tiré par des panthères ; le tonneau apparaît dans des œuvres plus tardives" },
+    { label: "D’une main", text: "Le thyrse, un bâton entouré de lierre ou de vigne et terminé par une pomme de pin" },
+    { label: "De l’autre", text: "Une grappe de raisin ou une coupe de vin, parfois une corne d’abondance" },
+];
+</script>
+
 <template>
     <v-container>
-        <v-img alt="Représentation de Bacchus, dieu du vin"
-            src="/images/other/cultureasy-bacchus-dieu-decadent-maitre-des-fetes.jpg"
-        ></v-img>
+        <article data-fal-article>
+            <img
+                class="bacchus-hero"
+                src="/images/other/bacchusorgies.webp"
+                alt="Bacchanale en forêt : banquet, satyres et nymphes qui boivent et dansent"
+                width="2250"
+                height="1542"
+            />
 
-        <h2 class="mt-4">La vie de Bacchus</h2>
-        <p class="mt-4 text-justify">
-            Bacchus est le fils que Jupiter (ou Zeus chez les Grecs) a eu avec
-            sa maîtresse, Sémélé. Cette dernière est la fille du roi de Thèbes,
-            mais n’en reste pas moins une simple mortelle.
-        </p>
+            <p class="bacchus-lead">
+                Dieu du vin, des fêtes et des débordements, Bacchus a donné son
+                nom à l’un des insignes les plus difficiles à obtenir sur la
+                faluche.
+                <router-link :to="`${pages.code.url}#article-8`">Voir les règles du port du Bacchus</router-link>.
+            </p>
 
-        <p class="mt-4 text-justify">
-            La femme de Jupiter, une déesse du nom de Junon n’appréciant pas
-            d’avoir été trompée, décide de se venger. Pour cela elle convainc
-            Sémélé de demander à Jupiter de se montrer son sa forme divine, ce
-            qui entraîne malheureusement le décès de la mère de Bacchus.
-        </p>
+            <h2 class="mt-8">La vie de Bacchus</h2>
+            <p>
+                Bacchus est le fils que Jupiter (Zeus chez les Grecs) a eu avec
+                sa maîtresse, <strong>Sémélé</strong>. Fille de Cadmos, roi de
+                Thèbes, elle n’en reste pas moins une simple mortelle.
+            </p>
+            <p>
+                La femme de Jupiter, la déesse <strong>Junon</strong>, n’apprécie
+                pas d’avoir été trompée et décide de se venger. Elle convainc
+                Sémélé de demander à Jupiter de se montrer sous sa forme divine,
+                ce qui la fait mourir foudroyée.
+            </p>
+            <p>
+                Voulant sauver son enfant, Jupiter l’enlève du ventre de Sémélé
+                et le coud dans <strong>sa cuisse</strong> jusqu’à sa naissance.
+                D’où son surnom de « deux fois né ».
+            </p>
+            <p>
+                Après sa naissance, Bacchus est confié à Hermès, qui le conduit
+                auprès des <strong>Nymphes de Nysa</strong>. Celles-ci l’élèvent
+                et le protègent de la colère de Junon. Il grandit ainsi à l’abri
+                des regards avant de devenir le dieu du vin, de la vigne et des
+                festivités.
+            </p>
 
-        <p class="mt-4 text-justify">
-            Jupiter voulant sauver son enfant, l’enlève du ventre de Sémélé et
-            le met dans sa cuisse jusqu’à sa naissance.
-        </p>
+            <h3 class="bacchus-subtitle">Ses attributions</h3>
+            <div class="bacchus-chips">
+                <v-chip
+                    v-for="attribution in attributions"
+                    :key="attribution"
+                    variant="outlined"
+                    size="small"
+                >
+                    {{ attribution }}
+                </v-chip>
+            </div>
 
-        <p class="mt-4 text-justify">
-            Mais la déesse Junon est rancunière et veut à tout prix tuer
-            Bacchus, le fruit de la tromperie de son mari. Pour cela, elle envoi
-            les Titans qui vont trouver l’enfant et le faire bouillir dans un
-            chaudron.
-        </p>
+            <h2 class="mt-8">Représentations</h2>
+            <div class="bacchus-representations">
+                <img
+                    class="bacchus-portrait"
+                    src="/images/other/bacchus.jpg"
+                    alt="Bacchus enfant assis sur un tonneau, versant du vin dans une coupe"
+                    width="811"
+                    height="1260"
+                    loading="lazy"
+                />
+                <dl class="bacchus-list">
+                    <div v-for="item in representations" :key="item.label">
+                        <dt>{{ item.label }}</dt>
+                        <dd>{{ item.text }}</dd>
+                    </div>
+                </dl>
+            </div>
 
-        <p class="mt-4 text-justify">
-            Heureusement Bacchus à été sauvé. Et bien que les versions divergent
-            sur les responsables du sauvetage, il en ressort que qu’il a été
-            placé sous la protection des Nymphes de Nysa. Il grandit donc dans
-            une grotte, qui est protégée par une vigne. Il se nourrit de cette
-            dernière pour devenir le Dieu du vin que vous connaissez. Mais il ne
-            faut pas oublier ses autres attributions, à savoir Dieu de la vigne,
-            bien sûr, mais également dieu des Festivités, de la danse, de la
-            végétation, des plaisirs et des débordements !
-        </p>
-
-        <v-img alt="Scène de bacchanale"
-            class="mt-8"
-            src="/images/other/bacchusorgies.webp"
-        />
-
-        <h2 class="mt-4">Représentations et fêtes</h2>
-        <p class="mt-4 text-justify">
-            Bien souvent, Bacchus est représenté avec des cornes, et entouré de
-            vigne ou de lierre. Il peut être posé sur un tonneau ou su un char.
-            Dans ses mains, il tient d’un côté un thyrse, une sorte de sceptre,
-            et de l’autre, soit une corne d’abondance, soit une simple grappe de
-            raisin.
-        </p>
-
-        <p class="mt-4 text-justify">
-            De plus, Bacchus, a eu de nombreuses fêtes dédiées. On connaît
-            notamment les orgies, ou bacchanales.
-        </p>
-
-        <p class="mt-4 text-justify">
-            Ces dernières étaient au départ uniquement célébrées par la gente
-            féminine, de façon très mystérieuse, au milieu des bois. Petit à
-            petit, les hommes furent également accueillis lors de ces
-            célébrations, mais ce qui a entraîné beaucoup de désordres !
-        </p>
-
-        <p class="mt-4 text-justify">
-            Du côté de Rome, on parlait de fêtes « Libérales », où les romains
-            et romaines se lançaient dans des discussions souvent bien
-            indécentes. Le gouvernement de Rome a même essayé de faire interdire
-            la tenue de ces cérémonies, en publiant un décret en l’an 558, mais
-            cela n’a eu aucun effet.
-        </p>
-
-        <v-img alt="Représentation de Bacchus"
-            class="mt-8"
-            src="/images/other/bacchus.jpg"
-        />
+            <h2 class="mt-8">Les fêtes</h2>
+            <p>
+                De nombreuses fêtes étaient dédiées à Bacchus, dont les plus
+                connues sont les <strong>bacchanales</strong>. Ces cérémonies
+                religieuses, souvent secrètes, étaient accompagnées de musique,
+                de danses et de réjouissances.
+            </p>
+            <p>
+                Dans certaines traditions romaines, elles étaient d’abord
+                réservées aux femmes, avant que les hommes ne soient également
+                admis.
+            </p>
+            <v-alert
+                class="bacchus-alert"
+                icon="mdi-information-outline"
+                variant="tonal"
+                density="compact"
+                border="start"
+            >
+                Ces rassemblements suscitèrent la méfiance des autorités
+                romaines. En 186 av. J.-C., le Sénat prit un décret pour
+                réglementer sévèrement les cérémonies bachiques, notamment leurs
+                réunions et leur organisation.
+            </v-alert>
+            <p>
+                À Rome, d’autres fêtes étaient célébrées en l’honneur de Liber,
+                divinité associée à Bacchus : les <strong>Liberalia</strong>,
+                qui avaient lieu chaque année le 17 mars.
+            </p>
+        </article>
     </v-container>
 </template>
+
+<style scoped>
+article p {
+    margin-top: 0.75rem;
+}
+
+/* Images : même arrondi que les cadres, liseré pour le mode sombre */
+.bacchus-hero,
+.bacchus-portrait {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    outline: 1px solid rgba(var(--v-theme-on-surface), 0.14);
+    outline-offset: -1px;
+}
+
+.bacchus-hero {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.bacchus-lead {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+}
+
+.bacchus-subtitle {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bacchus-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Portrait au-dessus de la liste sur mobile, à côté à partir de md */
+.bacchus-representations {
+    display: grid;
+    gap: 16px;
+    margin-top: 0.75rem;
+}
+
+.bacchus-portrait {
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (min-width: 960px) {
+    .bacchus-representations {
+        grid-template-columns: 280px 1fr;
+        align-items: start;
+    }
+
+    .bacchus-portrait {
+        max-height: none;
+    }
+}
+
+/* Même cadre que les listes de la checklist */
+.bacchus-list {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+    border-radius: 12px;
+}
+
+.bacchus-list > div {
+    padding: 12px 16px;
+}
+
+.bacchus-list > div + div {
+    border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+}
+
+.bacchus-list dt {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
+}
+
+.bacchus-list dd {
+    margin: 0;
+}
+
+.bacchus-alert {
+    margin-top: 1rem;
+}
+</style>
