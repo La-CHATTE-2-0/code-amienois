@@ -1,70 +1,70 @@
+<script setup lang="ts">
+import FolkloreFiche from "./FolkloreFiche.vue";
+
+const image = {
+    src: "/images/folklores/roi belge.jpg",
+    alt: "Le roi des Belges coiffé d’une penne, entouré d’étudiants",
+    width: 940,
+    height: 470,
+    legende: "Le roi des Belges portant une penne à Liège",
+};
+
+const enBref = [
+    { label: "Portée par", text: "Les étudiants baptisés des universités non catholiques, Hautes Écoles et écoles artistiques" },
+    { label: "Apparition", text: "Vers 1850 à l’ULB, en 1861 à Liège" },
+    { label: "Son nom", text: "Un mot wallon qui signifie « visière »" },
+    { label: "Signe distinctif", text: "Sa longue visière, allongée au fil des années 1970" },
+];
+</script>
+
 <template>
-    <v-expansion-panels class="mb-5">
-        <v-expansion-panel elevation="0" variant="tonal">
-            <v-expansion-panel-title>🇧🇪 La Penne</v-expansion-panel-title>
-            <v-expansion-panel-text>
-                <v-img
-                    class="my-5"
-                    src="/images/folklores/roi belge.jpg"
-                    alt="Penne roi"
-                ></v-img>
+    <FolkloreFiche id="penne" titre="La penne" :image="image" :en-bref="enBref">
+        <p>
+            La penne est la coiffe traditionnelle et folklorique des étudiants
+            belges des universités non catholiques, ainsi que de plusieurs Hautes
+            Écoles et écoles artistiques. Si elle est partout considérée comme un
+            élément porteur d’une grande charge symbolique, ses traditions et leur
+            sens varient de faculté en faculté et d’université en université.
+        </p>
+        <p>
+            La penne est indissociable du baptême et du cercle étudiant qui l’a
+            administré, cercle lui-même fortement lié à une faculté ou à une
+            section de faculté. Le corps professoral a souvent été baptisé, ou
+            baptise à son tour : toutes ces notions se télescopent, et l’on ne
+            peut parler de la penne sans parler de cercle, de faculté et de
+            baptême estudiantin.
+        </p>
 
-                <span class="text-caption font-italic">Roi des Belges portant une penne à Liège</span>
+        <figure class="folklore-figure">
+            <img
+                src="/images/folklores/Penne_CM.png"
+                alt="Penne vue de profil, avec sa longue visière"
+                width="728"
+                height="343"
+                loading="lazy"
+            />
+        </figure>
 
-                <p class="mt-5">
-                    La penne est la coiffe traditionnelle et folklorique des
-                    étudiants belges des universités non-catholiques ainsi que
-                    de plusieurs Hautes Écoles et Écoles artistiques en
-                    Belgique. Bien que la pennes soit considérée comme un
-                    élément traditionnel porteur d'une grande signification
-                    symbolique, tant les traditions que leur symbolique varient
-                    de faculté en faculté et d'université en université.
-                </p>
-                <p class="mt-4">
-                    La penne est indissociable du baptême et du cercle étudiant
-                    qui l'a administré. Ce cercle est fortement lié à une
-                    faculté ou à une section de faculté. Le corps professoral de
-                    chaque faculté a fréquemment été baptisé ou baptise en
-                    d'autre temps. Aussi toutes ces notions tendent à se
-                    télescoper. On ne peut parler de la penne sans parler de
-                    cercle, faculté et baptême estudiantin.
-                </p>
-
-                <v-img
-                    class="my-5"
-                    src="/images/folklores/Penne_CM.png"
-                    alt="Penne"
-                ></v-img>
-
-                <p class="mt-4">
-                    La pennes, que seuls les étudiants baptisés portent
-                    actuellement, tire son nom d'un mit wallon
-                    signifiant visière. Elle apparut vers 1850 à l'ULB
-                    (Université Libre de Bruxelles) et 1861 à Liège. À Liège
-                    elle aurait été d'abord connue sous le nom de crapuleuse
-                    avant de prendre le nom de penne après 1918. À l'époque de
-                    son apparition à Liège, elle est décrite comme une casquette
-                    étroite en drap avec une visière en toile cirée. Elle était
-                    alors verte, couleur de l'ULB. Il a fallu attendre 20 ans
-                    pour que les couleurs se diversifient. La forme de la penne
-                    est également non sans rappeler celle de la coiffe
-                    estudiantine allemande. La visière s'est progressivement
-                    allongée pour atteindre ses dimensions actuelles au cours
-                    des années 1970. Plusieurs interprétations de son origine et
-                    de sa signification existent : Pour certains la casquette,
-                    emblème à l'époque des gens du peuples, permet à l'étudiant
-                    de marquer son indépendance par rapport à la bourgeoisie
-                    (dont l'étudiant est bien souvent issu lui-même).
-                </p>
-                <p class="mt-4">
-                    D'autres considèrent que la penne ayant été créée en
-                    opposition à la calotte la longue visière de cette casquette
-                    sert à protéger nos yeux du regard de Dieu. Cette
-                    interprétation est cependant soumise à polémique, les
-                    étudiant portant la penne étaient souvent athées voire
-                    anticléricaux.
-                </p>
-            </v-expansion-panel-text>
-        </v-expansion-panel>
-    </v-expansion-panels>
+        <p>
+            Seuls les étudiants baptisés la portent aujourd’hui. Elle apparaît
+            vers 1850 à l’ULB (Université libre de Bruxelles) et en 1861 à
+            Liège, où elle aurait d’abord été appelée « crapuleuse » avant de
+            prendre le nom de penne après 1918. On la décrit alors comme une
+            casquette étroite en drap, à visière de toile cirée, et verte, couleur
+            de l’ULB : il faudra attendre vingt ans pour que les couleurs se
+            diversifient. Sa forme rappelle la coiffe estudiantine allemande, et
+            sa visière s’est progressivement allongée jusqu’à ses dimensions
+            actuelles au cours des années 1970.
+        </p>
+        <p>
+            Son origine et sa signification font l’objet de plusieurs
+            interprétations. Pour certains, la casquette, emblème des gens du
+            peuple à l’époque, permettait à l’étudiant de marquer son
+            indépendance vis-à-vis de la bourgeoisie, dont il était pourtant bien
+            souvent issu. D’autres affirment que, la penne ayant été créée en
+            opposition à <a href="#calotte">la calotte</a>, sa longue visière
+            protège les yeux du regard de Dieu ; une lecture contestée, puisque
+            les étudiants pennés étaient souvent athées, voire anticléricaux.
+        </p>
+    </FolkloreFiche>
 </template>
