@@ -6,6 +6,7 @@ const image = {
     alt: "Penne consulaire à visière courte et bande rouge et blanche",
     width: 393,
     height: 296,
+    detouree: true,
 };
 
 const enBref = [
