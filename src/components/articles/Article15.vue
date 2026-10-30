@@ -3,7 +3,7 @@
         <h2>Article 15 :</h2>
         <p class="text-justify">
             La Faluche doit être portée dans toutes cérémonies : repas, soirées,
-            sorties estudiantines...
+            sorties estudiantines…
         </p>
     </article>
 </template>

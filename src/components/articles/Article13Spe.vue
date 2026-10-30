@@ -5,8 +5,8 @@
                 Le <strong>bourreau</strong> est là pour faire respecter l’ordre
                 et la discipline lors des réjouissances estudiantines. Il pourra
                 à sa guise infliger des <strong>sanctions</strong> envers les
-                récalcitrants sur le non respect de la faluche. La sanction
-                pourra venir d’un GM ou bien de son propre chef, à l’aide de ses
+                récalcitrants sur le non-respect de la faluche. La sanction
+                pourra venir d’un GM ou bien de son propre chef. À l’aide de ses
                 instruments, il applique les sanctions alcoolisées. L’insigne du
                 bourreau se compose d’une hache et d’une bouteille, ainsi que
                 deux zéros, sur un ruban aux couleurs de la discipline du GM.
@@ -33,22 +33,22 @@
             />
         </div>
         <div>
-            <span>Sage-Femme</span>
+            <span>Sage-femme</span>
             <img
                 class="billot"
                 loading="lazy"
                 src="/images/insigne/billot_sage_femme.png"
-                alt="Billot Sage-Femme"
+                alt="Billot Sage-femme"
             />
         </div>
         <div>
-            <span>Inter-Fillières</span>
+            <span>Inter-Filières</span>
             <img
                 id="ea-billot-inge"
                 class="billot"
                 loading="lazy"
                 src="/images/insigne/billot_satin.png"
-                alt="Billot Inter-Fillières"
+                alt="Billot Inter-Filières"
             />
         </div>
         <div>
@@ -65,8 +65,8 @@
         <ul class="mt-4">
             <li>
                 <p class="text-justify mt-2 mr-4">
-                    Les croix sont transmises de génération en génération, c'est
-                    à dire qu'une croix partant à la retraite donne sa croix
+                    Les croix sont transmises de génération en génération, c'est-à-dire
+                    qu'une croix partant à la retraite donne sa croix
                     historique au nouvel intronisé. Les croix amiénoises mettent
                     une croix neuve du côté personnel (à droite) lorsqu’elles
                     partent à la retraite, et non plus à gauche comme
@@ -76,7 +76,7 @@
             <li>
                 <p class="text-justify mt-2 mr-4">
                     Quand un GM part à la retraite sur sa nouvelle croix, il
-                    mettera un soleil uniquement s'il a été GC avant, sinon une
+                    mettra un soleil uniquement s'il a été GC avant, sinon une
                     tête de mort (tête de mort sur fémurs croisés pour les
                     pharmaciens).
                 </p>
@@ -84,7 +84,7 @@
             <li>
                 <p class="text-justify mt-2 mr-4">
                     L’évêque a pour tâche de marier les faluchards entre eux. Il
-                    aura soin de vérifier qu’une forte amitié lie les dits
+                    aura soin de vérifier qu’une forte amitié lie lesdits
                     faluchards. Le mariage a pour but de fusionner cette amitié.
                     Il a aussi le rôle de confident et il est tenu au secret. Du
                     fait de sa neutralité, il peut lui être demandé d’intervenir

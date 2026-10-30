@@ -292,8 +292,8 @@
             "id": "h23",
             "theme": "histoire",
             "question": "Lors du Monôme amiénois, à qui les Grands Maîtres remettent-ils une faluche ?",
-            "answers": ["Marie sans chemise", "L'Homme à la Bouée", "Jules Verne", "Le maire d'Amiens"],
-            "explanation": "Le cortège traverse le marché de Noël jusqu'à la place Marie sans chemise.",
+            "answers": ["Marie-sans-chemise", "L'Homme à la Bouée", "Jules Verne", "Le maire d'Amiens"],
+            "explanation": "Le cortège traverse le marché de Noël jusqu'à la place Marie-sans-chemise.",
             "source": "/monome"
         },
         {
@@ -302,7 +302,7 @@
             "question": "Qu'est-ce que La CHATTE 2.0 ?",
             "answers": [
                 "L'association falucharde de la ville d'Amiens",
-                "L'aperal historique d'Amiens",
+                "L'apéral historique d'Amiens",
                 "Le nom donné aux Grands Maîtres amiénois",
                 "Le bar des faluchards amiénois"
             ],
@@ -346,7 +346,7 @@
             "theme": "filieres",
             "question": "À Amiens, de quelle couleur est le circulaire de Médecine ?",
             "answers": ["Velours bordeaux", "Velours rouge", "Velours violet", "Satin rouge"],
-            "explanation": "Au code national il est en velours rouge.",
+            "explanation": "Au code national, il est en velours rouge.",
             "source": "/recap-spe"
         },
         {
@@ -374,7 +374,7 @@
         {
             "id": "f08",
             "theme": "filieres",
-            "question": "Au code national, de quelle couleur est le circulaire de Sage-Femme ?",
+            "question": "Au code national, de quelle couleur est le circulaire de Sage-femme ?",
             "answers": ["Velours fuchsia", "Velours rose", "Velours rouge", "Satin fuchsia"],
             "source": "/#article-6"
         },
@@ -524,7 +524,7 @@
             "theme": "filieres",
             "question": "À quelle filière correspond cet emblème ?",
             "image": "/images/insigne/croix_dankh.png",
-            "answers": ["Sage-Femme", "Théologie", "Archéologie", "Infirmier"],
+            "answers": ["Sage-femme", "Théologie", "Archéologie", "Infirmier"],
             "explanation": "C'est l'ânkh, la croix de vie égyptienne.",
             "source": "/#article-7"
         },
@@ -656,7 +656,7 @@
             "theme": "filieres",
             "question": "À quelle filière correspond cet emblème ?",
             "image": "/images/insigne/mortier_et_pilon.png",
-            "answers": ["Préparateur en pharmacie", "Pharmacie", "Oenologie", "Paramédical"],
+            "answers": ["Préparateur en pharmacie", "Pharmacie", "Œnologie", "Paramédical"],
             "source": "/#article-7"
         },
         {
@@ -749,7 +749,7 @@
             "theme": "filieres",
             "question": "À quelle filière correspond cet emblème ?",
             "image": "/images/insigne/caducee_infirmier.png",
-            "answers": ["Infirmier", "Médecine", "Pharmacie", "Sage-Femme"],
+            "answers": ["Infirmier", "Médecine", "Pharmacie", "Sage-femme"],
             "source": "/#article-7"
         },
         {
@@ -1349,7 +1349,7 @@
         {
             "id": "v33",
             "theme": "velours",
-            "question": "Que signifie la bouteille de Bordeaux ?",
+            "question": "Que signifie la bouteille de bordeaux ?",
             "image": "/images/insigne/bouteille_de_bordeaux.png",
             "answers": ["Cuite certifiée", "Coma éthylique certifié", "Amour du bon vin", "Dignité dans l'ivresse"],
             "explanation": "Elle est compatible avec le Bacchus.",
@@ -1358,7 +1358,7 @@
         {
             "id": "v34",
             "theme": "velours",
-            "question": "Que signifie la bouteille de Champagne ?",
+            "question": "Que signifie la bouteille de champagne ?",
             "image": "/images/insigne/bouteille_de_champagne.png",
             "answers": ["Coma éthylique certifié", "Cuite certifiée", "A fêté un diplôme", "Mène un grand train de vie"],
             "source": "/#article-8"
@@ -1421,8 +1421,8 @@
             "theme": "velours",
             "question": "Que signifie l'épingle à nourrice sur ruban noir ?",
             "image": "/images/insigne/epingle.png",
-            "answers": ["Un blâme", "A cousu sa faluche", "Jeune parent", "Non-respect à Grand Maître"],
-            "explanation": "Le non-respect à Grand Maître se marque d'une lime sur ruban noir.",
+            "answers": ["Un blâme", "A cousu sa faluche", "Jeune parent", "Non-respect envers un Grand Maître"],
+            "explanation": "Le non-respect envers un Grand Maître se marque d'une lime sur ruban noir.",
             "source": "/#article-8"
         },
         {
@@ -1529,7 +1529,7 @@
             "theme": "velours",
             "question": "À Amiens, que signifie la grappe de raisin retournée ?",
             "image": "/images/insigne/grappe_de_raisin.png",
-            "answers": ["Amour de tous les alcools", "Amour du bon vin", "Personne abstème", "Étudiant en oenologie"],
+            "answers": ["Amour de tous les alcools", "Amour du bon vin", "Personne abstème", "Étudiant en œnologie"],
             "explanation": "À l'endroit, c'est l'amour du bon vin.",
             "source": "/recap-spe"
         },

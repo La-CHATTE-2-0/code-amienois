@@ -113,7 +113,7 @@ import "../../sass/base/_tables.scss";
             particulier que l’étudiant
             <strong>soit sorti couvert et avec consentement</strong>. En
             espérant voir les Faluches se transformer durant les années
-            estudiantines, en de véritables potagers. (Ils peuvent être refusés par la personne le reçevant).
+            estudiantines, en de véritables potagers. (Ils peuvent être refusés par la personne le recevant).
         </p>
     </div>
 </template>

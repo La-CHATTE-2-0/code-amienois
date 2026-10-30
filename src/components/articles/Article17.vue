@@ -13,7 +13,7 @@
             répondre : qu’il s’agisse des parrains-marraines, des croix, ou des
             anciens. D’autre part, tout étudiant surpris en train de baptiser
             sans être porteur d’une Faluche sera lui-même considéré comme
-            impétrant. À ce titre, il encourt les pires sévices...
+            impétrant. À ce titre, il encourt les pires sévices…
         </p>
     </article>
 </template>

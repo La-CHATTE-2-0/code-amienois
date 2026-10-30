@@ -57,10 +57,10 @@ import "../../sass/base/_tables.scss";
                 </tr>
                 <tr>
                     <td data-filliere>
-                        <div class="pt-2">Sage-Femme</div>
+                        <div class="pt-2">Sage-femme</div>
                         <div class="py-2">
                             <v-icon icon="mdi-repeat"></v-icon>
-                            Velours fushia au code national
+                            Velours fuchsia au code national
                         </div>
                     </td>
                     <td data-matiere>Velours fiolet</td>
@@ -75,7 +75,7 @@ import "../../sass/base/_tables.scss";
                 </tr>
                 <tr>
                     <td data-filliere>
-                        <div class="pt-2">Arts (tous) / Architecture / Théatre</div>
+                        <div class="pt-2">Arts (tous) / Architecture / Théâtre</div>
                         <div class="py-2">
                             <v-icon icon="mdi-repeat"></v-icon>
                             Bleu roy au code national
@@ -129,7 +129,7 @@ import "../../sass/base/_tables.scss";
                         </div>
                         <div class="py-2">
                             <v-icon icon="mdi-repeat"></v-icon>
-                            Aux couleurs de l'UFR de ratachement (peut changer
+                            Aux couleurs de l'UFR de rattachement (peut changer
                             du jaune dans d'autres villes)
                         </div>
                     </td>
@@ -163,7 +163,7 @@ import "../../sass/base/_tables.scss";
                 </tr>
                 <tr>
                     <td data-filliere>
-                        <div class="pt-2">Science de l'éducation</div>
+                        <div class="pt-2">Sciences de l'éducation</div>
                         <div class="py-2">
                             <v-icon icon="mdi-repeat"></v-icon>
                             N'existe pas au code national

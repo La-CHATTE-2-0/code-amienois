@@ -4,23 +4,23 @@ export const incontournable: Array<CheckListItem> = [
     {
         id: "tente",
         label: "⛺ Une tente",
-        description: "Bien que certains congrès proposent des places en dur (Bungalows, dortoirs couverts, etc.), la plupart des congressistes campent sur les lieux du congrès. Une tente est alors nécessaire, ou du moins il faut s’assurer d’avoir une place dans la tente de quelqu’un d’autre.",
+        description: "Bien que certains congrès proposent des places en dur (bungalows, dortoirs couverts, etc.), la plupart des congressistes campent sur les lieux du congrès. Une tente est alors nécessaire, ou du moins il faut s’assurer d’avoir une place dans la tente de quelqu’un d’autre.",
         checked: false
     },
     {
         id: "couverture",
         label: "🛏️ Couverture/duvet",
-        description: "Les nuits de congrès sont parfois froides (Cf. la dernière pommo où il a fait -2°C la deuxième nuit). Toujours se renseigner sur la météo du weekend afin de prendre l’équipement le plus adéquat et ne pas se retrouver à se cailler le cul à 3 grammes… N’hésitez pas à prendre plusieurs épaisseurs pour les congrès les plus froids !",
+        description: "Les nuits de congrès sont parfois froides (cf. la dernière Pommo où il a fait −2 °C la deuxième nuit). Toujours se renseigner sur la météo du week-end afin de prendre l’équipement le plus adéquat et ne pas se retrouver à se cailler le cul à 3 grammes… N’hésitez pas à prendre plusieurs épaisseurs pour les congrès les plus froids !",
     },
     {
         id: "matelas",
         label: "🛏️ Un tapis ou couverture de sol ou matelas gonflable",
-        description: "Il est indispensable d’avoir une couche de protection en le sol et ton petit corps meurtri par l’alcool. Les plus casaniers choisiront un matelas gonflable (penser à prendre un gonfleur sinon il faudra voir avec les congressistes qui en auront sur place). Mais la simple couverture de sol peut vous faire gagner quelques degrés.",
+        description: "Il est indispensable d’avoir une couche de protection entre le sol et ton petit corps meurtri par l’alcool. Les plus casaniers choisiront un matelas gonflable (penser à prendre un gonfleur sinon il faudra voir avec les congressistes qui en auront sur place). Mais la simple couverture de sol peut vous faire gagner quelques degrés.",
     },
     {
         id: "gonfleur",
         label: "🛏️ Un gonfleur",
-        description: "S'il est électrique, pense à le charger avant...",
+        description: "S'il est électrique, pense à le charger avant…",
     },
     {
         id: "oreiller",
@@ -35,27 +35,27 @@ export const incontournable: Array<CheckListItem> = [
     {
         id: "lampe",
         label: "🔦 Une lampe de poche/frontale",
-        description: "Le camping n’est pas éclairé et c’est très pratique pour retrouver sa tente, ne pas se bouffer celles des autres dans la tronche ou pratiquer toute autre activité nécessitant de la lumière. (Commentaire de Nico : La lampe frontale est vraiment incroyable en congrès, tu la cale sur ton circulaire et tu as deux mains libres !). Le flash du téléphone peut certes faire l’affaire mais il n’est pas recommandé de se balader avec son téléphone en congrès.",
+        description: "Le camping n’est pas éclairé et c’est très pratique pour retrouver sa tente, ne pas se bouffer celles des autres dans la tronche ou pratiquer toute autre activité nécessitant de la lumière. (Commentaire de Nico : La lampe frontale est vraiment incroyable en congrès, tu la cales sur ton circulaire et tu as deux mains libres !). Le flash du téléphone peut certes faire l’affaire mais il n’est pas recommandé de se balader avec son téléphone en congrès.",
     },
     {
         id: "couverts",
         label: "🍴 Un plat en plastique et des couverts",
-        description: "Depuis quelques années, les orgas de congrès se veulent de plus en plus responsable vis-à-vis de l’environnement en bannissant les plastiques à usage unique. A prendre donc impérativement si tu veux manger (et tu vas en avoir besoin…).",
+        description: "Depuis quelques années, les orgas de congrès se veulent de plus en plus responsables vis-à-vis de l’environnement en bannissant les plastiques à usage unique. À prendre donc impérativement si tu veux manger (et tu vas en avoir besoin…).",
     },
     {
         id: "paiement",
-        label: "💳 Moyen de paiement (CB + Liquide)",
-        description: "Souvent, l'orga vends des pin's en fin de congrès. Et il faut aussi payer le McDo, l'autoroute, l'essence, ...",
+        label: "💳 Moyen de paiement (CB + liquide)",
+        description: "Souvent, l'orga vend des pin's en fin de congrès. Et il faut aussi payer le McDo, l'autoroute, l'essence…",
     },
     {
         id: "portefeuille",
         label: "💳 Portefeuille",
-        description: "Carte d'identité, permis de conduire même si tu n'es pas désigné conducteur, carte vitale",
+        description: "Carte d'identité, permis de conduire même si tu n'es pas désigné conducteur, carte vitale.",
     },
     {
         id: "serviette",
         label: "🪥 Nécessaire de toilette et serviette",
-        description: "Car certains congrès mettent des douches à disposition. NB : Optionnel pour les sciences et autres gros satins.",
+        description: "Car certains congrès mettent des douches à disposition. N.B. : optionnel pour les sciences et autres gros satins.",
     },
 ];
 
@@ -63,12 +63,12 @@ export const fringues: Array<CheckListItem> = [
     {
         id: "pantalon",
         label: "👖 Pantalon/short/combar/salopette",
-        description: "Certains préfèrent le style taillis Décathlon, d’autre pour la combar (Salopette colorée chérie de nombreux velours). Toujours est-il que le fait d’avoir un bon nombre de poches (dont certaines refermables) reste très pratique pour ne pas perdre tout son bordel (et ne pas avoir à le racheter par la suite…) ",
+        description: "Certains préfèrent le style taillis Décathlon, d’autres pour la combar (salopette colorée chérie de nombreux velours). Toujours est-il que le fait d’avoir un bon nombre de poches (dont certaines refermables) reste très pratique pour ne pas perdre tout son bordel (et ne pas avoir à le racheter par la suite…).",
     },
     {
         id: "pulls",
         label: "👕 Au moins 2 pulls (froid)",
-        description: "Il est très pratique de toujours garder un pull sec dans ta tente (en plus de celui que tu as sur le dos) pour la nuit ou pour remplacer un autre éventuellement trempé par la pluie. - Chaussures résistantes et auxquelles tu ne tiens pas trop : Les congrès sont de rudes épreuves pour nos chaussures entre le terrain de camping boueux en cas de pluie, le bar dont le sol est parfois couvert de substances douteuses ou encore les VT (Vomis Tactiques) par très bien visés. Il faut donc s’assurer d’être adéquatement chaussé avant de partir.",
+        description: "Il est très pratique de toujours garder un pull sec dans ta tente (en plus de celui que tu as sur le dos) pour la nuit ou pour remplacer un autre éventuellement trempé par la pluie. - Chaussures résistantes et auxquelles tu ne tiens pas trop : Les congrès sont de rudes épreuves pour nos chaussures entre le terrain de camping boueux en cas de pluie, le bar dont le sol est parfois couvert de substances douteuses ou encore les VT (Vomis Tactiques) pas très bien visés. Il faut donc s’assurer d’être adéquatement chaussé avant de partir.",
     },
     {
         id: "bottes",
@@ -78,7 +78,7 @@ export const fringues: Array<CheckListItem> = [
     {
         id: "tongs",
         label: "🩴 Tongs/Claquettes/Sandales",
-        description: "Indispensables pour garder les pieds à l'air ou pour les piscines et douches (qui se lave ?). Et pour les concours de lancer de tongs (ne pas cibler les impet')",
+        description: "Indispensables pour garder les pieds à l'air ou pour les piscines et douches (qui se lave ?). Et pour les concours de lancer de tongs (ne pas cibler les impet').",
     },
     {
         id: "manteau",
@@ -87,18 +87,18 @@ export const fringues: Array<CheckListItem> = [
     },
     {
         id: "vetements-rechange",
-        label: "🔄 Vêtements de rechanges",
-        description: "Sauf si l’hygiène n’est qu’un concept pour toi, c’est parfois aussi pratique pour changer un vêtement mouillé par la pluie ou… Toute autre chose",
+        label: "🔄 Vêtements de rechange",
+        description: "Sauf si l’hygiène n’est qu’un concept pour toi, c’est parfois aussi pratique pour changer un vêtement mouillé par la pluie ou… toute autre chose.",
     },
     {
         id: "kigurumi",
         label: " 👘 Kigurumi (très optionnel)",
-        description: "Si tu as une âme d’enfant (comme Nico)",
+        description: "Si tu as une âme d’enfant (comme Nico).",
     },
     {
         id: "gala",
-        label: "🤵 Tenue de Gala (anniversaire)",
-        description: "Oui il faut être classe au repas lors des anniversaire de la Faluche",
+        label: "🤵 Tenue de gala (anniversaire)",
+        description: "Oui, il faut être classe au repas des anniversaires de la Faluche.",
     },
 ];
 
@@ -106,7 +106,7 @@ export const pratique: Array<CheckListItem> = [
     {
         id: "chaise-camping",
         label: "🪑 Chaise de camping",
-        description: "La journée du samedi est souvent composée de petits moments chill avec les autres congressistes sur le camping, histoire de reposer un peu ton pauvre organisme et de le chauffer doucement pour la dernière soirée. La chaise permet alors d’éviter d’avoir à poser son cul par terre",
+        description: "La journée du samedi est souvent composée de petits moments chill avec les autres congressistes sur le camping, histoire de reposer un peu ton pauvre organisme et de le chauffer doucement pour la dernière soirée. La chaise permet alors d’éviter d’avoir à poser son cul par terre.",
     },
     {
         id: "batterie-chargeur",
@@ -130,23 +130,23 @@ export const pratique: Array<CheckListItem> = [
     },
     {
         id: "lunettes-creme-solaire",
-        label: "🕶️ Lunettes de Soleil/crème solaire",
-        description: "Si ta peau et tes yeux de picard crament au moindre petit rayon",
+        label: "🕶️ Lunettes de soleil/crème solaire",
+        description: "Si ta peau et tes yeux de picard crament au moindre petit rayon.",
     },
     {
         id: "preservatifs",
         label: "🧦 Des préservatifs",
-        description: "Là encore, pas besoin d’expliquer pourquoi… NB : Optionnel pour les sciences et les ingés",
+        description: "Là encore, pas besoin d’expliquer pourquoi… N.B. : optionnel pour les sciences et les ingés.",
     },
     {
         id: "lubrifiant",
         label: "💦 Lubrifiant",
-        description: "Avec l'alcool, c'est pas du luxe",
+        description: "Avec l'alcool, c'est pas du luxe.",
     },
     {
         id: "sac-poubelle",
         label: "🗑️ Sac poubelle",
-        description: "Parce que l’orga a autre chose à foutre que de nettoyer le terrain de camping",
+        description: "Parce que l’orga a autre chose à foutre que de nettoyer le terrain de camping.",
     },
     {
         id: "bouteilles-eau",
@@ -191,27 +191,27 @@ export const pratique: Array<CheckListItem> = [
     {
         id: "gaviscon",
         label: "💊 Gaviscon ou équivalent, Guronsan, Citrate de Bétaine",
-        description: "Si t’as un estomac de fragile (je compatis…), pour te réveiller le matin, et gagner quelques PV",
+        description: "Si t’as un estomac de fragile (je compatis…), pour te réveiller le matin, et gagner quelques PV.",
     },
     {
         id: "couteau-suisse",
         label: "🔪 Couteau suisse avec tire-bouchon",
-        description: "A utiliser en cas d'urgence apéro",
+        description: "À utiliser en cas d'urgence apéro.",
     },
     {
         id: "marqueur",
         label: "✏️ Marqueur",
-        description: "Pour signer les impétrants",
+        description: "Pour signer les impétrants.",
     },
     {
         id: "ethylotest",
         label: "🧪 Éthylotest",
-        description: "Pour attendre qu'il soit négatif avant de reprendre la route",
+        description: "Pour attendre qu'il soit négatif avant de reprendre la route.",
     },
     {
         id: "enceinte",
         label: "🎶 Enceinte",
-        description: "Pour Pour s'ambiancer dès 8h le samedi matin",
+        description: "Pour s'ambiancer dès 8 h le samedi matin.",
     },
     {
         id: "1er-secours",

@@ -11,9 +11,9 @@ import pages from "../../core/page";
             d’un Grand Maître (GM), choisi par les faluchards au vu de ses
             mérites, et dont la tâche principale sera de veiller à l’application
             des principes de base qui régissent le port de la Faluche. Le Grand
-            Maître est le garant des traditions, il veille aux baptêmes des
-            étudiants de sa filière et fait procéder l’élection de son
-            successeur. À Amiens les futures croix sont choisies par les croix
+            Maître est le garant des traditions ; il veille aux baptêmes des
+            étudiants de sa filière et fait procéder à l’élection de son
+            successeur. À Amiens, les futures croix sont choisies par les croix
             partant à la retraite.
         </p>
 
@@ -32,7 +32,7 @@ import pages from "../../core/page";
             Sa distinction est une croix du mérite émaillée de blanc soutenue
             par un ruban aux couleurs de la matière de la discipline ou de la
             ville du mandat. Lui seul est en mesure de décerner le Bacchus,
-            l’abeille, la chouette, le coq... (voir article VIII). Il doit en
+            l’abeille, la chouette, le coq… (voir article VIII). Il doit en
             outre certifier, avec le concours de trois autres porteurs de
             Faluche, l’acquisition de bouteilles.
         </p>
@@ -47,7 +47,7 @@ import pages from "../../core/page";
         <div class="table-warning-fal px-3 pt-2 mt-4">
             <h3 class="">
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
-                Spécifités Amiénoises
+                Spécificités amiénoises
             </h3>
             <Article13Spe class="table-warning-fal px-4 py-2" />
         </div>

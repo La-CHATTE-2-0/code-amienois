@@ -81,10 +81,10 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
                     autre que François Rabelais ?
                 </p>
                 <p class="pt-2">
-                    Bon vivant, aimant la chaire et le bon vin, il n’en était
-                    pas moins, médecin, latiniste, géographe et moine. Dans le
+                    Bon vivant, aimant la chère et le bon vin, il n’en était
+                    pas moins médecin, latiniste, géographe et moine. Dans le
                     plus pur respect de son œuvre, festoyons, rions et chantons
-                    gaiement, mais souvenons nous aussi que Pantagruel et
+                    gaiement, mais souvenons-nous aussi que Pantagruel et
                     Gargantua étaient deux géants, aussi sachons adapter notre
                     consommation à notre morphologie et donnons de la Faluche et
                     des Faluchards une image en accord avec le respect que nous
@@ -93,7 +93,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
                 <figure class="text-end">
                     <blockquote class="blockquote">
                         <p>
-                            "Si désirez être bon Pantagruélistes (c'est à dire
+                            "Si désirez être bons Pantagruélistes (c'est-à-dire
                             vivre en paix, joie, santé, faisant toujours grande
                             chère), ne vous fiez jamais en gens qui regardent
                             par un pertuis."
@@ -117,15 +117,15 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
             </v-img>
             <v-card-title class="pt-4">Honoris Causa</v-card-title>
             <v-card-text class="pt-4">
-                La faluche Honoris Causa est remise au mérite à des non
-                étudiants (patron de bar, de restos, etc.) qui par leurs actes
+                La faluche Honoris Causa est remise au mérite à des
+                non-étudiants (patron de bar, de restos, etc.) qui par leurs actes
                 ou leur sens du commerce ont fait quelque chose pour la Faluche
                 et les faluchards, ainsi que leurs traditions. C'est donc une
                 faluche de velours noir ou amarante décorée avec un circulaire
                 en satin blanc où est écrit "Honoris Causa". Ce titre
                 honorifique vient du titre de Docteur Honoris Causa. Un doctorat
                 Honoris Causa (du latin "causa" qui exprime le but, précédé du
-                génitif de "honor", "honoris" qui exprime l'honneur: "pour
+                génitif de "honor", "honoris" qui exprime l'honneur : "pour
                 l'honneur") est un titre honorifique décerné par une université
                 ou une faculté à une personnalité éminente.
             </v-card-text>
@@ -137,17 +137,17 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
                 src="/images/carousel/marie_sans_chemise.jpg"
                 cover
                 class="align-end"
-                alt="Marie Sans Chemise"
+                alt="Marie-sans-chemise"
             >
             </v-img>
             <v-card-title class="pt-4"> Le Monôme </v-card-title>
 
             <v-card-text class="pt-4">
                 À Amiens, les étudiants faluchards défilent en cohorte et
-                chantent de nombreuses paillardes, traversant le centre ville
-                qui accueille en cette période le marché de noël, jusqu’à la
-                place Marie sans chemise, où les Grand-Maître Faluchards
-                remettent sa faluche à Marie sans chemise, accompagné d'un
+                chantent de nombreuses paillardes, traversant le centre-ville
+                qui accueille en cette période le marché de Noël, jusqu’à la
+                place Marie-sans-chemise, où les Grands-Maîtres faluchards
+                remettent sa faluche à Marie-sans-chemise, accompagnée d'un
                 discours.
             </v-card-text>
 
@@ -175,7 +175,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
             <v-card-title class="pt-4">La CHATTE 2.0</v-card-title>
             <v-card-text class="pt-4">
                 La CHATTE 2.0 est l'association falucharde de la ville d'Amiens.
-                Elle a pour but d'animer la ville faluchard au delà des
+                Elle a pour but d'animer la ville falucharde au-delà des
                 baptêmes, en organisant des apérals, le Monôme, et des commandes
                 d'insignes pour mettre à jour nos faluches.
             </v-card-text>

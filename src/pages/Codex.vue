@@ -8,8 +8,8 @@
             <p class="text-justify mt-5">
                 En hommage à son passé de ville avec des gros satins de merde, plus précisément
                 les sciences,
-                <strong>les rubans supérieurs sont tous en satin à Amiens</strong>. Cette particularité à été exportée à
-                la villes de Lille (pour sa mauvaise ambi).
+                <strong>les rubans supérieurs sont tous en satin à Amiens</strong>. Cette particularité a été exportée à
+                la ville de Lille (pour sa mauvaise ambi).
             </p>
         </div>
     </v-container>

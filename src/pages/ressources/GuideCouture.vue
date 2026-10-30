@@ -97,9 +97,9 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         La solidité d'une faluche est vérifiée en tirant sur les
                         rubans et en essayant de passer une dent de clé entre deux
                         points de couture. Afin de réussir la vérification, il est
-                        recommandé d'<strong>espacer chaque point de moins de 2mm</strong>.
-                        Il est cependant tout à fait possible de varier entre 1mm
-                        et 3mm en fonction de l'accessibilité de la zone afin de
+                        recommandé d'<strong>espacer chaque point de moins de 2 mm</strong>.
+                        Il est cependant tout à fait possible de varier entre 1 mm
+                        et 3 mm en fonction de l'accessibilité de la zone afin de
                         privilégier la qualité des points à leur rapprochement.
                     </p>
 
@@ -108,7 +108,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         Un point de bonne qualité est solide et ne crée pas de pli
                         sur le tissu. Pour cela, <strong>la longueur du fil utilisé
                         pour un point doit être égale à l'espacement entre deux
-                        points</strong>. Pour des points espacés de 2mm, 2mm de fil
+                        points</strong>. Pour des points espacés de 2 mm, 2 mm de fil
                         doivent être utilisés entre chaque point. Il ne faut pas
                         utiliser moins et tirer dessus ni utiliser plus car le
                         point serait moins solide. Les points doivent également
@@ -121,8 +121,8 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                     <p>
                         Pour un point reliant deux rubans entre eux, aucune
                         distance ne doit être parcourue par le fil entre les
-                        rubans. Si l'aiguille est plantée à 10mm du bord des deux
-                        rubans, elle doit ressortir exactement à 10mm.
+                        rubans. Si l'aiguille est plantée à 10 mm du bord des deux
+                        rubans, elle doit ressortir exactement à 10 mm.
                     </p>
                     <figure class="guide__figure">
                         <img loading="lazy" :src="getImageUrl('point-au-travers')" v-bind="images['point-au-travers']" />
@@ -135,7 +135,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         density="compact"
                     >
                         Il est possible de gagner en solidité en cousant à l'aide
-                        de deux fils simultanément cependant ce n'est pas sans
+                        de deux fils simultanément ; cependant, ce n'est pas sans
                         risque. Il est plus difficile de gérer la tension de deux
                         fils et le rendu après la couture est souvent moins propre
                         lorsque deux fils sont utilisés. Si la couture en double
@@ -197,7 +197,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         Attention, les rubans ne sont pas cousus ensemble en pharmacie.
                     </div>
                     <p>
-                        Sur Amiens, les rubans bicolores de ville, province et
+                        À Amiens, les rubans bicolores de ville, province et
                         naissance sont cousus ensemble avant d'être cousus sur la
                         faluche.
                     </p>
@@ -209,7 +209,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         la partie veloutée. Une fois les rubans alignés l'un à
                         l'autre, ils sont cousus ensemble en traçant une ligne
                         parallèle à la bordure du ruban, placée à
-                        <strong>1 ou 2mm du bord</strong>, dépendant du ruban. Si la
+                        <strong>1 ou 2 mm du bord</strong>, dépendant du ruban. Si la
                         bordure d'un ruban est boursouflée, comme c'est le cas
                         pour le velours, il ne faut pas coudre directement sur la
                         boursouflure mais directement en dessous.
@@ -295,7 +295,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         aplati sur la faluche durant la couture. Dans le cas d'un
                         double ruban, chaque côté du ruban doit être espacé de
                         sorte que le ruban soit bien à plat, comme si les deux
-                        parties du ruban étaient placées l'un à côté de l'autre
+                        parties du ruban étaient placées l'une à côté de l'autre
                         sur la faluche.
                     </p>
                     <p>
@@ -304,7 +304,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         rubans sur la faluche mais il peut être utile d'ajouter
                         une étape avant la couture au propre. En effet, il est
                         plus simple pour certaines personnes de coudre une
-                        première fois en point droit avec un espacement de 1cm
+                        première fois en point droit avec un espacement de 1 cm
                         pour pouvoir bien fixer le ruban sur toute sa longueur
                         puis retirer les aiguilles. Le fil utilisé pour cette
                         étape devra être retiré suite à la couture au propre, il
@@ -372,7 +372,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                     <p>
                         De la même manière qu'un ruban, la couture d'un blason ne
                         doit pas se faire directement sur le bord de ce dernier
-                        mais à <strong>2mm ou 3mm de la bordure</strong>. La couture d'un
+                        mais à <strong>2 mm ou 3 mm de la bordure</strong>. La couture d'un
                         blason est simple mais doit être très solide, il est donc
                         préférable d'utiliser le <strong>point arrière</strong>.
                     </p>
@@ -402,7 +402,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                     <p>
                         On commence la couture d'un circulaire par le moivre. Pour
                         cela, on prend une longueur de ruban entre
-                        <strong>1.5 et 2 fois plus long que la hauteur du
+                        <strong>1,5 et 2 fois plus long que la hauteur du
                         circulaire</strong>. Le ruban est placé en diagonale sans angle
                         exact à suivre, son centre placé au milieu du circulaire
                         en hauteur. Les parties dépassant du circulaire sont
@@ -425,7 +425,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         transpercer, il est conseillé de couper leurs extrémités en
                         diagonale afin qu'elles forment des pointes. De plus,
                         certains insignes peuvent se tordre lorsque les pattes
-                        sont repliées, pour éviter cela, des pinces peuvent être
+                        sont repliées ; pour éviter cela, des pinces peuvent être
                         utilisées pour maintenir la forme de l'insigne pendant que
                         la patte est mise en position. Une fois accrochés, il est
                         fortement conseillé de <strong>sécuriser ses insignes à l'aide
@@ -458,7 +458,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
         </v-expansion-panels>
 
         <p class="guide__credit">
-            D'après Paul “Jabba El Meuble” R., Ex GC Sciences Amiens
+            D'après Paul “Jabba El Meuble” R., ex-GC Sciences Amiens
         </p>
     </v-container>
 </template>
