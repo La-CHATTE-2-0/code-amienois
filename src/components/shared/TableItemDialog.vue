@@ -39,6 +39,7 @@ onMounted(() => {
                     class=""
                     color="grey-lighten-1"
                     icon="mdi-information"
+                    :aria-label="`Plus d'informations : ${item.label}`"
                     variant="text"
                 ></v-btn>
             </v-col>

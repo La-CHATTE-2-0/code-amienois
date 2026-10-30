@@ -42,15 +42,18 @@ import Article8Spe from "./Article8Spe.vue";
             <li>Les symboles:</li>
         </ul>
 
+        <div class="fal-table-title">
+            <h3>Les symboles</h3>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes
             </caption>
             <thead>
                 <tr>
-                    <td colspan="3">
-                        <h3>Les symboles</h3>
-                    </td>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -568,15 +571,19 @@ import Article8Spe from "./Article8Spe.vue";
             </tbody>
         </v-table>
 
+        <div class="fal-table-title">
+            <h3>Les insignes décernés par le/la partenaire</h3>
+            <p>(Il est préférable d'avoir eu plusieurs partenaires pour les valider)</p>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes décernés par les partenaires, les Grand-Maîtres
             </caption>
             <thead>
                 <tr>
-                    <td colspan="3">
-                        <h3>Les insignes décernés par le/la partenaire</h3>
-                    </td>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -648,15 +655,18 @@ import Article8Spe from "./Article8Spe.vue";
             </tbody>
         </v-table>
 
+        <div class="fal-table-title">
+            <h3>Les insignes décernés par un Grand-Maître</h3>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes décernés par les Grand-Maîtres
             </caption>
             <thead>
                 <tr>
-                    <td colspan="3">
-                        <h3>Les insignes décernés par un Grand-Maître</h3>
-                    </td>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -940,21 +950,19 @@ import Article8Spe from "./Article8Spe.vue";
             </tbody>
         </v-table>
 
+        <div class="fal-table-title">
+            <h3>Les insignes à décernements particuliers</h3>
+            <p>(Décerné par GM avec accord des porteurs de l'insigne)</p>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes à decernements particuliers
             </caption>
             <thead>
                 <tr>
-                    <td colspan="3" class="pb-2">
-                        <h3 class="mb-2">
-                            Les insignes à décernements particuliers
-                        </h3>
-                        <span
-                            >(Décerné par GM avec accord des porteurs de
-                            l'insigne)</span
-                        >
-                    </td>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -987,15 +995,18 @@ import Article8Spe from "./Article8Spe.vue";
             </tbody>
         </v-table>
 
+        <div class="fal-table-title">
+            <h3>Les insignes régionaux</h3>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes régionaux
             </caption>
             <thead>
                 <tr>
-                    <td colspan="3">
-                        <h3>Les insignes régionaux</h3>
-                    </td>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>

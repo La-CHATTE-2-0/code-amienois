@@ -67,7 +67,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
         <PartiesFal class="my-8" />
 
         <v-card class="mx-auto mt-5 no-print" variant="flat">
-            <v-img
+            <v-img alt="Portrait de François Rabelais"
                 height="auto"
                 src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Francois_Rabelais_-_Portrait.jpg"
                 cover
@@ -108,7 +108,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
         </v-card>
 
         <v-card class="mx-auto mt-5 no-print" variant="flat">
-            <v-img
+            <v-img alt="Faluchards portant la faluche Honoris Causa"
                 height="auto"
                 src="/images/carousel/honoris.jpg"
                 cover
@@ -196,13 +196,15 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
 
 <style scoped>
 .code-figure {
+    margin-inline: 0;
     text-align: center;
 }
 
 .code-figure img {
+    display: block;
     width: 100%;
-    max-width: 650px;
-    max-height: 350px;
+    height: auto;
+    border-radius: 12px;
 }
 
 .code-signature {

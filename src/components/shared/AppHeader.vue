@@ -37,6 +37,8 @@ watch(themeMode, (mode) => {
     >
         <template v-slot:prepend>
             <v-app-bar-nav-icon
+                :aria-label="drawerState ? 'Fermer le menu' : 'Ouvrir le menu'"
+                :aria-expanded="drawerState"
                 @click.stop="drawerState = !drawerState"
             ></v-app-bar-nav-icon>
         </template>
@@ -48,7 +50,8 @@ watch(themeMode, (mode) => {
             ></v-img>
         </template>
 
-        <v-app-bar-title v-motion :initial="{ opacity: 0, x: -16 }" :enter="{ opacity: 1, x: 0, transition: { duration: 450 } }">
+        <!-- Titre principal de chaque page (seul h1) -->
+        <v-app-bar-title tag="h1" class="app-header__title" v-motion :initial="{ opacity: 0, x: -16 }" :enter="{ opacity: 1, x: 0, transition: { duration: 450 } }">
             <!-- Sur mobile, seul le nom de la page courante est affiché -->
             <router-link
                 :to="pages.code.url"
@@ -58,7 +61,7 @@ watch(themeMode, (mode) => {
                 Code Amiénois
             </router-link>
             <template v-if="!isHome">
-                <span class="app-header__separator d-none d-sm-inline">/</span>
+                <span class="app-header__separator d-none d-sm-inline" aria-hidden="true">/</span>
                 <span class="app-header__page">{{ route.name }}</span>
             </template>
         </v-app-bar-title>
@@ -194,9 +197,11 @@ watch(themeMode, (mode) => {
         <template v-slot:append>
             <v-divider></v-divider>
             <div class="app-drawer__theme">
-                <span class="text-caption text-medium-emphasis">Thème</span>
+                <span id="theme-label" class="text-caption text-medium-emphasis">Thème</span>
                 <v-btn-toggle
                     v-model="themeMode"
+                    role="radiogroup"
+                    aria-labelledby="theme-label"
                     mandatory
                     divided
                     density="compact"
@@ -208,6 +213,8 @@ watch(themeMode, (mode) => {
                         :key="mode.value"
                         :value="mode.value"
                         :prepend-icon="mode.icon"
+                        role="radio"
+                        :aria-checked="themeMode === mode.value"
                         size="small"
                     >
                         {{ mode.label }}
@@ -231,6 +238,13 @@ watch(themeMode, (mode) => {
 
 .app-header__page {
     font-weight: 600;
+}
+
+/* Le h1 garde l'apparence du titre de barre d'application */
+.app-header__title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: inherit;
 }
 
 .app-drawer__theme {

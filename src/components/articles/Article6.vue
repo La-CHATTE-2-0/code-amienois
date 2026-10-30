@@ -19,7 +19,7 @@ import Article6Spe from "./Article6Spe.vue";
         </p>
 
         <v-table class="mt-4" data-fal-table="circu">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Couleurs circulaires
             </caption>
             <thead>

@@ -4,7 +4,7 @@ import "../../sass/base/_tables.scss";
 
 <template>
     <v-table class="table align-middle" data-fal-table="insigne">
-        <caption class="d-none">
+        <caption class="d-sr-only">
             Insignes fillières spés Amiens
         </caption>
         <thead>

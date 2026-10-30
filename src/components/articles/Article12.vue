@@ -12,9 +12,15 @@ import "../../sass/base/_tables.scss";
             :
         </p>
         <v-table class="table my-2">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Insignes potager
             </caption>
+            <thead>
+                <tr>
+                    <th scope="col" colspan="2">Insigne</th>
+                    <th scope="col">Signification</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
                     <td data-fal-insigne>

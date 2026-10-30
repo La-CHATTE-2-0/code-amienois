@@ -5,7 +5,7 @@ import "../../sass/base/_tables.scss";
 <template>
     <div>
         <v-table data-fal-table="circu">
-            <caption class="d-none">
+            <caption class="d-sr-only">
                 Couleurs circulaires spé Amiens
             </caption>
             <thead>

@@ -28,7 +28,7 @@
                     rubans.
                 </p>
 
-                <v-img
+                <v-img alt="Le khâlot"
                     class="my5"
                     src="/images/folklores/57419533.jpg"
                 ></v-img>

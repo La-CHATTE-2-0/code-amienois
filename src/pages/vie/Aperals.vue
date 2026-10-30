@@ -162,6 +162,7 @@ watch(filteredAperals, fitToMarkers);
             <v-text-field
                 v-model="search"
                 placeholder="Rechercher une ville ou un bar"
+                aria-label="Rechercher une ville ou un bar"
                 prepend-inner-icon="mdi-magnify"
                 variant="solo-filled"
                 density="comfortable"

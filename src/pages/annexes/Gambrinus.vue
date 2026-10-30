@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <div>
-            <v-img
+            <v-img alt="Représentation de Gambrinus"
                 src="https://www.museesgrandest.org/wp-content/uploads/2018/11/1721-1721.jpg"
             ></v-img>
         </div>
@@ -41,7 +41,7 @@
         </p>
 
         <div class="mt-4">
-            <v-img
+            <v-img alt="Illustration de Gambrinus"
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-Cxf8Uh-5aVKcNtf1KTM4aQ9r1kD9LDSS-oqilWqT_eeGzKFD0e5ZkrlLzj76SVjwczW4DIUVpLuSFk-3JIeL8Ubb-UF-Xcq7O866LqkbGHrTWreMJfLOx0yJ-ZQo7E7sFcOQHCqaqDTq/s1600/Gambrinus+avec+sa+biere.jpg"
             >
             </v-img>
