@@ -42,6 +42,9 @@ import Article8Spe from "./Article8Spe.vue";
             <li>Les symboles:</li>
         </ul>
 
+        <div class="fal-table-title">
+            <h3>Les symboles</h3>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-none">
                 Insignes
@@ -54,11 +57,6 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
             </thead>
             <tbody class="table-group-divider">
-                <tr>
-                    <td colspan="3">
-                        <h3>Les symboles</h3>
-                    </td>
-                </tr>
                 <tr>
                     <td>Aigle</td>
                     <td>Amour de l'aviation</td>
@@ -573,6 +571,10 @@ import Article8Spe from "./Article8Spe.vue";
             </tbody>
         </v-table>
 
+        <div class="fal-table-title">
+            <h3>Les insignes décernés par le/la partenaire</h3>
+            <p>(Il est préférable d'avoir eu plusieurs partenaires pour les valider)</p>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-none">
                 Insignes décernés par les partenaires, les Grand-Maîtres
@@ -585,11 +587,6 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td colspan="3">
-                        <h3>Les insignes décernés par le/la partenaire</h3>
-                    </td>
-                </tr>
                 <tr>
                     <td>Épee</td>
                     <td>Fin Baiseur</td>
@@ -658,6 +655,9 @@ import Article8Spe from "./Article8Spe.vue";
             </tbody>
         </v-table>
 
+        <div class="fal-table-title">
+            <h3>Les insignes décernés par un Grand-Maître</h3>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-none">
                 Insignes décernés par les Grand-Maîtres
@@ -670,11 +670,6 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td colspan="3">
-                        <h3>Les insignes décernés par un Grand-Maître</h3>
-                    </td>
-                </tr>
                 <tr>
                     <td>Abeille</td>
                     <td>
@@ -955,6 +950,10 @@ import Article8Spe from "./Article8Spe.vue";
             </tbody>
         </v-table>
 
+        <div class="fal-table-title">
+            <h3>Les insignes à décernements particuliers</h3>
+            <p>(Décerné par GM avec accord des porteurs de l'insigne)</p>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-none">
                 Insignes à decernements particuliers
@@ -967,17 +966,6 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td colspan="3" class="pb-2">
-                        <h3 class="mb-2">
-                            Les insignes à décernements particuliers
-                        </h3>
-                        <span
-                            >(Décerné par GM avec accord des porteurs de
-                            l'insigne)</span
-                        >
-                    </td>
-                </tr>
                 <tr>
                     <td>Clé de sol</td>
                     <td>Digne chanteur de paillardes</td>
@@ -1007,6 +995,9 @@ import Article8Spe from "./Article8Spe.vue";
             </tbody>
         </v-table>
 
+        <div class="fal-table-title">
+            <h3>Les insignes régionaux</h3>
+        </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-none">
                 Insignes régionaux
@@ -1019,11 +1010,6 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td colspan="3">
-                        <h3>Les insignes régionaux</h3>
-                    </td>
-                </tr>
                 <tr>
                     <td>Abeille</td>
                     <td>Ville impériale</td>

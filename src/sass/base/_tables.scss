@@ -26,6 +26,33 @@ $fal-warning-color-light: 255 242 202;
     tbody > tr:hover > td {
         background: rgba(var(--v-theme-primary), 0.06);
     }
+
+    // Ligne de groupe à l'intérieur d'un tableau (« Anciens baccalauréats »…)
+    tbody > tr:has(> td[colspan] > h3) > td {
+        padding-block: 6px;
+        background: rgba(var(--v-theme-on-surface), 0.06);
+    }
+
+    td[colspan] > h3 {
+        margin: 0;
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+}
+
+// Intertitre placé au-dessus d'un tableau (article 8)
+.fal-table-title {
+    margin-top: 1.5rem;
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 0.875rem;
+        opacity: var(--v-medium-emphasis-opacity);
+    }
 }
 
 // Panneaux dépliants des articles (À propos du Singe…) : même cadre que les tableaux
@@ -62,6 +89,12 @@ $fal-warning-color-light: 255 242 202;
         margin-top: 0;
         border: none;
         border-radius: 0;
+    }
+
+    // Intertitres des tableaux spé, alignés sur le titre de la carte
+    .fal-table-title {
+        margin-top: 0.75rem;
+        padding-inline: 16px;
     }
 }
 
