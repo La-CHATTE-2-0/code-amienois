@@ -1,0 +1,1865 @@
+{
+    "themes": [
+        {
+            "id": "histoire",
+            "label": "Histoire et principes",
+            "description": "Naissance de la faluche, articles fondateurs et traditions.",
+            "icon": "mdi-book-open-variant"
+        },
+        {
+            "id": "filieres",
+            "label": "Filières",
+            "description": "Couleurs des circulaires et emblèmes des disciplines.",
+            "icon": "mdi-school-outline"
+        },
+        {
+            "id": "circulaire",
+            "label": "Le circulaire",
+            "description": "Baccalauréats, étoiles, palmes et insignes de cursus.",
+            "icon": "mdi-star-outline"
+        },
+        {
+            "id": "velours",
+            "label": "Le velours",
+            "description": "Rubans supérieurs, symboles et insignes décernés.",
+            "icon": "mdi-medal-outline"
+        },
+        {
+            "id": "croix",
+            "label": "Croix et spécificités amiénoises",
+            "description": "Grands Maîtres, évêque, bourreau et particularités d'Amiens.",
+            "icon": "mdi-cross"
+        }
+    ],
+    "questions": [
+        {
+            "id": "h01",
+            "theme": "histoire",
+            "question": "En quelle année la faluche a-t-elle été créée ?",
+            "answers": ["1888", "1868", "1908", "1923"],
+            "explanation": "Le béret a été officialisé le 20 décembre 1888.",
+            "source": "/#article-1"
+        },
+        {
+            "id": "h02",
+            "theme": "histoire",
+            "question": "Quel voyage a inspiré l'idée d'une coiffe pour les étudiants français ?",
+            "answers": [
+                "Les fêtes du huitième centenaire de l'Université de Bologne",
+                "L'inauguration de l'Université de Salamanque",
+                "Le jubilé de l'Université d'Oxford",
+                "Le congrès des étudiants de Louvain"
+            ],
+            "explanation": "Une délégation d'étudiants français s'y est rendue en juin 1888 et en est revenue avec l'idée d'une coiffe.",
+            "source": "/#article-1"
+        },
+        {
+            "id": "h03",
+            "theme": "histoire",
+            "question": "À l'initiative de qui le béret a-t-il été créé ?",
+            "answers": [
+                "L'Association Générale des étudiants de Paris",
+                "Les Grands Maîtres de France",
+                "L'Université de Bologne",
+                "Le ministère de l'Instruction publique"
+            ],
+            "explanation": "C'est l'Association Générale des étudiants de Paris qui l'a créé et officialisé.",
+            "source": "/#article-1"
+        },
+        {
+            "id": "h04",
+            "theme": "histoire",
+            "question": "Où la faluche a-t-elle été officialisée ?",
+            "answers": [
+                "Au Théâtre Beaumarchais à Paris",
+                "À la Sorbonne",
+                "À l'Opéra Garnier",
+                "À l'Université de Bologne"
+            ],
+            "explanation": "Elle a été officialisée le 20 décembre 1888 au Théâtre Beaumarchais.",
+            "source": "/#article-1"
+        },
+        {
+            "id": "h05",
+            "theme": "histoire",
+            "question": "Quelle est la date d'officialisation de la faluche ?",
+            "answers": ["20 décembre 1888", "14 juillet 1888", "1er juin 1888", "20 décembre 1898"],
+            "explanation": "Le 20 décembre 1888, au Théâtre Beaumarchais à Paris.",
+            "source": "/#article-1"
+        },
+        {
+            "id": "h06",
+            "theme": "histoire",
+            "question": "Selon l'article 0, la faluche est…",
+            "answers": [
+                "Apolitique, aconfessionnelle, asyndicale et indépendante",
+                "Apolitique et aconfessionnelle, mais peut soutenir un syndicat étudiant",
+                "Laïque, mais peut prendre position politiquement",
+                "Rattachée à l'Association Générale des étudiants de Paris"
+            ],
+            "explanation": "Aucun insigne ou symbole politique, confessionnel ou syndical ne doit y figurer.",
+            "source": "/#article-0"
+        },
+        {
+            "id": "h07",
+            "theme": "histoire",
+            "question": "Peut-on porter la faluche lors d'une manifestation syndicale ?",
+            "answers": [
+                "Non, c'est strictement interdit",
+                "Oui, avec l'accord d'un Grand Maître",
+                "Oui, à condition de retirer ses insignes",
+                "Oui, si la manifestation est étudiante"
+            ],
+            "explanation": "Il est interdit de porter la faluche, ou de parler en son nom, lors de manifestations politiques, confessionnelles ou syndicales.",
+            "source": "/#article-0"
+        },
+        {
+            "id": "h08",
+            "theme": "histoire",
+            "question": "Devant qui enlève-t-on sa faluche ?",
+            "answers": [
+                "Uniquement devant un recteur",
+                "Devant n'importe quel professeur",
+                "Devant le doyen de sa faculté",
+                "On ne l'enlève jamais"
+            ],
+            "explanation": "On ne l'enlève pas, même devant un professeur, sauf s'il a le rang de recteur.",
+            "source": "/#article-2"
+        },
+        {
+            "id": "h09",
+            "theme": "histoire",
+            "question": "Quels insignes est-on obligé de porter, même s'ils ne nous plaisent pas ?",
+            "answers": ["Les blâmes", "Le Bacchus", "Les étoiles de cursus", "Les insignes de congrès"],
+            "explanation": "À l'exception des blâmes, un étudiant est libre de ne pas porter un insigne qui ne lui correspond pas.",
+            "source": "/#article-3"
+        },
+        {
+            "id": "h10",
+            "theme": "histoire",
+            "question": "Qui peut faire enlever un insigne jugé non représentatif de l'étudiant ?",
+            "answers": [
+                "Un Grand Maître",
+                "Le parrain ou la marraine",
+                "N'importe quel ancien",
+                "Le président de l'association"
+            ],
+            "explanation": "Un Grand Maître peut décider de faire enlever un insigne qu'il juge non représentatif.",
+            "source": "/#article-3"
+        },
+        {
+            "id": "h11",
+            "theme": "histoire",
+            "question": "« Escholier, il est interdit de faire de la Faluche une succursale de… »",
+            "answers": ["Monoprix", "Prisunic", "La Samaritaine", "Carrefour"],
+            "explanation": "Elle doit être le parchemin qui s'enorgueillit des richesses de l'histoire de l'étudiant.",
+            "source": "/#article-3"
+        },
+        {
+            "id": "h12",
+            "theme": "histoire",
+            "question": "L'article 4 dit que ces dispositions sont « assez larges pour permettre toute fantaisie, assez strictes pour… »",
+            "answers": [
+                "Réaliser l'uniformité",
+                "Respecter les anciens",
+                "Honorer Rabelais",
+                "Garder la tradition intacte"
+            ],
+            "source": "/#article-4"
+        },
+        {
+            "id": "h13",
+            "theme": "histoire",
+            "question": "De combien de parties se compose la faluche ?",
+            "answers": [
+                "Deux : le ruban circulaire et le velours noir",
+                "Trois : le circulaire, le velours et l'intérieur",
+                "Deux : la partie officielle et la partie personnelle",
+                "Quatre : le frontal, l'occipital et les deux côtés"
+            ],
+            "source": "/#article-5"
+        },
+        {
+            "id": "h14",
+            "theme": "histoire",
+            "question": "Que retrace le ruban circulaire ?",
+            "answers": [
+                "Le cursus estudiantin",
+                "La vie falucharde",
+                "Les engagements associatifs",
+                "Les origines géographiques"
+            ],
+            "explanation": "Le circulaire porte les emblèmes du cursus ; le velours porte les rubans et insignes.",
+            "source": "/#article-5"
+        },
+        {
+            "id": "h15",
+            "theme": "histoire",
+            "question": "Par qui toute faluche doit-elle être baptisée ?",
+            "answers": [
+                "Un Grand Maître (ou un représentant légitime) de sa filière ou de sa ville",
+                "Son parrain ou sa marraine",
+                "N'importe quel faluchard",
+                "Le président de l'association falucharde"
+            ],
+            "explanation": "Le baptême se fait sous l'œil attentif des anciens.",
+            "source": "/#article-14"
+        },
+        {
+            "id": "h16",
+            "theme": "histoire",
+            "question": "Quand la faluche doit-elle être portée ?",
+            "answers": [
+                "Dans toutes les cérémonies : repas, soirées, sorties estudiantines",
+                "Uniquement lors des baptêmes",
+                "Uniquement en congrès",
+                "Tous les jours en cours"
+            ],
+            "source": "/#article-15"
+        },
+        {
+            "id": "h17",
+            "theme": "histoire",
+            "question": "Que risque une personne qui met une faluche qui ne lui appartient pas ?",
+            "answers": [
+                "Une épreuve choisie par le propriétaire de la faluche",
+                "Un blâme décerné par un Grand Maître",
+                "Une bouteille à offrir aux anciens",
+                "Rien, si elle la rend aussitôt"
+            ],
+            "explanation": "La faluche représente la vie d'un étudiant.",
+            "source": "/#article-16"
+        },
+        {
+            "id": "h18",
+            "theme": "histoire",
+            "question": "Que désigne le « potager particulier » d'un faluchard ?",
+            "answers": [
+                "L'intérieur de sa faluche",
+                "Le ruban d'élu",
+                "La partie gauche du velours",
+                "Le début du circulaire"
+            ],
+            "explanation": "Le voir se mérite : il faut en passer par les armes, suivant les goûts de l'étudiant.",
+            "source": "/#article-16"
+        },
+        {
+            "id": "h19",
+            "theme": "histoire",
+            "question": "Comment est considéré un étudiant surpris en train de baptiser sans porter de faluche ?",
+            "answers": [
+                "Comme un impétrant",
+                "Comme un ancien",
+                "Comme un Grand Chambellan",
+                "Comme un parrain"
+            ],
+            "explanation": "À ce titre, il encourt les pires sévices…",
+            "source": "/#article-17"
+        },
+        {
+            "id": "h20",
+            "theme": "histoire",
+            "question": "Qui est le maître à penser des faluchards ?",
+            "answers": ["François Rabelais", "Gambrinus", "Victor Hugo", "Jules Verne"],
+            "explanation": "Bon vivant, médecin, latiniste, géographe et moine.",
+            "source": "/"
+        },
+        {
+            "id": "h21",
+            "theme": "histoire",
+            "question": "À qui est remise la faluche Honoris Causa ?",
+            "answers": [
+                "À des non-étudiants qui ont œuvré pour la faluche (patrons de bar, de restaurant…)",
+                "Aux anciens Grands Maîtres",
+                "Aux professeurs qui portent la faluche",
+                "Aux étudiants diplômés d'un doctorat"
+            ],
+            "source": "/"
+        },
+        {
+            "id": "h22",
+            "theme": "histoire",
+            "question": "À quoi ressemble la faluche Honoris Causa ?",
+            "answers": [
+                "Velours noir ou amarante, circulaire en satin blanc portant « Honoris Causa »",
+                "Velours blanc, circulaire tricolore",
+                "Velours noir, circulaire doré portant « Honoris Causa »",
+                "Velours rouge, circulaire en velours noir"
+            ],
+            "source": "/"
+        },
+        {
+            "id": "h23",
+            "theme": "histoire",
+            "question": "Lors du Monôme amiénois, à qui les Grands Maîtres remettent-ils une faluche ?",
+            "answers": ["Marie sans chemise", "L'Homme à la Bouée", "Jules Verne", "Le maire d'Amiens"],
+            "explanation": "Le cortège traverse le marché de Noël jusqu'à la place Marie sans chemise.",
+            "source": "/monome"
+        },
+        {
+            "id": "h24",
+            "theme": "histoire",
+            "question": "Qu'est-ce que La CHATTE 2.0 ?",
+            "answers": [
+                "L'association falucharde de la ville d'Amiens",
+                "L'aperal historique d'Amiens",
+                "Le nom donné aux Grands Maîtres amiénois",
+                "Le bar des faluchards amiénois"
+            ],
+            "explanation": "Elle organise les apérals, le Monôme et les commandes d'insignes.",
+            "source": "/"
+        },
+
+        {
+            "id": "f01",
+            "theme": "filieres",
+            "question": "Sur quoi sont basées, à l'origine, les couleurs des circulaires ?",
+            "answers": [
+                "Les toges doctorales et professorales des universités françaises",
+                "Les blasons des villes universitaires",
+                "Les couleurs des associations étudiantes",
+                "Les rubans des décorations militaires"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f02",
+            "theme": "filieres",
+            "question": "Comment indique-t-on une discipline secondaire (double cursus) ?",
+            "answers": [
+                "Un ruban plus mince aux couleurs de la discipline, sur le bord supérieur du circulaire",
+                "Un second circulaire cousu sous le premier",
+                "Un ruban supérieur supplémentaire sur le velours",
+                "Les initiales de la discipline après le bac"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f03",
+            "theme": "filieres",
+            "question": "En règle générale, en quelle matière est le circulaire des filières de santé ?",
+            "answers": ["En velours", "En satin", "En soie", "En feutre"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f04",
+            "theme": "filieres",
+            "question": "À Amiens, de quelle couleur est le circulaire de Médecine ?",
+            "answers": ["Velours bordeaux", "Velours rouge", "Velours violet", "Satin rouge"],
+            "explanation": "Au code national il est en velours rouge.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f05",
+            "theme": "filieres",
+            "question": "Au code national, de quelle couleur est le circulaire de Médecine ?",
+            "answers": ["Velours rouge", "Velours bordeaux", "Velours rose", "Satin rouge"],
+            "explanation": "À Amiens, il est en velours bordeaux.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f06",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Pharmacie ?",
+            "answers": ["Velours vert", "Velours violet", "Satin vert clair", "Velours bleu"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f07",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Dentaire ?",
+            "answers": ["Velours violet", "Velours vert", "Velours marron", "Satin violet"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f08",
+            "theme": "filieres",
+            "question": "Au code national, de quelle couleur est le circulaire de Sage-Femme ?",
+            "answers": ["Velours fuchsia", "Velours rose", "Velours rouge", "Satin fuchsia"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f09",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire du Paramédical ?",
+            "answers": ["Velours rose", "Velours fuchsia", "Velours bleu", "Satin blanc"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f10",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire d'Ostéopathie ?",
+            "answers": ["Velours bleu", "Velours violet", "Velours rose", "Satin bleu roy"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f11",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire des classes préparatoires santé ?",
+            "answers": ["Velours marron", "Satin marron", "Velours bordeaux", "Velours noir"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f12",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Vétérinaire ?",
+            "answers": ["Velours bordeaux", "Velours marron", "Velours vert", "Satin bordeaux"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f13",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Droit ?",
+            "answers": ["Satin rouge", "Velours rouge", "Satin rouge et noir", "Satin orange"],
+            "explanation": "Le satin rouge et noir est celui du Notariat.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f14",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Sciences ?",
+            "answers": ["Satin violet", "Velours violet", "Satin vert foncé", "Satin bleu roy et noir"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f15",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de STAPS ?",
+            "answers": ["Satin vert foncé", "Satin vert clair", "Satin orange", "Satin tricolore"],
+            "explanation": "Le satin vert clair est celui de l'A.E.S.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f16",
+            "theme": "filieres",
+            "question": "Quelle couleur de circulaire partagent Lettres, Langues, Histoire, Philosophie et Psychologie ?",
+            "answers": ["Satin jaune", "Satin blanc", "Satin orange", "Satin bleu roy"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f17",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Sciences économiques et Gestion ?",
+            "answers": ["Satin orange", "Satin jaune", "Satin rouge et vert", "Satin vert clair"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f18",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Commerce ?",
+            "answers": ["Satin rouge et vert", "Satin orange", "Satin rouge et bleu", "Satin rouge et noir"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f19",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire d'Ingénieur ?",
+            "answers": ["Satin bleu roy et noir", "Satin bleu roy", "Satin violet", "Satin argenté"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f20",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Sciences politiques ?",
+            "answers": ["Satin rouge et bleu", "Satin rouge et vert", "Satin tricolore", "Satin rouge"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f21",
+            "theme": "filieres",
+            "question": "De quelle couleur est le circulaire de Musicologie ?",
+            "answers": ["Satin argenté", "Satin doré", "Satin bleu roy", "Satin blanc"],
+            "source": "/#article-6"
+        },
+        {
+            "id": "f22",
+            "theme": "filieres",
+            "question": "À Amiens, de quelle couleur est le circulaire des Arts et de l'Architecture ?",
+            "answers": ["Satin jaune et bleu roy", "Satin bleu roy", "Satin blanc et noir", "Satin jaune"],
+            "explanation": "Au code national, il est en satin bleu roy.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f23",
+            "theme": "filieres",
+            "question": "À Amiens, de quelle couleur est le circulaire de Cinéma ?",
+            "answers": ["Satin blanc et noir", "Satin bleu roy", "Satin jaune et bleu roy", "Satin noir"],
+            "explanation": "Au code national, il est en satin bleu roy.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f24",
+            "theme": "filieres",
+            "question": "À Amiens, de quelle couleur est le circulaire d'IUT (sauf GMP) ?",
+            "answers": ["Satin rose", "Satin blanc", "Satin orange", "Satin bleu roy"],
+            "explanation": "Au code national, il est en satin blanc.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f25",
+            "theme": "filieres",
+            "question": "À Amiens, de quelle couleur est le circulaire d'Assistante sociale ?",
+            "answers": ["Velours jaune", "Satin jaune", "Velours rose", "Satin blanc"],
+            "explanation": "Les filières sociales sont en satin jaune au code national.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f30",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/caducee_medecine.png",
+            "answers": ["Médecine", "Pharmacie", "Infirmier", "Kinésithérapie"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f31",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/caducee_pharma.png",
+            "answers": ["Pharmacie", "Médecine", "Infirmier", "Préparateur en pharmacie"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f32",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/croix_dankh.png",
+            "answers": ["Sage-Femme", "Théologie", "Archéologie", "Infirmier"],
+            "explanation": "C'est l'ânkh, la croix de vie égyptienne.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f33",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/molaire.png",
+            "answers": ["Dentaire", "Médecine", "Ostéopathie", "Paramédical"],
+            "explanation": "Une molaire supérieure.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f34",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/glaive_et_balance.png",
+            "answers": ["Droit", "Sciences politiques", "Sciences économiques", "Histoire"],
+            "explanation": "Le glaive et la balance sont aussi l'emblème du Notariat.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f35",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/palme_sciences.png",
+            "answers": ["Sciences", "Lettres", "Philosophie", "Musicologie"],
+            "explanation": "La palme croisée de chêne et de laurier.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f36",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/coq.png",
+            "answers": ["STAPS", "Vétérinaire", "Sciences politiques", "Militaire"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f37",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/livre_ouvert_et_plume.png",
+            "answers": ["Langues, Lettres", "Philosophie", "Communication, Journalisme", "Histoire"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f38",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/casque_pericles.png",
+            "answers": ["Histoire", "Archéologie", "Militaire", "Géographie"],
+            "explanation": "Le casque de Périclès.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f39",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/globe_terrestre.png",
+            "answers": ["Géographie", "Langues, Lettres", "Sciences", "Histoire"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f40",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/equerre_et_compas.png",
+            "answers": ["Architecture", "Ingénieur", "Arts plastiques", "IUT"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f41",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/etoile_et_foudre.png",
+            "answers": ["Ingénieur", "Sciences", "Arts numériques", "Militaire"],
+            "explanation": "L'étoile et la foudre.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f42",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/psi.png",
+            "answers": ["Psychologie", "Philosophie", "Sciences", "Sociologie"],
+            "explanation": "La lettre grecque Psi Ψ.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f43",
+            "theme": "filieres",
+            "question": "Quel est l'emblème de la Sociologie ?",
+            "answers": ["La grenouille", "La chouette", "Le livre ouvert et la plume", "La lettre Psi"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f44",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/tete_de_mort_sur_femurs_croises.png",
+            "answers": ["PACES / PASS", "Thanatologie", "Médecine", "Pharmacie"],
+            "explanation": "La tête de mort sur fémurs croisés.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f45",
+            "theme": "filieres",
+            "question": "À Amiens, quel est l'emblème de la Kinésithérapie ?",
+            "image": "/images/insigne/ciseaux_et_caducee_mercure.png",
+            "answers": [
+                "Les ciseaux et le caducée de Mercure",
+                "Le caducée de Mercure seul",
+                "Les ciseaux seuls",
+                "Le caducée infirmier"
+            ],
+            "explanation": "Au code national, c'est le caducée de Mercure seul.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f46",
+            "theme": "filieres",
+            "question": "Quel est l'emblème du Paramédical (hors Kiné et Infirmier) ?",
+            "answers": ["Les ciseaux", "Le caducée infirmier", "Le mortier et le pilon", "Le sphénoïde"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f47",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/mortier_et_pilon.png",
+            "answers": ["Préparateur en pharmacie", "Pharmacie", "Oenologie", "Paramédical"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f48",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/tete_de_cheval.png",
+            "answers": ["Vétérinaire", "STAPS", "Militaire", "Agronomie"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f49",
+            "theme": "filieres",
+            "question": "Quel est l'emblème de l'Ostéopathie ?",
+            "answers": ["Le sphénoïde", "Le squelette", "La molaire supérieure", "Les ciseaux"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f50",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/parapluie_ferme_a_l_horizontale.png",
+            "answers": ["Sciences politiques", "Droit", "Géographie", "Communication, Journalisme"],
+            "explanation": "Le parapluie fermé à l'horizontale.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f51",
+            "theme": "filieres",
+            "question": "Quel est l'emblème de la Thanatologie ?",
+            "answers": ["Le squelette", "La tête de mort sur fémurs croisés", "La faux", "La chauve-souris"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f52",
+            "theme": "filieres",
+            "question": "Quelle filière porte la lettre Phi φ comme emblème ?",
+            "answers": ["Philosophie", "Psychologie", "Sciences", "Langues, Lettres"],
+            "explanation": "Phi est aussi l'insigne de l'ancien bac Littéraire.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f53",
+            "theme": "filieres",
+            "question": "Quelle filière porte le caducée de Mercure ?",
+            "answers": ["Commerce", "Médecine", "Droit", "Pharmacie"],
+            "explanation": "Il est aussi porté en Sciences économiques, Gestion et Communication.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f54",
+            "theme": "filieres",
+            "question": "Quel est l'emblème de la Khâgne (prépa littéraire) ?",
+            "image": "/images/insigne/chouette_bicephale.png",
+            "answers": [
+                "La chouette bicéphale",
+                "La palme de chêne et de laurier",
+                "Le livre ouvert et la plume",
+                "La chouette"
+            ],
+            "explanation": "La Taupe (prépa scientifique) porte la palme de chêne et de laurier.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "f55",
+            "theme": "filieres",
+            "question": "À Amiens, quel est l'emblème des Sciences de l'éducation ?",
+            "answers": ["Les lettres SDE", "Les lettres MEEF", "Le livre ouvert et la plume", "La chouette"],
+            "explanation": "Cette filière n'existe pas au code national.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f56",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/lyre.png",
+            "answers": ["Musicologie", "Arts du spectacle", "Langues, Lettres", "Cinéma"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f57",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/tete_de_sphinx.png",
+            "answers": ["Archéologie", "Histoire", "Langues, Lettres", "Philosophie"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f58",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/caducee_infirmier.png",
+            "answers": ["Infirmier", "Médecine", "Pharmacie", "Sage-Femme"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f59",
+            "theme": "filieres",
+            "question": "Quel est l'emblème des Arts numériques ?",
+            "answers": ["L'arobase @", "La palette et le pinceau", "Le clap de cinéma", "L'étoile et la foudre"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "f60",
+            "theme": "filieres",
+            "question": "À quelle filière correspond cet emblème ?",
+            "image": "/images/insigne/clap_de_cinema.png",
+            "answers": ["Cinéma", "Arts du spectacle", "Communication, Journalisme", "Arts numériques"],
+            "source": "/#article-7"
+        },
+
+        {
+            "id": "c01",
+            "theme": "circulaire",
+            "question": "Que doit-on trouver sur le ruban circulaire ?",
+            "answers": [
+                "Les initiales, le baccalauréat et l'emblème de la discipline",
+                "La ville d'études, la devise et le baccalauréat",
+                "Les initiales, la ville natale et les insignes de congrès",
+                "Le nom complet et l'année de baptême"
+            ],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c02",
+            "theme": "circulaire",
+            "question": "Quel insigne porte le bac général (depuis 2021) ?",
+            "image": "/images/insigne/gamma.png",
+            "answers": ["Gamma γ", "Epsilon ε", "Beta β", "Phi φ"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c03",
+            "theme": "circulaire",
+            "question": "Quel insigne porte l'ancien bac Économique et Social ?",
+            "answers": ["Beta β", "Gamma γ", "Phi φ", "Epsilon ε"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c04",
+            "theme": "circulaire",
+            "question": "Quel insigne porte l'ancien bac Littéraire ?",
+            "answers": ["Phi φ", "Psi Ψ", "Beta β", "Gamma γ"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c05",
+            "theme": "circulaire",
+            "question": "Quel insigne porte l'ancien bac Scientifique ?",
+            "answers": ["Epsilon ε", "Gamma γ", "Beta β", "Phi φ"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c06",
+            "theme": "circulaire",
+            "question": "À Amiens, quel insigne porte l'ancien bac S spécialité SVT ?",
+            "image": "/images/insigne/phi_epsilon.png",
+            "answers": ["Phi + Epsilon φε", "Epsilon ε seul", "Gamma + Epsilon γε", "Beta + Epsilon βε"],
+            "explanation": "Au code national, c'est Epsilon seul.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "c07",
+            "theme": "circulaire",
+            "question": "Comment indique-t-on un bac obtenu par la voie capacitaire ?",
+            "answers": [
+                "Une lettre « C » après le bac",
+                "Une lettre « I » après le bac",
+                "Les lettres DAEU",
+                "Une petite palme après le bac"
+            ],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c10",
+            "theme": "circulaire",
+            "question": "Que signifie une étoile dorée sur le circulaire ?",
+            "image": "/images/insigne/etoile_doree.png",
+            "answers": ["Une année débutée", "Une année validée avec mention", "Un diplôme obtenu", "Une année redoublée"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c11",
+            "theme": "circulaire",
+            "question": "Que signifie une étoile argentée sur le circulaire ?",
+            "image": "/images/insigne/etoile_argentee.png",
+            "answers": ["Une année redoublée", "Une année débutée", "Une année à l'étranger", "Une année sabbatique"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c12",
+            "theme": "circulaire",
+            "question": "Que signifie cet insigne sur le circulaire ?",
+            "image": "/images/insigne/tete_de_vache.png",
+            "answers": ["Une année obtenue aux rattrapages", "Un abandon de filière", "Une année redoublée", "Un major de promotion"],
+            "explanation": "La tête de vache.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "c13",
+            "theme": "circulaire",
+            "question": "Que signifie une tête de mort sur le circulaire ?",
+            "image": "/images/insigne/tete_de_mort.png",
+            "answers": ["Un abandon de filière", "Une année obtenue aux rattrapages", "Une année sabbatique", "La perte de la faluche"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c14",
+            "theme": "circulaire",
+            "question": "Que signifient les doubles palmes sur le circulaire ?",
+            "image": "/images/insigne/double_palme.png",
+            "answers": ["Un diplôme obtenu", "Un major de promotion", "Une fin de cycle sans diplôme", "Un cursus parfait"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c15",
+            "theme": "circulaire",
+            "question": "Que signifie une large palme à côté de l'étoile de l'année ?",
+            "image": "/images/insigne/large_palme.png",
+            "answers": ["Major de promotion", "Diplôme obtenu", "Fin de cycle", "Année validée par équivalence"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c16",
+            "theme": "circulaire",
+            "question": "Que signifie une simple palme à côté de l'étoile de l'année ?",
+            "image": "/images/insigne/simple_palme.png",
+            "answers": [
+                "Une fin de cycle (s'il n'y a pas de diplôme correspondant)",
+                "Un major de promotion",
+                "Un diplôme obtenu",
+                "Une année obtenue aux rattrapages"
+            ],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c17",
+            "theme": "circulaire",
+            "question": "Comment marque-t-on une année sabbatique ?",
+            "answers": ["Un petit chiffre « 0 »", "Une étoile argentée", "Un ruban noir sous l'étoile", "Une tête de mort"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c18",
+            "theme": "circulaire",
+            "question": "Que signifie un ruban noir sous l'étoile d'une année ?",
+            "answers": [
+                "La perte ou le vol de la faluche cette année-là",
+                "Un deuil",
+                "Un abandon de filière",
+                "Un blâme reçu cette année-là"
+            ],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c19",
+            "theme": "circulaire",
+            "question": "Comment marque-t-on une année validée par équivalence ?",
+            "answers": [
+                "Une petite lettre « E » à la place de l'étoile",
+                "Une petite lettre « A » sous l'étoile",
+                "Une étoile argentée",
+                "Une simple palme"
+            ],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c20",
+            "theme": "circulaire",
+            "question": "Que signifie une petite lettre « A » sous l'étoile ?",
+            "answers": ["Une année en alternance", "L'agrégation", "Une année à l'étranger", "Une année validée par équivalence"],
+            "explanation": "Le petit « a » pour l'agrégation se place, lui, en fin de cursus.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "c21",
+            "theme": "circulaire",
+            "question": "De quelle couleur est la moivre (petit ruban de biais sous la première étoile) pour une faculté d'État ?",
+            "image": "/images/insigne/moivre.png",
+            "answers": ["Bleue", "Blanche", "Rouge", "Aux couleurs de la ville"],
+            "explanation": "Elle est blanche pour les facultés catholiques, écoles ou instituts privés.",
+            "source": "/#article-7"
+        },
+        {
+            "id": "c22",
+            "theme": "circulaire",
+            "question": "Que signifie la quille pendant du circulaire ?",
+            "image": "/images/insigne/quille.png",
+            "answers": [
+                "Le service militaire ou le service civique",
+                "Une année sabbatique",
+                "Un amour du bowling",
+                "La fin du cursus"
+            ],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c23",
+            "theme": "circulaire",
+            "question": "Que signifie l'abeille à la fin du circulaire ?",
+            "image": "/images/insigne/abeille.png",
+            "answers": ["Un cursus parfait", "Une minutie dans le travail associatif", "Une ville impériale", "Un diplôme obtenu"],
+            "explanation": "Sur le velours, l'abeille a d'autres significations (travail associatif, ville impériale).",
+            "source": "/#article-7"
+        },
+        {
+            "id": "c24",
+            "theme": "circulaire",
+            "question": "Comment indique-t-on une année d'études passée à l'étranger ?",
+            "answers": [
+                "Un drapeau du pays sous l'étoile de l'année",
+                "Une étoile argentée",
+                "Une petite lettre « I »",
+                "Un ruban supérieur aux couleurs du pays uniquement"
+            ],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c25",
+            "theme": "circulaire",
+            "question": "Comment se distinguent les étoiles d'un cursus secondaire ?",
+            "answers": ["Elles sont plus petites", "Elles sont argentées", "Elles sont placées à l'envers", "Elles sont sur le velours"],
+            "source": "/#article-7"
+        },
+        {
+            "id": "c26",
+            "theme": "circulaire",
+            "question": "À Amiens, où les étudiants en santé (sauf Pharmacie) placent-ils le cochon ?",
+            "image": "/images/insigne/cochon.png",
+            "answers": ["En début de circulaire", "Sur le velours", "À l'intérieur de la faluche", "En fin de circulaire"],
+            "explanation": "Au code national, le cochon est sur le velours.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "c27",
+            "theme": "circulaire",
+            "question": "À Amiens, comment appelle-t-on les insignes placés avant les initiales qui désignent la pratique d'une activité ?",
+            "answers": ["Les capacitaires", "Les symboles", "Les honorifiques", "Les régionaux"],
+            "explanation": "Placés avant les initiales, ils passent de « l'amour de » à « la pratique de ».",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "c28",
+            "theme": "circulaire",
+            "question": "À Amiens, que signifie l'aigle placé en capacitaire (avant les initiales) ?",
+            "image": "/images/insigne/aigle.png",
+            "answers": ["Un brevet de pilote", "Un amour de l'aviation", "Un militaire de l'armée de l'air", "Un parachutiste"],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "c29",
+            "theme": "circulaire",
+            "question": "À Amiens, que signifie le voilier placé en capacitaire (avant les initiales) ?",
+            "image": "/images/insigne/voilier.png",
+            "answers": ["Un permis bateau", "Un amour de la navigation", "Un amour de la mer", "Un skipper de course"],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "c30",
+            "theme": "circulaire",
+            "question": "À Amiens, que signifie un squelette à l'envers sur le circulaire ?",
+            "image": "/images/insigne/squelette.png",
+            "answers": [
+                "A participé à une dissection humaine",
+                "Anatomiste",
+                "Amour de l'anatomie",
+                "Abandon de filière"
+            ],
+            "explanation": "À l'endroit, il signifie « anatomiste ».",
+            "source": "/recap-spe"
+        },
+
+        {
+            "id": "v01",
+            "theme": "velours",
+            "question": "Quel est le premier ruban supérieur en partant de la gauche ?",
+            "answers": [
+                "Le ruban de ville d'études",
+                "Le ruban de province natale",
+                "Le ruban d'association",
+                "Le ruban d'élu"
+            ],
+            "explanation": "De gauche à droite : ville d'études, association, élu, puis province et ville de naissance.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v02",
+            "theme": "velours",
+            "question": "Quels rubans supérieurs sont surmontés d'un écusson en toile ?",
+            "answers": [
+                "Les rubans de ville d'études, de province et de ville de naissance",
+                "Uniquement le ruban d'association",
+                "Uniquement le ruban d'élu",
+                "Tous les rubans sans exception"
+            ],
+            "source": "/#article-10"
+        },
+        {
+            "id": "v03",
+            "theme": "velours",
+            "question": "De quelle couleur est le ruban d'élu ?",
+            "answers": [
+                "Jaune, avec l'extrémité occipitale laissée libre",
+                "Tricolore",
+                "Aux couleurs de l'université",
+                "Bleu, cousu aux deux extrémités"
+            ],
+            "source": "/#article-10"
+        },
+        {
+            "id": "v04",
+            "theme": "velours",
+            "question": "Sur le ruban d'élu, que signifie une grenouille dorée ?",
+            "image": "/images/insigne/grenouille_doree.png",
+            "answers": [
+                "Élu au conseil d'université",
+                "Élu au conseil d'UFR",
+                "Élu au CNOUS",
+                "Élu au conseil disciplinaire"
+            ],
+            "explanation": "La grenouille argentée est pour les élus au conseil d'UFR.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v05",
+            "theme": "velours",
+            "question": "Sur le ruban d'élu, que signifie une tortue argentée ?",
+            "image": "/images/insigne/tortue_argentee.png",
+            "answers": ["Élu au CROUS", "Élu au CNOUS", "Élu au conseil d'UFR", "Élu au conseil d'université"],
+            "explanation": "La tortue dorée est pour les élus au CNOUS.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v06",
+            "theme": "velours",
+            "question": "Sur le ruban d'élu, que signifient le glaive et la balance ?",
+            "answers": [
+                "Élu au conseil disciplinaire",
+                "Élu au conseil d'université",
+                "Étudiant en Droit",
+                "Délégué mutualiste"
+            ],
+            "source": "/#article-10"
+        },
+        {
+            "id": "v07",
+            "theme": "velours",
+            "question": "Sur le ruban d'association, que signifie une étoile argentée ?",
+            "answers": [
+                "Membre actif ou chargé de mission",
+                "Rôle au sein du bureau (VP)",
+                "Président",
+                "Année redoublée dans l'association"
+            ],
+            "explanation": "Une étoile dorée signale un rôle au sein du bureau.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v08",
+            "theme": "velours",
+            "question": "Quel ruban porte un membre du conseil d'administration d'une fédération nationale ?",
+            "answers": [
+                "Un ruban tricolore",
+                "Un ruban tricolore avec une bande blanche de chaque côté",
+                "Un ruban aux couleurs de l'Europe",
+                "Un ruban jaune"
+            ],
+            "explanation": "Les membres de bureau ajoutent un filet blanc de chaque côté, le président une bande blanche.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v09",
+            "theme": "velours",
+            "question": "Où s'inscrit la devise sur la faluche ?",
+            "answers": [
+                "Sur le velours, du frontal à l'occipital, à gauche du ruban de province natale",
+                "Sur le circulaire, après les initiales",
+                "À l'intérieur de la faluche",
+                "Sur le ruban d'association"
+            ],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v10",
+            "theme": "velours",
+            "question": "À quelle condition peut-on mettre l'insigne d'un congrès sur son velours ?",
+            "answers": [
+                "Avoir participé au congrès, et que l'insigne soit en matériau noble",
+                "L'avoir acheté au congrès",
+                "Avoir été membre de l'organisation",
+                "Avoir l'accord d'un Grand Maître"
+            ],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v11",
+            "theme": "velours",
+            "question": "Que signifie la faux sur le velours d'un étudiant en santé ?",
+            "image": "/images/insigne/faux.png",
+            "answers": [
+                "Un décès survenu pendant une de ses gardes",
+                "Un amour de l'anatomie",
+                "Un étudiant en thanatologie",
+                "Une dissection humaine"
+            ],
+            "explanation": "Une unique faux, quel que soit le nombre de décès.",
+            "source": "/#article-9"
+        },
+        {
+            "id": "v12",
+            "theme": "velours",
+            "question": "Que signifie un chameau à l'endroit ?",
+            "image": "/images/insigne/chameau.png",
+            "answers": ["Célibataire", "En couple", "Grand voyageur", "Gros buveur"],
+            "explanation": "À l'envers, il signifie « en couple ».",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v13",
+            "theme": "velours",
+            "question": "Que signifie cet insigne ?",
+            "image": "/images/insigne/bacchus_troue.png",
+            "answers": ["Personne abstème", "A perdu son Bacchus", "Dignité dans l'ivresse", "Amour du bon vin"],
+            "explanation": "Le Bacchus troué.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v14",
+            "theme": "velours",
+            "question": "Que signifie cet insigne ?",
+            "image": "/images/insigne/cocotte_en_papier.png",
+            "answers": ["Sécheur de cours", "Amour des arts littéraires", "Bricoleur", "Écrivain"],
+            "explanation": "La cocotte en papier.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v15",
+            "theme": "velours",
+            "question": "Que signifie cet insigne ?",
+            "image": "/images/insigne/cupidon.png",
+            "answers": ["Fiancé", "Marié ou pacsé", "Célibataire", "Fin baiseur"],
+            "explanation": "Le Cupidon.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v16",
+            "theme": "velours",
+            "question": "Que signifie cet insigne ?",
+            "image": "/images/insigne/pendu.png",
+            "answers": ["Marié ou pacsé", "Fiancé", "Blâmé", "A survécu à un baptême"],
+            "explanation": "Le pendu.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v17",
+            "theme": "velours",
+            "question": "Que signifie l'épi de blé sur le velours ?",
+            "image": "/images/insigne/epi_de_ble.png",
+            "answers": ["Radin", "Chanceux aux examens", "Amour de la campagne", "Gros mangeur"],
+            "explanation": "Croisé avec une faucille, il signifie « chanceux aux examens ».",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v18",
+            "theme": "velours",
+            "question": "Que signifie cet insigne ?",
+            "image": "/images/insigne/fer_a_cheval.png",
+            "answers": ["Chanceux", "Amour de l'équitation", "Étudiant vétérinaire", "Bricoleur"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v19",
+            "theme": "velours",
+            "question": "Que signifie cet insigne ?",
+            "image": "/images/insigne/fraise.png",
+            "answers": ["Femme enceinte", "Perte de virginité", "Amour des plaisirs de la table", "Personne chaude"],
+            "explanation": "La fraise.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v20",
+            "theme": "velours",
+            "question": "Que signifie cet insigne ?",
+            "image": "/images/insigne/nounours.png",
+            "answers": ["Gros dormeur", "Personne câline", "Personne lourde", "Parrain ou marraine"],
+            "explanation": "Le nounours.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v21",
+            "theme": "velours",
+            "question": "Que signifie le soleil sur le velours ?",
+            "image": "/images/insigne/soleil.png",
+            "answers": ["Grand Maître à la retraite", "Grand Chambellan à la retraite", "Nuit blanche", "Amour de la plage"],
+            "explanation": "La lune signale un Grand Chambellan à la retraite.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v22",
+            "theme": "velours",
+            "question": "Que signifie la lune sur le velours ?",
+            "image": "/images/insigne/lune.png",
+            "answers": ["Grand Chambellan à la retraite", "Grand Maître à la retraite", "Oiseau de nuit", "Gros dormeur"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v23",
+            "theme": "velours",
+            "question": "Que signifie la tête de sphinx sur le velours ?",
+            "image": "/images/insigne/tete_de_sphinx.png",
+            "answers": ["Polyglotte", "Étudiant en archéologie", "Grand voyageur", "Gardien des traditions"],
+            "explanation": "Sur le circulaire, c'est l'emblème de l'Archéologie.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v24",
+            "theme": "velours",
+            "question": "Que signifie la chouette sur le velours ?",
+            "image": "/images/insigne/chouette.png",
+            "answers": ["Oiseau de nuit", "Sagesse", "Étudiant en Khâgne", "Gros dormeur"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v25",
+            "theme": "velours",
+            "question": "Que signifie la tête de taureau ?",
+            "image": "/images/insigne/tete_de_taureau.png",
+            "answers": [
+                "Géniteur (ruban rose pour une fille, bleu pour un garçon)",
+                "Grande gueule",
+                "Personne têtue",
+                "Amour de la corrida"
+            ],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v26",
+            "theme": "velours",
+            "question": "Que signifie l'écureuil ?",
+            "image": "/images/insigne/ecureuil.png",
+            "answers": ["Junior d'entreprise", "Radin", "Grand épargnant", "Scout"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v27",
+            "theme": "velours",
+            "question": "Que signifie la fleur de lys parmi les symboles ?",
+            "image": "/images/insigne/fleur_de_lys.png",
+            "answers": ["Scout", "Royaliste", "Amour des jardins", "Perte de virginité"],
+            "explanation": "Parmi les insignes régionaux, elle désigne une ville royale.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v28",
+            "theme": "velours",
+            "question": "Que signifie l'ancre ?",
+            "image": "/images/insigne/ancre.png",
+            "answers": ["Amour de la mer", "Amour de la navigation", "Permis bateau", "Personne lourde"],
+            "explanation": "L'amour de la navigation, c'est le voilier.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v30",
+            "theme": "velours",
+            "question": "Que récompense le Bacchus ?",
+            "image": "/images/insigne/bacchus.png",
+            "answers": ["La dignité dans l'ivresse", "L'amour du bon vin", "Une cuite certifiée", "Un coma éthylique certifié"],
+            "explanation": "Il est retournable, voire retirable, en cas de perte de dignité.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v31",
+            "theme": "velours",
+            "question": "Combien de temps minimum faut-il pour justifier son mérite envers Bacchus ?",
+            "answers": ["6 mois", "1 mois", "1 an", "3 congrès"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v32",
+            "theme": "velours",
+            "question": "Que se passe-t-il si un porteur du Bacchus commet un acte dégradant en état d'ivresse ?",
+            "answers": [
+                "Son Bacchus est retourné, puis retiré en cas de récidive",
+                "Son Bacchus est immédiatement retiré",
+                "Il reçoit un singe",
+                "Rien, le Bacchus est acquis à vie"
+            ],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v33",
+            "theme": "velours",
+            "question": "Que signifie la bouteille de Bordeaux ?",
+            "image": "/images/insigne/bouteille_de_bordeaux.png",
+            "answers": ["Cuite certifiée", "Coma éthylique certifié", "Amour du bon vin", "Dignité dans l'ivresse"],
+            "explanation": "Elle est compatible avec le Bacchus.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v34",
+            "theme": "velours",
+            "question": "Que signifie la bouteille de Champagne ?",
+            "image": "/images/insigne/bouteille_de_champagne.png",
+            "answers": ["Coma éthylique certifié", "Cuite certifiée", "A fêté un diplôme", "Mène un grand train de vie"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v35",
+            "theme": "velours",
+            "question": "Que signifie le singe, décerné par un Grand Maître ?",
+            "image": "/images/insigne/singe.png",
+            "answers": ["Quémandeur d'insignes", "Grande gueule", "Personne chaude", "Imitateur"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v36",
+            "theme": "velours",
+            "question": "Que doit faire un faluchard sanctionné par un singe ?",
+            "answers": [
+                "Retirer tous les insignes de la partie officielle, sauf le singe, pour une durée fixée par le GM",
+                "Retirer sa faluche pendant un mois",
+                "Offrir une bouteille au Grand Maître",
+                "Porter le singe à l'intérieur de sa faluche"
+            ],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v37",
+            "theme": "velours",
+            "question": "Que signifie la chauve-souris ?",
+            "image": "/images/insigne/chauve_souris.png",
+            "answers": ["Nuit blanche pour motif associatif", "Oiseau de nuit", "Gros dormeur", "Nuit passée au poste"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v38",
+            "theme": "velours",
+            "question": "Que signifie le coq décerné par un Grand Maître ?",
+            "image": "/images/insigne/coq.png",
+            "answers": ["Grande gueule sachant l'ouvrir", "Étudiant en STAPS", "Personne chaude", "Lève-tôt"],
+            "explanation": "Sur le circulaire, le coq est l'emblème de STAPS.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v39",
+            "theme": "velours",
+            "question": "Que signifie le volant ?",
+            "image": "/images/insigne/volant.png",
+            "answers": ["Conducteur de fin de soirée (SAM)", "Permis de conduire", "Amour de l'automobile", "A fait un rallye"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v40",
+            "theme": "velours",
+            "question": "Que signifie le sou troué ?",
+            "image": "/images/insigne/sou_troue.png",
+            "answers": ["Nuit passée au poste pour motif estudiantin", "Radin", "Fauché", "Trésorier d'association"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v41",
+            "theme": "velours",
+            "question": "Que signifie l'épingle à nourrice sur ruban noir ?",
+            "image": "/images/insigne/epingle.png",
+            "answers": ["Un blâme", "A cousu sa faluche", "Jeune parent", "Non-respect à Grand Maître"],
+            "explanation": "Le non-respect à Grand Maître se marque d'une lime sur ruban noir.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v42",
+            "theme": "velours",
+            "question": "Que signifie la hache décernée par un Grand Maître ?",
+            "image": "/images/insigne/hache.png",
+            "answers": [
+                "Une prise de guerre (à ne pas confondre avec du vandalisme)",
+                "Bourreau",
+                "Bricoleur",
+                "Chasseur"
+            ],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v43",
+            "theme": "velours",
+            "question": "Que signifie le homard ?",
+            "image": "/images/insigne/homard.png",
+            "answers": ["Mène un grand train de vie", "Amour des fruits de mer", "Coup de soleil", "Cordon bleu"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v44",
+            "theme": "velours",
+            "question": "Que signifie l'abeille décernée par un Grand Maître ?",
+            "answers": [
+                "Minutie dans le travail associatif (sur le ruban d'association)",
+                "Cursus parfait",
+                "Ville impériale",
+                "Travailleur acharné en cours"
+            ],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v45",
+            "theme": "velours",
+            "question": "Que signifie un parapluie ouvert à l'endroit ?",
+            "image": "/images/insigne/parapluie_ouvert.png",
+            "answers": [
+                "A vomi sur sa faluche",
+                "A vomi dans sa faluche",
+                "A remis sa faluche après avoir vomi dedans",
+                "Étudiant en Sciences politiques"
+            ],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v46",
+            "theme": "velours",
+            "question": "Que signifie la clé de sol ?",
+            "image": "/images/insigne/cle_de_sol.png",
+            "answers": ["Digne chanteur de paillardes", "Musicien", "Amour des arts musicaux", "Chanteur minable"],
+            "explanation": "Elle est décernée par un GM avec l'accord des porteurs de l'insigne.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v47",
+            "theme": "velours",
+            "question": "Que signifie le mammouth ?",
+            "image": "/images/insigne/mammouth.png",
+            "answers": ["Gardien des traditions", "Personne lourde", "Très ancien faluchard", "Grand Maître à la retraite"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v48",
+            "theme": "velours",
+            "question": "À Amiens, que signifie la lyre avec une tête de mort sur fémurs croisés ?",
+            "image": "/images/insigne/lyre_et_tete_de_mort_sur_femurs_croises.png",
+            "answers": ["Chanteur minable", "Digne chanteur de paillardes", "Musicien", "Amour des chants funèbres"],
+            "explanation": "Cet insigne n'existe pas au code national.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "v49",
+            "theme": "velours",
+            "question": "À Amiens, quel insigne signifie « mange comme un porc » ?",
+            "answers": [
+                "Le cochon sur ruban bleu",
+                "Les fourchettes croisées",
+                "La fourchette sur ruban bleu",
+                "Le pachyderme"
+            ],
+            "explanation": "Il remplace les fourchettes croisées des autres villes.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "v50",
+            "theme": "velours",
+            "question": "À Amiens, que signifient les ciseaux sur le velours ?",
+            "image": "/images/insigne/ciseaux.png",
+            "answers": [
+                "Avoir cousu les rubans de sa faluche soi-même",
+                "Étudiant en paramédical",
+                "Avoir cousu des faluches pour d'autres",
+                "Bricoleur"
+            ],
+            "explanation": "On ajoute l'année en indice et le nombre de faluches cousues en exposant (ruban bleu si cousu en tant que bizut).",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "v51",
+            "theme": "velours",
+            "question": "À Amiens, que signifie la grappe de raisin retournée ?",
+            "image": "/images/insigne/grappe_de_raisin.png",
+            "answers": ["Amour de tous les alcools", "Amour du bon vin", "Personne abstème", "Étudiant en oenologie"],
+            "explanation": "À l'endroit, c'est l'amour du bon vin.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "v52",
+            "theme": "velours",
+            "question": "À Amiens, quel insigne décerné par le/la partenaire remplace la pensée du code national ?",
+            "answers": ["L'orchidée", "La rose", "La feuille de vigne", "La fraise"],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "v53",
+            "theme": "velours",
+            "question": "Quelle région désigne l'hermine ?",
+            "image": "/images/insigne/hermine.png",
+            "answers": ["Bretagne", "Normandie", "Alsace", "Savoie"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v54",
+            "theme": "velours",
+            "question": "Quelle région désigne la cigogne ?",
+            "image": "/images/insigne/cigogne.png",
+            "answers": ["Alsace", "Lorraine", "Picardie", "Flandres"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v55",
+            "theme": "velours",
+            "question": "Quelle région désigne le chardon ?",
+            "image": "/images/insigne/chardon.png",
+            "answers": ["Lorraine", "Alsace", "Berry", "Bourgogne"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v56",
+            "theme": "velours",
+            "question": "Quelle région désigne la cigale ?",
+            "image": "/images/insigne/cigale.png",
+            "answers": ["Provence", "Limousin", "Languedoc", "Corse"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v57",
+            "theme": "velours",
+            "question": "Que désigne le léopard (lion passant) parmi les insignes régionaux ?",
+            "image": "/images/insigne/lion_heraldique.png",
+            "answers": ["Normand", "Lyonnais", "Breton", "Ardennais"],
+            "explanation": "Le lion rampant (dressé) désigne un Lyonnais.",
+            "source": "/#article-8"
+        },
+        {
+            "id": "v58",
+            "theme": "velours",
+            "question": "Que désigne l'abeille parmi les insignes régionaux ?",
+            "answers": ["Une ville impériale", "Une ville royale", "Un Provençal", "Un Bourguignon"],
+            "source": "/#article-8"
+        },
+        {
+            "id": "v59",
+            "theme": "velours",
+            "question": "Où sont placés les insignes potager (légumes) ?",
+            "answers": [
+                "À l'intérieur de la faluche",
+                "Sur le velours, partie officielle",
+                "Sur le circulaire",
+                "Sur le ruban d'élu"
+            ],
+            "source": "/#article-12"
+        },
+        {
+            "id": "v60",
+            "theme": "velours",
+            "question": "Pour un insigne potager, que doivent vérifier la croix / le billot ou les 3 anciens ?",
+            "answers": [
+                "Que l'étudiant soit sorti couvert et avec consentement",
+                "Que l'acte ait eu lieu en congrès",
+                "Que le partenaire soit faluchard",
+                "Que l'étudiant ait payé sa tournée"
+            ],
+            "explanation": "L'insigne peut aussi être refusé par la personne qui le reçoit.",
+            "source": "/#article-12"
+        },
+
+        {
+            "id": "x01",
+            "theme": "croix",
+            "question": "Quelle est la distinction d'un Grand Maître ?",
+            "image": "/images/insigne/gm.png",
+            "answers": [
+                "Une croix du mérite émaillée de blanc",
+                "Une croix du mérite non émaillée",
+                "Un soleil sur le velours",
+                "Une palme dorée"
+            ],
+            "explanation": "Elle est soutenue par un ruban aux couleurs de la discipline ou de la ville du mandat.",
+            "source": "/#article-13"
+        },
+        {
+            "id": "x02",
+            "theme": "croix",
+            "question": "Quelle est la distinction d'un Grand Chambellan ?",
+            "image": "/images/insigne/gc.png",
+            "answers": [
+                "Une croix du mérite non émaillée",
+                "Une croix du mérite émaillée de blanc",
+                "Une lune sur le velours",
+                "Une étoile argentée"
+            ],
+            "source": "/#article-13"
+        },
+        {
+            "id": "x03",
+            "theme": "croix",
+            "question": "Quel est le rôle d'un Grand Chambellan ?",
+            "answers": [
+                "Assister le Grand Maître dans sa tâche",
+                "Marier les faluchards",
+                "Appliquer les sanctions alcoolisées",
+                "Remplacer le GM à sa retraite"
+            ],
+            "source": "/#article-13"
+        },
+        {
+            "id": "x04",
+            "theme": "croix",
+            "question": "À Amiens, qui choisit les futures croix ?",
+            "answers": [
+                "Les croix partant à la retraite",
+                "Les faluchards de la filière, par élection",
+                "Le bureau de La CHATTE 2.0",
+                "L'évêque du Nord"
+            ],
+            "explanation": "Au code national, le GM est élu par les faluchards au vu de ses mérites.",
+            "source": "/#article-13"
+        },
+        {
+            "id": "x05",
+            "theme": "croix",
+            "question": "Avec combien d'autres porteurs de faluche le GM certifie-t-il l'acquisition de bouteilles ?",
+            "answers": ["Trois", "Un", "Deux", "Cinq"],
+            "source": "/#article-13"
+        },
+        {
+            "id": "x06",
+            "theme": "croix",
+            "question": "Qui seul peut décerner le Bacchus, l'abeille, la chouette, le coq… ?",
+            "answers": ["Le Grand Maître", "Le Grand Chambellan", "Le parrain ou la marraine", "Le bourreau"],
+            "source": "/#article-13"
+        },
+        {
+            "id": "x07",
+            "theme": "croix",
+            "question": "Que deviennent les croix amiénoises au départ en retraite d'un GM ?",
+            "answers": [
+                "La croix historique est donnée au nouvel intronisé",
+                "Elle est conservée par le GM retraité",
+                "Elle est rendue à l'association",
+                "Elle est enterrée lors du Monôme"
+            ],
+            "explanation": "Les croix sont transmises de génération en génération.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x08",
+            "theme": "croix",
+            "question": "À Amiens, où une croix partant à la retraite place-t-elle sa croix neuve ?",
+            "answers": [
+                "Du côté personnel (à droite)",
+                "À gauche, comme en activité",
+                "À l'intérieur de la faluche",
+                "Sur le circulaire"
+            ],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x09",
+            "theme": "croix",
+            "question": "À Amiens, quel insigne met un GM à la retraite s'il n'a jamais été GC ?",
+            "answers": ["Une tête de mort", "Un soleil", "Une lune", "Une palme"],
+            "explanation": "Il met un soleil uniquement s'il a été GC avant (tête de mort sur fémurs croisés pour les pharmaciens).",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x10",
+            "theme": "croix",
+            "question": "Quel est le rôle du bourreau ?",
+            "answers": [
+                "Faire respecter l'ordre et la discipline, et appliquer les sanctions alcoolisées",
+                "Baptiser les faluches en l'absence du GM",
+                "Marier les faluchards",
+                "Garder les traditions et les chants"
+            ],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x11",
+            "theme": "croix",
+            "question": "De quoi se compose généralement le ruban du bourreau ?",
+            "answers": [
+                "Une hache, une bouteille et deux zéros, sur un ruban de la discipline du GM",
+                "Une hache et un billot sur ruban noir",
+                "Une hache et une tête de mort",
+                "Une croix non émaillée et une bouteille"
+            ],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x12",
+            "theme": "croix",
+            "question": "Quel est le rôle principal de l'évêque ?",
+            "answers": [
+                "Marier les faluchards entre eux",
+                "Baptiser les faluches",
+                "Élire les Grands Maîtres",
+                "Appliquer les sanctions"
+            ],
+            "explanation": "Il est aussi confident, tenu au secret, et peut intervenir en cas de conflit.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x13",
+            "theme": "croix",
+            "question": "Combien existe-t-il d'évêchés ?",
+            "answers": ["4", "1", "2", "Un par ville"],
+            "explanation": "Le Sud à Poitiers, le Nord à Amiens, l'Est septentrional à Strasbourg et l'Est méridional à Grenoble.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x14",
+            "theme": "croix",
+            "question": "Où se trouve l'évêché du Nord ?",
+            "answers": ["Amiens", "Lille", "Reims", "Rouen"],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x15",
+            "theme": "croix",
+            "question": "Quelle particularité a l'évêque du Nord ?",
+            "answers": [
+                "Il n'a pas besoin de la présence d'un GM pour officier",
+                "Il est élu par tous les GM de France",
+                "Il porte une croix émaillée de blanc",
+                "Il peut décerner le Bacchus"
+            ],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x16",
+            "theme": "croix",
+            "question": "Comment se distingue l'évêché à Amiens ?",
+            "image": "/images/insigne/eveque.png",
+            "answers": [
+                "Un E dans une palme de Sciences sur ruban violet",
+                "Une croix latine sur ruban violet",
+                "Une mitre dorée sur ruban blanc",
+                "Un E dans une couronne de laurier sur ruban rouge"
+            ],
+            "explanation": "Il porte aussi une cape de cérémonie aux couleurs de sa discipline.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x17",
+            "theme": "croix",
+            "question": "À Amiens, en quelle matière sont les rubans supérieurs ?",
+            "answers": ["En velours", "En satin", "En toile", "En soie"],
+            "explanation": "En hommage au passé de ville tisserande (coloriste) d'Amiens.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x18",
+            "theme": "croix",
+            "question": "Pourquoi les rubans supérieurs sont-ils en velours à Amiens ?",
+            "answers": [
+                "En hommage au passé de ville tisserande d'Amiens",
+                "Pour les distinguer des rubans de Paris",
+                "Parce que le satin était interdit à Amiens",
+                "Par décision de l'évêque du Nord"
+            ],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x19",
+            "theme": "croix",
+            "question": "Quelles villes ont repris les rubans supérieurs en velours en hommage à Amiens ?",
+            "answers": ["Reims et Dijon", "Lille et Rouen", "Paris et Troyes", "Rouen et Clermont-Ferrand"],
+            "explanation": "Reims pour l'organisation du Centenaire, Dijon pour les États généraux.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "x20",
+            "theme": "croix",
+            "question": "Quelles sont les couleurs de la ville d'Amiens ?",
+            "image": "/images/ecussons/amiens.png",
+            "answers": ["Rouge et bleu roi", "Bleu et blanc", "Noir et or", "Rouge et or"],
+            "explanation": "Bleu et blanc sont les couleurs de la Picardie.",
+            "source": "/couleurs-des-rubans"
+        },
+        {
+            "id": "x21",
+            "theme": "croix",
+            "question": "Que doivent laisser visible les pharmaciens d'Amiens sur leurs rubans ?",
+            "answers": ["Les angles des rubans", "Le haut des écussons", "Les coutures", "L'extrémité occipitale"],
+            "source": "/#article-10"
+        },
+        {
+            "id": "x22",
+            "theme": "croix",
+            "question": "Si tu as une ville d'études après Amiens, que fais-tu ?",
+            "answers": [
+                "Remonter l'écusson d'Amiens et placer la nouvelle ville en dessous",
+                "Placer la nouvelle ville au-dessus de l'écusson d'Amiens",
+                "Remplacer le ruban d'Amiens",
+                "Coudre un ruban à droite du ruban d'Amiens"
+            ],
+            "explanation": "Une ville d'études antérieure à Amiens se place au-dessus de l'écusson d'Amiens.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "x23",
+            "theme": "croix",
+            "question": "Quelle est la tâche principale du Grand Maître ?",
+            "answers": [
+                "Veiller à l'application des principes qui régissent le port de la faluche",
+                "Organiser les congrès",
+                "Gérer la trésorerie de l'association",
+                "Coudre les faluches des bizuts"
+            ],
+            "explanation": "Garant des traditions, il veille aux baptêmes de sa filière et fait procéder à l'élection de son successeur.",
+            "source": "/#article-13"
+        }
+    ]
+}

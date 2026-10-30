@@ -38,6 +38,12 @@ const routes = [
         meta: { layout: "Main" },
     },
     {
+        path: pages.revisions.url,
+        name: pages.revisions.name,
+        component: () => import("../pages/ressources/Revisions.vue"),
+        meta: { layout: "Main" },
+    },
+    {
         path: pages.checklist.url,
         name: pages.checklist.name,
         component: () => import("../pages/ressources/CheckList.vue"),

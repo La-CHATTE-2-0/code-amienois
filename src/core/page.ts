@@ -19,6 +19,11 @@ const pages = {
         url: '/notes-aux-pms',
         description: 'Les commandements du parrain et de la marraine faluchards.'
     },
+    revisions: {
+        name: 'Révisions',
+        url: '/revisions',
+        description: 'Quiz pour réviser le Code de la Faluche : histoire, filières, insignes et spécificités amiénoises.'
+    },
     checklist: {
         name: 'Checklist Congrès',
         url: '/checklist-congres',
