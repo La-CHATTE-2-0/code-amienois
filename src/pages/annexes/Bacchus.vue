@@ -122,6 +122,11 @@ const representations = [
                 divinité associée à Bacchus : les <strong>Liberalia</strong>,
                 qui avaient lieu chaque année le 17 mars.
             </p>
+
+            <p class="bacchus-voir-aussi">
+                Voir aussi :
+                <router-link :to="pages.gambrinus.url">Gambrinus, roi de la bière</router-link>
+            </p>
         </article>
     </v-container>
 </template>
@@ -217,5 +222,11 @@ article p {
 
 .bacchus-alert {
     margin-top: 1rem;
+}
+
+.bacchus-voir-aussi {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
 }
 </style>
