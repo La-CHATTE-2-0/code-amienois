@@ -16,6 +16,7 @@ import {
             <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="science in sciences"
+                    :key="`${science.surname}-${science.year}`"
                     class="mb-4"
                     dot-color="purple"
                     size="small"
@@ -33,6 +34,7 @@ import {
             <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="droit in droits"
+                    :key="`${droit.surname}-${droit.year}`"
                     class="mb-4"
                     dot-color="red"
                     size="small"
@@ -50,6 +52,7 @@ import {
             <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="sagefemme in sagefemmes"
+                    :key="sagefemme.surname"
                     class="mb-4"
                     dot-color="pink-darken-4"
                     size="small"
@@ -65,18 +68,18 @@ import {
         <h2>Inter-Velours</h2>
         <v-card class="pl-4">
             <v-timeline density="compact" side="end">
-                <template v-for="iv in intervelours">
-                    <v-timeline-item
-                        class="mb-4"
-                        :dot-color="iv.color"
-                        size="small"
-                    >
-                        <div class="text-h6">{{ iv.surname }}</div>
-                        <p v-if="iv.year">
-                            {{ iv.year }}
-                        </p>
-                    </v-timeline-item>
-                </template>
+                <v-timeline-item
+                    v-for="iv in intervelours"
+                    :key="`${iv.surname}-${iv.year}`"
+                    class="mb-4"
+                    :dot-color="iv.color"
+                    size="small"
+                >
+                    <div class="text-h6">{{ iv.surname }}</div>
+                    <p v-if="iv.year">
+                        {{ iv.year }}
+                    </p>
+                </v-timeline-item>
             </v-timeline>
         </v-card>
 
@@ -85,6 +88,7 @@ import {
             <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="pharmacien in pharmaciens"
+                    :key="`${pharmacien.surname}-${pharmacien.year}`"
                     class="mb-4"
                     dot-color="green-darken-4"
                     size="small"
@@ -102,6 +106,7 @@ import {
             <v-timeline density="compact" side="end">
                 <v-timeline-item
                     v-for="medecine in medecines"
+                    :key="`${medecine.surname}-${medecine.year}`"
                     class="mb-4"
                     dot-color="red-darken-4"
                     size="small"
