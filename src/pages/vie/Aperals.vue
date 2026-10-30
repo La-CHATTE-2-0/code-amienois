@@ -27,6 +27,9 @@ const FRANCE_CENTER: LatLng = [46.6, 2.4];
 const TILE_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 const TILE_ATTRIBUTION =
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+// OSM refuse les tuiles demandées sans Referer : on l'envoie même si le site
+// impose "Referrer-Policy: same-origin" (en-tête ajouté par Cloudflare)
+const TILE_OPTIONS = { referrerPolicy: "strict-origin-when-cross-origin" };
 
 const theme = useTheme();
 const isDark = computed(() => theme.global.current.value.dark);
@@ -197,6 +200,7 @@ watch(filteredAperals, fitToMarkers);
                 <l-tile-layer
                     :url="TILE_URL"
                     :attribution="TILE_ATTRIBUTION"
+                    :options="TILE_OPTIONS"
                     layer-type="base"
                     name="Carte de France des apérals"
                 />
