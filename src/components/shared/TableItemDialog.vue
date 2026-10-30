@@ -1,52 +1,41 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import { CheckListItem } from "../../types/checklistTypes";
 
 const dialog = ref(false);
-const checked = ref(false);
 
-const props = defineProps<{
+defineProps<{
     item: CheckListItem;
 }>();
 
-function handleClick() {
-    checked.value = !checked.value;
-    localStorage.setItem(props.item.id, JSON.stringify(checked.value));
-}
-
-onMounted(() => {
-    checked.value = JSON.parse(localStorage.getItem(props.item.id) ?? "false");
-});
+// État coché géré par la page (progression et sauvegarde)
+const checked = defineModel<boolean>("checked", { default: false });
 </script>
 
 <template>
-    <v-card class="my-3 py-2" variant="flat">
-        <v-row class="align-center">
-            <v-col cols="2">
-                <v-checkbox-btn
-                    v-on:click="handleClick"
-                    class="pa-2"
-                    :model-value="checked"
-                ></v-checkbox-btn>
-            </v-col>
-            <v-col cols="7">
-                {{ item.label }}
-            </v-col>
-            <v-col cols="3" class="text-right pr-5">
-                <v-btn
-                    v-if="item.description"
-                    @click="dialog = true"
-                    class=""
-                    color="grey-lighten-1"
-                    icon="mdi-information"
-                    :aria-label="`Plus d'informations : ${item.label}`"
-                    variant="text"
-                ></v-btn>
-            </v-col>
-        </v-row>
-    </v-card>
+    <li class="check-item" :class="{ 'check-item--done': checked }">
+        <v-checkbox-btn
+            v-model="checked"
+            :id="`check-${item.id}`"
+            color="primary"
+            density="comfortable"
+        ></v-checkbox-btn>
+        <!-- Toute la ligne est cliquable, pas seulement la case -->
+        <label :for="`check-${item.id}`" class="check-item__label">
+            {{ item.label }}
+        </label>
+        <v-btn
+            v-if="item.description"
+            @click="dialog = true"
+            icon="mdi-information-outline"
+            :aria-label="`Plus d'informations : ${item.label}`"
+            variant="text"
+            size="small"
+            class="check-item__info"
+        ></v-btn>
+    </li>
 
-    <v-dialog v-model="dialog" width="auto" v-if="item.description">
+    <v-dialog v-model="dialog" max-width="520" v-if="item.description">
         <v-card :title="item.label" :text="item.description">
             <template v-slot:actions>
                 <v-btn
@@ -58,3 +47,35 @@ onMounted(() => {
         </v-card>
     </v-dialog>
 </template>
+
+<style scoped>
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px 4px 4px;
+    border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+}
+
+/* La case Vuetify s'étire par défaut : on la garde à sa taille */
+.check-item :deep(.v-selection-control) {
+    flex: none;
+}
+
+.check-item__label {
+    flex: 1;
+    padding-block: 8px;
+    cursor: pointer;
+    transition: color 180ms ease;
+}
+
+.check-item--done .check-item__label {
+    color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
+    text-decoration: line-through;
+}
+
+.check-item__info {
+    flex: none;
+    color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
+}
+</style>
