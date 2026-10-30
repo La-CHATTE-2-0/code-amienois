@@ -35,6 +35,7 @@
 
             <div class="mb-4 fal-img text-center">
                 <img
+                    class="fal-img--detouree"
                     alt="Faluche Marie-Sans-Chemise"
                     loading="lazy"
                     style="max-width: 500px"
@@ -97,5 +98,11 @@
         width: 100%;
         max-width: 500px;
     }
+}
+
+/* Image détourée sur fond transparent : ni arrondi ni liseré */
+.fal-img img.fal-img--detouree {
+    border-radius: 0;
+    outline: none;
 }
 </style>
