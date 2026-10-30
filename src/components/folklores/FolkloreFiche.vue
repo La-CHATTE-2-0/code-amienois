@@ -7,17 +7,22 @@ export interface FolkloreImage {
     legende?: string;
 }
 
-defineProps<{
-    id: string;
-    titre: string;
-    image: FolkloreImage;
-    enBref: { label: string; text: string }[];
-}>();
+withDefaults(
+    defineProps<{
+        id: string;
+        titre: string;
+        image: FolkloreImage;
+        enBref: { label: string; text: string }[];
+        // 2 quand la fiche n'est pas rangée sous un titre de pays
+        niveau?: 2 | 3;
+    }>(),
+    { niveau: 3 },
+);
 </script>
 
 <template>
-    <section :id="id" class="folklore-fiche">
-        <h3>{{ titre }}</h3>
+    <section :id="id" class="folklore-fiche" :class="{ 'folklore-fiche--principale': niveau === 2 }">
+        <component :is="`h${niveau}`" class="folklore-titre">{{ titre }}</component>
 
         <div class="folklore-intro">
             <figure class="folklore-figure-principale">
@@ -54,9 +59,25 @@ defineProps<{
     margin-top: 2.5rem;
 }
 
-h3 {
+.folklore-titre {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Fiche de premier niveau : un liseré la sépare de la précédente */
+.folklore-fiche--principale {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+}
+
+.folklore-fiche--principale .folklore-titre {
+    font-size: 1.5rem;
+}
+
+:slotted(h3) {
+    margin-top: 1.5rem;
+    font-size: 1.0625rem;
     font-weight: 600;
 }
 
@@ -111,18 +132,34 @@ figcaption,
     border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
 }
 
-.folklore-list > div {
+.folklore-list > div,
+:slotted(.folklore-list) > div {
     padding: 12px 16px;
 }
 
-.folklore-list dt {
+.folklore-list dt,
+:slotted(.folklore-list) dt {
     font-size: 0.8125rem;
     font-weight: 600;
     color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
 }
 
-.folklore-list dd {
+.folklore-list dd,
+:slotted(.folklore-list) dd {
     margin: 0;
+}
+
+:slotted(.folklore-list) {
+    margin-top: 1rem;
+}
+
+:slotted(.folklore-video) {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 1.25rem;
+    border: 0;
+    border-radius: 12px;
 }
 
 /* Récit */
