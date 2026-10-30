@@ -1,38 +1,46 @@
+<script setup lang="ts">
+import FolkloreFiche from "./FolkloreFiche.vue";
+
+const image = {
+    src: "/images/folklores/une_prepa_litteraire_a_stanislas.jpg",
+    alt: "Élèves d’une prépa littéraire du lycée Stanislas coiffés de leur khâlot, sur un toit de Paris",
+    width: 1190,
+    height: 669,
+    legende: "Une prépa littéraire à Stanislas",
+};
+
+const enBref = [
+    { label: "Porté par", text: "Les élèves de classes préparatoires" },
+    { label: "Forme", text: "Un « bonnet de police », comme le calot militaire" },
+    { label: "Couleur", text: "Différente selon la filière" },
+    { label: "Origine", text: "L’imitation des aînés partis dans les écoles militaires" },
+];
+</script>
+
 <template>
-    <v-expansion-panels class="mb-5">
-        <v-expansion-panel elevation="0" variant="tonal">
-            <v-expansion-panel-title> Le Khâlot </v-expansion-panel-title>
-            <v-expansion-panel-text>
-                <v-img
-                    class="my-5"
-                    src="/images/folklores/une_prepa_litteraire_a_stanislas.jpg"
-                    alt="Khalot stan"
-                ></v-img>
+    <FolkloreFiche id="khalot" titre="Le khâlot" :niveau="2" :image="image" :en-bref="enBref">
+        <p>
+            Le khâlot (ou calot) est la coiffe traditionnelle des élèves de
+            classes préparatoires. C’est un « bonnet de police » dont la couleur
+            varie selon la filière. Le porter, c’est afficher sa vie d’étudiant
+            et l’intérêt qu’on porte à la vie et aux traditions de son lycée.
+        </p>
+        <p>
+            À l’origine, les prépas scientifiques préparaient leurs élèves aux
+            écoles militaires (Saint-Cyr, Polytechnique…). Le calot militaire a
+            donc d’abord été porté par imitation des aînés, avant de s’enrichir
+            peu à peu de couleurs, d’insignes et de rubans.
+        </p>
 
-                <p>
-                    Le khâlot (ou calot) est une coiffe traditionnelle des
-                    étudiants de prépas.
-                </p>
-                <p>
-                    C'est un « bonnet de police » de différentes couleurs selon
-                    la filière. Le port du khâlot symbolise sa vie d'étudiant.
-                    Il témoigne de l'intérêt porté à la vie et aux traditions de
-                    son lycée.
-                </p>
-                <p>
-                    À l'origine, les prépas scientifiques avaient pour but de
-                    former leurs élèves afin qu'ils puissent intégrer une école
-                    militaire (Saint-Cyr, Polytechnique... ). Le calot militaire
-                    a donc été porté au départ par imitation de leurs ainés. Le
-                    khâlot s'est peu à peu enrichi de couleurs, d'insignes et de
-                    rubans.
-                </p>
-
-                <v-img alt="Le khâlot"
-                    class="my5"
-                    src="/images/folklores/57419533.jpg"
-                ></v-img>
-            </v-expansion-panel-text>
-        </v-expansion-panel>
-    </v-expansion-panels>
+        <figure class="folklore-figure">
+            <img
+                src="/images/folklores/57419533.jpg"
+                alt="Khâlot bleu marine orné d’étoiles, d’un lion, de lettres dorées et d’un ruban rouge et jaune"
+                width="800"
+                height="450"
+                loading="lazy"
+            />
+            <figcaption>Un khâlot couvert d’insignes et de rubans</figcaption>
+        </figure>
+    </FolkloreFiche>
 </template>

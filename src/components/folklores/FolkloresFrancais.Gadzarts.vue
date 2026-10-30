@@ -1,66 +1,84 @@
+<script setup lang="ts">
+import FolkloreFiche from "./FolkloreFiche.vue";
+
+const image = {
+    src: "/images/folklores/blouse-gadzart.jpg",
+    alt: "Gadzarts de dos, vêtus de blouses couvertes de dessins et d’inscriptions colorés",
+    width: 800,
+    height: 533,
+};
+
+const enBref = [
+    { label: "Qui", text: "Les élèves et anciens élèves des Arts et Métiers (ENSAM)" },
+    { label: "Leur nom", text: "La contraction de « Gars des Arts »" },
+    { label: "Leur tenue", text: "La blouse, grise les premières années, blanche la dernière" },
+    { label: "Leurs valeurs", text: "Entraide, fraternité et tutoiement de rigueur" },
+];
+
+const lexique = [
+    { label: "Biaude", text: "La blouse, en argad’z, la langue des Gadzarts" },
+    { label: "Surn’s", text: "Le surnom reçu en devenant Gadzarts, gardé à vie" },
+    { label: "Bucque", text: "La signature graphique du surn’s" },
+    { label: "Ancien", text: "Le parrain, élève de la promotion précédente" },
+    { label: "Fam’s", text: "La lignée de parrainages qui relie les promotions" },
+];
+</script>
+
 <template>
-    <v-expansion-panels class="mb-5">
-        <v-expansion-panel elevation="0" variant="tonal">
-            <v-expansion-panel-title> Les Gadzarts </v-expansion-panel-title>
-            <v-expansion-panel-text>
-                <v-img
-                    src="/images/folklores/blouse-gadzart.jpg"
-                    class="my-5"
-                    alt="blouse gadzart"
-                >
-                </v-img>
-                <p>
-                    Gadz'Arts ou Gadzarts est le surnom donné aux élèves ou
-                    anciens élèves de l'école nationale supérieure d'arts et
-                    métiers (ENSAM ou Arts et Métiers ParisTech). Il s'agit
-                    d'une contraction de Gars des Arts (Les Arts ou les Arts et
-                    Métiers, est le diminutif donné à l'École).
-                </p>
+    <FolkloreFiche id="gadzarts" titre="Les Gadzarts" :niveau="2" :image="image" :en-bref="enBref">
+        <p>
+            Gadz’Arts, ou Gadzarts, est le surnom des élèves et anciens élèves de
+            l’École nationale supérieure d’arts et métiers (ENSAM, ou Arts et
+            Métiers ParisTech). C’est la contraction de « Gars des Arts », « les
+            Arts » ou « les Arts et Métiers » étant le diminutif de l’École.
+        </p>
 
-                <v-img
-                    src="/images/folklores/defile_gadzart.jpg"
-                    class="my-5"
-                    alt="defile gardzart"
-                >
-                </v-img>
+        <figure class="folklore-figure">
+            <img
+                src="/images/folklores/defile_gadzart.jpg"
+                alt="Défilé de Gadzarts en blouses grises dans une rue pavée, suivis d’autres en uniforme et casquette"
+                width="1600"
+                height="1066"
+                loading="lazy"
+            />
+        </figure>
 
-                <p>
-                    La communauté Gadzarts revendique fièrement ses traditions
-                    basées sur les valeurs d'entraide et de fraternité ainsi que
-                    sur la mémoire orale de nombreuses anecdotes et de nombreux
-                    chants liés à l'histoire de l'école crée par Alexandre
-                    Frédérique de La Rochefoucauld-Liancourt. Les élèves portent
-                    dans les Écoles une blouse (une « BIAUDE » en Argad'z)
-                    traditionnellement grise en première et deuxième année puis
-                    blanche en dernière année qu'il personnalisent
-                    individuellement.
-                </p>
+        <p>
+            La communauté revendique fièrement ses traditions, fondées sur
+            l’entraide et la fraternité, et sur une mémoire orale riche
+            d’anecdotes et de chants liés à l’histoire de l’école fondée par
+            François-Alexandre-Frédéric de La Rochefoucauld-Liancourt. Dans les
+            Écoles, les élèves portent une blouse, la biaude, traditionnellement
+            grise en première et deuxième années, puis blanche en dernière année.
+            Les blouses de première année restent assez sobres ; celles des
+            années suivantes deviennent le support de motifs et de dessins
+            colorés souvent très travaillés.
+        </p>
+        <p>
+            Devenu Gadzarts, chaque élève reçoit un surnom qu’il garde ensuite
+            avec tous les élèves et anciens élèves. Chacun devient aussi le
+            parrain d’un élève de la promotion suivante : ces parrainages
+            successifs tissent des liens qui durent bien au-delà de la
+            scolarité. Et une règle de savoir-vivre veut que tous les Gadzarts
+            se tutoient.
+        </p>
 
-                <p>
-                    Les blouses de première année sont généralement assez
-                    sobres. Celles de deuxième et troisième années sont souvent
-                    le support de motifs et dessins colorés assez recherchés.
-                    Devenus Gadzarts, les élèves se voient attrebuer un surnom,
-                    le surn's (dont la signature graphique s'appelle la bucque),
-                    qu'ils conserveront par la suite dans leurs relations avec
-                    les autres élèves ou anciens élèves. Chaque élève est le
-                    parrain (dit « Ancien ») d'un élève de la promotion
-                    suivante. Cette suite de parrainages fait l'objet de
-                    relations durables qui perdurent dans le temps bien au-delà
-                    de la scolarité. Elle est appelée « famill ».
-                </p>
+        <h3>Petit lexique</h3>
+        <dl class="folklore-cadre folklore-list">
+            <div v-for="item in lexique" :key="item.label">
+                <dt>{{ item.label }}</dt>
+                <dd>{{ item.text }}</dd>
+            </div>
+        </dl>
 
-                <v-img alt="Gadzarts en tenue traditionnelle"
-                    class="my-5"
-                    src="/images/folklores/image-3-1024x682.png"
-                >
-                </v-img>
-
-                <p>
-                    Une règle de savoir-vivre veut que le tutoiement soit de
-                    rigueur entre tous les Gadzarts.
-                </p>
-            </v-expansion-panel-text>
-        </v-expansion-panel>
-    </v-expansion-panels>
+        <figure class="folklore-figure">
+            <img
+                src="/images/folklores/image-3-1024x682.png"
+                alt="Trois Gadzarts barbus et souriants en uniforme bleu marine à boutons dorés et casquette"
+                width="1024"
+                height="682"
+                loading="lazy"
+            />
+        </figure>
+    </FolkloreFiche>
 </template>

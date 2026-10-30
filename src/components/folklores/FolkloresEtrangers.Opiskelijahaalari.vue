@@ -1,26 +1,33 @@
-<template>
-    <v-expansion-panels class="mb-5">
-        <v-expansion-panel elevation="0" variant="tonal">
-            <v-expansion-panel-title>
-                🇫🇮 🇸🇪 Opiskelijahaalari
-            </v-expansion-panel-title>
-            <v-expansion-panel-text>
-                <v-img
-                    class="my-5"
-                    src="/images/folklores/normal_rv691.jpg"
-                    alt="Opiskelijahaalari"
-                ></v-img>
+<script setup lang="ts">
+import FolkloreFiche from "./FolkloreFiche.vue";
 
-                <p>
-                    Opiskelijahaalari est une salopettes / combinaisons
-                    d’étudiants propres à chaque école et programme d’études que
-                    les étudiants personnalisent à leur guise (signature de
-                    copains, noms de sponsors, badges, photos, portes-clés,
-                    dessins, ...). Cela nous fait penser aux combars agrémentées
-                    des patchs et bracelets en évènements qu'on peut retrouver
-                    chez nous.
-                </p>
-            </v-expansion-panel-text>
-        </v-expansion-panel>
-    </v-expansion-panels>
+const image = {
+    src: "/images/folklores/normal_rv691.jpg",
+    alt: "Étudiants en combinaisons colorées couvertes de patchs",
+    width: 900,
+    height: 574,
+};
+
+const enBref = [
+    { label: "Son nom", text: "Opiskelijahaalari, « combinaison étudiante »" },
+    { label: "Portée par", text: "Les étudiants finlandais et suédois" },
+    { label: "Ses couleurs", text: "Propres à chaque école et programme d’études" },
+    { label: "Signe distinctif", text: "Signatures, badges, patchs et porte-clés ajoutés par son porteur" },
+];
+</script>
+
+<template>
+    <FolkloreFiche id="haalari" titre="L’opiskelijahaalari" :image="image" :en-bref="enBref">
+        <p>
+            L’opiskelijahaalari, ou simplement haalari, est une salopette ou
+            combinaison propre à chaque école et programme d’études. Chaque
+            étudiant la personnalise à sa guise : signatures des copains, noms
+            de sponsors, badges, photos, porte-clés, dessins…
+        </p>
+
+        <v-alert icon="mdi-information-outline" variant="tonal" density="compact" border="start">
+            Chez nous, on pense aux combinaisons agrémentées de patchs et aux
+            bracelets d’événements.
+        </v-alert>
+    </FolkloreFiche>
 </template>

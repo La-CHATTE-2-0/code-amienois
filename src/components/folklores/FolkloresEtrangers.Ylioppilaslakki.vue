@@ -1,34 +1,43 @@
+<script setup lang="ts">
+import FolkloreFiche from "./FolkloreFiche.vue";
+
+const image = {
+    src: "/images/folklores/13-3-7954763.avif",
+    alt: "Jeunes diplômés finlandais coiffés de l’ylioppilaslakki blanche",
+};
+
+const enBref = [
+    { label: "Portée par", text: "Les bacheliers qui entrent dans l’enseignement supérieur" },
+    { label: "Son rôle", text: "Distinguer les premières années des anciens" },
+    { label: "Le rite", text: "Les anciens peignent le nez des nouveaux en jaune" },
+];
+</script>
+
 <template>
-    <v-expansion-panels class="mb-5">
-        <v-expansion-panel elevation="0" variant="tonal">
-            <v-expansion-panel-title>
-                🇫🇮 Ylioppilaslakki
-            </v-expansion-panel-title>
-            <v-expansion-panel-text>
-                <v-img
-                    class="my-5"
-                    src="/images/folklores/13-3-7954763.avif"
-                    alt="Opiskelijahaalari"
-                ></v-img>
+    <FolkloreFiche id="ylioppilaslakki" titre="L’ylioppilaslakki" :image="image" :en-bref="enBref">
+        <p>
+            L’ylioppilaslakki est portée par les diplômés du second cycle qui
+            entrent à l’université ou dans d’autres études supérieures. Elle
+            distingue les premières années des étudiants plus anciens, vêtus de
+            leur <a href="#haalari">haalari</a>. À cette occasion, les anciens
+            peignent en jaune le nez de chaque nouvel arrivant.
+        </p>
 
-                <p>
-                    L’Ylioppilaslakki est portée par les diplômé du second cycle
-                    arrivant à l’université ou accédant à d’autres types
-                    d’études supérieur. Cette coiffe permet de distinger les
-                    premières années, « bizuth », des autres étudiants plus
-                    ancien vêtu d’opiskelija (haalari). A cette occasion les
-                    anciens peignent le nez de chacun des intégrés en jaune,
-                    tradition qui n’est pas sans rappeler le terme « béjaunes »,
-                    ancien terme de fauconnerie utilisé par certains étudiants
-                    français pour désigner les « bizuth ».
-                </p>
+        <v-alert icon="mdi-information-outline" variant="tonal" density="compact" border="start">
+            Chez nous, ce nez jaune rappelle le « béjaune », terme de
+            fauconnerie que certains étudiants français emploient encore pour
+            désigner les bizuths.
+        </v-alert>
 
-                <v-img
-                    class="my-5"
-                    src="/images/folklores/First_of_May_in_Helsinki,_student_culture_01.jpg"
-                    alt="Opiskelijahaalari"
-                ></v-img>
-            </v-expansion-panel-text>
-        </v-expansion-panel>
-    </v-expansion-panels>
+        <figure class="folklore-figure">
+            <img
+                src="/images/folklores/First_of_May_in_Helsinki,_student_culture_01.jpg"
+                alt="Foule d’étudiants en haalari et ylioppilaslakki dans les rues d’Helsinki le 1er mai"
+                width="1195"
+                height="918"
+                loading="lazy"
+            />
+            <figcaption>Le 1er mai à Helsinki</figcaption>
+        </figure>
+    </FolkloreFiche>
 </template>

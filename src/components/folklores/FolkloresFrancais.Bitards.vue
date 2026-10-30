@@ -1,130 +1,147 @@
+<script setup lang="ts">
+import FolkloreFiche from "./FolkloreFiche.vue";
+
+const image = {
+    src: "/images/folklores/venere.jpg",
+    alt: "Créature naturalisée à tête de fouine, corps de carpe et plumes de paon : le vénéré Bitard",
+    width: 800,
+    height: 600,
+    legende: "Le vénéré Bitard (L.S.T.)",
+};
+
+const enBref = [
+    { label: "Sa ville", text: "Poitiers" },
+    { label: "Son dieu", text: "Le vénéré Bitard, Loué Soit-Il (L.S.T.)" },
+    { label: "Sa tenue", text: "La faluche, avec un chevron, et une cape" },
+    { label: "Son grand rendez-vous", text: "La chasse au Bitard, vers l’équinoxe de printemps" },
+];
+
+const grandConseil = [
+    { label: "Grand Maître", text: "Élu à l’automne, il dirige l’Ordre et nomme le Grand Conseil" },
+    { label: "Grand Sommelier", text: "Les boissons" },
+    { label: "Grand Argentier", text: "Les comptes" },
+    { label: "Grand Escriturier", text: "Le courrier et les archives" },
+    { label: "Grand Intendant", text: "Le rangement, le bricolage et les victuailles" },
+    { label: "Grand Chantre", text: "Les chansons paillardes, les canulars, et il donne le la" },
+    { label: "Grand Bitardier", text: "Désigné par la chasse au Bitard, il est le chef des novices" },
+];
+
+const costumes = [
+    { label: "Chabousses", text: "Cape verte" },
+    { label: "Novices", text: "Chevron blanc, cape blanche" },
+    { label: "Chevaliers", text: "Chevron bleu, cape rouge" },
+    { label: "Commandeurs", text: "Liseré argent sur le chevron bleu de la faluche, chevron bleu sur la cape rouge" },
+    { label: "Grand Maître", text: "Cape bleue bordée de fourrure blanche" },
+    { label: "Grand Bitardier", text: "Cape camaïeu" },
+];
+</script>
+
 <template>
-    <v-expansion-panels class="mb-5">
-        <v-expansion-panel elevation="0" variant="tonal">
-            <v-expansion-panel-title>
-                L'ordre du bitard (Loué soit-il !)
-            </v-expansion-panel-title>
-            <v-expansion-panel-text>
-                <v-alert
-                    density="compact"
-                    title="Attention Bitard != Faluchard"
-                    text="Attention les membres de l'ordre du bitard portent une faluche aussi, mais ce n'est pas un ordre faluchard, ce n'est pas le même folklore (même s'il y a des mélanges et une amitié entre les deux)"
-                    type="warning"
-                ></v-alert>
+    <FolkloreFiche id="bitard" titre="L’ordre du Bitard (Loué soit-il !)" :niveau="2" :image="image" :en-bref="enBref">
+        <v-alert
+            type="warning"
+            variant="tonal"
+            density="compact"
+            border="start"
+            title="Bitard n’est pas faluchard"
+        >
+            Les membres de l’ordre du Bitard portent eux aussi une faluche, mais
+            ce n’est pas un ordre faluchard : c’est un autre folklore, même s’il y
+            a des mélanges et une vraie amitié entre les deux.
+        </v-alert>
 
-                <v-img
-                    src="/images/folklores/venere.jpg"
-                    class="my-5"
-                    alt="Veneré Bitard"
-                >
-                </v-img>
+        <h3>Genèse</h3>
+        <p>
+            Le dieu des étudiants de Poitiers trouve ses origines dans les temps
+            anciens, quand les dieux habitaient l’Olympe. Junon, épouse de
+            Jupiter, fauta un jour avec un berger. Le courroux de son mari dut
+            influencer le destin : elle enfanta dans la douleur d’un monstre à
+            tête de fouine, corps de carpe, plumes de dinde et de paon, pattes de
+            lièvre et palmes académiques. Cet être, dieu par sa mère, était le
+            vénéré Bitard (L.S.T.).
+        </p>
+        <p>
+            Horrifiée par l’aspect de son divin enfant, Junon le projeta
+            par-dessus monts et vallées, et il tomba dans la forêt de Ligugé. Par
+            de nombreux miracles, il y fit connaître sa nature divine aux
+            habitants, qui lui rendirent un culte et bâtirent un sanctuaire en
+            son honneur. Au Ve siècle, saint Martin convertit nombre d’entre eux
+            et le sanctuaire devint un couvent ; mais des initiés, refusant les
+            idées nouvelles, s’enfuirent dans les bois avec les reliques du
+            vénéré Bitard (L.S.T.) et enseignèrent leur religion à leurs enfants.
+            C’est ainsi qu’au fil des siècles, leurs mystères furent transmis aux
+            dignitaires de l’Ordre.
+        </p>
+        <p>
+            Le culte est toujours célébré par les « escholiers fidèles » lors de
+            réunions nocturnes et secrètes, réservées aux dignitaires. Et chaque
+            année, vers l’équinoxe de printemps, au cours d’un grand
+            rassemblement dans la forêt de Chanteloup, les étudiants, guidés par
+            l’Ordre, se livrent à la chasse au Bitard (L.S.T.), avant de ramener
+            à travers Poitiers le nouveau Grand Bitardier.
+        </p>
 
-                <strong class="mt-4">
-                    Genèse :
-                </strong> 
-                <p class="mb-4">
-                    Le dieu des étudiants de Poitiers trouve ses origines dans
-                    les temps anciens, quand les dieux habitaient l’Olympe.
-                    Junon, épouse de Jupiter, fauta un jour avec un berger. Le
-                    courroux de son mari dut influencer le destin : elle enfanta
-                    dans la douleur. Son rejeton était un monstre : tête de
-                    fouine, corps de carpe, plumes de dinde, plumes de paon,
-                    pattes de lièvre et palmes académiques. Cet être, dieu par
-                    sa mère, était le vénéré Bitard (L.S.T.). Pourtant Junon,
-                    horrifiée par l’aspect de son divin enfant, le projeta par
-                    dessus monts et vallées. Ce dernier tomba dans la foret de
-                    Ligugé. Par de nombreux miracles, il y fit connaître sa
-                    nature divine aux autochtones. Ceux-ci lui rendirent un
-                    culte et battirent un sanctuaire en son honneur. Au
-                    cinquième siècle, Saint Martin convertit de nombreux
-                    indigènes à sa religion. Le sanctuaire devint un couvent.
-                    Mais des initiés, refusant les idées nouvelles, s’enfuirent
-                    dans les bois avec les reliques du vénéré Bitard (L.S.T.).
-                    Ils enseignèrent leur religion à leur enfants. C’est ainsi
-                    qu’au fil des siècles, leur mystères furent transmis aux
-                    dignitaires de l’Ordre du vénéré Bitard (L.S.T.). Le culte
-                    est toujours célébré par les « escholiers fidèles » lors de
-                    réunions nocturnes et secrètes auxquelles ne sont admis que
-                    les dignitaires. De plus, tous les ans, vers l’equinoxe de
-                    printemps, au cour d’un grand rassemblement dans la forêt de
-                    Chanteloup, les estudiants, guidés par l’Ordre, se livrent à
-                    la chasse au Bitard (Loué SoiT-il) pour ramener ensuite à
-                    Poitiers le nouveau Grand Bitardier à travers la ville.
-                </p>
+        <iframe
+            class="folklore-video"
+            src="https://www.youtube-nocookie.com/embed/K4mCWBDUC_M"
+            title="Vidéo sur l’ordre du Bitard"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
 
-                <div class="my-4">
-                    <iframe
-                        style="width: 100%; aspect-ratio: 16/9"
-                        src="https://www.youtube.com/embed/K4mCWBDUC_M?si=OTCj3eIg3G-AgzIJ"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                    ></iframe>
-                </div>
+        <h3>Hiérarchie</h3>
+        <p>
+            L’Ordre réunit des dignitaires (chevaliers et commandeurs), des
+            novices et des chabousses. L’étudiant qui veut devenir bitard se
+            présente aux dignitaires : il reçoit un surnom et devient novice.
+            S’il montre des aptitudes, il est intronisé chevalier, puis, si ses
+            qualités le justifient, commandeur ; le Grand Conseil statue sur
+            chaque intronisation. Les chabousses, éléments féminins, côtoient les
+            bitards sans espoir de promotion.
+        </p>
+        <p>
+            Tous les membres du Grand Conseil sont choisis parmi les dignitaires :
+        </p>
+        <dl class="folklore-cadre folklore-list">
+            <div v-for="item in grandConseil" :key="item.label">
+                <dt>{{ item.label }}</dt>
+                <dd>{{ item.text }}</dd>
+            </div>
+        </dl>
 
-                <strong class="mt-4">
-                    Hiérarchie :
-                </strong> 
-                <p class="mb-4">
-                    L’Ordre du vénéré Bitard (L.S.T.) est constitué par les
-                    dignitaires (chevaliers et commandeurs), les novices et les
-                    chabousses. Il est dirigé par le Grand Maître. L’étudiant
-                    qui veut devenir bitard se présente aux dignitaires. Il
-                    reçoit un surnom et devient novice. Si il manifeste des
-                    aptitudes, il devient ensuite dignitaire et est intronisé
-                    chevalier. Et si ses qualités le justifient, il sera plus
-                    tard intronisé Commandeur. Le Grand Conseil statue sur
-                    chaque intronisation. Le Grand Maître est élu à l’automne.
-                    Il nomme le Grand Conseil, dont il fait partie avec : le
-                    Grand Sommelier (boissons), le Grand Argentier (comptes), le
-                    Grand Escriturier (courrier et archives), le Grand Intendant
-                    (rangement, bricolage, victuailles...) et le Grand Chantre
-                    (chansons paillardes, canulars et donne le LA). Tous sont
-                    choisis parmi les dignitaires. Le Grand Bitardier, déterminé
-                    par la printanière Chasse au Bitard, (L.S.T.) en fait aussi
-                    partie (chef des novices). Eléments féminins, les chabousses
-                    côtoient les bitards, sans espoir de promotion.
-                </p>
+        <h3>Costume</h3>
+        <p>
+            Les bitards portent tous la faluche, le béret de feutre des
+            étudiants de France, dont les insignes et rubans résument la vie de
+            son porteur. Ils y ajoutent un chevron et portent une cape, dont les
+            couleurs disent, sommairement, le rang de chacun :
+        </p>
+        <dl class="folklore-cadre folklore-list">
+            <div v-for="item in costumes" :key="item.label">
+                <dt>{{ item.label }}</dt>
+                <dd>{{ item.text }}</dd>
+            </div>
+        </dl>
 
-                <strong>
-                    Costume :
-                </strong> 
-                <p class="mb-4">
-                    Les bitards portent tous une faluche, coiffure
-                    traditionnelle des étudiants de France. C’est un béret de
-                    feutre. Des insignes et rubans de couleur y résument la vie
-                    du porteur. Les bitards y ajoutent un chevron, et portent
-                    une cape. Sommairement, les chabousses ont une cape verte,
-                    les novices un chevron blanc et une cape blanche, les
-                    chevaliers un chevron bleu et une cape rouge, et les
-                    commandeurs surchargent avec un liseré argent sur le chevron
-                    bleu de la faluche, un chevron bleu sur la cape rouge. Le
-                    Grand Maître se distingue au premier coup d’oeil à sa cape
-                    bleue à bordure de fourrure blanche, le Grand Bitardier à sa
-                    cape camaïeu. Sans indiquer certaines autres particularités.
-                </p>
+        <h3>Coutumes</h3>
+        <p>
+            Les bitards visitent les lieux poitevins rendus mythiques par
+            Rabelais, la Pierre Levée et Passelourdain. Le cusec de vin rouge
+            est une institution, et l’hymne au Bitard (L.S.T.) est chanté à
+            chaque instant solennel. Chaque bitard a, au sein de l’Ordre, sa
+            propre chanson paillarde.
+        </p>
 
-                <strong>
-                    Coutumes :
-                </strong> 
-                <p>
-                    Les bitards visitent les lieux poitevins devenus mythiques
-                    grâce à Rabelais (la Pierre Levée et Passelourdain). Le
-                    cusec (cul-sec?) de verre de vin rouge est une institution.
-                    L’hymne au Bitard (L.S.T.) est chanté à chaque instant
-                    solennel. Chaque bitard a une chanson paillarde qui lui est
-                    sienne au sein de l’Ordre. Le vénéré Bitard (L.S.T.) est
-                    célébré lors de réunions secrètes et nocturnes.
-                </p>
-
-                <v-img alt="Membres de l'ordre du bitard"
-                    src="/images/folklores/800x600_217321.jpg"
-                    class="my-5"
-                >
-                </v-img>
-            </v-expansion-panel-text>
-        </v-expansion-panel>
-    </v-expansion-panels>
+        <figure class="folklore-figure">
+            <img
+                src="/images/folklores/800x600_217321.jpg"
+                alt="Bitards en capes colorées et faluches réunis dans un pré autour de la bannière « Vénéré Bitard »"
+                width="600"
+                height="400"
+                loading="lazy"
+            />
+        </figure>
+    </FolkloreFiche>
 </template>
