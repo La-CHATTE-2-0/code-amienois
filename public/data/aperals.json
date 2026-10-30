@@ -35,7 +35,7 @@
   {
     "city": "Amiens",
     "frequency": "Mensuel - premier mercredi du mois",
-    "description": "Événement sur Facebook et les réseaux de La CHATTE 2.0.",
+    "description": "Évènement sur Facebook et les réseaux de La CHATTE 2.0.",
     "places": [
       {
         "name": "English Pub",
@@ -395,7 +395,7 @@
   {
     "city": "Lyon",
     "frequency": "Hebdomadaire - tous les mardis",
-    "description": "Peut changer de lieu en fonction des événements, se renseigner sur le groupe Facebook.",
+    "description": "Peut changer de lieu en fonction des évènements, se renseigner sur le groupe Facebook.",
     "places": [
       {
         "name": "Black Hole",

@@ -60,7 +60,7 @@
             <p class="text-justify mb-4">
                 Il est devenu une tradition, pouvant être considéré comme une
                 véritable particularité de la faluche amiénoise, de célébrer ce
-                type d'événement qui se fait rarement ailleurs.
+                type d'évènement qui se fait rarement ailleurs.
             </p>
 
             <div class="mb-4 fal-img">

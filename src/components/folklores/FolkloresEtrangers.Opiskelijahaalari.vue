@@ -27,7 +27,7 @@ const enBref = [
 
         <v-alert icon="mdi-information-outline" variant="tonal" density="compact" border="start">
             Chez nous, on pense aux combinaisons agrémentées de patchs et aux
-            bracelets d’événements.
+            bracelets d’évènements.
         </v-alert>
     </FolkloreFiche>
 </template>

@@ -44,7 +44,7 @@ function handleReset() {
                 <li>
                     Assure-toi en premier lieu que ton
                     <strong>dossier pour le congrès soit complet</strong> sur la
-                    liste de l’événement (fiche, paiement, chèques de caution,
+                    liste de l’évènement (fiche, paiement, chèques de caution,
                     attestation sur l’honneur…).
                 </li>
                 <li>
@@ -116,7 +116,7 @@ function handleReset() {
                 </li>
                 <li>
                     Il n’est pas conseillé de garder son téléphone portable sur
-                    soi pendant l’événement pour ne pas le perdre lors de
+                    soi pendant l’évènement pour ne pas le perdre lors de
                     quelques péripéties.
                 </li>
                 <li>
