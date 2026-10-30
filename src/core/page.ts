@@ -2,7 +2,7 @@ const pages = {
     code: {
         name: 'Code',
         url: '/',
-        description: 'Code de la Faluche Amiénoise : articles, insignes et règles du port de la faluche à Amiens.'
+        description: 'Code de la Faluche amiénoise : articles, insignes et règles du port de la faluche à Amiens.'
     },
     recap_spe: {
         name: 'Récap Spés',

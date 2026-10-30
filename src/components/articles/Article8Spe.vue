@@ -25,7 +25,7 @@
                             <li>
                                 À Amiens, on ajoute l'année en indice, et le nombre
                                 de faluches cousues en exposant. Par ailleurs, les 
-                                ciseaux représentent ici le fait d'avoir cousus les 
+                                ciseaux représentent ici le fait d'avoir cousu les 
                                 rubans soi-même et non l'entièreté de la faluche.
                             </li>
                         </ul>
@@ -43,7 +43,7 @@
                 <tr>
                     <td colspan="3">
                         <v-icon icon="mdi-repeat"></v-icon>
-                        Le ruban bleu et les années avec les ciseaux n'existent au
+                        Le ruban bleu et les années avec les ciseaux n'existent pas au
                         code national
                     </td>
                 </tr>
@@ -93,7 +93,7 @@
                 <tr class="no-border-bottom">
                     <td>Feuille de vigne</td>
                     <td>
-                        Perte de viriginité masculine (<strong
+                        Perte de virginité masculine (<strong
                             >mais pendant la vie falucharde</strong
                         >)
                     </td>
@@ -137,7 +137,7 @@
                 <tr class="no-border-bottom">
                     <td>Rose</td>
                     <td>
-                        Perte de viriginité féminine (<strong
+                        Perte de virginité féminine (<strong
                             >mais pendant la vie falucharde</strong
                         >)
                     </td>
@@ -154,18 +154,18 @@
                 <tr>
                     <td colspan="3">
                         <v-icon icon="mdi-repeat"></v-icon>
-                        Retiré de code national pour la fusion avec le feuille de
-                        vigne (Anciennement: Pas de notion de vie falucharde au code
+                        Retiré du code national lors de la fusion avec la feuille de
+                        vigne (anciennement : pas de notion de vie falucharde au code
                         national)
                     </td>
                 </tr>
                 <tr class="no-border-bottom">
                     <td colspan="3" class="no-border">
                         <p class="text-justify">
-                            En raison des débats aux 131ème, 132ème, 133ème et
-                            134ème anniversaire, il a été décidé de retirer le
+                            En raison des débats aux 131e, 132e, 133e et
+                            134e anniversaires, il a été décidé de retirer le
                             squelette du code national et de laisser le choix à
-                            chaque ville (À Amiens on reste aux versions initales).
+                            chaque ville (à Amiens, on reste aux versions initiales).
                         </p>
                     </td>
                 </tr>
@@ -179,7 +179,7 @@
                                 du même sexe
                             </li>
                             <li>
-                                À l’envers + pointe de ruby : Amour de l'anatomie
+                                À l’envers + pointe de rubis : Amour de l'anatomie
                                 des deux sexes
                             </li>
                         </ul>
@@ -215,7 +215,7 @@
                     <td colspan="3">
                         <v-icon icon="mdi-repeat"></v-icon>
 
-                        N'éxiste plus au code national (mais visible encore dans
+                        N'existe plus au code national (mais visible encore dans
                         beaucoup de villes)
                     </td>
                 </tr>
@@ -257,7 +257,7 @@
                 <tr class="no-border-bottom">
                     <td colspan="3" class="no-border">
                         <p class="text-justify">
-                            À Amiens certains insignes peuvent changer de
+                            À Amiens, certains insignes peuvent changer de
                             signification quand ils sont placés avant les initiales
                             sur le circulaire, de la représentation d'un amour d'une
                             chose, à la pratique de celle-ci. Ces insignes sont

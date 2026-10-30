@@ -10,7 +10,7 @@
             </div>
 
             <p class="text-justify mb-4">
-                À la fin de XIXème siècle, le <strong>monôme</strong> était une
+                À la fin du XIXe siècle, le <strong>monôme</strong> était une
                 manifestation étudiante sous forme d'un cortège ou d'une
                 procession en file indienne.
             </p>
@@ -24,11 +24,11 @@
             </div>
 
             <p class="text-justify mb-4">
-                À Amiens, depuis le XXème siècle, les étudiants faluchards
+                À Amiens, depuis le XXe siècle, les étudiants faluchards
                 défilent en cohorte et chantent ensemble de nombreuses
-                paillardes, traversant le centre-ville qui acceuille en cette
-                période le marché de Noël, jusqu'a la place Marie-Sans-Chemise,
-                où les Grands-Maitres remettent sa faluche à cette dernière, une
+                paillardes, traversant le centre-ville qui accueille en cette
+                période le marché de Noël, jusqu'à la place Marie-sans-chemise,
+                où les Grands-Maîtres remettent sa faluche à cette dernière, une
                 faluche comportant les couleurs de toutes les disciplines des
                 étudiants faluchards de la ville.
             </p>
@@ -36,7 +36,7 @@
             <div class="mb-4 fal-img text-center">
                 <img
                     class="fal-img--detouree"
-                    alt="Faluche Marie-Sans-Chemise"
+                    alt="Faluche de Marie-sans-chemise"
                     loading="lazy"
                     style="max-width: 500px"
                     src="/images/other/faluchemarie.webp"
@@ -44,8 +44,8 @@
             </div>
 
             <p class="text-justify mb-4">
-                Par leurs discours, les Grands-Maitres transmettent aux
-                néo-faluchards, la tradition et l'histoire de ce monument connu
+                Par leurs discours, les Grands-Maîtres transmettent aux
+                néo-faluchards la tradition et l'histoire de ce monument connu
                 de tous les Amiénois.
             </p>
 
@@ -59,13 +59,13 @@
 
             <p class="text-justify mb-4">
                 Il est devenu une tradition, pouvant être considéré comme une
-                véritable particularité de la faluche Amiénoise, de célébrer ce
-                type d'évênement qui se fait rarement ailleurs.
+                véritable particularité de la faluche amiénoise, de célébrer ce
+                type d'événement qui se fait rarement ailleurs.
             </p>
 
             <div class="mb-4 fal-img">
                 <img
-                    alt="Marie Sans Chemise"
+                    alt="Marie-sans-chemise"
                     loading="lazy"
                     src="/images/carousel/marie_sans_chemise.jpg"
                 />

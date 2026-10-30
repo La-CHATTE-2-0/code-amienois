@@ -5,7 +5,7 @@ import "../../sass/base/_tables.scss";
 <template>
     <v-table class="table align-middle" data-fal-table="insigne">
         <caption class="d-sr-only">
-            Insignes fillières spés Amiens
+            Insignes filières spés Amiens
         </caption>
         <thead>
             <tr>
@@ -17,7 +17,7 @@ import "../../sass/base/_tables.scss";
         <tbody>
             <tr>
                 <td>
-                    <div class="pt-2">Assistante Sociale</div>
+                    <div class="pt-2">Assistante sociale</div>
                     <div class="py-2">
                         <v-icon icon="mdi-repeat"></v-icon>
                         N'existe pas au code national
@@ -55,7 +55,7 @@ import "../../sass/base/_tables.scss";
             </tr>
             <tr>
                 <td>
-                    <div class="pt-2">Science de l'éducation</div>
+                    <div class="pt-2">Sciences de l'éducation</div>
                     <div class="py-2">
                         <v-icon icon="mdi-repeat"></v-icon>
                         N'existe pas au code national

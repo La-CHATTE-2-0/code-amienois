@@ -20,7 +20,7 @@ const groups = [
         title: "Le soir du baptême",
         items: [
             "Toujours pendant le baptême ton filleul tu soutiendras.",
-            "Est-il besoin de rappeler que s’il a du mal à boire, toi et toi seul l’aideras.",
+            "Est-il besoin de rappeler que s’il a du mal à boire, toi et toi seul l’aideras ?",
             "Le reste de la soirée, de ton filleul tu t’occuperas.",
             "Jamais le soir de son baptême la gueule tu ne te saouleras.",
         ],
@@ -29,7 +29,7 @@ const groups = [
         title: "Ensuite",
         items: [
             "Les semaines suivantes, de chaque baptême amiénois ton filleul tu informeras.",
-            "A chaque faluchard que tu connais ton filleul tu présenteras.",
+            "À chaque faluchard que tu connais ton filleul tu présenteras.",
             "Toujours sur ton filleul un œil tu garderas.",
             "Tout écart de conduite tu lui signaleras.",
             "Et enfin toujours j’espère avec ton filleul des relations privilégiées tu garderas.",
@@ -51,7 +51,7 @@ const starts = groups.map((_, i) =>
                 Le parrain ou la marraine est
                 <strong>responsable de l’état de son filleul avant, pendant et
                 après le baptême</strong> (état de santé et également les
-                allergies dont souffrent son fillot et son état moral). Il est
+                allergies dont souffre son fillot et son état moral). Il est
                 donc opportun de s’assurer de l’état du filleul avant de
                 procéder au baptême, quitte à le reporter si son état le
                 justifie.
@@ -63,7 +63,7 @@ const starts = groups.map((_, i) =>
                 density="compact"
             >
                 Le critère de report d’un baptême est le suivant : le jeune
-                baptisé doit se souvenir de l’avant baptême et du baptême.
+                baptisé doit se souvenir de l’avant-baptême et du baptême.
             </v-alert>
             <p>
                 Le rôle du parrain ou de la marraine n'est pas uniquement

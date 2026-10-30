@@ -2,7 +2,7 @@
     <article data-fal-article="1">
         <h2>Article 1 :</h2>
         <p class="text-justify">
-            La Faluche est une tradition des étudiants de France, elle se veut
+            La Faluche est une tradition des étudiants de France ; elle se veut
             être le folklore le plus représentatif de ceux-ci. Son appartenance
             est symbolisée par le port du béret homonyme créé par et pour eux.
         </p>

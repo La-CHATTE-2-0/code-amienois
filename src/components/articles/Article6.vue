@@ -15,7 +15,7 @@ import Article6Spe from "./Article6Spe.vue";
         <p class="text-justify">
             Voici les couleurs nationalement adoptées, basées à l’origine sur
             celles des toges doctorales et professorales des universités
-            Françaises :
+            françaises :
         </p>
 
         <v-table class="mt-4" data-fal-table="circu">
@@ -58,7 +58,7 @@ import Article6Spe from "./Article6Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td data-filliere>Medecine</td>
+                    <td data-filliere>Médecine</td>
                     <td data-matiere>Velours rouge</td>
                     <td data-matiere-img>
                         <div
@@ -106,8 +106,8 @@ import Article6Spe from "./Article6Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td data-filliere>Sage-Femme</td>
-                    <td data-matiere>Velours fushia</td>
+                    <td data-filliere>Sage-femme</td>
+                    <td data-matiere>Velours fuchsia</td>
                     <td data-matiere-img>
                         <div
                             data-fal-circu-container
@@ -132,11 +132,11 @@ import Article6Spe from "./Article6Spe.vue";
                 <tr>
                     <td>DU</td>
                     <td colspan="2">
-                        Matière et couleur(s) suivant de l'UFR de rattachement
+                        Matière et couleur(s) suivant l'UFR de rattachement
                     </td>
                 </tr>
                 <tr>
-                    <td>A.E.S</td>
+                    <td>A.E.S.</td>
                     <td>Satin vert clair</td>
                     <td>
                         <div
@@ -406,7 +406,7 @@ import Article6Spe from "./Article6Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Oenologie</td>
+                    <td>Œnologie</td>
                     <td>Satin saumon</td>
                     <td>
                         <div
@@ -496,7 +496,7 @@ import Article6Spe from "./Article6Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Fillière sportive (STAPS)</td>
+                    <td>Filière sportive (STAPS)</td>
                     <td>Satin vert foncé</td>
                     <td>
                         <div
@@ -510,7 +510,7 @@ import Article6Spe from "./Article6Spe.vue";
                 <tr>
                     <td>Thanatologie</td>
                     <td colspan="2">
-                        Satin blanc (sauf si école avec concours: velours blanc)
+                        Satin blanc (sauf si école avec concours : velours blanc)
                     </td>
                 </tr>
                 <tr>
@@ -537,7 +537,7 @@ import Article6Spe from "./Article6Spe.vue";
         <div class="table-warning-fal">
             <h3 class="pl-3 pt-2 mt-4">
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
-                Spécifités Amiénoises
+                Spécificités amiénoises
             </h3>
             <Article6Spe class="table-warning-fal"></Article6Spe>
         </div>

@@ -54,13 +54,13 @@ function handleReset() {
                 </li>
                 <li>
                     Il faut impérativement se renseigner sur les
-                    <strong>conditions météo</strong> prévues lors du weekend (de
+                    <strong>conditions météo</strong> prévues lors du week-end (de
                     journée comme de nuit !). Cela permettra d’adapter au mieux
                     les recommandations suivantes aux besoins réels sur place.
                 </li>
                 <li>
                     <strong>Sécurise tes insignes et tes pin’s.</strong> Ta fal
-                    risque d’être pas mal ballottée durant le weekend.
+                    risque d’être pas mal ballottée durant le week-end.
                 </li>
             </ol>
         </section>
@@ -109,9 +109,9 @@ function handleReset() {
             </h2>
             <ol>
                 <li>
-                    A l’arrivée, <strong>va voir l’orga</strong> (généralement
-                    situé à l’entrée du site) pour pointer et récupérer ton
-                    Welcome pack (Tu y trouveras un pin’s, un écocup, le CD du
+                    À l’arrivée, <strong>va voir l’orga</strong> (généralement
+                    située à l’entrée du site) pour pointer et récupérer ton
+                    welcome pack (tu y trouveras un pin’s, un écocup, le CD du
                     congrès et d’autres goodies).
                 </li>
                 <li>
@@ -124,7 +124,7 @@ function handleReset() {
                     des gens sont nus !</strong> (Ça arrivera plus d’une fois xD).
                 </li>
                 <li>
-                    Si vous avez le moindre problème pendant le weekend,
+                    Si vous avez le moindre problème pendant le week-end,
                     n’hésitez pas à aller voir vos anciens ou l’orga qui
                     essayeront de vous aider autant qu’ils le peuvent. De plus,
                     des <strong>secouristes</strong> sont généralement présents
@@ -135,7 +135,7 @@ function handleReset() {
         </section>
 
         <p class="check-credit">
-            D'après Nicolas “FéeS’EL Picarde” T., Ex GC Sciences Amiens
+            D'après Nicolas “FéeS’EL Picarde” T., ex-GC Sciences Amiens
         </p>
 
         <img

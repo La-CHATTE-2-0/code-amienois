@@ -4,13 +4,13 @@ import ImageFalSvg from './SchemaSvg.vue'
 
 <template>
     <div>
-        <h2>Les parties de la faluches</h2>
+        <h2>Les parties de la faluche</h2>
 
         <ImageFalSvg></ImageFalSvg>
 
         <p>
-            Il existe plusieurs parties sur la faluches pour les insignes et les pin's. Selon l'endroit où le
-            pin's/l'insigne est placé, il peut gagner en signification
+            Il existe plusieurs parties sur la faluche pour les insignes et les pin's. Selon l'endroit où le
+            pin's/l'insigne est placé, il peut gagner en signification.
         </p>
         <ol class="ml-6">
             <li>Officielle</li>

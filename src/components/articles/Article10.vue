@@ -18,10 +18,10 @@ import pages from "../../core/page";
                     ville universitaire, et l'année de changement en chiffres.</p>
                     <ul>
                         <li>
-                            <p><i>Si tu as une ville d'études avant Amiens, elle sera au dessus de ton écusson d'Amiens</i></p>
+                            <p><i>Si tu as une ville d'études avant Amiens, elle sera au-dessus de ton écusson d'Amiens.</i></p>
                         </li>
                         <li>
-                            <p><i>Si tu as une ville d'études après Amiens, il faudra remonter l'écusson d'Amiens et y faire apparaitre la nouvelle ville en dessous</i></p>
+                            <p><i>Si tu as une ville d'études après Amiens, il faudra remonter l'écusson d'Amiens et y faire apparaître la nouvelle ville en dessous.</i></p>
                         </li>
                     </ul>
                 </li>
@@ -29,7 +29,7 @@ import pages from "../../core/page";
                     <b>Le ruban d'association :</b> Ruban aux couleurs de
                     l'association, précisant la place occupée par l'étudiant et
                     les années passées au sein de celle-ci. Selon le poste,
-                    l'étudiant placer devant l'année une broche correspondant à
+                    l'étudiant placera devant l'année une broche correspondant à
                     son poste (président, vice-président général, secrétaire ou
                     trésorier), une étoile dorée pour un rôle au sein du bureau (VP),
                     et argentée pour un membre actif ou chargé de mission.
@@ -111,7 +111,7 @@ import pages from "../../core/page";
                         </li>
                         <li>
                             Pour les élus ou délégués au plan international : un
-                            ruban aux couleurs de l'O.N.U (le délégué placera le
+                            ruban aux couleurs de l'ONU (le délégué placera le
                             ruban de plus haut grade).
                         </li>
                     </ol>
@@ -209,7 +209,7 @@ import pages from "../../core/page";
                         </li>
                         <li>
                             Les initiales des autres conseils (CNESER, OVE,
-                            COMUE, ...)
+                            COMUE…)
                         </li>
                     </ol>
                 </li>
@@ -234,14 +234,14 @@ import pages from "../../core/page";
             </p>
 
             <p>
-                Pour les Pharmaciens d'Amiens les angles des rubans doivent être
-                visibles
+                Pour les pharmaciens d'Amiens, les angles des rubans doivent être
+                visibles.
             </p>
 
             <div class="table-warning-fal">
                 <h3 class="pl-3 pt-2 mt-4">
                     <v-icon icon="mdi-alert-box-outline"></v-icon>
-                    Spécifité Amiénoise
+                    Spécificité amiénoise
                 </h3>
                 <Article10Spe class="table-warning-fal px-4 py-2" />
             </div>

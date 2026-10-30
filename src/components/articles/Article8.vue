@@ -7,10 +7,10 @@ import Article8Spe from "./Article8Spe.vue";
 <template>
     <article data-fal-article="8">
         <h2>Article 8 :</h2>
-        <p>Le velours peut comporter:</p>
+        <p>Le velours peut comporter :</p>
         <ul>
             <li>
-                Les insignes:
+                Les insignes :
                 <ul>
                     <li>Des associations étudiantes</li>
                     <li>
@@ -30,7 +30,7 @@ import Article8Spe from "./Article8Spe.vue";
                 </ul>
             </li>
             <li>
-                Votre devise:
+                Votre devise :
                 <div>
                     En grec, en latin, en français, en hébreu, en langue
                     régionale, en patois, elle s'inscrit en toutes lettres dans
@@ -39,7 +39,7 @@ import Article8Spe from "./Article8Spe.vue";
                 </div>
             </li>
             <li>Vos armes personnelles</li>
-            <li>Les symboles:</li>
+            <li>Les symboles :</li>
         </ul>
 
         <div class="fal-table-title">
@@ -112,8 +112,8 @@ import Article8Spe from "./Article8Spe.vue";
                 <tr>
                     <td>Chameau</td>
                     <td>
-                        <div>À l'endroit: célibataire</div>
-                        <div>À l'envers: en couple</div>
+                        <div>À l'endroit : célibataire</div>
+                        <div>À l'envers : en couple</div>
                     </td>
                     <td data-fal-insigne>
                         <img
@@ -126,7 +126,7 @@ import Article8Spe from "./Article8Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Choppe de bière</td>
+                    <td>Chope de bière</td>
                     <td>Amour de la bonne bière</td>
                     <td data-fal-insigne>
                         <img
@@ -134,7 +134,7 @@ import Article8Spe from "./Article8Spe.vue";
                             width="100"
                             height="100"
                             src="/images/insigne/chope_de_biere.png"
-                            alt="Choppe de bière"
+                            alt="Chope de bière"
                         />
                     </td>
                 </tr>
@@ -154,8 +154,8 @@ import Article8Spe from "./Article8Spe.vue";
                 <tr>
                     <td>Cochon</td>
                     <td>
-                        <div>À l'endroit: n'a pas été intégré(e)</div>
-                        <div>À l'envers: a été intégré(e)</div>
+                        <div>À l'endroit : n'a pas été intégré(e)</div>
+                        <div>À l'envers : a été intégré(e)</div>
                     </td>
                     <td data-fal-insigne>
                         <img
@@ -280,7 +280,7 @@ import Article8Spe from "./Article8Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Fleur de Lys</td>
+                    <td>Fleur de lys</td>
                     <td>Scout</td>
                     <td data-fal-insigne>
                         <img
@@ -288,7 +288,7 @@ import Article8Spe from "./Article8Spe.vue";
                             width="100"
                             height="100"
                             src="/images/insigne/fleur_de_lys.png"
-                            alt="Fleur de Lys"
+                            alt="Fleur de lys"
                         />
                     </td>
                 </tr>
@@ -463,7 +463,7 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
                 <tr>
                     <td>Rose</td>
-                    <td>Perte de virginté (féminine)</td>
+                    <td>Perte de virginité (féminine)</td>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
@@ -475,7 +475,7 @@ import Article8Spe from "./Article8Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Raquette ou Ballon de foot</td>
+                    <td>Raquette ou ballon de foot</td>
                     <td>Amour du sport</td>
                     <td data-fal-insigne>
                         <img
@@ -515,7 +515,7 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
                 <tr>
                     <td>Squelette</td>
-                    <td>À l’endroit : Amour de l’anatomie</td>
+                    <td>À l’endroit : amour de l’anatomie</td>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
@@ -542,7 +542,7 @@ import Article8Spe from "./Article8Spe.vue";
                 <tr>
                     <td>Tête de taureau</td>
                     <td>
-                        Géniteur (ruban rose pour une fille, et bleu pour un
+                        Géniteur (ruban rose pour une fille et bleu pour un
                         garçon)
                     </td>
                     <td data-fal-insigne>
@@ -577,7 +577,7 @@ import Article8Spe from "./Article8Spe.vue";
         </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-sr-only">
-                Insignes décernés par les partenaires, les Grand-Maîtres
+                Insignes décernés par les partenaires, les Grands-Maîtres
             </caption>
             <thead>
                 <tr>
@@ -588,8 +588,8 @@ import Article8Spe from "./Article8Spe.vue";
             </thead>
             <tbody>
                 <tr>
-                    <td>Épee</td>
-                    <td>Fin Baiseur</td>
+                    <td>Épée</td>
+                    <td>Fin baiseur</td>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
@@ -602,7 +602,7 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
                 <tr>
                     <td>Flèche</td>
-                    <td>Ejaculateur précoce</td>
+                    <td>Éjaculateur précoce</td>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
@@ -660,7 +660,7 @@ import Article8Spe from "./Article8Spe.vue";
         </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-sr-only">
-                Insignes décernés par les Grand-Maîtres
+                Insignes décernés par les Grands-Maîtres
             </caption>
             <thead>
                 <tr>
@@ -687,7 +687,7 @@ import Article8Spe from "./Article8Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Anneaux Olympiques</td>
+                    <td>Anneaux olympiques</td>
                     <td>Excellence sportive universitaire</td>
                     <td data-fal-insigne>
                         <img
@@ -695,7 +695,7 @@ import Article8Spe from "./Article8Spe.vue";
                             width="100"
                             height="100"
                             src="/images/insigne/anneaux_olympiques.png"
-                            alt="Anneaux Olympiques"
+                            alt="Anneaux olympiques"
                         />
                     </td>
                 </tr>
@@ -716,7 +716,7 @@ import Article8Spe from "./Article8Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Bouteille de Bordeaux</td>
+                    <td>Bouteille de bordeaux</td>
                     <td>Cuite certifiée</td>
                     <td data-fal-insigne>
                         <img
@@ -724,12 +724,12 @@ import Article8Spe from "./Article8Spe.vue";
                             width="100"
                             height="100"
                             src="/images/insigne/bouteille_de_bordeaux.png"
-                            alt="Bouteille de Bordeaux"
+                            alt="Bouteille de bordeaux"
                         />
                     </td>
                 </tr>
                 <tr>
-                    <td>Bouteille de Champagne</td>
+                    <td>Bouteille de champagne</td>
                     <td>Coma éthylique certifié</td>
                     <td data-fal-insigne>
                         <img
@@ -737,7 +737,7 @@ import Article8Spe from "./Article8Spe.vue";
                             width="100"
                             height="100"
                             src="/images/insigne/bouteille_de_champagne.png"
-                            alt="Bouteille de Champagne"
+                            alt="Bouteille de champagne"
                         />
                     </td>
                 </tr>
@@ -824,7 +824,7 @@ import Article8Spe from "./Article8Spe.vue";
                 </tr>
                 <tr>
                     <td>Lime + ruban noir</td>
-                    <td>Non respect à Grand-Maître</td>
+                    <td>Non-respect envers un Grand-Maître</td>
                     <td data-fal-insigne>
                         <img
                             class="bg-ruban-noir"
@@ -854,7 +854,7 @@ import Article8Spe from "./Article8Spe.vue";
                     <td>
                         <div>A vomi sur sa faluche : ouvert à l'endroit</div>
                         <div>A vomi dans sa faluche : fermé à l'endroit</div>
-                        <div>S'il remet sur la tête : fermé et à l'envers</div>
+                        <div>S'il la remet sur la tête : fermé et à l'envers</div>
                     </td>
                     <td data-fal-insigne>
                         <img
@@ -895,7 +895,7 @@ import Article8Spe from "./Article8Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Epingle à nourrice + ruban noir</td>
+                    <td>Épingle à nourrice + ruban noir</td>
                     <td>Blâme</td>
                     <td data-fal-insigne>
                         <img
@@ -904,7 +904,7 @@ import Article8Spe from "./Article8Spe.vue";
                             width="100"
                             height="100"
                             src="/images/insigne/epingle.png"
-                            alt="Epingle"
+                            alt="Épingle"
                         />
                     </td>
                 </tr>
@@ -952,11 +952,11 @@ import Article8Spe from "./Article8Spe.vue";
 
         <div class="fal-table-title">
             <h3>Les insignes à décernements particuliers</h3>
-            <p>(Décerné par GM avec accord des porteurs de l'insigne)</p>
+            <p>(Décernés par un GM avec l’accord des porteurs de l'insigne)</p>
         </div>
         <v-table class="table align-middle my-2" data-fal-table="insigne">
             <caption class="d-sr-only">
-                Insignes à decernements particuliers
+                Insignes à décernements particuliers
             </caption>
             <thead>
                 <tr>
@@ -1070,7 +1070,7 @@ import Article8Spe from "./Article8Spe.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Fleur de Lys</td>
+                    <td>Fleur de lys</td>
                     <td>Ville royale</td>
                     <td data-fal-insigne>
                         <img
@@ -1078,7 +1078,7 @@ import Article8Spe from "./Article8Spe.vue";
                             width="100"
                             height="100"
                             src="/images/insigne/fleur_de_lys.png"
-                            alt="Fleur de Lys"
+                            alt="Fleur de lys"
                         />
                     </td>
                 </tr>
@@ -1180,11 +1180,11 @@ import Article8Spe from "./Article8Spe.vue";
             <v-expansion-panel elevation="0">
                 <v-expansion-panel-title>
                     <v-icon icon="mdi-information-variant"></v-icon>
-                    A propos du Singe
+                    À propos du Singe
                 </v-expansion-panel-title>
                 <v-expansion-panel-text>
                     <p>
-                        <strong>N.B :</strong> Lorsqu’un Faluchard est
+                        <strong>N.B. :</strong> Lorsqu’un Faluchard est
                         sanctionné par un singe, il doit retirer de sa Faluche
                         tous les insignes présents sur la partie officielle de
                         la Faluche à l’exception du singe, pour une durée
@@ -1196,14 +1196,14 @@ import Article8Spe from "./Article8Spe.vue";
             <v-expansion-panel elevation="0">
                 <v-expansion-panel-title>
                     <v-icon icon="mdi-information-variant"></v-icon>
-                    A propos du Bacchus
+                    À propos du Bacchus
                 </v-expansion-panel-title>
                 <v-expansion-panel-text>
                     <p class="text-justify">
-                        <strong>NB : </strong>Parmi les plus glorieux, le
+                        <strong>N.B. : </strong>Parmi les plus glorieux, le
                         Bacchus reste le plus difficile à obtenir. Il faudra un
                         minimum de 6 mois au faluchard pour justifier son mérite
-                        envers le Dieu du vin. Sous l’œil attentif du GM, il ne
+                        envers le dieu du vin. Sous l’œil attentif du GM, il ne
                         devra jamais faillir au règlement strict du port du
                         Bacchus. Après ce délai, avant concertation pour obtenir
                         un Bacchus, il faudra se comporter avec dignité et
@@ -1214,25 +1214,25 @@ import Article8Spe from "./Article8Spe.vue";
                     <p class="text-justify">
                         En effet, pour qu’il y ait un Bacchus, il faut qu’il y
                         ait ivresse (cela est clair, donc les bouteilles de
-                        Bordeaux sont compatibles avec cet insigne), mais la
-                        dignité doit rester toute entière et se définit de la
+                        bordeaux sont compatibles avec cet insigne), mais la
+                        dignité doit rester tout entière et se définit de la
                         sorte :
                     </p>
                     <ol class="ml-5">
                         <li>
                             Avoir la présence de se faire vomir (avec discrétion
                             pour éviter le zéro) en étant ivre pour ne pas
-                            sombrer
+                            sombrer ;
                         </li>
                         <li>
                             Demander à ce que l’on vous ramène votre voiture est
-                            une preuve de lucidité et de responsabilité
+                            une preuve de lucidité et de responsabilité.
                         </li>
                     </ol>
                     <br />
                     <p class="text-justify">
                         Tout acte dégradant, commis en état d’ivresse (vomir en
-                        public, tomber inanimé, vouloir conduire quoiqu’il
+                        public, tomber inanimé, vouloir conduire quoi qu’il
                         arrive sa voiture, tenir des propos incohérents,
                         dégrader des lieux publics sous l’emprise de l’alcool,
                         etc.) entraînera une sanction :
@@ -1240,7 +1240,7 @@ import Article8Spe from "./Article8Spe.vue";
                     <ol class="ml-5">
                         <li>
                             Dans un premier temps, le faluchard se verra
-                            retourner son Bacchus
+                            retourner son Bacchus ;
                         </li>
                         <li>S’il récidive, il lui sera retiré.</li>
                     </ol>
@@ -1251,7 +1251,7 @@ import Article8Spe from "./Article8Spe.vue";
         <div class="table-warning-fal">
             <h3 class="pl-3 pt-2 mt-4">
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
-                Spécifités Amiénoises
+                Spécificités amiénoises
             </h3>
             <Article8Spe class="table-warning-fal" />
         </div>

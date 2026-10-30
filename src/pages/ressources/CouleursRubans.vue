@@ -7,7 +7,7 @@ const provinces: Province[] = [
     { id: "artois", image: "artois", name: "Artois", colors: "Bleu roi et or" },
     { id: "champagne", image: "champagne", name: "Champagne", colors: "Bleu et blanc" },
     { id: "flandres", image: "flandres", name: "Flandres", colors: "Or et noir" },
-    { id: "iledefrance", image: "ile de france", name: "Ile de France", colors: "Bleu roi et or" },
+    { id: "iledefrance", image: "ile de france", name: "Île-de-France", colors: "Bleu roi et or" },
     { id: "normandie", image: "normandie", name: "Normandie", colors: "Rouge et or" },
     { id: "picardie", image: "picardie", name: "Picardie", colors: "Bleu et blanc" },
 ];

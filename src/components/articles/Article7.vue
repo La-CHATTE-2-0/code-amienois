@@ -11,7 +11,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
         <p>Sur le ruban circulaire doivent figurer :</p>
         <ul >
             <li>Les initiales</li>
-            <li>Le baccalauréat:</li>
+            <li>Le baccalauréat :</li>
         </ul>
         <v-table class="table align-middle" data-fal-table="insigne">
             <caption class="d-sr-only">
@@ -31,7 +31,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Economique et Social</td>
+                    <td>Économique et social</td>
                     <td>Beta β</td>
                     <td data-fal-insigne>
                         <img
@@ -93,7 +93,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>DAEU (Diplôme accès aux études universitaires)</td>
+                    <td>DAEU (Diplôme d’accès aux études universitaires)</td>
                     <td>Lettre DAEU</td>
                     <td data-fal-insigne>
                             <img
@@ -133,7 +133,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                 </tr>
                 <tr>
                     <td>Autres bacs</td>
-                    <td>Initiale du bac (ex: STMG, STI2D, ..;)</td>
+                    <td>Initiale du bac (ex. : STMG, STI2D…)</td>
                     <td data-fal-insigne="mini">
                         <img
                             loading="lazy"
@@ -150,7 +150,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
         <div class="table-warning-fal">
             <h3 class="pl-3 pt-2 mt-4">
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
-                Spécifité d'Amiens
+                Spécificité d'Amiens
             </h3>
             <Article7SpeBac class="table-warning-fal" />
         </div>
@@ -160,7 +160,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
         </ul>
         <v-table class="table align-middle" data-fal-table="insigne">
             <caption class="d-sr-only">
-                Insignes fillières
+                Insignes filières
             </caption>
             <thead>
                 <tr>
@@ -224,7 +224,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                 </tr>
                 <tr>
                     <td>Ostéopathie</td>
-                    <td>Sphénoide</td>
+                    <td>Sphénoïde</td>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
@@ -289,7 +289,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Sage-Femme</td>
+                    <td>Sage-femme</td>
                     <td>Ânkh</td>
                     <td data-fal-insigne>
                         <img
@@ -369,7 +369,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                 </tr>
                 <tr>
                     <td>Architecture</td>
-                    <td>Equerre et compas</td>
+                    <td>Équerre et compas</td>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
@@ -416,7 +416,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                                 Palme de chêne et laurier : Taupe (Scientifique)
                             </li>
                             <li>Étoile et foudre (Ingénieur)</li>
-                            <li>Epi de blé (Agronomie)</li>
+                            <li>Épi de blé (Agronomie)</li>
                             <li>Caducée de Mercure (Commerce)</li>
                             <li>Palette vernie (Artistique)</li>
                         </ul>
@@ -641,7 +641,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Oenologie</td>
+                    <td>Œnologie</td>
                     <td>Grappe de raisin</td>
                     <td data-fal-insigne>
                         <img
@@ -701,7 +701,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Science économiques, Gestion</td>
+                    <td>Sciences économiques, Gestion</td>
                     <td>Caducée de Mercure</td>
                     <td data-fal-insigne>
                         <img
@@ -714,7 +714,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Science politique</td>
+                    <td>Sciences politiques</td>
                     <td>Parapluie fermé horizontal</td>
                     <td data-fal-insigne>
                         <img
@@ -741,7 +741,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td>Fillière sportive (STAPS)</td>
+                    <td>Filière sportive (STAPS)</td>
                     <td>Coq</td>
                     <td data-fal-insigne>
                         <img
@@ -771,10 +771,10 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     <td>
                         Insigne de la religion étudiée
                         <ul class="pl-0">
-                            <li>Croix latine: Catholique</li>
-                            <li>Croix huguenote: Protestant</li>
-                            <li>Étoile de David: Juive</li>
-                            <li>Main de Fatma: Islam</li>
+                            <li>Croix latine : catholique</li>
+                            <li>Croix huguenote : protestant</li>
+                            <li>Étoile de David : juive</li>
+                            <li>Main de Fatma : islam</li>
                         </ul>
                     </td>
                     <td data-fal-insigne>
@@ -806,7 +806,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
         <div class="table-warning-fal">
             <h3 class="pl-3 pt-2 mt-4">
                 <v-icon icon="mdi-alert-box-outline"></v-icon>
-                Spécifités d'Amiens
+                Spécificités d'Amiens
             </h3>
             <Article7SpeFiliere />
         </div>
@@ -873,7 +873,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                 <tr>
                     <td colspan="3">
                         <span>
-                            Les étoiles de cursus secondaires sont plus petites
+                            Les étoiles de cursus secondaires sont plus petites.
                         </span>
                     </td>
                 </tr>
@@ -890,7 +890,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     <td colspan="2">
                         Un <strong>drapeau du pays</strong> sera placé sous
                         l'étoile de l'année d'étude si elle se déroule à
-                        l'étranger
+                        l'étranger.
                     </td>
                 </tr>
                 <tr>
@@ -906,7 +906,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     <td colspan="2">
                         Les années validées par équivalence seront marquées par
                         une
-                        <strong>petite lettre "E"</strong> remplaçant l'étoile
+                        <strong>petite lettre "E"</strong> remplaçant l'étoile.
                     </td>
                 </tr>
                 <tr>
@@ -921,7 +921,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                     </td>
                     <td colspan="2">
                         Les années passées en alternance seront marquées par une
-                        <strong>petite lettre "A"</strong> sous l'étoile
+                        <strong>petite lettre "A"</strong> sous l'étoile.
                     </td>
                 </tr>
                 <tr>
@@ -942,7 +942,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                         facultés catholiques, écoles ou instituts privés. En cas
                         de changement d'établissement du public vers le privé ou
                         inversement, on placera un nouveau ruban sous l'étoile
-                        de l'année de changement
+                        de l'année de changement.
                     </td>
                 </tr>
                 <tr>
@@ -955,7 +955,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                             alt="Large palme"
                         />
                     </td>
-                    <td>Large palme (à coté de l'étoile de l'année)</td>
+                    <td>Large palme (à côté de l'étoile de l'année)</td>
                     <td>Major de promotion</td>
                 </tr>
                 <tr>
@@ -968,9 +968,9 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                             alt="Simple palme"
                         />
                     </td>
-                    <td>Simple palme (à coté de l'étoile de l'année)</td>
+                    <td>Simple palme (à côté de l'étoile de l'année)</td>
                     <td>
-                        Fin de cycle (s'il n'y a pas de diplômes correspondant)
+                        Fin de cycle (s'il n'y a pas de diplôme correspondant)
                     </td>
                 </tr>
                 <tr>
@@ -997,7 +997,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                         />
                     </td>
                     <td>Tête de mort</td>
-                    <td>Abandon de fillière</td>
+                    <td>Abandon de filière</td>
                 </tr>
                 <tr>
                     <td data-fal-insigne>
@@ -1009,7 +1009,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                             alt="Double palmes"
                         />
                     </td>
-                    <td>Double palmes</td>
+                    <td>Double palme</td>
                     <td>Diplôme obtenu</td>
                 </tr>
                 <tr>
