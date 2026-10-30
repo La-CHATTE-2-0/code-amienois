@@ -79,6 +79,12 @@ watch(themeMode, (mode) => {
                 :value="pages.code.url"
                 :to="pages.code.url"
             ></v-list-item>
+            <v-list-item
+                prepend-icon="mdi-head-question-outline"
+                :title="pages.revisions.name"
+                :value="pages.revisions.url"
+                :to="pages.revisions.url"
+            ></v-list-item>
         </v-list>
         <v-divider></v-divider>
         <v-list>
