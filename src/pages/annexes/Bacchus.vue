@@ -6,16 +6,17 @@ const attributions = [
     "Vigne",
     "Festivités",
     "Danse",
+    "Théâtre",
     "Végétation",
     "Plaisirs",
-    "Débordements",
+    "Ivresse et débordements",
 ];
 
 const representations = [
-    { label: "Sur la tête", text: "Des cornes, ou une couronne de vigne ou de lierre" },
-    { label: "Assis", text: "Sur un tonneau ou sur un char" },
-    { label: "D’une main", text: "Le thyrse, une sorte de sceptre" },
-    { label: "De l’autre", text: "Une corne d’abondance ou une simple grappe de raisin" },
+    { label: "Sur la tête", text: "Une couronne de vigne ou de lierre, parfois des cornes" },
+    { label: "Son char", text: "Souvent tiré par des panthères ; le tonneau apparaît dans des œuvres plus tardives" },
+    { label: "D’une main", text: "Le thyrse, un bâton entouré de lierre ou de vigne et terminé par une pomme de pin" },
+    { label: "De l’autre", text: "Une grappe de raisin ou une coupe de vin, parfois une corne d’abondance" },
 ];
 </script>
 
@@ -40,31 +41,26 @@ const representations = [
             <h2 class="mt-8">La vie de Bacchus</h2>
             <p>
                 Bacchus est le fils que Jupiter (Zeus chez les Grecs) a eu avec
-                sa maîtresse, <strong>Sémélé</strong>. Fille du roi de Thèbes,
-                elle n’en reste pas moins une simple mortelle.
+                sa maîtresse, <strong>Sémélé</strong>. Fille de Cadmos, roi de
+                Thèbes, elle n’en reste pas moins une simple mortelle.
             </p>
             <p>
                 La femme de Jupiter, la déesse <strong>Junon</strong>, n’apprécie
                 pas d’avoir été trompée et décide de se venger. Elle convainc
                 Sémélé de demander à Jupiter de se montrer sous sa forme divine,
-                ce qui entraîne la mort de la mère de Bacchus.
+                ce qui la fait mourir foudroyée.
             </p>
             <p>
                 Voulant sauver son enfant, Jupiter l’enlève du ventre de Sémélé
-                et le place dans <strong>sa cuisse</strong> jusqu’à sa naissance.
+                et le coud dans <strong>sa cuisse</strong> jusqu’à sa naissance.
+                D’où son surnom de « deux fois né ».
             </p>
             <p>
-                Mais Junon est rancunière et veut à tout prix tuer Bacchus, le
-                fruit de la tromperie de son mari. Elle envoie les
-                <strong>Titans</strong>, qui trouvent l’enfant et le font
-                bouillir dans un chaudron.
-            </p>
-            <p>
-                Heureusement, Bacchus est sauvé. Les versions divergent sur ses
-                sauveurs, mais toutes s’accordent sur un point : il est placé
-                sous la protection des <strong>Nymphes de Nysa</strong>. Il
-                grandit dans une grotte protégée par une vigne, dont il se
-                nourrit pour devenir le dieu du vin que l’on connaît.
+                Après sa naissance, Bacchus est confié à Hermès, qui le conduit
+                auprès des <strong>Nymphes de Nysa</strong>. Celles-ci l’élèvent
+                et le protègent de la colère de Junon. Il grandit ainsi à l’abri
+                des regards avant de devenir le dieu du vin, de la vigne et des
+                festivités.
             </p>
 
             <h3 class="bacchus-subtitle">Ses attributions</h3>
@@ -99,14 +95,15 @@ const representations = [
 
             <h2 class="mt-8">Les fêtes</h2>
             <p>
-                De nombreuses fêtes lui étaient dédiées, dont les plus connues
-                sont les orgies, ou <strong>bacchanales</strong>.
+                De nombreuses fêtes étaient dédiées à Bacchus, dont les plus
+                connues sont les <strong>bacchanales</strong>. Ces cérémonies
+                religieuses, souvent secrètes, étaient accompagnées de musique,
+                de danses et de réjouissances.
             </p>
             <p>
-                Elles étaient d’abord célébrées uniquement par les femmes, de
-                façon très mystérieuse, au milieu des bois. Petit à petit, les
-                hommes y furent également accueillis, ce qui entraîna beaucoup
-                de désordres !
+                Dans certaines traditions romaines, elles étaient d’abord
+                réservées aux femmes, avant que les hommes ne soient également
+                admis.
             </p>
             <v-alert
                 class="bacchus-alert"
@@ -115,11 +112,16 @@ const representations = [
                 density="compact"
                 border="start"
             >
-                À Rome, on parlait des fêtes « Libérales », où Romains et
-                Romaines se lançaient dans des discussions souvent bien
-                indécentes. Le Sénat a même tenté d’interdire ces cérémonies par
-                un décret en 186 av. J.-C., sans grand effet.
+                Ces rassemblements suscitèrent la méfiance des autorités
+                romaines. En 186 av. J.-C., le Sénat prit un décret pour
+                réglementer sévèrement les cérémonies bachiques, notamment leurs
+                réunions et leur organisation.
             </v-alert>
+            <p>
+                À Rome, d’autres fêtes étaient célébrées en l’honneur de Liber,
+                divinité associée à Bacchus : les <strong>Liberalia</strong>,
+                qui avaient lieu chaque année le 17 mars.
+            </p>
         </article>
     </v-container>
 </template>
