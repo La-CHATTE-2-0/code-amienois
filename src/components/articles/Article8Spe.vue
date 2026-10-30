@@ -3,6 +3,13 @@
         <caption class="d-none">
             Spe Insignes
         </caption>
+        <thead>
+            <tr>
+                <th scope="col">Insigne</th>
+                <th scope="col">Signification</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td colspan="3">

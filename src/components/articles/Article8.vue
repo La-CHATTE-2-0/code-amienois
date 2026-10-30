@@ -48,12 +48,17 @@ import Article8Spe from "./Article8Spe.vue";
             </caption>
             <thead>
                 <tr>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
                     <td colspan="3">
                         <h3>Les symboles</h3>
                     </td>
                 </tr>
-            </thead>
-            <tbody class="table-group-divider">
                 <tr>
                     <td>Aigle</td>
                     <td>Amour de l'aviation</td>
@@ -574,12 +579,17 @@ import Article8Spe from "./Article8Spe.vue";
             </caption>
             <thead>
                 <tr>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
                     <td colspan="3">
                         <h3>Les insignes décernés par le/la partenaire</h3>
                     </td>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
                     <td>Épee</td>
                     <td>Fin Baiseur</td>
@@ -654,12 +664,17 @@ import Article8Spe from "./Article8Spe.vue";
             </caption>
             <thead>
                 <tr>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
                     <td colspan="3">
                         <h3>Les insignes décernés par un Grand-Maître</h3>
                     </td>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
                     <td>Abeille</td>
                     <td>
@@ -946,6 +961,13 @@ import Article8Spe from "./Article8Spe.vue";
             </caption>
             <thead>
                 <tr>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
                     <td colspan="3" class="pb-2">
                         <h3 class="mb-2">
                             Les insignes à décernements particuliers
@@ -956,8 +978,6 @@ import Article8Spe from "./Article8Spe.vue";
                         >
                     </td>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
                     <td>Clé de sol</td>
                     <td>Digne chanteur de paillardes</td>
@@ -993,12 +1013,17 @@ import Article8Spe from "./Article8Spe.vue";
             </caption>
             <thead>
                 <tr>
+                    <th scope="col">Insigne</th>
+                    <th scope="col">Signification</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
                     <td colspan="3">
                         <h3>Les insignes régionaux</h3>
                     </td>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
                     <td>Abeille</td>
                     <td>Ville impériale</td>

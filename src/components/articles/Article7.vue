@@ -840,7 +840,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
             <thead>
                 <tr>
                     <th scope="col">Insigne</th>
-                    <th scope="col" colspan="2">Signication</th>
+                    <th scope="col" colspan="2">Signification</th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">

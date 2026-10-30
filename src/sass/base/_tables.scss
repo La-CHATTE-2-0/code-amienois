@@ -28,6 +28,29 @@ $fal-warning-color-light: 255 242 202;
     }
 }
 
+// Panneaux dépliants des articles (À propos du Singe…) : même cadre que les tableaux
+.main-content [data-fal-article] .v-expansion-panels {
+    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+    border-radius: 12px;
+    overflow: hidden;
+
+    .v-expansion-panel {
+        margin-top: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    // Séparateur net entre panneaux, comme les lignes d'un tableau
+    .v-expansion-panel:not(:first-child)::after {
+        border-top-style: solid;
+        opacity: 1;
+        border-color: rgba(var(--v-border-color), var(--v-border-opacity));
+    }
+
+    .v-expansion-panel-title:hover > .v-expansion-panel-title__overlay {
+        opacity: 0.04;
+    }
+}
+
 // Carte « Spécificités » : la bordure entoure le titre et le tableau ensemble
 .main-content .table-warning-fal {
     margin-top: 12px;

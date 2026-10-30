@@ -15,6 +15,12 @@ import "../../sass/base/_tables.scss";
             <caption class="d-none">
                 Insignes potager
             </caption>
+            <thead>
+                <tr>
+                    <th scope="col" colspan="2">Insigne</th>
+                    <th scope="col">Signification</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
                     <td data-fal-insigne>
