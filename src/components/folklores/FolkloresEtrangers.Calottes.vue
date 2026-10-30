@@ -52,10 +52,10 @@ const enBref = [
             La calotte est restée le signe distinctif des étudiants catholiques.
             La fin des années 1960 aurait pu sonner sa fin à l’UCL (Université
             catholique de Louvain), avec les courants de pensée hérités de Mai 68
-            et la scission entre l’UCL et la KUL. Tombée en léthargie, elle doit
-            son renouveau, au début des années 1980, aux Ordres (corporations
-            étudiantes) et à quelques régionales qui en avaient été les
-            conservatoires.
+            et la scission entre l’UCL et la KUL. Tombée en léthargie, elle a été
+            préservée par les Ordres (corporations étudiantes) et quelques
+            régionales, qui firent office de conservatoire et permirent son
+            renouveau au début des années 1980.
         </p>
 
         <v-alert icon="mdi-information-outline" variant="tonal" density="compact" border="start">
