@@ -1009,7 +1009,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                             alt="Double palmes"
                         />
                     </td>
-                    <td>Double palme</td>
+                    <td>Double palmes</td>
                     <td>Diplôme obtenu</td>
                 </tr>
                 <tr>
