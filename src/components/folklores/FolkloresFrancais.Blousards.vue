@@ -4,7 +4,7 @@
             <v-expansion-panel-title> Les blousards </v-expansion-panel-title>
             <v-expansion-panel-text>
                 <v-img alt="Blouse portée par les blousards"
-                    src="https://mostafafourar.wordpress.com/wp-content/uploads/2016/05/blouse-gadzart.jpg"
+                    src="/images/folklores/blouse-gadzart.jpg"
                     class="my-5"
                 >
                 </v-img>

@@ -71,7 +71,19 @@ export default defineConfig({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
       workbox: {
-        globPatterns: ['**/*.{js,css,sass,html,ico,png,svg,webp,jpeg,JPG,jpg,woff2,woff}']
+        globPatterns: ['**/*.{js,css,sass,html,ico,png,svg,webp,jpeg,JPG,jpg,woff2,woff,mp3,json}'],
+        // Tuiles de la carte des apérals : celles déjà vues restent disponibles hors ligne
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/tile\.openstreetmap\.org\//,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'osm-tiles',
+              expiration: { maxEntries: 500, maxAgeSeconds: 30 * 24 * 60 * 60 },
+              cacheableResponse: { statuses: [200] },
+            },
+          },
+        ],
       },
       manifest: {
         "short_name": "Code Amiénois",

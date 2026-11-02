@@ -2,12 +2,12 @@
 import pages from "../../core/page";
 
 const portrait = {
-    src: "https://www.museesgrandest.org/wp-content/uploads/2018/11/1721-1721.jpg",
+    src: "/images/other/gambrinus-portrait.jpg",
     alt: "Gambrinus couronné, assis sur un tonneau, levant une chope de bière mousseuse",
 };
 
 const gravure = {
-    src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-Cxf8Uh-5aVKcNtf1KTM4aQ9r1kD9LDSS-oqilWqT_eeGzKFD0e5ZkrlLzj76SVjwczW4DIUVpLuSFk-3JIeL8Ubb-UF-Xcq7O866LqkbGHrTWreMJfLOx0yJ-ZQo7E7sFcOQHCqaqDTq/s1600/Gambrinus+avec+sa+biere.jpg",
+    src: "/images/other/gambrinus-gravure.jpg",
     alt: "Gravure de Gambrinus entouré de houblon, une chope levée, adossé à un tonneau",
 };
 
