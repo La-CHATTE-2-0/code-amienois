@@ -4,7 +4,7 @@ import quiz from "../../core/quiz.json";
 import QuizCard from "../../components/quiz/QuizCard.vue";
 import { QuizQuestion, QuizRound, QuizTheme } from "../../types/quizTypes";
 
-const QUESTIONS_PER_GAME = 10;
+const QUESTIONS_PER_GAME = 20;
 const ALL = "tout";
 
 const themes: QuizTheme[] = [
