@@ -381,6 +381,19 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     </td>
                 </tr>
                 <tr>
+                    <td>Bachelors</td>
+                    <td>Beta β</td>
+                    <td data-fal-insigne>
+                        <img
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            src="/images/insigne/beta.png"
+                            alt="tete_de_cheval"
+                        />
+                    </td>
+                </tr>
+                <tr>
                     <td>BTS</td>
                     <td>Lettres BTS</td>
                     <td data-fal-insigne>
@@ -1042,13 +1055,6 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        À la fin du cursus pourront figurer un petit « a » pour
-                        l’agrégation et/ou un petit « c » pour le CAPES, suivi
-                        d’une petite palme.
-                    </td>
-                </tr>
-                <tr>
                     <td data-fal-insigne>
                         <img
                             loading="lazy"
@@ -1063,6 +1069,20 @@ import Article7SpéFilière from "./Article7SpéFilière.vue";
                         du cursus où aura été effectué le
                         <strong>service militaire</strong> ou le
                         <strong>service civique</strong>.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p class="mt-2">
+                            À la fin du cursus pourront figurer un petit « a »
+                            pour l’agrégation et/ou un petit « c » pour le
+                            CAPES, suivi d’une petite palme.
+                        </p>
+                        <p class="mt-2">
+                            Pour les bacs Franco-étrangers, on y fera figurer
+                            l’insigne du double drapeau francais/second pays à
+                            côté de l’insigne dudit bac.
+                        </p>
                     </td>
                 </tr>
             </tbody>

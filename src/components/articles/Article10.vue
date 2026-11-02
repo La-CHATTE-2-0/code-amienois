@@ -148,6 +148,17 @@ import pages from "../../core/page";
                         </li>
                         <li>
                             <img
+                                class="bg-ruban-rouge"
+                                loading="lazy"
+                                width="40"
+                                height="40"
+                                alt="Étoile dorée sur ruban rouge"
+                                src="/images/insigne/etoile_doree.png"
+                            />
+                            Une étoile dorée sur ruban bleu pour les VPE CROUS
+                        </li>
+                        <li>
+                            <img
                                 loading="lazy"
                                 width="40"
                                 height="40"
