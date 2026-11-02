@@ -22,7 +22,7 @@ function stateOf(choice: string) {
 <template>
     <div class="quiz-card">
         <img
-            v-if="round.image"
+            v-if="round.image && !round.imageRevealsAnswer"
             class="quiz-card__image"
             :src="round.image"
             alt=""
@@ -59,6 +59,14 @@ function stateOf(choice: string) {
             <p class="quiz-feedback__verdict">
                 {{ selected === round.correct ? "Bonne réponse !" : "Raté…" }}
             </p>
+            <img
+                v-if="round.image && round.imageRevealsAnswer"
+                class="quiz-card__image"
+                :src="round.image"
+                alt=""
+                width="120"
+                height="120"
+            />
             <p v-if="round.explanation">{{ round.explanation }}</p>
             <router-link :to="round.source" class="quiz-feedback__source">
                 Revoir dans le Code

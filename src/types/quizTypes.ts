@@ -11,6 +11,8 @@ export type QuizQuestion = {
     theme: string
     question: string
     image?: string
+    // L'image montre la réponse (« Quel insigne… ») : elle n'apparaît qu'une fois la question répondue
+    imageRevealsAnswer?: boolean
     answers: string[]
     explanation?: string
     source: string
