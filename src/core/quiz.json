@@ -635,6 +635,7 @@
             "theme": "filieres",
             "question": "À Amiens, quel est l'emblème de la Kinésithérapie ?",
             "image": "/images/insigne/ciseaux_et_caducee_mercure.png",
+            "imageRevealsAnswer": true,
             "answers": [
                 "Les ciseaux et le caducée de Mercure",
                 "Le caducée de Mercure seul",
@@ -711,6 +712,7 @@
             "theme": "filieres",
             "question": "Quel est l'emblème de la Khâgne (prépa littéraire) ?",
             "image": "/images/insigne/chouette_bicephale.png",
+            "imageRevealsAnswer": true,
             "answers": [
                 "La chouette bicéphale",
                 "La palme de chêne et de laurier",
@@ -785,6 +787,7 @@
             "theme": "circulaire",
             "question": "Quel insigne porte le bac général (depuis 2021) ?",
             "image": "/images/insigne/gamma.png",
+            "imageRevealsAnswer": true,
             "answers": ["Gamma γ", "Epsilon ε", "Beta β", "Phi φ"],
             "source": "/#article-7"
         },
@@ -814,6 +817,7 @@
             "theme": "circulaire",
             "question": "À Amiens, quel insigne porte l'ancien bac S spécialité SVT ?",
             "image": "/images/insigne/phi_epsilon.png",
+            "imageRevealsAnswer": true,
             "answers": ["Phi + Epsilon φε", "Epsilon ε seul", "Gamma + Epsilon γε", "Beta + Epsilon βε"],
             "explanation": "Au code national, c'est Epsilon seul.",
             "source": "/recap-spe"
@@ -936,6 +940,7 @@
             "theme": "circulaire",
             "question": "De quelle couleur est la moivre (petit ruban de biais sous la première étoile) pour une faculté d'État ?",
             "image": "/images/insigne/moivre.png",
+            "imageRevealsAnswer": true,
             "answers": ["Bleue", "Blanche", "Rouge", "Aux couleurs de la ville"],
             "explanation": "Elle est blanche pour les facultés catholiques, écoles ou instituts privés.",
             "source": "/#article-7"
@@ -1619,6 +1624,7 @@
             "theme": "croix",
             "question": "Quelle est la distinction d'un Grand Maître ?",
             "image": "/images/insigne/gm.png",
+            "imageRevealsAnswer": true,
             "answers": [
                 "Une croix du mérite émaillée de blanc",
                 "Une croix du mérite non émaillée",
@@ -1633,6 +1639,7 @@
             "theme": "croix",
             "question": "Quelle est la distinction d'un Grand Chambellan ?",
             "image": "/images/insigne/gc.png",
+            "imageRevealsAnswer": true,
             "answers": [
                 "Une croix du mérite non émaillée",
                 "Une croix du mérite émaillée de blanc",
@@ -1782,6 +1789,7 @@
             "theme": "croix",
             "question": "Comment se distingue l'évêché à Amiens ?",
             "image": "/images/insigne/eveque.png",
+            "imageRevealsAnswer": true,
             "answers": [
                 "Un E dans une palme de Sciences sur ruban violet",
                 "Une croix latine sur ruban violet",
@@ -1824,6 +1832,7 @@
             "theme": "croix",
             "question": "Quelles sont les couleurs de la ville d'Amiens ?",
             "image": "/images/ecussons/amiens.png",
+            "imageRevealsAnswer": true,
             "answers": ["Rouge et bleu roi", "Bleu et blanc", "Noir et or", "Rouge et or"],
             "explanation": "Bleu et blanc sont les couleurs de la Picardie.",
             "source": "/couleurs-des-rubans"
