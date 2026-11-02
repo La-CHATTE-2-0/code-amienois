@@ -29,7 +29,8 @@ const TILE_ATTRIBUTION =
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 // OSM refuse les tuiles demandées sans Referer : on l'envoie même si le site
 // impose "Referrer-Policy: same-origin" (en-tête ajouté par Cloudflare)
-const TILE_OPTIONS = { referrerPolicy: "strict-origin-when-cross-origin" };
+// crossOrigin : des réponses CORS lisibles, que le service worker peut garder hors ligne
+const TILE_OPTIONS = { referrerPolicy: "strict-origin-when-cross-origin", crossOrigin: true };
 
 const theme = useTheme();
 const isDark = computed(() => theme.global.current.value.dark);

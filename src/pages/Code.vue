@@ -69,7 +69,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
         <v-card class="mx-auto mt-5 no-print" variant="flat">
             <v-img alt="Portrait de François Rabelais"
                 height="auto"
-                src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Francois_Rabelais_-_Portrait.jpg"
+                src="/images/other/rabelais-portrait.jpg"
                 cover
                 class="align-end"
             >

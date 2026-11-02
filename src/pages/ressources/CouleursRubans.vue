@@ -68,7 +68,7 @@ const ecusson = (image: string) => `/images/ecussons/${image}.png`;
             <section class="ville-hero">
                 <img
                     class="ville-hero__blason"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Armoiries_Amiens%2C_France_%2880%29.svg/500px-Armoiries_Amiens%2C_France_%2880%29.svg.png"
+                    src="/images/ecussons/blason-amiens.png"
                     alt="Blason d'Amiens"
                 />
                 <div>

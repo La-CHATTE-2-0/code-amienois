@@ -1,5 +1,16 @@
 <script setup lang="ts">
+import { onBeforeUnmount, ref } from "vue";
 import FolkloreFiche from "./FolkloreFiche.vue";
+
+// La vidéo YouTube ne peut pas être gardée hors ligne : on prévient au lieu d'un cadre vide
+const online = ref(navigator.onLine);
+const updateOnline = () => (online.value = navigator.onLine);
+window.addEventListener("online", updateOnline);
+window.addEventListener("offline", updateOnline);
+onBeforeUnmount(() => {
+    window.removeEventListener("online", updateOnline);
+    window.removeEventListener("offline", updateOnline);
+});
 
 const image = {
     src: "/images/folklores/venere.jpg",
@@ -82,6 +93,7 @@ const costumes = [
         </p>
 
         <iframe
+            v-if="online"
             class="folklore-video"
             src="https://www.youtube-nocookie.com/embed/K4mCWBDUC_M"
             title="Vidéo sur l’ordre du Bitard"
@@ -90,6 +102,15 @@ const costumes = [
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
         ></iframe>
+        <v-alert
+            v-else
+            icon="mdi-wifi-off"
+            variant="tonal"
+            density="compact"
+            border="start"
+        >
+            Vidéo sur l’ordre du Bitard disponible avec une connexion.
+        </v-alert>
 
         <h3>Hiérarchie</h3>
         <p>
