@@ -4,8 +4,9 @@ import quiz from "../../core/quiz.json";
 import QuizCard from "../../components/quiz/QuizCard.vue";
 import { QuizQuestion, QuizRound, QuizTheme } from "../../types/quizTypes";
 
-const QUESTIONS_PER_GAME = 10;
+const QUESTIONS_PER_GAME = 20;
 const ALL = "tout";
+const SURVIVOR = "survivor";
 
 const themes: QuizTheme[] = [
     ...quiz.themes,
@@ -15,11 +16,18 @@ const themes: QuizTheme[] = [
         description: "Des questions au hasard sur l'ensemble du Code.",
         icon: "mdi-shuffle-variant",
     },
+    {
+        id: SURVIVOR,
+        label: "Survivor",
+        description: "Toutes les questions, la partie s'arrête à la première erreur.",
+        icon: "mdi-skull-outline",
+    },
 ];
 const questions: QuizQuestion[] = quiz.questions;
 
 const countOf = (themeId: string) =>
-    themeId === ALL ? questions.length : questions.filter((q) => q.theme === themeId).length;
+    themeId === ALL || themeId === SURVIVOR
+        ? questions.length : questions.filter((q) => q.theme === themeId).length;
 
 // Meilleur score par thème, conservé sur l'appareil
 const bestKey = (themeId: string) => `quiz-best-${themeId}`;
@@ -44,22 +52,30 @@ const answers = ref<(string | null)[]>([]);
 const index = ref(0);
 const finished = ref(false);
 
+const survivor = computed(() => theme.value?.id === SURVIVOR);
 const current = computed(() => rounds.value[index.value]);
+// En survivor, la partie peut s'arrêter avant la dernière question
+const played = computed(() => rounds.value.slice(0, index.value + 1));
 const score = computed(
-    () => rounds.value.filter((r, i) => answers.value[i] === r.correct).length
+    () => played.value.filter((r, i) => answers.value[i] === r.correct).length
 );
 const missed = computed(() =>
-    rounds.value.filter((r, i) => answers.value[i] !== r.correct)
+    played.value.filter((r, i) => answers.value[i] !== r.correct)
+);
+const isLast = computed(
+    () =>
+        index.value === rounds.value.length - 1 ||
+        (survivor.value && answers.value[index.value] !== current.value.correct)
 );
 
 function start(selectedTheme: QuizTheme) {
     const pool =
-        selectedTheme.id === ALL
+        selectedTheme.id === ALL || selectedTheme.id === SURVIVOR
             ? questions
             : questions.filter((q) => q.theme === selectedTheme.id);
     theme.value = selectedTheme;
     rounds.value = shuffle(pool)
-        .slice(0, QUESTIONS_PER_GAME)
+        .slice(0, selectedTheme.id === SURVIVOR ? pool.length : QUESTIONS_PER_GAME)
         .map((q) => ({ ...q, correct: q.answers[0], choices: shuffle(q.answers) }));
     answers.value = rounds.value.map(() => null);
     index.value = 0;
@@ -68,7 +84,7 @@ function start(selectedTheme: QuizTheme) {
 }
 
 function next() {
-    if (index.value < rounds.value.length - 1) {
+    if (!isLast.value) {
         index.value++;
         return;
     }
@@ -108,7 +124,10 @@ function backToThemes() {
                         <span class="quiz-theme__meta">
                             <span>{{ countOf(t.id) }} questions</span>
                             <span v-if="best[t.id] >= 0">
-                                Record : {{ best[t.id] }} / {{ QUESTIONS_PER_GAME }}
+                                Record : {{ best[t.id] }}
+                                <template v-if="t.id !== SURVIVOR">
+                                    / {{ QUESTIONS_PER_GAME }}
+                                </template>
                             </span>
                         </span>
                     </button>
@@ -121,7 +140,8 @@ function backToThemes() {
             <div class="quiz-progress" aria-live="polite">
                 <div class="quiz-progress__label">
                     <span>{{ theme.label }}</span>
-                    <span>{{ index + 1 }} / {{ rounds.length }}</span>
+                    <span v-if="survivor">Série : {{ score }}</span>
+                    <span v-else>{{ index + 1 }} / {{ rounds.length }}</span>
                 </div>
                 <v-progress-linear
                     :model-value="((index + (answers[index] ? 1 : 0)) / rounds.length) * 100"
@@ -146,7 +166,7 @@ function backToThemes() {
                     append-icon="mdi-chevron-right"
                     @click="next"
                 >
-                    {{ index < rounds.length - 1 ? "Suivante" : "Voir le résultat" }}
+                    {{ isLast ? "Voir le résultat" : "Suivante" }}
                 </v-btn>
             </div>
         </template>
@@ -154,8 +174,16 @@ function backToThemes() {
         <!-- Résultat -->
         <template v-else>
             <section class="quiz-result">
-                <p class="quiz-result__score">{{ score }} / {{ rounds.length }}</p>
-                <p class="text-medium-emphasis">{{ theme.label }}</p>
+                <p class="quiz-result__score">
+                    {{ score }}<template v-if="!survivor"> / {{ rounds.length }}</template>
+                </p>
+                <p class="text-medium-emphasis">
+                    {{ theme.label }}
+                    <template v-if="survivor">
+                        : {{ score > 1 ? "bonnes réponses" : "bonne réponse" }} d'affilée
+                        sur {{ rounds.length }}
+                    </template>
+                </p>
             </section>
 
             <section v-if="missed.length" class="mt-6" aria-labelledby="quiz-missed">
