@@ -22,13 +22,13 @@
             "id": "velours",
             "label": "Le velours",
             "description": "Rubans supérieurs, symboles et insignes décernés.",
-            "icon": "mdi-medal-outline"
+            "icon": "mdi-ribbon"
         },
         {
             "id": "croix",
             "label": "Les croix",
             "description": "Grand Maître, Grand Chambellan, bourreau et évêque.",
-            "icon": "mdi-cross"
+            "icon": "mdi-medal-outline"
         },
         {
             "id": "amiens",
