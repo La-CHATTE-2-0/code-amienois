@@ -1,15 +1,20 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
 import quiz from "../../core/quiz.json";
 import QuizCard from "../../components/quiz/QuizCard.vue";
 import { QuizQuestion, QuizRound, QuizTheme } from "../../types/quizTypes";
 
-const QUESTIONS_PER_GAME = 20;
 const ALL = "tout";
 const SURVIVOR = "survivor";
+// 0 : toutes les questions du thème
+const COUNT_OPTIONS = [
+    { value: 10, label: "10" },
+    { value: 20, label: "20" },
+    { value: 30, label: "30" },
+    { value: 0, label: "Toutes" },
+];
 
-const themes: QuizTheme[] = [
-    ...quiz.themes,
+const modes: QuizTheme[] = [
     {
         id: ALL,
         label: "Tout mélanger",
@@ -23,19 +28,45 @@ const themes: QuizTheme[] = [
         icon: "mdi-skull-outline",
     },
 ];
+const themes: QuizTheme[] = [...quiz.themes, ...modes];
+const groups = [
+    { id: "themes", title: "", items: quiz.themes },
+    { id: "modes", title: "Autres modes", items: modes },
+];
 const questions: QuizQuestion[] = quiz.questions;
 
 const countOf = (themeId: string) =>
     themeId === ALL || themeId === SURVIVOR
         ? questions.length : questions.filter((q) => q.theme === themeId).length;
 
-// Meilleur score par thème, conservé sur l'appareil
-const bestKey = (themeId: string) => `quiz-best-${themeId}`;
-const best = ref<Record<string, number>>(
+// Nombre de questions par partie, retenu sur l'appareil
+const savedCount = Number(localStorage.getItem("quiz-count") ?? 20);
+const questionCount = ref(
+    COUNT_OPTIONS.some((o) => o.value === savedCount) ? savedCount : 20
+);
+watch(questionCount, (n) => localStorage.setItem("quiz-count", String(n)));
+
+const gameSize = (themeId: string) =>
+    themeId === SURVIVOR || questionCount.value === 0
+        ? countOf(themeId)
+        : Math.min(countOf(themeId), questionCount.value);
+
+// Meilleur score par thème et par nombre de questions, conservé sur l'appareil
+const bestKey = (themeId: string, count: number) =>
+    themeId === SURVIVOR ? `quiz-best-${SURVIVOR}` : `quiz-best-${themeId}-${count || "toutes"}`;
+const records = ref<Record<string, number>>(
     Object.fromEntries(
-        themes.map((t) => [t.id, Number(localStorage.getItem(bestKey(t.id)) ?? -1)])
+        themes.flatMap((t) =>
+            COUNT_OPTIONS.map((o) => {
+                const key = bestKey(t.id, o.value);
+                // Les records d'avant le choix du nombre de questions comptent pour 20
+                const legacy = o.value === 20 ? localStorage.getItem(`quiz-best-${t.id}`) : null;
+                return [key, Number(localStorage.getItem(key) ?? legacy ?? -1)];
+            })
+        )
     )
 );
+const bestOf = (themeId: string) => records.value[bestKey(themeId, questionCount.value)];
 
 function shuffle<T>(items: T[]): T[] {
     const copy = [...items];
@@ -75,7 +106,7 @@ function start(selectedTheme: QuizTheme) {
             : questions.filter((q) => q.theme === selectedTheme.id);
     theme.value = selectedTheme;
     rounds.value = shuffle(pool)
-        .slice(0, selectedTheme.id === SURVIVOR ? pool.length : QUESTIONS_PER_GAME)
+        .slice(0, gameSize(selectedTheme.id))
         .map((q) => ({ ...q, correct: q.answers[0], choices: shuffle(q.answers) }));
     answers.value = rounds.value.map(() => null);
     index.value = 0;
@@ -89,10 +120,10 @@ function next() {
         return;
     }
     finished.value = true;
-    const id = theme.value!.id;
-    if (score.value > best.value[id]) {
-        best.value[id] = score.value;
-        localStorage.setItem(bestKey(id), String(score.value));
+    const key = bestKey(theme.value!.id, questionCount.value);
+    if (score.value > records.value[key]) {
+        records.value[key] = score.value;
+        localStorage.setItem(key, String(score.value));
     }
 }
 
@@ -107,32 +138,53 @@ function backToThemes() {
         <template v-if="!theme">
             <p class="mb-4">
                 Teste tes connaissances sur le Code et les spécificités
-                amiénoises : {{ QUESTIONS_PER_GAME }} questions tirées au hasard
-                par partie. Il peut y avoir des erreurs, n'hésite pas à les signaler
-                (Claude Code n'est pas parfait).
+                amiénoises : choisis le nombre de questions, puis un thème. Il peut
+                y avoir des erreurs, n'hésite pas à les signaler (Claude Code n'est
+                pas parfait).
             </p>
-            <ul class="quiz-themes">
-                <li v-for="t in themes" :key="t.id">
-                    <button type="button" class="quiz-theme" @click="start(t)">
-                        <v-icon :icon="t.icon" class="quiz-theme__icon" />
-                        <span class="quiz-theme__text">
-                            <span class="quiz-theme__label">{{ t.label }}</span>
-                            <span class="quiz-theme__description">
-                                {{ t.description }}
+            <div class="quiz-count">
+                <span id="quiz-count-label" class="quiz-count__label">
+                    Questions par partie
+                </span>
+                <v-btn-toggle
+                    v-model="questionCount"
+                    mandatory
+                    divided
+                    density="compact"
+                    variant="outlined"
+                    color="primary"
+                    aria-labelledby="quiz-count-label"
+                >
+                    <v-btn v-for="o in COUNT_OPTIONS" :key="o.value" :value="o.value">
+                        {{ o.label }}
+                    </v-btn>
+                </v-btn-toggle>
+            </div>
+            <template v-for="g in groups" :key="g.id">
+                <h2 v-if="g.title" class="quiz-section-title mt-6">{{ g.title }}</h2>
+                <ul class="quiz-themes">
+                    <li v-for="t in g.items" :key="t.id">
+                        <button type="button" class="quiz-theme" @click="start(t)">
+                            <v-icon :icon="t.icon" class="quiz-theme__icon" />
+                            <span class="quiz-theme__text">
+                                <span class="quiz-theme__label">{{ t.label }}</span>
+                                <span class="quiz-theme__description">
+                                    {{ t.description }}
+                                </span>
                             </span>
-                        </span>
-                        <span class="quiz-theme__meta">
-                            <span>{{ countOf(t.id) }} questions</span>
-                            <span v-if="best[t.id] >= 0">
-                                Record : {{ best[t.id] }}
-                                <template v-if="t.id !== SURVIVOR">
-                                    / {{ QUESTIONS_PER_GAME }}
-                                </template>
+                            <span class="quiz-theme__meta">
+                                <span>{{ countOf(t.id) }} questions</span>
+                                <span v-if="bestOf(t.id) >= 0">
+                                    Record : {{ bestOf(t.id) }}
+                                    <template v-if="t.id !== SURVIVOR">
+                                        / {{ gameSize(t.id) }}
+                                    </template>
+                                </span>
                             </span>
-                        </span>
-                    </button>
-                </li>
-            </ul>
+                        </button>
+                    </li>
+                </ul>
+            </template>
         </template>
 
         <!-- Partie en cours -->
@@ -288,6 +340,19 @@ function backToThemes() {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
+}
+
+.quiz-count {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 16px;
+    margin-bottom: 1rem;
+}
+
+.quiz-count__label {
+    font-weight: 600;
 }
 
 .quiz-progress {

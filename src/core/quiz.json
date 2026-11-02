@@ -22,13 +22,19 @@
             "id": "velours",
             "label": "Le velours",
             "description": "Rubans supérieurs, symboles et insignes décernés.",
-            "icon": "mdi-medal-outline"
+            "icon": "mdi-ribbon"
         },
         {
             "id": "croix",
-            "label": "Croix et spécificités amiénoises",
-            "description": "Grands Maîtres, évêque, bourreau et particularités d'Amiens.",
-            "icon": "mdi-cross"
+            "label": "Les croix",
+            "description": "Grand Maître, Grand Chambellan, bourreau et évêque.",
+            "icon": "mdi-medal-outline"
+        },
+        {
+            "id": "amiens",
+            "label": "Spécificités amiénoises",
+            "description": "Velours, retraite des croix, évêché et particularités d'Amiens.",
+            "icon": "mdi-map-marker-outline"
         }
     ],
     "questions": [
@@ -1662,7 +1668,7 @@
         },
         {
             "id": "x04",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "À Amiens, qui choisit les futures croix ?",
             "answers": [
                 "Les croix partant à la retraite",
@@ -1689,7 +1695,7 @@
         },
         {
             "id": "x07",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Que deviennent les croix amiénoises au départ en retraite d'un GM ?",
             "answers": [
                 "La croix historique est donnée au nouvel intronisé",
@@ -1702,7 +1708,7 @@
         },
         {
             "id": "x08",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "À Amiens, où une croix partant à la retraite place-t-elle sa croix neuve ?",
             "answers": [
                 "Du côté personnel (à droite)",
@@ -1714,7 +1720,7 @@
         },
         {
             "id": "x09",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "À Amiens, quel insigne met un GM à la retraite s'il n'a jamais été GC ?",
             "answers": ["Une tête de mort", "Un soleil", "Une lune", "Une palme"],
             "explanation": "Il met un soleil uniquement s'il a été GC avant (tête de mort sur fémurs croisés pour les pharmaciens).",
@@ -1786,7 +1792,7 @@
         },
         {
             "id": "x16",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Comment se distingue l'évêché à Amiens ?",
             "image": "/images/insigne/eveque.png",
             "imageRevealsAnswer": true,
@@ -1801,7 +1807,7 @@
         },
         {
             "id": "x17",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "À Amiens, en quelle matière sont les rubans supérieurs ?",
             "answers": ["En velours", "En satin", "En toile", "En soie"],
             "explanation": "En hommage au passé de ville tisserande (coloriste) d'Amiens.",
@@ -1809,7 +1815,7 @@
         },
         {
             "id": "x18",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Pourquoi les rubans supérieurs sont-ils en velours à Amiens ?",
             "answers": [
                 "En hommage au passé de ville tisserande d'Amiens",
@@ -1821,7 +1827,7 @@
         },
         {
             "id": "x19",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Quelles villes ont repris les rubans supérieurs en velours en hommage à Amiens ?",
             "answers": ["Reims et Dijon", "Lille et Rouen", "Paris et Troyes", "Rouen et Clermont-Ferrand"],
             "explanation": "Reims pour l'organisation du Centenaire, Dijon pour les États généraux.",
@@ -1829,7 +1835,7 @@
         },
         {
             "id": "x20",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Quelles sont les couleurs de la ville d'Amiens ?",
             "image": "/images/ecussons/amiens.png",
             "imageRevealsAnswer": true,
@@ -1839,22 +1845,9 @@
         },
         {
             "id": "x21",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Que doivent laisser visible les pharmaciens d'Amiens sur leurs rubans ?",
             "answers": ["Les angles des rubans", "Le haut des écussons", "Les coutures", "L'extrémité occipitale"],
-            "source": "/#article-10"
-        },
-        {
-            "id": "x22",
-            "theme": "croix",
-            "question": "Si tu as une ville d'études après Amiens, que fais-tu ?",
-            "answers": [
-                "Remonter l'écusson d'Amiens et placer la nouvelle ville en dessous",
-                "Placer la nouvelle ville au-dessus de l'écusson d'Amiens",
-                "Remplacer le ruban d'Amiens",
-                "Coudre un ruban à droite du ruban d'Amiens"
-            ],
-            "explanation": "Une ville d'études antérieure à Amiens se place au-dessus de l'écusson d'Amiens.",
             "source": "/#article-10"
         },
         {
@@ -1869,6 +1862,302 @@
             ],
             "explanation": "Garant des traditions, il veille aux baptêmes de sa filière et fait procéder à l'élection de son successeur.",
             "source": "/#article-13"
+        },
+        {
+            "id": "a01",
+            "theme": "amiens",
+            "question": "À Amiens, de quelle couleur est le circulaire de Sage-femme ?",
+            "answers": [
+                "Velours fiolet",
+                "Velours fuchsia",
+                "Velours bordeaux",
+                "Satin violet"
+            ],
+            "explanation": "Au code national, il est en velours fuchsia.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a02",
+            "theme": "amiens",
+            "question": "À Amiens, de quelle couleur est le circulaire de Communication et Journalisme ?",
+            "answers": [
+                "Satin jaune",
+                "Satin bleu roy",
+                "Satin blanc et noir",
+                "Satin rose"
+            ],
+            "explanation": "Ces filières sont aux couleurs de l'UFR des lettres, auquel elles sont rattachées.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a03",
+            "theme": "amiens",
+            "question": "À Amiens, de quelle couleur est le circulaire des Sciences de l'éducation ?",
+            "answers": [
+                "Satin jaune",
+                "Satin rose",
+                "Satin violet",
+                "Satin vert"
+            ],
+            "explanation": "Cette filière n'existe pas au code national.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a04",
+            "theme": "amiens",
+            "question": "À Amiens, qu'ajoute-t-on autour des ciseaux ?",
+            "answers": [
+                "L'année en indice, le nombre de faluches cousues en exposant",
+                "Le nombre de faluches cousues en indice, l'année en exposant",
+                "La ville en indice, l'année du baptême en exposant",
+                "Le nombre de rubans cousus en indice, l'année en exposant"
+            ],
+            "explanation": "Ces chiffres n'existent pas au code national.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a05",
+            "theme": "amiens",
+            "question": "À Amiens, que signifient les ciseaux sur ruban bleu ?",
+            "answers": [
+                "A cousu ses rubans en tant que bizut",
+                "A cousu la faluche d'un bizut",
+                "A cousu sa faluche à la main",
+                "A raté sa couture"
+            ],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a06",
+            "theme": "amiens",
+            "question": "À Amiens, que signifie la feuille de vigne ?",
+            "answers": [
+                "Perte de virginité masculine pendant la vie falucharde",
+                "Perte de virginité masculine",
+                "Amour du vin",
+                "Perte de virginité féminine pendant la vie falucharde"
+            ],
+            "explanation": "Au code national, il n'y a pas de notion de vie falucharde et l'insigne est mixte.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a07",
+            "theme": "amiens",
+            "question": "À Amiens, que signifie la rose ?",
+            "answers": [
+                "Perte de virginité féminine pendant la vie falucharde",
+                "Fine baiseuse",
+                "Romantique",
+                "Perte de virginité masculine pendant la vie falucharde"
+            ],
+            "explanation": "Elle a été retirée du code national lors de la fusion avec la feuille de vigne.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a08",
+            "theme": "amiens",
+            "question": "Le squelette a été retiré du code national. Que fait Amiens ?",
+            "answers": [
+                "Elle garde les versions initiales",
+                "Elle l'a retiré aussi",
+                "Elle le réserve aux croix",
+                "Elle l'a remplacé par une tête de mort"
+            ],
+            "explanation": "Après les débats des 131e à 134e anniversaires, le choix a été laissé à chaque ville.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a09",
+            "theme": "amiens",
+            "question": "À Amiens, que signifie le squelette à l'envers avec une pointe de diamant ?",
+            "answers": [
+                "Amour de l'anatomie du même sexe",
+                "Amour de l'anatomie des deux sexes",
+                "Amour de l'anatomie du sexe opposé",
+                "A participé à une dissection humaine"
+            ],
+            "explanation": "Sans pointe, c'est l'amour de l'anatomie du sexe opposé.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a10",
+            "theme": "amiens",
+            "question": "À Amiens, que signifie le squelette à l'envers avec une pointe de rubis ?",
+            "answers": [
+                "Amour de l'anatomie des deux sexes",
+                "Amour de l'anatomie du même sexe",
+                "Amour de l'anatomie du sexe opposé",
+                "Anatomiste"
+            ],
+            "explanation": "Sans pointe, c'est l'amour de l'anatomie du sexe opposé.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a11",
+            "theme": "amiens",
+            "question": "À Amiens, que signifie un squelette à l'endroit sur le circulaire ?",
+            "answers": [
+                "Anatomiste",
+                "A participé à une dissection humaine",
+                "Amour de l'anatomie",
+                "Thanatologue"
+            ],
+            "explanation": "À l'envers, il signifie avoir participé à une dissection humaine.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a12",
+            "theme": "amiens",
+            "question": "À Amiens, que signifie la lyre placée en capacitaire (avant les initiales) ?",
+            "answers": [
+                "Musicien",
+                "Chanteur minable",
+                "Chanteur de paillardes",
+                "Chef de chorale"
+            ],
+            "explanation": "Placés avant les initiales, les capacitaires désignent la pratique d'une activité.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a13",
+            "theme": "amiens",
+            "question": "À Amiens, que signifie la plume placée en capacitaire (avant les initiales) ?",
+            "answers": [
+                "Écrivain",
+                "Poète maudit",
+                "Journaliste",
+                "Amour des oiseaux"
+            ],
+            "explanation": "Placés avant les initiales, les capacitaires désignent la pratique d'une activité.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a14",
+            "theme": "amiens",
+            "question": "À Amiens, que signifie la palette vernie placée en capacitaire (avant les initiales) ?",
+            "answers": [
+                "Artiste",
+                "Peintre en bâtiment",
+                "Étudiant aux Beaux-Arts",
+                "Collectionneur"
+            ],
+            "explanation": "Placés avant les initiales, les capacitaires désignent la pratique d'une activité.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a15",
+            "theme": "amiens",
+            "question": "Pourquoi Reims a-t-elle repris les rubans supérieurs en velours ?",
+            "answers": [
+                "Pour l'organisation du Centenaire",
+                "Pour l'organisation des États généraux",
+                "Parce que c'est aussi une ville tisserande",
+                "Pour un jumelage avec Amiens"
+            ],
+            "explanation": "Dijon les a repris pour l'organisation des États généraux.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a16",
+            "theme": "amiens",
+            "question": "Pourquoi Dijon a-t-elle repris les rubans supérieurs en velours ?",
+            "answers": [
+                "Pour l'organisation des États généraux",
+                "Pour l'organisation du Centenaire",
+                "Pour un congrès national",
+                "Parce que c'est aussi une ville tisserande"
+            ],
+            "explanation": "Reims les a repris pour l'organisation du Centenaire.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a17",
+            "theme": "amiens",
+            "question": "Amiens était une ville tisserande, et plus précisément…",
+            "answers": [
+                "Coloriste",
+                "Drapière",
+                "Dentellière",
+                "Soyeuse"
+            ],
+            "explanation": "C'est en hommage à ce passé que les rubans supérieurs sont en velours.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a18",
+            "theme": "amiens",
+            "question": "À Amiens, quel insigne met un GM à la retraite s'il a été GC avant ?",
+            "answers": [
+                "Un soleil",
+                "Une tête de mort",
+                "Une étoile",
+                "Une couronne"
+            ],
+            "explanation": "Sans être passé GC, il met une tête de mort.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a19",
+            "theme": "amiens",
+            "question": "À Amiens, quel insigne met un GM pharmacien à la retraite s'il n'a jamais été GC ?",
+            "answers": [
+                "Une tête de mort sur fémurs croisés",
+                "Une tête de mort",
+                "Un soleil",
+                "Une croix de pharmacie"
+            ],
+            "source": "/recap-spe"
+        },
+        {
+            "id": "a20",
+            "theme": "amiens",
+            "question": "Où place-t-on une ville d'études antérieure à Amiens ?",
+            "answers": [
+                "Au-dessus de l'écusson d'Amiens",
+                "En dessous de l'écusson d'Amiens",
+                "À la place de l'écusson d'Amiens",
+                "Sur le velours"
+            ],
+            "explanation": "Une ville d'études postérieure se place en dessous, en remontant l'écusson d'Amiens.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "a22",
+            "theme": "amiens",
+            "question": "Où se termine le monôme amiénois ?",
+            "answers": [
+                "Place Marie-sans-chemise",
+                "Place Gambetta",
+                "Devant la cathédrale",
+                "Quai Bélu"
+            ],
+            "source": "/monome"
+        },
+        {
+            "id": "a23",
+            "theme": "amiens",
+            "question": "Pendant le monôme, que remettent les Grands Maîtres à Marie-sans-chemise ?",
+            "answers": [
+                "Une faluche aux couleurs de toutes les disciplines de la ville",
+                "Une croix de Grand Maître",
+                "Une chemise",
+                "Un ruban d'évêque"
+            ],
+            "explanation": "Par leurs discours, ils transmettent aux néo-faluchards l'histoire de ce monument.",
+            "source": "/monome"
+        },
+        {
+            "id": "a24",
+            "theme": "amiens",
+            "question": "À quelle période a lieu le monôme amiénois ?",
+            "answers": [
+                "Pendant le marché de Noël",
+                "À la rentrée de septembre",
+                "Au carnaval",
+                "À la fin des examens"
+            ],
+            "explanation": "Le cortège traverse le centre-ville en chantant des paillardes.",
+            "source": "/monome"
         }
     ]
 }
