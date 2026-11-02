@@ -26,19 +26,30 @@ const COULEURS: Record<string, string> = {
     vertfonce: "vert foncé",
 };
 
+// Teintes difficiles à distinguer à l'écran
+const TEINTES_PROCHES: Record<string, string> = {
+    vertfonce: "vert",
+    fiolet: "violet",
+    saumon: "rose",
+};
+
 export const imageQuestionCount = insignes.length + emblemes.length + circulaires.length;
 
 const atAmiens = (question: string, amiens?: boolean) =>
     amiens ? `À Amiens, ${question[0].toLowerCase()}${question.slice(1)}` : question;
 
+function shuffle<T>(items: T[]): T[] {
+    const copy = [...items];
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+}
+
 // Trois mauvaises réponses tirées au hasard, sans doublon
 function pickWrong(candidates: string[], correct: string): string[] {
-    const pool = [...new Set(candidates)].filter((c) => c !== correct);
-    for (let i = pool.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [pool[i], pool[j]] = [pool[j], pool[i]];
-    }
-    return pool.slice(0, 3);
+    return shuffle([...new Set(candidates)].filter((c) => c !== correct)).slice(0, 3);
 }
 
 function describe(c: Circulaire): string {
@@ -85,7 +96,12 @@ export function imageQuestions(): QuizQuestion[] {
         source: emb.source,
     }));
 
-    const colorKey = (c: Circulaire) => `${c.matiere}-${c.couleurs.join("-")}`;
+    // Même couleur quelle que soit la matière (la texture ne se voit pas toujours), teintes proches confondues
+    const colorKey = (c: Circulaire) =>
+        c.couleurs
+            .map((couleur) => TEINTES_PROCHES[couleur] ?? couleur)
+            .sort()
+            .join("-");
     const fromCirculaires = circulaires.map((circ, i) => ({
         id: `img-circulaire-${i}`,
         theme: IMAGES_THEME,
@@ -93,12 +109,14 @@ export function imageQuestions(): QuizQuestion[] {
         circulaire: { matiere: circ.matiere, couleurs: circ.couleurs },
         answers: [
             circ.filiere,
-            ...pickWrong(
-                circulaires
-                    .filter((other) => colorKey(other) !== colorKey(circ))
-                    .map((other) => other.filiere),
-                circ.filiere
-            ),
+            // Une filière par couleur : les quatre réponses ont toutes des couleurs différentes
+            ...[
+                ...new Map(
+                    shuffle(circulaires.filter((other) => colorKey(other) !== colorKey(circ))).map(
+                        (other) => [colorKey(other), other.filiere]
+                    )
+                ).values(),
+            ].slice(0, 3),
         ],
         explanation: describe(circ),
         source: circ.source,
