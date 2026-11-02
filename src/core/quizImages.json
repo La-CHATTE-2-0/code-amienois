@@ -1,0 +1,984 @@
+{
+    "insignes": [
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/etoile_doree.png",
+            "meaning": "Année débutée",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/etoile_argentee.png",
+            "meaning": "Année redoublée",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/large_palme.png",
+            "meaning": "Major de promotion",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/simple_palme.png",
+            "meaning": "Fin de cycle (s'il n'y a pas de diplôme correspondant)",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/tete_de_vache.png",
+            "meaning": "Année obtenue aux rattrapages",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/tete_de_mort.png",
+            "meaning": "Abandon de filière",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/double_palme.png",
+            "meaning": "Diplôme obtenu",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/quille.png",
+            "meaning": "Service militaire ou service civique",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/abeille.png",
+            "meaning": "Cursus parfait (fin du circulaire)",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/etoile_noir.png",
+            "meaning": "Perte ou vol de la faluche cette année-là",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/drapeaux.png",
+            "meaning": "Année d'études à l'étranger",
+            "source": "/#article-7"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/squelette.png",
+            "meaning": "Anatomiste",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "circulaire",
+            "image": "/images/insigne/squelette.png",
+            "meaning": "A participé à une dissection humaine",
+            "rotate": 180,
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "capacitaire",
+            "image": "/images/insigne/aigle.png",
+            "meaning": "Brevet de pilote",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "capacitaire",
+            "image": "/images/insigne/lyre.png",
+            "meaning": "Musicien",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "capacitaire",
+            "image": "/images/insigne/palette_vernie.png",
+            "meaning": "Artiste",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "capacitaire",
+            "image": "/images/insigne/plume.png",
+            "meaning": "Écrivain",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "capacitaire",
+            "image": "/images/insigne/voilier.png",
+            "meaning": "Permis bateau",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/aigle.png",
+            "meaning": "Amour de l'aviation",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/ancre.png",
+            "meaning": "Amour de la mer",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/bacchus_troue.png",
+            "meaning": "Personne abstème",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/ballon_et_cornu.png",
+            "meaning": "Travail en laboratoire",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/chameau.png",
+            "meaning": "Célibataire",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/chope_de_biere.png",
+            "meaning": "Amour de la bonne bière",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/chouette.png",
+            "meaning": "Oiseau de nuit",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/cocotte_en_papier.png",
+            "meaning": "Sécheur de cours",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/cupidon.png",
+            "meaning": "Fiancé",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/ecureuil.png",
+            "meaning": "Junior d'entreprise",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/epi_de_ble.png",
+            "meaning": "Radin",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/epi_de_ble_croise_faucille.png",
+            "meaning": "Chanceux aux examens",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/etoile_et_foudre.png",
+            "meaning": "Amour des nouvelles technologies, de l'informatique",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/fer_a_cheval.png",
+            "meaning": "Chanceux",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/fourchette.png",
+            "meaning": "Amour des plaisirs de la table",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/fraise.png",
+            "meaning": "Femme enceinte",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/grappe_de_raisin.png",
+            "meaning": "Amour du bon vin",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/lyre.png",
+            "meaning": "Amour des arts musicaux",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/marteau_maillet.png",
+            "meaning": "Bricoleur",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/masques_de_comedie.png",
+            "meaning": "Amour des arts de la scène et du cinéma",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/nounours.png",
+            "meaning": "Gros dormeur",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/lacet_de_cuir.png",
+            "meaning": "Sado-maso",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/lune.png",
+            "meaning": "Grand Chambellan à la retraite",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/palette_vernie.png",
+            "meaning": "Amour des arts plastiques",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/pendu.png",
+            "meaning": "Marié(e) ou pacsé(e)",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/plume.png",
+            "meaning": "Amour des arts littéraires",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/raquette_tennis_ballon_football.png",
+            "meaning": "Amour du sport",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/skis.png",
+            "meaning": "Amour de la montagne",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/soleil.png",
+            "meaning": "Grand Maître à la retraite",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/tete_de_sphinx.png",
+            "meaning": "Polyglotte",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/tete_de_taureau.png",
+            "meaning": "Géniteur",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/voilier.png",
+            "meaning": "Amour de la navigation",
+            "source": "/#article-8"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/feuille_de_vigne.png",
+            "meaning": "Perte de virginité masculine pendant la vie falucharde",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/rose.png",
+            "meaning": "Perte de virginité féminine pendant la vie falucharde",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/grappe_de_raisin.png",
+            "meaning": "Amour de tous les alcools",
+            "rotate": 180,
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/squelette.png",
+            "meaning": "Amour de l'anatomie du sexe opposé",
+            "rotate": 180,
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/squelette_diamant.png",
+            "meaning": "Amour de l'anatomie du même sexe",
+            "rotate": 180,
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/squelette_ruby.png",
+            "meaning": "Amour de l'anatomie des deux sexes",
+            "rotate": 180,
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "velours",
+            "image": "/images/insigne/cochon.png",
+            "meaning": "Mange comme un porc",
+            "ruban": "bleu",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "partenaire",
+            "image": "/images/insigne/epee.png",
+            "meaning": "Fin baiseur",
+            "source": "/#article-8"
+        },
+        {
+            "group": "partenaire",
+            "image": "/images/insigne/fleche.png",
+            "meaning": "Éjaculateur précoce",
+            "source": "/#article-8"
+        },
+        {
+            "group": "partenaire",
+            "image": "/images/insigne/lime.png",
+            "meaning": "Acte laborieux et difficile",
+            "source": "/#article-8"
+        },
+        {
+            "group": "partenaire",
+            "image": "/images/insigne/escargot.png",
+            "meaning": "Lent à la tâche",
+            "source": "/#article-8"
+        },
+        {
+            "group": "partenaire",
+            "image": "/images/insigne/orchidee.png",
+            "meaning": "Fine baiseuse",
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/anneaux_olympiques.png",
+            "meaning": "Excellence sportive universitaire",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/bacchus.png",
+            "meaning": "Dignité dans l'ivresse",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/bouteille_de_bordeaux.png",
+            "meaning": "Cuite certifiée",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/bouteille_de_champagne.png",
+            "meaning": "Coma éthylique certifié",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/chauve_souris.png",
+            "meaning": "Nuit blanche pour motif associatif",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/coq.png",
+            "meaning": "Grande gueule sachant l'ouvrir",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/cor_de_chasse.png",
+            "meaning": "Chasseur devant l'éternel",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/hache.png",
+            "meaning": "Prise de guerre",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/homard.png",
+            "meaning": "Mène un grand train de vie",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/pachyderme.png",
+            "meaning": "Personne lourde",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/poule.png",
+            "meaning": "Personne chaude",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/singe.png",
+            "meaning": "Quémandeur d'insignes",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/sou_troue.png",
+            "meaning": "Nuit passée au poste pour motif estudiantin",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/volant.png",
+            "meaning": "Conducteur de fin de soirée (SAM)",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/cle_de_sol.png",
+            "meaning": "Digne chanteur de paillardes",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/mammouth.png",
+            "meaning": "Gardien des traditions",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/fourchette.png",
+            "meaning": "Cordon bleu",
+            "ruban": "bleu",
+            "source": "/#article-8"
+        },
+        {
+            "group": "grand-maitre",
+            "image": "/images/insigne/lyre_et_tete_de_mort_sur_femurs_croises.png",
+            "meaning": "Chanteur minable",
+            "amiens": true,
+            "source": "/recap-spe"
+        }
+    ],
+    "emblemes": [
+        {
+            "filiere": "Dentaire",
+            "image": "/images/insigne/molaire.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Infirmier",
+            "image": "/images/insigne/caducee_infirmier.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Médecine",
+            "image": "/images/insigne/caducee_medecine.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Ostéopathie",
+            "image": "/images/insigne/sphenoide.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "PACES / PASS",
+            "image": "/images/insigne/tete_de_mort_sur_femurs_croises.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Paramédical",
+            "image": "/images/insigne/ciseaux.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Pharmacie",
+            "image": "/images/insigne/caducee_pharma.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Préparateur en pharmacie",
+            "image": "/images/insigne/mortier_et_pilon.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Sage-femme",
+            "image": "/images/insigne/croix_dankh.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Vétérinaire",
+            "image": "/images/insigne/tete_de_cheval.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Arts plastiques",
+            "image": "/images/insigne/palette_vernie.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Arts numériques",
+            "image": "/images/insigne/arobase.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Archéologie",
+            "image": "/images/insigne/tete_de_sphinx.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Architecture",
+            "image": "/images/insigne/equerre_et_compas.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Cinéma",
+            "image": "/images/insigne/clap_de_cinema.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Géographie",
+            "image": "/images/insigne/globe_terrestre.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Histoire",
+            "image": "/images/insigne/casque_pericles.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Ingénieur",
+            "image": "/images/insigne/etoile_et_foudre.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Langues, Lettres",
+            "image": "/images/insigne/livre_ouvert_et_plume.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Musicologie",
+            "image": "/images/insigne/lyre.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Œnologie",
+            "image": "/images/insigne/grappe_de_raisin.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Philosophie",
+            "image": "/images/insigne/phi.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Psychologie",
+            "image": "/images/insigne/psi.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Sciences",
+            "image": "/images/insigne/palme_sciences.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Sciences politiques",
+            "image": "/images/insigne/parapluie_ferme_a_l_horizontale.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "STAPS",
+            "image": "/images/insigne/coq.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Arts du spectacle",
+            "image": "/images/insigne/masques_de_comedie.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Thanatologie",
+            "image": "/images/insigne/squelette.png",
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Sociologie",
+            "image": "/images/insigne/grenouille_doree.png",
+            "rotate": 90,
+            "source": "/#article-7"
+        },
+        {
+            "filiere": "Kinésithérapie",
+            "image": "/images/insigne/ciseaux_et_caducee_mercure.png",
+            "amiens": true,
+            "source": "/recap-spe"
+        }
+    ],
+    "circulaires": [
+        {
+            "filiere": "Classes préparatoires (santé)",
+            "matiere": "velours",
+            "couleurs": [
+                "marron"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Dentaire",
+            "matiere": "velours",
+            "couleurs": [
+                "violet"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Ostéopathie",
+            "matiere": "velours",
+            "couleurs": [
+                "bleuroy"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Paramédical",
+            "matiere": "velours",
+            "couleurs": [
+                "rose"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Pharmacie",
+            "matiere": "velours",
+            "couleurs": [
+                "vertfonce"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Vétérinaire",
+            "matiere": "velours",
+            "couleurs": [
+                "bordeaux"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "AES",
+            "matiere": "satin",
+            "couleurs": [
+                "vertclair"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Archéologie",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "BTS",
+            "matiere": "satin",
+            "couleurs": [
+                "blanc"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Classes préparatoires",
+            "matiere": "satin",
+            "couleurs": [
+                "marron"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Commerce",
+            "matiere": "satin",
+            "couleurs": [
+                "rouge",
+                "vert"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Droit",
+            "matiere": "satin",
+            "couleurs": [
+                "rouge"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "MEEF (1er degré)",
+            "matiere": "satin",
+            "couleurs": [
+                "gris"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Géographie",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Histoire",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "IAE",
+            "matiere": "satin",
+            "couleurs": [
+                "orange"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Ingénieur",
+            "matiere": "satin",
+            "couleurs": [
+                "bleuroy",
+                "noir"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Langues, Lettres",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Militaire",
+            "matiere": "satin",
+            "couleurs": [
+                "bleuroy",
+                "blanc",
+                "rouge"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Musicologie",
+            "matiere": "satin",
+            "couleurs": [
+                "argente"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Notariat",
+            "matiere": "satin",
+            "couleurs": [
+                "rouge",
+                "noir"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Œnologie",
+            "matiere": "satin",
+            "couleurs": [
+                "saumon"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Philosophie",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Psychologie",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Sciences",
+            "matiere": "satin",
+            "couleurs": [
+                "violet"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Sciences économiques, Gestion",
+            "matiere": "satin",
+            "couleurs": [
+                "orange"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Sciences politiques",
+            "matiere": "satin",
+            "couleurs": [
+                "rouge",
+                "bleu"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Sociologie",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "STAPS",
+            "matiere": "satin",
+            "couleurs": [
+                "vert"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Théologie",
+            "matiere": "satin",
+            "couleurs": [
+                "blanc",
+                "rouge"
+            ],
+            "source": "/#article-6"
+        },
+        {
+            "filiere": "Assistante sociale",
+            "matiere": "velours",
+            "couleurs": [
+                "jaune"
+            ],
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "filiere": "Médecine",
+            "matiere": "velours",
+            "couleurs": [
+                "bordeaux"
+            ],
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "filiere": "Sage-femme",
+            "matiere": "velours",
+            "couleurs": [
+                "fiolet"
+            ],
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "filiere": "Arts, Architecture, Théâtre",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune",
+                "bleuroy"
+            ],
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "filiere": "Cinéma",
+            "matiere": "satin",
+            "couleurs": [
+                "blanc",
+                "noir"
+            ],
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "filiere": "Communication, Journalisme",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "filiere": "IUT (sauf GMP)",
+            "matiere": "satin",
+            "couleurs": [
+                "rose"
+            ],
+            "amiens": true,
+            "source": "/recap-spe"
+        },
+        {
+            "filiere": "Sciences de l'éducation",
+            "matiere": "satin",
+            "couleurs": [
+                "jaune"
+            ],
+            "amiens": true,
+            "source": "/recap-spe"
+        }
+    ]
+}

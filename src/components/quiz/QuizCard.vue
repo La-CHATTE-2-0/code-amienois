@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { QuizRound } from "../../types/quizTypes";
+import QuizVisual from "./QuizVisual.vue";
 
 const props = defineProps<{
     round: QuizRound;
@@ -10,6 +11,9 @@ const props = defineProps<{
 const selected = defineModel<string | null>("selected", { default: null });
 
 const answered = computed(() => selected.value !== null);
+const hasVisual = computed(() => !!(props.round.image || props.round.circulaire));
+// En mode images, le visuel est la question : on l'affiche plus grand
+const visualSize = computed(() => (props.round.theme === "images" ? 160 : 120));
 
 function stateOf(choice: string) {
     if (!answered.value) return "";
@@ -21,14 +25,9 @@ function stateOf(choice: string) {
 
 <template>
     <div class="quiz-card">
-        <img
-            v-if="round.image && !round.imageRevealsAnswer"
-            class="quiz-card__image"
-            :src="round.image"
-            alt=""
-            width="120"
-            height="120"
-        />
+        <div v-if="hasVisual && !round.imageRevealsAnswer" class="quiz-card__visual">
+            <QuizVisual :round="round" :size="visualSize" />
+        </div>
         <p class="quiz-card__question">{{ round.question }}</p>
 
         <ul class="quiz-choices">
@@ -59,14 +58,9 @@ function stateOf(choice: string) {
             <p class="quiz-feedback__verdict">
                 {{ selected === round.correct ? "Bonne réponse !" : "Raté…" }}
             </p>
-            <img
-                v-if="round.image && round.imageRevealsAnswer"
-                class="quiz-card__image"
-                :src="round.image"
-                alt=""
-                width="120"
-                height="120"
-            />
+            <div v-if="hasVisual && round.imageRevealsAnswer" class="quiz-card__visual">
+                <QuizVisual :round="round" :size="visualSize" />
+            </div>
             <p v-if="round.explanation">{{ round.explanation }}</p>
             <router-link :to="round.source" class="quiz-feedback__source">
                 Revoir dans le Code
@@ -76,11 +70,10 @@ function stateOf(choice: string) {
 </template>
 
 <style scoped>
-.quiz-card__image {
-    display: block;
-    margin: 0 auto 12px;
-    object-fit: contain;
-    border-radius: 5px;
+.quiz-card__visual {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
 }
 
 .quiz-card__question {
