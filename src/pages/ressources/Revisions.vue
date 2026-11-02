@@ -216,6 +216,7 @@ function backToThemes() {
                     color="primary"
                     height="6"
                     rounded
+                    :stop-indicator="false"
                     :aria-label="`Question ${index + 1} sur ${rounds.length}`"
                 />
             </div>
