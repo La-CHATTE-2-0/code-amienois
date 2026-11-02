@@ -2135,18 +2135,6 @@
             "source": "/#article-10"
         },
         {
-            "id": "a21",
-            "theme": "amiens",
-            "question": "À Amiens, comment coud-on les rubans bicolores de ville, province et naissance ?",
-            "answers": [
-                "Ensemble, avant de les coudre sur la faluche",
-                "Un par un, directement sur la faluche",
-                "Seulement la ville, les autres sont épinglés",
-                "Bord à bord, sans les assembler"
-            ],
-            "source": "/guide-couture"
-        },
-        {
             "id": "a22",
             "theme": "amiens",
             "question": "Où se termine le monôme amiénois ?",
@@ -2183,32 +2171,6 @@
             ],
             "explanation": "Le cortège traverse le centre-ville en chantant des paillardes.",
             "source": "/monome"
-        },
-        {
-            "id": "a25",
-            "theme": "amiens",
-            "question": "Où se dresse l'Homme sur sa bouée ?",
-            "answers": [
-                "Sur la Somme, dans le quartier Saint-Leu",
-                "Sur le parvis de la cathédrale",
-                "Place Gambetta",
-                "Dans le parc de la Hotoie"
-            ],
-            "explanation": "Il flotte au pont de la Dodane.",
-            "source": "/homme-bouee"
-        },
-        {
-            "id": "a26",
-            "theme": "amiens",
-            "question": "Que font les étudiants amiénois avec l'Homme sur sa bouée ?",
-            "answers": [
-                "Ils traversent la Somme à la nage pour l'habiller",
-                "Ils lui mettent une faluche lors du monôme",
-                "Ils le repeignent à chaque rentrée",
-                "Ils y accrochent leurs rubans de bizut"
-            ],
-            "explanation": "Souvent de t-shirts aux couleurs d'associations étudiantes ou d'équipes sportives.",
-            "source": "/homme-bouee"
         }
     ]
 }
