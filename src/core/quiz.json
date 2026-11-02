@@ -1851,19 +1851,6 @@
             "source": "/#article-10"
         },
         {
-            "id": "x22",
-            "theme": "amiens",
-            "question": "Si tu as une ville d'études après Amiens, que fais-tu ?",
-            "answers": [
-                "Remonter l'écusson d'Amiens et placer la nouvelle ville en dessous",
-                "Placer la nouvelle ville au-dessus de l'écusson d'Amiens",
-                "Remplacer le ruban d'Amiens",
-                "Coudre un ruban à droite du ruban d'Amiens"
-            ],
-            "explanation": "Une ville d'études antérieure à Amiens se place au-dessus de l'écusson d'Amiens.",
-            "source": "/#article-10"
-        },
-        {
             "id": "x23",
             "theme": "croix",
             "question": "Quelle est la tâche principale du Grand Maître ?",
