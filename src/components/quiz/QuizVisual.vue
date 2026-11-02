@@ -9,7 +9,8 @@ defineProps<{
 }>();
 
 // Bande unie, en deux ou en trois couleurs, comme dans l'article 6
-const containerOf = (count: number) => (count === 3 ? "tiers" : count === 2 ? "demi" : "");
+const CONTAINERS: Record<number, string> = { 2: "demi", 3: "tiers" };
+const containerOf = (count: number) => CONTAINERS[count] ?? "";
 </script>
 
 <template>

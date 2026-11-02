@@ -58,6 +58,9 @@ function stateOf(choice: string) {
             <p class="quiz-feedback__verdict">
                 {{ selected === round.correct ? "Bonne réponse !" : "Raté…" }}
             </p>
+            <p v-if="round.imageName">
+                <strong>{{ round.imageName }}</strong> : {{ round.correct }}
+            </p>
             <div v-if="hasVisual && round.imageRevealsAnswer" class="quiz-card__visual">
                 <QuizVisual :round="round" :size="visualSize" />
             </div>

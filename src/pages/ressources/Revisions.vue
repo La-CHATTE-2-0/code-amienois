@@ -264,6 +264,9 @@ function backToThemes() {
                         <p class="quiz-missed__question">{{ r.question }}</p>
                         <p>
                             <v-icon icon="mdi-check-circle" size="small" color="success" />
+                            <template v-if="r.imageName">
+                                <strong>{{ r.imageName }}</strong> :
+                            </template>
                             {{ r.correct }}
                         </p>
                         <router-link :to="r.source" class="quiz-missed__source">

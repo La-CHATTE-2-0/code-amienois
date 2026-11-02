@@ -56,7 +56,7 @@ function describe(c: Circulaire): string {
     const names = c.couleurs.map((couleur) => COULEURS[couleur] ?? couleur);
     const couleurs =
         names.length > 1 ? `${names.slice(0, -1).join(", ")} et ${names[names.length - 1]}` : names[0];
-    return `${c.matiere === "velours" ? "Velours" : "Satin"} ${couleurs}.`;
+    return `${c.matiere} ${couleurs}`;
 }
 
 // Mauvaises réponses : jamais un insigne de même image, ni une filière de même couleur
@@ -66,6 +66,7 @@ export function imageQuestions(): QuizQuestion[] {
         theme: IMAGES_THEME,
         question: atAmiens(QUESTION_BY_GROUP[ins.group], ins.amiens),
         image: ins.image,
+        imageName: ins.name,
         imageRotate: ins.rotate,
         imageRuban: ins.ruban,
         answers: [
@@ -85,6 +86,7 @@ export function imageQuestions(): QuizQuestion[] {
         theme: IMAGES_THEME,
         question: atAmiens("À quelle filière correspond cet emblème ?", emb.amiens),
         image: emb.image,
+        imageName: emb.name,
         imageRotate: emb.rotate,
         answers: [
             emb.filiere,
@@ -100,12 +102,13 @@ export function imageQuestions(): QuizQuestion[] {
     const colorKey = (c: Circulaire) =>
         c.couleurs
             .map((couleur) => TEINTES_PROCHES[couleur] ?? couleur)
-            .sort()
+            .sort((a, b) => a.localeCompare(b))
             .join("-");
     const fromCirculaires = circulaires.map((circ, i) => ({
         id: `img-circulaire-${i}`,
         theme: IMAGES_THEME,
-        question: atAmiens("À quelle filière correspond ce circulaire ?", circ.amiens),
+        // Le nom du circulaire est dans la question : il ne donne pas la filière
+        question: atAmiens(`À quelle filière correspond le circulaire en ${describe(circ)} ?`, circ.amiens),
         circulaire: { matiere: circ.matiere, couleurs: circ.couleurs },
         answers: [
             circ.filiere,
@@ -118,7 +121,6 @@ export function imageQuestions(): QuizQuestion[] {
                 ).values(),
             ].slice(0, 3),
         ],
-        explanation: describe(circ),
         source: circ.source,
     }));
 
