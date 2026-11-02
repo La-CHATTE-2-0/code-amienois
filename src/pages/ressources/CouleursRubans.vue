@@ -252,7 +252,7 @@ const ecusson = (image: string) => `/images/ecussons/${image}.png`;
 }
 
 .couleurs-table__province {
-    color: inherit !important;
+    color: inherit;
     text-decoration: none;
 }
 

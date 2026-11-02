@@ -1,6 +1,9 @@
 <script setup lang="ts">
 const dossier = "/images/hommebouee/";
 
+// Hors du template : l'apostrophe du nom de fichier trompe l'analyse des attributs (SonarCloud)
+const statueHabillee = `${dossier}Amiens-l'Homme_à_la_Bouée_(Stephan_Balkenhol).jpg`;
+
 const triptyque = {
     src: `${dossier}L'homme à la bouée-fi31641270x470.jpg`,
     alt: "Les trois statues du triptyque : l’homme à la chemise rouge contre un mur, l’homme sur sa bouée au milieu de la Somme, la femme à la robe verte contre un mur de briques",
@@ -59,7 +62,7 @@ const enBref = [
             <figure class="bouee-figure">
                 <img
                     class="bouee-image"
-                    :src="`${dossier}Amiens-l'Homme_à_la_Bouée_(Stephan_Balkenhol).jpg`"
+                    :src="statueHabillee"
                     alt="L’Homme sur sa bouée vêtu d’un t-shirt rouge, debout sur son socle au milieu de la Somme"
                     width="1900"
                     height="1066"

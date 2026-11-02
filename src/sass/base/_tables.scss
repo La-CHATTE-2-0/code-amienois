@@ -11,11 +11,11 @@ $fal-warning-color-light: 255 242 202;
     overflow: hidden;
 
     th {
-        font-size: 0.75rem !important;
+        font-size: 0.75rem;
         font-weight: 600;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity)) !important;
+        color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
         background: rgba(var(--v-theme-on-surface), 0.04);
     }
 
@@ -64,8 +64,8 @@ $fal-warning-color-light: 255 242 202;
     overflow: hidden;
 
     .v-expansion-panel {
-        margin-top: 0 !important;
-        border-radius: 0 !important;
+        margin-top: 0;
+        border-radius: 0;
     }
 
     // Séparateur net entre panneaux, comme les lignes d'un tableau
@@ -124,12 +124,12 @@ $fal-warning-color-light: 255 242 202;
 }
 
 .no-border {
-    border: none !important;
+    border: none;
 }
 
 .no-border-bottom {
     td {
-        border: none !important;
+        border: none;
     }
 }
 

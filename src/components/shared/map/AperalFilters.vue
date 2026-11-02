@@ -68,7 +68,7 @@ const selectedStatuses = defineModel<AperalStatus[]>("statuses", { required: tru
 }
 
 .aperal-filters--compact .v-chip {
-    margin: 3px !important;
+    margin: 3px;
 }
 
 .aperal-filters__count {

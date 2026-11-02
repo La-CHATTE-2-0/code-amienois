@@ -58,11 +58,16 @@ defineExpose({
     background: var(--pin-color);
     border: 2px solid #fff;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
-    transition: transform 150ms ease;
 }
 
-.aperal-pin:hover {
-    transform: rotate(-45deg) scale(1.12);
+@media (prefers-reduced-motion: no-preference) {
+    .aperal-pin {
+        transition: transform 150ms ease;
+    }
+
+    .aperal-pin:hover {
+        transform: rotate(-45deg) scale(1.12);
+    }
 }
 
 .aperal-pin .mdi {

@@ -1,6 +1,8 @@
 <template>
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="800.000000pt" height="800.000000pt"
-        viewBox="0 0 800.000000 800.000000" preserveAspectRatio="xMidYMid meet">
+        viewBox="0 0 800.000000 800.000000" preserveAspectRatio="xMidYMid meet"
+        role="img" aria-labelledby="schema-faluche-titre">
+        <title id="schema-faluche-titre">Schéma des parties numérotées de la faluche</title>
         <g transform="translate(0.000000,800.000000) scale(0.100000,-0.100000)" stroke="none">
             <path d="M3808 7725 c-2 -1 -48 -6 -103 -9 -133 -8 -392 -48 -535 -81 -215
 -50 -543 -158 -628 -205 -9 -5 -46 -21 -82 -36 -75 -30 -215 -103 -331 -172
