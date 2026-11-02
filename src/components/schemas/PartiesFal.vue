@@ -25,7 +25,7 @@ import ImageFalSvg from './SchemaSvg.vue'
 
 <style lang="css" scoped>
 svg {
-    fill: rgba(var(--v-theme-on-background), var(--v-high-emphasis-opacity)) !important;
+    fill: rgba(var(--v-theme-on-background), var(--v-high-emphasis-opacity));
     width: 100%;
     height: 100%;
     aspect-ratio: 1 / 1;

@@ -123,12 +123,6 @@ watch(themeMode, (mode) => {
         </v-list>
         <v-list>
             <v-list-subheader>Ressources</v-list-subheader>
-            <!-- <v-list-item
-                prepend-icon="mdi-currency-eur"
-                :title="pages.achats.name"
-                :value="pages.achats.url"
-                :to="pages.achats.url"
-            ></v-list-item> -->
             <v-list-item
                 prepend-icon="mdi-account-group"
                 :title="pages.notes_aux_pm.name"

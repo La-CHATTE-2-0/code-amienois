@@ -75,7 +75,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         couture est une ligne en pointillé.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('point-droit')" v-bind="images['point-droit']" />
+                        <img loading="lazy" :src="getImageUrl('point-droit')" v-bind="images['point-droit']" :alt="images['point-droit'].alt" />
                         <figcaption>{{ images["point-droit"].alt }}</figcaption>
                     </figure>
 
@@ -88,7 +88,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         couture est une ligne continue.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('point-arriere')" v-bind="images['point-arriere']" />
+                        <img loading="lazy" :src="getImageUrl('point-arriere')" v-bind="images['point-arriere']" :alt="images['point-arriere'].alt" />
                         <figcaption>{{ images["point-arriere"].alt }}</figcaption>
                     </figure>
 
@@ -115,7 +115,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         être réguliers.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('alignement-point')" v-bind="images['alignement-point']" />
+                        <img loading="lazy" :src="getImageUrl('alignement-point')" v-bind="images['alignement-point']" :alt="images['alignement-point'].alt" />
                         <figcaption>{{ images["alignement-point"].alt }}</figcaption>
                     </figure>
                     <p>
@@ -125,7 +125,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         rubans, elle doit ressortir exactement à 10 mm.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('point-au-travers')" v-bind="images['point-au-travers']" />
+                        <img loading="lazy" :src="getImageUrl('point-au-travers')" v-bind="images['point-au-travers']" :alt="images['point-au-travers'].alt" />
                         <figcaption>{{ images["point-au-travers"].alt }}</figcaption>
                     </figure>
                     <v-alert
@@ -215,7 +215,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         boursouflure mais directement en dessous.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('ruban')" v-bind="images['ruban']" />
+                        <img loading="lazy" :src="getImageUrl('ruban')" v-bind="images['ruban']" :alt="images['ruban'].alt" />
                         <figcaption>{{ images["ruban"].alt }}</figcaption>
                     </figure>
                     <p>
@@ -250,7 +250,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         de la faluche.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('symetrie-et-zones')" v-bind="images['symetrie-et-zones']" />
+                        <img loading="lazy" :src="getImageUrl('symetrie-et-zones')" v-bind="images['symetrie-et-zones']" :alt="images['symetrie-et-zones'].alt" />
                         <figcaption>{{ images["symetrie-et-zones"].alt }}</figcaption>
                     </figure>
                     <p>
@@ -260,7 +260,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         120°</strong> et le fixer de nouveau à l'aide d'épingles.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('angle-blason')" v-bind="images['angle-blason']" />
+                        <img loading="lazy" :src="getImageUrl('angle-blason')" v-bind="images['angle-blason']" :alt="images['angle-blason'].alt" />
                         <figcaption>{{ images["angle-blason"].alt }}</figcaption>
                     </figure>
                     <div class="table-warning-fal guide__warning">
@@ -313,7 +313,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         peut vous aider.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('placement-ruban')" v-bind="images['placement-ruban']" />
+                        <img loading="lazy" :src="getImageUrl('placement-ruban')" v-bind="images['placement-ruban']" :alt="images['placement-ruban'].alt" />
                         <figcaption>{{ images["placement-ruban"].alt }}</figcaption>
                     </figure>
                     <p>
@@ -327,7 +327,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         d'une main dans la faluche sous le ruban.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('bords-faluche')" v-bind="images['bords-faluche']" />
+                        <img loading="lazy" :src="getImageUrl('bords-faluche')" v-bind="images['bords-faluche']" :alt="images['bords-faluche'].alt" />
                         <figcaption>{{ images["bords-faluche"].alt }}</figcaption>
                     </figure>
                     <p>
@@ -338,7 +338,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         dépasse pour passer sous le circulaire.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('secu-bas-ruban')" v-bind="images['secu-bas-ruban']" />
+                        <img loading="lazy" :src="getImageUrl('secu-bas-ruban')" v-bind="images['secu-bas-ruban']" :alt="images['secu-bas-ruban'].alt" />
                         <figcaption>{{ images["secu-bas-ruban"].alt }}</figcaption>
                     </figure>
                 </v-expansion-panel-text>
@@ -366,7 +366,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         beaucoup d'aiguilles.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('epingle-blason')" v-bind="images['epingle-blason']" />
+                        <img loading="lazy" :src="getImageUrl('epingle-blason')" v-bind="images['epingle-blason']" :alt="images['epingle-blason'].alt" />
                         <figcaption>{{ images["epingle-blason"].alt }}</figcaption>
                     </figure>
                     <p>
@@ -377,7 +377,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         préférable d'utiliser le <strong>point arrière</strong>.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('blason')" v-bind="images['blason']" />
+                        <img loading="lazy" :src="getImageUrl('blason')" v-bind="images['blason']" :alt="images['blason'].alt" />
                         <figcaption>{{ images["blason"].alt }}</figcaption>
                     </figure>
                 </v-expansion-panel-text>
@@ -416,7 +416,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         simple ligne de fil.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('moivre')" v-bind="images['moivre']" />
+                        <img loading="lazy" :src="getImageUrl('moivre')" v-bind="images['moivre']" :alt="images['moivre'].alt" />
                         <figcaption>{{ images["moivre"].alt }}</figcaption>
                     </figure>
                     <p>
@@ -434,7 +434,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
                         étant de maximiser les prises du fil.
                     </p>
                     <figure class="guide__figure">
-                        <img loading="lazy" :src="getImageUrl('secu-insignes')" v-bind="images['secu-insignes']" />
+                        <img loading="lazy" :src="getImageUrl('secu-insignes')" v-bind="images['secu-insignes']" :alt="images['secu-insignes'].alt" />
                         <figcaption>{{ images["secu-insignes"].alt }}</figcaption>
                     </figure>
                     <p>
@@ -580,8 +580,9 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
 /* À l'impression, toutes les étapes sont dépliées */
 @media print {
     .guide__steps :deep(.v-expansion-panel-text) {
-        display: block !important;
-        height: auto !important;
+        /* v-show masque les panneaux fermés par un style inline, seul !important le surpasse */
+        display: block !important; /* NOSONAR */
+        height: auto;
     }
 
     .guide__steps :deep(.v-expansion-panel-title__icon) {

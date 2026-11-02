@@ -13,11 +13,16 @@
 }
 
 .main-content {
+    width: min(100% - 2rem, 900px);
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
     font-size: 1rem;
     line-height: 1.7;
 }
 
-.main-content a:not(.v-btn):not(.v-list-item):not(.article-toc__item) {
+/* :where() garde une spécificité faible pour que les liens stylés par leur composant l'emportent */
+.main-content a:where(:not(.v-btn, .v-list-item, .article-toc__item)) {
     color: rgb(var(--v-theme-primary));
     text-underline-offset: 3px;
 }
@@ -84,14 +89,7 @@ main {
 }
 
 .app-header:hover {
-    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.28) !important;
-}
-
-.main-content {
-    width: min(100% - 2rem, 900px);
-    max-width: 100%;
-    min-width: 0;
-    margin: 0 auto;
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
 }
 
 /*
@@ -138,7 +136,7 @@ main {
 }
 
 .app-footer {
-    background: transparent !important;
+    background: transparent;
 }
 
 .app-drawer .v-list-item {
@@ -188,7 +186,7 @@ main {
 
     /* Le texte justifié crée des trous sur les colonnes étroites */
     .main-content .text-justify {
-        text-align: left !important;
+        text-align: left;
     }
 
     /*
@@ -235,10 +233,10 @@ main {
     .no-print,
     nav,
     .v-app-bar {
-        display: none !important;
+        display: none;
     }
 
     main {
-        padding-top: 0 !important;
+        padding-top: 0;
     }
 }

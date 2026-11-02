@@ -12,7 +12,7 @@ const SITE_URL = 'https://www.code-amienois.app'
 const APP_NAME = 'Code Amiénois'
 
 const escapeHtml = (text: string) =>
-  text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
 
 // Les aperçus de lien (Discord, Messenger, WhatsApp…) n'exécutent pas le JS :
 // chaque page (hors accueil, servi par index.html) reçoit son propre index.html avec titre et description dans le <head>
@@ -27,11 +27,11 @@ function pageMetaPlugin(): Plugin {
     writeBundle() {
       const template = readFileSync(resolve(outDir, 'index.html'), 'utf-8')
       // Azure ne sert /page/index.html pour /page que via une réécriture déclarée
-      const azureRoutes: string[] = JSON.parse(readFileSync('staticwebapp.config.json', 'utf-8'))
-        .routes.map((route: { route: string }) => route.route)
+      const azureRoutes = new Set<string>(JSON.parse(readFileSync('staticwebapp.config.json', 'utf-8'))
+        .routes.map((route: { route: string }) => route.route))
       for (const page of Object.values(pages)) {
         if (!('description' in page) || page.url === pages.code.url) continue
-        if (!azureRoutes.includes(page.url)) {
+        if (!azureRoutes.has(page.url)) {
           this.warn(`${page.url} : réécriture absente de staticwebapp.config.json`)
         }
         const title = escapeHtml(`${page.name} · ${APP_NAME}`)

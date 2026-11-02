@@ -1258,14 +1258,3 @@ import Article8Spe from "./Article8Spe.vue";
     </article>
 </template>
 
-<style scoped>
-.no-border {
-    border: none !important;
-}
-
-.no-border-bottom {
-    td {
-        border: none !important;
-    }
-}
-</style>
