@@ -72,6 +72,9 @@ export default defineConfig({
       injectRegister: 'auto',
       workbox: {
         globPatterns: ['**/*.{js,css,sass,html,ico,png,svg,webp,jpeg,JPG,jpg,woff2,woff,mp3,json}'],
+        // La police des icônes (@mdi/font) est appelée en « .woff2?v=7.4.47 » : sans ignorer ce « v »,
+        // le précache ne la reconnaît pas et les icônes deviennent des carrés hors ligne
+        ignoreURLParametersMatching: [/^utm_/, /^fbclid$/, /^v$/],
         // Tuiles de la carte des apérals : celles déjà vues restent disponibles hors ligne
         runtimeCaching: [
           {
