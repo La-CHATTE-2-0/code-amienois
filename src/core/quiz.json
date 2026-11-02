@@ -26,9 +26,15 @@
         },
         {
             "id": "croix",
-            "label": "Croix et spécificités amiénoises",
-            "description": "Grands Maîtres, évêque, bourreau et particularités d'Amiens.",
+            "label": "Les croix",
+            "description": "Grand Maître, Grand Chambellan, bourreau et évêque.",
             "icon": "mdi-cross"
+        },
+        {
+            "id": "amiens",
+            "label": "Spécificités amiénoises",
+            "description": "Velours, retraite des croix, évêché et particularités d'Amiens.",
+            "icon": "mdi-map-marker-outline"
         }
     ],
     "questions": [
@@ -1662,7 +1668,7 @@
         },
         {
             "id": "x04",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "À Amiens, qui choisit les futures croix ?",
             "answers": [
                 "Les croix partant à la retraite",
@@ -1689,7 +1695,7 @@
         },
         {
             "id": "x07",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Que deviennent les croix amiénoises au départ en retraite d'un GM ?",
             "answers": [
                 "La croix historique est donnée au nouvel intronisé",
@@ -1702,7 +1708,7 @@
         },
         {
             "id": "x08",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "À Amiens, où une croix partant à la retraite place-t-elle sa croix neuve ?",
             "answers": [
                 "Du côté personnel (à droite)",
@@ -1714,7 +1720,7 @@
         },
         {
             "id": "x09",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "À Amiens, quel insigne met un GM à la retraite s'il n'a jamais été GC ?",
             "answers": ["Une tête de mort", "Un soleil", "Une lune", "Une palme"],
             "explanation": "Il met un soleil uniquement s'il a été GC avant (tête de mort sur fémurs croisés pour les pharmaciens).",
@@ -1786,7 +1792,7 @@
         },
         {
             "id": "x16",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Comment se distingue l'évêché à Amiens ?",
             "image": "/images/insigne/eveque.png",
             "imageRevealsAnswer": true,
@@ -1801,7 +1807,7 @@
         },
         {
             "id": "x17",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "À Amiens, en quelle matière sont les rubans supérieurs ?",
             "answers": ["En velours", "En satin", "En toile", "En soie"],
             "explanation": "En hommage au passé de ville tisserande (coloriste) d'Amiens.",
@@ -1809,7 +1815,7 @@
         },
         {
             "id": "x18",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Pourquoi les rubans supérieurs sont-ils en velours à Amiens ?",
             "answers": [
                 "En hommage au passé de ville tisserande d'Amiens",
@@ -1821,7 +1827,7 @@
         },
         {
             "id": "x19",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Quelles villes ont repris les rubans supérieurs en velours en hommage à Amiens ?",
             "answers": ["Reims et Dijon", "Lille et Rouen", "Paris et Troyes", "Rouen et Clermont-Ferrand"],
             "explanation": "Reims pour l'organisation du Centenaire, Dijon pour les États généraux.",
@@ -1829,7 +1835,7 @@
         },
         {
             "id": "x20",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Quelles sont les couleurs de la ville d'Amiens ?",
             "image": "/images/ecussons/amiens.png",
             "imageRevealsAnswer": true,
@@ -1839,14 +1845,14 @@
         },
         {
             "id": "x21",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Que doivent laisser visible les pharmaciens d'Amiens sur leurs rubans ?",
             "answers": ["Les angles des rubans", "Le haut des écussons", "Les coutures", "L'extrémité occipitale"],
             "source": "/#article-10"
         },
         {
             "id": "x22",
-            "theme": "croix",
+            "theme": "amiens",
             "question": "Si tu as une ville d'études après Amiens, que fais-tu ?",
             "answers": [
                 "Remonter l'écusson d'Amiens et placer la nouvelle ville en dessous",

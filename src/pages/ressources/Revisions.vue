@@ -107,7 +107,7 @@ function backToThemes() {
         <template v-if="!theme">
             <p class="mb-4">
                 Teste tes connaissances sur le Code et les spécificités
-                amiénoises : {{ QUESTIONS_PER_GAME }} questions tirées au hasard
+                amiénoises : jusqu'à {{ QUESTIONS_PER_GAME }} questions tirées au hasard
                 par partie. Il peut y avoir des erreurs, n'hésite pas à les signaler
                 (Claude Code n'est pas parfait).
             </p>
@@ -126,7 +126,7 @@ function backToThemes() {
                             <span v-if="best[t.id] >= 0">
                                 Record : {{ best[t.id] }}
                                 <template v-if="t.id !== SURVIVOR">
-                                    / {{ QUESTIONS_PER_GAME }}
+                                    / {{ Math.min(countOf(t.id), QUESTIONS_PER_GAME) }}
                                 </template>
                             </span>
                         </span>
