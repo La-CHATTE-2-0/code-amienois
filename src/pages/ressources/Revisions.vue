@@ -2,6 +2,8 @@
 import { computed, ref, watch } from "vue";
 import quiz from "../../core/quiz.json";
 import QuizCard from "../../components/quiz/QuizCard.vue";
+import QuizVisual from "../../components/quiz/QuizVisual.vue";
+import { IMAGES_THEME, imageQuestionCount, imageQuestions } from "../../core/quizImages";
 import { QuizQuestion, QuizRound, QuizTheme } from "../../types/quizTypes";
 
 const ALL = "tout";
@@ -22,6 +24,12 @@ const modes: QuizTheme[] = [
         icon: "mdi-shuffle-variant",
     },
     {
+        id: IMAGES_THEME,
+        label: "Quiz en images",
+        description: "Insignes, emblèmes et couleurs de circulaire à reconnaître.",
+        icon: "mdi-image-outline",
+    },
+    {
         id: SURVIVOR,
         label: "Survivor",
         description: "Toutes les questions, la partie s'arrête à la première erreur.",
@@ -35,9 +43,11 @@ const groups = [
 ];
 const questions: QuizQuestion[] = quiz.questions;
 
-const countOf = (themeId: string) =>
-    themeId === ALL || themeId === SURVIVOR
+const countOf = (themeId: string) => {
+    if (themeId === IMAGES_THEME) return imageQuestionCount;
+    return themeId === ALL || themeId === SURVIVOR
         ? questions.length : questions.filter((q) => q.theme === themeId).length;
+};
 
 // Nombre de questions par partie, retenu sur l'appareil
 const savedCount = Number(localStorage.getItem("quiz-count") ?? 20);
@@ -100,10 +110,16 @@ const isLast = computed(
 );
 
 function start(selectedTheme: QuizTheme) {
-    const pool =
-        selectedTheme.id === ALL || selectedTheme.id === SURVIVOR
-            ? questions
-            : questions.filter((q) => q.theme === selectedTheme.id);
+    let pool: QuizQuestion[];
+    if (selectedTheme.id === IMAGES_THEME) {
+        // Mauvaises réponses retirées au sort à chaque partie
+        pool = imageQuestions();
+    } else {
+        pool =
+            selectedTheme.id === ALL || selectedTheme.id === SURVIVOR
+                ? questions
+                : questions.filter((q) => q.theme === selectedTheme.id);
+    }
     theme.value = selectedTheme;
     rounds.value = shuffle(pool)
         .slice(0, gameSize(selectedTheme.id))
@@ -200,6 +216,7 @@ function backToThemes() {
                     color="primary"
                     height="6"
                     rounded
+                    :stop-indicator="false"
                     :aria-label="`Question ${index + 1} sur ${rounds.length}`"
                 />
             </div>
@@ -242,17 +259,15 @@ function backToThemes() {
                 <h2 id="quiz-missed" class="quiz-section-title">À revoir</h2>
                 <ul class="quiz-missed">
                     <li v-for="r in missed" :key="r.id">
-                        <img
-                            v-if="r.image"
-                            class="quiz-missed__image"
-                            :src="r.image"
-                            alt=""
-                            width="56"
-                            height="56"
-                        />
+                        <div v-if="r.image || r.circulaire" class="quiz-missed__image">
+                            <QuizVisual :round="r" :size="56" />
+                        </div>
                         <p class="quiz-missed__question">{{ r.question }}</p>
                         <p>
                             <v-icon icon="mdi-check-circle" size="small" color="success" />
+                            <template v-if="r.imageName">
+                                <strong>{{ r.imageName }}</strong> :
+                            </template>
                             {{ r.correct }}
                         </p>
                         <router-link :to="r.source" class="quiz-missed__source">
@@ -400,8 +415,6 @@ function backToThemes() {
 .quiz-missed__image {
     float: right;
     margin-left: 12px;
-    object-fit: contain;
-    border-radius: 5px;
 }
 
 .quiz-missed__question {

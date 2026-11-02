@@ -75,6 +75,7 @@ function handleReset() {
                 color="primary"
                 height="6"
                 rounded
+                :stop-indicator="false"
                 :aria-label="`${done} éléments prêts sur ${allItems.length}`"
             />
         </div>

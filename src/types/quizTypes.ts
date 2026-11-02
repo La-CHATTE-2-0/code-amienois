@@ -5,6 +5,11 @@ export type QuizTheme = {
     icon: string
 }
 
+export type QuizCirculaire = {
+    matiere: string
+    couleurs: string[]
+}
+
 // Dans le JSON, la première réponse est toujours la bonne (mélangée à l'affichage)
 export type QuizQuestion = {
     id: string
@@ -13,6 +18,12 @@ export type QuizQuestion = {
     image?: string
     // L'image montre la réponse (« Quel insigne… ») : elle n'apparaît qu'une fois la question répondue
     imageRevealsAnswer?: boolean
+    // Mode images : insigne retourné ou posé sur un ruban, ou bande de circulaire dessinée en CSS
+    // Nom de l'insigne ou de l'emblème, montré après la réponse pour qu'on le retienne
+    imageName?: string
+    imageRotate?: number
+    imageRuban?: string
+    circulaire?: QuizCirculaire
     answers: string[]
     explanation?: string
     source: string
