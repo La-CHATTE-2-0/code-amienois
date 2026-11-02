@@ -11,6 +11,8 @@ defineProps<{
 // Bande unie, en deux ou en trois couleurs, comme dans l'article 6
 const CONTAINERS: Record<number, string> = { 2: "demi", 3: "tiers" };
 const containerOf = (count: number) => CONTAINERS[count] ?? "";
+// Largeur maximale du ruban dans _circulaires.scss : au-delà, il se calerait à gauche
+const CIRCU_MAX_WIDTH = 250;
 </script>
 
 <template>
@@ -18,7 +20,7 @@ const containerOf = (count: number) => CONTAINERS[count] ?? "";
         v-if="round.circulaire"
         data-fal-table="circu"
         class="quiz-visual-circu"
-        :style="{ width: `${size * 2}px` }"
+        :style="{ width: `${Math.min(size * 2, CIRCU_MAX_WIDTH)}px` }"
     >
         <div
             v-for="(couleur, i) in round.circulaire.couleurs"
