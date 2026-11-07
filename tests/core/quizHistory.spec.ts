@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { QuizSession } from "../types/quizTypes";
+import { QuizSession } from "../../src/types/quizTypes";
 
 const KEY = "quiz-history";
 
@@ -18,7 +18,7 @@ const session = (id: string): QuizSession => ({
 const store = (value: unknown) => localStorage.setItem(KEY, JSON.stringify(value));
 
 // L'historique est lu au chargement du module : on le recharge pour chaque cas
-const loadModule = () => import("./quizHistory");
+const loadModule = () => import("../../src/core/quizHistory");
 
 describe("quizHistory", () => {
     beforeEach(() => {

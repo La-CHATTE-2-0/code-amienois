@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { mount } from "@vue/test-utils";
-import QuizScoreBar from "./QuizScoreBar.vue";
+import QuizScoreBar from "../../../src/components/quiz/QuizScoreBar.vue";
 
 const props = { label: "Histoire", correct: 3, wrong: 1, total: 10, position: 5 };
 

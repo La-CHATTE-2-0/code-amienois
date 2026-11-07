@@ -20,7 +20,8 @@ onMounted(() => {
         localStorage.setItem("theme", "system");
     }
 
-    theme.change(darkmode ?? "system");
+    // La transition de thème est purement visuelle : rien à attendre
+    void theme.change(darkmode ?? "system");
 });
 
 /*
