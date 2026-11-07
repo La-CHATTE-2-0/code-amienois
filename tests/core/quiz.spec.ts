@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import data from "./quiz.json";
+import data from "../../src/core/quiz.json";
 
 // Garde-fous sur le contenu du quiz, saisi à la main
 describe("quiz.json", () => {

@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { AperalColor, type Aperal } from "../types/aperalTypes";
-import { getAperalStatus, getDirectionsUrl, loadAperals } from "./aperalServices";
+import { AperalColor, type Aperal } from "../../src/types/aperalTypes";
+import { getAperalStatus, getDirectionsUrl, loadAperals } from "../../src/services/aperalServices";
 
 const aperal = (city: string, color?: AperalColor): Aperal => ({ city, color, places: [] });
 

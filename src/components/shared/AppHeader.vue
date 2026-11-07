@@ -68,7 +68,7 @@ const themeMode = ref(localStorage.getItem("theme") ?? "system");
 
 watch(themeMode, (mode) => {
     localStorage.setItem("theme", mode);
-    theme.change(mode);
+    void theme.change(mode);
 });
 </script>
 

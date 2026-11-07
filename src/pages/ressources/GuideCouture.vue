@@ -581,7 +581,7 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
 @media print {
     .guide__steps :deep(.v-expansion-panel-text) {
         /* v-show masque les panneaux fermés par un style inline, seul !important le surpasse */
-        display: block !important; /* NOSONAR */
+        display: block !important;
         height: auto;
     }
 

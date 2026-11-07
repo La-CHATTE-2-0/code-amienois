@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { IMAGES_THEME, imageQuestionCount, imageQuestions } from "./quizImages";
+import { IMAGES_THEME, imageQuestionCount, imageQuestions } from "../../src/core/quizImages";
 
 describe("imageQuestions", () => {
     const questions = imageQuestions();
