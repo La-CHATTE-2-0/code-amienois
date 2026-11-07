@@ -8,7 +8,10 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "check-prod": "vite build && vite preview"
+    "check-prod": "vite build && vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@vue-leaflet/vue-leaflet": "^0.10.1",
@@ -23,6 +26,9 @@
   "devDependencies": {
     "@mdi/font": "^7.4.47",
     "@vitejs/plugin-vue": "^6.0.10",
+    "@vitest/coverage-v8": "^5.1.0",
+    "@vue/test-utils": "^2.5.1",
+    "happy-dom": "^21.0.4",
     "sass": "^1.108.1",
     "sharp": "^0.35.5",
     "svgo": "^4.1.0",
@@ -30,6 +36,7 @@
     "vite": "^8.3.6",
     "vite-plugin-image-optimizer": "^2.0.3",
     "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.0",
     "vue-tsc": "^3.3.14"
   },
   "repository": {
