@@ -12,6 +12,50 @@ watch(lgAndUp, (large) => (drawerState.value = large));
 const route = useRoute();
 const isHome = computed(() => route.path === pages.code.url);
 
+// Entrées du menu : une page interne ou un lien externe ouvert dans un nouvel onglet
+type Page = (typeof pages)[keyof typeof pages];
+const pageItem = (prependIcon: string, page: Page) => ({ prependIcon, title: page.name, value: page.url, to: page.url });
+const linkItem = (prependIcon: string, title: string, href: string) => ({ prependIcon, title, href, target: "_blank" });
+
+const mainItems = [
+    pageItem("mdi-book-outline", pages.code),
+    pageItem("mdi-book-alert-outline", pages.recap_spe),
+    pageItem("mdi-head-question-outline", pages.revisions),
+];
+
+const sections = [
+    {
+        title: "Annexes",
+        items: [
+            pageItem("mdi-chess-pawn", pages.monome),
+            { ...linkItem("mdi-book-open-page-variant-outline", pages.rabelais.name, /*pages.rabelais.url*/ "https://ordrerabelaisien.be/rabelais"), value: pages.rabelais.url },
+            pageItem("mdi-glass-wine", pages.bacchus),
+            pageItem("mdi-glass-mug", pages.gambrinus),
+        ],
+    },
+    {
+        title: "Ressources",
+        items: [
+            pageItem("mdi-account-group", pages.notes_aux_pm),
+            pageItem("mdi-ribbon", pages.couleurs_rubans),
+            linkItem("mdi-music-clef-treble", "Bréviaire Youtube", "https://www.youtube.com/@nouveaubreviaireamienois111"),
+            pageItem("mdi-scissors-cutting", pages.guide_couture),
+            linkItem("mdi-link-variant", "Guide sécu'", "https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/"),
+            pageItem("mdi-format-list-bulleted", pages.checklist),
+        ],
+    },
+    {
+        title: "Vie étudiante",
+        items: [
+            pageItem("mdi-lifebuoy", pages.homme_bouee),
+            linkItem("mdi-cat", "La CHATTE 2.0", "https://linktr.ee/lachatte2.0"),
+            pageItem("mdi-eiffel-tower", pages.folklore_francais),
+            pageItem("mdi-earth", pages.folklore_etranger),
+            pageItem("mdi-map", pages.aperals),
+        ],
+    },
+];
+
 const theme = useTheme();
 
 // "system" suit le réglage clair/sombre de l'appareil (géré par Vuetify)
@@ -73,125 +117,12 @@ watch(themeMode, (mode) => {
         class="app-drawer"
     >
         <v-list density="compact" nav>
-            <v-list-item
-                prepend-icon="mdi-book-outline"
-                :title="pages.code.name"
-                :value="pages.code.url"
-                :to="pages.code.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-head-question-outline"
-                :title="pages.revisions.name"
-                :value="pages.revisions.url"
-                :to="pages.revisions.url"
-            ></v-list-item>
+            <v-list-item v-for="item in mainItems" :key="item.title" v-bind="item"></v-list-item>
         </v-list>
         <v-divider></v-divider>
-        <v-list>
-            <v-list-subheader>Annexes</v-list-subheader>
-            <v-list-item
-                prepend-icon="mdi-book-alert-outline"
-                :title="pages.recap_spe.name"
-                :value="pages.recap_spe.url"
-                :to="pages.recap_spe.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-chess-pawn"
-                :title="pages.monome.name"
-                :value="pages.monome.url"
-                :to="pages.monome.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-book-open-page-variant-outline"
-                :title="pages.rabelais.name"
-                :value="pages.rabelais.url"
-                target="_blank"
-                :href="/*pages.rabelais.url*/ 'https://ordrerabelaisien.be/rabelais'"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-glass-wine"
-                :title="pages.bacchus.name"
-                :value="pages.bacchus.url"
-                :to="pages.bacchus.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-glass-mug"
-                :title="pages.gambrinus.name"
-                :value="pages.gambrinus.url"
-                :to="pages.gambrinus.url"
-            ></v-list-item>
-        </v-list>
-        <v-list>
-            <v-list-subheader>Ressources</v-list-subheader>
-            <v-list-item
-                prepend-icon="mdi-account-group"
-                :title="pages.notes_aux_pm.name"
-                :value="pages.notes_aux_pm.url"
-                :to="pages.notes_aux_pm.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-ribbon"
-                :title="pages.couleurs_rubans.name"
-                :value="pages.couleurs_rubans.url"
-                :to="pages.couleurs_rubans.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-music-clef-treble"
-                target="_blank"
-                href="https://www.youtube.com/@nouveaubreviaireamienois111"
-                title="Bréviaire Youtube"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-scissors-cutting"
-                :title="pages.guide_couture.name"
-                :value="pages.guide_couture.url"
-                :to="pages.guide_couture.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-link-variant"
-                target="_blank"
-                href="https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/"
-                title="Guide sécu'"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-format-list-bulleted"
-                :title="pages.checklist.name"
-                :value="pages.checklist.url"
-                :to="pages.checklist.url"
-            ></v-list-item>
-        </v-list>
-        <v-list>
-            <v-list-subheader>Vie étudiante</v-list-subheader>
-            <v-list-item
-                prepend-icon="mdi-lifebuoy"
-                :title="pages.homme_bouee.name"
-                :value="pages.homme_bouee.url"
-                :to="pages.homme_bouee.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-cat"
-                target="_blank"
-                href="https://linktr.ee/lachatte2.0"
-                title="La CHATTE 2.0"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-eiffel-tower"
-                :title="pages.folklore_francais.name"
-                :value="pages.folklore_francais.url"
-                :to="pages.folklore_francais.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-earth"
-                :title="pages.folklore_etranger.name"
-                :value="pages.folklore_etranger.url"
-                :to="pages.folklore_etranger.url"
-            ></v-list-item>
-            <v-list-item
-                prepend-icon="mdi-map"
-                :title="pages.aperals.name"
-                :value="pages.aperals.url"
-                :to="pages.aperals.url"
-            ></v-list-item>
+        <v-list v-for="section in sections" :key="section.title">
+            <v-list-subheader>{{ section.title }}</v-list-subheader>
+            <v-list-item v-for="item in section.items" :key="item.title" v-bind="item"></v-list-item>
         </v-list>
 
         <template v-slot:append>
