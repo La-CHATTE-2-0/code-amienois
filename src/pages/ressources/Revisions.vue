@@ -2,9 +2,10 @@
 import { computed, ref, watch } from "vue";
 import quiz from "../../core/quiz.json";
 import QuizCard from "../../components/quiz/QuizCard.vue";
+import QuizHistoryDialog from "../../components/quiz/QuizHistoryDialog.vue";
 import QuizScoreBar from "../../components/quiz/QuizScoreBar.vue";
 import QuizVisual from "../../components/quiz/QuizVisual.vue";
-import { addSession } from "../../core/quizHistory";
+import { addSession, history } from "../../core/quizHistory";
 import { IMAGES_THEME, imageQuestionCount, imageQuestions } from "../../core/quizImages";
 import { QuizQuestion, QuizRound, QuizTheme } from "../../types/quizTypes";
 
@@ -95,6 +96,7 @@ const answers = ref<(string | null)[]>([]);
 const index = ref(0);
 const finished = ref(false);
 const startedAt = ref(new Date());
+const showHistory = ref(false);
 
 const survivor = computed(() => theme.value?.id === SURVIVOR);
 const current = computed(() => rounds.value[index.value]);
@@ -221,6 +223,15 @@ function backToThemes() {
                     </li>
                 </ul>
             </template>
+            <v-btn
+                v-if="history.length"
+                class="mt-6"
+                variant="tonal"
+                prepend-icon="mdi-history"
+                @click="showHistory = true"
+            >
+                Historique des parties
+            </v-btn>
         </template>
 
         <!-- Partie en cours -->
@@ -269,6 +280,15 @@ function backToThemes() {
                         sur {{ rounds.length }}
                     </template>
                 </p>
+                <v-btn
+                    class="mt-2"
+                    variant="text"
+                    size="small"
+                    prepend-icon="mdi-history"
+                    @click="showHistory = true"
+                >
+                    Voir l'historique
+                </v-btn>
             </section>
 
             <section v-if="missed.length" class="mt-6" aria-labelledby="quiz-missed">
@@ -300,6 +320,8 @@ function backToThemes() {
                 </v-btn>
             </div>
         </template>
+
+        <QuizHistoryDialog v-model="showHistory" :themes="themes" :survivor-id="SURVIVOR" />
     </v-container>
 </template>
 
