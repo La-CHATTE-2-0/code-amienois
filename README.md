@@ -42,6 +42,20 @@ Previsualiser le build:
 npm run preview
 ```
 
+Lancer les tests:
+
+```bash
+npm test
+```
+
+Couverture de code:
+
+```bash
+npm run test:coverage
+```
+
+Le rapport HTML est genere dans `coverage/index.html`. En CI (workflow `Node.js CI`), la couverture est affichee dans le resume du job, commentee sur chaque PR vers `main`, et le rapport HTML est telechargeable dans les artefacts du run (`coverage-report`).
+
 Build + preview (sanity check):
 
 ```bash

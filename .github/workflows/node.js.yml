@@ -9,6 +9,10 @@ on:
     pull_request:
         branches: ["main"]
 
+permissions:
+    contents: read
+    pull-requests: write
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -26,5 +30,15 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "npm"
             - run: npm ci --ignore-scripts
-            - run: npm test
+            - run: npm run test:coverage
+            - name: Rapport de couverture (résumé du job + commentaire de PR)
+              if: always()
+              uses: davelosert/vitest-coverage-report-action@v2
+            - name: Publier le rapport HTML de couverture
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: coverage-report
+                  path: coverage/
+                  retention-days: 14
             - run: npm run build --if-present

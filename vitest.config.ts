@@ -16,7 +16,10 @@ export default defineConfig({
       provider: 'v8',
       include: ['src/**/*.{ts,vue}'],
       exclude: ['src/**/*.spec.ts', 'src/test/**'],
-      reporter: ['text', 'html', 'lcov'],
+      // json-summary/json : lus par l'action GitHub qui commente les PR
+      reporter: ['text', 'html', 'lcov', 'json-summary', 'json'],
+      // Génère le rapport même si un test échoue (utile en CI)
+      reportOnFailure: true,
     },
   },
 })
