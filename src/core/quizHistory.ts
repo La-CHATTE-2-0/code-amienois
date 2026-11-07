@@ -22,16 +22,22 @@ const isSession = (s: any): s is QuizSession =>
     typeof s.wrong === "number" &&
     Array.isArray(s.missed);
 
-function load(): QuizSession[] {
-    let stored: Stored;
+function read(): Stored | null {
     try {
-        stored = JSON.parse(localStorage.getItem(KEY) ?? "null");
+        const stored = JSON.parse(localStorage.getItem(KEY) ?? "null");
+        return stored && Array.isArray(stored.sessions) ? stored : null;
     } catch {
-        return [];
+        return null;
     }
-    if (!stored || !Array.isArray(stored.sessions)) return [];
-    // Écrit par une version plus récente de l'app : on lit sans rien toucher
-    if (!(stored.version <= VERSION)) return [];
+}
+
+// Écrit par une version plus récente de l'app (ancien cache PWA) : on n'y touche pas
+const fromNewerVersion = (stored: Stored | null) =>
+    typeof stored?.version === "number" && stored.version > VERSION;
+
+function load(): QuizSession[] {
+    const stored = read();
+    if (!stored || typeof stored.version !== "number" || fromNewerVersion(stored)) return [];
     let sessions = stored.sessions;
     for (let v = stored.version; v < VERSION; v++) {
         sessions = migrations[v]?.(sessions) ?? sessions;
@@ -40,6 +46,7 @@ function load(): QuizSession[] {
 }
 
 function save(sessions: QuizSession[]) {
+    if (fromNewerVersion(read())) return;
     const write = (list: QuizSession[]) =>
         localStorage.setItem(KEY, JSON.stringify({ version: VERSION, sessions: list }));
     try {

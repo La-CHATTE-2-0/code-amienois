@@ -35,7 +35,8 @@ const sessions = computed(() =>
 );
 
 const isSurvivor = (s: QuizSession) => s.theme === props.survivorId;
-const scored = computed(() => sessions.value.filter((s) => !isSurvivor(s)));
+// Les parties d'erreurs ne reprennent que des questions ratées : elles fausseraient la moyenne
+const scored = computed(() => sessions.value.filter((s) => !isSurvivor(s) && !s.replay));
 const average = computed(() => {
     const total = scored.value.reduce((sum, s) => sum + s.total, 0);
     const correct = scored.value.reduce((sum, s) => sum + s.correct, 0);
