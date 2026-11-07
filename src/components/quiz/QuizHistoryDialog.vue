@@ -2,11 +2,17 @@
 import { computed, ref } from "vue";
 import { useDisplay } from "vuetify";
 import { clearHistory, history } from "../../core/quizHistory";
-import { QuizSession, QuizTheme } from "../../types/quizTypes";
+import { QuizQuestion, QuizSession, QuizTheme } from "../../types/quizTypes";
 
 const props = defineProps<{
     themes: QuizTheme[];
     survivorId: string;
+    // Questions ratées encore présentes dans le quiz
+    replayable: (ids: string[]) => QuizQuestion[];
+}>();
+
+const emit = defineEmits<{
+    replay: [session: QuizSession];
 }>();
 
 const open = defineModel<boolean>({ default: false });
@@ -152,7 +158,20 @@ function clear() {
                                         <template v-if="!isSurvivor(s)">· {{ s.total }} questions</template>
                                     </span>
                                 </span>
-                                <span class="quiz-history__score">{{ scoreLabel(s) }}</span>
+                                <span class="quiz-history__end">
+                                    <span class="quiz-history__score">{{ scoreLabel(s) }}</span>
+                                    <v-btn
+                                        v-if="replayable(s.missed).length"
+                                        variant="text"
+                                        size="small"
+                                        density="comfortable"
+                                        prepend-icon="mdi-restore"
+                                        :aria-label="`Rejouer les erreurs de la partie de ${timeLabel(s.endedAt)}`"
+                                        @click="emit('replay', s)"
+                                    >
+                                        Rejouer
+                                    </v-btn>
+                                </span>
                             </li>
                         </ul>
                     </section>
@@ -257,8 +276,14 @@ function clear() {
     color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
 }
 
-.quiz-history__score {
+.quiz-history__end {
+    display: flex;
     flex: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.quiz-history__score {
     font-weight: 600;
 }
 </style>
