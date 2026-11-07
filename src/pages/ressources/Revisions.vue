@@ -4,6 +4,7 @@ import quiz from "../../core/quiz.json";
 import QuizCard from "../../components/quiz/QuizCard.vue";
 import QuizScoreBar from "../../components/quiz/QuizScoreBar.vue";
 import QuizVisual from "../../components/quiz/QuizVisual.vue";
+import { addSession } from "../../core/quizHistory";
 import { IMAGES_THEME, imageQuestionCount, imageQuestions } from "../../core/quizImages";
 import { QuizQuestion, QuizRound, QuizTheme } from "../../types/quizTypes";
 
@@ -93,6 +94,7 @@ const rounds = ref<QuizRound[]>([]);
 const answers = ref<(string | null)[]>([]);
 const index = ref(0);
 const finished = ref(false);
+const startedAt = ref(new Date());
 
 const survivor = computed(() => theme.value?.id === SURVIVOR);
 const current = computed(() => rounds.value[index.value]);
@@ -132,6 +134,7 @@ function start(selectedTheme: QuizTheme) {
     answers.value = rounds.value.map(() => null);
     index.value = 0;
     finished.value = false;
+    startedAt.value = new Date();
     window.scrollTo({ top: 0 });
 }
 
@@ -141,6 +144,18 @@ function next() {
         return;
     }
     finished.value = true;
+    // Seules les parties menées au bout entrent dans l'historique
+    addSession({
+        id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        startedAt: startedAt.value.toISOString(),
+        endedAt: new Date().toISOString(),
+        theme: theme.value!.id,
+        count: questionCount.value,
+        total: rounds.value.length,
+        correct: score.value,
+        wrong: wrong.value,
+        missed: theme.value!.id === IMAGES_THEME ? [] : missed.value.map((r) => r.id),
+    });
     const key = bestKey(theme.value!.id, questionCount.value);
     if (score.value > records.value[key]) {
         records.value[key] = score.value;
