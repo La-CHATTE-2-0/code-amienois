@@ -2,7 +2,10 @@
 import { computed, ref, watch } from "vue";
 import quiz from "../../core/quiz.json";
 import QuizCard from "../../components/quiz/QuizCard.vue";
+import QuizHistoryDialog from "../../components/quiz/QuizHistoryDialog.vue";
+import QuizScoreBar from "../../components/quiz/QuizScoreBar.vue";
 import QuizVisual from "../../components/quiz/QuizVisual.vue";
+import { addSession, history } from "../../core/quizHistory";
 import { IMAGES_THEME, imageQuestionCount, imageQuestions } from "../../core/quizImages";
 import { QuizQuestion, QuizRound, QuizTheme } from "../../types/quizTypes";
 
@@ -92,8 +95,15 @@ const rounds = ref<QuizRound[]>([]);
 const answers = ref<(string | null)[]>([]);
 const index = ref(0);
 const finished = ref(false);
+const startedAt = ref(new Date());
+const showHistory = ref(false);
+// Partie « Rejouer mes erreurs » : toujours en mode normal, sans record
+const replaying = ref(false);
 
-const survivor = computed(() => theme.value?.id === SURVIVOR);
+const survivor = computed(() => theme.value?.id === SURVIVOR && !replaying.value);
+const gameLabel = computed(() =>
+    replaying.value ? `${theme.value?.label} · erreurs` : theme.value?.label ?? ""
+);
 const current = computed(() => rounds.value[index.value]);
 // En survivor, la partie peut s'arrêter avant la dernière question
 const played = computed(() => rounds.value.slice(0, index.value + 1));
@@ -102,6 +112,10 @@ const score = computed(
 );
 const missed = computed(() =>
     played.value.filter((r, i) => answers.value[i] !== r.correct)
+);
+// Compté dès le clic, sans attendre la question suivante
+const wrong = computed(
+    () => played.value.filter((r, i) => answers.value[i] && answers.value[i] !== r.correct).length
 );
 const isLast = computed(
     () =>
@@ -120,13 +134,27 @@ function start(selectedTheme: QuizTheme) {
                 ? questions
                 : questions.filter((q) => q.theme === selectedTheme.id);
     }
+    launch(selectedTheme, shuffle(pool).slice(0, gameSize(selectedTheme.id)), false);
+}
+
+// Questions ratées encore présentes dans le quiz (le mode images n'en garde pas)
+const replayable = (ids: string[]) => questions.filter((q) => ids.includes(q.id));
+
+function replayErrors(themeId: string, ids: string[]) {
+    const pool = replayable(ids);
+    if (!pool.length) return;
+    showHistory.value = false;
+    launch(themes.find((t) => t.id === themeId) ?? modes[0], shuffle(pool), true);
+}
+
+function launch(selectedTheme: QuizTheme, pool: QuizQuestion[], replay: boolean) {
     theme.value = selectedTheme;
-    rounds.value = shuffle(pool)
-        .slice(0, gameSize(selectedTheme.id))
-        .map((q) => ({ ...q, correct: q.answers[0], choices: shuffle(q.answers) }));
+    replaying.value = replay;
+    rounds.value = pool.map((q) => ({ ...q, correct: q.answers[0], choices: shuffle(q.answers) }));
     answers.value = rounds.value.map(() => null);
     index.value = 0;
     finished.value = false;
+    startedAt.value = new Date();
     window.scrollTo({ top: 0 });
 }
 
@@ -136,11 +164,30 @@ function next() {
         return;
     }
     finished.value = true;
+    // Seules les parties menées au bout entrent dans l'historique
+    addSession({
+        id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        startedAt: startedAt.value.toISOString(),
+        endedAt: new Date().toISOString(),
+        theme: theme.value!.id,
+        count: questionCount.value,
+        total: rounds.value.length,
+        correct: score.value,
+        wrong: wrong.value,
+        missed: theme.value!.id === IMAGES_THEME ? [] : missed.value.map((r) => r.id),
+        ...(replaying.value && { replay: true }),
+    });
+    if (replaying.value) return;
     const key = bestKey(theme.value!.id, questionCount.value);
     if (score.value > records.value[key]) {
         records.value[key] = score.value;
         localStorage.setItem(key, String(score.value));
     }
+}
+
+function restart() {
+    if (replaying.value) replayErrors(theme.value!.id, rounds.value.map((r) => r.id));
+    else start(theme.value!);
 }
 
 function backToThemes() {
@@ -201,25 +248,27 @@ function backToThemes() {
                     </li>
                 </ul>
             </template>
+            <v-btn
+                v-if="history.length"
+                class="mt-6"
+                variant="tonal"
+                prepend-icon="mdi-history"
+                @click="showHistory = true"
+            >
+                Historique des parties
+            </v-btn>
         </template>
 
         <!-- Partie en cours -->
         <template v-else-if="!finished">
-            <div class="quiz-progress" aria-live="polite">
-                <div class="quiz-progress__label">
-                    <span>{{ theme.label }}</span>
-                    <span v-if="survivor">Série : {{ score }}</span>
-                    <span v-else>{{ index + 1 }} / {{ rounds.length }}</span>
-                </div>
-                <v-progress-linear
-                    :model-value="((index + (answers[index] ? 1 : 0)) / rounds.length) * 100"
-                    color="primary"
-                    height="6"
-                    rounded
-                    :stop-indicator="false"
-                    :aria-label="`Question ${index + 1} sur ${rounds.length}`"
-                />
-            </div>
+            <QuizScoreBar
+                :label="gameLabel"
+                :correct="score"
+                :wrong="wrong"
+                :total="rounds.length"
+                :position="index + 1"
+                :survivor="survivor"
+            />
 
             <QuizCard
                 :key="current.id"
@@ -247,12 +296,24 @@ function backToThemes() {
                     {{ score }}<template v-if="!survivor"> / {{ rounds.length }}</template>
                 </p>
                 <p class="text-medium-emphasis">
-                    {{ theme.label }}
-                    <template v-if="survivor">
+                    {{ gameLabel }}
+                    <template v-if="!survivor">
+                        · {{ Math.round((score / rounds.length) * 100) }} % de réussite
+                    </template>
+                    <template v-else>
                         : {{ score > 1 ? "bonnes réponses" : "bonne réponse" }} d'affilée
                         sur {{ rounds.length }}
                     </template>
                 </p>
+                <v-btn
+                    class="mt-2"
+                    variant="text"
+                    size="small"
+                    prepend-icon="mdi-history"
+                    @click="showHistory = true"
+                >
+                    Voir l'historique
+                </v-btn>
             </section>
 
             <section v-if="missed.length" class="mt-6" aria-labelledby="quiz-missed">
@@ -275,15 +336,32 @@ function backToThemes() {
                         </router-link>
                     </li>
                 </ul>
+                <v-btn
+                    v-if="theme.id !== IMAGES_THEME"
+                    class="mt-3"
+                    variant="tonal"
+                    prepend-icon="mdi-restore"
+                    @click="replayErrors(theme.id, missed.map((r) => r.id))"
+                >
+                    Rejouer {{ missed.length > 1 ? "ces erreurs" : "cette erreur" }}
+                </v-btn>
             </section>
 
             <div class="quiz-actions">
                 <v-btn variant="text" @click="backToThemes">Changer de thème</v-btn>
-                <v-btn color="primary" prepend-icon="mdi-refresh" @click="start(theme)">
+                <v-btn color="primary" prepend-icon="mdi-refresh" @click="restart">
                     Rejouer
                 </v-btn>
             </div>
         </template>
+
+        <QuizHistoryDialog
+            v-model="showHistory"
+            :themes="themes"
+            :survivor-id="SURVIVOR"
+            :replayable="replayable"
+            @replay="(s) => replayErrors(s.theme, s.missed)"
+        />
     </v-container>
 </template>
 
@@ -367,18 +445,6 @@ function backToThemes() {
 }
 
 .quiz-count__label {
-    font-weight: 600;
-}
-
-.quiz-progress {
-    margin-bottom: 1.5rem;
-}
-
-.quiz-progress__label {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6px;
-    font-size: 0.875rem;
     font-weight: 600;
 }
 
