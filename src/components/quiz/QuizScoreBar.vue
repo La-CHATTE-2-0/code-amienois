@@ -13,18 +13,17 @@ const props = defineProps<{
 }>();
 
 const percent = (n: number) => (props.total ? (n / props.total) * 100 : 0);
-const summary = computed(() =>
-    props.survivor
-        ? `Série de ${props.correct}`
-        : `${props.correct} ${props.correct > 1 ? "bonnes" : "bonne"}, ` +
-          `${props.wrong} ${props.wrong > 1 ? "fausses" : "fausse"}, ` +
-          `question ${props.position} sur ${props.total}`
-);
+const plural = (n: number, word: string) => `${n} ${word}${n > 1 ? "s" : ""}`;
+const summary = computed(() => {
+    if (props.survivor) return `Série de ${props.correct}`;
+    return `${plural(props.correct, "bonne")}, ${plural(props.wrong, "fausse")}, ` +
+        `question ${props.position} sur ${props.total}`;
+});
 </script>
 
 <template>
-    <div class="quiz-score" aria-live="polite" :aria-label="summary" role="status">
-        <div class="quiz-score__label" aria-hidden="true">
+    <output class="quiz-score" aria-live="polite" :aria-label="summary">
+        <span class="quiz-score__label" aria-hidden="true">
             <span class="quiz-score__theme">{{ label }}</span>
             <span v-if="survivor">Série : {{ correct }}</span>
             <span v-else class="quiz-score__counts">
@@ -36,22 +35,23 @@ const summary = computed(() =>
                 </span>
                 <span class="quiz-score__position">{{ position }} / {{ total }}</span>
             </span>
-        </div>
-        <div class="quiz-score__bar" aria-hidden="true">
-            <div
+        </span>
+        <span class="quiz-score__bar" aria-hidden="true">
+            <span
                 class="quiz-score__segment quiz-score__segment--correct"
                 :style="{ width: `${percent(correct)}%` }"
             />
-            <div
+            <span
                 class="quiz-score__segment quiz-score__segment--wrong"
                 :style="{ width: `${percent(wrong)}%` }"
             />
-        </div>
-    </div>
+        </span>
+    </output>
 </template>
 
 <style scoped>
 .quiz-score {
+    display: block;
     margin-bottom: 1.5rem;
 }
 
