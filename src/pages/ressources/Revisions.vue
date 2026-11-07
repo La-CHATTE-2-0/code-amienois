@@ -2,6 +2,7 @@
 import { computed, ref, watch } from "vue";
 import quiz from "../../core/quiz.json";
 import QuizCard from "../../components/quiz/QuizCard.vue";
+import QuizScoreBar from "../../components/quiz/QuizScoreBar.vue";
 import QuizVisual from "../../components/quiz/QuizVisual.vue";
 import { IMAGES_THEME, imageQuestionCount, imageQuestions } from "../../core/quizImages";
 import { QuizQuestion, QuizRound, QuizTheme } from "../../types/quizTypes";
@@ -102,6 +103,10 @@ const score = computed(
 );
 const missed = computed(() =>
     played.value.filter((r, i) => answers.value[i] !== r.correct)
+);
+// Compté dès le clic, sans attendre la question suivante
+const wrong = computed(
+    () => played.value.filter((r, i) => answers.value[i] && answers.value[i] !== r.correct).length
 );
 const isLast = computed(
     () =>
@@ -205,21 +210,14 @@ function backToThemes() {
 
         <!-- Partie en cours -->
         <template v-else-if="!finished">
-            <div class="quiz-progress" aria-live="polite">
-                <div class="quiz-progress__label">
-                    <span>{{ theme.label }}</span>
-                    <span v-if="survivor">Série : {{ score }}</span>
-                    <span v-else>{{ index + 1 }} / {{ rounds.length }}</span>
-                </div>
-                <v-progress-linear
-                    :model-value="((index + (answers[index] ? 1 : 0)) / rounds.length) * 100"
-                    color="primary"
-                    height="6"
-                    rounded
-                    :stop-indicator="false"
-                    :aria-label="`Question ${index + 1} sur ${rounds.length}`"
-                />
-            </div>
+            <QuizScoreBar
+                :label="theme.label"
+                :correct="score"
+                :wrong="wrong"
+                :total="rounds.length"
+                :position="index + 1"
+                :survivor="survivor"
+            />
 
             <QuizCard
                 :key="current.id"
@@ -248,7 +246,10 @@ function backToThemes() {
                 </p>
                 <p class="text-medium-emphasis">
                     {{ theme.label }}
-                    <template v-if="survivor">
+                    <template v-if="!survivor">
+                        · {{ Math.round((score / rounds.length) * 100) }} % de réussite
+                    </template>
+                    <template v-else>
                         : {{ score > 1 ? "bonnes réponses" : "bonne réponse" }} d'affilée
                         sur {{ rounds.length }}
                     </template>
@@ -367,18 +368,6 @@ function backToThemes() {
 }
 
 .quiz-count__label {
-    font-weight: 600;
-}
-
-.quiz-progress {
-    margin-bottom: 1.5rem;
-}
-
-.quiz-progress__label {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6px;
-    font-size: 0.875rem;
     font-weight: 600;
 }
 
