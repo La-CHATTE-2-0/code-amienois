@@ -46,7 +46,7 @@ describe("Revisions", () => {
         const wrapper = await mountPage();
         expect(wrapper.text()).toContain("Tout mélanger");
         expect(wrapper.text()).toContain("Survivor");
-        expect(wrapper.findAll(".quiz-theme").length).toBe(quiz.themes.length + 3);
+        expect(wrapper.findAll(".quiz-theme")).toHaveLength(quiz.themes.length + 3);
         expect(wrapper.text()).not.toContain("Historique des parties");
     });
 
