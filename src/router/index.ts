@@ -86,6 +86,12 @@ const routes = [
         meta: { layout: "Main" },
     },
     {
+        path: pages.guide_secu.url,
+        name: pages.guide_secu.name,
+        component: () => import("../pages/ressources/GuideSecu.vue"),
+        meta: { layout: "Main" },
+    },
+    {
         path: pages.codex.url,
         name: pages.codex.name,
         component: () => import("../pages/Codex.vue"),

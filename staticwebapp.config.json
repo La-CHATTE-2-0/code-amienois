@@ -49,6 +49,10 @@
             "rewrite": "/guide-couture/index.html"
         },
         {
+            "route": "/guide-secu",
+            "rewrite": "/guide-secu/index.html"
+        },
+        {
             "route": "/codex",
             "rewrite": "/codex/index.html"
         },

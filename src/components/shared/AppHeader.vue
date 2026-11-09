@@ -40,7 +40,7 @@ const sections = [
             pageItem("mdi-ribbon", pages.couleurs_rubans),
             linkItem("mdi-music-clef-treble", "Bréviaire Youtube", "https://www.youtube.com/@nouveaubreviaireamienois111"),
             pageItem("mdi-scissors-cutting", pages.guide_couture),
-            linkItem("mdi-link-variant", "Guide sécu'", "https://docs.google.com/document/d/1Lc3zIimxY69m4PNlj290KviCkRV2fqpdqFIUsNVNC94/"),
+            pageItem("mdi-link-lock", pages.guide_secu),
             pageItem("mdi-format-list-bulleted", pages.checklist),
         ],
     },
