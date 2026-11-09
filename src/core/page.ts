@@ -68,6 +68,11 @@ const pages = {
         url: '/guide-couture',
         description: 'Guide de couture d\'une faluche, étape par étape, des points de base au circulaire.'
     },
+    guide_secu: {
+        name: 'Guide Sécu\'',
+        url: '/guide-secu',
+        description: 'Guide sécu\' pour la faluche : sangle ou œillet, chaîne et étapes pour fabriquer sa sécu\'.'
+    },
     codex: {
         name: 'Codex',
         url: '/codex',
