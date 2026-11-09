@@ -1,0 +1,115 @@
+// ============================================
+// IMPRESSION / EXPORT PDF (Ctrl+P)
+// ============================================
+//
+// Seule source des règles d'impression communes à toute l'application.
+// Importé en dernier dans main.ts pour passer après Vuetify et les styles de base.
+//
+// - Masquer un bloc à l'impression : classe Vuetify `d-print-none`.
+// - Images en chargement différé : core/imagesImpression.ts les charge avant l'impression.
+// - Règles propres à une page (ex. étapes dépliées du guide couture) : dans le composant.
+
+@page {
+    margin: 12mm 14mm;
+}
+
+@media print {
+    // --- Interface de l'application : rien que le contenu de la page ---
+    .skip-link,
+    .v-app-bar,
+    .v-navigation-drawer,
+    .v-footer,
+    .v-btn,
+    .v-overlay-container {
+        display: none !important;
+    }
+
+    // Vuetify réserve la place de la barre et du menu par des variables de layout
+    .v-main,
+    .main-content,
+    .main-content .v-container {
+        width: 100% !important;
+        max-width: none;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    // --- Rendu clair sur papier, quel que soit le thème affiché à l'écran ---
+    // App.vue pose color-scheme en style inline sur <html> : seul !important le surpasse
+    html {
+        color-scheme: light !important;
+    }
+
+    :root,
+    .v-theme--light,
+    .v-theme--dark {
+        --v-theme-background: 255, 255, 255 !important;
+        --v-theme-surface: 255, 255, 255 !important;
+        --v-theme-on-background: 0, 0, 0 !important;
+        --v-theme-on-surface: 0, 0, 0 !important;
+        --v-high-emphasis-opacity: 1 !important;
+        --v-medium-emphasis-opacity: 0.85 !important;
+        --v-border-color: 0, 0, 0 !important;
+        --v-border-opacity: 0.45 !important;
+    }
+
+    // Encarts « Spécificités » : teinte claire, assortie au fond blanc.
+    // La variable est posée sur l'encart lui-même (_tables.scss), on la redéfinit donc au même niveau.
+    .table-warning-fal,
+    .v-theme--dark .table-warning-fal {
+        --fal-warning: var(--fal-warning-light) !important;
+    }
+
+    html,
+    body,
+    .v-application {
+        background: #fff !important;
+        color: #000;
+    }
+
+    // Les navigateurs retirent les fonds à l'impression : rubans, insignes et encarts les gardent
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .main-content * {
+        box-shadow: none !important;
+    }
+
+    // --- Panneaux dépliables : tout le contenu sur papier ---
+    // Le contenu doit être rendu même fermé : <v-expansion-panel-text eager>.
+    // v-show le masque par un style inline, seul !important le surpasse.
+    .v-expansion-panel-text {
+        display: block !important;
+        height: auto !important;
+    }
+
+    .v-expansion-panel-title__icon {
+        display: none;
+    }
+
+    // --- Mise en page : éviter les coupures qui gênent la lecture ---
+    h1,
+    h2,
+    h3,
+    .fal-table-title {
+        break-after: avoid;
+    }
+
+    tr,
+    figure,
+    img,
+    [data-fal-circu-container] {
+        break-inside: avoid;
+    }
+
+    // L'en-tête d'un tableau se répète en haut de chaque page
+    thead {
+        display: table-header-group;
+    }
+
+    .main-content a:where(:not(.v-btn, .v-list-item)) {
+        color: inherit;
+    }
+}

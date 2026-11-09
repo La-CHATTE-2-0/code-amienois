@@ -32,7 +32,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
 
 <template>
     <v-container>
-        <Birthday></Birthday>
+        <Birthday class="d-print-none"></Birthday>
         <ArticleToc :articles="sommaire" class="mt-3" />
         <Article0 id="article-0" class="mt-3"></Article0>
         <Article1 id="article-1" class="mt-3"></Article1>
@@ -66,7 +66,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
 
         <PartiesFal class="my-8" />
 
-        <v-card class="mx-auto mt-5 no-print" variant="flat">
+        <v-card class="mx-auto mt-5 d-print-none" variant="flat">
             <v-img alt="Portrait de François Rabelais"
                 height="auto"
                 src="/images/other/rabelais-portrait.jpg"
@@ -107,7 +107,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
             </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto mt-5 no-print" variant="flat">
+        <v-card class="mx-auto mt-5 d-print-none" variant="flat">
             <v-img alt="Faluchards portant la faluche Honoris Causa"
                 height="auto"
                 src="/images/carousel/honoris.jpg"
@@ -131,7 +131,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
             </v-card-text>
         </v-card>
 
-        <v-card class="mx-auto mt-5 no-print" variant="flat">
+        <v-card class="mx-auto mt-5 d-print-none" variant="flat">
             <v-img
                 height="auto"
                 src="/images/carousel/marie_sans_chemise.jpg"
@@ -163,7 +163,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
             </template>
         </v-card>
 
-        <v-card class="mx-auto my-5 no-print" variant="flat">
+        <v-card class="mx-auto my-5 d-print-none" variant="flat">
             <v-img
                 height="auto"
                 src="/images/carousel/chatte.jpg"

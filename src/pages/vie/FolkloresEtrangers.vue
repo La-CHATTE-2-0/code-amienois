@@ -33,7 +33,7 @@ function allerA(id: string) {
                 exhaustive.
             </p>
 
-            <nav class="folklore-sommaire" aria-label="Traditions présentées">
+            <nav class="folklore-sommaire d-print-none" aria-label="Traditions présentées">
                 <v-chip
                     v-for="tradition in traditions"
                     :key="tradition.id"

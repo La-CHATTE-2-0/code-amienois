@@ -1182,7 +1182,7 @@ import Article8Spe from "./Article8Spe.vue";
                     <v-icon icon="mdi-information-variant"></v-icon>
                     À propos du Singe
                 </v-expansion-panel-title>
-                <v-expansion-panel-text>
+                <v-expansion-panel-text eager>
                     <p>
                         <strong>N.B. :</strong> Lorsqu’un Faluchard est
                         sanctionné par un singe, il doit retirer de sa Faluche
@@ -1198,7 +1198,7 @@ import Article8Spe from "./Article8Spe.vue";
                     <v-icon icon="mdi-information-variant"></v-icon>
                     À propos du Bacchus
                 </v-expansion-panel-title>
-                <v-expansion-panel-text>
+                <v-expansion-panel-text eager>
                     <p class="text-justify">
                         <strong>N.B. : </strong>Parmi les plus glorieux, le
                         Bacchus reste le plus difficile à obtenir. Il faudra un

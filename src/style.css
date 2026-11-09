@@ -115,8 +115,9 @@ main {
 /*
  * Apparition des blocs au moment où ils entrent à l'écran (animation liée au défilement).
  * Sans support navigateur, le contenu s'affiche directement.
+ * Réservé à l'écran : à l'impression, les blocs hors de la vue resteraient invisibles.
  */
-@media (prefers-reduced-motion: no-preference) {
+@media screen and (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
         .main-content .v-container > :not(.article-toc) {
             animation: reveal linear both;
@@ -225,18 +226,3 @@ main {
     }
 }
 
-/* ============================================
-   STYLES D'IMPRESSION (Print Styles)
-   ============================================ */
-@media print {
-    button,
-    .no-print,
-    nav,
-    .v-app-bar {
-        display: none;
-    }
-
-    main {
-        padding-top: 0;
-    }
-}

@@ -817,7 +817,7 @@ import Article7SpeFiliere from "./Article7SpeFiliere.vue";
                 <v-expansion-panel-title>
                     Réforme PASS/LAS
                 </v-expansion-panel-title>
-                <v-expansion-panel-text>
+                <v-expansion-panel-text eager>
                     <div class="accordion-body">
                         <img
                             alt="PASS/LAS"

@@ -7,6 +7,8 @@ import { MotionPlugin } from '@vueuse/motion'
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
+// Impression : en dernier pour passer après Vuetify et les styles de base
+import './sass/base/_print.scss'
 import { md3 } from 'vuetify/blueprints'
 
 //Router
@@ -17,6 +19,7 @@ import App from './App.vue'
 
 //Custom
 import MainLayout from './layout/MainLayout.vue'
+import { installerImagesImpression } from './core/imagesImpression'
 
 const vuetify = createVuetify({
   blueprint: md3,
@@ -58,5 +61,7 @@ app.use(router)
 app.use(MotionPlugin)
 
 app.component('MainLayout', MainLayout)
+
+installerImagesImpression(router)
 
 app.mount('#app')
