@@ -32,7 +32,7 @@
     "sass": "^1.108.1",
     "sharp": "^0.35.5",
     "svgo": "^4.1.0",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "vite": "^8.3.6",
     "vite-plugin-image-optimizer": "^2.0.3",
     "vite-plugin-pwa": "^2.0.0",
