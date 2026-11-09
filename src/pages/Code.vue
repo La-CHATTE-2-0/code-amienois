@@ -32,7 +32,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
 
 <template>
     <v-container>
-        <Birthday></Birthday>
+        <Birthday class="no-print"></Birthday>
         <ArticleToc :articles="sommaire" class="mt-3" />
         <Article0 id="article-0" class="mt-3"></Article0>
         <Article1 id="article-1" class="mt-3"></Article1>

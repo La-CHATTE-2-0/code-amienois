@@ -123,6 +123,17 @@ $fal-warning-color-light: 255 242 202;
     }
 }
 
+// À l'impression, la carte garde sa teinte claire quel que soit le thème affiché
+@media print {
+    .table-warning-fal {
+        background-color: rgb($fal-warning-color-light) !important;
+    }
+
+    .table-warning-fal .v-table {
+        background: transparent !important;
+    }
+}
+
 .no-border {
     border: none;
 }
