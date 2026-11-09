@@ -7,6 +7,8 @@ import { MotionPlugin } from '@vueuse/motion'
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
+// Impression : en dernier pour passer après Vuetify et les styles de base
+import './sass/base/_print.scss'
 import { md3 } from 'vuetify/blueprints'
 
 //Router

@@ -34,7 +34,7 @@ function skipToContent() {
     <v-main id="contenu" class="main-content" tabindex="-1">
         <slot></slot>
     </v-main>
-    <v-footer class="app-footer no-print">
+    <v-footer class="app-footer d-print-none">
         <nav class="app-footer__links" aria-label="Liens externes">
             <v-btn
                 v-for="link in footerLinks"

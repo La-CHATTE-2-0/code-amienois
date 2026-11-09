@@ -576,17 +576,4 @@ const images: Record<string, { alt: string; width: number; height: number }> = {
     text-align: right;
     color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
 }
-
-/* À l'impression, toutes les étapes sont dépliées */
-@media print {
-    .guide__steps :deep(.v-expansion-panel-text) {
-        /* v-show masque les panneaux fermés par un style inline, seul !important le surpasse */
-        display: block !important;
-        height: auto;
-    }
-
-    .guide__steps :deep(.v-expansion-panel-title__icon) {
-        display: none;
-    }
-}
 </style>

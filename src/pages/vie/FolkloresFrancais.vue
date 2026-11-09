@@ -24,7 +24,7 @@ function allerA(id: string) {
                 passant par Poitiers, en voici quelques exemples.
             </p>
 
-            <nav class="folklore-sommaire" aria-label="Traditions présentées">
+            <nav class="folklore-sommaire d-print-none" aria-label="Traditions présentées">
                 <v-chip
                     v-for="tradition in traditions"
                     :key="tradition.id"

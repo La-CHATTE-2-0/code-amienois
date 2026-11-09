@@ -105,33 +105,24 @@ $fal-warning-color-light: 255 242 202;
     display: none;
 }
 
+// La teinte passe par une variable CSS : le thème clair et l'impression (_print.scss) la redéfinissent
+:root {
+    --fal-warning-dark: #{$fal-warning-color-dark};
+    --fal-warning-light: #{$fal-warning-color-light};
+}
+
 .table-warning-fal {
-    background-color: rgba($fal-warning-color-dark);
-}
+    --fal-warning: var(--fal-warning-dark);
+    background-color: rgb(var(--fal-warning));
 
-.table-warning-fal .v-table {
-    --v-theme-surface: $fal-warning-color-dark;
-}
-
-.v-theme--light {
-    .table-warning-fal {
-        background-color: rgba($fal-warning-color-light);
-    }
-
-    .table-warning-fal .v-table {
-        --v-theme-surface: $fal-warning-color-light;
+    // Le tableau laisse voir la teinte de la carte
+    .v-table {
+        background: transparent;
     }
 }
 
-// À l'impression, la carte garde sa teinte claire quel que soit le thème affiché
-@media print {
-    .table-warning-fal {
-        background-color: rgb($fal-warning-color-light) !important;
-    }
-
-    .table-warning-fal .v-table {
-        background: transparent !important;
-    }
+.v-theme--light .table-warning-fal {
+    --fal-warning: var(--fal-warning-light);
 }
 
 .no-border {

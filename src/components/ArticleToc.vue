@@ -45,7 +45,7 @@ watch(active, (id) => {
 </script>
 
 <template>
-    <nav class="article-toc no-print" aria-label="Sommaire des articles">
+    <nav class="article-toc d-print-none" aria-label="Sommaire des articles">
         <div ref="track" class="article-toc__track">
             <router-link
                 v-for="article in articles"
