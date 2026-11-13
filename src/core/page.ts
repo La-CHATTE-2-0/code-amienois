@@ -88,6 +88,11 @@ const pages = {
         url: '/aperals',
         description: 'Carte des apérals faluchards de France, avec jours et statut.'
     },
+    mentions_legales: {
+        name: 'Mentions légales',
+        url: '/mentions-legales',
+        description: 'Mentions légales du Code Amiénois : éditeur, hébergeur et données personnelles.'
+    },
 }
 
 export default pages;

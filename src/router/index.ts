@@ -110,6 +110,12 @@ const routes = [
         meta: { layout: "Main" },
     },
     {
+        path: pages.mentions_legales.url,
+        name: pages.mentions_legales.name,
+        component: () => import("../pages/MentionsLegales.vue"),
+        meta: { layout: "Main" },
+    },
+    {
         path: "/:pathMatch(.*)*",
         name: "Page introuvable",
         component: () => import("../pages/NotFound.vue"),

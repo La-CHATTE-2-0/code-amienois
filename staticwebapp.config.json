@@ -63,6 +63,10 @@
         {
             "route": "/aperals",
             "rewrite": "/aperals/index.html"
+        },
+        {
+            "route": "/mentions-legales",
+            "rewrite": "/mentions-legales/index.html"
         }
     ],
     "navigationFallback": {
