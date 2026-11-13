@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AppHeader from "../components/shared/AppHeader.vue";
 import { version } from "../version";
+import pages from "../core/page";
 
 const footerLinks = [
     {
@@ -49,7 +50,11 @@ function skipToContent() {
                 {{ link.title }}
             </v-btn>
         </nav>
-        <span class="app-footer__version">{{ version }}</span>
+        <p class="app-footer__meta">
+            <router-link :to="pages.mentions_legales.url">{{ pages.mentions_legales.name }}</router-link>
+            <span aria-hidden="true"> · </span>
+            <span>{{ version }}</span>
+        </p>
     </v-footer>
 </template>
 
@@ -72,9 +77,14 @@ function skipToContent() {
     letter-spacing: normal;
 }
 
-.app-footer__version {
+.app-footer__meta {
+    margin: 0;
     font-size: 0.75rem;
     color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
+}
+
+.app-footer__meta a {
+    color: inherit;
 }
 
 .skip-link {
