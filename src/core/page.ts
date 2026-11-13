@@ -30,9 +30,14 @@ const pages = {
         description: 'Checklist à cocher pour ne rien oublier avant de partir en congrès.'
     },
     couleurs_rubans: {
-        name: 'Couleurs des rubans',
+        name: 'Couleurs des villes',
         url: '/couleurs-des-rubans',
-        description: 'Couleurs des rubans de faluche par filière, et villes classées par province.'
+        description: 'Couleurs des rubans de villes et provinces, classées par région historique.'
+    },
+    couleurs_associations: {
+        name: 'Rubans des associations',
+        url: '/couleurs-des-associations',
+        description: 'Couleurs, matières et compositions des rubans des associations étudiantes amiénoises.'
     },
     historique_croix: {
         name: 'Historique des GM',
