@@ -37,7 +37,8 @@ const sections = [
         title: "Ressources",
         items: [
             pageItem("mdi-account-group", pages.notes_aux_pm),
-            pageItem("mdi-ribbon", pages.couleurs_rubans),
+            pageItem("mdi-shield-outline", pages.couleurs_rubans),
+            pageItem("mdi-ribbon", pages.couleurs_associations),
             linkItem("mdi-music-clef-treble", "Bréviaire Youtube", "https://www.youtube.com/@nouveaubreviaireamienois111"),
             pageItem("mdi-scissors-cutting", pages.guide_couture),
             pageItem("mdi-link-lock", pages.guide_secu),
