@@ -6,11 +6,13 @@ const props = withDefaults(
         colors?: [string, string] | [string, string, string];
         label?: string;
         inverse?: boolean;
+        thin?: boolean;
     }>(),
     {
         colors: () => ["#f21f2f", "#154cff"],
         label: "Ruban tressé",
         inverse: false,
+        thin: false,
     },
 );
 
@@ -18,8 +20,12 @@ const uid = useId();
 const coreColor = computed(() => props.colors[props.colors.length - 1] ?? "#0914bc");
 const wrapColors = computed(() => props.colors.slice(0, -1));
 
+// Ruban fin : même dessin sur une longueur 1,5 fois plus grande. Rendu à la même
+// largeur, il est donc moins haut, avec plus de tours.
+const width = computed(() => (props.thin ? 1080 : 720));
+
 const turns = computed(() =>
-    Array.from({ length: 6 }, (_, index) => {
+    Array.from({ length: Math.ceil(width.value / 164) + 2 }, (_, index) => {
         const x = index * 164 - 164;
         const color = wrapColors.value[index % wrapColors.value.length] ?? "#bc1212";
 
@@ -36,7 +42,7 @@ const turns = computed(() =>
 <template>
     <svg
         class="braided-ribbon"
-        viewBox="0 0 720 150"
+        :viewBox="`0 0 ${width} 150`"
         role="img"
         :aria-labelledby="`${uid}-title`"
         preserveAspectRatio="xMidYMid meet"
@@ -91,13 +97,13 @@ const turns = computed(() =>
             </linearGradient>
 
             <clipPath :id="`${uid}-frame`">
-                <rect x="0" y="20" width="720" height="110" rx="8" />
+                <rect x="0" y="20" :width="width" height="110" rx="8" />
             </clipPath>
         </defs>
 
         <g
             :clip-path="`url(#${uid}-frame)`"
-            :transform="inverse ? 'translate(720 0) scale(-1 1)' : undefined"
+            :transform="inverse ? `translate(${width} 0) scale(-1 1)` : undefined"
         >
             <!-- Retours du ruban enveloppant : ils disparaissent derrière le ruban bleu. -->
             <g class="braided-ribbon__back">
@@ -114,13 +120,13 @@ const turns = computed(() =>
                 class="braided-ribbon__core-edge"
                 x="-8"
                 y="40"
-                width="736"
+                :width="width + 16"
                 height="70"
             />
             <rect
                 x="-8"
                 y="43"
-                width="736"
+                :width="width + 16"
                 height="64"
                 :fill="coreColor"
                 :filter="`url(#${uid}-velvet)`"
@@ -128,7 +134,7 @@ const turns = computed(() =>
             <rect
                 x="-8"
                 y="43"
-                width="736"
+                :width="width + 16"
                 height="64"
                 :fill="`url(#${uid}-core-light)`"
                 class="braided-ribbon__light"

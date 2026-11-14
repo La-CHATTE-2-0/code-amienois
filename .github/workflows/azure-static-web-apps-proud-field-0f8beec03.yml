@@ -26,6 +26,9 @@ jobs:
           cache: "npm"
       - run: npm ci --ignore-scripts
       - run: npm run build
+        env:
+          # Recette : affiche aussi le contenu non vérifié (rubans des associations…)
+          VITE_RECETTE: "true"
       - run: cp staticwebapp.config.json dist/
       - name: Build And Deploy
         id: builddeploy
