@@ -25,6 +25,10 @@
             "rewrite": "/couleurs-des-rubans/index.html"
         },
         {
+            "route": "/couleurs-des-associations",
+            "rewrite": "/couleurs-des-associations/index.html"
+        },
+        {
             "route": "/historique-croix",
             "rewrite": "/historique-croix/index.html"
         },

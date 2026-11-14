@@ -32,6 +32,12 @@ const routes = [
         meta: { layout: "Main" },
     },
     {
+        path: pages.couleurs_associations.url,
+        name: pages.couleurs_associations.name,
+        component: () => import("../pages/ressources/CouleursAssociations.vue"),
+        meta: { layout: "Main" },
+    },
+    {
         path: pages.notes_aux_pm.url,
         name: pages.notes_aux_pm.name,
         component: () => import("../pages/ressources/NotesAuxPMs.vue"),

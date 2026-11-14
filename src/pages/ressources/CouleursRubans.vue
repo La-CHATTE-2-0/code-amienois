@@ -65,23 +65,20 @@ const ecusson = (image: string) => `/images/ecussons/${image}.png`;
 <template>
     <v-container>
         <article data-fal-article>
-            <section class="ville-hero">
+            <section class="city-hero">
                 <img
-                    class="ville-hero__blason"
+                    class="city-hero__blason"
                     src="/images/ecussons/blason-amiens.png"
                     alt="Blason d'Amiens"
                 />
-                <div>
-                    <p class="font-italic">
-                        "De gueules au lierre d'argent ; au chef d'azur semé de
-                        fleurs de lis d'or (au chef de France ancien)."
+                <div class="city-hero__copy">
+                    <p class="city-hero__eyebrow">Ville d'Amiens</p>
+                    <h2>Rouge et bleu roi</h2>
+                    <p class="city-hero__quote">
+                        « De gueules au lierre d'argent ; au chef d'azur semé de
+                        fleurs de lis d'or (au chef de France ancien). »
                     </p>
-                    <p class="mt-2">
-                        Les couleurs d'Amiens sont donc :
-                        <strong>Rouge</strong> (de gueules) et
-                        <strong>Bleu roy</strong> (azur).
-                    </p>
-                    <div class="ruban ruban--large mt-3 mx-auto" aria-hidden="true">
+                    <div class="ruban ruban--large" aria-hidden="true">
                         <span
                             v-for="(color, i) in swatch('Rouge et bleu roi')"
                             :key="i"
@@ -198,17 +195,47 @@ const ecusson = (image: string) => `/images/ecussons/${image}.png`;
 </template>
 
 <style scoped>
-/* Amiens : grand blason centré, blasonnement et échantillon dessous */
-.ville-hero {
-    text-align: center;
+.city-hero {
+    display: grid;
+    grid-template-columns: minmax(120px, 220px) 1fr;
+    align-items: center;
+    gap: clamp(22px, 5vw, 56px);
+    padding: clamp(22px, 4vw, 38px);
+    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+    border-radius: 20px;
+    background:
+        radial-gradient(circle at 100% 20%, rgba(21, 76, 255, 0.12), transparent 42%),
+        rgb(var(--v-theme-surface));
 }
 
-.ville-hero__blason {
+.city-hero__eyebrow {
+    color: rgb(var(--v-theme-primary));
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.city-hero__copy h2 {
+    margin: 2px 0 10px;
+    font-size: clamp(1.65rem, 3vw, 2.5rem);
+}
+
+.city-hero__blason {
     display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 220px;
     height: auto;
-    margin: 1rem auto;
+    margin: auto;
+}
+
+.city-hero__quote {
+    max-width: 620px;
+    margin-bottom: 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.55;
 }
 
 /* Échantillon de ruban bicolore, texture velours par-dessus les couleurs */
@@ -276,6 +303,17 @@ const ecusson = (image: string) => `/images/ecussons/${image}.png`;
 }
 
 @media (max-width: 600px) {
+    .city-hero {
+        grid-template-columns: 90px 1fr;
+        gap: 14px;
+        padding: 18px 14px;
+        border-radius: 18px;
+    }
+
+    .city-hero__quote {
+        font-size: 0.92rem;
+    }
+
     .couleurs-table__couleurs {
         flex-direction: column;
         align-items: flex-start;
