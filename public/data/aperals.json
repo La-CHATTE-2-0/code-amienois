@@ -678,12 +678,12 @@
     "frequency": "Hebdomadaire - tous les mercredis",
     "places": [
       {
-        "name": "L'Alchimie",
+        "name": "Le QG des Avenjoueurs",
         "latlong": [
-          49.4424911,
-          1.097696
+          49.442631,
+          1.092775
         ],
-        "address": "1 bis Rue de l'Hôpital, 76000 Rouen"
+        "address": "8 Allée Eugène Delacroix, 76000 Rouen"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/334261026623117",
