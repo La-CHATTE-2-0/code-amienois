@@ -604,7 +604,7 @@
   },
   {
     "city": "Perpignan",
-    "frequency": "Faluche morte, plus d'apéral prévu, voir sur le groupe Facebook",
+    "frequency": "Non régulier, se renseigner sur le groupe Facebook",
     "places": [
       {
         "latlong": [
@@ -614,7 +614,7 @@
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/205224672849302",
-    "color": "red",
+    "color": "orange",
     "days": []
   },
   {
