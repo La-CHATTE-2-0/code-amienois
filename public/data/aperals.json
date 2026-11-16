@@ -436,12 +436,12 @@
     "description": "On effectue des changements de temps en temps, envoyez un message sur le groupe de la FLEM pour confirmation =)",
     "places": [
       {
-        "name": "Vivian's",
+        "name": "Comédie Café",
         "latlong": [
-          49.1170219,
-          6.1786805
+          49.1203811,
+          6.1730109
         ],
-        "address": "15 Place St Louis, 57000 Metz"
+        "address": "2 rue du Pont des Roches, 57000 Metz"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/1757349307863601",
