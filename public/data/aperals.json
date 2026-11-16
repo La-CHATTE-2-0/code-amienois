@@ -660,12 +660,12 @@
     "frequency": "Hebdomadaire - tous les mardis",
     "places": [
       {
-        "name": "Aux Plaisirs Démodés",
+        "name": "Le Tivoli",
         "latlong": [
-          48.1119283,
-          -1.6755552
+          48.1119021,
+          -1.6760687
         ],
-        "address": "37 rue Saint-Georges, Rennes"
+        "address": "19 rue Saint-Georges, 35000 Rennes"
       }
     ],
     "contactUrl": "mailto:asso.afre@gmail.com",
