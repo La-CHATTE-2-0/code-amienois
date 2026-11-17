@@ -316,7 +316,7 @@
   {
     "city": "Grenoble",
     "frequency": "Hebdomadaire - tous les mercredis",
-    "description": "Apéro en plein air, chacun ramène à boire et à manger pour soi-même ou pour plusieurs s'il veut partager. En cas de pluie : sous le préau de l'autre côté du palais des sports (à 300 m). Remarque : l'apéral se fait au bar \"Le Subway\" pendant la trêve hivernale (jusqu'à fin mars). Si nécessaire, vous pouvez demander sur \"Faluche Grenoble\".",
+    "description": "Apéro en plein air, chacun ramène à boire et à manger pour soi-même ou pour plusieurs s'il veut partager. En cas de pluie : sous le préau de l'autre côté du palais des sports (à 300 m). Remarque : l'apéral se fait au bar \"Le Couche Tard\" pendant la trêve hivernale (jusqu'à fin mars). Si nécessaire, vous pouvez demander sur \"Faluche Grenoble\".",
     "places": [
       {
         "name": "Dans un parc",
@@ -326,12 +326,12 @@
         ]
       },
       {
-        "name": "Le Subway",
+        "name": "Le Couche Tard",
         "latlong": [
-          45.186904,
-          5.7238498
+          45.193018,
+          5.729329
         ],
-        "address": "2 Rue Lakanalle, 38000 Grenoble"
+        "address": "1 rue du Palais, 38000 Grenoble"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/351340885674609",
