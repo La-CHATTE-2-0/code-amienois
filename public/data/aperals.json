@@ -316,7 +316,7 @@
   {
     "city": "Grenoble",
     "frequency": "Hebdomadaire - tous les mercredis",
-    "description": "Apéro en plein air, chacun ramène à boire et à manger pour soi-même ou pour plusieurs s'il veut partager. En cas de pluie : sous le préau de l'autre côté du palais des sports (à 300 m). Remarque : l'apéral se fait au bar \"Le Subway\" pendant la trêve hivernale (jusqu'à fin mars). Si nécessaire, vous pouvez demander sur \"Faluche Grenoble\".",
+    "description": "Apéro en plein air, chacun ramène à boire et à manger pour soi-même ou pour plusieurs s'il veut partager. En cas de pluie : sous le préau de l'autre côté du palais des sports (à 300 m). Remarque : l'apéral se fait au bar \"Le Couche Tard\" pendant la trêve hivernale (jusqu'à fin mars). Si nécessaire, vous pouvez demander sur \"Faluche Grenoble\".",
     "places": [
       {
         "name": "Dans un parc",
@@ -326,12 +326,12 @@
         ]
       },
       {
-        "name": "Le Subway",
+        "name": "Le Couche Tard",
         "latlong": [
-          45.186904,
-          5.7238498
+          45.193018,
+          5.729329
         ],
-        "address": "2 Rue Lakanalle, 38000 Grenoble"
+        "address": "1 rue du Palais, 38000 Grenoble"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/351340885674609",
@@ -604,7 +604,7 @@
   },
   {
     "city": "Perpignan",
-    "frequency": "Faluche morte, plus d'apéral prévu, voir sur le groupe Facebook",
+    "frequency": "Non régulier, se renseigner sur le groupe Facebook",
     "places": [
       {
         "latlong": [
@@ -614,7 +614,7 @@
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/205224672849302",
-    "color": "red",
+    "color": "orange",
     "days": []
   },
   {
@@ -732,12 +732,12 @@
     "frequency": "Hebdomadaire - tous les mardis",
     "places": [
       {
-        "name": "O'Brother",
+        "name": "Croque Bedaine Esplanade",
         "latlong": [
-          48.5789146,
-          7.7397138
+          48.580972,
+          7.771697
         ],
-        "address": "6 Rue des Glacières, Strasbourg"
+        "address": "9 rue Vauban, 67000 Strasbourg"
       }
     ],
     "contactUrl": "https://www.instagram.com/rafal_strasbourg/",
@@ -769,12 +769,12 @@
     "description": "Pré-apéral satin de 18 h 30 à 20 h au Satch Club puis apéral au bar. Before médecine variable.",
     "places": [
       {
-        "name": "O'Briens",
+        "name": "The Old Dockers",
         "latlong": [
-          43.6037958,
-          1.4424772
+          43.606154,
+          1.447909
         ],
-        "address": "39 rue Léon Gambetta, 31000 Toulouse"
+        "address": "5 boulevard de Strasbourg, 31000 Toulouse"
       }
     ],
     "contactUrl": "https://www.facebook.com/groups/111189992371",
