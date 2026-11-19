@@ -775,6 +775,110 @@
             "answers": ["Cinéma", "Arts du spectacle", "Communication, Journalisme", "Arts numériques"],
             "source": "/#article-7"
         },
+        {
+            "id": "f61",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en satin jaune ?",
+            "answers": ["Sciences", "Histoire", "Philosophie", "Psychologie"],
+            "explanation": "Les Sciences sont en satin violet.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f62",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en satin jaune ?",
+            "answers": ["Musicologie", "Géographie", "Sociologie", "Archéologie"],
+            "explanation": "La Musicologie est en satin argenté.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f63",
+            "theme": "filieres",
+            "question": "Au code national, quelle filière n'est pas en satin jaune ?",
+            "answers": ["Cinéma", "Langues, Lettres", "Histoire", "Sociologie"],
+            "explanation": "Au code national, le Cinéma est en satin bleu roy.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f64",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en velours rose ?",
+            "answers": ["Sage-femme", "Infirmier", "Kinésithérapie", "Orthophonie"],
+            "explanation": "Sage-femme est en velours fuchsia, les filières paramédicales en velours rose.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f65",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en velours ?",
+            "answers": ["Sciences", "Dentaire", "Pharmacie", "Sage-femme"],
+            "explanation": "Les Sciences sont en satin violet, à ne pas confondre avec le velours violet de Dentaire.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f66",
+            "theme": "filieres",
+            "question": "Au code national, quelle filière n'est pas en satin bleu roy ?",
+            "answers": ["Ingénieur", "Arts", "Architecture", "Cinéma"],
+            "explanation": "Ingénieur est en satin bleu roy et noir.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f67",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en satin orange ?",
+            "answers": ["A.E.S.", "IAE", "Sciences économiques", "Gestion"],
+            "explanation": "L'A.E.S. est en satin vert clair.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f68",
+            "theme": "filieres",
+            "question": "Quelle filière n'a pas un circulaire bicolore ?",
+            "answers": ["Droit", "Commerce", "Notariat", "Sciences politiques"],
+            "explanation": "Le Droit est en satin rouge uni ; Commerce est rouge et vert, Notariat rouge et noir, Sciences politiques rouge et bleu.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f69",
+            "theme": "filieres",
+            "question": "Quelle filière n'a pas de rouge dans son circulaire ?",
+            "answers": ["Ingénieur", "Commerce", "Théologie", "Militaire"],
+            "explanation": "Ingénieur est en satin bleu roy et noir.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f70",
+            "theme": "filieres",
+            "question": "À Amiens, quelle filière n'a pas de noir dans son circulaire ?",
+            "answers": ["Sciences politiques", "Ingénieur", "Notariat", "Cinéma"],
+            "explanation": "Sciences politiques est en satin rouge et bleu ; à Amiens, le Cinéma est en satin blanc et noir.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f71",
+            "theme": "filieres",
+            "question": "À Amiens, quelle filière n'est pas en satin jaune ?",
+            "answers": ["Arts", "Communication, Journalisme", "Sciences de l'éducation", "Histoire"],
+            "explanation": "À Amiens, les Arts sont en satin jaune et bleu roy.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f72",
+            "theme": "filieres",
+            "question": "À Amiens, quelle filière n'est pas en velours ?",
+            "answers": ["IUT", "Assistante sociale", "Médecine", "Sage-femme"],
+            "explanation": "À Amiens, l'IUT (sauf GMP) est en satin rose, alors que les Assistantes sociales sont en velours jaune.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f73",
+            "theme": "filieres",
+            "question": "Quelle couleur de velours n'est attribuée à aucune filière au code national ?",
+            "answers": ["Velours jaune", "Velours marron", "Velours bordeaux", "Velours fuchsia"],
+            "explanation": "Le velours jaune n'existe qu'à Amiens, pour les Assistantes sociales.",
+            "source": "/recap-spe"
+        },
 
         {
             "id": "c01",
@@ -1622,6 +1726,153 @@
                 "Que l'étudiant ait payé sa tournée"
             ],
             "explanation": "L'insigne peut aussi être refusé par la personne qui le reçoit.",
+            "source": "/#article-12"
+        },
+        {
+            "id": "v61",
+            "theme": "velours",
+            "question": "Quel ruban porte un membre de bureau d'une fédération nationale ?",
+            "answers": ["Tricolore avec un filet blanc de chaque côté", "Tricolore uni", "Tricolore avec une bande blanche de chaque côté", "Aux couleurs de l'Europe"],
+            "explanation": "Le ruban tricolore uni est pour les membres du conseil d'administration, la bande blanche pour le président.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v62",
+            "theme": "velours",
+            "question": "Quel ruban porte le président d'une fédération nationale ?",
+            "answers": ["Tricolore avec une bande blanche de chaque côté", "Tricolore avec un filet blanc de chaque côté", "Tricolore uni", "Jaune avec une étoile dorée"],
+            "explanation": "Les membres de bureau ont un simple filet blanc de chaque côté.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v63",
+            "theme": "velours",
+            "question": "Quel ruban porte un élu ou délégué au plan européen ?",
+            "answers": ["Aux couleurs de l'Europe", "Aux couleurs de l'ONU", "Tricolore", "Aux couleurs de la ville d'élection"],
+            "source": "/#article-10"
+        },
+        {
+            "id": "v64",
+            "theme": "velours",
+            "question": "Quel ruban porte un élu ou délégué au plan international ?",
+            "answers": ["Aux couleurs de l'ONU", "Aux couleurs de l'Europe", "Tricolore", "Aux couleurs de la ville d'élection"],
+            "source": "/#article-10"
+        },
+        {
+            "id": "v65",
+            "theme": "velours",
+            "question": "Un délégué élu à plusieurs niveaux (national, européen…) place quel ruban ?",
+            "answers": ["Celui de plus haut grade", "Tous les rubans côte à côte", "Celui de son premier mandat", "Celui de son mandat le plus récent"],
+            "source": "/#article-10"
+        },
+        {
+            "id": "v66",
+            "theme": "velours",
+            "question": "Sur le ruban d'élu, que signifie une étoile dorée ?",
+            "image": "/images/insigne/etoile_doree.png",
+            "answers": ["VP étudiant d'université", "VP étudiant d'UFR", "Élu au CNOUS", "Membre de bureau"],
+            "explanation": "L'étoile argentée est pour les VP étudiants d'UFR ou de CA d'IUT.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v67",
+            "theme": "velours",
+            "question": "Sur le ruban d'élu, que signifie une étoile argentée ?",
+            "image": "/images/insigne/etoile_argentee.png",
+            "answers": ["VP étudiant d'UFR ou de CA d'IUT", "VP étudiant d'université", "Membre actif d'une association", "Élu au CROUS"],
+            "explanation": "À ne pas confondre avec l'étoile argentée du ruban d'association, qui désigne un membre actif ou chargé de mission.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v68",
+            "theme": "velours",
+            "question": "Comment indique-t-on un mandat de délégué mutualiste ?",
+            "answers": ["Une étoile dorée sur ruban bleu", "Une tortue dorée", "Une étoile argentée sur ruban jaune", "Un caducée"],
+            "source": "/#article-10"
+        },
+        {
+            "id": "v69",
+            "theme": "velours",
+            "question": "Comment indique-t-on un mandat au CNESER ou à l'OVE sur le ruban d'élu ?",
+            "answers": ["Par les initiales du conseil", "Par une grenouille dorée", "Par une étoile argentée", "Par un glaive et une balance"],
+            "explanation": "Les conseils sans insigne dédié (CNESER, OVE, COMUE…) sont indiqués par leurs initiales.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v70",
+            "theme": "velours",
+            "question": "Combien d'insignes place-t-on sur le ruban d'élu ?",
+            "answers": ["Un par mandat", "Un seul, pour le mandat le plus important", "Trois au maximum", "Un par année de mandat"],
+            "source": "/#article-10"
+        },
+        {
+            "id": "v71",
+            "theme": "velours",
+            "question": "Sur le ruban d'élu, qu'indique en général un insigne doré plutôt qu'argenté ?",
+            "answers": ["Un conseil de niveau supérieur (université, CNOUS…)", "Un mandat de plus d'un an", "Un élu titulaire plutôt que suppléant", "Un mandat terminé"],
+            "explanation": "Grenouille dorée pour le conseil d'université, argentée pour l'UFR ; tortue dorée pour le CNOUS, argentée pour le CROUS.",
+            "source": "/#article-10"
+        },
+        {
+            "id": "v72",
+            "theme": "velours",
+            "question": "Que signifie cet insigne potager ?",
+            "image": "/images/insigne/carotte.png",
+            "answers": ["Pénétration vaginale", "Pénétration anale", "Fellation", "Cunnilingus"],
+            "explanation": "La carotte.",
+            "source": "/#article-12"
+        },
+        {
+            "id": "v73",
+            "theme": "velours",
+            "question": "Que signifie cet insigne potager ?",
+            "image": "/images/insigne/navet.png",
+            "answers": ["Pénétration anale", "Pénétration vaginale", "Fellation", "Partouze"],
+            "explanation": "Le navet.",
+            "source": "/#article-12"
+        },
+        {
+            "id": "v74",
+            "theme": "velours",
+            "question": "Que signifie cet insigne potager ?",
+            "image": "/images/insigne/poireau.png",
+            "answers": ["Fellation", "Cunnilingus", "Pénétration anale", "Pénétration vaginale"],
+            "explanation": "Le poireau.",
+            "source": "/#article-12"
+        },
+        {
+            "id": "v75",
+            "theme": "velours",
+            "question": "Que signifie cet insigne potager ?",
+            "image": "/images/insigne/betterave.png",
+            "answers": ["Cunnilingus", "Fellation", "Acte pendant les règles", "Partouze"],
+            "explanation": "La betterave.",
+            "source": "/#article-12"
+        },
+        {
+            "id": "v76",
+            "theme": "velours",
+            "question": "Que signifie cet insigne potager ?",
+            "image": "/images/insigne/choux_fleur.png",
+            "answers": ["Partouze", "Pénétration anale", "Cunnilingus", "Acte pendant les règles"],
+            "explanation": "Le chou-fleur.",
+            "source": "/#article-12"
+        },
+        {
+            "id": "v77",
+            "theme": "velours",
+            "question": "Que signifie cet insigne potager ?",
+            "image": "/images/insigne/tomate.png",
+            "answers": ["Acte pendant les règles", "Cunnilingus", "Partouze", "Fellation"],
+            "explanation": "La tomate.",
+            "source": "/#article-12"
+        },
+        {
+            "id": "v78",
+            "theme": "velours",
+            "question": "Que reçoit-on pour un dépucelage ?",
+            "answers": ["Deux légumes placés en X", "Un légume doré", "Un chou-fleur", "Un légume renversé"],
+            "explanation": "Les deux légumes dépendent de l'endroit.",
             "source": "/#article-12"
         },
 
