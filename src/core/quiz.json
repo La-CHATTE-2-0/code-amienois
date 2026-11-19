@@ -775,6 +775,110 @@
             "answers": ["Cinéma", "Arts du spectacle", "Communication, Journalisme", "Arts numériques"],
             "source": "/#article-7"
         },
+        {
+            "id": "f61",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en satin jaune ?",
+            "answers": ["Sciences", "Histoire", "Philosophie", "Psychologie"],
+            "explanation": "Les Sciences sont en satin violet.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f62",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en satin jaune ?",
+            "answers": ["Musicologie", "Géographie", "Sociologie", "Archéologie"],
+            "explanation": "La Musicologie est en satin argenté.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f63",
+            "theme": "filieres",
+            "question": "Au code national, quelle filière n'est pas en satin jaune ?",
+            "answers": ["Cinéma", "Langues, Lettres", "Histoire", "Sociologie"],
+            "explanation": "Au code national, le Cinéma est en satin bleu roy.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f64",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en velours rose ?",
+            "answers": ["Sage-femme", "Infirmier", "Kinésithérapie", "Orthophonie"],
+            "explanation": "Sage-femme est en velours fuchsia, les filières paramédicales en velours rose.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f65",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en velours ?",
+            "answers": ["Sciences", "Dentaire", "Pharmacie", "Sage-femme"],
+            "explanation": "Les Sciences sont en satin violet, à ne pas confondre avec le velours violet de Dentaire.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f66",
+            "theme": "filieres",
+            "question": "Au code national, quelle filière n'est pas en satin bleu roy ?",
+            "answers": ["Ingénieur", "Arts", "Architecture", "Cinéma"],
+            "explanation": "Ingénieur est en satin bleu roy et noir.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f67",
+            "theme": "filieres",
+            "question": "Quelle filière n'est pas en satin orange ?",
+            "answers": ["A.E.S.", "IAE", "Sciences économiques", "Gestion"],
+            "explanation": "L'A.E.S. est en satin vert clair.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f68",
+            "theme": "filieres",
+            "question": "Quelle filière n'a pas un circulaire bicolore ?",
+            "answers": ["Droit", "Commerce", "Notariat", "Sciences politiques"],
+            "explanation": "Le Droit est en satin rouge uni ; Commerce est rouge et vert, Notariat rouge et noir, Sciences politiques rouge et bleu.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f69",
+            "theme": "filieres",
+            "question": "Quelle filière n'a pas de rouge dans son circulaire ?",
+            "answers": ["Ingénieur", "Commerce", "Théologie", "Militaire"],
+            "explanation": "Ingénieur est en satin bleu roy et noir.",
+            "source": "/#article-6"
+        },
+        {
+            "id": "f70",
+            "theme": "filieres",
+            "question": "À Amiens, quelle filière n'a pas de noir dans son circulaire ?",
+            "answers": ["Sciences politiques", "Ingénieur", "Notariat", "Cinéma"],
+            "explanation": "Sciences politiques est en satin rouge et bleu ; à Amiens, le Cinéma est en satin blanc et noir.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f71",
+            "theme": "filieres",
+            "question": "À Amiens, quelle filière n'est pas en satin jaune ?",
+            "answers": ["Arts", "Communication, Journalisme", "Sciences de l'éducation", "Histoire"],
+            "explanation": "À Amiens, les Arts sont en satin jaune et bleu roy.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f72",
+            "theme": "filieres",
+            "question": "À Amiens, quelle filière n'est pas en velours ?",
+            "answers": ["IUT", "Assistante sociale", "Médecine", "Sage-femme"],
+            "explanation": "À Amiens, l'IUT (sauf GMP) est en satin rose, alors que les Assistantes sociales sont en velours jaune.",
+            "source": "/recap-spe"
+        },
+        {
+            "id": "f73",
+            "theme": "filieres",
+            "question": "Quelle couleur de velours n'est attribuée à aucune filière au code national ?",
+            "answers": ["Velours jaune", "Velours marron", "Velours bordeaux", "Velours fuchsia"],
+            "explanation": "Le velours jaune n'existe qu'à Amiens, pour les Assistantes sociales.",
+            "source": "/recap-spe"
+        },
 
         {
             "id": "c01",
