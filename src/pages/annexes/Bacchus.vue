@@ -24,14 +24,14 @@ const representations = [
     <v-container>
         <article data-fal-article>
             <img
-                class="bacchus-hero"
+                class="fiche-image bacchus-hero"
                 src="/images/other/bacchusorgies.webp"
                 alt="Bacchanale en forêt : banquet, satyres et nymphes qui boivent et dansent"
                 width="2250"
                 height="1542"
             />
 
-            <p class="bacchus-lead">
+            <p class="fiche-lead bacchus-lead">
                 Dieu du vin, des fêtes et des débordements, Bacchus a donné son
                 nom à l’un des insignes les plus difficiles à obtenir sur la
                 faluche.
@@ -63,8 +63,8 @@ const representations = [
                 festivités.
             </p>
 
-            <h3 class="bacchus-subtitle">Ses attributions</h3>
-            <div class="bacchus-chips">
+            <h3 class="fiche-subtitle">Ses attributions</h3>
+            <div class="fiche-chips">
                 <v-chip
                     v-for="attribution in attributions"
                     :key="attribution"
@@ -76,16 +76,16 @@ const representations = [
             </div>
 
             <h2 class="mt-8">Représentations</h2>
-            <div class="bacchus-representations">
+            <div class="fiche-intro bacchus-representations">
                 <img
-                    class="bacchus-portrait"
+                    class="fiche-image fiche-portrait"
                     src="/images/other/bacchus.jpg"
                     alt="Bacchus enfant assis sur un tonneau, versant du vin dans une coupe"
                     width="811"
                     height="1260"
                     loading="lazy"
                 />
-                <dl class="bacchus-list">
+                <dl class="fiche-cadre fiche-list">
                     <div v-for="item in representations" :key="item.label">
                         <dt>{{ item.label }}</dt>
                         <dd>{{ item.text }}</dd>
@@ -123,7 +123,7 @@ const representations = [
                 qui avaient lieu chaque année le 17 mars.
             </p>
 
-            <p class="bacchus-voir-aussi">
+            <p class="fiche-voir-aussi">
                 Voir aussi :
                 <router-link :to="pages.gambrinus.url">Gambrinus, roi de la bière</router-link>
             </p>
@@ -136,17 +136,6 @@ article p {
     margin-top: 0.75rem;
 }
 
-/* Images : même arrondi que les cadres, liseré pour le mode sombre */
-.bacchus-hero,
-.bacchus-portrait {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    outline: 1px solid rgba(var(--v-theme-on-surface), 0.14);
-    outline-offset: -1px;
-}
-
 .bacchus-hero {
     aspect-ratio: 16 / 9;
     object-fit: cover;
@@ -154,79 +143,13 @@ article p {
 
 .bacchus-lead {
     margin-top: 1rem;
-    font-size: 1.05rem;
 }
 
-.bacchus-subtitle {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.bacchus-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-/* Portrait au-dessus de la liste sur mobile, à côté à partir de md */
 .bacchus-representations {
-    display: grid;
-    gap: 16px;
     margin-top: 0.75rem;
-}
-
-.bacchus-portrait {
-    max-height: 60vh;
-    object-fit: cover;
-    object-position: top;
-}
-
-@media (min-width: 960px) {
-    .bacchus-representations {
-        grid-template-columns: 280px 1fr;
-        align-items: start;
-    }
-
-    .bacchus-portrait {
-        max-height: none;
-    }
-}
-
-/* Même cadre que les listes de la checklist */
-.bacchus-list {
-    margin: 0;
-    overflow: hidden;
-    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
-    border-radius: 12px;
-}
-
-.bacchus-list > div {
-    padding: 12px 16px;
-}
-
-.bacchus-list > div + div {
-    border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
-}
-
-.bacchus-list dt {
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
-}
-
-.bacchus-list dd {
-    margin: 0;
 }
 
 .bacchus-alert {
     margin-top: 1rem;
-}
-
-.bacchus-voir-aussi {
-    margin-top: 1.5rem;
-    font-size: 0.875rem;
-    color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
 }
 </style>

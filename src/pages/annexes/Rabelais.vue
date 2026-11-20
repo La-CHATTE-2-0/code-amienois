@@ -176,22 +176,22 @@ const livres = [
 <template>
     <v-container>
         <article data-fal-article>
-            <div class="rabelais-intro">
+            <div class="fiche-intro">
                 <img
-                    class="rabelais-image rabelais-portrait"
+                    class="fiche-image fiche-portrait"
                     src="/images/other/rabelais-portrait.jpg"
                     alt="Portrait de François Rabelais"
                     width="1000"
                     height="1237"
                 />
                 <div>
-                    <p class="rabelais-lead">
+                    <p class="fiche-lead rabelais-lead">
                         Figure de proue de l’Humanisme de la Renaissance
                         française, François Rabelais est le maître à penser des
                         faluchards : un bon vivant érudit qui a fait du rire et
                         de la bonne chère une façon d’apprendre.
                     </p>
-                    <div class="rabelais-chips">
+                    <div class="fiche-chips rabelais-chips">
                         <v-chip
                             v-for="facette in facettes"
                             :key="facette"
@@ -201,7 +201,7 @@ const livres = [
                             {{ facette }}
                         </v-chip>
                     </div>
-                    <dl class="rabelais-cadre rabelais-list">
+                    <dl class="fiche-cadre fiche-list rabelais-list">
                         <div v-for="item in enBref" :key="item.label">
                             <dt>{{ item.label }}</dt>
                             <dd>{{ item.text }}</dd>
@@ -237,9 +237,9 @@ const livres = [
                 Renaissance, lui permet de signer de son vrai nom.
             </p>
 
-            <h3 class="rabelais-subtitle">Un personnage pétri de paradoxes</h3>
+            <h3 class="fiche-subtitle">Un personnage pétri de paradoxes</h3>
             <div class="rabelais-paradoxes">
-                <div v-for="item in paradoxes" :key="item.text" class="rabelais-cadre rabelais-paradoxe">
+                <div v-for="item in paradoxes" :key="item.text" class="fiche-cadre rabelais-paradoxe">
                     <v-icon :icon="item.icon" color="secondary" size="28" />
                     <span>{{ item.text }}</span>
                 </div>
@@ -265,7 +265,7 @@ const livres = [
 
             <h2 class="mt-8">Sa philosophie</h2>
             <div class="rabelais-grille">
-                <div v-for="idee in philosophie" :key="idee.titre" class="rabelais-cadre rabelais-idee">
+                <div v-for="idee in philosophie" :key="idee.titre" class="fiche-cadre rabelais-idee">
                     <div class="rabelais-idee-titre">
                         <v-icon :icon="idee.icon" color="primary" />
                         <span>{{ idee.titre }}</span>
@@ -319,7 +319,7 @@ const livres = [
                 Source :
                 <a :href="SOURCE_URL" target="_blank" rel="noopener">{{ SOURCE_URL }}</a>
             </p>
-            <p class="rabelais-voir-aussi">
+            <p class="fiche-voir-aussi">
                 Voir aussi :
                 <router-link :to="pages.bacchus.url">Bacchus</router-link> ·
                 <router-link :to="pages.gambrinus.url">Gambrinus</router-link>
@@ -333,87 +333,20 @@ article p {
     margin-top: 0.75rem;
 }
 
-.rabelais-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    outline: 1px solid rgba(var(--v-theme-on-surface), 0.14);
-    outline-offset: -1px;
-}
-
-/* Portrait au-dessus sur mobile, à côté de la fiche à partir de md */
-.rabelais-intro {
-    display: grid;
-    gap: 16px;
-}
-
-.rabelais-portrait {
-    max-height: 60vh;
-    object-fit: cover;
-    object-position: top;
-}
-
-@media (min-width: 960px) {
-    .rabelais-intro {
-        grid-template-columns: 300px 1fr;
-        align-items: start;
-    }
-
-    .rabelais-portrait {
-        max-height: none;
-    }
-}
-
-.rabelais-lead {
-    font-size: 1.05rem;
-}
-
-.rabelais-intro .rabelais-lead {
+.fiche-intro .rabelais-lead {
     margin-top: 0;
 }
 
-.rabelais-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+.rabelais-chips,
+.rabelais-list {
     margin-top: 1rem;
 }
 
-.rabelais-cadre {
-    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
-    border-radius: 12px;
-}
-
-.rabelais-list {
-    margin: 1rem 0 0;
-    overflow: hidden;
-}
-
-.rabelais-list > div {
-    padding: 10px 16px;
-}
-
-.rabelais-list > div + div {
-    border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
-}
-
-.rabelais-list dt,
 .rabelais-date {
     font-size: 0.8125rem;
     font-weight: 600;
-    color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
-}
-
-.rabelais-list dd {
-    margin: 0;
-}
-
-.rabelais-subtitle {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
+    color: rgb(var(--v-theme-secondary));
+    letter-spacing: 0.02em;
 }
 
 .rabelais-paradoxes {
@@ -451,11 +384,6 @@ article p {
 
 .rabelais-etape p {
     margin-top: 0.25rem;
-}
-
-.rabelais-date {
-    color: rgb(var(--v-theme-secondary));
-    letter-spacing: 0.02em;
 }
 
 /* Philosophie */
@@ -570,13 +498,9 @@ article p {
     color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
 }
 
-.rabelais-source,
-.rabelais-voir-aussi {
+.rabelais-source {
+    margin-top: 2rem;
     font-size: 0.875rem;
     color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
-}
-
-.rabelais-source {
-    margin-top: 2rem !important;
 }
 </style>

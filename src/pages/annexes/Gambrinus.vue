@@ -23,21 +23,21 @@ const enBref = [
 <template>
     <v-container>
         <article data-fal-article>
-            <div class="gambrinus-intro">
+            <div class="fiche-intro">
                 <img
-                    class="gambrinus-image gambrinus-portrait"
+                    class="fiche-image fiche-portrait"
                     :src="portrait.src"
                     :alt="portrait.alt"
                     width="682"
                     height="1024"
                 />
                 <div>
-                    <p class="gambrinus-lead">
+                    <p class="fiche-lead gambrinus-lead">
                         Carillonneur éconduit devenu « Roi de la bière »,
                         Gambrinus est la figure légendaire des Flandres que les
                         faluchards célèbrent à chaque chope levée.
                     </p>
-                    <dl class="gambrinus-cadre gambrinus-list">
+                    <dl class="fiche-cadre fiche-list">
                         <div v-for="item in enBref" :key="item.label">
                             <dt>{{ item.label }}</dt>
                             <dd>{{ item.text }}</dd>
@@ -101,7 +101,7 @@ const enBref = [
 
             <figure class="gambrinus-figure">
                 <img
-                    class="gambrinus-image"
+                    class="fiche-image"
                     :src="gravure.src"
                     :alt="gravure.alt"
                     width="443"
@@ -110,7 +110,7 @@ const enBref = [
                 />
             </figure>
 
-            <p class="gambrinus-voir-aussi">
+            <p class="fiche-voir-aussi">
                 Voir aussi :
                 <router-link :to="pages.bacchus.url">Bacchus, dieu du vin et des fêtes</router-link>
             </p>
@@ -119,69 +119,8 @@ const enBref = [
 </template>
 
 <style scoped>
-/* Images : même arrondi que les cadres, liseré pour le mode sombre */
-.gambrinus-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    outline: 1px solid rgba(var(--v-theme-on-surface), 0.14);
-    outline-offset: -1px;
-}
-
-/* Portrait au-dessus du texte sur mobile, à côté à partir de md */
-.gambrinus-intro {
-    display: grid;
-    gap: 16px;
-}
-
-.gambrinus-portrait {
-    max-height: 60vh;
-    object-fit: cover;
-    object-position: top;
-}
-
-@media (min-width: 960px) {
-    .gambrinus-intro {
-        grid-template-columns: 280px 1fr;
-        align-items: start;
-    }
-
-    .gambrinus-portrait {
-        max-height: none;
-    }
-}
-
 .gambrinus-lead {
     margin-bottom: 1rem;
-    font-size: 1.05rem;
-}
-
-/* Même cadre que les listes de la checklist */
-.gambrinus-cadre {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
-    border-radius: 12px;
-}
-
-.gambrinus-cadre > * + * {
-    border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
-}
-
-.gambrinus-list > div {
-    padding: 12px 16px;
-}
-
-.gambrinus-list dt {
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
-}
-
-.gambrinus-list dd {
-    margin: 0;
 }
 
 /* Récit de la légende */
@@ -196,11 +135,5 @@ h2 ~ p {
 .gambrinus-figure {
     max-width: 320px;
     margin: 1.5rem auto 0;
-}
-
-.gambrinus-voir-aussi {
-    margin-top: 1.5rem;
-    font-size: 0.875rem;
-    color: rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity));
 }
 </style>
