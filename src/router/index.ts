@@ -62,6 +62,12 @@ const routes = [
         meta: { layout: "Main" },
     },
     {
+        path: pages.rabelais.url,
+        name: pages.rabelais.name,
+        component: () => import("../pages/annexes/Rabelais.vue"),
+        meta: { layout: "Main" },
+    },
+    {
         path: pages.gambrinus.url,
         name: pages.gambrinus.name,
         component: () => import("../pages/annexes/Gambrinus.vue"),

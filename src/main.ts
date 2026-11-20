@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import '@mdi/font/css/materialdesignicons.css'
 import './style.css'
 import './sass/base/_tables.scss'
+import './sass/base/_fiche.scss'
 import { MotionPlugin } from '@vueuse/motion'
 
 // Vuetify

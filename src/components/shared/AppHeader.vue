@@ -28,7 +28,7 @@ const sections = [
         title: "Annexes",
         items: [
             pageItem("mdi-chess-pawn", pages.monome),
-            { ...linkItem("mdi-book-open-page-variant-outline", pages.rabelais.name, /*pages.rabelais.url*/ "https://ordrerabelaisien.be/rabelais"), value: pages.rabelais.url },
+            pageItem("mdi-book-open-page-variant-outline", pages.rabelais),
             pageItem("mdi-glass-wine", pages.bacchus),
             pageItem("mdi-glass-mug", pages.gambrinus),
         ],

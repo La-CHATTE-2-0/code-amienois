@@ -28,6 +28,15 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
     id: `article-${n}`,
     label: `Art. ${n === 12 ? 69 : n}`,
 }));
+
+// Bouton des cartes qui mènent à une page détaillée
+const enSavoirPlus = {
+    appendIcon: "mdi-chevron-right",
+    color: "primary",
+    text: "En savoir plus",
+    variant: "outlined",
+    block: true,
+} as const;
 </script>
 
 <template>
@@ -105,6 +114,10 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
                     </figcaption>
                 </figure>
             </v-card-text>
+
+            <template v-slot:actions>
+                <v-btn v-bind="enSavoirPlus" :to="pages.rabelais.url" />
+            </template>
         </v-card>
 
         <v-card class="mx-auto mt-5 d-print-none" variant="flat">
@@ -152,14 +165,7 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
             </v-card-text>
 
             <template v-slot:actions>
-                <v-btn
-                    append-icon="mdi-chevron-right"
-                    color="primary"
-                    text="En savoir plus"
-                    variant="outlined"
-                    block
-                    :to="pages.monome.url"
-                ></v-btn>
+                <v-btn v-bind="enSavoirPlus" :to="pages.monome.url" />
             </template>
         </v-card>
 
