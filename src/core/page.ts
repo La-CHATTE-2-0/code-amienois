@@ -46,7 +46,8 @@ const pages = {
     },
     rabelais: {
         name: 'François Rabelais',
-        url: '/rabelais'
+        url: '/rabelais',
+        description: 'François Rabelais, maître à penser des faluchards : sa vie, sa philosophie humaniste et la saga des Géants.'
     },
     gambrinus: {
         name: 'Gambrinus',

@@ -105,6 +105,17 @@ const sommaire = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17].map(
                     </figcaption>
                 </figure>
             </v-card-text>
+
+            <template v-slot:actions>
+                <v-btn
+                    append-icon="mdi-chevron-right"
+                    color="primary"
+                    text="En savoir plus"
+                    variant="outlined"
+                    block
+                    :to="pages.rabelais.url"
+                ></v-btn>
+            </template>
         </v-card>
 
         <v-card class="mx-auto mt-5 d-print-none" variant="flat">

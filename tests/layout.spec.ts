@@ -102,7 +102,7 @@ describe("router", () => {
 
     it("déclare une route pour chaque page interne", async () => {
         for (const page of Object.values(pages)) {
-            if (!page.url.startsWith("/") || page.url === pages.rabelais.url) continue;
+            if (!page.url.startsWith("/")) continue;
             const { matched } = router.resolve(page.url);
             expect(matched[0]?.name, page.url).toBe(page.name);
         }
