@@ -109,8 +109,11 @@ const SOURCE_URL = "https://ordrerabelaisien.be/rabelais";
 
             <h2 class="mt-8">Son œuvre : la saga des Géants</h2>
             <p>
-                Cinq romans qui suivent les géants Gargantua et Pantagruel. Les
-                pages de titre reprennent l’orthographe d’époque.
+                Cinq romans qui suivent les géants Gargantua et Pantagruel,
+                présentés dans l’ordre de leur publication : Pantagruel paraît
+                d’abord, puis Rabelais raconte la vie de son père Gargantua deux
+                ans plus tard. Les pages de titre reprennent l’orthographe
+                d’époque.
             </p>
             <div class="rabelais-livres">
                 <div

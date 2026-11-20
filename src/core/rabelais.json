@@ -150,21 +150,21 @@
     ],
     "livres": [
         {
-            "numero": "Livre premier",
+            "numero": "Premier livre",
+            "titre": "Pantagruel",
+            "sousTitre": "Roy des Dipsodes, restitué à son naturel, avec ses faictz et prouesses espoventables",
+            "auteur": "par feu M. Alcofribas, abstracteur de quinte essence",
+            "annee": "1532",
+            "couleur": "#022E6B"
+        },
+        {
+            "numero": "Deuxième livre",
             "titre": "Gargantua",
             "sousTitre": "La vie très horrifique du grand Gargantua, père de Pantagruel",
             "auteur": "par M. Alcofribas, abstracteur de quinte essence",
             "annee": "1534",
             "couleur": "#660607",
             "note": "Livre plein de pantagruélisme"
-        },
-        {
-            "numero": "Second livre",
-            "titre": "Pantagruel",
-            "sousTitre": "Roy des Dipsodes, restitué à son naturel, avec ses faictz et prouesses espoventables",
-            "auteur": "par feu M. Alcofribas, abstracteur de quinte essence",
-            "annee": "1532",
-            "couleur": "#022E6B"
         },
         {
             "numero": "Le Tiers Livre",
