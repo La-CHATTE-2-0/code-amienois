@@ -43,16 +43,21 @@ const biographie: Etape[] = [
         texte: "Il quitte l’habit pour étudier la médecine à Paris, ce qui lui vaut une condamnation pour apostasie. D’une relation avec une veuve naissent deux enfants. En 1530, à Montpellier, il décroche très vite son bachelier, puis y enseigne. En 1532, il rejoint l’Hôtel-Dieu de Lyon, où il se fait une réputation de novateur, notamment en pratiquant la dissection.",
     },
     {
-        date: "1534",
+        date: "1532",
         titre: "Pantagruel",
-        texte: "Première publication de Pantagruel. Il part à Rome avec Jean du Bellay, évêque de Paris envoyé comme ambassadeur auprès du pape.",
+        texte: "Première publication de Pantagruel, son premier roman.",
+        livre: true,
+    },
+    {
+        date: "1534",
+        titre: "Gargantua",
+        texte: "Première publication de Gargantua, son deuxième roman. Il part à Rome avec Jean du Bellay, évêque de Paris envoyé comme ambassadeur auprès du pape.",
         livre: true,
     },
     {
         date: "1535",
-        titre: "Gargantua",
-        texte: "Première publication de Gargantua, son deuxième roman. Renvoyé de son poste car soupçonné de luthéranisme, il repart à Rome avec Jean du Bellay, devenu cardinal. Le pape Paul III lui accorde l’absolution : il peut exercer librement la médecine en France et reprendre l’habit noir des Bénédictins.",
-        livre: true,
+        titre: "L’absolution du pape",
+        texte: "Renvoyé de son poste car soupçonné de luthéranisme, il repart à Rome avec Jean du Bellay, devenu cardinal. Le pape Paul III lui accorde l’absolution : il peut exercer librement la médecine en France et reprendre l’habit noir des Bénédictins.",
     },
     {
         date: "1540 et 1542",
@@ -128,7 +133,7 @@ const livres = [
         titre: "Gargantua",
         sousTitre: "La vie très horrifique du grand Gargantua, père de Pantagruel",
         auteur: "par M. Alcofribas, abstracteur de quinte essence",
-        annee: "1535",
+        annee: "1534",
         couleur: "#660607",
         note: "Livre plein de pantagruélisme",
     },
@@ -137,7 +142,7 @@ const livres = [
         titre: "Pantagruel",
         sousTitre: "Roy des Dipsodes, restitué à son naturel, avec ses faictz et prouesses espoventables",
         auteur: "par feu M. Alcofribas, abstracteur de quinte essence",
-        annee: "1534",
+        annee: "1532",
         couleur: "#022E6B",
     },
     {
@@ -311,9 +316,8 @@ const livres = [
             </p>
 
             <p class="rabelais-source">
-                Texte adapté, avec son autorisation, de la page
-                <a :href="SOURCE_URL" target="_blank" rel="noopener">François Rabelais</a>
-                de l’Ordre Rabelaisien de Belgique.
+                Source :
+                <a :href="SOURCE_URL" target="_blank" rel="noopener">{{ SOURCE_URL }}</a>
             </p>
             <p class="rabelais-voir-aussi">
                 Voir aussi :
