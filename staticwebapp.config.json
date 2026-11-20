@@ -33,6 +33,10 @@
             "rewrite": "/historique-croix/index.html"
         },
         {
+            "route": "/rabelais",
+            "rewrite": "/rabelais/index.html"
+        },
+        {
             "route": "/gambrinus",
             "rewrite": "/gambrinus/index.html"
         },
