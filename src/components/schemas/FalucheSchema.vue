@@ -85,10 +85,15 @@ const EMPLACEMENTS: Emplacement[] = [
     },
 ];
 
-// Écusson posé au centre de sa zone, un peu en retrait du bord
+// Les écussons sont des images carrées dont le blason n'occupe qu'environ 70 % de la
+// largeur et 95 % de la hauteur : agrandies pour remplir la forme du schéma, puis
+// découpées par elle
+const ECUSSON_SCALE = 1.12;
 function insetBox([x, y, w, h]: Box) {
-    const m = 0.07;
-    return { x: x + w * m, y: y + h * m, width: w * (1 - 2 * m), height: h * (1 - 2 * m), cx: x + w / 2, cy: y + h / 2 };
+    const size = Math.max(w, h) * ECUSSON_SCALE;
+    const cx = x + w / 2;
+    const cy = y + h / 2;
+    return { x: cx - size / 2, y: cy - size / 2, width: size, height: size, cx, cy };
 }
 
 function stripesOf(couleurs: string[], [x0, x1]: [number, number]) {
@@ -335,7 +340,8 @@ const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R
         <!-- Écussons, à la cassure des rubans -->
         <template v-for="r in rubans" :key="`ecusson-${r.key}`">
             <g v-if="r.ruban" :data-faluche="`ecusson-${r.key}`">
-                <path :d="ZONES[r.ecusson]" fill="#f4efe4" stroke="#6b5a3a" stroke-width="2.5" />
+                <!-- Fond brodé noir, comme le fond des écussons -->
+                <path :d="ZONES[r.ecusson]" fill="#141214" />
                 <image
                     v-if="r.ruban.ecusson"
                     :href="r.ruban.ecusson"
@@ -355,10 +361,12 @@ const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R
                     font-family="system-ui, sans-serif"
                     font-size="64"
                     font-weight="700"
-                    fill="#3a2f1c"
+                    fill="#d8b24a"
                 >
                     {{ initiale(r.ruban.nom) }}
                 </text>
+                <!-- Liseré doré de la broderie, par-dessus l'image découpée -->
+                <path :d="ZONES[r.ecusson]" fill="none" stroke="#c9a227" stroke-width="5" />
             </g>
             <path
                 v-else
