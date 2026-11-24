@@ -17,6 +17,7 @@ const TESTED_ELSEWHERE = [
     "QuizHistoryDialog",
     "QuizScoreBar",
     "QuizVisual",
+    "RubanChoix",
     "TableItemDialog",
     "AperalFilters",
     "AperalMarker",

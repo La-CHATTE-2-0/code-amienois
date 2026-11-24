@@ -24,6 +24,11 @@ const pages = {
         url: '/revisions',
         description: 'Quiz pour réviser le Code de la Faluche : histoire, filières, insignes et spécificités amiénoises.'
     },
+    ma_faluche: {
+        name: 'Ma faluche',
+        url: '/ma-faluche',
+        description: 'Compose ta faluche : velours, circulaire de ta filière et rubans de tes villes, puis enregistre-la en image.'
+    },
     checklist: {
         name: 'Checklist Congrès',
         url: '/checklist-congres',

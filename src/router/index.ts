@@ -50,6 +50,12 @@ const routes = [
         meta: { layout: "Main" },
     },
     {
+        path: pages.ma_faluche.url,
+        name: pages.ma_faluche.name,
+        component: () => import("../pages/ressources/MaFaluche.vue"),
+        meta: { layout: "Main" },
+    },
+    {
         path: pages.checklist.url,
         name: pages.checklist.name,
         component: () => import("../pages/ressources/CheckList.vue"),

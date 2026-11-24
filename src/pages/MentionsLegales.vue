@@ -3,6 +3,7 @@ const depot = "https://github.com/La-CHATTE-2-0/code-amienois";
 
 const stockageLocal = [
     { label: "Thème", text: "clair, sombre ou automatique" },
+    { label: "Ma faluche", text: "le velours, la filière et les rubans choisis" },
     { label: "Checklist Congrès", text: "les éléments cochés" },
     { label: "Révisions", text: "le nombre de questions choisi, les meilleurs scores et l’historique des parties" },
 ];
