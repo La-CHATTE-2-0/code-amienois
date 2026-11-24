@@ -62,6 +62,33 @@ describe("FalucheSchema", () => {
         expect(wrapper.get('[data-faluche="ruban-naissance"]').findAll("path").length).toBeGreaterThan(0);
     });
 
+    it("place deux villes d'études en miroir de la province et de la naissance", () => {
+        const wrapper = mount(FalucheSchema, {
+            props: {
+                etudes: resolveRuban({ ref: cityRef("Beauvais") }),
+                etudesSuivante: resolveRuban({ ref: cityRef("Amiens") }),
+                anneeChangement: "2024",
+            },
+        });
+        // La ville d'avant : écusson du haut, diagonale seule
+        const avant = wrapper.get('[data-faluche="ruban-etudes"]');
+        expect(avant.findAll("rect")).toHaveLength(0);
+        expect(wrapper.get('[data-faluche="ecusson-etudes"] image').attributes("transform")).toBe("rotate(45 162 347)");
+        // La nouvelle ville : ruban complet, écusson du bas et année
+        const nouvelle = wrapper.get('[data-faluche="ruban-etudes-suivante"]');
+        expect(nouvelle.findAll("rect").length).toBeGreaterThan(0);
+        expect(nouvelle.text()).toContain("2024");
+        expect(wrapper.get('[data-faluche="ecusson-etudes-suivante"] image').attributes("href")).toBe("/images/ecussons/amiens.png");
+        expect(wrapper.get('[data-faluche="ecusson-etudes-suivante"] image').attributes("transform")).toBe("rotate(45 212 528)");
+    });
+
+    it("garde le ruban complet pour une seule ville d'études", () => {
+        const wrapper = mount(FalucheSchema, { props: { etudes: resolveRuban({ ref: cityRef("Amiens") }) } });
+        expect(wrapper.get('[data-faluche="ruban-etudes"]').findAll("rect").length).toBeGreaterThan(0);
+        expect(wrapper.get('[data-faluche="ecusson-etudes"] image').attributes("transform")).toBe("rotate(45 212 528)");
+        expect(wrapper.find('[data-faluche="ruban-etudes-suivante"]').exists()).toBe(false);
+    });
+
     it("garde la place des rubans d'association et d'élu", () => {
         const wrapper = mount(FalucheSchema);
         expect(wrapper.find('[data-faluche="emplacement-association"]').exists()).toBe(true);

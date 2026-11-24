@@ -31,8 +31,7 @@ type Pose = { cx: number; cy: number; angle: number };
  * partagent la largeur, la première à gauche. Le ruban de ville de naissance n'a
  * que sa diagonale : il part de son écusson, posé sur le ruban de province.
  */
-type Emplacement = {
-    key: "etudes" | "province" | "naissance";
+type Placement = {
     droit: ZoneName[];
     droitX: [number, number];
     diagonale: [ZoneName, ZoneName];
@@ -40,34 +39,41 @@ type Emplacement = {
     pose: Pose;
 };
 
-const EMPLACEMENTS: Emplacement[] = [
-    {
-        key: "etudes",
-        droit: ["etudesGauche", "etudesDroite"],
-        droitX: [190, 295.5],
-        diagonale: ["diagEtudes1", "diagEtudes2"],
-        ecusson: "ecussonEtudes",
-        pose: { cx: 212, cy: 528, angle: 45 },
-    },
-    {
-        key: "province",
-        // Même largeur que la ville d'études : les deux bandes droites du schéma,
-        // et le morceau visible entre l'écusson de naissance et celui de province
-        droit: ["provinceGauche", "provinceDroite", "provinceSousEcusson"],
-        droitX: [503.5, 609],
-        diagonale: ["diagProvince1", "diagProvince2"],
-        ecusson: "ecussonProvince",
-        pose: { cx: 586, cy: 529, angle: -45 },
-    },
-    {
-        key: "naissance",
-        droit: [],
-        droitX: [0, 0],
-        diagonale: ["diagNaissance1", "diagNaissance2"],
-        ecusson: "ecussonNaissance",
-        pose: { cx: 637, cy: 347, angle: -45 },
-    },
-];
+// Ruban complet à gauche : partie droite, écusson du bas, diagonale vers le bas à gauche
+const ETUDES: Placement = {
+    droit: ["etudesGauche", "etudesDroite"],
+    droitX: [190, 295.5],
+    diagonale: ["diagEtudes1", "diagEtudes2"],
+    ecusson: "ecussonEtudes",
+    pose: { cx: 212, cy: 528, angle: 45 },
+};
+
+// Miroir de la naissance : écusson du haut posé sur le ruban d'études, diagonale seule
+const ETUDES_AVANT: Placement = {
+    droit: [],
+    droitX: [0, 0],
+    diagonale: ["diagEtudesAvant1", "diagEtudesAvant2"],
+    ecusson: "ecussonEtudesAvant",
+    pose: { cx: 162, cy: 347, angle: 45 },
+};
+
+const PROVINCE: Placement = {
+    // Même largeur que la ville d'études : les deux bandes droites du schéma,
+    // et le morceau visible entre l'écusson de naissance et celui de province
+    droit: ["provinceGauche", "provinceDroite", "provinceSousEcusson"],
+    droitX: [503.5, 609],
+    diagonale: ["diagProvince1", "diagProvince2"],
+    ecusson: "ecussonProvince",
+    pose: { cx: 586, cy: 529, angle: -45 },
+};
+
+const NAISSANCE: Placement = {
+    droit: [],
+    droitX: [0, 0],
+    diagonale: ["diagNaissance1", "diagNaissance2"],
+    ecusson: "ecussonNaissance",
+    pose: { cx: 637, cy: 347, angle: -45 },
+};
 
 // Les écussons sont des images carrées dont le blason n'occupe qu'environ 70 % de la
 // largeur et 95 % de la hauteur. Une fois redressée, la forme du schéma mesure environ
@@ -90,25 +96,43 @@ function stripesOf(couleurs: string[], [x0, x1]: [number, number]) {
     return couleurs.map((color, i) => ({ color, x: x0 + i * w, w }));
 }
 
+// Année du changement, écrite sur la partie droite du ruban de la nouvelle ville
+const ANNEE = { x: (ETUDES.droitX[0] + ETUDES.droitX[1]) / 2, y: 170 };
+
+/**
+ * Deux villes d'études : même placement qu'à droite, en miroir. La ville d'avant
+ * passe sur l'écusson du haut (diagonale seule), la nouvelle prend le ruban complet
+ * et l'écusson du bas, avec l'année du changement (spécificité amiénoise, article 10).
+ */
+const emplacements = computed(() => {
+    const gauche = props.etudesSuivante
+        ? [
+              { key: "etudes", ruban: props.etudes, placement: ETUDES_AVANT },
+              { key: "etudes-suivante", ruban: props.etudesSuivante, placement: ETUDES, annee: props.anneeChangement },
+          ]
+        : [{ key: "etudes", ruban: props.etudes, placement: ETUDES }];
+    return [
+        ...gauche,
+        { key: "province", ruban: props.province, placement: PROVINCE },
+        { key: "naissance", ruban: props.naissance, placement: NAISSANCE },
+    ];
+});
+
 const rubans = computed(() =>
-    EMPLACEMENTS.map((e) => {
-        const ruban = props[e.key] ?? null;
+    emplacements.value.map(({ key, ruban, placement, annee }: { key: string; ruban?: RubanResolu | null; placement: Placement; annee?: string }) => {
         const couleurs = ruban?.couleurs ?? [];
         return {
-            ...e,
-            ruban,
-            stripes: stripesOf(couleurs, e.droitX),
+            ...placement,
+            key,
+            ruban: ruban ?? null,
+            annee: annee || "",
+            stripes: stripesOf(couleurs, placement.droitX),
             diagonaleColors: [couleurs[0], couleurs[1] ?? couleurs[0]],
-            ecussonImage: placeEcusson(e.pose),
-            zones: [...e.droit, ...e.diagonale],
+            ecussonImage: placeEcusson(placement.pose),
+            zones: [...placement.droit, ...placement.diagonale],
         };
     })
 );
-
-// Nouvelle ville d'études : parallèle à la première, du côté extérieur
-const SUIVANTE_X: [number, number] = [134, 186];
-const SUIVANTE_MID = (SUIVANTE_X[0] + SUIVANTE_X[1]) / 2;
-const suivante = computed(() => stripesOf(props.etudesSuivante?.couleurs ?? [], SUIVANTE_X));
 
 // Rubans d'association et d'élu : place gardée au centre, en pointillés
 const PLACES = [
@@ -199,46 +223,6 @@ const viewBox = `${CX - R - 20} ${CY - R - 20} ${2 * R + 40} ${2 * R + 40}`;
                 :data-faluche="`emplacement-${place.key}`"
             />
 
-            <!-- Nouvelle ville d'études, parallèle à la première -->
-            <g v-if="suivante.length" :clip-path="url('zone-veloursGauche')" data-faluche="ruban-etudes-suivante">
-                <rect
-                    v-for="(stripe, i) in suivante"
-                    :key="i"
-                    :x="stripe.x"
-                    y="0"
-                    :width="stripe.w + 0.5"
-                    height="470"
-                    :fill="stripe.color"
-                />
-                <rect
-                    :x="SUIVANTE_X[0]"
-                    y="0"
-                    :width="SUIVANTE_X[1] - SUIVANTE_X[0]"
-                    height="470"
-                    fill="none"
-                    stroke="#000"
-                    stroke-opacity="0.4"
-                    stroke-width="1.5"
-                />
-                <text
-                    v-if="anneeChangement"
-                    :x="SUIVANTE_MID"
-                    y="330"
-                    :transform="`rotate(-90 ${SUIVANTE_MID} 330)`"
-                    text-anchor="middle"
-                    dominant-baseline="central"
-                    font-family="system-ui, sans-serif"
-                    font-size="28"
-                    font-weight="700"
-                    fill="#fff"
-                    stroke="#000"
-                    stroke-width="5"
-                    paint-order="stroke"
-                >
-                    {{ anneeChangement }}
-                </text>
-            </g>
-
             <!-- Rubans : partie droite, puis diagonale vers le bord -->
             <template v-for="r in rubans" :key="r.key">
                 <g v-if="r.ruban" :data-faluche="`ruban-${r.key}`">
@@ -254,6 +238,23 @@ const viewBox = `${CX - R - 20} ${CY - R - 20} ${2 * R + 40} ${2 * R + 40}`;
                         />
                     </g>
                     <path v-for="(zone, i) in r.diagonale" :key="zone" :d="ZONES[zone]" :fill="r.diagonaleColors[i]" />
+                    <text
+                        v-if="r.annee"
+                        :x="ANNEE.x"
+                        :y="ANNEE.y"
+                        :transform="`rotate(-90 ${ANNEE.x} ${ANNEE.y})`"
+                        text-anchor="middle"
+                        dominant-baseline="central"
+                        font-family="system-ui, sans-serif"
+                        font-size="34"
+                        font-weight="700"
+                        fill="#fff"
+                        stroke="#000"
+                        stroke-width="6"
+                        paint-order="stroke"
+                    >
+                        {{ r.annee }}
+                    </text>
                     <path
                         v-for="zone in r.zones"
                         :key="`trait-${zone}`"
