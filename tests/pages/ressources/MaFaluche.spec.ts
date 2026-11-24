@@ -43,6 +43,25 @@ describe("FalucheSchema", () => {
         expect(wrapper.get("desc").text()).toContain("ruban de ville de naissance : Brest");
     });
 
+    it("donne au ruban de province la largeur de celui d'études, et ne garde que la diagonale de la naissance", () => {
+        const wrapper = mount(FalucheSchema, {
+            props: {
+                etudes: resolveRuban({ ref: cityRef("Reims") }),
+                province: resolveRuban({ ref: provinceRef("picardie") }),
+                naissance: resolveRuban({ ref: cityRef("Saint-Quentin") }),
+            },
+        });
+        // Largeur de la partie droite : somme des bandes d'une même zone découpée
+        const largeur = (key: string) =>
+            wrapper
+                .get(`[data-faluche="ruban-${key}"] g`)
+                .findAll("rect")
+                .reduce((sum, rect) => sum + Number(rect.attributes("width")), 0);
+        expect(largeur("province")).toBeCloseTo(largeur("etudes"), 0);
+        expect(wrapper.get('[data-faluche="ruban-naissance"]').findAll("rect")).toHaveLength(0);
+        expect(wrapper.get('[data-faluche="ruban-naissance"]').findAll("path").length).toBeGreaterThan(0);
+    });
+
     it("garde la place des rubans d'association et d'élu", () => {
         const wrapper = mount(FalucheSchema);
         expect(wrapper.find('[data-faluche="emplacement-association"]').exists()).toBe(true);

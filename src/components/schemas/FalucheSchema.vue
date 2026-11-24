@@ -28,7 +28,8 @@ type Pose = { cx: number; cy: number; angle: number };
 /**
  * Chaque ruban suit les zones du schéma des parties : une partie droite depuis
  * l'arrière jusqu'à l'écusson, puis une diagonale vers le bord. Les couleurs se
- * partagent la largeur, la première à gauche.
+ * partagent la largeur, la première à gauche. Le ruban de ville de naissance n'a
+ * que sa diagonale : il part de son écusson, posé sur le ruban de province.
  */
 type Emplacement = {
     key: "etudes" | "province" | "naissance";
@@ -50,16 +51,18 @@ const EMPLACEMENTS: Emplacement[] = [
     },
     {
         key: "province",
-        droit: ["province"],
-        droitX: [504, 558.5],
+        // Même largeur que la ville d'études : les deux bandes droites du schéma,
+        // et le morceau visible entre l'écusson de naissance et celui de province
+        droit: ["provinceGauche", "provinceDroite", "provinceSousEcusson"],
+        droitX: [503.5, 609],
         diagonale: ["diagProvince1", "diagProvince2"],
         ecusson: "ecussonProvince",
         pose: { cx: 586, cy: 529, angle: -45 },
     },
     {
         key: "naissance",
-        droit: ["naissance"],
-        droitX: [561, 608.5],
+        droit: [],
+        droitX: [0, 0],
         diagonale: ["diagNaissance1", "diagNaissance2"],
         ecusson: "ecussonNaissance",
         pose: { cx: 637, cy: 347, angle: -45 },
