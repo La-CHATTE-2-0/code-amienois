@@ -73,19 +73,19 @@ describe("resolveRuban", () => {
 });
 
 describe("stockage", () => {
-    it("part d'Amiens en velours noir", () => {
+    it("part d'Amiens comme ville d'études", () => {
         expect(loadConfig()).toEqual(defaultConfig());
         expect(defaultConfig().etudes).toEqual({ ref: cityRef("Amiens") });
     });
 
     it("relit ce qui a été enregistré", () => {
-        const config = { ...defaultConfig(), velours: "amarante" as const, filiere: "Droit" };
+        const config = { ...defaultConfig(), naissance: { ref: cityRef("Rouen") } };
         saveConfig(config);
         expect(loadConfig()).toEqual(config);
     });
 
     it("garde ce qui est lisible dans un stockage abîmé", () => {
-        expect(sanitize({ velours: "vert", filiere: 3, province: { ref: provinceRef("artois") }, anneeChangement: "202512" })).toEqual({
+        expect(sanitize({ velours: "amarante", filiere: "Droit", province: { ref: provinceRef("artois") }, anneeChangement: "202512" })).toEqual({
             ...defaultConfig(),
             province: { ref: provinceRef("artois") },
             anneeChangement: "2025",
@@ -95,7 +95,7 @@ describe("stockage", () => {
     });
 
     it("n'écrase pas une configuration écrite par une version plus récente", () => {
-        const newer = JSON.stringify({ version: 99, config: { velours: "amarante" } });
+        const newer = JSON.stringify({ version: 99, config: { province: { ref: provinceRef("artois") } } });
         localStorage.setItem(KEY, newer);
         expect(loadConfig()).toEqual(defaultConfig());
         saveConfig(defaultConfig());
@@ -104,9 +104,9 @@ describe("stockage", () => {
 
     it("enregistre chaque changement et repart de zéro", async () => {
         const { config, reset } = useFalucheConfig();
-        config.value.filiere = "Pharmacie";
+        config.value.province = { ref: provinceRef("normandie") };
         await nextTick();
-        expect(loadConfig().filiere).toBe("Pharmacie");
+        expect(loadConfig().province).toEqual({ ref: provinceRef("normandie") });
         reset();
         await nextTick();
         expect(loadConfig()).toEqual(defaultConfig());

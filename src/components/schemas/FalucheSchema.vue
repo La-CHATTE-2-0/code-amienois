@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import { computed, useId } from "vue";
-import type { Circulaire } from "../../core/circulaires";
-import { circuColors } from "../../core/circulaires";
-import type { RubanResolu, Velours } from "../../core/falucheConfig";
-import { VELOURS_COLORS } from "../../core/falucheConfig";
+import type { RubanResolu } from "../../core/falucheConfig";
+import { VELOURS_COLOR } from "../../core/falucheConfig";
 import { ZONES } from "./falucheZones";
 
 const props = defineProps<{
-    velours: Velours;
-    circulaire?: Circulaire;
     etudes?: RubanResolu | null;
     etudesSuivante?: RubanResolu | null;
     anneeChangement?: string;
@@ -16,30 +12,14 @@ const props = defineProps<{
     naissance?: RubanResolu | null;
 }>();
 
-const veloursColor = computed(() => VELOURS_COLORS[props.velours]);
-
 const uid = useId();
 const id = (name: string) => `${uid}-${name}`;
 const url = (name: string) => `url(#${id(name)})`;
 
-// Le dessus reprend le contour du schéma des parties (cercle de centre 399,5 ; 398,5).
-// Le circulaire l'entoure.
+// Le dessus reprend le contour du schéma des parties (cercle de centre 399,5 ; 398,5)
 const CX = 399.5;
 const CY = 398.5;
-const R_IN = 371;
-const RING = 58;
-const R_OUT = R_IN + RING;
-
-// Bandes concentriques du circulaire, la première couleur à l'extérieur
-const bandes = computed(() => {
-    const couleurs = props.circulaire?.couleurs ?? [];
-    const width = RING / Math.max(couleurs.length, 1);
-    return couleurs.map((name, i) => ({
-        color: circuColors[name] ?? "transparent",
-        r: R_OUT - width * (i + 0.5),
-        width,
-    }));
-});
+const R = 371;
 
 type ZoneName = keyof typeof ZONES;
 /** Centre de la forme d'écusson et inclinaison du blason (en degrés, sens horaire) */
@@ -137,8 +117,7 @@ const PLACE_W = 56;
 const initiale = (nom: string) => nom.trim().charAt(0).toUpperCase();
 
 const description = computed(() => {
-    const parts = [`Faluche de velours ${props.velours}`];
-    if (props.circulaire) parts.push(`circulaire ${props.circulaire.matiere} de la filière ${props.circulaire.filiere}`);
+    const parts = ["Dessus de faluche en velours noir"];
     for (const [label, ruban] of [
         ["ville d'études", props.etudes],
         ["nouvelle ville d'études", props.etudesSuivante],
@@ -150,7 +129,7 @@ const description = computed(() => {
     return parts.join(", ");
 });
 
-const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R_OUT + 24}`;
+const viewBox = `${CX - R - 20} ${CY - R - 20} ${2 * R + 40} ${2 * R + 40}`;
 </script>
 
 <template>
@@ -186,15 +165,6 @@ const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R
                 <stop offset="0.7" stop-color="#fff" stop-opacity="0" />
                 <stop offset="1" stop-color="#000" stop-opacity="0.35" />
             </radialGradient>
-            <!-- Reflets du satin -->
-            <linearGradient :id="id('satin')" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#fff" stop-opacity="0" />
-                <stop offset="0.22" stop-color="#fff" stop-opacity="0.45" />
-                <stop offset="0.4" stop-color="#fff" stop-opacity="0" />
-                <stop offset="0.62" stop-color="#000" stop-opacity="0.18" />
-                <stop offset="0.8" stop-color="#fff" stop-opacity="0.3" />
-                <stop offset="1" stop-color="#fff" stop-opacity="0" />
-            </linearGradient>
             <clipPath :id="id('dessus')">
                 <path :d="ZONES.contour" />
             </clipPath>
@@ -204,45 +174,10 @@ const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R
         </defs>
 
         <!-- Ombre portée -->
-        <circle :cx="CX + 6" :cy="CY + 10" :r="R_OUT + 4" fill="#000" opacity="0.12" />
-
-        <!-- Circulaire -->
-        <g data-faluche="circulaire" :data-matiere="circulaire?.matiere">
-            <circle
-                v-if="!bandes.length"
-                :cx="CX"
-                :cy="CY"
-                :r="R_OUT - RING / 2"
-                fill="none"
-                stroke="#9a9a9a"
-                stroke-opacity="0.35"
-                :stroke-width="RING"
-            />
-            <circle
-                v-for="(bande, i) in bandes"
-                :key="i"
-                :cx="CX"
-                :cy="CY"
-                :r="bande.r"
-                fill="none"
-                :stroke="bande.color"
-                :stroke-width="bande.width + 0.8"
-                :filter="circulaire?.matiere === 'velours' ? url('grain') : undefined"
-                data-faluche="bande"
-            />
-            <circle
-                v-if="circulaire"
-                :cx="CX"
-                :cy="CY"
-                :r="R_OUT - RING / 2"
-                fill="none"
-                :stroke="circulaire.matiere === 'satin' ? url('satin') : url('volume')"
-                :stroke-width="RING"
-            />
-        </g>
+        <circle :cx="CX + 5" :cy="CY + 8" :r="R + 3" fill="#000" opacity="0.12" />
 
         <!-- Velours du dessus -->
-        <path data-faluche="velours" :d="ZONES.contour" :fill="veloursColor" :filter="url('grain')" />
+        <path data-faluche="velours" :d="ZONES.contour" :fill="VELOURS_COLOR" :filter="url('grain')" />
 
         <g :clip-path="url('dessus')">
             <!-- Places gardées pour l'association et l'élu -->
@@ -389,10 +324,7 @@ const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R
         </template>
 
         <!-- Contours, dans le style du schéma des parties -->
-        <g fill="none" stroke="currentColor" stroke-opacity="0.55">
-            <circle :cx="CX" :cy="CY" :r="R_OUT" stroke-width="4" />
-            <path :d="ZONES.contour" stroke-width="3" />
-        </g>
+        <path :d="ZONES.contour" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="4" />
     </svg>
 </template>
 

@@ -3,7 +3,6 @@ import { flushPromises, mount } from "@vue/test-utils";
 import MaFaluche from "../../../src/pages/ressources/MaFaluche.vue";
 import FalucheSchema from "../../../src/components/schemas/FalucheSchema.vue";
 import { AUTRE, cityRef, defaultConfig, loadConfig, provinceRef, resolveRuban } from "../../../src/core/falucheConfig";
-import { findCirculaire } from "../../../src/core/circulaires";
 import { mountWithRouter } from "../../helpers/mountPage";
 
 const image = vi.hoisted(() => ({
@@ -19,20 +18,16 @@ async function mountPage() {
 }
 
 describe("FalucheSchema", () => {
-    it("dessine une bande de circulaire par couleur, en satin ou en velours", () => {
-        const militaire = mount(FalucheSchema, { props: { velours: "noir", circulaire: findCirculaire("Militaire") } });
-        expect(militaire.findAll('[data-faluche="bande"]')).toHaveLength(3);
-        expect(militaire.get('[data-faluche="circulaire"]').attributes("data-matiere")).toBe("satin");
-
-        const medecine = mount(FalucheSchema, { props: { velours: "noir", circulaire: findCirculaire("Médecine") } });
-        expect(medecine.findAll('[data-faluche="bande"]')).toHaveLength(1);
-        expect(medecine.get('[data-faluche="circulaire"]').attributes("data-matiere")).toBe("velours");
+    it("dessine un dessus en velours noir, sans circulaire", () => {
+        const wrapper = mount(FalucheSchema);
+        expect(wrapper.get('[data-faluche="velours"]').attributes("fill")).toBe("#141214");
+        expect(wrapper.find('[data-faluche="circulaire"]').exists()).toBe(false);
+        expect(wrapper.get("desc").text()).toBe("Dessus de faluche en velours noir");
     });
 
     it("place les rubans choisis avec leur écusson et l'année du changement", () => {
         const wrapper = mount(FalucheSchema, {
             props: {
-                velours: "amarante",
                 etudes: resolveRuban({ ref: cityRef("Lille") }),
                 etudesSuivante: resolveRuban({ ref: cityRef("Amiens") }),
                 anneeChangement: "2024",
@@ -45,12 +40,11 @@ describe("FalucheSchema", () => {
         expect(wrapper.get('[data-faluche="ecusson-province"] image').attributes("href")).toBe("/images/ecussons/flandres.png");
         // Pas d'écusson connu pour une ville saisie à la main : on dessine son initiale
         expect(wrapper.get('[data-faluche="ecusson-naissance"]').text()).toBe("B");
-        expect(wrapper.get("desc").text()).toContain("velours amarante");
         expect(wrapper.get("desc").text()).toContain("ruban de ville de naissance : Brest");
     });
 
     it("garde la place des rubans d'association et d'élu", () => {
-        const wrapper = mount(FalucheSchema, { props: { velours: "noir" } });
+        const wrapper = mount(FalucheSchema);
         expect(wrapper.find('[data-faluche="emplacement-association"]').exists()).toBe(true);
         expect(wrapper.find('[data-faluche="emplacement-elu"]').exists()).toBe(true);
     });
@@ -71,21 +65,18 @@ describe("MaFaluche", () => {
     it("reprend la faluche enregistrée", async () => {
         localStorage.setItem(
             "ma-faluche",
-            JSON.stringify({ version: 1, config: { ...defaultConfig(), filiere: "Droit", naissance: { ref: cityRef("Rouen") } } })
+            JSON.stringify({ version: 1, config: { ...defaultConfig(), naissance: { ref: cityRef("Rouen") } } })
         );
         const wrapper = await mountPage();
         const legende = wrapper.get(".ma-faluche__legende").text();
-        expect(legende).toContain("Droit (satin)");
         expect(legende).toContain("Rouen");
-        expect(wrapper.findAll('[data-faluche="bande"]')).toHaveLength(1);
+        expect(wrapper.find('[data-faluche="ecusson-naissance"] image').attributes("href")).toBe("/images/ecussons/rouen.png");
     });
 
-    it("change de velours et le retient", async () => {
+    it("ne propose ni velours ni circulaire", async () => {
         const wrapper = await mountPage();
-        const amarante = wrapper.findAll("button").find((b) => b.text() === "Amarante")!;
-        await amarante.trigger("click");
-        expect(loadConfig().velours).toBe("amarante");
-        expect(wrapper.get("desc").text()).toContain("velours amarante");
+        expect(wrapper.findAll("button").some((b) => b.text() === "Amarante")).toBe(false);
+        expect(wrapper.find("#mf-filiere").exists()).toBe(false);
     });
 
     it("ajoute une nouvelle ville d'études avec son année", async () => {
@@ -98,13 +89,12 @@ describe("MaFaluche", () => {
         expect(wrapper.get('[data-faluche="ruban-etudes-suivante"]').text()).toContain("2024");
     });
 
-    it("enregistre la faluche en image, légendée de la filière", async () => {
-        localStorage.setItem("ma-faluche", JSON.stringify({ version: 1, config: { ...defaultConfig(), filiere: "Droit" } }));
+    it("enregistre la faluche en image", async () => {
         const wrapper = await mountPage();
         await wrapper.findAll("button").find((b) => b.text().includes("Enregistrer en image"))!.trigger("click");
         await flushPromises();
         expect(image.serializeSchema).toHaveBeenCalledWith(expect.any(SVGSVGElement), expect.any(String));
-        expect(image.renderPng).toHaveBeenCalledWith("<svg/>", expect.any(String), "Ma faluche · Droit");
+        expect(image.renderPng).toHaveBeenCalledWith("<svg/>", expect.any(String), "Ma faluche");
         expect(wrapper.get('[role="status"]').text()).toBe("Image téléchargée.");
     });
 
@@ -117,18 +107,18 @@ describe("MaFaluche", () => {
     });
 
     it("repart d'une faluche vierge après confirmation", async () => {
-        localStorage.setItem("ma-faluche", JSON.stringify({ version: 1, config: { ...defaultConfig(), filiere: "Droit" } }));
+        localStorage.setItem("ma-faluche", JSON.stringify({ version: 1, config: { ...defaultConfig(), province: { ref: provinceRef("artois") } } }));
         const wrapper = await mountPage();
         const confirm = vi.fn(() => false);
         vi.stubGlobal("confirm", confirm);
         const reset = wrapper.findAll("button").find((b) => b.text().includes("Recommencer"))!;
 
         await reset.trigger("click");
-        expect(loadConfig().filiere).toBe("Droit");
+        expect(loadConfig().province).toEqual({ ref: provinceRef("artois") });
 
         confirm.mockReturnValue(true);
         await reset.trigger("click");
-        expect(loadConfig().filiere).toBeNull();
+        expect(loadConfig().province).toBeNull();
     });
 });
 

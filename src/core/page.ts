@@ -27,7 +27,7 @@ const pages = {
     ma_faluche: {
         name: 'Ma faluche',
         url: '/ma-faluche',
-        description: 'Compose ta faluche : velours, circulaire de ta filière et rubans de tes villes, puis enregistre-la en image.'
+        description: 'Compose le dessus de ta faluche avec les rubans et écussons de tes villes, puis enregistre-le en image.'
     },
     checklist: {
         name: 'Checklist Congrès',

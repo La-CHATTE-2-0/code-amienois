@@ -1,16 +1,12 @@
 import { ref, watch } from "vue";
 import { cities, colorNames, ecusson, provinces, swatchColors } from "./villes";
 
-export type Velours = "noir" | "amarante";
-
 /** Ruban choisi dans les listes (« ville:Amiens », « province:picardie ») ou décrit à la main */
 export type ChoixRuban =
     | { ref: string }
     | { ref: "autre"; nom: string; couleurs: string[] };
 
 export type FalucheConfig = {
-    velours: Velours;
-    filiere: string | null;
     etudes: ChoixRuban | null;
     /** Nouvelle ville d'études, placée en arrière de la première avec l'année du changement */
     etudesSuivante: ChoixRuban | null;
@@ -22,18 +18,14 @@ export type FalucheConfig = {
 /** Ce que le schéma dessine pour un ruban supérieur */
 export type RubanResolu = { nom: string; couleurs: string[]; ecusson?: string };
 
-export const VELOURS_COLORS: Record<Velours, string> = {
-    noir: "#141214",
-    amarante: "#6E1230",
-};
+// Velours noir, seul proposé sur le schéma
+export const VELOURS_COLOR = "#141214";
 
 export const AUTRE = "autre";
 export const cityRef = (name: string) => `ville:${name}`;
 export const provinceRef = (id: string) => `province:${id}`;
 
 export const defaultConfig = (): FalucheConfig => ({
-    velours: "noir",
-    filiere: null,
     etudes: { ref: cityRef("Amiens") },
     etudesSuivante: null,
     anneeChangement: "",
@@ -81,8 +73,6 @@ export function sanitize(raw: any): FalucheConfig {
     const base = defaultConfig();
     if (!raw || typeof raw !== "object") return base;
     return {
-        velours: raw.velours === "amarante" ? "amarante" : "noir",
-        filiere: typeof raw.filiere === "string" ? raw.filiere : null,
         etudes: "etudes" in raw ? choixOrNull(raw.etudes) : base.etudes,
         etudesSuivante: choixOrNull(raw.etudesSuivante),
         anneeChangement: typeof raw.anneeChangement === "string" ? raw.anneeChangement.slice(0, 4) : "",
