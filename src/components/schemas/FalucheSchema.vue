@@ -42,7 +42,8 @@ const bandes = computed(() => {
 });
 
 type ZoneName = keyof typeof ZONES;
-type Box = [number, number, number, number];
+/** Centre de la forme d'écusson et inclinaison du blason (en degrés, sens horaire) */
+type Pose = { cx: number; cy: number; angle: number };
 
 /**
  * Chaque ruban suit les zones du schéma des parties : une partie droite depuis
@@ -55,7 +56,7 @@ type Emplacement = {
     droitX: [number, number];
     diagonale: [ZoneName, ZoneName];
     ecusson: ZoneName;
-    ecussonBox: Box;
+    pose: Pose;
 };
 
 const EMPLACEMENTS: Emplacement[] = [
@@ -65,7 +66,7 @@ const EMPLACEMENTS: Emplacement[] = [
         droitX: [190, 295.5],
         diagonale: ["diagEtudes1", "diagEtudes2"],
         ecusson: "ecussonEtudes",
-        ecussonBox: [125, 438, 186, 174],
+        pose: { cx: 212, cy: 528, angle: 42 },
     },
     {
         key: "province",
@@ -73,7 +74,7 @@ const EMPLACEMENTS: Emplacement[] = [
         droitX: [504, 558.5],
         diagonale: ["diagProvince1", "diagProvince2"],
         ecusson: "ecussonProvince",
-        ecussonBox: [489, 438, 186, 172],
+        pose: { cx: 586, cy: 529, angle: -40 },
     },
     {
         key: "naissance",
@@ -81,19 +82,24 @@ const EMPLACEMENTS: Emplacement[] = [
         droitX: [561, 608.5],
         diagonale: ["diagNaissance1", "diagNaissance2"],
         ecusson: "ecussonNaissance",
-        ecussonBox: [540, 256, 186, 173],
+        pose: { cx: 637, cy: 347, angle: -40 },
     },
 ];
 
 // Les écussons sont des images carrées dont le blason n'occupe qu'environ 70 % de la
-// largeur et 95 % de la hauteur : agrandies pour remplir la forme du schéma, puis
-// découpées par elle
-const ECUSSON_SCALE = 1.12;
-function insetBox([x, y, w, h]: Box) {
-    const size = Math.max(w, h) * ECUSSON_SCALE;
-    const cx = x + w / 2;
-    const cy = y + h / 2;
-    return { x: cx - size / 2, y: cy - size / 2, width: size, height: size, cx, cy };
+// largeur et 95 % de la hauteur. Une fois redressée, la forme du schéma mesure environ
+// 157 × 198 : l'image est agrandie pour la remplir, inclinée comme elle, puis découpée.
+const ECUSSON_SIZE = 215;
+function placeEcusson({ cx, cy, angle }: Pose) {
+    return {
+        x: cx - ECUSSON_SIZE / 2,
+        y: cy - ECUSSON_SIZE / 2,
+        width: ECUSSON_SIZE,
+        height: ECUSSON_SIZE,
+        cx,
+        cy,
+        transform: `rotate(${angle} ${cx} ${cy})`,
+    };
 }
 
 function stripesOf(couleurs: string[], [x0, x1]: [number, number]) {
@@ -110,7 +116,7 @@ const rubans = computed(() =>
             ruban,
             stripes: stripesOf(couleurs, e.droitX),
             diagonaleColors: [couleurs[0], couleurs[1] ?? couleurs[0]],
-            ecussonImage: insetBox(e.ecussonBox),
+            ecussonImage: placeEcusson(e.pose),
             zones: [...e.droit, ...e.diagonale],
         };
     })
@@ -342,20 +348,23 @@ const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R
             <g v-if="r.ruban" :data-faluche="`ecusson-${r.key}`">
                 <!-- Fond brodé noir, comme le fond des écussons -->
                 <path :d="ZONES[r.ecusson]" fill="#141214" />
-                <image
-                    v-if="r.ruban.ecusson"
-                    :href="r.ruban.ecusson"
-                    :clip-path="url(`zone-${r.ecusson}`)"
-                    :x="r.ecussonImage.x"
-                    :y="r.ecussonImage.y"
-                    :width="r.ecussonImage.width"
-                    :height="r.ecussonImage.height"
-                    preserveAspectRatio="xMidYMid meet"
-                />
+                <!-- Découpe sur un groupe non pivoté : la forme reste celle du schéma -->
+                <g v-if="r.ruban.ecusson" :clip-path="url(`zone-${r.ecusson}`)">
+                    <image
+                        :href="r.ruban.ecusson"
+                        :x="r.ecussonImage.x"
+                        :y="r.ecussonImage.y"
+                        :width="r.ecussonImage.width"
+                        :height="r.ecussonImage.height"
+                        :transform="r.ecussonImage.transform"
+                        preserveAspectRatio="xMidYMid meet"
+                    />
+                </g>
                 <text
                     v-else
                     :x="r.ecussonImage.cx"
                     :y="r.ecussonImage.cy"
+                    :transform="r.ecussonImage.transform"
                     text-anchor="middle"
                     dominant-baseline="central"
                     font-family="system-ui, sans-serif"
