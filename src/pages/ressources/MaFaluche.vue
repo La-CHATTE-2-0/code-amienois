@@ -25,15 +25,19 @@ const provinceOptions: RubanOption[] = provinces.map((p) => ({
 }));
 
 const etudes = computed(() => resolveRuban(config.value.etudes));
-const etudesSuivante = computed(() => resolveRuban(config.value.etudesSuivante));
+const etudesAvant = computed(() => resolveRuban(config.value.etudesAvant));
 const province = computed(() => resolveRuban(config.value.province));
 const naissance = computed(() => resolveRuban(config.value.naissance));
 
-const changementVille = computed({
-    get: () => config.value.etudesSuivante !== null,
+// Interrupteur ouvert avant même qu'une ancienne ville soit choisie
+const avantOuvert = ref(false);
+const villeAvant = computed({
+    get: () => avantOuvert.value || config.value.etudesAvant !== null,
     set: (on: boolean) => {
-        config.value.etudesSuivante = on ? { ref: cityRef("Amiens") } : null;
-        if (!on) config.value.anneeChangement = "";
+        avantOuvert.value = on;
+        if (on) return;
+        config.value.etudesAvant = null;
+        config.value.anneeChangement = "";
     },
 });
 
@@ -46,7 +50,7 @@ const legende = computed(() =>
     [
         {
             label: "Ville d'études",
-            value: [etudes.value?.nom, etudesSuivante.value?.nom].filter(Boolean).join(" puis ") || null,
+            value: [etudesAvant.value?.nom, etudes.value?.nom].filter(Boolean).join(" puis ") || null,
         },
         { label: "Province", value: province.value?.nom ?? null },
         { label: "Ville de naissance", value: naissance.value?.nom ?? null },
@@ -80,6 +84,7 @@ async function exportImage() {
 
 function handleReset() {
     if (!window.confirm("Repartir d'une faluche vierge ?")) return;
+    avantOuvert.value = false;
     reset();
 }
 </script>
@@ -99,7 +104,7 @@ function handleReset() {
                     <FalucheSchema
                         ref="schemaRef"
                         :etudes="etudes"
-                        :etudes-suivante="etudesSuivante"
+                        :etudes-avant="etudesAvant"
                         :annee-changement="config.anneeChangement"
                         :province="province"
                         :naissance="naissance"
@@ -139,18 +144,18 @@ function handleReset() {
                         <h2 id="mf-etudes">Ville d'études</h2>
                         <RubanChoix id="mf-ville-etudes" v-model="config.etudes" label="Ville d'études" :options="cityOptions" />
                         <v-switch
-                            v-model="changementVille"
+                            v-model="villeAvant"
                             class="mt-2"
                             color="primary"
                             density="compact"
                             hide-details
-                            label="J'ai changé de ville d'études"
+                            label="J'ai eu une autre ville avant"
                         />
-                        <div v-if="changementVille" class="ma-faluche__changement">
+                        <div v-if="villeAvant" class="ma-faluche__changement">
                             <RubanChoix
-                                id="mf-ville-suivante"
-                                v-model="config.etudesSuivante"
-                                label="Nouvelle ville d'études"
+                                id="mf-ville-avant"
+                                v-model="config.etudesAvant"
+                                label="Ancienne ville d'études"
                                 :options="cityOptions"
                             />
                             <v-text-field

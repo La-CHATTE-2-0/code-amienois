@@ -28,15 +28,15 @@ describe("FalucheSchema", () => {
     it("place les rubans choisis avec leur écusson et l'année du changement", () => {
         const wrapper = mount(FalucheSchema, {
             props: {
-                etudes: resolveRuban({ ref: cityRef("Lille") }),
-                etudesSuivante: resolveRuban({ ref: cityRef("Amiens") }),
+                etudes: resolveRuban({ ref: cityRef("Amiens") }),
+                etudesAvant: resolveRuban({ ref: cityRef("Lille") }),
                 anneeChangement: "2024",
                 province: resolveRuban({ ref: provinceRef("flandres") }),
                 naissance: resolveRuban({ ref: AUTRE, nom: "Brest", couleurs: ["noir", "blanc"] }),
             },
         });
-        expect(wrapper.find('[data-faluche="ruban-etudes"]').exists()).toBe(true);
-        expect(wrapper.get('[data-faluche="ruban-etudes-suivante"]').text()).toContain("2024");
+        expect(wrapper.find('[data-faluche="ruban-etudes-avant"]').exists()).toBe(true);
+        expect(wrapper.get('[data-faluche="ruban-etudes"]').text()).toContain("2024");
         expect(wrapper.get('[data-faluche="ecusson-province"] image').attributes("href")).toBe("/images/ecussons/flandres.png");
         // Pas d'écusson connu pour une ville saisie à la main : on dessine son initiale
         expect(wrapper.get('[data-faluche="ecusson-naissance"]').text()).toBe("B");
@@ -62,31 +62,31 @@ describe("FalucheSchema", () => {
         expect(wrapper.get('[data-faluche="ruban-naissance"]').findAll("path").length).toBeGreaterThan(0);
     });
 
-    it("place deux villes d'études en miroir de la province et de la naissance", () => {
+    it("place l'ancienne ville d'études sur l'écusson du haut, en miroir de la naissance", () => {
         const wrapper = mount(FalucheSchema, {
             props: {
-                etudes: resolveRuban({ ref: cityRef("Beauvais") }),
-                etudesSuivante: resolveRuban({ ref: cityRef("Amiens") }),
+                etudes: resolveRuban({ ref: cityRef("Amiens") }),
+                etudesAvant: resolveRuban({ ref: cityRef("Beauvais") }),
                 anneeChangement: "2024",
             },
         });
-        // La ville d'avant : écusson du haut, diagonale seule
-        const avant = wrapper.get('[data-faluche="ruban-etudes"]');
-        expect(avant.findAll("rect")).toHaveLength(0);
-        expect(wrapper.get('[data-faluche="ecusson-etudes"] image').attributes("transform")).toBe("rotate(45 162 347)");
-        // La nouvelle ville : ruban complet, écusson du bas et année
-        const nouvelle = wrapper.get('[data-faluche="ruban-etudes-suivante"]');
-        expect(nouvelle.findAll("rect").length).toBeGreaterThan(0);
-        expect(nouvelle.text()).toContain("2024");
-        expect(wrapper.get('[data-faluche="ecusson-etudes-suivante"] image').attributes("href")).toBe("/images/ecussons/amiens.png");
-        expect(wrapper.get('[data-faluche="ecusson-etudes-suivante"] image').attributes("transform")).toBe("rotate(45 212 528)");
+        // L'ancienne ville : écusson du haut, diagonale seule
+        expect(wrapper.get('[data-faluche="ruban-etudes-avant"]').findAll("rect")).toHaveLength(0);
+        expect(wrapper.get('[data-faluche="ecusson-etudes-avant"] image').attributes("href")).toBe("/images/ecussons/beauvais.png");
+        expect(wrapper.get('[data-faluche="ecusson-etudes-avant"] image').attributes("transform")).toBe("rotate(45 162 347)");
+        // La ville actuelle : ruban complet, écusson du bas et année
+        const actuelle = wrapper.get('[data-faluche="ruban-etudes"]');
+        expect(actuelle.findAll("rect").length).toBeGreaterThan(0);
+        expect(actuelle.text()).toContain("2024");
+        expect(wrapper.get('[data-faluche="ecusson-etudes"] image').attributes("href")).toBe("/images/ecussons/amiens.png");
+        expect(wrapper.get('[data-faluche="ecusson-etudes"] image').attributes("transform")).toBe("rotate(45 212 528)");
     });
 
     it("garde le ruban complet pour une seule ville d'études", () => {
         const wrapper = mount(FalucheSchema, { props: { etudes: resolveRuban({ ref: cityRef("Amiens") }) } });
         expect(wrapper.get('[data-faluche="ruban-etudes"]').findAll("rect").length).toBeGreaterThan(0);
         expect(wrapper.get('[data-faluche="ecusson-etudes"] image').attributes("transform")).toBe("rotate(45 212 528)");
-        expect(wrapper.find('[data-faluche="ruban-etudes-suivante"]').exists()).toBe(false);
+        expect(wrapper.find('[data-faluche="ruban-etudes-avant"]').exists()).toBe(false);
     });
 
     it("garde la place des rubans d'association et d'élu", () => {
@@ -125,14 +125,26 @@ describe("MaFaluche", () => {
         expect(wrapper.find("#mf-filiere").exists()).toBe(false);
     });
 
-    it("ajoute une nouvelle ville d'études avec son année", async () => {
+    it("ajoute une ancienne ville d'études et l'année du changement", async () => {
         const wrapper = await mountPage();
+        expect(wrapper.text()).toContain("J'ai eu une autre ville avant");
         await wrapper.get('input[type="checkbox"]').setValue(true);
+        expect(wrapper.find("#mf-ville-avant").exists()).toBe(true);
+        // Aucune ville imposée : l'utilisateur la choisit
+        expect(loadConfig().etudesAvant).toBeNull();
+
+        wrapper.findAllComponents({ name: "RubanChoix" })[1].vm.$emit("update:modelValue", { ref: cityRef("Beauvais") });
         const annee = wrapper.findAll("input").find((i) => i.attributes("inputmode") === "numeric")!;
         await annee.setValue("20a24");
-        expect(loadConfig().etudesSuivante).toEqual({ ref: cityRef("Amiens") });
+        expect(loadConfig().etudesAvant).toEqual({ ref: cityRef("Beauvais") });
         expect(loadConfig().anneeChangement).toBe("2024");
-        expect(wrapper.get('[data-faluche="ruban-etudes-suivante"]').text()).toContain("2024");
+        expect(wrapper.get('[data-faluche="ruban-etudes"]').text()).toContain("2024");
+        expect(wrapper.get(".ma-faluche__legende").text()).toContain("Beauvais puis Amiens");
+
+        // Refermer l'interrupteur retire l'ancienne ville et l'année
+        await wrapper.get('input[type="checkbox"]').setValue(false);
+        expect(loadConfig().etudesAvant).toBeNull();
+        expect(loadConfig().anneeChangement).toBe("");
     });
 
     it("enregistre la faluche en image", async () => {

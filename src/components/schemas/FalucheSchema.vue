@@ -6,7 +6,7 @@ import { ZONES } from "./falucheZones";
 
 const props = defineProps<{
     etudes?: RubanResolu | null;
-    etudesSuivante?: RubanResolu | null;
+    etudesAvant?: RubanResolu | null;
     anneeChangement?: string;
     province?: RubanResolu | null;
     naissance?: RubanResolu | null;
@@ -96,19 +96,20 @@ function stripesOf(couleurs: string[], [x0, x1]: [number, number]) {
     return couleurs.map((color, i) => ({ color, x: x0 + i * w, w }));
 }
 
-// Année du changement, écrite sur la partie droite du ruban de la nouvelle ville
+// Année du changement, écrite sur la partie droite du ruban de la ville d'études actuelle
 const ANNEE = { x: (ETUDES.droitX[0] + ETUDES.droitX[1]) / 2, y: 170 };
 
 /**
- * Deux villes d'études : même placement qu'à droite, en miroir. La ville d'avant
- * passe sur l'écusson du haut (diagonale seule), la nouvelle prend le ruban complet
- * et l'écusson du bas, avec l'année du changement (spécificité amiénoise, article 10).
+ * Avec une ancienne ville d'études : même placement qu'à droite, en miroir.
+ * L'ancienne ville passe sur l'écusson du haut (diagonale seule), la ville actuelle
+ * garde le ruban complet et l'écusson du bas, avec l'année du changement
+ * (spécificité amiénoise, article 10).
  */
 const emplacements = computed(() => {
-    const gauche = props.etudesSuivante
+    const gauche = props.etudesAvant
         ? [
-              { key: "etudes", ruban: props.etudes, placement: ETUDES_AVANT },
-              { key: "etudes-suivante", ruban: props.etudesSuivante, placement: ETUDES, annee: props.anneeChangement },
+              { key: "etudes-avant", ruban: props.etudesAvant, placement: ETUDES_AVANT },
+              { key: "etudes", ruban: props.etudes, placement: ETUDES, annee: props.anneeChangement },
           ]
         : [{ key: "etudes", ruban: props.etudes, placement: ETUDES }];
     return [
@@ -146,8 +147,8 @@ const initiale = (nom: string) => nom.trim().charAt(0).toUpperCase();
 const description = computed(() => {
     const parts = ["Dessus de faluche en velours noir"];
     for (const [label, ruban] of [
+        ["ancienne ville d'études", props.etudesAvant],
         ["ville d'études", props.etudes],
-        ["nouvelle ville d'études", props.etudesSuivante],
         ["province", props.province],
         ["ville de naissance", props.naissance],
     ] as const) {

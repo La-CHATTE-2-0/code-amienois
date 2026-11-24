@@ -8,8 +8,9 @@ export type ChoixRuban =
 
 export type FalucheConfig = {
     etudes: ChoixRuban | null;
-    /** Nouvelle ville d'études, placée en arrière de la première avec l'année du changement */
-    etudesSuivante: ChoixRuban | null;
+    /** Ancienne ville d'études : sur l'écusson du haut, au-dessus de la ville actuelle */
+    etudesAvant: ChoixRuban | null;
+    /** Année du changement, écrite sur le ruban de la ville d'études actuelle */
     anneeChangement: string;
     province: ChoixRuban | null;
     naissance: ChoixRuban | null;
@@ -27,7 +28,7 @@ export const provinceRef = (id: string) => `province:${id}`;
 
 export const defaultConfig = (): FalucheConfig => ({
     etudes: { ref: cityRef("Amiens") },
-    etudesSuivante: null,
+    etudesAvant: null,
     anneeChangement: "",
     province: null,
     naissance: null,
@@ -74,7 +75,7 @@ export function sanitize(raw: any): FalucheConfig {
     if (!raw || typeof raw !== "object") return base;
     return {
         etudes: "etudes" in raw ? choixOrNull(raw.etudes) : base.etudes,
-        etudesSuivante: choixOrNull(raw.etudesSuivante),
+        etudesAvant: choixOrNull(raw.etudesAvant),
         anneeChangement: typeof raw.anneeChangement === "string" ? raw.anneeChangement.slice(0, 4) : "",
         province: choixOrNull(raw.province),
         naissance: choixOrNull(raw.naissance),
