@@ -1,37 +1,5 @@
 <script setup lang="ts">
-type Province = { id: string; name: string; image: string; colors: string };
-type City = { name: string; image: string; colors: string; province: string };
-
-// Couleurs écrites telles qu'au code : l'ordre compte (première couleur en haut du ruban)
-const provinces: Province[] = [
-    { id: "artois", image: "artois", name: "Artois", colors: "Bleu roi et or" },
-    { id: "champagne", image: "champagne", name: "Champagne", colors: "Bleu et blanc" },
-    { id: "flandres", image: "flandres", name: "Flandres", colors: "Or et noir" },
-    { id: "iledefrance", image: "ile de france", name: "Île-de-France", colors: "Bleu roi et or" },
-    { id: "normandie", image: "normandie", name: "Normandie", colors: "Rouge et or" },
-    { id: "picardie", image: "picardie", name: "Picardie", colors: "Bleu et blanc" },
-];
-
-const cities: City[] = [
-    { name: "Abbeville", image: "abbeville", colors: "Bleu roi et rouge", province: "picardie" },
-    { name: "Amiens", image: "amiens", colors: "Rouge et bleu roi", province: "picardie" },
-    { name: "Arras", image: "arras", colors: "Rouge et or", province: "artois" },
-    { name: "Beauvais", image: "beauvais", colors: "Rouge et blanc", province: "picardie" },
-    { name: "Compiègne", image: "compiègne", colors: "Bleu roi et or", province: "picardie" },
-    { name: "Creil", image: "creil", colors: "Bleu roi et or", province: "picardie" },
-    { name: "Doullens", image: "doullens", colors: "Bleu roi et or", province: "picardie" },
-    { name: "Hirson", image: "hirson", colors: "Bleu et blanc", province: "picardie" },
-    { name: "Laon", image: "laon", colors: "Bleu et blanc", province: "picardie" },
-    { name: "Lille", image: "lille", colors: "Rouge et blanc", province: "flandres" },
-    { name: "Noyon", image: "noyon", colors: "Rouge et blanc", province: "picardie" },
-    { name: "Paris", image: "paris", colors: "Bleu roi et rouge", province: "iledefrance" },
-    { name: "Reims", image: "reims", colors: "Bleu roi et blanc", province: "champagne" },
-    { name: "Rouen", image: "rouen", colors: "Bleu roi et rouge", province: "normandie" },
-    { name: "Saint-Quentin", image: "saint-quentin", colors: "Blanc et bleu", province: "picardie" },
-    { name: "Senlis", image: "senlis", colors: "Rouge et or", province: "picardie" },
-    { name: "Soissons", image: "soissons", colors: "Bleu et blanc", province: "picardie" },
-    { name: "Valenciennes", image: "valenciennes", colors: "Rouge et or", province: "flandres" },
-];
+import { cities, ecusson, provinces, swatch } from "../../core/villes";
 
 // Villes regroupées par province, la Picardie en premier
 const cityGroups = [...provinces]
@@ -41,25 +9,6 @@ const cityGroups = [...provinces]
         cities: cities.filter((city) => city.province === province.id),
     }))
     .filter((group) => group.cities.length);
-
-// Teintes des échantillons (mêmes valeurs que les circulaires quand elles existent)
-const swatchColors: Record<string, string> = {
-    "bleu roi": "#0914BC",
-    bleu: "#155CC8",
-    rouge: "#BC1212",
-    blanc: "#FFFFFF",
-    or: "#C9A227",
-    noir: "#000000",
-};
-
-function swatch(colors: string) {
-    return colors
-        .toLowerCase()
-        .split(" et ")
-        .map((name) => swatchColors[name.trim()] ?? "transparent");
-}
-
-const ecusson = (image: string) => `/images/ecussons/${image}.png`;
 </script>
 
 <template>

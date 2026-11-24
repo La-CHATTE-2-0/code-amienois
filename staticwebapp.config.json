@@ -17,6 +17,10 @@
             "rewrite": "/revisions/index.html"
         },
         {
+            "route": "/ma-faluche",
+            "rewrite": "/ma-faluche/index.html"
+        },
+        {
             "route": "/checklist-congres",
             "rewrite": "/checklist-congres/index.html"
         },
