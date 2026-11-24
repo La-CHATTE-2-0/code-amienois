@@ -3,10 +3,14 @@ import { flushPromises, mount } from "@vue/test-utils";
 import MaFaluche from "../../../src/pages/ressources/MaFaluche.vue";
 import FalucheSchema from "../../../src/components/schemas/FalucheSchema.vue";
 import { AUTRE, cityRef, defaultConfig, loadConfig, provinceRef, resolveRuban } from "../../../src/core/falucheConfig";
+import { defaultCirculaire, nouvelleAnnee } from "../../../src/core/circulaireConfig";
+import CirculaireRuban from "../../../src/components/schemas/CirculaireRuban.vue";
+import CirculaireForm from "../../../src/components/faluche/CirculaireForm.vue";
 import { mountWithRouter } from "../../helpers/mountPage";
 
 const image = vi.hoisted(() => ({
     serializeSchema: vi.fn(async () => "<svg/>"),
+    serializeRuban: vi.fn(async () => ({ markup: "<svg id='ruban'/>", width: 640, height: 120 })),
     renderPng: vi.fn(async () => new Blob(["png"])),
     shareOrDownload: vi.fn(async () => "downloaded"),
 }));
@@ -152,8 +156,25 @@ describe("MaFaluche", () => {
         await wrapper.findAll("button").find((b) => b.text().includes("Enregistrer en image"))!.trigger("click");
         await flushPromises();
         expect(image.serializeSchema).toHaveBeenCalledWith(expect.any(SVGSVGElement), expect.any(String));
-        expect(image.renderPng).toHaveBeenCalledWith("<svg/>", expect.any(String), "Ma faluche");
+        expect(image.renderPng).toHaveBeenCalledWith("<svg/>", expect.any(String), "Ma faluche", undefined);
+        expect(image.serializeRuban).not.toHaveBeenCalled();
         expect(wrapper.get('[role="status"]').text()).toBe("Image téléchargée.");
+    });
+
+    it("ajoute le circulaire sous la faluche dans l'image", async () => {
+        localStorage.setItem(
+            "ma-faluche",
+            JSON.stringify({ version: 1, config: { ...defaultConfig(), circulaire: { ...defaultCirculaire(), actif: true, filiere: "Droit" } } })
+        );
+        const wrapper = await mountPage();
+        await wrapper.findAll("button").find((b) => b.text().includes("Enregistrer en image"))!.trigger("click");
+        await flushPromises();
+        expect(image.serializeRuban).toHaveBeenCalledWith(expect.any(SVGSVGElement), expect.any(String));
+        expect(image.renderPng).toHaveBeenLastCalledWith("<svg/>", expect.any(String), "Ma faluche", {
+            markup: "<svg id='ruban'/>",
+            width: 640,
+            height: 120,
+        });
     });
 
     it("prévient si l'image n'a pas pu être créée", async () => {
@@ -204,5 +225,91 @@ describe("RubanChoix", () => {
         wrapper.findComponent({ name: "VAutocomplete" }).vm.$emit("update:modelValue", null);
         await flushPromises();
         expect(wrapper.props("modelValue")).toBeNull();
+    });
+});
+
+describe("Circulaire", () => {
+    afterEach(() => {
+        document.body.innerHTML = "";
+    });
+
+    it("dessine le ruban à plat avec ses bandes, sa matière et ses insignes", () => {
+        const wrapper = mount(CirculaireRuban, {
+            props: {
+                circulaire: {
+                    ...defaultCirculaire(),
+                    actif: true,
+                    filiere: "Militaire",
+                    initiales: "AZ",
+                    bac: "beta",
+                    anneeBac: "13",
+                    embleme: "Globe terrestre",
+                    annees: [nouvelleAnnee(), { ...nouvelleAnnee(), statut: "argentee", marque: "large_palme" }],
+                },
+            },
+        });
+        expect(wrapper.attributes("data-matiere")).toBe("satin");
+        expect(wrapper.findAll('[data-circulaire="bande"]')).toHaveLength(3);
+        expect(wrapper.get('[data-circulaire="initiales"]').text()).toBe("AZ");
+        expect(wrapper.get('[data-circulaire="annee-bac"]').text()).toBe("13");
+        expect(wrapper.get('[data-circulaire="bac"]').attributes("href")).toBe("/images/insigne/beta.png");
+        expect(wrapper.get('[data-circulaire="embleme"]').attributes("href")).toBe("/images/insigne/globe_terrestre.png");
+        expect(wrapper.find('[data-circulaire="moivre"]').exists()).toBe(true);
+        expect(wrapper.findAll('[data-circulaire^="annee-"]').map((e) => e.attributes("data-circulaire"))).toEqual([
+            "annee-bac",
+            "annee-doree",
+            "annee-argentee",
+        ]);
+        expect(wrapper.find('[data-circulaire="large_palme"]').exists()).toBe(true);
+        expect(wrapper.get("desc").text()).toBe("Ruban circulaire en satin, initiales AZ, 2 années");
+    });
+
+    it("suit la filière pour l'emblème, sauf s'il a été choisi à la main", async () => {
+        const wrapper = mount(CirculaireForm, {
+            props: {
+                modelValue: { ...defaultCirculaire(), actif: true },
+                "onUpdate:modelValue": (value: any) => wrapper.setProps({ modelValue: value }),
+            },
+        });
+        const filiere = wrapper.findAllComponents({ name: "VAutocomplete" })[0];
+        filiere.vm.$emit("update:modelValue", "Géographie");
+        await flushPromises();
+        expect(wrapper.props("modelValue").embleme).toBe("Globe terrestre");
+
+        filiere.vm.$emit("update:modelValue", "Histoire");
+        await flushPromises();
+        expect(wrapper.props("modelValue").embleme).toBe("Casque de Périclès");
+
+        wrapper.props("modelValue").embleme = "Coq";
+        filiere.vm.$emit("update:modelValue", "Géographie");
+        await flushPromises();
+        expect(wrapper.props("modelValue").embleme).toBe("Coq");
+    });
+
+    it("nettoie les saisies et ajoute ou retire des années", async () => {
+        const model = { ...defaultCirculaire(), actif: true };
+        const wrapper = mount(CirculaireForm, { props: { modelValue: model } });
+        await wrapper.get("#cf-initiales").setValue("a.z1x");
+        expect(model.initiales).toBe("AZ1X");
+        await wrapper.get("#cf-annee-bac").setValue("2a013");
+        expect(model.anneeBac).toBe("20");
+
+        await wrapper.findAll("button").find((b) => b.text().includes("Ajouter une année"))!.trigger("click");
+        expect(model.annees).toHaveLength(2);
+        // Le changement d'établissement n'a de sens qu'à partir de la deuxième année
+        expect(wrapper.get('[data-annee="0"]').text()).not.toContain("Changement public / privé");
+        expect(wrapper.get('[data-annee="1"]').text()).toContain("Changement public / privé");
+
+        await wrapper.get(`[aria-label="Retirer l'année 1"]`).trigger("click");
+        expect(model.annees).toHaveLength(1);
+    });
+
+    it("n'affiche le circulaire qu'une fois l'interrupteur activé", async () => {
+        const { wrapper } = await mountWithRouter(MaFaluche, { attachTo: document.body });
+        expect(wrapper.find(".circulaire-ruban").exists()).toBe(false);
+        const toggle = wrapper.get(".ma-faluche__circulaire input[type='checkbox']");
+        await toggle.setValue(true);
+        expect(wrapper.find(".circulaire-ruban").exists()).toBe(true);
+        expect(loadConfig().circulaire.actif).toBe(true);
     });
 });

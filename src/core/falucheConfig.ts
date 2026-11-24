@@ -1,5 +1,6 @@
 import { ref, watch } from "vue";
 import { cities, colorNames, ecusson, provinces, swatchColors } from "./villes";
+import { type CirculaireConfig, defaultCirculaire, sanitizeCirculaire } from "./circulaireConfig";
 
 /** Ruban choisi dans les listes (« ville:Amiens », « province:picardie ») ou décrit à la main */
 export type ChoixRuban =
@@ -14,6 +15,8 @@ export type FalucheConfig = {
     anneeChangement: string;
     province: ChoixRuban | null;
     naissance: ChoixRuban | null;
+    /** Ruban circulaire, représenté à plat sous le dessus */
+    circulaire: CirculaireConfig;
 };
 
 /** Ce que le schéma dessine pour un ruban supérieur */
@@ -32,6 +35,7 @@ export const defaultConfig = (): FalucheConfig => ({
     anneeChangement: "",
     province: null,
     naissance: null,
+    circulaire: defaultCirculaire(),
 });
 
 export function resolveRuban(choix: ChoixRuban | null | undefined): RubanResolu | null {
@@ -79,6 +83,7 @@ export function sanitize(raw: any): FalucheConfig {
         anneeChangement: typeof raw.anneeChangement === "string" ? raw.anneeChangement.slice(0, 4) : "",
         province: choixOrNull(raw.province),
         naissance: choixOrNull(raw.naissance),
+        circulaire: sanitizeCirculaire(raw.circulaire),
     };
 }
 

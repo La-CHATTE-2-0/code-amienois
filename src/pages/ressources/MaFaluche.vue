@@ -3,8 +3,10 @@ import { computed, ref } from "vue";
 import { useTheme } from "vuetify";
 import FalucheSchema from "../../components/schemas/FalucheSchema.vue";
 import RubanChoix, { type RubanOption } from "../../components/faluche/RubanChoix.vue";
+import CirculaireForm from "../../components/faluche/CirculaireForm.vue";
+import CirculaireRuban from "../../components/schemas/CirculaireRuban.vue";
 import { cityRef, provinceRef, resolveRuban, useFalucheConfig } from "../../core/falucheConfig";
-import { renderPng, serializeSchema, shareOrDownload } from "../../core/falucheImage";
+import { renderPng, serializeRuban, serializeSchema, shareOrDownload } from "../../core/falucheImage";
 import { cities, provinces, swatch } from "../../core/villes";
 import pages from "../../core/page";
 
@@ -60,6 +62,7 @@ const legende = computed(() =>
 // ---- Image ----
 
 const schemaRef = ref<{ $el: SVGSVGElement } | null>(null);
+const circulaireRef = ref<{ $el: SVGSVGElement } | null>(null);
 const theme = useTheme();
 const exporting = ref(false);
 const message = ref("");
@@ -71,8 +74,12 @@ async function exportImage() {
     message.value = "";
     try {
         const dark = theme.global.current.value.dark;
-        const markup = await serializeSchema(svg, dark ? "#f1ece2" : "#2b2522");
-        const blob = await renderPng(markup, dark ? "#1b1718" : "#faf7f2", "Ma faluche");
+        const stroke = dark ? "#f1ece2" : "#2b2522";
+        const markup = await serializeSchema(svg, stroke);
+        // Le circulaire, s'il est créé, est dessiné à plat sous la faluche
+        const ruban = config.value.circulaire.actif ? circulaireRef.value?.$el : undefined;
+        const bottom = ruban ? await serializeRuban(ruban, stroke) : undefined;
+        const blob = await renderPng(markup, dark ? "#1b1718" : "#faf7f2", "Ma faluche", bottom);
         const result = await shareOrDownload(blob, "Ma faluche");
         if (result === "downloaded") message.value = "Image téléchargée.";
     } catch {
@@ -190,6 +197,31 @@ function handleReset() {
                     </section>
                 </div>
             </div>
+
+            <section class="ma-faluche__circulaire" aria-labelledby="mf-circulaire">
+                <div class="ma-faluche__circulaire-head">
+                    <h2 id="mf-circulaire">Mon ruban circulaire</h2>
+                    <v-switch
+                        v-model="config.circulaire.actif"
+                        color="primary"
+                        density="compact"
+                        hide-details
+                        label="Créer mon circulaire"
+                    />
+                </div>
+                <template v-if="config.circulaire.actif">
+                    <p class="text-medium-emphasis mb-3">
+                        Le ruban qui fait le tour de la faluche, déroulé à plat :
+                        initiales, baccalauréat, emblème de la discipline puis une
+                        étoile par année d'études. Il est ajouté sous la faluche
+                        dans l'image enregistrée.
+                    </p>
+                    <div class="ma-faluche__frise" tabindex="0" aria-label="Ruban circulaire, défilable en largeur">
+                        <CirculaireRuban ref="circulaireRef" :circulaire="config.circulaire" />
+                    </div>
+                    <CirculaireForm v-model="config.circulaire" class="mt-4" />
+                </template>
+            </section>
         </article>
     </v-container>
 </template>
@@ -272,5 +304,36 @@ function handleReset() {
 
 .ma-faluche__origines {
     margin-top: 0;
+}
+
+.ma-faluche__circulaire {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+}
+
+.ma-faluche__circulaire-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 24px;
+    margin-bottom: 8px;
+}
+
+.ma-faluche__circulaire-head h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.ma-faluche__circulaire-head .v-switch {
+    flex: none;
+}
+
+/* Le ruban garde sa taille et défile en largeur plutôt que de rétrécir */
+.ma-faluche__frise {
+    overflow-x: auto;
+    padding: 8px 0 12px;
 }
 </style>

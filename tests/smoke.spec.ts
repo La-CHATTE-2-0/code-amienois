@@ -18,6 +18,8 @@ const TESTED_ELSEWHERE = [
     "QuizScoreBar",
     "QuizVisual",
     "RubanChoix",
+    "CirculaireForm",
+    "CirculaireRuban",
     "TableItemDialog",
     "AperalFilters",
     "AperalMarker",

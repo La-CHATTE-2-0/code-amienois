@@ -15,14 +15,15 @@ async function toDataUrl(src: string): Promise<string> {
 }
 
 /**
- * Copie autonome du SVG : écussons intégrés (une image chargée depuis un SVG
- * dessiné dans un canvas ne va pas chercher ses ressources) et couleur de trait figée.
+ * Copie autonome d'un SVG : images intégrées (une image chargée depuis un SVG
+ * dessiné dans un canvas ne va pas chercher ses ressources), taille et couleur de trait figées.
  */
-export async function serializeSchema(svg: SVGSVGElement, strokeColor: string): Promise<string> {
+async function inlineSvg(svg: SVGSVGElement, strokeColor: string, width: number, height: number): Promise<string> {
     const clone = svg.cloneNode(true) as SVGSVGElement;
     clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-    clone.setAttribute("width", String(EXPORT_SIZE));
-    clone.setAttribute("height", String(EXPORT_SIZE));
+    clone.setAttribute("width", String(width));
+    clone.setAttribute("height", String(height));
+    clone.removeAttribute("style");
     clone.style.color = strokeColor;
 
     const images = [...clone.querySelectorAll("image")];
@@ -40,6 +41,17 @@ export async function serializeSchema(svg: SVGSVGElement, strokeColor: string): 
     return new XMLSerializer().serializeToString(clone);
 }
 
+export const serializeSchema = (svg: SVGSVGElement, strokeColor: string) =>
+    inlineSvg(svg, strokeColor, EXPORT_SIZE, EXPORT_SIZE);
+
+export type Bande = { markup: string; width: number; height: number };
+
+/** Le ruban circulaire à plat, à sa taille naturelle (celle de son viewBox) */
+export async function serializeRuban(svg: SVGSVGElement, strokeColor: string): Promise<Bande> {
+    const [, , width, height] = (svg.getAttribute("viewBox") ?? "0 0 640 120").split(/\s+/).map(Number);
+    return { markup: await inlineSvg(svg, strokeColor, width, height), width, height };
+}
+
 function loadImage(src: string): Promise<HTMLImageElement> {
     return new Promise((resolve, reject) => {
         const img = new Image();
@@ -49,30 +61,41 @@ function loadImage(src: string): Promise<HTMLImageElement> {
     });
 }
 
-export async function renderPng(svgMarkup: string, background: string, caption: string): Promise<Blob> {
-    const svgUrl = URL.createObjectURL(new Blob([svgMarkup], { type: "image/svg+xml" }));
+const BANDE_MARGIN = 60;
+const BANDE_GAP = 40;
+
+export async function renderPng(svgMarkup: string, background: string, caption: string, bande?: Bande): Promise<Blob> {
+    const urls = [svgMarkup, bande?.markup]
+        .filter((m): m is string => !!m)
+        .map((markup) => URL.createObjectURL(new Blob([markup], { type: "image/svg+xml" })));
     try {
-        const img = await loadImage(svgUrl);
+        const [img, bandeImg] = await Promise.all(urls.map(loadImage));
+        // Le ruban occupe toute la largeur utile, sa hauteur suit ses proportions
+        const bandeW = EXPORT_SIZE - 2 * BANDE_MARGIN;
+        const bandeH = bande ? Math.round((bandeW * bande.height) / bande.width) : 0;
+        const bandeBlock = bande ? bandeH + BANDE_GAP : 0;
         const captionHeight = caption ? 90 : 0;
+
         const canvas = document.createElement("canvas");
         canvas.width = EXPORT_SIZE;
-        canvas.height = EXPORT_SIZE + captionHeight;
+        canvas.height = EXPORT_SIZE + bandeBlock + captionHeight;
         const ctx = canvas.getContext("2d");
         if (!ctx) throw new Error("Canvas indisponible");
         ctx.fillStyle = background;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, EXPORT_SIZE, EXPORT_SIZE);
+        if (bandeImg) ctx.drawImage(bandeImg, BANDE_MARGIN, EXPORT_SIZE + BANDE_GAP / 2, bandeW, bandeH);
         if (caption) {
             ctx.fillStyle = "#8a7a5a";
             ctx.font = "600 34px system-ui, sans-serif";
             ctx.textAlign = "center";
-            ctx.fillText(caption, EXPORT_SIZE / 2, EXPORT_SIZE + 52, EXPORT_SIZE - 80);
+            ctx.fillText(caption, EXPORT_SIZE / 2, EXPORT_SIZE + bandeBlock + 52, EXPORT_SIZE - 80);
         }
         return await new Promise((resolve, reject) =>
             canvas.toBlob((blob) => (blob ? resolve(blob) : reject(new Error("Export impossible"))), "image/png")
         );
     } finally {
-        URL.revokeObjectURL(svgUrl);
+        urls.forEach((u) => URL.revokeObjectURL(u));
     }
 }
 

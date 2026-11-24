@@ -27,7 +27,7 @@ const pages = {
     ma_faluche: {
         name: 'Ma faluche',
         url: '/ma-faluche',
-        description: 'Compose le dessus de ta faluche avec les rubans et écussons de tes villes, puis enregistre-le en image.'
+        description: 'Compose ta faluche : rubans et écussons de tes villes sur le dessus, ruban circulaire à plat, puis enregistre-la en image.'
     },
     checklist: {
         name: 'Checklist Congrès',
