@@ -66,7 +66,7 @@ const EMPLACEMENTS: Emplacement[] = [
         droitX: [190, 295.5],
         diagonale: ["diagEtudes1", "diagEtudes2"],
         ecusson: "ecussonEtudes",
-        pose: { cx: 212, cy: 528, angle: 42 },
+        pose: { cx: 212, cy: 528, angle: 45 },
     },
     {
         key: "province",
@@ -74,7 +74,7 @@ const EMPLACEMENTS: Emplacement[] = [
         droitX: [504, 558.5],
         diagonale: ["diagProvince1", "diagProvince2"],
         ecusson: "ecussonProvince",
-        pose: { cx: 586, cy: 529, angle: -40 },
+        pose: { cx: 586, cy: 529, angle: -45 },
     },
     {
         key: "naissance",
@@ -82,7 +82,7 @@ const EMPLACEMENTS: Emplacement[] = [
         droitX: [561, 608.5],
         diagonale: ["diagNaissance1", "diagNaissance2"],
         ecusson: "ecussonNaissance",
-        pose: { cx: 637, cy: 347, angle: -40 },
+        pose: { cx: 637, cy: 347, angle: -45 },
     },
 ];
 
@@ -374,8 +374,8 @@ const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R
                 >
                     {{ initiale(r.ruban.nom) }}
                 </text>
-                <!-- Liseré doré de la broderie, par-dessus l'image découpée -->
-                <path :d="ZONES[r.ecusson]" fill="none" stroke="#c9a227" stroke-width="5" />
+                <!-- Liseré noir, par-dessus l'image découpée -->
+                <path :d="ZONES[r.ecusson]" fill="none" stroke="#000" stroke-width="5" />
             </g>
             <path
                 v-else
