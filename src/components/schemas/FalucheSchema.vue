@@ -4,6 +4,7 @@ import type { Circulaire } from "../../core/circulaires";
 import { circuColors } from "../../core/circulaires";
 import type { RubanResolu, Velours } from "../../core/falucheConfig";
 import { VELOURS_COLORS } from "../../core/falucheConfig";
+import { ZONES } from "./falucheZones";
 
 const props = defineProps<{
     velours: Velours;
@@ -21,11 +22,13 @@ const uid = useId();
 const id = (name: string) => `${uid}-${name}`;
 const url = (name: string) => `url(#${id(name)})`;
 
-// Vue de dessus : le circulaire fait le tour, le velours occupe le centre
-const C = 200;
-const R_OUT = 190;
-const R_IN = 160;
-const RING = R_OUT - R_IN;
+// Le dessus reprend le contour du schéma des parties (cercle de centre 399,5 ; 398,5).
+// Le circulaire l'entoure.
+const CX = 399.5;
+const CY = 398.5;
+const R_IN = 371;
+const RING = 58;
+const R_OUT = R_IN + RING;
 
 // Bandes concentriques du circulaire, la première couleur à l'extérieur
 const bandes = computed(() => {
@@ -38,32 +41,87 @@ const bandes = computed(() => {
     }));
 });
 
-// Rubans supérieurs, de gauche à droite comme à l'article 10 ; les emplacements
-// d'association et d'élu restent marqués en pointillés
-const RUBAN_W = 22;
-const RUBAN_TOP = 30;
-const RUBAN_BOTTOM = 188;
+type ZoneName = keyof typeof ZONES;
+type Box = [number, number, number, number];
 
-type Slot = { key: string; x: number; ruban?: RubanResolu | null; annee?: string };
-
-const slots = computed<Slot[]>(() => [
-    { key: "etudes-suivante", x: 96, ruban: props.etudesSuivante, annee: props.anneeChangement },
-    { key: "etudes", x: 124, ruban: props.etudes },
-    { key: "association", x: 168 },
-    { key: "elu", x: 204 },
-    { key: "province", x: 256, ruban: props.province },
-    { key: "naissance", x: 284, ruban: props.naissance },
-]);
-
-const filled = computed(() => slots.value.filter((s) => s.ruban));
-const placeholders = computed(() => slots.value.filter((s) => s.key === "association" || s.key === "elu"));
-
-// Bandes en long : la première couleur à gauche du ruban
-const stripes = (slot: Slot) => {
-    const couleurs = slot.ruban?.couleurs ?? [];
-    const w = RUBAN_W / Math.max(couleurs.length, 1);
-    return couleurs.map((color, i) => ({ color, x: slot.x - RUBAN_W / 2 + i * w, w }));
+/**
+ * Chaque ruban suit les zones du schéma des parties : une partie droite depuis
+ * l'arrière jusqu'à l'écusson, puis une diagonale vers le bord. Les couleurs se
+ * partagent la largeur, la première à gauche.
+ */
+type Emplacement = {
+    key: "etudes" | "province" | "naissance";
+    droit: ZoneName[];
+    droitX: [number, number];
+    diagonale: [ZoneName, ZoneName];
+    ecusson: ZoneName;
+    ecussonBox: Box;
 };
+
+const EMPLACEMENTS: Emplacement[] = [
+    {
+        key: "etudes",
+        droit: ["etudesGauche", "etudesDroite"],
+        droitX: [190, 295.5],
+        diagonale: ["diagEtudes1", "diagEtudes2"],
+        ecusson: "ecussonEtudes",
+        ecussonBox: [125, 438, 186, 174],
+    },
+    {
+        key: "province",
+        droit: ["province"],
+        droitX: [504, 558.5],
+        diagonale: ["diagProvince1", "diagProvince2"],
+        ecusson: "ecussonProvince",
+        ecussonBox: [489, 438, 186, 172],
+    },
+    {
+        key: "naissance",
+        droit: ["naissance"],
+        droitX: [561, 608.5],
+        diagonale: ["diagNaissance1", "diagNaissance2"],
+        ecusson: "ecussonNaissance",
+        ecussonBox: [540, 256, 186, 173],
+    },
+];
+
+// Écusson posé au centre de sa zone, un peu en retrait du bord
+function insetBox([x, y, w, h]: Box) {
+    const m = 0.07;
+    return { x: x + w * m, y: y + h * m, width: w * (1 - 2 * m), height: h * (1 - 2 * m), cx: x + w / 2, cy: y + h / 2 };
+}
+
+function stripesOf(couleurs: string[], [x0, x1]: [number, number]) {
+    const w = (x1 - x0) / Math.max(couleurs.length, 1);
+    return couleurs.map((color, i) => ({ color, x: x0 + i * w, w }));
+}
+
+const rubans = computed(() =>
+    EMPLACEMENTS.map((e) => {
+        const ruban = props[e.key] ?? null;
+        const couleurs = ruban?.couleurs ?? [];
+        return {
+            ...e,
+            ruban,
+            stripes: stripesOf(couleurs, e.droitX),
+            diagonaleColors: [couleurs[0], couleurs[1] ?? couleurs[0]],
+            ecussonImage: insetBox(e.ecussonBox),
+            zones: [...e.droit, ...e.diagonale],
+        };
+    })
+);
+
+// Nouvelle ville d'études : parallèle à la première, du côté extérieur
+const SUIVANTE_X: [number, number] = [134, 186];
+const SUIVANTE_MID = (SUIVANTE_X[0] + SUIVANTE_X[1]) / 2;
+const suivante = computed(() => stripesOf(props.etudesSuivante?.couleurs ?? [], SUIVANTE_X));
+
+// Rubans d'association et d'élu : place gardée au centre, en pointillés
+const PLACES = [
+    { key: "association", x: 320 },
+    { key: "elu", x: 420 },
+];
+const PLACE_W = 56;
 
 const initiale = (nom: string) => nom.trim().charAt(0).toUpperCase();
 
@@ -80,14 +138,15 @@ const description = computed(() => {
     }
     return parts.join(", ");
 });
+
+const viewBox = `${CX - R_OUT - 12} ${CY - R_OUT - 12} ${2 * R_OUT + 24} ${2 * R_OUT + 24}`;
 </script>
 
 <template>
     <svg
         class="faluche-schema"
-        viewBox="0 0 400 400"
+        :viewBox="viewBox"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
         role="img"
         :aria-labelledby="`${id('titre')} ${id('desc')}`"
     >
@@ -97,7 +156,7 @@ const description = computed(() => {
         <defs>
             <!-- Grain du velours : un bruit fin posé sur la couleur -->
             <filter :id="id('grain')" x="0" y="0" width="100%" height="100%">
-                <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="7" result="noise" />
+                <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="7" result="noise" />
                 <feColorMatrix
                     in="noise"
                     type="matrix"
@@ -110,9 +169,9 @@ const description = computed(() => {
                     <feMergeNode in="grainIn" />
                 </feMerge>
             </filter>
-            <!-- Volume du velours : plus clair au sommet, plus sombre sur les bords -->
+            <!-- Volume : plus clair au sommet, plus sombre sur les bords -->
             <radialGradient :id="id('volume')" cx="45%" cy="40%" r="60%">
-                <stop offset="0" stop-color="#fff" stop-opacity="0.16" />
+                <stop offset="0" stop-color="#fff" stop-opacity="0.14" />
                 <stop offset="0.7" stop-color="#fff" stop-opacity="0" />
                 <stop offset="1" stop-color="#000" stop-opacity="0.35" />
             </radialGradient>
@@ -125,25 +184,23 @@ const description = computed(() => {
                 <stop offset="0.8" stop-color="#fff" stop-opacity="0.3" />
                 <stop offset="1" stop-color="#fff" stop-opacity="0" />
             </linearGradient>
-            <linearGradient :id="id('ruban')" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#000" stop-opacity="0.25" />
-                <stop offset="0.5" stop-color="#fff" stop-opacity="0.12" />
-                <stop offset="1" stop-color="#000" stop-opacity="0.25" />
-            </linearGradient>
             <clipPath :id="id('dessus')">
-                <circle :cx="C" :cy="C" :r="R_IN" />
+                <path :d="ZONES.contour" />
+            </clipPath>
+            <clipPath v-for="(d, name) in ZONES" :id="id(`zone-${name}`)" :key="name">
+                <path :d="d" />
             </clipPath>
         </defs>
 
         <!-- Ombre portée -->
-        <circle :cx="C + 3" :cy="C + 5" :r="R_OUT + 2" fill="#000" opacity="0.12" />
+        <circle :cx="CX + 6" :cy="CY + 10" :r="R_OUT + 4" fill="#000" opacity="0.12" />
 
         <!-- Circulaire -->
         <g data-faluche="circulaire" :data-matiere="circulaire?.matiere">
             <circle
                 v-if="!bandes.length"
-                :cx="C"
-                :cy="C"
+                :cx="CX"
+                :cy="CY"
                 :r="R_OUT - RING / 2"
                 fill="none"
                 stroke="#9a9a9a"
@@ -153,133 +210,171 @@ const description = computed(() => {
             <circle
                 v-for="(bande, i) in bandes"
                 :key="i"
-                :cx="C"
-                :cy="C"
+                :cx="CX"
+                :cy="CY"
                 :r="bande.r"
                 fill="none"
                 :stroke="bande.color"
-                :stroke-width="bande.width + 0.4"
+                :stroke-width="bande.width + 0.8"
                 :filter="circulaire?.matiere === 'velours' ? url('grain') : undefined"
                 data-faluche="bande"
             />
             <circle
-                v-if="circulaire?.matiere === 'satin'"
-                :cx="C"
-                :cy="C"
+                v-if="circulaire"
+                :cx="CX"
+                :cy="CY"
                 :r="R_OUT - RING / 2"
                 fill="none"
-                :stroke="url('satin')"
-                :stroke-width="RING"
-            />
-            <circle
-                v-else-if="circulaire"
-                :cx="C"
-                :cy="C"
-                :r="R_OUT - RING / 2"
-                fill="none"
-                :stroke="url('volume')"
+                :stroke="circulaire.matiere === 'satin' ? url('satin') : url('volume')"
                 :stroke-width="RING"
             />
         </g>
 
         <!-- Velours du dessus -->
-        <g data-faluche="velours">
-            <circle :cx="C" :cy="C" :r="R_IN" :fill="veloursColor" :filter="url('grain')" />
-            <circle :cx="C" :cy="C" :r="R_IN" :fill="url('volume')" />
-        </g>
+        <path data-faluche="velours" :d="ZONES.contour" :fill="veloursColor" :filter="url('grain')" />
 
-        <!-- Rubans supérieurs -->
         <g :clip-path="url('dessus')">
+            <!-- Places gardées pour l'association et l'élu -->
             <rect
-                v-for="slot in placeholders"
-                :key="slot.key"
-                :x="slot.x - RUBAN_W / 2"
-                :y="RUBAN_TOP - 20"
-                :width="RUBAN_W"
-                :height="RUBAN_BOTTOM - RUBAN_TOP + 20"
+                v-for="place in PLACES"
+                :key="place.key"
+                :x="place.x"
+                y="0"
+                :width="PLACE_W"
+                height="800"
                 fill="none"
                 stroke="#fff"
-                stroke-opacity="0.35"
-                stroke-dasharray="4 4"
-                :data-faluche="`emplacement-${slot.key}`"
+                stroke-opacity="0.3"
+                stroke-width="2"
+                stroke-dasharray="8 8"
+                :data-faluche="`emplacement-${place.key}`"
             />
-            <g v-for="slot in filled" :key="slot.key" :data-faluche="`ruban-${slot.key}`">
+
+            <!-- Nouvelle ville d'études, parallèle à la première -->
+            <g v-if="suivante.length" :clip-path="url('zone-veloursGauche')" data-faluche="ruban-etudes-suivante">
                 <rect
-                    v-for="(stripe, i) in stripes(slot)"
+                    v-for="(stripe, i) in suivante"
                     :key="i"
                     :x="stripe.x"
-                    :y="RUBAN_TOP - 20"
-                    :width="stripe.w + 0.3"
-                    :height="RUBAN_BOTTOM - RUBAN_TOP + 20"
+                    y="0"
+                    :width="stripe.w + 0.5"
+                    height="470"
                     :fill="stripe.color"
                 />
                 <rect
-                    :x="slot.x - RUBAN_W / 2"
-                    :y="RUBAN_TOP - 20"
-                    :width="RUBAN_W"
-                    :height="RUBAN_BOTTOM - RUBAN_TOP + 20"
-                    :fill="url('ruban')"
+                    :x="SUIVANTE_X[0]"
+                    y="0"
+                    :width="SUIVANTE_X[1] - SUIVANTE_X[0]"
+                    height="470"
+                    fill="none"
                     stroke="#000"
-                    stroke-opacity="0.35"
-                    stroke-width="0.8"
+                    stroke-opacity="0.4"
+                    stroke-width="1.5"
                 />
                 <text
-                    v-if="slot.annee"
-                    :x="slot.x"
-                    :y="RUBAN_BOTTOM - 40"
-                    :transform="`rotate(-90 ${slot.x} ${RUBAN_BOTTOM - 40})`"
+                    v-if="anneeChangement"
+                    :x="SUIVANTE_MID"
+                    y="330"
+                    :transform="`rotate(-90 ${SUIVANTE_MID} 330)`"
                     text-anchor="middle"
                     dominant-baseline="central"
                     font-family="system-ui, sans-serif"
-                    font-size="12"
+                    font-size="28"
                     font-weight="700"
                     fill="#fff"
                     stroke="#000"
-                    stroke-width="2.4"
+                    stroke-width="5"
                     paint-order="stroke"
                 >
-                    {{ slot.annee }}
+                    {{ anneeChangement }}
                 </text>
             </g>
+
+            <!-- Rubans : partie droite, puis diagonale vers le bord -->
+            <template v-for="r in rubans" :key="r.key">
+                <g v-if="r.ruban" :data-faluche="`ruban-${r.key}`">
+                    <g v-for="zone in r.droit" :key="zone" :clip-path="url(`zone-${zone}`)">
+                        <rect
+                            v-for="(stripe, i) in r.stripes"
+                            :key="i"
+                            :x="stripe.x"
+                            y="0"
+                            :width="stripe.w + 0.5"
+                            height="800"
+                            :fill="stripe.color"
+                        />
+                    </g>
+                    <path v-for="(zone, i) in r.diagonale" :key="zone" :d="ZONES[zone]" :fill="r.diagonaleColors[i]" />
+                    <path
+                        v-for="zone in r.zones"
+                        :key="`trait-${zone}`"
+                        :d="ZONES[zone]"
+                        fill="none"
+                        stroke="#000"
+                        stroke-opacity="0.4"
+                        stroke-width="1.5"
+                    />
+                </g>
+                <g
+                    v-else
+                    fill="none"
+                    stroke="#fff"
+                    stroke-opacity="0.3"
+                    stroke-width="2"
+                    stroke-dasharray="8 8"
+                    :data-faluche="`emplacement-${r.key}`"
+                >
+                    <path v-for="zone in r.zones" :key="zone" :d="ZONES[zone]" />
+                </g>
+            </template>
+
+            <!-- Volume du velours, par-dessus les rubans cousus -->
+            <path :d="ZONES.contour" :fill="url('volume')" />
         </g>
 
-        <!-- Écussons en tête de ruban -->
-        <g v-for="slot in filled" :key="`ecusson-${slot.key}`" :data-faluche="`ecusson-${slot.key}`">
-            <image
-                v-if="slot.ruban?.ecusson"
-                :href="slot.ruban.ecusson"
-                :x="slot.x - 15"
-                :y="RUBAN_BOTTOM - 8"
-                width="30"
-                height="34"
-                preserveAspectRatio="xMidYMid meet"
-            />
-            <g v-else-if="slot.ruban">
-                <path
-                    :d="`M ${slot.x - 12} ${RUBAN_BOTTOM - 6} h 24 v 14 q 0 12 -12 18 q -12 -6 -12 -18 z`"
-                    fill="#f4efe4"
-                    stroke="#6b5a3a"
-                    stroke-width="1.2"
+        <!-- Écussons, à la cassure des rubans -->
+        <template v-for="r in rubans" :key="`ecusson-${r.key}`">
+            <g v-if="r.ruban" :data-faluche="`ecusson-${r.key}`">
+                <path :d="ZONES[r.ecusson]" fill="#f4efe4" stroke="#6b5a3a" stroke-width="2.5" />
+                <image
+                    v-if="r.ruban.ecusson"
+                    :href="r.ruban.ecusson"
+                    :clip-path="url(`zone-${r.ecusson}`)"
+                    :x="r.ecussonImage.x"
+                    :y="r.ecussonImage.y"
+                    :width="r.ecussonImage.width"
+                    :height="r.ecussonImage.height"
+                    preserveAspectRatio="xMidYMid meet"
                 />
                 <text
-                    :x="slot.x"
-                    :y="RUBAN_BOTTOM + 8"
+                    v-else
+                    :x="r.ecussonImage.cx"
+                    :y="r.ecussonImage.cy"
                     text-anchor="middle"
                     dominant-baseline="central"
                     font-family="system-ui, sans-serif"
-                    font-size="12"
+                    font-size="64"
                     font-weight="700"
                     fill="#3a2f1c"
                 >
-                    {{ initiale(slot.ruban.nom) }}
+                    {{ initiale(r.ruban.nom) }}
                 </text>
             </g>
-        </g>
+            <path
+                v-else
+                :d="ZONES[r.ecusson]"
+                fill="none"
+                stroke="#fff"
+                stroke-opacity="0.3"
+                stroke-width="2"
+                stroke-dasharray="8 8"
+            />
+        </template>
 
         <!-- Contours, dans le style du schéma des parties -->
         <g fill="none" stroke="currentColor" stroke-opacity="0.55">
-            <circle :cx="C" :cy="C" :r="R_OUT" stroke-width="2" />
-            <circle :cx="C" :cy="C" :r="R_IN" stroke-width="1.4" />
+            <circle :cx="CX" :cy="CY" :r="R_OUT" stroke-width="4" />
+            <path :d="ZONES.contour" stroke-width="3" />
         </g>
     </svg>
 </template>
